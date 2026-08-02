@@ -245,6 +245,23 @@ O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o e
   (6) RESSALVAS nos rodapés: indecisos (Br/N/Ind) não são realocados no 2º turno; mercados Polymarket/Kalshi são cotação de 1/7/2026 que não atualiza sozinha.
 - BASE DO 2º TURNO na aba House effect (17/07/2026). A aba mostra uma faixa com quantos institutos publicaram cenário de 2º turno em CADA mês (helper `t2cov(m)` → [publicaram, total do mês], já sem outliers). Cores: 0 = cinza, 1-2 = dourado (base fina), 3+ = normal. Quando o mês tem menos de 3, aparece o aviso "Base fina: o ajuste de X se apoia em N institutos só". Motivo: o ajuste de mar/abr/mai se apoia em só 2 institutos cada (mai = AtlasIntel e Gerp, que puxam para lados opostos), contra 6 em jun/jul. Não escrever o mês de comparação à mão: usa `months[months.length-1]`.
 - JUDICIALIZAÇÃO DO 2º TURNO (risco a monitorar, NÃO é ressalva do painel). Matéria da Gazeta de 03/07/2026 (Gustavo Ribeiro): institutos pararam de perguntar 2º turno por medo de impugnação; partidos exigem que os cenários incluam todos os pré-candidatos e vêm ganhando nos TREs; sem jurisprudência uniforme porque quase nada chega ao TSE. IMPORTANTE: cheguei a propor uma ressalva no painel dizendo que "a amostra de 2º turno está encolhendo", e os DADOS DERRUBARAM isso — a cobertura nacional está CRESCENDO (jan 0, fev 0, mar 2, abr 2, mai 2, jun 6/11, jul 6/6). A matéria fala de pesquisas DE GOVERNADOR em estados específicos, não do presidencial nacional. NÃO adicionar essa ressalva ao painel sem antes rodar `t2cov` e checar se a cobertura realmente caiu. Cicatriz real e já sinalizada: o 1º turno do Flávio na AtlasIntel de maio foi vetado por liminar (Kassio) e o 34* é reconstruído.
+- VERITÁ: FONTE PRÓPRIA E QUAL COLUNA LER (02/08/2026). O Instituto Veritá publica as íntegras em
+  PDF, de graça e sem cadastro, em `https://eleicoes26.institutoverita.com.br/` (a home lista todas
+  as rodadas com data de divulgação, e cada página tem o link direto do PDF, hospedado no Supabase).
+  É a fonte mais rápida e completa para ele, melhor que esperar a imprensa local. QUAL NÚMERO ENTRA:
+  os relatórios dele trazem TRÊS colunas por pergunta (Frequência, Porcentual, Porcentagem válida), e
+  o painel usa a coluna **Porcentual** (amostra total) para governador e presidente, que é o que
+  mantém a comparabilidade com Paraná Pesquisas, Quaest, Neokemp e afins. Conferido contra o PDF do
+  Paraná de junho: o 52,7 do Moro que está no `DGM` é o Porcentual, não os 57,9 dos válidos. Para
+  SENADOR, onde o eleitor tem dois votos, entra a **Porcentagem de casos** do bloco "CONSOLIDAÇÃO DAS
+  PERGUNTAS X E Y", também conferido contra junho (Deltan 35,6). Ler a coluna errada infla o
+  instituto em 6 a 10 pontos e faz parecer house effect o que é só base diferente.
+- MÊS DE UMA RODADA QUE ATRAVESSA A VIRADA (02/08/2026). Rodada com campo em dois meses entra no mês
+  em que o campo TERMINA, que é também como o próprio instituto batiza o relatório. Precedente que
+  fixou a regra: a nota do `DI` de agosto já tratava a Nexus de campo 31/7 a 2/8 como a primeira
+  rodada de AGOSTO, e a Veritá do Paraná (campo 28/7 a 1/8) veio com o PDF chamado
+  "Relatorio_Parana_Agosto_2026", enquanto a do Maranhão (25 a 29/7) veio como "Julho". Por isso o
+  Paraná abriu o mês 'ago' no `DGM`/`DSM` e o Maranhão entrou em 'jul'.
 - Ao atualizar dados, AVANÇAR o carimbo "Última atualização: DD/MM/AAAA HH:MM" (é manual).
 
 Estrutura do painel: QUATRO abas no topo (acima dos meses):
