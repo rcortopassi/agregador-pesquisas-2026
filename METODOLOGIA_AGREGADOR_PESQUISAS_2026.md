@@ -368,6 +368,8 @@ A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm n
 - AtlasIntel: rodou jan, fev, mar, abr, mai. Não publicou em junho.
 - Janeiro: campo fragmentado (Tarcísio e Haddad ainda candidatos); só Atlas e Apex mediam Flávio de forma comparável.
 - Em meses com várias rodadas do mesmo instituto, usar a mais recente do mês.
+- REGISTRADAS E AINDA SEM NÚMERO PUBLICADO (situação em 02/08/2026, 16h). O radar do TSE mostra rodadas estaduais com divulgação marcada para 02/08 que a imprensa ainda não publicou: Veritá no AMAPÁ (AP-04661/2026, campo 28/07 a 01/08, N=1030) e no AMAZONAS (AM-00886/2026, mesmo campo, N=1220), do mesmo lote cujas rodadas de PR e PA já entraram, e Perfil no ESPÍRITO SANTO (ES-05181/2026, campo 29 a 31/07, N=600, que é um terço da amostra da rodada de 13-16 jul que está no painel). Conferidos nesta ordem e sem resultado: Gazeta do Povo (a lista para na Datafolha de PE, divulgada em 31/07), Poder360 e CNN Eleições (a matéria de pesquisa mais recente do dia é a Vox de SP, que já está no painel). Não inserir por dedução; a próxima rodada horária deve procurar de novo.
+- O `radar_tse.py` guarda o ZIP baixado por DIA, e o ZIP do TSE também é regerado uma vez por dia (o cabeçalho do radar diz "ZIP gerado em"). Numa tarefa de hora em hora isso significa que apagar o cache no meio do dia normalmente NÃO traz registro novo: dá o mesmo arquivo. Vale apagar uma vez por dia, na primeira rodada depois da virada, não a cada hora.
 
 ## Como atualizar
 
