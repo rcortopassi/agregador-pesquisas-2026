@@ -154,12 +154,16 @@ Corrija até dar "JS OK". Depois faça commit e push na `main`:
 git add -A && git commit -m "atualiza painel" && git push
 ```
 
-**Publicar são dois passos, nesta ordem:** primeiro `python3 deploy_agregador.py`, que é quem
-sobe para o PythonAnywhere (no Mac ele lê o token do `painel/.env` por caminho absoluto), e só
-depois o commit e o push. O workflow `.github/workflows/deploy.yml` revalida o JS a cada push,
-mas só publica se o segredo `PA_TOKEN` estiver cadastrado no repositório; sem ele, avisa e sai
-limpo, de propósito, para push não ficar vermelho à toa. Se o JS estiver quebrado, tanto o
-script quanto o workflow ABORTAM e nada vai ao ar.
+**O push publica** (desde 02/08/2026, 12h). Os segredos `PA_TOKEN` e `PA_USER` foram cadastrados
+no repositório, então o workflow `.github/workflows/deploy.yml` revalida o JS e chama o
+`deploy_agregador.py` sozinho a cada push que toque no `electoralpolls.html`. Execução de
+referência, verde de ponta a ponta: run 30753444692. Se o JS estiver quebrado, o workflow ABORTA
+antes do upload e nada vai ao ar.
+
+Rodar `python3 deploy_agregador.py` à mão continua valendo e não faz mal, porque o upload é
+idempotente: use quando quiser o painel no ar na mesma hora sem esperar o Actions, ou quando
+`gh run list --limit 3` mostrar o workflow vermelho. No Mac o script lê o token do `painel/.env`
+por caminho absoluto; no Actions, dos segredos do repositório.
 
 ## Regras obrigatórias
 
