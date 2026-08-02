@@ -154,9 +154,12 @@ Corrija até dar "JS OK". Depois faça commit e push na `main`:
 git add -A && git commit -m "atualiza painel" && git push
 ```
 
-**O push publica.** O workflow `.github/workflows/deploy.yml` revalida o JS e sobe para o
-PythonAnywhere pela API; se o JS estiver quebrado, ABORTA sozinho e nada vai ao ar. Não rode
-`deploy_agregador.py` à mão a menos que o workflow tenha falhado.
+**Publicar são dois passos, nesta ordem:** primeiro `python3 deploy_agregador.py`, que é quem
+sobe para o PythonAnywhere (no Mac ele lê o token do `painel/.env` por caminho absoluto), e só
+depois o commit e o push. O workflow `.github/workflows/deploy.yml` revalida o JS a cada push,
+mas só publica se o segredo `PA_TOKEN` estiver cadastrado no repositório; sem ele, avisa e sai
+limpo, de propósito, para push não ficar vermelho à toa. Se o JS estiver quebrado, tanto o
+script quanto o workflow ABORTAM e nada vai ao ar.
 
 ## Regras obrigatórias
 
