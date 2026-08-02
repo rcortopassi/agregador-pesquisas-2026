@@ -38,8 +38,13 @@ jobs:
           PA_TOKEN: ${{ secrets.PA_TOKEN }}
           PA_USER: ${{ secrets.PA_USER }}
         run: |
+          # O segredo e OPCIONAL. Em 02/08/2026 quem publica e a tarefa local do Mac, que
+          # roda deploy_agregador.py direto com o .env. Este workflow existe como caminho
+          # alternativo: so publica se o segredo estiver cadastrado, e nunca falha por falta
+          # dele, senao todo push ficaria vermelho sem que nada esteja quebrado.
           if [ -z "$PA_TOKEN" ]; then
-            echo "::error::falta o segredo PA_TOKEN no repositorio (Settings > Secrets and variables > Actions)"
-            exit 1
+            echo "::notice::PA_TOKEN nao cadastrado; publicacao por aqui esta desligada."
+            echo "::notice::A validacao do JS acima ja rodou, que e o que importa neste caso."
+            exit 0
           fi
           python3 deploy_agregador.py

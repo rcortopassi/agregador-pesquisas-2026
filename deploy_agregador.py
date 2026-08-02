@@ -28,7 +28,12 @@ from urllib.error import HTTPError, URLError
 
 BASE    = Path(__file__).parent
 ARQUIVO = BASE / "electoralpolls.html"
-ENV     = BASE / "painel" / ".env"          # o token da conta ja mora aqui
+# Onde procurar o .env quando NAO ha variavel de ambiente (caso do Mac).
+# Caminho ABSOLUTO de proposito: o repositorio nao fica mais ao lado da pasta do painel,
+# e a alternativa (symlink "painel" dentro do repo) ja foi tentada em 02/08/2026 e e pior,
+# porque o symlink acaba versionado e aponta para fora do repositorio.
+ENV     = Path("/Users/rafael/Library/CloudStorage/GoogleDrive-rafael@dfcarvalho.com.br"
+               "/Meu Drive/Brasília - Freire Carvalho/Claude/painel/.env")
 REMOTO  = "electoralpolls"                   # /home/<user>/electoralpolls/
 API     = "https://www.pythonanywhere.com"
 

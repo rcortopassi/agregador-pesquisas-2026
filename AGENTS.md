@@ -13,6 +13,23 @@ do mapa derivam sozinhos dos objetos de dados. Sua tarefa é ACRESCENTAR dados e
 campos. NÃO reescreva `chartSVG`, não recalcule pontos do gráfico à mão, não escreva lista de
 meses nem lista de estados à mão no código (já congelou duas vezes).
 
+## Onde esta rotina roda, e por que NÃO roda na nuvem do claude.ai
+
+Esta tarefa roda na **máquina do Rafael** (tarefa agendada local, de hora em hora, sobre o clone
+em `~/agregador-pesquisas-2026`). Não tente movê-la para uma rotina de nuvem do claude.ai.
+
+Foi tentado em 02/08/2026 e MEDIDO, com o relatório em `DIAGNOSTICO_NUVEM.md`. O sandbox da
+nuvem tem um proxy de saída obrigatório em `127.0.0.1` que responde **403 Forbidden ao CONNECT**
+para todo domínio externo. Falharam, todos pelo mesmo motivo: os ZIPs do TSE, Poder360,
+static.poder360, Gazeta do Povo, Polymarket, Kalshi e a API do PythonAnywhere. Não é DNS, não é
+o `mercados.py`, e não adianta trocar de caminho de rede: os quatro caminhos dele (direto, DoH
+Google, DoH Cloudflare, nslookup) morreram no mesmo 403, e o `nslookup` nem existe lá. O que
+funciona na nuvem é git (por outro proxy local) e o relógio, que está certo.
+
+Ou seja, um agente de nuvem consegue editar arquivo e dar push, mas não consegue APURAR nada.
+Como esta tarefa é 90 por cento apuração, ela não tem como rodar lá. Se algum dia o proxy passar
+a liberar esses domínios, o teste é rodar de novo o que está em `DIAGNOSTICO_NUVEM.md`.
+
 ## São três frentes. Investigue as três.
 
 1. **Presidencial nacional** → objeto `DI` (uma rodada por instituto por mês, a mais recente)

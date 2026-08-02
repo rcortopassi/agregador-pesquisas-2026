@@ -203,6 +203,22 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   naquele UF/mês e repetir exatamente. Detector, que roda em segundos sobre o próprio HTML: para
   cada UF e mês, listar os nomes e apontar par em que um é substring do outro. CUIDADO com falso
   positivo de sobrenome comum: 'Joel Rodrigues' x 'Toni Rodrigues' no PI são duas pessoas.
+- MIGRACAO PARA O GIT E A NUVEM QUE NAO DEU (02/08/2026). O usuario pediu que a atualizacao
+  rodasse "direto pelo site", sem o app aberto no Mac, e mandou passar tudo para o git deixando o
+  Google Drive como copia morta. A migracao foi feita: fonte de verdade agora e o repositorio
+  privado rcortopassi/agregador-pesquisas-2026, clonado em ~/agregador-pesquisas-2026, com o
+  AGENTS.md carregando as instrucoes da tarefa e scripts novos (radar_tse.py e mercados.py).
+  A PARTE DA NUVEM NAO FUNCIONA, e foi medida, nao suposta. Depois de instalar o app do Claude no
+  GitHub e liberar o repositorio, a rotina rodou e o resultado esta em DIAGNOSTICO_NUVEM.md: o
+  sandbox tem proxy de saida obrigatorio que responde 403 Forbidden ao CONNECT para TODO dominio
+  externo. Caiu tudo: ZIPs do TSE, Poder360, static.poder360, Gazeta, Polymarket, Kalshi e a API
+  do PythonAnywhere. So git e relogio funcionam. Como a tarefa e quase toda apuracao, ela CONTINUA
+  na tarefa agendada local. NAO refazer essa tentativa sem antes reexecutar o diagnostico.
+  GANHO QUE FICOU, mesmo com a nuvem fora: versionamento, e o mercados.py, que resolveu de forma
+  robusta o acesso a Polymarket e Kalshi NO MAC. A receita antiga (nslookup 8.8.8.8 + curl
+  --resolve) depende de UDP/53; a nova tenta HTTPS direto, depois DNS-over-HTTPS no dns.google e
+  no cloudflare-dns.com, e so entao o nslookup. No Mac o direto falha (DNS do provedor) e o DoH
+  salva. Se todos falharem o script sai com codigo 2 e quem chama NAO inventa numero.
 - SENADO, VAGAS E NEGRITO (21/07/2026). Em 2026 TODOS os 27 estados elegem DOIS senadores: o Senado tem 81 cadeiras, 3 por unidade da federação, renovadas alternadamente em 1/3 (1 vaga) e 2/3 (2 vagas), e 2026 é ano de 2/3 (2014 e 2022 foram 1; 2018 e 2026 são 2). O painel destaca em negrito tantos nomes quantas forem as vagas: 2 no Senado, 1 no Governador. Implementado em `SENVAGAS_PADRAO=2` + `SENVAGAS_UF={}` (override por estado, hoje vazio, para vaga extra por cassação/renúncia/morte) + `senVagas(uf)` + `nDestaque(office,uf)`, consumidos por `stateSinglePoll(d,nb)` e `stateInstTable(monthsObj,nb)`. Não fixar o 2 no código nem voltar a destacar só o primeiro colocado.
 
 O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o estado ATUAL abaixo, nunca versões antigas desta metodologia:
