@@ -153,6 +153,22 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   inverso também vale. A Apex/Futura, o Gerp, a PoderData, o RTBD e o Veritá já eram "novos" e
   ganharam house effect quando se foi atrás da rodada final de 2018/2022 deles. Antes de declarar
   que alguém não tem histórico, rodar esta auditoria por CNPJ.
+- O WORKFLOW DO GITHUB AINDA NÃO PUBLICA: FALTA O SEGREDO `PA_TOKEN` (02/08/2026). O
+  `.github/workflows/deploy.yml` roda em todo push, VALIDA o JS (esse passo passa) e depois
+  falha em "Sobe para o PythonAnywhere" com `falta o segredo PA_TOKEN no repositorio`. As duas
+  primeiras execuções do repositório falharam assim (runs 30751237086 e 30751486814). Ou seja,
+  **o push sozinho ainda NÃO publica**; enquanto o segredo não for cadastrado, rode
+  `python3 deploy_agregador.py` à mão depois de cada push e confira o carimbo no ar com
+  `curl -s https://rafaelcortopassi.pythonanywhere.com/electoralpolls/ | grep "Última atualização"`.
+  CONSERTO DEFINITIVO, que só o usuário pode fazer (precisa da conta do GitHub): cadastrar
+  `PA_TOKEN` (o mesmo valor de `painel/.env`) e `PA_USER` = `rafaelcortopassi` em
+  Settings > Secrets and variables > Actions do repositório.
+  ARMADILHA CORRELATA JÁ CONSERTADA: `deploy_agregador.py` procura o token em
+  `<pasta do script>/painel/.env`, e o clone novo em `~/agregador-pesquisas-2026` não tinha
+  essa pasta (ela é gitignorada e o arquivo real mora na pasta do Google Drive). Foi criado o
+  symlink `~/agregador-pesquisas-2026/painel` → `.../Claude/painel`, que resolve sem copiar
+  segredo para lugar nenhum. Se o deploy à mão voltar a dizer "falta PA_TOKEN", conferir se o
+  symlink ainda existe.
 - GAVETA DA METODOLOGIA NO RODAPÉ (31/07/2026, a pedido do usuário). O rodapé citava este arquivo
   como texto morto; agora o nome do arquivo é CLICÁVEL e abre `openMetodologia()`, que reusa a
   gaveta `#dr` com a classe `.wide` (560px, `max-width:85vw` segura o celular em ~319px).
