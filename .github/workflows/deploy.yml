@@ -1,0 +1,45 @@
+name: Publica o painel no PythonAnywhere
+
+# Publica a cada push que toque no painel. O agente da rotina de nuvem so precisa dar push:
+# a validacao do JS e o upload acontecem aqui, e o token nunca sai do cofre do GitHub.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'electoralpolls.html'
+      - 'icones_agregador/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+jobs:
+  publica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Rede de seguranca dupla: o proprio deploy_agregador.py ja valida, mas falhar aqui
+      # deixa o motivo obvio no log do Actions em vez de escondido no meio do upload.
+      - name: Valida o JS embutido
+        run: |
+          node -e "
+          const s=require('fs').readFileSync('electoralpolls.html','utf8');
+          const m=s.match(/<script>([\s\S]*)<\/script>/);
+          if(!m){ console.error('nao achei o <script> inline'); process.exit(1); }
+          try{ new Function(m[1]); console.log('JS OK'); }
+          catch(e){ console.error('JS ERRO: '+e.message); process.exit(1); }
+          "
+
+      - name: Sobe para o PythonAnywhere
+        env:
+          PA_TOKEN: ${{ secrets.PA_TOKEN }}
+          PA_USER: ${{ secrets.PA_USER }}
+        run: |
+          if [ -z "$PA_TOKEN" ]; then
+            echo "::error::falta o segredo PA_TOKEN no repositorio (Settings > Secrets and variables > Actions)"
+            exit 1
+          fi
+          python3 deploy_agregador.py

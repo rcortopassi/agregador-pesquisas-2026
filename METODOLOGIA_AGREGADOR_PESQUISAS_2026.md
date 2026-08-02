@@ -1,0 +1,322 @@
+# Agregador de Pesquisas Presidenciais 2026 — Metodologia
+
+Painel próprio, inspirado no RealClearPolitics (visual) e no FiveThirtyEight (estatística), para consolidar as pesquisas de intenção de voto para presidente em 2026.
+
+Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no JS; seletor por mês; abre SEMPRE no mês mais recente).
+
+## ATENÇÃO — estado atual do painel (NÃO REVERTER)
+
+- TÍTULO DO PAINEL: "Agregador de pesquisas · Eleições 2026", em UMA linha só na faixa dourada do topo e no `<title>`. O painel NÃO tem nome de marca. Histórico curto para não se repetir: em 20/07/2026 o usuário pediu um nome próprio, escolheu "50+1" (limiar de 50% mais um dos votos válidos) e ele foi aplicado com wordmark grande no topo; em 21/07/2026 ele mandou remover de tudo, dizendo que o título "não está bom". NÃO reintroduzir "50+1" nem voltar para "Agregador Brasil". O `apple-mobile-web-app-title` é "Agregador 2026". O favicon (medidor) continua igual, porque é gráfico e não tem texto.
+- UMA RODADA POR INSTITUTO POR MÊS (regra reafirmada pelo usuário em 21/07/2026, quando perguntou se "todas as pesquisas" estavam no painel). O `DI` guarda a rodada MAIS RECENTE de cada instituto em cada mês, não todas as rodadas publicadas. NÃO é descuido, é proteção estatística: se todas as rodadas entrassem como linhas separadas, um instituto que publica toda semana entraria com 5 ou 6 linhas no mês enquanto o Datafolha entraria com 1, e a MEDIANA passaria a refletir quem pesquisa mais, não o consenso do campo (PoderData e AtlasIntel, os mais frequentes, dominariam). Foi apresentada ao usuário a alternativa de agregação em DOIS ESTÁGIOS (mediana das rodadas dentro de cada instituto, depois mediana entre institutos), que permitiria incluir tudo sem dar peso extra a ninguém; ele optou por MANTER uma rodada por instituto. Se um dia quiser mudar, é esse o caminho correto, e nunca empilhar linhas.
+- COBERTURA NACIONAL CONFERIDA (21/07/2026): 17 institutos distintos e 57 rodadas no `DI` (Alfa, American, Apex/Futura, AtlasIntel, CNT/MDA, Datafolha, Gerp, Indexa, Meio/Ideia, Nexus/BTG, Paraná, PoderData, Quaest, RTBD, Veritá, Vetor/Arrow, Vox Brasil). Isso bate um a um com a lista consolidada de pesquisas presidenciais nacionais de 2026; não há instituto nacional conhecido de fora. `OUTLIERS={}`, então Veritá e Vetor/Arrow contam normalmente. A lacuna real de cobertura é ESTADUAL, não nacional.
+- INCERTEZA POR DISTÂNCIA DA ELEIÇÃO (21/07/2026). Objeto `HERR`, linha dourada no banner.
+  ORIGEM: o usuário levantou que os institutos ficariam enviesados durante a campanha e
+  "consertariam" na pesquisa final, e que medir o house effect só na final captura a fase em
+  que eles são mais honestos. Fomos medir. Reconstruímos a série mensal de 2º turno de 2010,
+  2018 e 2022 (2014 não tem série: o adversário provável da Dilma era a Marina até setembro;
+  2018 idem, o candidato do PT era o Lula até 11/09).
+  ACHADO 1, que CONFIRMA a intuição: em 2022 a mediana do campo superestimou o Lula nos DEZ
+  meses, sem exceção, indo de +25,3 em janeiro a +2,6 em outubro; e TODOS os 11 institutos com
+  série comparável corrigiram na direção do Bolsonaro na rodada final (Quaest −16,1,
+  Datafolha −15,7, Ipespe −15,2, CNT/MDA −11,9, Ipec −11,4).
+  ACHADO 2, que REFUTA a versão forte: o SINAL NÃO É ESTÁVEL entre ciclos. Em 2010 o campo
+  SUBESTIMOU a Dilma quase o ano inteiro (−22,9 em abril, −11,0 em julho) e só passou a
+  superestimar em agosto. A correção mediana de última hora foi +2,1 em 2010, +2,8 em 2014,
+  +7,6 em 2018 e ~+12 em 2022. Logo, NÃO EXISTE correção direcional defensável, e 2022 é o
+  ciclo atípico, não a regra.
+  DECISÃO: NÃO alterar o cálculo. Foi apresentada ao usuário a alternativa estilo FiveThirtyEight
+  (alargar a faixa de empate técnico em função da distância, o que levaria a faixa de 4,0 para
+  ~13 pontos em julho e trocaria "empate técnico" por "corrida indefinida"); ele optou pela
+  FORMA CONSERVADORA: manter a conta e ACRESCENTAR CONTEXTO. Motivo: calibrar a curva do 538
+  exigiria dezenas de eleições e nós temos duas séries completas, que por acaso erraram em
+  direções opostas.
+  IMPLEMENTAÇÃO: `HERR` guarda, por mês do ciclo, o erro medido da mediana do campo vs urna em
+  2010 e 2022 (votos válidos, margem esquerda menos direita). O banner mostra uma terceira
+  linha, em `P.goldtxt`, que acompanha o seletor de mês. NÃO transformar isso em coeficiente
+  nem embutir na classificação sem antes ter mais ciclos medidos.
+  TENTATIVA DESCARTADA (22/07/2026): cheguei a desenhar a incerteza no GRÁFICO como uma zona
+  dourada vertical no mês mais recente (±13, com setas de transbordo), e o usuário viu e
+  mandou TIRAR ("ficou ruim"). Removida por completo. A representação da incerteza histórica
+  fica SÓ na linha de texto do banner. `HERRN`/`herrAmp` ficaram no código sem uso (dados
+  numéricos corretos, podem servir no futuro), mas NÃO reintroduzir a zona no gráfico sem o
+  usuário pedir.
+  RESSALVA REGISTRADA: os erros históricos foram medidos em VOTOS VÁLIDOS com 15-20% de
+  indeciso no campo; a margem do painel está em AMOSTRA TOTAL. Não são a mesma régua, e por
+  isso o número entra como CONTEXTO, não como correção.
+  PROBLEMA CORRELATO AINDA ABERTO: em jul/2026 o Br/N/Ind varia de 1,2% (AtlasIntel, online)
+  a 19% (Quaest, telefone). As margens de 2º turno que entram na mediana NÃO são comparáveis
+  entre si pelo mesmo mecanismo. Padronizar a base antes de medianizar resolveria, e é
+  defensável sozinho, mas ainda não foi feito.
+- PADRONIZAÇÃO EM VOTOS VÁLIDOS (22/07/2026, a pedido do usuário). Objetos `T2R` e função
+  `t2valid`. PROBLEMA: cada instituto publica a margem do 2º turno numa base diferente,
+  conforme o quanto de indeciso deixa na conta (AtlasIntel online tem 1,2% de Br/N/Ind e
+  entrega quase em válidos; Quaest telefone tem 19% e entrega em amostra total, com a margem
+  comprimida). Jogar essas margens juntas na mediana mistura réguas. SOLUÇÃO: `T2R` guarda os
+  dois números do 2º turno (Lula, Flávio) por instituto; `t2valid` renormaliza sobre os dois
+  candidatos, `(L-F)/(L+F)*100`, e aplica o house effect (que foi medido em válidos, então
+  casa). O banner mostra os DOIS lados: "Lula +3,0 amostra total · Lula +3,3 votos válidos".
+  SUPOSIÇÃO embutida nos válidos: o indeciso se dividiria na mesma proporção dos declarados
+  (em 2022 o indeciso final pendeu para o Bolsonaro, então não é neutra) — por isso os dois
+  lados ficam visíveis, com a suposição no title/tooltip da palavra "válidos".
+  IMPACTO REAL: pequeno. Em julho a mediana foi de +3,0 (total) para +3,3 (válidos). Eu havia
+  estimado "+4 ou +5" e ERREI: a conversão infla mais quem tem muito indeciso (Quaest, Indexa),
+  mas esses já estão ACIMA da mediana; quem fica no MEIO da fila (RTBD, Nexus) tem indeciso
+  moderado e quase não muda. Como a mediana é o valor do meio, ela mal se move.
+  ESCOPO: só há pares (`T2R`) para JULHO. Meses anteriores seguem só com a margem bruta até
+  se coletar os pares. Esta padronização arruma a comparabilidade ENTRE institutos (eixo 1),
+  NÃO o viés do campo inteiro vs urna (eixo 2) — esse continua só endereçado pela linha de
+  incerteza histórica (HERR).
+- STRESS TEST DO INDECISO e RÓTULO CONDICIONAL (22/07/2026, após revisão comparativa
+  internacional). `t2stress` + `STRESS_DIR=0.736`. Os votos válidos assumem rateio proporcional
+  do indeciso; em 2022 isso foi falso e caro (Opinião Pública 2024: entre a pesquisa de sábado e
+  a urna de domingo do 1º turno, Bolsonaro +7,8 e Lula +2,8, ou seja ~74% do movimento tardio foi
+  para a direita). O painel agora mostra os TRÊS números de julho: **+3,0 amostra total, +3,3
+  votos válidos, e Flávio +2,2 no cenário de estresse**. O terceiro é o maior modo de falha
+  histórico virado número visível. NÃO é previsão; é sensibilidade.
+  O rótulo do 2º turno virou "2º turno · cenário", porque antes do 1º turno (4/out) toda
+  simulação de 2º turno é condicional: um estudo de 423 eleições em dois turnos achou ~30% de
+  viradas do 2º colocado, e o resultado do 1º turno realinha o jogo.
+- PENDÊNCIAS DATADAS (registrar agora, executar depois):
+  (a) SETEMBRO: implementar detector de herding (ADPA do Silver Bulletin). Se na última quinzena
+  a dispersão entre institutos ficar ABAIXO do mínimo teórico dado o erro amostral, é manada e a
+  banda de incerteza deve ALARGAR, nunca estreitar. Foi o que Nate Silver documentou nos EUA 2024.
+  (b) OUTUBRO, após o 1º turno: REANCORAR a série do 2º turno nas pesquisas novas, sem dar
+  continuidade à série hipotética anterior. A literatura mostra que o 1º turno realinha o
+  eleitorado; a série condicional velha deixa de valer.
+- REVISÃO COMPARATIVA INTERNACIONAL (22/07/2026). O que o espelho de França, Argentina, Chile,
+  Colômbia, Peru, Equador, Turquia, Uruguai e Portugal ensinou: (i) MEDIANA sem pesos é adequada
+  ao campo brasileiro — o Pindograma mediu que a vantagem dos institutos tradicionais sobre o
+  resto caiu de 1,35 p.p. (2014) para 0,19 (2022), então não há padrão-ouro que justifique
+  ponderação forte; e agregadores bateram institutos individuais em 2022 (Ipec só superou o
+  agregador em 3 de 22 estados). (ii) O risco dominante em sistemas de dois turnos NÃO é
+  dispersão entre institutos, é o CAMPO INTEIRO ERRAR JUNTO (Argentina 2019 e 2023, Turquia 2023,
+  Equador 2025, Brasil 2022-1º turno). (iii) NÃO existe viés universal por país (Jennings &
+  Wlezien, 30 mil pesquisas, 45 países); há viés por país e por ciclo. Na onda 2018-2025 o erro
+  correu contra a direita populista nas Américas e na Turquia, mas na França a extrema-direita é
+  SUPERestimada nos runoffs. (iv) A fama da AtlasIntel de "mais precisa" é marketing sobre
+  amostra seletiva: a final dela no 2º turno brasileiro de 2022 (53x47) ficou FORA da margem,
+  atrás de Datafolha, Quaest, MDA e Paraná.
+- DESEMPATE NACIONAL x ESTADUAL PELO GÊMEO (23/07/2026). **A técnica mais útil descoberta neste
+  projeto.** PROBLEMA: o TSE marca `NM_UE = "BRASIL"` em TODA pesquisa com pergunta presidencial,
+  mesmo quando a amostra é de uma única UF. Isso já quase nos fez inserir a Paraná Pesquisas do
+  RIO DE JANEIRO como se fosse nacional, e me fez afirmar erradamente que faltavam cinco rodadas
+  nacionais do Veritá em julho.
+  SOLUÇÃO: cruzar o registro BR- contra TODOS os registros estaduais casando por
+  **CNPJ + data de início + data de fim + tamanho da amostra**. Se existe um gêmeo estadual, a
+  pesquisa é daquela UF. Roda local, em segundos, sem busca web, e é definitivo.
+  RESULTADO NA PRÁTICA: das 6 pesquisas "nacionais" do Veritá em julho, **todas as 6 eram
+  estaduais** (PA×2, SP, RS, GO, PR). E a rodada do RTBD de 20-21/07 que parecia mais nova que a
+  nossa era a do ESPÍRITO SANTO. Nenhuma lacuna existia.
+  LIMITE CONHECIDO: o gêmeo pode ter sido RETIRADO do PesqEle (foi o caso do PR-03335, gêmeo do
+  BR-00558), e aí a nacional aparece como falso positivo. Também há o caso de o instituto
+  simplesmente não registrar a versão estadual. Portanto: "sem gêmeo" significa CANDIDATA a
+  nacional, não nacional confirmada.
+- RADAR DE PESQUISAS REGISTRADAS E NÃO INCORPORADAS (23/07/2026). Ideia importada do Polling Data,
+  que mantém no ar por 7 dias as pesquisas registradas e não divulgadas — é um detector de viés
+  de publicação. DECISÃO DE DESENHO: NÃO embutir a lista no painel. Uma lista congelada fica
+  obsoleta em dias e passaria a mentir. O radar é PASSO DE PROCESSO, não widget: roda a cada
+  atualização, sobre o CSV do TSE, com o desempate do gêmeo acima. Está na SKILL da tarefa
+  semanal. Rodando em 23/07/2026: 15 presidenciais nacionais com divulgação nos 25 dias
+  anteriores, das quais 5 de institutos que não acompanhamos (DMP, Boas Ideias, 100 Cidades,
+  IGAPE, Instituto Mais). ARMADILHA do filtro: "Boas Ideias" casa com a palavra "IDEIA" da lista
+  de institutos conhecidos e passa batido; conferir por nome inteiro, não por substring.
+- QUEM PODE TER HOUSE EFFECT: AUDITORIA POR CNPJ (31/07/2026). PERGUNTA que originou: o usuário
+  reparou que a Alfa e a Vox Brasil, acrescentadas ao `DI` de julho, entravam sem ajuste, e mandou
+  verificar se isso era corrigível. MÉTODO, que vale para qualquer instituto novo: baixar os ZIPs
+  `pesquisa_eleitoral_AAAA` do TSE de 2018, 2020, 2022, 2024 e 2026 e cruzar **por CNPJ**, nunca
+  por nome. Buscar "Vox" no texto traz Datavox, Vox Pesquisas (SE), Vox Opinião Pública (SP) e
+  Invox Brasil, que são quatro empresas diferentes; é a mesma armadilha de substring do radar
+  ("Boas Ideias" x "IDEIA"). Complementar com a data de abertura do CNPJ na Receita, que sozinha
+  já mata alguns casos.
+  RESULTADO. **Vox Brasil** (CNPJ 45.613.076/0001-20, Barretos/SP): CNPJ aberto em 11/03/2022;
+  zero registros no PesqEle em 2018, 2020 e 2022; 462 em 2024, todas MUNICIPAIS (cargo Prefeito,
+  SP e MG); a primeira presidencial é de 25/04/2026. Existiu sete meses do calendário de 2022 e
+  não registrou nada. **Alfa Inteligência** (CNPJ 22.400.349/0001-53, São Paulo): CNPJ aberto em
+  07/05/2015, ou seja a empresa EXISTIA em 2018 e 2022, mas tem zero registros em 2018, 2020,
+  2022 e também 2024; os únicos são 3, todos de 2026, todos BRASIL/Presidente, o primeiro em
+  11/03/2026. O site dela explica: é consultoria de campanha ("desde 2008", placar de 1 campanha
+  presidencial, 10 de Senado, 260 de prefeitura), e pesquisa interna contratada por campanha não
+  vai ao PesqEle porque não é divulgada.
+  CONCLUSÃO: as duas ficam FORA do `VH2DET` por impossibilidade, não por descuido. Não há rodada
+  final para comparar com a urna. O motivo é diferente em cada caso e está escrito no campo `nt`
+  do `IM` de cada uma, para o painel explicar sozinho. NÃO reabrir a checagem: só vale refazer se
+  alguma das duas publicar rodada final em eleição futura.
+  CUIDADO AO ESCREVER ESSE TEXTO (achado ao conferir a gaveta): "sem house effect" NÃO pode ser
+  dito solto, porque a gaveta lateral mostra, no campo "viés histórico (vs urnas)", um número
+  COM ASTERISCO mesmo para quem não tem histórico. São dois objetos distintos e fáceis de
+  confundir: o `VH2DET`/`VHIST2` é de 2º TURNO, sem default, e é o que alimenta banner, aba House
+  effect e gráfico; o `VH1DET`/`VHIST`/`VLULA` é o legado de 1º TURNO, vive SÓ na gaveta e TEM
+  default desde 23/07/2026 (`VHDEF`/`VLDEF`, mediana do campo com histórico, encolhida como uma
+  eleição, marcada com asterisco). Sem essa distinção, o `nt` e o campo logo acima dele se
+  contradizem na mesma tela. Os textos da Alfa e da Vox já dizem qual é qual.
+  LIÇÃO GERAL: "instituto novo no painel" e "instituto sem histórico" não são a mesma coisa, e o
+  inverso também vale. A Apex/Futura, o Gerp, a PoderData, o RTBD e o Veritá já eram "novos" e
+  ganharam house effect quando se foi atrás da rodada final de 2018/2022 deles. Antes de declarar
+  que alguém não tem histórico, rodar esta auditoria por CNPJ.
+- GAVETA DA METODOLOGIA NO RODAPÉ (31/07/2026, a pedido do usuário). O rodapé citava este arquivo
+  como texto morto; agora o nome do arquivo é CLICÁVEL e abre `openMetodologia()`, que reusa a
+  gaveta `#dr` com a classe `.wide` (560px, `max-width:85vw` segura o celular em ~319px).
+  DECISÃO DE DESENHO: NÃO publicar este .md junto do painel. Ele é documento INTERNO, cheio de
+  decisão datada, cicatriz ("ficou ruim", "o usuário mandou remover") e instrução para o próximo
+  agente. A gaveta é a versão PÚBLICA, escrita para quem chega sem contexto, em oito seções: o que
+  o painel é, mediana sem exclusão, uma rodada por instituto por mês, house effect, os três números
+  do 2º turno, o que a margem de erro não cobre, mapa e estaduais com contratante, fontes por
+  prioridade, e "o que o painel não faz".
+  REGRA AO MEXER: todo número da gaveta é DERIVADO ao vivo (`DI`, `T2R`, `VH2DET`, `PRES26`, `DG`,
+  `CONTR`, `months`, `avgMonth`, `adj2Month`, `t2valid`, `t2stress`, `moeMonth`). NÃO escrever
+  contagem nem lista à mão: instituto novo no `DI` já se reflete sozinho no texto. `closeInst()`
+  tira `.wide`, senão a ficha de instituto abriria larga depois.
+  ERRO QUE EU COMETI E QUE VALE REGISTRAR: escrevi na primeira versão que quem não tem histórico
+  "nunca recebe viés emprestado do campo". É FALSO para o 1º turno, pela distinção do bloco acima:
+  `adjMonth` usa `avies`/`avlula`, que aplicam o default `VHDEF`/`VLDEF`. Só o 2º turno é que não
+  tem default. O texto já foi corrigido para explicar os dois casos. É a SEGUNDA vez que essa
+  confusão morde no mesmo dia.
+- NOME DO CANDIDATO TEM QUE SER IDÊNTICO DENTRO DO MESMO MÊS (02/08/2026). SINTOMA: o painel do
+  Paraná anunciava "Disputa aberta (Moro à frente por 0,9 p.p., dentro da margem)" numa corrida em
+  que o Moro abre 20 pontos. CAUSA: `stateBanner` agrega por NOME (`sums[c[0]]`), e o `DGM` do PR
+  guardava o MESMO candidato como 'Moro' (Paraná Pesquisas) e 'Sergio Moro' (Neokemp, Quaest, IRG).
+  Vira duas pessoas: a média de 'Moro' (39,9) contra a de 'Sergio Moro' (39,0), diferença 0,9, e o
+  banner conclui empate. NÃO é bug de código: o `stateBanner` está certo, o dado é que estava
+  inconsistente. CORRIGIDO em julho nos seis estados afetados (ES Hartung/Paulo Hartung e
+  Salomão/Helder Salomão, PR Moro/Sergio Moro e Greca/Rafael Greca, BA Jerônimo/Jerônimo Rodrigues,
+  RN Cadu/Cadu Xavier e Álvaro/Álvaro Dias, DF Cappelli/Ricardo Cappelli e Grass/Leandro Grass,
+  PI Fonteles/Rafael Fonteles), padronizando sempre no nome COMPLETO.
+  AINDA ABERTO nos meses anteriores (não afetam o banner, que só lê o último mês com rodada, mas
+  sujam o gráfico do estado): BA abr, PE fev, MA mar, AC jun, TO jun, DF jun.
+  REGRA AO INSERIR RODADA ESTADUAL: antes de acrescentar, conferir como o candidato JÁ está escrito
+  naquele UF/mês e repetir exatamente. Detector, que roda em segundos sobre o próprio HTML: para
+  cada UF e mês, listar os nomes e apontar par em que um é substring do outro. CUIDADO com falso
+  positivo de sobrenome comum: 'Joel Rodrigues' x 'Toni Rodrigues' no PI são duas pessoas.
+- SENADO, VAGAS E NEGRITO (21/07/2026). Em 2026 TODOS os 27 estados elegem DOIS senadores: o Senado tem 81 cadeiras, 3 por unidade da federação, renovadas alternadamente em 1/3 (1 vaga) e 2/3 (2 vagas), e 2026 é ano de 2/3 (2014 e 2022 foram 1; 2018 e 2026 são 2). O painel destaca em negrito tantos nomes quantas forem as vagas: 2 no Senado, 1 no Governador. Implementado em `SENVAGAS_PADRAO=2` + `SENVAGAS_UF={}` (override por estado, hoje vazio, para vaga extra por cassação/renúncia/morte) + `senVagas(uf)` + `nDestaque(office,uf)`, consumidos por `stateSinglePoll(d,nb)` e `stateInstTable(monthsObj,nb)`. Não fixar o 2 no código nem voltar a destacar só o primeiro colocado.
+
+O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o estado ATUAL abaixo, nunca versões antigas desta metodologia:
+- O HOUSE EFFECT é de 2º TURNO (Lula x Flávio). Fonte de verdade: objeto `VH2DET` (por instituto: anos das eleições cobertas + erro por eleição = margem da última pesquisa de 2º turno menos a margem da urna TSE); `VHIST2` é DERIVADO como a média desses erros. Valores atuais: Datafolha +0,8 (2010-2022), AtlasIntel +5,0 (2022), Quaest +2,2 (2022), Paraná −6,3 (2018-2022), Meio/Ideia +2,2 (2018-2022). Urna TSE (válidos): 2010 Dilma +12,10 · 2014 Dilma +3,28 · 2018 Haddad −10,26 · 2022 Lula +1,80. NÃO usar house effect de 1º turno (VHIST/VLULA/adjMonth) na aba nem no gráfico. NÃO voltar ao "erro só de 2022".
+- A aba GRÁFICO tem UM ÚNICO gráfico (mudança 09/07/2026, a pedido do usuário): `chartSVG` = "1º turno ajustado pelo house effect". Mesmo estilo de sempre (linhas Lula vermelha / Flávio azul, faixa de erro hachurada, eventos `PEVENTS`, mês recente <3 institutos tracejado/ponto vazado), mas as LINHAS agora plotam os valores AJUSTADOS (`adjMonth`, que aplica VHIST/VLULA por instituto), NÃO os brutos (`avgMonth`). Eixo Y reescalado para 30-44 (`yv(v)=57.5+(44-v)*16.0714`) para caber o ajustado. A legenda diz "Lula (ajustado)"/"Flávio (ajustado)". O `marginChart` (margem do 2º turno) foi REMOVIDO da aba — a função ainda existe no código mas NÃO é mais chamada; não reintroduzir. O house effect do 2º turno continua só na ABA "House effect". NÃO voltar o gráfico para valores brutos (`avgMonth`).
+- As COLUNAS de candidatos na aba Institutos se reordenam pela média do mês (maior à esquerda), objeto `CAND`.
+- Existe 4ª aba MAPA (presidencial por estado) com SELETOR DE ANO (`cur.mapyear`, `window.setMapYear`): 2018/2022 = resultado real do 2º turno por estado (objetos `PRES2018`/`PRES2022`, urna/TSE); 2026 = pesquisas estaduais (`PRES26`, só ~9 estados coloridos). Padrão 2026. 2018/2022 é comparação que o usuário ESCOLHE (não é o padrão nem "a corrida atual"). Estados clicáveis (`window.openPresState`, mostra o ano selecionado). Helper `ufOf` conserta o id quebrado de AC/RO no topojson. Não remover.
+- BARRA DO VOTO POPULAR na aba Mapa (17/07/2026, pedida pelo usuário). Só nos anos 2018 e 2022 (em 2026 não há resultado, `natBar` devolve ''). Barra única horizontal dividida em vermelho (esquerda) e azul (direita), com marcador vertical nos 50% e leitura "X venceu por N pontos". Objeto `PRESNAT` = resultado NACIONAL do 2º turno em votos válidos (TSE): 2018 Haddad 44,87 x Bolsonaro 55,13; 2022 Lula 50,90 x Bolsonaro 49,10. Confere com o anchor do VH2DET (2018 −10,26 · 2022 +1,80) e soma 100 nos dois anos. Serve de contraponto ao mapa: em 2022 a linha dos 50% quase encosta na divisa (Lula +1,8) enquanto a direita venceu em mais estados — é o ponto que o rodapé do mapa já fazia. Não remover nem trocar por média dos estados (seria errado: exige ponderar pelo eleitorado).
+- FAIXA DE FASES DO CALENDÁRIO (20/07/2026). Objeto `CAL` + `CALNOTA` + `calFase()`/`calStrip()`, renderizada na div `#calstrip` (abaixo do banner). Mostra pré-campanha → convenções (20/7-5/8) → registro (até 15/8) → campanha (16/8-3/10) → 1º turno (4/10) → 2º turno (25/10), destacando a fase ATUAL e dizendo quantos dias faltam para a próxima. A fase é calculada ao vivo com `new Date()` (como a contagem regressiva; só o CARIMBO é manual). Aparece nas 3 dimensões e some dentro do painel de um estado. Datas OFICIAIS do TSE (calendário aprovado em 2/3/2026, infográfico JOTA de 4/3/2026) — não alterar sem fonte. Serve de contexto estrutural: até o registro (15/8) o campo de candidatos NÃO está fechado, o que é o que dá sentido às pesquisas que testam substitutos do Flávio; e a partir de 16/8 (rádio e TV) há quebra estrutural, pesquisas de antes e depois não são diretamente comparáveis.
+- RELÓGIO DO AMBIENTE PODE ESTAR ERRADO (descoberto 20/07/2026): o `date` do sandbox estava 3 dias atrasado (dizia 17/07) e eu carimbei o painel com data errada. Para o carimbo e para qualquer conferência de data, pegar a hora pelo NAVEGADOR (`new Date().toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo'})`), não pelo shell. Sintoma que denunciou: matéria da Gazeta com data "futura".
+- REGRA DE FONTE (vale para tudo): prioridade TSE (base primária: resultados + PesqEle) > imprensa/instituto > Wikipédia (só em último caso). O campo `u` (link) aponta para a fonte de maior prioridade obtida.
+- TEMA CLARO/ESCURO (10/07/2026). O painel tem um BOTÃO ÚNICO e discreto (ícone + rótulo, sem preenchimento) na faixa dourada do topo, ACIMA do título e centralizado, div `#themetog`. Cada clique CICLA Sistema → Claro → Escuro → Sistema (ordem em `TORDER`, ícones em `TICO`, rótulos em `TLBL`); `paintToggle()` mostra o modo atual e o onclick vai para o próximo. Preferência em `localStorage['ep-theme']`. NÃO escrever cor literal em lugar nenhum: a paleta vive em custom properties do CSS (`:root`, `:root[data-theme="dark"]` e a media query `prefers-color-scheme` para o modo Sistema). O JS lê a paleta em `P` via `readPal()` (getComputedStyle) e TODO desenho (HTML e SVG) usa `P.surf`, `P.txt`, `P.red`, `P.blue`, `P.ink`, `P.purple`, `P.mut`, etc. O modo escuro usa a paleta "Grafite neutro" (cinza-grafite puro, escolhida pelo usuário em 10/07/2026 entre 4 opções: bg #121212, surf #1c1c1c, band #1f1f1f com título dourado #e0c877, aba ativa roxa #3d3168, sem dominância de cor; o marrom-oliva anterior foi rejeitado). NÃO voltar ao band marrom nem mudar essa paleta sem o usuário pedir. Trocar de tema chama `applyTheme()` → `readPal()` + `render()`, então os SVGs são regerados com as cores novas (por isso não se usa `var()` dentro de atributo de SVG). Exceções propositais que continuam literais: `#fff` como texto branco SOBRE cor forte, e as cores dos candidatos do mapa (Caiado `#2e8b57`, Renan `#7a3fb0`, Zema `#e8730c`, empate `#c9a227`, outros `#9a9a9a`). `PEVENTS[].c` guarda TOKEN ('red'/'blue'), resolvido em `evc()` no render — nunca hex, senão congela no tema do carregamento. `mixw()` mistura a cor do candidato com `P.surf` (não com branco fixo), senão a intensidade do mapa fica errada no escuro.
+- ÍCONES no padrão iOS (20/07/2026). Gerados por `_gera_icones_agregador.py` (mesma receita do `tabelinha/_gera_icones.py` do Self Creighton: squircle superelipse n=5, peça elevada com gradiente próprio, fio de luz na aresta, especular banda+radial para ler como vidro, base escurecida, sombra montada no canvas INTEIRO senão vira halo). Variante escolhida pelo usuário: **medidor** (arco vermelho à esquerda, azul à direita, ponteiro dourado quase de pé com leve inclinação à direita, pivô creme, placa roxa). O script gera PNG (32/64/180/512) e SVG das MESMAS constantes, para não divergirem; `python3 _gera_icones_agregador.py medidor` regera tudo em `icones_agregador/medidor/`. Os arquivos ficam ao lado do HTML em `/home/rafaelcortopassi/electoralpolls/` e o `<head>` os referencia por caminho relativo (favicon.svg, favicon-32/64.png, apple-touch-icon.png de 180px + `apple-mobile-web-app-title`). Isso DEIXOU DE SER data URI: o HTML não é mais 100% autossuficiente para o ícone, mas ganha ícone de tela de início no iOS. Se mudar de variante, rodar o script e subir os 5 arquivos pela API antes de publicar o HTML. Outras variantes prontas no script: barras, anel, curvas.
+- REVISÃO DE RIGOR CIENTÍFICO (10/07/2026, o usuário pediu "todas as alterações sugeridas"). Seis mudanças, todas no sentido de mostrar MENOS certeza do que os dados sustentam:
+  (1) BANNER não mostra mais "X% de chance de vitória" (era `Φ(margem/6)`, com sigma arbitrário e falsa precisão sobre um empate). Agora mostra faixa qualitativa: se |margem| < 2×moeMonth = "Empate técnico" (com a margem entre parênteses, "dentro da margem"); senão "leve vantagem" (< 4×moe) ou "vantagem clara". Segunda linha em cinza: "Foto do [ctx] em [mês], não é previsão para outubro · faltam N dias para o 1º turno (4/out)". N vem de `new Date()` (contagem regressiva é legitimamente ao vivo; só o CARIMBO é manual). Hoje mai/jun/jul dão todos "empate técnico". O `stateBanner` (governador/senador) ganhou a mesma lógica com marMoe fixo=5 ("Disputa aberta"/"leve vantagem"/"vantagem clara"). `ncdf` virou código morto.
+  (2) HOUSE EFFECT REGULARIZADO: o viés medido é ENCOLHIDO na direção de zero por `shrink(b,n)=b*n/(n+1)` (n=nº de eleições, `hn()`), porque 1 eleição não é tendência. Aplicado via `avies2/avies/avlula` (usados por adjMonth, adj2Month, aba House effect e banner); `vies2/vies/vlula` seguem crus (usados na gaveta e na coluna "medido"). ATUALIZADO 20/07/2026: o `VH2DET` passou de 5 para 9 institutos (acrescentados CNT/MDA 2014-2022 e Apex/Futura, PoderData, Gerp só 2022; Apex/Futura herda a linhagem Modalmais/Futura). Aplicado (medido→aplicado): Datafolha +0,8→+0,6 (4 el.), CNT/MDA −2,3→−1,7 (3 el.), Paraná −6,3→−4,2 (2 el.), Meio/Ideia +2,2→+1,5 (2 el.), AtlasIntel +5,0→+2,5, Quaest +2,2→+1,1, PoderData +4,2→+2,1, Apex/Futura −2,4→−1,2, Gerp −5,8→−2,9 (1 el. cada). NOTA: o Nexus/BTG chegou a entrar (só 2018, pesquisa NÃO-final, aplicado −4,9) mas foi REMOVIDO no mesmo dia, a pedido do usuário, por ser frágil demais — não reintroduzir sem pesquisa final vs urna. Cabeçalho da aba virou "Ajustada (viés regularizado)".
+  (3) AGREGADO = MEDIANA, SEM EXCLUSÃO (mudança 20/07/2026, a pedido do usuário). Antes: média simples com `OUTLIERS={Veritá, Vetor/Arrow}` excluídos. Agora: `OUTLIERS={}` VAZIO e todo o agregado usa a função `med()` (mediana) no lugar da média — avgMonth, adjMonth, adj2Month, moeMonth, cavg/cavgFor. Motivo: a mediana é naturalmente robusta a outlier, então ninguém precisa ser excluído (o problema clássico do RCP é a média deixar um outlier distorcer o consenso; a mediana resolve sem julgar quem é "outlier"). `isOut()` continua existindo mas sempre retorna false com o objeto vazio. Rodapés das abas Institutos e Gráfico dizem "MEDIANA de TODOS os institutos (não a média)". NÃO reintroduzir exclusão nem voltar para média.
+  (4) TENDÊNCIA: setinha ▲/▼ + delta no cabeçalho de cada coluna da tabela de Institutos (`trendArrow`/`cavgFor`, agregado do mês vs mês anterior).
+  (5) FAIXA DE ERRO do gráfico rotulada como "margem de erro TÍPICA de uma pesquisa (não do agregado)".
+  (6) RESSALVAS nos rodapés: indecisos (Br/N/Ind) não são realocados no 2º turno; mercados Polymarket/Kalshi são cotação de 1/7/2026 que não atualiza sozinha.
+- BASE DO 2º TURNO na aba House effect (17/07/2026). A aba mostra uma faixa com quantos institutos publicaram cenário de 2º turno em CADA mês (helper `t2cov(m)` → [publicaram, total do mês], já sem outliers). Cores: 0 = cinza, 1-2 = dourado (base fina), 3+ = normal. Quando o mês tem menos de 3, aparece o aviso "Base fina: o ajuste de X se apoia em N institutos só". Motivo: o ajuste de mar/abr/mai se apoia em só 2 institutos cada (mai = AtlasIntel e Gerp, que puxam para lados opostos), contra 6 em jun/jul. Não escrever o mês de comparação à mão: usa `months[months.length-1]`.
+- JUDICIALIZAÇÃO DO 2º TURNO (risco a monitorar, NÃO é ressalva do painel). Matéria da Gazeta de 03/07/2026 (Gustavo Ribeiro): institutos pararam de perguntar 2º turno por medo de impugnação; partidos exigem que os cenários incluam todos os pré-candidatos e vêm ganhando nos TREs; sem jurisprudência uniforme porque quase nada chega ao TSE. IMPORTANTE: cheguei a propor uma ressalva no painel dizendo que "a amostra de 2º turno está encolhendo", e os DADOS DERRUBARAM isso — a cobertura nacional está CRESCENDO (jan 0, fev 0, mar 2, abr 2, mai 2, jun 6/11, jul 6/6). A matéria fala de pesquisas DE GOVERNADOR em estados específicos, não do presidencial nacional. NÃO adicionar essa ressalva ao painel sem antes rodar `t2cov` e checar se a cobertura realmente caiu. Cicatriz real e já sinalizada: o 1º turno do Flávio na AtlasIntel de maio foi vetado por liminar (Kassio) e o 34* é reconstruído.
+- Ao atualizar dados, AVANÇAR o carimbo "Última atualização: DD/MM/AAAA HH:MM" (é manual).
+
+Estrutura do painel: QUATRO abas no topo (acima dos meses):
+- Aba "Institutos": dados BRUTOS por instituto; colunas de candidatos ordenadas pela média do mês (objeto `CAND`); Br/N/Ind; 2º turno. Headline = caixas Polymarket + Kalshi.
+- Aba "House effect": 2º TURNO Lula x Flávio. Por instituto: margem bruta do 2º turno → ajustada pelo viés histórico dele = média do erro em TODAS as eleições que cobriu (`VH2DET`→`VHIST2`: Datafolha +0,8 [2010-2022], AtlasIntel +5,0 [2022], Quaest +2,2 [2022], Paraná −6,3 [2018-2022], Meio/Ideia +2,2 [2018-2022]; só esses 5 têm histórico, resto "sem histórico"). Cada linha mostra os anos usados; o cabeçalho é "Ajustada (viés histórico vs urna)". Funções `adj2Month`/`t2margin`/`vies2`/`vies2anos`/`vies2n`/`has2`/`m2str`.
+- Aba "Gráfico": linha do tempo do 1º turno AJUSTADO pelo house effect, `chartSVG()` (plota `adjMonth`, não `avgMonth`). Vermelho = Lula, azul = Flávio, faixa hachurada = margem de erro em torno da linha ajustada, linhas pontilhadas verticais numeradas = eventos (`PEVENTS`). Mês recente com <3 institutos = tracejado/ponto vazado (provisório). Um único gráfico (o marginChart do 2º turno foi removido daqui em 09/07/2026).
+- Aba "Mapa": mapa do Brasil com seletor de ano 2018/2022/2026 (botões chamam `setMapYear`). Vermelho = esquerda/PT (Haddad 2018, Lula 2022/2026), azul = direita (Bolsonaro 2018/2022, Flávio 2026). 2018/2022 colorem todos os estados (resultado de urna); 2026 só os ~9 com pesquisa, resto bege. Estados clicáveis abrem gaveta com o dado do ano + fonte (TSE p/ urna, instituto p/ pesquisa). Funções `presLead` (lê `cur.mapyear`)/`drawPresMap`/`openPresState`; helper `ufOf`.
+Objeto de dados a manter: `DI` (brutos por instituto, jan-jul). Ao atualizar números, acrescentar rodadas ao `DI`; house effect (2º turno), gráfico e mapa derivam dele. O objeto `VHIST`/`VLULA` (1º turno) ainda existe só para a gaveta lateral, NÃO para o gráfico.
+
+## Fontes dos dados
+
+- Agregador Wikipédia: "Pesquisas de opinião para a eleição presidencial no Brasil em 2026" (base principal, por instituto e mês).
+- Agregador Gazeta do Povo (eleicoes/2026/pesquisa-eleitoral-2026).
+- Fontes primárias dos institutos e cobertura (CNN, Poder360, Exame, InfoMoney).
+
+## Três métricas no painel
+
+1. Média simples (estilo RCP): média aritmética não ponderada das pesquisas do mês, uma rodada (a mais recente) por instituto.
+2. Média ajustada por house effect (estilo 538): cada pesquisa é corrigida pelo viés do instituto antes de agregar.
+3. Odds (probabilidade estimada de vitória): derivada da margem do 2º turno.
+
+## Notas dos institutos (calibragem)
+
+Calibradas pelo desempenho histórico: 2022 (1º turno real Lula 48,4% x Bolsonaro 43,2%; a maioria subestimou a direita; AtlasIntel foi a mais próxima) e 2024 municipais (AtlasIntel melhor desempenho geral, mais precisa em 13 disputas).
+
+| Nota | Peso | Institutos |
+|---|---|---|
+| A+ | 1,00 | AtlasIntel |
+| A | 0,90 | Quaest |
+| A- | 0,80 | Datafolha, Ipespe |
+| B | 0,55-0,60 | CNT/MDA, Nexus/BTG, PoderData, Paraná Pesquisas |
+| B- | 0,50 | Real Time Big Data |
+| C | 0,35 | Gerp, Apex/Futura, Veritá, Vetor/Arrow, Meio/Ideia, Indexa, Alfa, American Analytics |
+
+Padrão de viés conhecido: AtlasIntel, Veritá, Vetor/Arrow e Gerp medem a direita mais forte; Quaest, Datafolha, CNT/MDA medem a direita mais fraca.
+
+## House effect 1º turno (VIÉS HISTÓRICO vs urnas) — SUPERADO, só registro histórico
+
+NOTA (jul/2026): esta seção descreve o house effect ANTIGO, de 1º turno (VHIST/VLULA/adjMonth). Foi SUBSTITUÍDO pelo house effect de 2º turno (objeto `VHIST2`, ver bloco "NÃO REVERTER" no topo). NÃO aplicar ao painel atual nem ao gráfico. Mantido abaixo apenas como registro.
+
+Base mudada em 29/06/2026: de "desvio vs consenso 2026" para VIÉS HISTÓRICO frente ao RESULTADO REAL das urnas, desde 2010 ou desde quando o instituto tem dados.
+
+Backtest 1º turno (pesquisa final de véspera vs urna): nas 4 últimas eleições a direita foi SUBESTIMADA (2014 Aécio +7,6; 2018 Bolsonaro +10; 2022 Bolsonaro +6 a +7), enquanto a esquerda foi medida com razoável precisão (Lula 2022 superestimado só ~2). Logo a correção incide quase toda no candidato da DIREITA (Flávio).
+
+Viés histórico aplicado (pontos somados ao Flávio bruto), objeto JS `VHIST`:
+- Datafolha +7 (2014, 2018, 2022)
+- Quaest +3 (2022)
+- Paraná Pesquisas +3 (2022)
+- AtlasIntel +2 (2022; a mais acurada)
+- Demais institutos: SEM ajuste (não mediram presidencial anterior; marcados "sem histórico"). Default removido em 30/06/2026.
+
+Ajuste dos DOIS lados, ANCORADO NO ERRO MÉDIO REAL DE CADA INSTITUTO vs urnas (científico, não número redondo). Base: 2022 (votos válidos, urna Lula 48,4 / Bolsonaro 43,2), e Datafolha multi-eleição (2010-2022).
+
+Erro de cada candidato por instituto, objetos JS `VHIST` (direita) e `VLULA` (esquerda):
+- Direita subestimada (soma ao Flávio): Datafolha +7,2 · Quaest +3,2 · Paraná +3,2 · AtlasIntel +2,1.
+- Esquerda superestimada (subtrai do Lula): Datafolha +1,6 · AtlasIntel +1,9 · Quaest +1,6 · Paraná −1,3 (a Paraná SUBESTIMAVA o Lula, então some).
+
+ATUALIZAÇÃO 30/06/2026 (a pedido do usuário): REMOVIDO o default da "média do conjunto" para institutos sem histórico. `vies()` e `vlula()` retornam 0 quando o instituto não tem valor próprio. SÓ os 4 institutos com histórico real vs urnas (Datafolha, Quaest, Paraná, AtlasIntel) são ajustados; os demais entram no agregado SEM ajuste e aparecem marcados "sem histórico" (cor #b08900) na coluna Viés. Motivo: a maioria dos institutos novos (Nexus, Indexa, Apex, Vox, Gerp, etc.) não mediu a presidencial de 2022, então um default era chute, não ciência. **[CORREÇÃO 31/07/2026: a LISTA desta frase envelheceu, embora a DECISÃO de não usar default siga valendo e por esse mesmo motivo. Apex/Futura e Gerp foram atrás e TÊM house effect desde 20/07/2026 (Apex −2,4, Gerp −5,8, ambos de 2022); PoderData, RTBD e Veritá também entraram depois. Quem de fato não pode ter, auditado por CNPJ, é Alfa e Vox Brasil, e o Nexus/BTG foi removido de propósito por fragilidade. Ver o bloco "QUEM PODE TER HOUSE EFFECT: AUDITORIA POR CNPJ" no topo; a fonte de verdade é sempre o `VH2DET` do código, não esta lista.]** Achado científico mantido: o erro da direita (+2 a +7) é muito maior que o da esquerda (~+1,6), e a Paraná inverte o sinal na esquerda. Lula_aj = Lula − VLULA; Flávio_aj = Flávio + VHIST. Aba House effect calcula ao vivo do `DI`.
+
+Efeito (sem default) por mês — bruto => ajustado: fev 39,7/34,4 => 39,4/35,6 · mar 39,2/36,0 => 38,4/37,7 · abr 40,4/35,4 => 39,6/37,4 · mai 40,3/34,1 => 39,9/35,1 · jun 40,1/32,0 => 39,8/32,9. Lula fica à frente no ajustado em TODOS os meses (março é o mais apertado, +0,7). O Flávio não cruza mais o Lula no 1º turno. Gráfico (chartSVG) agora é DINÂMICO: calcula brutos via avgMonth e ajustados via adjMonth, sem pontos chumbados. Texto "House Effect: desvio padrão histórico e sistemático..." adicionado na aba (div #heexpl, acima da legenda).
+
+Central de notificações (gaveta lateral): ao clicar no nome do instituto mostra método, amostra (N), margem, ÚLTIMA PUBLICAÇÃO (data de campo) e LINK da fonte (objeto `IM`, campos `d` e `u`; Gazeta do Povo para alguns, Wikipédia para o resto).
+
+Indicador "quem está à frente" (banner discreto acima das abas): mostra líder + % de chance de vitória do mês selecionado. Calculado do AGREGADO AJUSTADO (house effect): margem = Lula_aj − Flávio_aj; P = Φ(|margem|/6) via função `ncdf` (aprox. Abramowitz-Stegun); helper `adjMonth`. Desde a remoção do default (30/06/2026), o banner mostra Lula à frente em todos os meses (margem ajustada mínima +0,7 em março). Atualiza ao trocar o mês.
+
+Base de institutos: campo brasileiro 2026 ativo tem ~17 institutos (todos no painel). "Times Brasil" = pesquisa da American Analytics (mesmo dado). Ipsos-Ipec só publicou dez/2025 (fora do recorte). Ipespe faz o Índice CNN (agregador), não horse-race próprio. A base já é praticamente o campo completo; o diferencial é frescor (monitorar) e metodologia.
+
+Limitações: o "erro final vs urna" combina house effect + movimento de reta final (indecisos decidindo) + comparecimento, não é house effect puro; aplicar o viés de pesquisa FINAL a uma pesquisa de junho (4 meses antes) é heurística, não previsão; a amostra histórica é curta (no máximo 4 eleições, 2010-2022, e a maioria dos institutos só tem 1 ou 2); só 5 institutos têm histórico próprio (Datafolha 4, Paraná e Meio/Ideia 2, Quaest e AtlasIntel 1 cada), o resto entra sem ajuste. Institutos com 1 só eleição (Quaest, AtlasIntel) têm viés pouco robusto — é 1 ponto, não uma média.
+
+## Odds (probabilidade de vitória)
+
+Não há mercado de apostas brasileiro (o RCP usa Polymarket). Estimativa estatística própria:
+
+    P(Lula vencer) = Φ(margem_2º_turno / s),  com s = 6 pontos
+
+- Φ = função de distribuição acumulada da normal padrão.
+- margem_2º_turno = % Lula − % Flávio no 2º turno (positivo = Lula na frente).
+- s = 6 representa a incerteza a meses da eleição (out/2026). Parâmetro ajustável: s menor deixa odds mais extremas; s maior aproxima de 50%.
+
+Odds por instituto só existe quando o instituto publicou 2º turno; senão fica em branco ("—"), como o "Latest Polls" do RCP.
+
+## Convenção de cores
+
+- Vermelho (#c01f2e) = Lula na frente.
+- Azul (#1f3fd0) = Flávio na frente.
+- Coluna "2º turno": mostra o líder e a margem (ex.: "Lula +4" vermelho; "Flávio +2" azul).
+- Coluna "Odds Lula": vermelho se >= 50%, azul se < 50%.
+
+## Margem de erro
+
+Mostrada ao lado do nome do instituto, em cinza, no formato "±2,0" (pontos percentuais). Vem da mesma fonte. É quase constante por instituto (AtlasIntel ±1,0; Vetor/Arrow ±1,0; maioria ±2,0 a ±2,2; Meio/Ideia ±2,5; Alfa ±2,6). No painel usa-se um valor representativo por instituto (objeto JS `MOE`); algumas rodadas variam por décimos (ex.: Gerp ±2,19 a ±2,24).
+
+## Coluna Br/N/Ind (brancos, nulos e indecisos)
+
+A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm num único número "brancos, nulos e indecisos/não sabe". A coluna usa esse valor reportado, não é estimativa, exceto a indecisão da Atlas em março (interpolada a partir dos outros meses dela, que ficam entre 1,9% e 5,3%). Para um split puro de brancos/nulos seria preciso o crosstab de cada pesquisa, que os institutos raramente publicam.
+
+## Notas de dados
+
+- AtlasIntel maio: 1º turno do Flávio (34*) é reconstruído. O número foi vetado pelo TSE (liminar de Kassio Nunes Marques, 8/6/2026). Reconstruído a partir do 2º turno divulgado (Lula 48,9 x Flávio 41,8) e da diferença histórica ~8 pts entre 1º e 2º turno da Atlas.
+- AtlasIntel: rodou jan, fev, mar, abr, mai. Não publicou em junho.
+- Janeiro: campo fragmentado (Tarcísio e Haddad ainda candidatos); só Atlas e Apex mediam Flávio de forma comparável.
+- Em meses com várias rodadas do mesmo instituto, usar a mais recente do mês.
+
+## Como atualizar
+
+1. Coletar as novas rodadas (Wikipédia/Gazeta/institutos).
+2. Acrescentar ao objeto `D` no JS do HTML (uma linha por instituto: nome, Lula, Flávio, Caiado, Zema, Renan, 2º turno, Odds, flagAtlas).
+3. Recalcular o consenso do mês, os house effects e as odds (Φ(margem/6)).
+4. Atualizar as caixas "Odds mês" (agregado do mês).
+
+Snapshot atual: até 29/06/2026. Agregado de junho (simples): Lula 40,1 x Flávio 32,0. Ajustado: Lula 40,4 x Flávio 32,7. Odds mês Lula 67%.
