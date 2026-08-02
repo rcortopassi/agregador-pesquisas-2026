@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 02/08/2026 14:18</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 02/08/2026 15:19</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1165,6 +1165,10 @@
     var dimTabs=document.getElementById('dim-tabs').children;
     for(var z=0;z<dimTabs.length;z++){ var dk=dimTabs[z].getAttribute('data-d'); dimTabs[z].style.background=dk===cur.dim?P.purple:P.surf3; dimTabs[z].style.color=dk===cur.dim?'#fff':P.ink; }
     var pres=(cur.dim==='pres');
+    // O painel de um estado (aberto pelo mapa de Governador/Senador) só era escondido dentro do
+    // ramo !pres, então voltar para Presidente deixava o estado pendurado embaixo da tela do
+    // presidente (relatado em 02/08/2026, com o DF). Esconde aqui, que vale para os dois ramos.
+    if(pres) document.getElementById('statepanel').style.display='none';
     document.getElementById('mapa').style.display=pres?'none':'block';
     document.getElementById('banner').style.display=pres?'flex':'none';
     // Faixa de fases do calendário: vale para as 3 dimensões, some só dentro do painel de um estado.
