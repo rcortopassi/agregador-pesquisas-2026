@@ -256,6 +256,10 @@ O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o e
   SENADOR, onde o eleitor tem dois votos, entra a **Porcentagem de casos** do bloco "CONSOLIDAÇÃO DAS
   PERGUNTAS X E Y", também conferido contra junho (Deltan 35,6). Ler a coluna errada infla o
   instituto em 6 a 10 pontos e faz parecer house effect o que é só base diferente.
+  RITMO DE PUBLICAÇÃO (visto em 02/08/2026): a data de divulgação do registro no TSE chega ANTES
+  da íntegra aparecer na home do instituto. Naquele dia o TSE já listava as rodadas de PR, AP, AM
+  e PA com divulgação em 2 e 3/8, e a home só tinha PR e MA. Não vale insistir nem procurar em
+  portal local: sem PDF, o número não existe ainda, e a rodada seguinte da tarefa pega.
 - MÊS DE UMA RODADA QUE ATRAVESSA A VIRADA (02/08/2026). Rodada com campo em dois meses entra no mês
   em que o campo TERMINA, que é também como o próprio instituto batiza o relatório. Precedente que
   fixou a regra: a nota do `DI` de agosto já tratava a Nexus de campo 31/7 a 2/8 como a primeira
