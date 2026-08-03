@@ -2,32 +2,11 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 03/08/2026 04:39. Mercados: Polymarket 65,5%/24,8%, Kalshi 67,0%/24,0%.
+Rodada de 03/08/2026 10:17. Mercados: Polymarket 65,5%/24,9%, Kalshi 67,0%/24,0%.
 
 ## Precisa de olho humano nesta rodada
 
-- NOVO no TSE: AC, ATLASINTEL (Governador, Senador), campo 28/07-02/08, divulgação 2026-08-03, N=1000, registro AC078152026
-- NOVO no TSE: AL, DATATRENDS (Governador, Senador), campo 31/07-02/08, divulgação 2026-08-03, N=1200, registro AL088832026
-- NOVO no TSE: BA, #NULO# (Governador, Senador), campo 31/07-02/08, divulgação 2026-08-03, N=1400, registro BA030432026
-- NOVO no TSE: BA, PUBLIVENDE ASSSSSORIA E COMU (Governador, Senador), campo 29/07-01/08, divulgação 2026-08-03, N=2000, registro BA091332026
-- NOVO no TSE: BA, 100 CIDADES (Governador, Senador), campo 24/07-25/07, divulgação 2026-08-03, N=1000, registro BA079242026
-- NOVO no TSE: ES, AGILI PESQUISAS (Governador, Senador), campo 27/07-31/07, divulgação 2026-08-03, N=800, registro ES089122026
-- NOVO no TSE: ESTADUAL[AC], ATLASINTEL (Presidente), campo 28/07-02/08, divulgação 2026-08-03, N=1000, registro BR093322026
-- NOVO no TSE: ESTADUAL[AL], DATATRENDS (Presidente), campo 31/07-02/08, divulgação 2026-08-03, N=1200, registro BR062782026
-- NOVO no TSE: ESTADUAL[BA], 100 CIDADES (Presidente), campo 24/07-25/07, divulgação 2026-08-03, N=1000, registro BR013272026
-- NOVO no TSE: ESTADUAL[PA], VERITA (Presidente), campo 28/07-01/08, divulgação 2026-08-03, N=1525, registro BR098852026
-- NOVO no TSE: ESTADUAL[PI], INSTITUTO DE PESQUISA DATA A (Presidente), campo 20/07-27/07, divulgação 2026-08-03, N=1200, registro BR059082026
-- NOVO no TSE: ESTADUAL[SE], REAL TIME BIG DATA (Presidente), campo 28/07-01/08, divulgação 2026-08-03, N=1600, registro BR076962026
-- NOVO no TSE: NACIONAL?, NEXUS (Presidente), campo 31/07-02/08, divulgação 2026-08-03, N=2000, registro BR028742026
-- NOVO no TSE: NACIONAL?, 100 CIDADES (Presidente), campo 27/07-28/07, divulgação 2026-08-03, N=1000, registro BR054252026
-- NOVO no TSE: NACIONAL?, BADRA COMUNICACAO (Presidente), campo 29/07-31/07, divulgação 2026-08-03, N=1060, registro BR082462026
-- NOVO no TSE: PA, VERITA (Governador, Senador), campo 28/07-01/08, divulgação 2026-08-03, N=1525, registro PA012722026
-- NOVO no TSE: PB, INSTITUTO RANKING PESQUISA (Governador, Senador, Deputado Fede), campo 29/07-30/07, divulgação 2026-08-03, N=782, registro PB098222026
-- NOVO no TSE: PI, INSTITUTO DE PESQUISA DATA A (Governador, Senador, Deputado Fede), campo 20/07-27/07, divulgação 2026-08-03, N=1200, registro PI079102026
-- NOVO no TSE: RJ, PREFAB FUTURE (Governador), campo 26/07-29/07, divulgação 2026-08-03, N=2000, registro RJ027702026
-- NOVO no TSE: SE, REAL TIME BIG DATA (Governador, Senador), campo 28/07-01/08, divulgação 2026-08-03, N=1600, registro SE073272026
-- NOVO no TSE: SP, INTELLIGENCE PESQUISA E COMU (Governador, Senador, Deputado Fede), campo 27/07-29/07, divulgação 2026-08-03, N=1100, registro SP049112026
-- NOVO no TSE: TO, BRASMARKET (Governador, Senador), campo 29/07-31/07, divulgação 2026-08-03, N=1200, registro TO028482026
+Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
 
 ## Últimas publicações do Veritá
 
