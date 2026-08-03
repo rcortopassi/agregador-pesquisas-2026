@@ -32,8 +32,30 @@ ARQUIVO = BASE / "electoralpolls.html"
 # Caminho ABSOLUTO de proposito: o repositorio nao fica mais ao lado da pasta do painel,
 # e a alternativa (symlink "painel" dentro do repo) ja foi tentada em 02/08/2026 e e pior,
 # porque o symlink acaba versionado e aponta para fora do repositorio.
-ENV     = Path("/Users/rafael/Library/CloudStorage/GoogleDrive-rafael@dfcarvalho.com.br"
-               "/Meu Drive/Brasília - Freire Carvalho/Claude/painel/.env")
+def _acha_env():
+    """Onde procurar o .env quando NAO ha variavel de ambiente (caso do Mac).
+
+    AGREGADOR_ENV manda, se estiver definida. Senao, procura a pasta do Google
+    Drive por padrao em vez de caminho literal: o literal trazia o e-mail do
+    dono dentro do nome da pasta, o que nao e segredo mas tambem nao precisa
+    ficar num repositorio publico. Varrer tambem sobrevive a trocar de conta.
+
+    Symlink "painel" dentro do repositorio ja foi tentado em 02/08/2026 e e
+    pior: acaba versionado e apontando para fora do repositorio.
+    """
+    manual = os.environ.get("AGREGADOR_ENV")
+    if manual:
+        return Path(manual)
+    raiz = Path.home() / "Library" / "CloudStorage"
+    for drive in sorted(raiz.glob("GoogleDrive-*")):
+        for conta in sorted(drive.glob("*")):
+            alvo = conta / "Brasília - Freire Carvalho" / "Claude" / "painel" / ".env"
+            if alvo.exists():
+                return alvo
+    return raiz / "painel" / ".env"      # inexistente: erra com mensagem clara
+
+
+ENV     = _acha_env()
 REMOTO  = "electoralpolls"                   # /home/<user>/electoralpolls/
 API     = "https://www.pythonanywhere.com"
 

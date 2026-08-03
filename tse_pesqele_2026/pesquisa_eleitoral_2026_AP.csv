@@ -1,0 +1,322 @@
+"DT_GERACAO";"HH_GERACAO";"AA_ELEICAO";"CD_ELEICAO";"NM_ELEICAO";"SG_UF";"SG_UE";"NM_UE";"NR_PROTOCOLO_REGISTRO";"DT_REGISTRO";"ST_PESQUISA_PROPRIA";"NR_CNPJ_EMPRESA";"NM_EMPRESA";"NM_EMPRESA_FANTASIA";"DS_CARGO";"DT_INICIO_PESQUISA";"DT_FIM_PESQUISA";"DT_DIVULGACAO";"QT_ENTREVISTADO";"CD_CONRE";"NM_ESTATISTICO_RESP";"VR_PESQUISA";"DS_METODOLOGIA_PESQUISA";"DS_PLANO_AMOSTRAL";"DS_SISTEMA_CONTROLE";"DS_DADO_MUNICIPIO"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP007672026";"2026-03-11 18:51:27";"S";"81908345000140";"INSTITUTO PARANA DE PESQUISAS E ANALISE DE CONSUMIDOR LTDA";"#NULO#";"Governador, Senador";"2026-03-12 00:00:00";"2026-03-15 00:00:00";"2026-03-17 00:00:00";1220;"10245 - 4ª Região";"Tatiani Cristina Ara";"35000,00";"Pesquisa com metodologia quantitativa, com a realização de entrevistas pessoais, domiciliares e presenciais, utilizando questionário estruturado junto a uma amostra representativa do eleitorado do Estado do Amapá.
+
+
+";"""A amostra será representativa do eleitorado da área pesquisada e será selecionada em três etapas. Na primeira etapa realiza-se um sorteio probabilístico dos municípios onde as entrevistas serão realizadas através do método PPT (Probabilidade Proporcional ao Tamanho), considerando a população eleitora com 16 anos ou mais residente nos municípios como base para essa seleção. Na segunda etapa, faz-se um sorteio probabilístico das localidades, onde as entrevistas serão realizadas, através do método PPT (Probabilidade Proporcional ao Tamanho), tomando a população eleitora de 16 anos ou mais residente nas localidades como base para essa seleção. Na terceira etapa, a seleção do entrevistado dentro da localidade, será feita utilizando-se quotas amostrais proporcionais, em função das seguintes variáveis:
+GÊNERO: TSE Fevereiro 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_metricas=E&p24_back=22&p24_cruzamento_1=ds_sexo&clear=24&p0_uf=AP&p0_mes=2&debug=LEVEL5&session=312990078978641)
+Masculino - 49%; |
+Feminino - 51%; |
+FAIXA ETÁRIA: TSE Fevereiro 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_faixa_etaria&p24_metricas=E&p24_back=22&clear=24&p0_uf=AP&p0_mes=2&debug=LEVEL5&session=8904950028837)
+Entre 16 e 24 anos: 17%; |
+Entre 25 e 34 anos: 24%; |
+Entre 35 e 44 anos: 21%; |
+Entre 45 e 59 anos: 23%; |
+Com 60 anos ou mais: 15%; |
+ESCOLARIDADE: TSE Fevereiro 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_grau_instrucao&p24_metricas=E&p24_back=22&clear=24&p0_uf=AP&p0_mes=2&debug=LEVEL5&session=309383598034615)
+De analfabeto até ensino fundamental completo: 33%; |
+Ensino médio incompleto ou completo: 50% |
+Ensino superior incompleto ou completo: 17% |
+RENDA DOMICILIAR MENSAL:  (https://cidades.ibge.gov.br/brasil/ap/pesquisa/23/24304) IBGE - Censo 2010. Observação: Conforme informações obtidas do Instituto Brasileiro de Geografia e Estatística, o IBGE, não divulgou - e não tem previsão - de data para divulgação do perfil econômico (nível econômico) da população brasileira; portanto, os dados quanto ao nível econômico obtidos no Censo 2022, não podem ser utilizados, pois não foram publicados. (https://censo2022.ibge.gov.br/panorama/)
+Sem rendimentos até 2 salários mínimos: 48% |
+Mais de 2 a 5 salários mínimos: 29% |
+Mais de 5 salários mínimos: 23% |
+Está prevista eventual ponderação para correção das variáveis gênero e faixa etária, com base nos percentuais acima apresentados, caso ocorram diferenças superiores a 3,0 (três) pontos percentuais entre o previsto na amostra e a coleta realizada; para as variáveis escolaridade e renda domiciliar mensal, o fator de ponderação é igual a 1 (resultados obtidos no campo). O nível de confiança estimado é de 95% (noventa e cinco por cento) para uma margem de erro estimada, considerando uma técnica de amostragem aleatória simples, de aproximadamente 2,9 (dois vírgula nove) pontos percentuais para mais ou para menos sobre os resultados obtidos.""
+
+
+
+
+
+";"""As entrevistas serão conduzidas por uma equipe de entrevistadores e supervisores devidamente qualificados pelo Instituto Paraná Pesquisas, todos com experiência e treinamento específico em pesquisas de opinião pública. 
+Controle: O controle do processo será realizado por meio de um software de coleta de dados, o qual permitirá o monitoramento garantindo o cumprimento das cotas amostrais.
+Conferência e Fiscalização: Durante a coleta de dados os questionários aplicados são fiscalizados e conferidos através de um supervisor.   
+Adicionalmente, pelo menos 30% dos questionários passarão por uma verificação posterior, que avaliará a precisão na aplicação e a adequação dos entrevistados às variáveis das quotas amostrais. Ou seja, no mínimo 366 entrevistas desta pesquisa serão auditadas pela equipe de qualidade do Instituto Paraná Pesquisas, podendo essa auditoria ser solicitada ao Instituto a qualquer momento.
+Verificação: Após a coleta, os questionários passam por uma etapa de verificação e validação dos dados, para garantir a integridade e precisão dos dados coletados.""
+
+
+
+
+
+";" ""A pesquisa será realizada no Estado do Amapá, a relação dos dados relativos aos municípios e às localidades será apresentado até o dia seguinte à data a partir da qual a pesquisa puder ser divulgada, conforme §7º do art. 2º da Resolução-TSE nº. 23.600/2019""
+
+
+
+
+
+"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP029702026";"2026-07-18 19:09:26";"S";"22345021000181";"REAL TIME MIDIA LTDA";"REAL TIME BIG DATA";"Governador, Senador";"2026-07-19 00:00:00";"2026-07-23 00:00:00";"2026-07-24 00:00:00";1600;"10839";"Isabela Zara Cremoneze";"24000,00";"Pesquisa quantitativa, que consiste na realização de entrevistas com eleitores do universo a ser explorado, feitas em combinação mista por entrevistadores humanos e recursos de inteligência artificial, com a aplicação de questionário estruturado com abordagens telefônicas e digitais junto a uma amostra representativa do eleitorado em estudo. Pesquisa realizada no Estado do Amapá (AP).";"Representativo do eleitorado da área em estudo, elaborada em três estágios. 
+No primeiro estágio, realiza-se um sorteio probabilístico dos municípios onde as entrevistas serão realizadas, pelo método PPT (Probabilidade Proporcional ao Tamanho), tomando a população eleitora de 16 anos ou mais residente nos municípios como base para essa seleção.
+No segundo estágio, efetua-se um sorteio probabilístico das localidades dentro dos municípios selecionados, também pelo método PPT (Probabilidade Proporcional ao Tamanho), considerando a população eleitora de 16 anos ou mais residente nessas localidades como base para a seleção.
+No terceiro e último estágio, dentro das localidades sorteadas, os respondentes são selecionados por meio de quotas amostrais proporcionais, em função de variáveis significativas, a saber:
+
+GÊNERO:
+Feminino: 51,38%;
+Masculino: 48,62%.
+(Fonte: TSE, Junho/2026 -- https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_metricas=E&p24_back=22&p24_cruzamento_1=ds_sexo&clear=24&session=201604376273609)
+FAIXA ETÁRIA:
+16 anos: 1,19%;
+17 anos: 1,61%;
+18 a 20 anos: 6,44%;
+21 a 24 anos: 9,18%;
+25 a 34 anos: 23,55%;
+35 a 44 anos: 20,86%;
+45 a 59 anos: 22,69%;
+60 a 69 anos: 8,31%;
+70 a 79 anos: 4,22%;
+Superior a 79 anos: 1,95%.
+(Fonte: TSE, Junho/2026 -- https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_faixa_etaria&p24_metricas=E&p24_back=22&clear=24&session=201604376273609)
+ESCOLARIDADE:
+Analfabeto: 3,23%;
+Lê e Escreve: 4,41%;
+Ensino Fundamental Incompleto: 19,77%;
+Ensino Fundamental Completo: 5,18%;
+Ensino Médio Incompleto: 22,13%;
+Ensino Médio Completo: 28,15%;
+Ensino Superior Incompleto: 7,00%;
+Ensino Superior Completo: 10,13%.
+(Fonte: TSE, Junho/2026 -- https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_grau_instrucao&p24_metricas=E&p24_back=22&clear=24&session=201604376273609)
+
+RENDA DOMICILIAR MENSAL:
+Sem rendimento: 5,3%;
+Até 1/2 Salário Mínimo: 3,9%;
+Mais de 1/2 a 1 Salário Mínimo: 15,7%;
+Mais de 1 a 2 Salários Mínimos: 23,6%;
+Mais de 2 a 5 Salários Mínimos: 28,8%;
+Mais de 5 a 10 Salários Mínimos: 14,1%;
+Mais de 10 a 20 Salários Mínimos: 6,4%;
+Mais de 20 Salários Mínimos: 2,3%.
+(Fonte: IBGE (Censo/2010) -- https://cidades.ibge.gov.br/brasil/ap/pesquisa/23/24304?detalhes=true)
+
+Observação: De acordo com informações do Instituto Brasileiro de Geografia e Estatística (IBGE), não há previsão de data para a divulgação do perfil econômico da população brasileira do CENSO 2022. Portanto, os dados sobre o nível econômico obtidos no Censo 2022 não podem ser utilizados, pois ainda não foram publicados.
+Está prevista eventual ponderação para correção das variáveis sexo e idade, com base nos percentuais anteriormente mencionados, caso ocorram diferenças superiores a 3 pontos percentuais entre o previsto na amostra e a coleta de dados realizada. Para as variáveis de grau de instrução e nível econômico do entrevistado, o fator previsto para ponderação é 1 (resultados obtidos em campo). O nível de confiança estimado é de 95% e a margem de erro máxima estimada considerando um modelo de amostragem aleatório simples, é de aproximadamente 2 (dois) pontos percentuais para mais ou para menos sobre os resultados encontrados no total da amostra.
+";"O trabalho de coleta de dados é acompanhado por supervisores humanos. São selecionados aleatoriamente 15% (quinze por cento) dos questionários para uma verificação posterior e, em caso de dúvida, o formulário é descartado e o responsável pela coleta chamado para esclarecimentos. Há uma equipe especializada que confere os dados à exaustão com objetivo de averiguar e aferir os resultados coletados.";"O anexo do arquivo com os bairros será realizado até o dia seguinte da divulgação conforme indicado no §7º. do art. 2º. da Resolução-TSE nº. 23.600/2019.
+
+"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP021832026";"2026-03-17 23:02:46";"S";"00654576000172";"INSTITUTO VERITA LTDA";"VERITA";"Governador, Senador, Deputado Federal, Deputado Estadual";"2026-03-18 00:00:00";"2026-03-24 00:00:00";"2026-03-23 00:00:00";1030;"10699";"GUILHERME ALVARENGA LAIA";"79310,00";"Pesquisa quantitativa, que consiste na realização de entrevistas, com a aplicação de questionário estruturado junto a uma amostra representativa do eleitorado desta Unidade da Federação.";"ESTUDO REPRESENTATIVO DO ELEITORADO DO ESTADO DO AMAPÁ - MÉTODO PPT (Probabilidade Proporcional ao Tamanho) - PLANO AMOSTRAL E PONDERAÇÃO QUANTO A SEXO, IDADE, GRAU DE INSTRUÇÃO E NÍVEL ECONÔMICO DO ENTREVISTADO; INTERVALO DE CONFIANÇA E MARGEM DE ERRO: Representativo do eleitorado da área em estudo, elaborada, em vários estágios, da seguinte forma: - 1. Divisão da UF em estratos proporcionais de municípios. 2. Ordenação dos municípios de cada estrato segundo o porte. 3. Sorteio dos municípios de cada estrato. 4. Os respondentes são selecionados através de quotas amostrais proporcionais em função de variáveis significativas, a saber: GÊNERO / FAIXA ETÁRIA - FEMININO E MASCULINO 16 A 34 ANOS 21,2% E 19,9%, 35 A 54 ANOS 19,9% E 18,4%, 55 ANOS OU MAIS 10,3% E 10,3%. GRAU DE INSTRUÇÃO - FEMININO Sem instrução até Ensino Médio completo 57%, Ensino superior incompleto e completo % NÍVEL ECONÔMICO - FEMININO população não economicamente ativa 46,5% população economicamente ativa 53,5% MASCULINO população não economicamente ativa 27,2% população economicamente ativa 72,8%. RENDA FAMILIAR DO DOMICÍLIO renda familiar de até 2 salários-mínimos 30,7%; de 2 a 5 salários-mínimos 44,2%, acima de 5 salários-mínimos 25,1%. Está prevista eventual ponderação para correção das variáveis, com base nos percentuais anteriormente mencionados, caso ocorram diferenças superiores a margem de erro da pesquisa previsto entre a amostra e a coleta de dados realizada. O fator previsto para ponderação é 1 (resultados obtidos na coleta de dados). O intervalo de confiança estimado é de 95% e a margem de erro máxima estimada considerando um modelo de amostragem aleatório simples, é de aproximadamente 3,5 pontos percentuais para mais ou para menos sobre os resultados encontrados no total da amostra. FONTE DOS DADOS: IBGE/Censo 2022 para fins de densidade demográfica, setores censitários e alocação da amostra. IBGE/PNAD/PNADC/MEC/INEP para fins de Nível Econômico e Escolaridade. TSE FEVEREIRO/2026 para fins de Sexo, Faixa Etária e eleitorado por município ou regiões previamente definidas (importante ressaltar para o público leigo que os dados do TSE são os únicos corretos para gênero, idade dos eleitores e quantitativo de eleitores por municípios já que a base de dados se atualiza automaticamente, PORÉM, dados de escolaridade e nível econômico NÃO são corretos e confiáveis devido a desatualização que ocorre naturalmente com o passar dos anos). Definição de margem de erro e intervalo de confiança: Margem de erro e intervalo de confiança não são grandezas diretamente proporcionais. A SOMA NÃO TEM QUE RESULTAR 100%. ";"Após os trabalhos de coleta de dados, os questionários são submetidos a uma fiscalização, conferência e checagem de cerca de 20% (vinte por cento) dos questionários aplicados.";"A relação dos municípios sorteados ou selecionados para esta pesquisa será apresentada em arquivo anexo até 1 (um) dia após a divulgação desta pesquisa conforme §7º. do art. 2º. da Resolução-TSE nº. 23.600/2019. A área de abrangência desta pesquisa é o Estado DO AMAPÁ."
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP031702026";"2026-04-23 21:32:41";"S";"00654576000172";"INSTITUTO VERITA LTDA";"VERITA";"Governador, Senador";"2026-04-23 00:00:00";"2026-04-28 00:00:00";"2026-04-29 00:00:00";1030;"10699";"GUILHERME ALVARENGA LAIA";"79310,00";"Pesquisa quantitativa, que consiste na realização de entrevistas, com a aplicação de questionário estruturado junto a uma amostra representativa do eleitorado desta Unidade da Federação.";"ESTUDO REPRESENTATIVO DO ELEITORADO DO ESTADO DO AMAPÁ - MÉTODO PPT (Probabilidade Proporcional ao Tamanho) - PLANO AMOSTRAL E PONDERAÇÃO QUANTO A SEXO, IDADE, GRAU DE INSTRUÇÃO E NÍVEL ECONÔMICO DO ENTREVISTADO; INTERVALO DE CONFIANÇA E MARGEM DE ERRO: Representativo do eleitorado da área em estudo, elaborada, em vários estágios, da seguinte forma: - 1. Divisão da UF em estratos proporcionais de municípios. 2. Ordenação dos municípios de cada estrato segundo o porte. 3. Sorteio dos municípios de cada estrato. 4. Os respondentes são selecionados através de quotas amostrais proporcionais em função de variáveis significativas, a saber: GÊNERO / FAIXA ETÁRIA - FEMININO E MASCULINO 16 A 34 ANOS 21,2% E 19,9%, 35 A 54 ANOS 19,9% E 18,4%, 55 ANOS OU MAIS 10,3% E 10,3%. GRAU DE INSTRUÇÃO ¿ FEMININO E MASCULINO Sem instrução até Ensino Médio completo 57%, Ensino superior incompleto e completo 43% NÍVEL ECONÔMICO - FEMININO população não economicamente ativa 46,5% população economicamente ativa 53,5% MASCULINO população não economicamente ativa 27,2% população economicamente ativa 72,8%. RENDA FAMILIAR DO DOMICÍLIO renda familiar de até 2 salários-mínimos 30,7%; de 2 a 5 salários-mínimos 44,2%, acima de 5 salários-mínimos 25,1%. Está prevista eventual ponderação para correção das variáveis, com base nos percentuais anteriormente mencionados, caso ocorram diferenças superiores a margem de erro da pesquisa previsto entre a amostra e a coleta de dados realizada. O fator previsto para ponderação é 1 (resultados obtidos na coleta de dados). O intervalo de confiança estimado é de 95% e a margem de erro máxima estimada considerando um modelo de amostragem aleatório simples, é de aproximadamente 3,5 pontos percentuais para mais ou para menos sobre os resultados encontrados no total da amostra. FONTE DOS DADOS: IBGE/Censo 2022 para fins de densidade demográfica, setores censitários e alocação da amostra. IBGE/PNAD/PNADC/MEC/INEP para fins de Nível Econômico e Escolaridade. TSE FEVEREIRO/2026 para fins de Sexo, Faixa Etária e eleitorado por município ou regiões previamente definidas (importante ressaltar para o público leigo que os dados do TSE são os únicos corretos para gênero, idade dos eleitores e quantitativo de eleitores por municípios já que a base de dados se atualiza automaticamente, PORÉM, dados de escolaridade e nível econômico NÃO são corretos e confiáveis devido a desatualização que ocorre naturalmente com o passar dos anos). Definição de margem de erro e intervalo de confiança: Margem de erro e intervalo de confiança não são grandezas diretamente proporcionais. A SOMA NÃO TEM QUE RESULTAR 100%. ";"Após os trabalhos de coleta de dados, os questionários são submetidos a uma fiscalização, conferência e checagem de cerca de 20% (vinte por cento) dos questionários aplicados.";"A relação dos municípios sorteados ou selecionados para esta pesquisa será apresentada em arquivo anexo até 1 (um) dia após a divulgação desta pesquisa conforme §7º. do art. 2º. da Resolução-TSE nº. 23.600/2019. A área de abrangência desta pesquisa é o Estado DO AMAPÁ"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP037742026";"2026-06-23 22:54:46";"S";"52182942000131";"TOP COMERCIOS E SERVICOS LTDA";"F5 PESQUISAS E CONSULTORIA";"Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital";"2026-06-23 00:00:00";"2026-06-27 00:00:00";"2026-06-29 00:00:00";1064;"9081";"LUIS VALBER RIOS ARCANJO";"10000,00";"A pesquisa da Empresa F5 PESQUISA E CONSULTORA LTDA, registrada no Conselho Regional de Estatística da 7ª Região, sob o N. º 8806 será um levantamento
+estatístico por amostragem estratificada por cidade/bairro/setor censitário, sexo, faixa etária de idade, escolaridade, renda familiar e religião do entrevistado, nas áreas urbanas e rural do estado do Amapá. 
+O universo da pesquisa será a população eleitoral das áreas urbanas e rural do estado do Amapá, a partir de 16 anos.
+
+Serão realizadas 1064 (mil e sessenta e quatro) entrevistas, distribuídas de forma proporcional ao número de eleitores em cada cidade do estado do Amapá. Dentro da área urbanas e rural serão realizados sorteios dos setores
+censitários. Uma vez selecionado os setores, as entrevistas serão realizadas nos domicílios através de amostragem aleatória (dentro dos critérios técnicos de pesquisa eleitoral). A abordagem será domiciliar, ou seja, as entrevistas serão residenciais (face a face), sendo realizada uma entrevista por residência. O
+instrumento utilizado para a coleta será um questionário estruturado e padronizado de acordo com os objetivos da pesquisa, que será devidamente preenchido por um pesquisador treinado pela empresa. A pesquisa será
+realizada no período de 23 a 27 de junho  de 2026. Nesta pesquisa, com relação às perguntas fechadas, os entrevistados não serão de forma alguma pressionados a escolher uma das opções. Será apresentado a cada entrevistado um cartão circular (DISCO) contendo os nomes estimulados
+";"Plano Amostral: A amostra será estratificada por cidades, com partições proporcionais, ou seja, a amostra será distribuída, de forma proporcional ao número de eleitores existentes em cada cidade. Serão utilizados para a amostra domiciliar, os dados do IBGE sobre a contagem da população do
+censo 2022. Sobre os resultados encontrados no campo serão realizadas ponderações por sexo e faixa etária, de acordo com os dados obtidos e divulgados pelo TSE/MAIO DE 2026, para o estado do Amapá. Em relação ao nível de instrução será ponderado pelos dados do TSE/MAIO DE 2026, para
+o estado do Amapá e o nível econômico pelos dados do IBGE/Amostra de Domicílios Contínua (PNAD Contínua), divulgada pelo IBGE em 30 de janeiro de 2026 (dados de 2025). Sendo todas as ponderações de acordo os dados a seguir: Sexo %: Feminino 51%, Masculino 49% Total 100,0% Fonte: TSE/MAIO DE 2026; Idade %: 16 a 24 anos 18,56%, 25 a 34 anos 23,56%, 35 a 44 anos 20,86%, 45 a 59 anos 22,64% e 60 anos e mais 14,38% Total
+100,0% Fonte: MAIO DE 2026. Grau de Instrução - (Escolaridade) %: Analfabeto 3,23%, Lê e escreve 4,41%, Ensino fundamental completo 5,18%, Ensino fundamental incompleto 19,77%, Ensino médio completo 28,15%, Ensino médio incompleto 22,13%, Superior completo 10,13%, Superior incompleto
+7%, Total 100,0% Fonte: TSE/MAIO DE 2026.
+Intervalo de Confiança e a Margem de Erro: A amostra será de 1064 (mil e sessenta e quatro) entrevistas domiciliares individuais, que permitirá inferência sobre o universo pesquisado com uma margem de erro amostral de 3%
+(três por cento), para mais ou para menos, dentro de um intervalo de confiança de 95% (noventa e cinco por cento), ou seja, que se faça 100 (cem) vezes a pesquisa em 95% (noventa e cinco por cento) dessas, chegará mesmo resultado.
+";"Todos os entrevistadores da Empresa F5 Pesquisas e Consultoria LTDA, são selecionados e treinados pela própria empresa em Santana - AP. Para o trabalho de campo cada entrevistador será devidamente identificado com
+crachá (nome, CPF e foto) e camiseta da Empresa. A pesquisa será realizada através de smartphones ou tablets em ambiente web em um servidor CLOUD, que tem por objetivo realizar a integração entre o sistema de pesquisa SPSS à equipe de pesquisadores. Sendo a transmissão dos dados
+automática através de redes WIFI, 3G , 4G e 5G. A supervisão de campo será executada em tempo real, sendo disponibilizados para a garantia das informações, os locais onde elas foram realizadas, sendo as imagens disponibilizadas, após a transmissão dos dados, no Google mapas, garantindo a observação de todas as entrevistas. Os questionários (dados) serão submetidos a uma fiscalização de no mínimo 20,0 % (vinte por
+cento) de todas as entrevistas realizadas.";"A amostra contemplará todos os 16 municípios do estado, auto ponderada de acordo com o número de eleitores abaixo: MUNICÍPIO / Nº de eleitores (Fonte TSE/JANEIRO DE 2026) Amapá = 7.569 Calçoene = 8.937 Cutias = 6.312 Ferreira Gomes = 7.924 Itaubal = 8.885 Laranjal do Jari = 28.241 Macapá = 321.761 Mazagão = 22.276 Oiapoque = 24.228, Pedra Branca do Amapari = 9.962 Porto Grande = 15.574 Paracuuba = 4.038 Santana = 86.055 Serra do Navio = 4.132 Tartarugalzinho = 11.488 Vitória do Jari = 10.434"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP076302026";"2026-02-04 22:42:54";"S";"22345021000181";"REAL TIME MIDIA LTDA";"REAL TIME BIG DATA";"Governador, Senador";"2026-02-07 00:00:00";"2026-02-09 00:00:00";"2026-02-10 00:00:00";2000;"10839";"Isabela Zara Cremoneze";"80000,00";"Pesquisa quantitativa, que consiste na realização de entrevistas pessoais, com a aplicação de questionário estruturado junto a uma amostra representativa do eleitorado em estudo. Pesquisa realizada no Estado do Amapá (AP).";"Representativo do eleitorado da área em estudo, elaborada em três estágios. 
+No primeiro estágio, realiza-se um sorteio probabilístico dos municípios onde as entrevistas serão realizadas, pelo método PPT (Probabilidade Proporcional ao Tamanho), tomando a população eleitora de 16 anos ou mais residente nos municípios como base para essa seleção.
+No segundo estágio, efetua-se um sorteio probabilístico das localidades dentro dos municípios selecionados, também pelo método PPT (Probabilidade Proporcional ao Tamanho), considerando a população eleitora de 16 anos ou mais residente nessas localidades como base para a seleção.
+No terceiro e último estágio, dentro das localidades sorteadas, os respondentes são selecionados por meio de quotas amostrais proporcionais, em função de variáveis significativas, a saber:
+
+GÊNERO:
+Feminino: 51,4%;
+Masculino: 48,6%.
+(Fonte: TSE, Janeiro/2026 -- https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_metricas=E&p24_back=22&p24_cruzamento_1=ds_sexo&clear=24&session=315321938605545)
+
+FAIXA ETÁRIA:
+16 anos: 0,4%;
+17 anos: 1,1%;
+18 a 20 anos: 6,2%;
+21 a 24 anos: 9,4%;
+25 a 34 anos: 24,1%;
+35 a 44 anos: 21,4%;
+45 a 59 anos: 23,0%;
+60 a 69 anos: 8,3%;
+70 a 79 anos: 4,2%;
+Superior a 79 anos: 1,9%.
+(Fonte: TSE, Janeiro/2026 -- https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_metricas=E&p24_back=22&p24_cruzamento_1=ds_sexo&clear=24&session=315321938605545)
+
+ESCOLARIDADE:
+Analfabeto: 3,3%;
+Lê e Escreve: 4,5%;
+Ensino Fundamental Incompleto: 20,1%;
+Ensino Fundamental Completo: 5,3%;
+Ensino Médio Incompleto: 21,2%;
+Ensino Médio Completo: 28,5%;
+Ensino Superior Incompleto: 7,0%;
+Ensino Superior Completo: 10,2%.
+(Fonte: TSE, Janeiro/2026 -- https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_metricas=E&p24_back=22&p24_cruzamento_1=ds_sexo&clear=24&session=315321938605545)
+
+RENDA DOMICILIAR MENSAL:
+Sem rendimento: 5,3%;
+Até 1/2 Salário Mínimo: 3,9%;
+Mais de 1/2 a 1 Salário Mínimo: 15,7%;
+Mais de 1 a 2 Salários Mínimos: 23,6%;
+Mais de 2 a 5 Salários Mínimos: 28,8%;
+Mais de 5 a 10 Salários Mínimos: 14,1%;
+Mais de 10 a 20 Salários Mínimos: 6,4%;
+Mais de 20 Salários Mínimos: 2,3%.
+(Fonte: IBGE (Censo/2010) -- https://cidades.ibge.gov.br/brasil/ap/pesquisa/23/24304?detalhes=true)
+
+Observação: De acordo com informações do Instituto Brasileiro de Geografia e Estatística (IBGE), não há previsão de data para a divulgação do perfil econômico da população brasileira do CENSO 2022. Portanto, os dados sobre o nível econômico obtidos no Censo 2022 não podem ser utilizados, pois ainda não foram publicados.
+Está prevista eventual ponderação para correção das variáveis sexo e idade, com base nos percentuais anteriormente mencionados, caso ocorram diferenças superiores a 3 pontos percentuais entre o previsto na amostra e a coleta de dados realizada. Para as variáveis de grau de instrução e nível econômico do entrevistado, o fator previsto para ponderação é 1 (resultados obtidos em campo). O nível de confiança estimado é de 95% e a margem de erro máxima estimada considerando um modelo de amostragem aleatório simples, é de aproximadamente 2 (dois) pontos percentuais para mais ou para menos sobre os resultados encontrados no total da amostra.
+";"O trabalho de coleta de dados é acompanhado presencialmente por supervisores. São selecionados aleatoriamente 15% (quinze por cento) dos questionários para uma verificação posterior com ligações telefônicas para os números indicados nos formulários, em caso de dúvida, o formulário é descartado e o entrevistador chamado para esclarecimentos.";"O anexo do arquivo com os bairros será realizado até o dia seguinte da divulgação conforme indicado no §7º. do art. 2º. da Resolução-TSE nº. 23.600/2019."
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP008372026";"2026-03-16 15:27:36";"N";"27844225000180";"VERITAS PLANEJAMENTO E ASSESSORIA LTDA";"VERITAS PLANEJAMENTO";"Governador, Senador";"2026-03-17 00:00:00";"2026-03-19 00:00:00";"2026-03-22 00:00:00";800;"9137-A";"Érika Cristina Ferreira";"30000,00";"Trata-se de uma pesquisa quantitativa realizada por meio de entrevistas, com aplicação de questionário estruturado a uma amostra representativa do eleitorado em estudo. A pesquisa foi conduzida no Estado do Amapá (AP).";"A amostra é representativa do eleitorado da área pesquisada e foi elaborada em três estágios.
+No primeiro estágio, realiza-se o sorteio probabilístico dos municípios onde serão conduzidas as entrevistas, utilizando o método PPT (Probabilidade Proporcional ao Tamanho). Para essa seleção, considera-se como base a população eleitora residente nos municípios com 16 anos ou mais.
+No segundo estágio, é realizado o sorteio probabilístico das localidades dentro dos municípios previamente selecionados, também por meio do método PPT (Probabilidade Proporcional ao Tamanho), tomando como referência a população eleitora com 16 anos ou mais residente nessas localidades.
+No terceiro e último estágio, dentro das localidades sorteadas, os entrevistados são selecionados por meio de cotas amostrais proporcionais, definidas a partir de variáveis consideradas relevantes, conforme descrito a seguir:
+GÊNERO:
+Feminino: 51,38%;
+Masculino: 48,62%.
+(Fonte: TSE, fevereiro de 2026 ¿ https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_metricas=E&p24_back=22&p24_cruzamento_1=ds_sexo&clear=24&session=321307785336307)
+FAIXA ETÁRIA:
+16 anos: 0,43%;
+17 anos: 1,10%;
+18 a 20 anos: 6,27%;
+21 a 24 anos: 9,33%;
+25 a 34 anos: 24,03%;
+35 a 44 anos: 21,32%;
+45 a 59 anos: 22,99%;
+60 a 69 anos: 8,35%;
+70 a 79 anos: 4,24%;
+Acima de 79 anos: 1,93%.
+(Fonte: TSE, fevereiro de 2026 ¿ https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_faixa_etaria&p24_metricas=E&p24_back=22&clear=24&session=321307785336307)
+ESCOLARIDADE:
+Analfabeto: 3,29%;
+Lê e escreve: 4,52%;
+Ensino Fundamental incompleto: 20,02%;
+Ensino Fundamental completo: 5,26%;
+Ensino Médio incompleto: 21,27%;
+Ensino Médio completo: 28,47%;
+Ensino Superior incompleto: 7,00%;
+Ensino Superior completo: 10,17%.
+(Fonte: TSE, fevereiro de 2026 ¿ https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_grau_instrucao&p24_metricas=E&p24_back=22&clear=24&session=321307785336307)
+RENDA DOMICILIAR MENSAL:
+Sem rendimento: 5,25%;
+Até 1/2 salário mínimo: 3,94%;
+Mais de 1/2 a 1 salário mínimo: 15,67%;
+Mais de 1 a 2 salários mínimos: 23,56%;
+Mais de 2 a 5 salários mínimos: 28,85%;
+Mais de 5 a 10 salários mínimos: 14,07%;
+Mais de 10 a 20 salários mínimos: 6,37%;
+Mais de 20 salários mínimos: 2,29%.
+(Fonte: IBGE ¿ Censo 2010 ¿ https://cidades.ibge.gov.br/brasil/ap/panorama)
+Observação: De acordo com o Instituto Brasileiro de Geografia e Estatística (IBGE), ainda não há previsão de divulgação do perfil econômico da população brasileira com base no Censo 2022. Dessa forma, os dados referentes ao nível econômico provenientes desse censo ainda não podem ser utilizados, pois não foram publicados.
+Está prevista a realização de ponderação para correção das variáveis sexo e idade, com base nos percentuais apresentados anteriormente, caso sejam observadas diferenças superiores a três pontos percentuais entre a distribuição prevista na amostra e aquela obtida na coleta de dados. Para as variáveis grau de instrução e nível econômico do entrevistado, o fator de ponderação previsto é igual a 1, ou seja, serão utilizados os resultados observados em campo.
+O nível de confiança estimado para os resultados é de 95%, e a margem de erro máxima estimada, considerando um modelo de amostragem aleatória simples, é de aproximadamente 3(três) pontos percentuais para mais ou para menos sobre os resultados observados para o total da amostra.
+
+";"A coleta de dados é acompanhada por supervisores responsáveis pelo monitoramento das atividades de campo. Além disso, 30% (trinta por cento) dos questionários são selecionados aleatoriamente para verificação posterior, por meio de ligações telefônicas realizadas para os números informados nos formulários. Em caso de inconsistências ou dúvidas, o questionário é descartado e o entrevistador é convocado para prestar esclarecimentos.";"O detalhamento dos municípios e bairros contemplados na pesquisa será apresentado em arquivo anexo. Nos casos em que não houver delimitação específica do bairro, será indicada a área onde a entrevista foi realizada, conforme disposto no §7º do art. 2º da Resolução-TSE nº 23.600/2019. "
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP023232026";"2026-05-26 22:31:32";"S";"00654576000172";"INSTITUTO VERITA LTDA";"VERITA";"Governador, Senador";"2026-05-27 00:00:00";"2026-05-31 00:00:00";"2026-06-01 00:00:00";1030;"10699";"GUILHERME ALVARENGA LAIA";"79310,00";"Pesquisa quantitativa, que consiste na realização de entrevistas, com a aplicação de questionário estruturado junto a uma amostra representativa do eleitorado desta Unidade da Federação.";"ESTUDO REPRESENTATIVO DO ELEITORADO DO ESTADO DO AMAPÁ - MÉTODO PPT (Probabilidade Proporcional ao Tamanho) - PLANO AMOSTRAL E PONDERAÇÃO QUANTO A SEXO, IDADE, GRAU DE INSTRUÇÃO E NÍVEL ECONÔMICO DO ENTREVISTADO; INTERVALO DE CONFIANÇA E MARGEM DE ERRO: Representativo do eleitorado da área em estudo, elaborada, em vários estágios, da seguinte forma: - 1. Divisão da UF em estratos proporcionais de municípios. 2. Ordenação dos municípios de cada estrato segundo o porte. 3. Sorteio dos municípios de cada estrato. 4. Os respondentes são selecionados através de quotas amostrais proporcionais em função de variáveis significativas, a saber: GÊNERO / FAIXA ETÁRIA - FEMININO E MASCULINO 16 A 34 ANOS 21,2% E 19,9%, 35 A 54 ANOS 19,9% E 18,4%, 55 ANOS OU MAIS 10,3% E 10,3%. GRAU DE INSTRUÇÃO ¿ FEMININO E MASCULINO Sem instrução até Ensino Médio completo 57%, Ensino superior incompleto e completo 43% NÍVEL ECONÔMICO - FEMININO população não economicamente ativa 46,5% população economicamente ativa 53,5% MASCULINO população não economicamente ativa 27,2% população economicamente ativa 72,8%. RENDA FAMILIAR DO DOMICÍLIO renda familiar de até 2 salários-mínimos 30,7%; de 2 a 5 salários-mínimos 44,2%, acima de 5 salários-mínimos 25,1%. Está prevista eventual ponderação para correção das variáveis, com base nos percentuais anteriormente mencionados, caso ocorram diferenças superiores a margem de erro da pesquisa previsto entre a amostra e a coleta de dados realizada. O fator previsto para ponderação é 1 (resultados obtidos na coleta de dados). O intervalo de confiança estimado é de 95% e a margem de erro máxima estimada considerando um modelo de amostragem aleatório simples, é de aproximadamente 3,5 pontos percentuais para mais ou para menos sobre os resultados encontrados no total da amostra. FONTE DOS DADOS: IBGE/Censo 2022 para fins de densidade demográfica, setores censitários e alocação da amostra. IBGE/PNAD/PNADC/MEC/INEP para fins de Nível Econômico e Escolaridade. TSE FEVEREIRO/2026 para fins de Sexo, Faixa Etária e eleitorado por município ou regiões previamente definidas (importante ressaltar para o público leigo que os dados do TSE são os únicos corretos para gênero, idade dos eleitores e quantitativo de eleitores por municípios já que a base de dados se atualiza automaticamente, PORÉM, dados de escolaridade e nível econômico NÃO são corretos e confiáveis devido a desatualização que ocorre naturalmente com o passar dos anos). Definição de margem de erro e intervalo de confiança: Margem de erro e intervalo de confiança não são grandezas diretamente proporcionais. A SOMA NÃO TEM QUE RESULTAR 100%. ";"Após os trabalhos de coleta de dados, os questionários são submetidos a uma fiscalização, conferência e checagem de cerca de 20% (vinte por cento) dos questionários aplicados.";"A relação dos municípios sorteados ou selecionados para esta pesquisa será apresentada em arquivo anexo até 1 (um) dia após a divulgação desta pesquisa conforme §7º. do art. 2º. da Resolução-TSE nº. 23.600/2019. A área de abrangência desta pesquisa é o Estado DO AMAPÁ"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP065952026";"2026-03-23 19:13:33";"S";"19259002000128";"ATLASINTEL TECNOLOGIA DE DADOS LTDA";"ATLASINTEL";"Governador, Senador";"2026-03-23 00:00:00";"2026-03-28 00:00:00";"2026-03-29 00:00:00";1000;"11220";"ANDREI CAMILO DOS SANTOS";"75000,00";"Pesquisa quantitativa com coleta aleatória via questionário estruturado web e pós-estratificação da amostra de acordo com as características do eleitorado de Amapá.
+";"Amostra aleatória pós-estratificada via algoritmo iterativo com quotas proporcionais, representando características do eleitorado de Amapá: SEXO: Masculino: 48.6%; Feminino: 51.4%. FAIXA ETÁRIA: Entre 16 a 24 anos: 17.1%; Entre 25 a 34 anos: 24.1%; Entre 35 a 44 anos: 21.4%; Entre 45 a 59 anos: 23.0%; 60 ou mais: 14.5%. ESCOLARIDADE: Ensino Fundamental completo ou incompleto e eleitores sem educação formal: 26.4%; Ensino Médio completo ou incompleto: 42.4%; Ensino Superior completo ou incompleto: 31.2%. NÍVEL ECONÔMICO: Renda familiar mensal até R$2000: 18.8%; Mais de R$2.000 a R$3.000: 19.3%; Mais de R$3.000 a R$5.000: 22.2%; Mais de R$5.000 a R$10.000: 25.2%; Mais de R$10.000: 14.4%. OBS.: devido ao arredondamento, a soma dos percentuais pode variar de 99% a 101%. Na agregação final, para cada variável de ponderação, serão admissíveis desvios de até 3.0 pontos percentuais em relação às quotas estipuladas. Confiança estimada: 95%, margem de erro: +/- 3.0 pontos percentuais. FONTE DOS DADOS: PNADC 2024 para escolaridade e nível econômico | TSE 2026 para sexo e faixa etária.
+";"Coleta feita com a utilização de questionário eletrônico com procedimentos específicos para o armazenamento seguro dos dados. São checados manualmente no mínimo 15% dos questionários para detectar possíveis anomalias. Pesquisadores especializados realizam internamente uma verificação exaustiva da consistência dos dados antes da divulgação dos resultados finais.";"#NULO#"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP062932026";"2026-02-09 17:43:24";"S";"52182942000131";"TOP COMERCIOS E SERVICOS LTDA";"F5 PESQUISAS E CONSULTORIA";"Governador, Senador";"2026-02-10 00:00:00";"2026-02-14 00:00:00";"2026-02-15 00:00:00";1064;"9081";"LUIS VALBER RIOS ARCANJO";"10000,00";"A pesquisa da Empresa F5 PESQUISA E CONSULTORA LTDA, registrada no Conselho Regional de Estatística da 7ª Região, sob o N. º 8806 será um levantamento
+estatístico por amostragem estratificada por cidade/bairro/setor censitário, sexo, faixa etária de idade, escolaridade, renda familiar e religião do entrevistado, nas áreas urbanas e rural do estado do Amapá. 
+O universo da pesquisa será a população eleitoral das áreas urbanas e rural do estado do Amapá, a partir de 16 anos.
+
+Serão realizadas 1064 (mil e sessenta e quatro) entrevistas, distribuídas de forma proporcional ao número de eleitores em cada cidade do estado do Amapá. Dentro da área urbanas e rural serão realizados sorteios dos setores
+censitários. Uma vez selecionado os setores, as entrevistas serão realizadas nos domicílios através de amostragem aleatória (dentro dos critérios técnicos de pesquisa eleitoral). A abordagem será domiciliar, ou seja, as entrevistas serão residenciais (face a face), sendo realizada uma entrevista por residência. O
+instrumento utilizado para a coleta será um questionário estruturado e padronizado de acordo com os objetivos da pesquisa, que será devidamente preenchido por um pesquisador treinado pela empresa. A pesquisa será
+realizada no período de 09 de setembro a 13 de janeiro de 2024. Nesta pesquisa, com relação às perguntas fechadas, os entrevistados não serão de forma alguma pressionados a escolher uma das opções. Será apresentado a cada entrevistado um cartão circular (DISCO) contendo os nomes estimulados";"Todos os entrevistadores da Empresa F5 Pesquisas e Consultoria LTDA, são selecionados e treinados pela própria empresa em Santana - AP. Para o trabalho de campo cada entrevistador será devidamente identificado com
+crachá (nome, CPF e foto) e camiseta da Empresa. A pesquisa será realizada através de smartphones ou tablets em ambiente web em um servidor CLOUD, que tem por objetivo realizar a integração entre o sistema de pesquisa SPSS à equipe de pesquisadores. Sendo a transmissão dos dados
+automática através de redes WIFI, 3G , 4G e 5G. A supervisão de campo será executada em tempo real, sendo disponibilizados para a garantia das informações, os locais onde elas foram realizadas, sendo as imagens
+disponibilizadas, após a transmissão dos dados, no Google mapas, garantindo a observação de todas as entrevistas. Os questionários (dados) serão submetidos a uma fiscalização de no mínimo 20,0 % (vinte por
+cento) de todas as entrevistas realizadas.";"Todos os entrevistadores da Empresa F5 Pesquisas e Consultoria LTDA, são selecionados e treinados pela própria empresa em Santana - AP. Para o trabalho de campo cada entrevistador será devidamente identificado com
+crachá (nome, CPF e foto) e camiseta da Empresa. A pesquisa será realizada através de smartphones ou tablets em ambiente web em um servidor CLOUD, que tem por objetivo realizar a integração entre o sistema de pesquisa SPSS à equipe de pesquisadores. Sendo a transmissão dos dados
+automática através de redes WIFI, 3G , 4G e 5G. A supervisão de campo será executada em tempo real, sendo disponibilizados para a garantia das informações, os locais onde elas foram realizadas, sendo as imagens
+disponibilizadas, após a transmissão dos dados, no Google mapas, garantindo a observação de todas as entrevistas. Os questionários (dados) serão submetidos a uma fiscalização de no mínimo 20,0 % (vinte por
+cento) de todas as entrevistas realizadas.";"A amostra contemplará todos os 16 municípios do estado, auto ponderada de acordo com o número de eleitores abaixo: MUNICÍPIO / Nº de eleitores (Fonte TSE/JANEIRO DE 2026) Amapá = 7.574 Calçoene = 8.856 Cutias = 6.634 Ferreira Gomes = 8.085 Itaubal = 9.356 Laranjal do Jari = 27.926 Macapá = 305.958 Mazagão = 21.970 Oiapoque = 23.390, Pedra Branca do Amapari = 10.246 Porto Grande = 15.296 Paracuuba = 4.184 Santana = 83.240 Serra do Navio = 4.380 Tartarugalzinho = 11.305 Vitória do Jari = 10.293"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP098152026";"2026-06-30 22:02:31";"S";"00654576000172";"INSTITUTO VERITA LTDA";"VERITA";"Governador, Senador";"2026-07-01 00:00:00";"2026-07-05 00:00:00";"2026-07-06 00:00:00";1030;"10699";"Guilherme Alvarenga Laia";"79310,00";"Pesquisa quantitativa, que consiste na realização de entrevistas, com a aplicação de questionário estruturado junto a uma amostra representativa do eleitorado desta Unidade da Federação.";"ESTUDO REPRESENTATIVO DO ELEITORADO DO ESTADO DO AMAPÁ - MÉTODO PPT (Probabilidade Proporcional ao Tamanho) - PLANO AMOSTRAL E PONDERAÇÃO QUANTO A SEXO, IDADE, GRAU DE INSTRUÇÃO E NÍVEL ECONÔMICO DO ENTREVISTADO; INTERVALO DE CONFIANÇA E MARGEM DE ERRO: Representativo do eleitorado da área em estudo, elaborada, em vários estágios, da seguinte forma: - 1. Divisão da UF em estratos proporcionais de municípios. 2. Ordenação dos municípios de cada estrato segundo o porte. 3. Sorteio dos municípios de cada estrato. 4. Os respondentes são selecionados através de quotas amostrais proporcionais em função de variáveis significativas, a saber: GÊNERO / FAIXA ETÁRIA - FEMININO E MASCULINO 16 A 34 ANOS 21,2% E 19,9%, 35 A 54 ANOS 19,9% E 18,4%, 55 ANOS OU MAIS 10,3% E 10,3%. GRAU DE INSTRUÇÃO ¿ FEMININO E MASCULINO Sem instrução até Ensino Médio completo 57%, Ensino superior incompleto e completo 43% NÍVEL ECONÔMICO - FEMININO população não economicamente ativa 46,5% população economicamente ativa 53,5% MASCULINO população não economicamente ativa 27,2% população economicamente ativa 72,8%. RENDA FAMILIAR DO DOMICÍLIO renda familiar de até 2 salários-mínimos 30,7%; de 2 a 5 salários-mínimos 44,2%, acima de 5 salários-mínimos 25,1%. Está prevista eventual ponderação para correção das variáveis, com base nos percentuais anteriormente mencionados, caso ocorram diferenças superiores a margem de erro da pesquisa previsto entre a amostra e a coleta de dados realizada. O fator previsto para ponderação é 1 (resultados obtidos na coleta de dados). O intervalo de confiança estimado é de 95% e a margem de erro máxima estimada considerando um modelo de amostragem aleatório simples, é de aproximadamente 3,5 pontos percentuais para mais ou para menos sobre os resultados encontrados no total da amostra. FONTE DOS DADOS: IBGE/Censo 2022 para fins de densidade demográfica, setores censitários e alocação da amostra. IBGE/PNAD/PNADC/MEC/INEP para fins de Nível Econômico e Escolaridade. TSE FEVEREIRO/2026 para fins de Sexo, Faixa Etária e eleitorado por município ou regiões previamente definidas (importante ressaltar para o público leigo que os dados do TSE são os únicos corretos para gênero, idade dos eleitores e quantitativo de eleitores por municípios já que a base de dados se atualiza automaticamente, PORÉM, dados de escolaridade e nível econômico NÃO são corretos e confiáveis devido a desatualização que ocorre naturalmente com o passar dos anos). Definição de margem de erro e intervalo de confiança: Margem de erro e intervalo de confiança não são grandezas diretamente proporcionais. A SOMA NÃO TEM QUE RESULTAR 100%. ";"Após os trabalhos de coleta de dados, os questionários são submetidos a uma fiscalização, conferência e checagem de cerca de 20% (vinte por cento) dos questionários aplicados.";"A relação dos municípios sorteados ou selecionados para esta pesquisa será apresentada em arquivo anexo até 1 (um) dia após a divulgação desta pesquisa conforme §7º. do art. 2º. da Resolução-TSE nº. 23.600/2019. A área de abrangência desta pesquisa é o Estado DO AMAPÁ"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP026512026";"2026-07-15 19:05:37";"N";"81908345000140";"INSTITUTO PARANA DE PESQUISAS E ANALISE DE CONSUMIDOR LTDA";"#NULO#";"Governador, Senador";"2026-07-18 00:00:00";"2026-07-20 00:00:00";"2026-07-21 00:00:00";1100;"10245 - 4ª";"Tatiani Cristina Ara";"45000,00";"Pesquisa com metodologia quantitativa, com a realização de entrevistas pessoais, domiciliares e presenciais, utilizando questionário estruturado junto a uma amostra representativa do eleitorado do Estado do Amapá.
+
+
+";"""A amostra será representativa do eleitorado da área pesquisada e será selecionada em três etapas. Na primeira etapa realiza-se um sorteio probabilístico dos municípios onde as entrevistas serão realizadas através do método PPT (Probabilidade Proporcional ao Tamanho), considerando a população eleitora com 16 anos ou mais residente nos municípios como base para essa seleção. Na segunda etapa, faz-se um sorteio probabilístico das localidades, onde as entrevistas serão realizadas, através do método PPT (Probabilidade Proporcional ao Tamanho), tomando a população eleitora de 16 anos ou mais residente nas localidades como base para essa seleção. Na terceira etapa, a seleção do entrevistado dentro da localidade, será feita utilizando-se quotas amostrais proporcionais, em função das seguintes variáveis:
+GÊNERO: TSE Junho 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_metricas=E&p24_back=22&p24_cruzamento_1=ds_sexo&clear=24&p0_uf=AP&p0_mes=6&debug=LEVEL5&session=312990078978641)
+Masculino - 49%; |
+Feminino - 51%; |
+FAIXA ETÁRIA: TSE Junho 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_faixa_etaria&p24_metricas=E&p24_back=22&clear=24&p0_uf=AP&p0_mes=6&debug=LEVEL5&session=8904950028837)
+Entre 16 e 24 anos: 19%; |
+Entre 25 e 34 anos: 23%; |
+Entre 35 e 44 anos: 21%; |
+Entre 45 e 59 anos: 23%; |
+Com 60 anos ou mais: 14%; |
+ESCOLARIDADE: TSE Junho 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_grau_instrucao&p24_metricas=E&p24_back=22&clear=24&p0_uf=AP&p0_mes=6&debug=LEVEL5&session=309383598034615)
+De analfabeto até ensino fundamental completo: 33%; |
+Ensino médio incompleto ou completo: 50% |
+Ensino superior incompleto ou completo: 17% |
+RENDA DOMICILIAR MENSAL:  (https://cidades.ibge.gov.br/brasil/ap/pesquisa/23/24304) IBGE - Censo 2010. Observação: Conforme informações obtidas do Instituto Brasileiro de Geografia e Estatística, o IBGE, não divulgou - e não tem previsão - de data para divulgação do perfil econômico (nível econômico) da população brasileira; portanto, os dados quanto ao nível econômico obtidos no Censo 2022, não podem ser utilizados, pois não foram publicados. (https://censo2022.ibge.gov.br/panorama/)
+Sem rendimentos até 2 salários mínimos: 48% |
+Mais de 2 a 5 salários mínimos: 29% |
+Mais de 5 salários mínimos: 23% |
+Está prevista eventual ponderação para correção das variáveis gênero e faixa etária, com base nos percentuais acima apresentados, caso ocorram diferenças superiores a 3,0 (três) pontos percentuais entre o previsto na amostra e a coleta realizada; para as variáveis escolaridade e renda domiciliar mensal, o fator de ponderação é igual a 1 (resultados obtidos no campo). O nível de confiança estimado é de 95% (noventa e cinco por cento) para uma margem de erro estimada, considerando uma técnica de amostragem aleatória simples, de aproximadamente 3,0 (três) pontos percentuais para mais ou para menos sobre os resultados obtidos.""
+
+
+
+
+
+";"""As entrevistas serão conduzidas por uma equipe de entrevistadores e supervisores devidamente qualificados pelo Instituto Paraná Pesquisas, todos com experiência e treinamento específico em pesquisas de opinião pública. 
+Controle: O controle do processo será realizado por meio de um software de coleta de dados.
+Conferência e Fiscalização: Durante a coleta de dados os questionários aplicados são fiscalizados e conferidos através de um supervisor.   
+Adicionalmente, pelo menos 30% dos questionários passarão por uma verificação posterior, que avaliará a precisão na aplicação e a adequação dos entrevistados às variáveis das quotas amostrais. Ou seja, no mínimo 330 entrevistas desta pesquisa serão auditadas pela equipe de qualidade do Instituto Paraná Pesquisas, podendo essa auditoria ser solicitada ao Instituto a qualquer momento.
+Verificação: Após a coleta, os questionários passam por uma etapa de verificação e validação dos dados, para garantir a integridade e precisão dos dados coletados.""
+
+
+
+
+
+";" ""A pesquisa será realizada no Estado do Amapá, a relação dos dados relativos aos municípios e às localidades será apresentado até o dia seguinte à data a partir da qual a pesquisa puder ser divulgada, conforme §7º do art. 2º da Resolução-TSE nº. 23.600/2019""
+
+
+
+
+
+"
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP076182026";"2026-03-25 16:33:09";"S";"07317438000147";"DOXA ARTE & COMUNICAO S/S LTDA";"DOXA";"Governador, Senador, Deputado Federal, Deputado Estadual";"2026-03-26 00:00:00";"2026-03-30 00:00:00";"2026-03-31 00:00:00";1064;"8010";"JADSON FERNANDES CHAVES ";"15000,00";"Pesquisa do tipo quantitativo, por amostragem, com aplicação de questionário estruturado e abordagem pessoal junto a uma amostra representativa do eleitorado conforme fonte de dados do TSE fevereiro/2026, IBGE, CENSO 2010/2022. O conjunto do eleitorado apto a votar na próxima eleição em 2026 no estado do Pará com idade de 16 anos ou mais foi tomado como universo da pesquisa. O levantamento será realizado pela equipe DOXA ARTE & COMUNICAO S/S LTDA.
+Serão realizadas 1064 (mil e sessenta e quatro) entrevistas, distribuídas de forma proporcional ao número de eleitores em cada cidade do estado do Amapá. Dentro da área urbanas e rural serão realizados sorteios dos setores
+censitários. Uma vez selecionado os setores, as entrevistas serão realizadas nos domicílios através de amostragem aleatória (dentro dos critérios técnicos de pesquisa eleitoral). A abordagem será domiciliar, ou seja, as entrevistas serão residenciais (face a face), sendo realizada uma entrevista por residência. O
+instrumento utilizado para a coleta será um questionário estruturado e padronizado de acordo com os objetivos da pesquisa, que será devidamente preenchido por um pesquisador treinado pela empresa. A pesquisa será
+realizada no período de 26 a 30 de março 2026. Nesta pesquisa, com relação às perguntas fechadas, os entrevistados não serão de forma alguma pressionados a escolher uma das opções. Será apresentado a cada entrevistado um cartão circular (DISCO) contendo os nomes estimulados
+";"A seleção obterá o quantitativo representativo do eleitorado do estado do Amapá que até fevereiro de 2026 alcançava 561.000 eleitores que estavam aptos a participar/votar nas eleições do ano de 2026, respeitando os conglomerados urbanos em único estágio. O estágio é feito a partir de sorteio probabilístico dos bairros/áreas/comunidades, reconhecidamente no município e que não possui bairros definidos em Lei Municipal ou órgão oficial municipal/estadual, onde as entrevistas serão realizadas e com sub amostragem pelo método PPT (Probabilidade Proporcional ao Tamanho), se possível com respaldado de fonte secundária municipal para tal procedimento ou embasado por informações do IBGE, tomando como referência a população de 16 anos ou mais, residentes nos setores como base para tal seleção prevista no TSE. Os respondentes serão selecionados através de quotas amostrais proporcionais dos estratos reconhecidos pelo TSE 2026 e CENSO 2010/2022 em função de algumas variáveis, agrupando-as conforme a natureza do levantamento por: SEXO: masculino 49%, feminino 51%; GRAU DE INSTRUÇÃO: Sem escolaridade: 3,29%, Fundamental Completo: 5,26%, Fundamental Incompleto: 20,02%; Médio Completo: 28,47%; Médio Incompleto: 21,27%; Lê e Escreve: 4,52%; Superior Completo: 10,17%; Superior Incompleto: 7%; FAIXA ETÁRIA/IDADE: 16 a 24 anos: 17,22; 25 a 34 anos: 24,01%; 35 a 44 anos: 21,30%; 45 a 59 anos: 22,97%; 60 a 69 anos: 8,35%; superior a 70 anos: 6,15%; NÍVEL DE RENDA DO ENTREVISTADO: Até 1 SM, 49,14%; De 01 a 02 SM, 22,49%; De 02 a 03 SM, 6,23%; De 03 a 05 SM, 4,70%; acima de 5 SM 4,23%; Sem rendimento: 13,21%. Fonte: TSE fevereiro/2026, IBGE, CENSO 2010/2022. A amostra total corresponde 1.064 entrevistas. A margem de erro máxima prevista para o total da amostra é de 3,1 pontos percentuais para mais ou para menos, considerando um nível de confiança de 95%. Os intervalos de confiança serão calculados considerando os resultados obtidos para um nível de confiança de 95%. Fonte: VICENTE (2012), TAYLOR, H. (1995), VICENTE et. al. (2001) e SUDMAN (1983) Referências bibliográficas referente aos estudos do cálculo amostral realizado: [1] VICENTE, P. Estudos de Mercado e de Opinião. Princípios e Aplicações de Amostragem. Edições Sílabo. LDA. 1ª edição, 228pg, Lisboa, 2012. [2] TAYLO, H. (1995) Horses for courses: how survey firms in diferent methods, Jounal of the Market Research Society, 37,3, 211-219. [3] VICENTE, P., REIS, E., FERRÃO, F. (2001) Sondagens: A amostragem como Fator Decisivo de Qualidade. 2ª edição Sílabo, Lisboa. [4] SUDMAN, S. (1983) Applid sampling, in Handbook of survey research, P. Rossi, J.Wright, A. Anderson (Editores), Academic Press, Inc.,145- 194.";"Os pesquisadores envolvidos na realização desta pesquisa são treinados de forma contínua pelo Instituto DOXA ARTE & COMUNICAÇÃO S/S LTDA e recebem instruções específicas para cada projeto de pesquisa realizado. A equipe de trabalho de campo é formada por dez pesquisadores de campo e dois coordenadores. Os entrevistadores fazem as entrevistas individuais, enquanto os supervisores de campo fiscalizam o trabalho. Sendo dever do supervisor de campo: a) zelar pelo cumprimento e quantidade correta das entrevistas; b) anular questionários preenchidos incorretamente ou que estejam fora do padrão de conduta técnica da pesquisa; c) anular questionários que não cumpram a amostra determinada de dentro da área prevista no plano; d) zelar pelo andamento do trabalho de campo dentro do tempo especificado; e) inspecionar os questionários aplicados e sua validade; f) conferir no final do trabalho o preenchimento e zelo da amostra prevista. A coleta será realizada com a utilização de tablete/smartfone ou celular androide e o questionário com formato eletrônico e visualização, via, ferramenta, sistema Hashdata. Os dados são checados, no mínimo, 20% dos questionários de cada pesquisador envolvido na pesquisa, seja in loco por supervisores de campo ou, posteriormente, por telefone indicado pelo entrevistado. Internamente, todo o material é verificado e codificado. Antes do processamento final e emissão dos resultados, realiza-se processo de consistência dos dados para garantir a segurança e lisura das informações.";"Os dados serão inseridos conforme §7º. do art. 2º. da Resolução-TSE nº. 23.600/2019, A partir do dia em que a pesquisa puder ser divulgada e até o dia seguinte, o registro deverá ser complementado, sob pena de ser a pesquisa considerada não registrada; na ausência de delimitação do bairro, será identificada a área em que foi realizada."
+"21/07/2026";"05:46:28";2026;81;"Eleições Gerais 2026";"AP";"AP";"AMAPÁ";"AP021752026";"2026-06-09 19:22:27";"S";"81908345000140";"INSTITUTO PARANA DE PESQUISAS E ANALISE DE CONSUMIDOR LTDA";"#NULO#";"Governador, Senador";"2026-06-11 00:00:00";"2026-06-13 00:00:00";"2026-06-15 00:00:00";1100;"10245 - 4ª Região";"Tatiani Cristina Ara";"32000,00";"Pesquisa com metodologia quantitativa, com a realização de entrevistas pessoais, domiciliares e presenciais, utilizando questionário estruturado junto a uma amostra representativa do eleitorado do Estado do Amapá.
+
+
+";"""A amostra será representativa do eleitorado da área pesquisada e será selecionada em três etapas. Na primeira etapa realiza-se um sorteio probabilístico dos municípios onde as entrevistas serão realizadas através do método PPT (Probabilidade Proporcional ao Tamanho), considerando a população eleitora com 16 anos ou mais residente nos municípios como base para essa seleção. Na segunda etapa, faz-se um sorteio probabilístico das localidades, onde as entrevistas serão realizadas, através do método PPT (Probabilidade Proporcional ao Tamanho), tomando a população eleitora de 16 anos ou mais residente nas localidades como base para essa seleção. Na terceira etapa, a seleção do entrevistado dentro da localidade, será feita utilizando-se quotas amostrais proporcionais, em função das seguintes variáveis:
+GÊNERO: TSE Maio 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_metricas=E&p24_back=22&p24_cruzamento_1=ds_sexo&clear=24&p0_uf=AP&p0_mes=5&debug=LEVEL5&session=312990078978641)
+Masculino - 49%; |
+Feminino - 51%; |
+FAIXA ETÁRIA: TSE Maio 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_faixa_etaria&p24_metricas=E&p24_back=22&clear=24&p0_uf=AP&p0_mes=5&debug=LEVEL5&session=8904950028837)
+Entre 16 e 24 anos: 19%; |
+Entre 25 e 34 anos: 23%; |
+Entre 35 e 44 anos: 21%; |
+Entre 45 e 59 anos: 23%; |
+Com 60 anos ou mais: 14%; |
+ESCOLARIDADE: TSE Maio 2026 (https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleitor-eleitorado-mensal/cruzamento-eleitorado-mensal?p24_cruzamento_1=ds_grau_instrucao&p24_metricas=E&p24_back=22&clear=24&p0_uf=AP&p0_mes=5&debug=LEVEL5&session=309383598034615)
+De analfabeto até ensino fundamental completo: 33%; |
+Ensino médio incompleto ou completo: 50% |
+Ensino superior incompleto ou completo: 17% |
+RENDA DOMICILIAR MENSAL:  (https://cidades.ibge.gov.br/brasil/ap/pesquisa/23/24304) IBGE - Censo 2010. Observação: Conforme informações obtidas do Instituto Brasileiro de Geografia e Estatística, o IBGE, não divulgou - e não tem previsão - de data para divulgação do perfil econômico (nível econômico) da população brasileira; portanto, os dados quanto ao nível econômico obtidos no Censo 2022, não podem ser utilizados, pois não foram publicados. (https://censo2022.ibge.gov.br/panorama/)
+Sem rendimentos até 2 salários mínimos: 48% |
+Mais de 2 a 5 salários mínimos: 29% |
+Mais de 5 salários mínimos: 23% |
+Está prevista eventual ponderação para correção das variáveis gênero e faixa etária, com base nos percentuais acima apresentados, caso ocorram diferenças superiores a 3,0 (três) pontos percentuais entre o previsto na amostra e a coleta realizada; para as variáveis escolaridade e renda domiciliar mensal, o fator de ponderação é igual a 1 (resultados obtidos no campo). O nível de confiança estimado é de 95% (noventa e cinco por cento) para uma margem de erro estimada, considerando uma técnica de amostragem aleatória simples, de aproximadamente 3,0 (três) pontos percentuais para mais ou para menos sobre os resultados obtidos.""
+
+
+
+
+
+";"""As entrevistas serão conduzidas por uma equipe de entrevistadores e supervisores devidamente qualificados pelo Instituto Paraná Pesquisas, todos com experiência e treinamento específico em pesquisas de opinião pública. 
+Controle: O controle do processo será realizado por meio de um software de coleta de dados, o qual permitirá o monitoramento garantindo o cumprimento das cotas amostrais.
+Conferência e Fiscalização: Durante a coleta de dados os questionários aplicados são fiscalizados e conferidos através de um supervisor.   
+Adicionalmente, pelo menos 30% dos questionários passarão por uma verificação posterior, que avaliará a precisão na aplicação e a adequação dos entrevistados às variáveis das quotas amostrais. Ou seja, no mínimo 330 entrevistas desta pesquisa serão auditadas pela equipe de qualidade do Instituto Paraná Pesquisas, podendo essa auditoria ser solicitada ao Instituto a qualquer momento.
+Verificação: Após a coleta, os questionários passam por uma etapa de verificação e validação dos dados, para garantir a integridade e precisão dos dados coletados.""
+
+
+
+
+
+";" ""A pesquisa será realizada no Estado do Amapá, a relação dos dados relativos aos municípios e às localidades será apresentado até o dia seguinte à data a partir da qual a pesquisa puder ser divulgada, conforme §7º do art. 2º da Resolução-TSE nº. 23.600/2019""
+
+
+
+
+
+"
