@@ -13,10 +13,34 @@ do mapa derivam sozinhos dos objetos de dados. Sua tarefa é ACRESCENTAR dados e
 campos. NÃO reescreva `chartSVG`, não recalcule pontos do gráfico à mão, não escreva lista de
 meses nem lista de estados à mão no código (já congelou duas vezes).
 
-## Onde esta rotina roda, e por que NÃO roda na nuvem do claude.ai
+## Quem faz o quê: Actions de 6 em 6 horas, Claude local de 6 em 6 horas
 
-Esta tarefa roda na **máquina do Rafael** (tarefa agendada local, de hora em hora, sobre o clone
-em `~/agregador-pesquisas-2026`). Não tente movê-la para uma rotina de nuvem do claude.ai.
+Desde 02/08/2026 a rotina é DIVIDIDA, e deixou de ser de hora em hora. A pergunta a fazer antes
+de trabalhar é: isto é mecânico ou exige julgamento?
+
+**MECÂNICO, e já está feito quando você acorda.** O workflow `.github/workflows/rotina.yml` roda
+`rotina_6h.py` às 01h05, 07h05, 13h05 e 19h05 de Brasília, com o Mac desligado, e cuida de:
+cotações do Polymarket e do Kalshi, carimbo de "Última atualização", detecção do que é NOVO no
+TSE e no Veritá, validação do JS, commit e publicação no PythonAnywhere. Ou seja, o Passo 6
+(mercados) e o Passo 7 (carimbo) NÃO são mais seus, salvo se o workflow tiver falhado.
+
+**JULGAMENTO, e é só isto que sobra para você.** Abrir a íntegra em PDF, ler número que só
+existe em gráfico, confirmar se a rodada é nacional ou estadual, escolher o mês, casar nome de
+candidato e inserir nos objetos de dados. Nada disso o Actions faz, e é de propósito: exigiria
+um modelo lendo PDF no CI, com `ANTHROPIC_API_KEY` no repositório, que não existe e não deve ser
+criada sem o Rafael pedir.
+
+**COMECE PELO `PENDENCIAS.md`.** Ele é gerado a cada rodada do Actions e diz, na primeira seção,
+se apareceu algo novo desde a rodada anterior. Se disser que não apareceu nada, sua rodada acaba
+em duas linhas: NÃO refaça o radar, NÃO rode mercados, NÃO mexa no carimbo, NÃO dê commit vazio.
+O arquivo é reescrito inteiro toda vez, então não o edite à mão. O estado de "o que eu já vi"
+mora em `estado_rotina.json`, que também é do script, não seu.
+
+Se o `PENDENCIAS.md` estiver velho (data de mais de 7 horas atrás), o Actions falhou: confira com
+`gh run list --workflow=rotina.yml --limit 3` e, aí sim, rode `python3 rotina_6h.py` à mão.
+
+A tarefa agendada local roda 25 minutos depois do Actions, também de 6 em 6 horas, no clone em
+`~/agregador-pesquisas-2026`. Não tente movê-la para uma rotina de nuvem do claude.ai.
 
 Foi tentado em 02/08/2026 e MEDIDO, com o relatório em `DIAGNOSTICO_NUVEM.md`. O sandbox da
 nuvem tem um proxy de saída obrigatório em `127.0.0.1` que responde **403 Forbidden ao CONNECT**
@@ -43,23 +67,36 @@ a liberar esses domínios, o teste é rodar de novo o que está em `DIAGNOSTICO_
 ## Ferramentas do repositório
 
 ```bash
+python3 rotina_6h.py              # a rodada mecânica inteira (é o que o Actions executa)
+python3 rotina_6h.py --dry-run    # mostra o que faria, sem gravar
 python3 radar_tse.py              # o que o TSE registrou nos últimos 7 dias
 python3 radar_tse.py 2026-07-28   # a partir de uma data
 python3 mercados.py               # cotações do Polymarket e do Kalshi
 python3 mercados.py --debug       # mostra qual caminho de rede funcionou
 ```
 
+`rotina_6h.py` é do Actions. Só rode à mão quando o workflow tiver falhado, porque ele carimba e
+mexe nos mercados, e rodar por cima de uma rodada boa só gera commit à toa.
+
 `radar_tse.py` já baixa os ZIPs, faz o desempate nacional x estadual pelo gêmeo e cruza o
 contratante. `mercados.py` já tenta HTTPS direto, depois DNS-over-HTTPS, depois o
 `nslookup 8.8.8.8` antigo; se todos falharem sai com código 2 e você NÃO inventa número.
 
-## Passo 1 — Radar do TSE (faça SEMPRE antes de sair pesquisando)
+## Passo 1 — Leia o `PENDENCIAS.md` (é ele que decide se você tem trabalho)
 
-Rode `radar_tse.py` e compare com o que já está no painel. **Na maioria das rodadas não haverá
-pesquisa nova, e isso é o esperado, não é falha.** Se nada divulgado for novo, pule direto para
-o carimbo e o commit, e escreva um resumo de duas linhas. NÃO refaça a varredura pesada (baixar
-íntegra em PDF, renderizar página, abrir jornal) quando o radar não apontou nada novo: ele é o
-filtro barato que decide se vale abrir o resto.
+O Actions já rodou o radar por você. Abra o `PENDENCIAS.md` e leia a seção "Precisa de olho
+humano nesta rodada". **Na maioria das rodadas não haverá pesquisa nova, e isso é o esperado,
+não é falha.** Nesse caso responda em duas linhas e PARE: sem carimbo, sem mercados, sem commit.
+NÃO refaça a varredura pesada (baixar íntegra em PDF, renderizar página, abrir jornal) quando o
+relatório não apontou nada novo: ele é o filtro barato que decide se vale abrir o resto.
+
+Se apontou novidade, o resto do arquivo dá o contexto: as últimas publicações do Veritá e a
+tabela de tudo que o TSE registrou com divulgação vencida nos últimos 10 dias. Só aí vale rodar
+`radar_tse.py` para ver a linha inteira.
+
+Cuidado com a distinção que já enganou agente antes: estar na tabela significa que a DATA DE
+DIVULGAÇÃO venceu, não que o número exista publicado. Instituto que registra e não publica é
+caso conhecido, e aí não se insere nada.
 
 Colunas úteis do CSV: `NR_PROTOCOLO_REGISTRO`, `NM_EMPRESA_FANTASIA`, `NR_CNPJ_EMPRESA`,
 `DS_CARGO`, `DT_INICIO_PESQUISA`, `DT_FIM_PESQUISA`, `DT_DIVULGACAO`, `QT_ENTREVISTADO`,
@@ -130,17 +167,23 @@ deriva do `DI`. `OUTLIERS={}` está VAZIO de propósito, não reintroduza exclus
 volte de mediana para média. O agregado é a MEDIANA de todos os institutos (função `med()`). Não
 reintroduza house effect de 1º turno no gráfico nem "% de chance de vitória" no banner.
 
-## Passo 6 — Mercados
+## Passo 6 — Mercados: NÃO É MAIS SEU
 
-Rode `python3 mercados.py` e atualize `PM`, `KAL` e a data "cotação de D/M/AAAA" no rodapé
-(`#foot`). Formato `['NN,N%','NN,N%']`. **No máximo uma vez a cada 6 horas:** se a data do rodapé
-já for de hoje e o horário não for por volta de 7h, 13h ou 19h, pule este passo. Se o script sair
-com erro, deixe como está e AVISE no resumo. Nunca chute.
+O `rotina_6h.py` no Actions lê o Polymarket e o Kalshi e escreve `PM`, `KAL` e a data
+"cotação de D/M/AAAA" do rodapé (`#foot`) quatro vezes por dia, nas janelas de 1h, 7h, 13h e 19h.
+Não rode `mercados.py` para atualizar o painel: você duplicaria a cotação com o mesmo número e
+geraria commit à toa.
 
-## Passo 7 — Carimbo
+Só assuma este passo se o `PENDENCIAS.md` disser que os mercados falharam ou se o workflow estiver
+vermelho. A regra antiga continua valendo quando isso acontecer: formato `['NN,N%','NN,N%']`, e se
+o script sair com erro, deixe como está e AVISE no resumo. Nunca chute.
 
-Confira a data com `TZ=America/Sao_Paulo date "+%d/%m/%Y %H:%M"`. Substitua o texto após
-"Última atualização: ". Faça SEMPRE, mesmo sem rodada nova.
+## Passo 7 — Carimbo: também NÃO É MAIS SEU
+
+O Actions carimba "Última atualização" a cada rodada de 6 horas, com o relógio de São Paulo.
+Você só mexe no carimbo quando ALTEROU dado nesta rodada, e aí é obrigatório: confira a hora com
+`TZ=America/Sao_Paulo date "+%d/%m/%Y %H:%M"` e substitua o texto após "Última atualização: ".
+Rodada sem dado novo não leva carimbo, porque o do Actions já é recente.
 
 ## Passo 8 — Validar e publicar
 
@@ -148,7 +191,8 @@ Confira a data com `TZ=America/Sao_Paulo date "+%d/%m/%Y %H:%M"`. Substitua o te
 node -e "const s=require('fs').readFileSync('electoralpolls.html','utf8'); const m=s.match(/<script>([\s\S]*)<\/script>/)[1]; try{ new Function(m); console.log('JS OK'); }catch(e){ console.log('JS ERRO:', e.message); }"
 ```
 
-Corrija até dar "JS OK". Depois faça commit e push na `main`:
+Corrija até dar "JS OK". Depois faça commit e push na `main`, **só se você mudou dado**. Rodada
+sem novidade não commita: quem mantém o repositório vivo agora é a rodada do Actions.
 
 ```bash
 git add -A && git commit -m "atualiza painel" && git push
@@ -162,13 +206,21 @@ antes do upload e nada vai ao ar.
 
 Rodar `python3 deploy_agregador.py` à mão continua valendo e não faz mal, porque o upload é
 idempotente: use quando quiser o painel no ar na mesma hora sem esperar o Actions, ou quando
-`gh run list --limit 3` mostrar o workflow vermelho. No Mac o script lê o token do `painel/.env`
-por caminho absoluto; no Actions, dos segredos do repositório.
+`gh run list --limit 3` mostrar o workflow vermelho. No Mac o script lê o token do `painel/.env`;
+no Actions, dos segredos do repositório.
+
+**São DOIS workflows, com papéis diferentes.** O `deploy.yml` reage a push que toque no painel e
+só publica. O `rotina.yml` é a rodada de 6 em 6 horas descrita no topo deste arquivo, e publica
+sozinho no fim. Detalhe do GitHub que importa: push feito pelo `GITHUB_TOKEN` NÃO dispara outro
+workflow, então o `deploy.yml` não roda atrás do `rotina.yml`, e por isso o `rotina.yml` chama o
+`deploy_agregador.py` ele mesmo. Execução de referência do `rotina.yml`, verde de ponta a ponta:
+run 30776807373.
 
 ## Regras obrigatórias
 
 - Edite apenas `electoralpolls.html` (e a metodologia, quando aprender algo que o próximo agente
-  precise saber).
+  precise saber). `PENDENCIAS.md` e `estado_rotina.json` são gerados pelo `rotina_6h.py`: leia,
+  nunca edite, porque a rodada seguinte sobrescreve.
 - Título: "Agregador de pesquisas · Eleições 2026", uma linha só, no `<title>` e na faixa
   dourada. O painel NÃO tem nome de marca. Não reintroduza "50+1" nem "Agregador Brasil".
 - SENADO: em 2026 todos os 27 estados elegem DOIS senadores (`SENVAGAS_PADRAO=2`). O painel
@@ -184,5 +236,5 @@ por caminho absoluto; no Actions, dos segredos do repositório.
 ## Passo 9 — Resumo
 
 O que entrou em cada uma das três frentes, como o agregado do mês mudou (1º turno e margem do 2º
-turno) e o que ficou pendente. Se nada novo surgiu, diga isso claramente, mas lembre de atualizar
-o carimbo mesmo assim.
+turno) e o que ficou pendente. Se nada novo surgiu, diga isso em duas linhas e pare: o carimbo já
+é do Actions e não precisa ser tocado.
