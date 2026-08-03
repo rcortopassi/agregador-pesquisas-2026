@@ -243,6 +243,25 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   --resolve) depende de UDP/53; a nova tenta HTTPS direto, depois DNS-over-HTTPS no dns.google e
   no cloudflare-dns.com, e so entao o nslookup. No Mac o direto falha (DNS do provedor) e o DoH
   salva. Se todos falharem o script sai com codigo 2 e quem chama NAO inventa numero.
+- "100 CIDADES" NO TSE É A FUTURA/APEX (03/08/2026). O radar vinha listando "100 CIDADES" como
+  instituto desconhecido e não acompanhado desde 23/07/2026. É a mesma casa: o registro sai com o
+  nome fantasia "100 CIDADES" (a marca 100% Cidades) e contratante FUTURA CONSULTORIA E ASSESSORIA
+  LTDA, e o Poder360 publica exatamente esses registros como "Futura/Apex". Confirmado nos pares
+  BR-01327/2026 + BA-07924/2026 (Bahia, campo 24-25 jul) e BR-05425/2026 (Rio de Janeiro, campo
+  27-28 jul), os dois com R$ 80.000 pagos pela Futura. Ou seja: quando o radar apontar 100 CIDADES,
+  leia Futura/Apex, que JÁ está no painel, e aplique a regra de uma rodada por instituto por mês.
+- FALSO POSITIVO DE NACIONAL SEM GÊMEO: BR-05425/2026 (03/08/2026). O registro apareceu como
+  NACIONAL? por não ter gêmeo estadual, e é a pesquisa do RIO DE JANEIRO da Futura/Apex: a íntegra
+  e as três matérias do Poder360 dizem "1.000 pessoas no Estado do Rio de Janeiro" e citam SÓ o
+  BR-05425/2026, sem par RJ-. É o LIMITE CONHECIDO do desempate pelo gêmeo virando caso concreto:
+  a Futura simplesmente não registrou a versão estadual. Regra prática que fica: N=1.000 e custo de
+  R$ 80 mil são a assinatura das ESTADUAIS da Futura; as nacionais dela têm amostra maior. Antes de
+  tratar "sem gêmeo" como nacional, confira o N e abra a matéria.
+- DATATRENDS EM ALAGOAS ESTÁ SOB RESTRIÇÃO DO TRE-AL (30/07/2026, anotado em 03/08/2026). O
+  instituto registra rodadas de Alagoas (AL-08883/2026, campo 31/7-2/8, e o gêmeo presidencial
+  BR-06278/2026) mas há decisão do TRE mantendo restrição à divulgação, e nenhum número da rodada
+  apareceu publicado. Não inserir AL da DataTrends sem antes checar a situação judicial, conforme a
+  regra de checagem de suspensão que já vale para o ciclo.
 - SENADO, VAGAS E NEGRITO (21/07/2026). Em 2026 TODOS os 27 estados elegem DOIS senadores: o Senado tem 81 cadeiras, 3 por unidade da federação, renovadas alternadamente em 1/3 (1 vaga) e 2/3 (2 vagas), e 2026 é ano de 2/3 (2014 e 2022 foram 1; 2018 e 2026 são 2). O painel destaca em negrito tantos nomes quantas forem as vagas: 2 no Senado, 1 no Governador. Implementado em `SENVAGAS_PADRAO=2` + `SENVAGAS_UF={}` (override por estado, hoje vazio, para vaga extra por cassação/renúncia/morte) + `senVagas(uf)` + `nDestaque(office,uf)`, consumidos por `stateSinglePoll(d,nb)` e `stateInstTable(monthsObj,nb)`. Não fixar o 2 no código nem voltar a destacar só o primeiro colocado.
 
 O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o estado ATUAL abaixo, nunca versões antigas desta metodologia:
