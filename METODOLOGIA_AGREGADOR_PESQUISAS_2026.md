@@ -207,6 +207,26 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   naquele UF/mês e repetir exatamente. Detector, que roda em segundos sobre o próprio HTML: para
   cada UF e mês, listar os nomes e apontar par em que um é substring do outro. CUIDADO com falso
   positivo de sobrenome comum: 'Joel Rodrigues' x 'Toni Rodrigues' no PI são duas pessoas.
+- FEED DE PUBLICAÇÃO DO VERITÁ, QUE RESOLVE "REGISTRADA MAS NÃO DIVULGADA" (02/08/2026, 21h).
+  PROBLEMA RECORRENTE: o Veritá é, de longe, o instituto que mais aparece no radar do TSE, e
+  registra vários estados na MESMA leva (mesmo CNPJ, mesmas datas de campo). Só que ele divulga
+  um estado por vez, dias depois, e o radar não distingue o que já saiu do que ainda vai sair.
+  Sem essa distinção o agente ou fica caçando número que não existe ou dá a leva por completa
+  quando só metade publicou. Exemplo do dia: a leva de campo 28/07-01/08 tem PR, MA, AP, AM e PA;
+  às 21h de 02/08 só PR e MA estavam publicados.
+  SOLUÇÃO: o site do site institucional NÃO serve (institutoverita.com.br está tomado por spam de
+  cassino e farmácia, com "hello world" no meio; nada eleitoral desde 2025). O que serve é o site
+  DEDICADO `eleicoes26.institutoverita.com.br`, um SPA feito no Lovable cujo backend é Supabase.
+  Dá para listar tudo o que ele publicou, com data e hora, em uma chamada:
+  `GET https://lgjdbpskgjfbmlffbntx.supabase.co/rest/v1/pesquisas?select=id,titulo,descricao,pdf_url,created_at&order=created_at.desc&limit=30`
+  com a chave anônima nos cabeçalhos `apikey` e `Authorization: Bearer`. A chave é pública, está
+  embutida no bundle `/assets/index-*.js` do próprio site (extrair de lá se ela rodar), e devolve
+  exatamente o que a página mostra a qualquer visitante. Cada linha tem `titulo` (com o estado),
+  `created_at` e `pdf_url`, que é a ÍNTEGRA, ou seja a fonte de prioridade 1 do Passo 3.
+  ATENÇÃO: `created_at` vem em UTC. 15:48Z é 12:48 em Brasília; não confundir com a hora do TSE.
+  USO NO PROCESSO: quando o radar apontar Veritá, consultar este feed ANTES de sair procurando em
+  jornal regional. Se o estado não está no feed, a rodada existe mas não foi divulgada, e a
+  conduta certa é não inserir e registrar como pendente.
 - MIGRACAO PARA O GIT E A NUVEM QUE NAO DEU (02/08/2026). O usuario pediu que a atualizacao
   rodasse "direto pelo site", sem o app aberto no Mac, e mandou passar tudo para o git deixando o
   Google Drive como copia morta. A migracao foi feita: fonte de verdade agora e o repositorio
