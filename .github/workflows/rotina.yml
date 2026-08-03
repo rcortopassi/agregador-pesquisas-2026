@@ -1,0 +1,73 @@
+name: Rotina de 6 em 6 horas
+
+# O QUE ESTE WORKFLOW FAZ, e por que ele existe (02/08/2026).
+# Ate aqui a rotina rodava so na maquina do Rafael, de HORA EM HORA, e cada rodada gastava
+# uma sessao do Claude para, quase sempre, descobrir que nao havia pesquisa nova. Agora a
+# parte MECANICA mora aqui e roda de 6 em 6 horas, com o Mac desligado:
+#   cotacoes de Polymarket e Kalshi, carimbo de "Ultima atualizacao", deteccao do que e NOVO
+#   no TSE e no Verita, validacao do JS, commit e publicacao no PythonAnywhere.
+# O que exige julgamento (abrir integra em PDF, ler numero em grafico, decidir mes e escopo,
+# casar nome de candidato) continua na rodada local do Claude, tambem de 6 em 6 horas, que le
+# o PENDENCIAS.md gerado aqui para saber se tem trabalho.
+#
+# LIMITE CONHECIDO: nao da para incorporar pesquisa por aqui. Isso precisa de um modelo lendo
+# PDF, e o repositorio nao tem ANTHROPIC_API_KEY cadastrada de proposito. Este workflow NUNCA
+# insere numero no painel; no maximo avisa que existe algo para olhar.
+
+on:
+  schedule:
+    # UTC. Equivale a 01:05, 07:05, 13:05 e 19:05 em Brasilia, ou seja, as tres janelas de
+    # mercado da metodologia (7h, 13h, 19h) mais uma da madrugada.
+    - cron: '5 4,10,16,22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rotina-agregador
+  cancel-in-progress: false
+
+jobs:
+  rotina:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Roda a parte mecanica
+        run: python3 rotina_6h.py
+
+      - name: Commita se mudou alguma coisa
+        run: |
+          git config user.name  "rotina-agregador"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "::notice::nada mudou nesta rodada, sem commit"
+            exit 0
+          fi
+          git commit -m "rotina 6h: mercados, carimbo e radar de pendencias"
+          # Alguem pode ter dado push do Mac entre o checkout e agora.
+          git pull --rebase --autostash
+          git push
+
+      - name: Publica no PythonAnywhere
+        env:
+          PA_TOKEN: ${{ secrets.PA_TOKEN }}
+          PA_USER: ${{ secrets.PA_USER }}
+        run: |
+          # Push feito com o GITHUB_TOKEN NAO dispara outro workflow, entao o deploy.yml nao
+          # roda atras deste. A publicacao tem que sair daqui mesmo.
+          if [ -z "$PA_TOKEN" ]; then
+            echo "::warning::PA_TOKEN nao cadastrado; o painel no ar segue com a versao anterior."
+            exit 0
+          fi
+          python3 deploy_agregador.py
