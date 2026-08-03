@@ -2,11 +2,32 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 02/08/2026 22:24. Mercados: Polymarket 65,5%/24,3%, Kalshi 66,0%/24,0%.
+Rodada de 03/08/2026 04:39. Mercados: Polymarket 65,5%/24,8%, Kalshi 67,0%/24,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
+- NOVO no TSE: AC, ATLASINTEL (Governador, Senador), campo 28/07-02/08, divulgação 2026-08-03, N=1000, registro AC078152026
+- NOVO no TSE: AL, DATATRENDS (Governador, Senador), campo 31/07-02/08, divulgação 2026-08-03, N=1200, registro AL088832026
+- NOVO no TSE: BA, #NULO# (Governador, Senador), campo 31/07-02/08, divulgação 2026-08-03, N=1400, registro BA030432026
+- NOVO no TSE: BA, PUBLIVENDE ASSSSSORIA E COMU (Governador, Senador), campo 29/07-01/08, divulgação 2026-08-03, N=2000, registro BA091332026
+- NOVO no TSE: BA, 100 CIDADES (Governador, Senador), campo 24/07-25/07, divulgação 2026-08-03, N=1000, registro BA079242026
+- NOVO no TSE: ES, AGILI PESQUISAS (Governador, Senador), campo 27/07-31/07, divulgação 2026-08-03, N=800, registro ES089122026
+- NOVO no TSE: ESTADUAL[AC], ATLASINTEL (Presidente), campo 28/07-02/08, divulgação 2026-08-03, N=1000, registro BR093322026
+- NOVO no TSE: ESTADUAL[AL], DATATRENDS (Presidente), campo 31/07-02/08, divulgação 2026-08-03, N=1200, registro BR062782026
+- NOVO no TSE: ESTADUAL[BA], 100 CIDADES (Presidente), campo 24/07-25/07, divulgação 2026-08-03, N=1000, registro BR013272026
+- NOVO no TSE: ESTADUAL[PA], VERITA (Presidente), campo 28/07-01/08, divulgação 2026-08-03, N=1525, registro BR098852026
+- NOVO no TSE: ESTADUAL[PI], INSTITUTO DE PESQUISA DATA A (Presidente), campo 20/07-27/07, divulgação 2026-08-03, N=1200, registro BR059082026
+- NOVO no TSE: ESTADUAL[SE], REAL TIME BIG DATA (Presidente), campo 28/07-01/08, divulgação 2026-08-03, N=1600, registro BR076962026
+- NOVO no TSE: NACIONAL?, NEXUS (Presidente), campo 31/07-02/08, divulgação 2026-08-03, N=2000, registro BR028742026
+- NOVO no TSE: NACIONAL?, 100 CIDADES (Presidente), campo 27/07-28/07, divulgação 2026-08-03, N=1000, registro BR054252026
+- NOVO no TSE: NACIONAL?, BADRA COMUNICACAO (Presidente), campo 29/07-31/07, divulgação 2026-08-03, N=1060, registro BR082462026
+- NOVO no TSE: PA, VERITA (Governador, Senador), campo 28/07-01/08, divulgação 2026-08-03, N=1525, registro PA012722026
+- NOVO no TSE: PB, INSTITUTO RANKING PESQUISA (Governador, Senador, Deputado Fede), campo 29/07-30/07, divulgação 2026-08-03, N=782, registro PB098222026
+- NOVO no TSE: PI, INSTITUTO DE PESQUISA DATA A (Governador, Senador, Deputado Fede), campo 20/07-27/07, divulgação 2026-08-03, N=1200, registro PI079102026
+- NOVO no TSE: RJ, PREFAB FUTURE (Governador), campo 26/07-29/07, divulgação 2026-08-03, N=2000, registro RJ027702026
+- NOVO no TSE: SE, REAL TIME BIG DATA (Governador, Senador), campo 28/07-01/08, divulgação 2026-08-03, N=1600, registro SE073272026
+- NOVO no TSE: SP, INTELLIGENCE PESQUISA E COMU (Governador, Senador, Deputado Fede), campo 27/07-29/07, divulgação 2026-08-03, N=1100, registro SP049112026
+- NOVO no TSE: TO, BRASMARKET (Governador, Senador), campo 29/07-31/07, divulgação 2026-08-03, N=1200, registro TO028482026
 
 ## Últimas publicações do Veritá
 
@@ -25,14 +46,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-23 | AM | PROJETA PESQUISA DE MERCADO  | Governador, Senador, Deputado Fede | 18/07-23/07 | 3000 | AM066352026 |
-| 2026-07-23 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 11/07-14/07 | 500 | BR016892026 |
-| 2026-07-23 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 19/07-22/07 | 1250 | BR019792026 |
-| 2026-07-23 | ESTADUAL[SC] | #NULO# | Presidente | 17/07-22/07 | 1008 | BR012252026 |
-| 2026-07-23 | MT | PERCENT PESQUISA DE MERCADO  | Governador, Senador | 11/07-14/07 | 500 | MT000882026 |
-| 2026-07-23 | MT | BRASILIA DADOS | Governador, Senador, Deputado Fede | 18/07-22/07 | 1300 | MT002752026 |
-| 2026-07-23 | RN | ITEM PESQUISAS TECNICAS | Governador, Senador, Deputado Fede | 19/07-22/07 | 1250 | RN053112026 |
-| 2026-07-23 | SC | #NULO# | Governador, Senador | 17/07-22/07 | 1008 | SC022492026 |
 | 2026-07-24 | AM | PROJETA PESQUISA DE MERCADO  | Governador, Senador | 19/07-23/07 | 3000 | AM091522026 |
 | 2026-07-24 | AP | REAL TIME BIG DATA | Governador, Senador | 19/07-23/07 | 1600 | AP029702026 |
 | 2026-07-24 | ESTADUAL[AP] | REAL TIME BIG DATA | Presidente | 19/07-23/07 | 1600 | BR055422026 |
@@ -147,4 +160,26 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-02 | PR | VERITA | Governador, Senador | 28/07-01/08 | 2010 | PR039102026 |
 | 2026-08-02 | PR | RADAR ESTATISTICA | Governador, Senador | 28/07-02/08 | 1100 | PR054282026 |
 | 2026-08-02 | SP | #NULO# | Governador, Senador | 29/07-31/07 | 1480 | SP001422026 |
+| 2026-08-03 | AC | ATLASINTEL | Governador, Senador | 28/07-02/08 | 1000 | AC078152026 |
+| 2026-08-03 | AL | DATATRENDS | Governador, Senador | 31/07-02/08 | 1200 | AL088832026 |
+| 2026-08-03 | BA | #NULO# | Governador, Senador | 31/07-02/08 | 1400 | BA030432026 |
+| 2026-08-03 | BA | PUBLIVENDE ASSSSSORIA E COMU | Governador, Senador | 29/07-01/08 | 2000 | BA091332026 |
+| 2026-08-03 | BA | 100 CIDADES | Governador, Senador | 24/07-25/07 | 1000 | BA079242026 |
+| 2026-08-03 | ES | AGILI PESQUISAS | Governador, Senador | 27/07-31/07 | 800 | ES089122026 |
+| 2026-08-03 | ESTADUAL[AC] | ATLASINTEL | Presidente | 28/07-02/08 | 1000 | BR093322026 |
+| 2026-08-03 | ESTADUAL[AL] | DATATRENDS | Presidente | 31/07-02/08 | 1200 | BR062782026 |
+| 2026-08-03 | ESTADUAL[BA] | 100 CIDADES | Presidente | 24/07-25/07 | 1000 | BR013272026 |
+| 2026-08-03 | ESTADUAL[PA] | VERITA | Presidente | 28/07-01/08 | 1525 | BR098852026 |
+| 2026-08-03 | ESTADUAL[PI] | INSTITUTO DE PESQUISA DATA A | Presidente | 20/07-27/07 | 1200 | BR059082026 |
+| 2026-08-03 | ESTADUAL[SE] | REAL TIME BIG DATA | Presidente | 28/07-01/08 | 1600 | BR076962026 |
+| 2026-08-03 | NACIONAL? | NEXUS | Presidente | 31/07-02/08 | 2000 | BR028742026 |
+| 2026-08-03 | NACIONAL? | 100 CIDADES | Presidente | 27/07-28/07 | 1000 | BR054252026 |
+| 2026-08-03 | NACIONAL? | BADRA COMUNICACAO | Presidente | 29/07-31/07 | 1060 | BR082462026 |
+| 2026-08-03 | PA | VERITA | Governador, Senador | 28/07-01/08 | 1525 | PA012722026 |
+| 2026-08-03 | PB | INSTITUTO RANKING PESQUISA | Governador, Senador, Deputado Fede | 29/07-30/07 | 782 | PB098222026 |
+| 2026-08-03 | PI | INSTITUTO DE PESQUISA DATA A | Governador, Senador, Deputado Fede | 20/07-27/07 | 1200 | PI079102026 |
+| 2026-08-03 | RJ | PREFAB FUTURE | Governador | 26/07-29/07 | 2000 | RJ027702026 |
+| 2026-08-03 | SE | REAL TIME BIG DATA | Governador, Senador | 28/07-01/08 | 1600 | SE073272026 |
+| 2026-08-03 | SP | INTELLIGENCE PESQUISA E COMU | Governador, Senador, Deputado Fede | 27/07-29/07 | 1100 | SP049112026 |
+| 2026-08-03 | TO | BRASMARKET | Governador, Senador | 29/07-31/07 | 1200 | TO028482026 |
 
