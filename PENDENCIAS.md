@@ -2,20 +2,11 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 04/08/2026 03:37. Mercados: Polymarket 64,5%/27,6%, Kalshi 65,0%/27,0%.
+Rodada de 04/08/2026 09:11. Mercados: Polymarket 64,5%/27,6%, Kalshi 65,0%/27,0%.
 
 ## Precisa de olho humano nesta rodada
 
-- NOVO no TSE: ESTADUAL[MT], NOVO IBRAPE (Presidente), campo 29/07-03/08, divulgação 2026-08-04, N=1000, registro BR087302026
-- NOVO no TSE: ESTADUAL[PA], REAL TIME BIG DATA (Presidente), campo 30/07-03/08, divulgação 2026-08-04, N=1600, registro BR096502026
-- NOVO no TSE: ESTADUAL[TO], NEXUS (Presidente), campo 30/07-02/08, divulgação 2026-08-04, N=1200, registro BR055732026
-- NOVO no TSE: GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 24/07-27/07, divulgação 2026-08-04, N=600, registro GO015282026
-- NOVO no TSE: GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 23/07-25/07, divulgação 2026-08-04, N=500, registro GO076702026
-- NOVO no TSE: MG, F5 ATUALIZA DADOS (Governador, Senador, Deputado Fede), campo 30/07-31/07, divulgação 2026-08-04, N=472, registro MG082142026
-- NOVO no TSE: MT, NOVO IBRAPE (Governador, Senador, Deputado Fede), campo 29/07-03/08, divulgação 2026-08-04, N=1000, registro MT050422026
-- NOVO no TSE: PA, REAL TIME BIG DATA (Governador, Senador), campo 30/07-03/08, divulgação 2026-08-04, N=1600, registro PA084922026
-- NOVO no TSE: TO, #NULO# (Governador, Senador), campo 30/07-03/08, divulgação 2026-08-04, N=1250, registro TO010562026
-- NOVO no TSE: TO, NEXUS (Governador, Senador), campo 30/07-02/08, divulgação 2026-08-04, N=1200, registro TO017852026
+Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
 
 ## Últimas publicações do Veritá
 
