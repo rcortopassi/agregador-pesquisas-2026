@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 04/08/2026 09:11. Mercados: Polymarket 64,5%/27,6%, Kalshi 65,0%/27,0%.
+Rodada de 04/08/2026 15:00. Mercados: Polymarket 64,5%/26,1%, Kalshi 66,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -71,22 +71,22 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-07-28 | RN | MEDIA - INTELIGENCIA EM PESQ | Governador, Senador, Deputado Fede | 23/07-24/07 | 500 | RN030022026 |
 | 2026-07-29 | BA | #NULO# | Governador, Senador | 23/07-27/07 | 1200 | BA023312026 |
 | 2026-07-29 | ESTADUAL[BA] | #NULO# | Presidente | 23/07-27/07 | 1200 | BR058562026 |
-| 2026-07-29 | ESTADUAL[PE] | BADRA COMUNICACAO | Presidente | 24/07-29/07 | 1500 | BR032892026 |
 | 2026-07-29 | ESTADUAL[PE] | INSTITUTO FOCUS | Presidente | 24/07-25/07 | 400 | BR081332026 |
+| 2026-07-29 | ESTADUAL[PE] | BADRA COMUNICACAO | Presidente | 24/07-29/07 | 1500 | BR032892026 |
 | 2026-07-29 | ESTADUAL[RN] | PERFIL PESQUISAS TECNICAS | Presidente | 23/07-26/07 | 1600 | BR052252026 |
 | 2026-07-29 | ESTADUAL[SP] | #NULO# | Presidente | 23/07-27/07 | 1650 | BR099982026 |
 | 2026-07-29 | ESTADUAL[SP] | #NULO# | Presidente | 25/07-28/07 | 1680 | BR090712026 |
 | 2026-07-29 | MA | IPSENSUS PESQUISAS | Governador, Senador, Deputado Fede | 21/07-25/07 | 1800 | MA096772026 |
 | 2026-07-29 | NACIONAL? | 100 CIDADES | Presidente | 21/07-24/07 | 1200 | BR080542026 |
-| 2026-07-29 | PE | INSTITUTO FOCUS | Governador, Senador, Deputado Fede | 24/07-25/07 | 400 | PE048122026 |
 | 2026-07-29 | PE | BADRA COMUNICACAO | Governador | 24/07-29/07 | 1500 | PE066412026 |
+| 2026-07-29 | PE | INSTITUTO FOCUS | Governador, Senador, Deputado Fede | 24/07-25/07 | 400 | PE048122026 |
 | 2026-07-29 | PI | INSTITUTO CREDIBILIDADE | Governador, Senador, Deputado Fede | 18/07-19/07 | 359 | PI032172026 |
 | 2026-07-29 | PR | #NULO# | Governador, Senador | 24/07-28/07 | 1200 | PR031912026 |
 | 2026-07-29 | RN | PERFIL PESQUISAS TECNICAS | Governador, Senador, Deputado Fede | 23/07-26/07 | 1600 | RN003372026 |
 | 2026-07-29 | SP | #NULO# | Governador, Senador | 25/07-28/07 | 1680 | SP046242026 |
 | 2026-07-29 | SP | #NULO# | Governador, Senador | 23/07-27/07 | 1650 | SP048462026 |
-| 2026-07-30 | CE | #NULO# | Governador, Senador | 24/07-28/07 | 1002 | CE092772026 |
 | 2026-07-30 | CE | INSTITUTO OPINIAO | Governador | 24/07-27/07 | 1535 | CE082262026 |
+| 2026-07-30 | CE | #NULO# | Governador, Senador | 24/07-28/07 | 1002 | CE092772026 |
 | 2026-07-30 | ESTADUAL[CE] | #NULO# | Presidente | 24/07-28/07 | 1002 | BR032382026 |
 | 2026-07-30 | ESTADUAL[GO] | #NULO# | Presidente | 24/07-28/07 | 1104 | BR080632026 |
 | 2026-07-30 | ESTADUAL[GO] | #NULO# | Presidente | 24/07-28/07 | 1104 | BR018712026 |
@@ -98,17 +98,17 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-07-30 | SE | #NULO# | Governador, Senador | 27/07-29/07 | 1070 | SE002812026 |
 | 2026-07-31 | AP | GRUPO GERP GERP MERCADO GERP | Governador, Senador | 27/07-29/07 | 1000 | AP059062026 |
 | 2026-07-31 | ESTADUAL[MS] | NOVO IBRAPE | Presidente | 25/07-29/07 | 1000 | BR059132026 |
-| 2026-07-31 | ESTADUAL[PE] | REAL TIME BIG DATA | Presidente | 27/07-30/07 | 1600 | BR083542026 |
 | 2026-07-31 | ESTADUAL[PE] | #NULO# | Presidente | 28/07-30/07 | 1022 | BR076012026 |
+| 2026-07-31 | ESTADUAL[PE] | REAL TIME BIG DATA | Presidente | 27/07-30/07 | 1600 | BR083542026 |
 | 2026-07-31 | ESTADUAL[RJ] | #NULO# | Presidente | 28/07-30/07 | 1600 | BR064932026 |
 | 2026-07-31 | ESTADUAL[SP] | PIMENTEL & CARPENTIERI CONSU | Presidente | 27/07-30/07 | 800 | BR078382026 |
 | 2026-07-31 | MA | VERITA | Governador, Senador | 25/07-29/07 | 1525 | MA014552026 |
 | 2026-07-31 | MS | NOVO IBRAPE | Governador, Senador | 25/07-29/07 | 1000 | MS071902026 |
-| 2026-07-31 | NACIONAL? | ALFA INTELIGENCIA | Presidente | 23/07-28/07 | 2700 | BR044882026 |
 | 2026-07-31 | NACIONAL? | #NULO# | Presidente | 26/07-28/07 | 2100 | BR010842026 |
+| 2026-07-31 | NACIONAL? | ALFA INTELIGENCIA | Presidente | 23/07-28/07 | 2700 | BR044882026 |
 | 2026-07-31 | PB | INSTITUTO SETA DE PESQUISA | Governador, Senador, Deputado Fede | 25/07-27/07 | 1500 | PB019092026 |
-| 2026-07-31 | PE | REAL TIME BIG DATA | Governador, Senador | 27/07-30/07 | 1600 | PE084132026 |
 | 2026-07-31 | PE | #NULO# | Governador, Senador | 28/07-30/07 | 1022 | PE045192026 |
+| 2026-07-31 | PE | REAL TIME BIG DATA | Governador, Senador | 27/07-30/07 | 1600 | PE084132026 |
 | 2026-07-31 | PI | CENSUS | Governador, Senador, Deputado Fede | 23/07-24/07 | 303 | PI044882026 |
 | 2026-07-31 | PI | INTENCAO INSTITUTO DE PEQUIS | Governador, Senador, Deputado Fede | 22/07-24/07 | 300 | PI031902026 |
 | 2026-07-31 | PR | INSTITUTO RANKING PESQUISA | Governador, Senador | 26/07-28/07 | 1200 | PR074862026 |
@@ -127,8 +127,8 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-02 | GO | DIRECT PESQUISAS | Governador, Senador, Deputado Fede | 28/07-31/07 | 2000 | GO030622026 |
 | 2026-08-02 | MA | VOX BRASIL PUBLICIDADE MARKE | Governador, Senador, Deputado Fede | 28/07-29/07 | 450 | MA023642026 |
 | 2026-08-02 | PB | DATATRENDS | Governador, Senador | 27/07-29/07 | 1200 | PB095472026 |
-| 2026-08-02 | PR | VERITA | Governador, Senador | 28/07-01/08 | 2010 | PR039102026 |
 | 2026-08-02 | PR | RADAR ESTATISTICA | Governador, Senador | 28/07-02/08 | 1100 | PR054282026 |
+| 2026-08-02 | PR | VERITA | Governador, Senador | 28/07-01/08 | 2010 | PR039102026 |
 | 2026-08-02 | SP | #NULO# | Governador, Senador | 29/07-31/07 | 1480 | SP001422026 |
 | 2026-08-03 | AC | ATLASINTEL | Governador, Senador | 28/07-02/08 | 1000 | AC078152026 |
 | 2026-08-03 | BA | #NULO# | Governador, Senador | 31/07-02/08 | 1400 | BA030432026 |
@@ -140,9 +140,9 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-03 | ESTADUAL[PA] | VERITA | Presidente | 28/07-01/08 | 1525 | BR098852026 |
 | 2026-08-03 | ESTADUAL[PI] | INSTITUTO DE PESQUISA DATA A | Presidente | 20/07-27/07 | 1200 | BR059082026 |
 | 2026-08-03 | ESTADUAL[SE] | REAL TIME BIG DATA | Presidente | 28/07-01/08 | 1600 | BR076962026 |
-| 2026-08-03 | NACIONAL? | NEXUS | Presidente | 31/07-02/08 | 2000 | BR028742026 |
-| 2026-08-03 | NACIONAL? | BADRA COMUNICACAO | Presidente | 29/07-31/07 | 1060 | BR082462026 |
 | 2026-08-03 | NACIONAL? | 100 CIDADES | Presidente | 27/07-28/07 | 1000 | BR054252026 |
+| 2026-08-03 | NACIONAL? | BADRA COMUNICACAO | Presidente | 29/07-31/07 | 1060 | BR082462026 |
+| 2026-08-03 | NACIONAL? | NEXUS | Presidente | 31/07-02/08 | 2000 | BR028742026 |
 | 2026-08-03 | PA | VERITA | Governador, Senador | 28/07-01/08 | 1525 | PA012722026 |
 | 2026-08-03 | PB | INSTITUTO RANKING PESQUISA | Governador, Senador, Deputado Fede | 29/07-30/07 | 782 | PB098222026 |
 | 2026-08-03 | PI | INSTITUTO DE PESQUISA DATA A | Governador, Senador, Deputado Fede | 20/07-27/07 | 1200 | PI079102026 |
