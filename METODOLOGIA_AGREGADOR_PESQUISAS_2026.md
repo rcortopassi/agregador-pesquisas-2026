@@ -201,8 +201,16 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   Salomão/Helder Salomão, PR Moro/Sergio Moro e Greca/Rafael Greca, BA Jerônimo/Jerônimo Rodrigues,
   RN Cadu/Cadu Xavier e Álvaro/Álvaro Dias, DF Cappelli/Ricardo Cappelli e Grass/Leandro Grass,
   PI Fonteles/Rafael Fonteles), padronizando sempre no nome COMPLETO.
+  TO jun FECHADO em 04/08/2026, junto com a entrada da VÓPE de agosto: o `DGM` do TO foi
+  padronizado em 'Dorinha Rezende', 'Vicentinho Júnior' e 'Laurez Moreira' (15 trocas) e o `DSM`
+  em 'Irajá Abreu' (1 troca). Valia a pena porque a série do TO acabara de ganhar jul e ago, e o
+  `stateChart` escolhe os dois candidatos pelo TOTAL somado dos meses: com o nome partido, metade
+  da série da Dorinha ficava fora da conta.
   AINDA ABERTO nos meses anteriores (não afetam o banner, que só lê o último mês com rodada, mas
-  sujam o gráfico do estado): BA abr, PE fev, MA mar, AC jun, TO jun, DF jun.
+  sujam o gráfico do estado). A lista antiga só olhava o `DGM`; a varredura de 04/08/2026 nos DOIS
+  objetos dá: `DGM` BA abr (Mansur), PE fev (Moura), MA mar (Braide, Brandão, Bonfim), PI mar
+  (Toni), AC jun (Bocalom), DF jun (Arruda, Grass); `DSM` ES abr (Hartung), RN mai (Rafael Motta),
+  MS abr e MS mai (Azambuja, Capitão Contar). Ao varrer, rodar o detector sobre `DGM` E `DSM`.
   REGRA AO INSERIR RODADA ESTADUAL: antes de acrescentar, conferir como o candidato JÁ está escrito
   naquele UF/mês e repetir exatamente. Detector, que roda em segundos sobre o próprio HTML: para
   cada UF e mês, listar os nomes e apontar par em que um é substring do outro. CUIDADO com falso
@@ -305,6 +313,16 @@ O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o e
   rodada de AGOSTO, e a Veritá do Paraná (campo 28/7 a 1/8) veio com o PDF chamado
   "Relatorio_Parana_Agosto_2026", enquanto a do Maranhão (25 a 29/7) veio como "Julho". Por isso o
   Paraná abriu o mês 'ago' no `DGM`/`DSM` e o Maranhão entrou em 'jul'.
+- A CNN BRASIL É A FONTE MAIS RÁPIDA DAS RODADAS ESTADUAIS DA RTBD (04/08/2026). A rodada do Pará
+  (BR-09650/2026 e PA-08492/2026, campo 30/07 a 03/08) estava completa na CNN às 7h da manhã do dia
+  da divulgação, em três matérias separadas (presidente no estado, governador, Senado), com 1º e 2º
+  turno, enquanto o Poder360 e a Gazeta do Povo ainda não tinham nada daquele dia. Índice:
+  `cnnbrasil.com.br/tudo-sobre/pesquisas-eleitorais/`. Vale para o horário desta tarefa, que acorda
+  cedo: quando o radar apontar RTBD, olhar a CNN ANTES do Poder360.
+  RESSALVA QUE JÁ QUASE ENGANOU: a CNN declara que gera esses textos por IA a partir do relatório
+  do instituto, e o bloco "Metodologia" das duas matérias do PARÁ dizia "ouvidas 1.600 pessoas no
+  estado de PERNAMBUCO". O corpo da matéria e o protocolo TSE (PA-08492/2026) estavam certos. Ou
+  seja: conferir sempre o estado pelo PROTOCOLO, nunca pela frase da metodologia.
 - Ao atualizar dados, AVANÇAR o carimbo "Última atualização: DD/MM/AAAA HH:MM" (é manual).
 
 Estrutura do painel: QUATRO abas no topo (acima dos meses):
