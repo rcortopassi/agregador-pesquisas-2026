@@ -2,11 +2,20 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 03/08/2026 20:15. Mercados: Polymarket 65,5%/26,6%, Kalshi 66,0%/26,0%.
+Rodada de 04/08/2026 03:37. Mercados: Polymarket 64,5%/27,6%, Kalshi 65,0%/27,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
+- NOVO no TSE: ESTADUAL[MT], NOVO IBRAPE (Presidente), campo 29/07-03/08, divulgação 2026-08-04, N=1000, registro BR087302026
+- NOVO no TSE: ESTADUAL[PA], REAL TIME BIG DATA (Presidente), campo 30/07-03/08, divulgação 2026-08-04, N=1600, registro BR096502026
+- NOVO no TSE: ESTADUAL[TO], NEXUS (Presidente), campo 30/07-02/08, divulgação 2026-08-04, N=1200, registro BR055732026
+- NOVO no TSE: GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 24/07-27/07, divulgação 2026-08-04, N=600, registro GO015282026
+- NOVO no TSE: GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 23/07-25/07, divulgação 2026-08-04, N=500, registro GO076702026
+- NOVO no TSE: MG, F5 ATUALIZA DADOS (Governador, Senador, Deputado Fede), campo 30/07-31/07, divulgação 2026-08-04, N=472, registro MG082142026
+- NOVO no TSE: MT, NOVO IBRAPE (Governador, Senador, Deputado Fede), campo 29/07-03/08, divulgação 2026-08-04, N=1000, registro MT050422026
+- NOVO no TSE: PA, REAL TIME BIG DATA (Governador, Senador), campo 30/07-03/08, divulgação 2026-08-04, N=1600, registro PA084922026
+- NOVO no TSE: TO, #NULO# (Governador, Senador), campo 30/07-03/08, divulgação 2026-08-04, N=1250, registro TO010562026
+- NOVO no TSE: TO, NEXUS (Governador, Senador), campo 30/07-02/08, divulgação 2026-08-04, N=1200, registro TO017852026
 
 ## Últimas publicações do Veritá
 
@@ -25,15 +34,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-24 | AM | PROJETA PESQUISA DE MERCADO  | Governador, Senador | 19/07-23/07 | 3000 | AM091522026 |
-| 2026-07-24 | AP | REAL TIME BIG DATA | Governador, Senador | 19/07-23/07 | 1600 | AP029702026 |
-| 2026-07-24 | ESTADUAL[AP] | REAL TIME BIG DATA | Presidente | 19/07-23/07 | 1600 | BR055422026 |
-| 2026-07-24 | ESTADUAL[MS] | RANKING BRASIL INTELIGENCIA | Presidente | 18/07-23/07 | 2000 | BR084032026 |
-| 2026-07-24 | GO | DIRECT PESQUISAS | Governador, Senador, Deputado Fede | 17/07-21/07 | 1500 | GO088332026 |
-| 2026-07-24 | GO | DIRECT PESQUISAS | Governador, Senador, Deputado Fede | 20/07-21/07 | 500 | GO058782026 |
-| 2026-07-24 | MS | RANKING BRASIL INTELIGENCIA | Governador, Senador, Deputado Fede | 18/07-23/07 | 2000 | MS083172026 |
-| 2026-07-24 | NACIONAL? | #NULO# | Presidente | 22/07-24/07 | 2004 | BR011662026 |
-| 2026-07-24 | SE | POSITIVA PESQUISAS | Governador, Senador | 19/07-22/07 | 1000 | SE006842026 |
 | 2026-07-25 | ESTADUAL[PE] | DATATRENDS | Presidente | 20/07-22/07 | 1200 | BR030702026 |
 | 2026-07-25 | PE | DATATRENDS | Governador, Senador | 20/07-22/07 | 1200 | PE033442026 |
 | 2026-07-25 | TO | #NULO# | Governador, Senador | 21/07-24/07 | 1300 | TO068332026 |
@@ -159,4 +159,14 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-03 | SE | REAL TIME BIG DATA | Governador, Senador | 28/07-01/08 | 1600 | SE073272026 |
 | 2026-08-03 | SP | INTELLIGENCE PESQUISA E COMU | Governador, Senador, Deputado Fede | 27/07-29/07 | 1100 | SP049112026 |
 | 2026-08-03 | TO | BRASMARKET | Governador, Senador | 29/07-31/07 | 1200 | TO028482026 |
+| 2026-08-04 | ESTADUAL[MT] | NOVO IBRAPE | Presidente | 29/07-03/08 | 1000 | BR087302026 |
+| 2026-08-04 | ESTADUAL[PA] | REAL TIME BIG DATA | Presidente | 30/07-03/08 | 1600 | BR096502026 |
+| 2026-08-04 | ESTADUAL[TO] | NEXUS | Presidente | 30/07-02/08 | 1200 | BR055732026 |
+| 2026-08-04 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 24/07-27/07 | 600 | GO015282026 |
+| 2026-08-04 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 23/07-25/07 | 500 | GO076702026 |
+| 2026-08-04 | MG | F5 ATUALIZA DADOS | Governador, Senador, Deputado Fede | 30/07-31/07 | 472 | MG082142026 |
+| 2026-08-04 | MT | NOVO IBRAPE | Governador, Senador, Deputado Fede | 29/07-03/08 | 1000 | MT050422026 |
+| 2026-08-04 | PA | REAL TIME BIG DATA | Governador, Senador | 30/07-03/08 | 1600 | PA084922026 |
+| 2026-08-04 | TO | #NULO# | Governador, Senador | 30/07-03/08 | 1250 | TO010562026 |
+| 2026-08-04 | TO | NEXUS | Governador, Senador | 30/07-02/08 | 1200 | TO017852026 |
 
