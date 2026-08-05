@@ -251,6 +251,18 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   --resolve) depende de UDP/53; a nova tenta HTTPS direto, depois DNS-over-HTTPS no dns.google e
   no cloudflare-dns.com, e so entao o nslookup. No Mac o direto falha (DNS do provedor) e o DoH
   salva. Se todos falharem o script sai com codigo 2 e quem chama NAO inventa numero.
+- "BOAS IDEIAS, ESTRATEGIA E INTELIGENCIA" NO TSE É A MEIO/IDEIA (05/08/2026). Mesmo caso do
+  "100 CIDADES" logo abaixo, e mais antigo: desde 23/07/2026 o radar listava "Boas Ideias" como
+  instituto desconhecido e não acompanhado, com a anotação de que o nome casava por substring com
+  a palavra "IDEIA" da lista de conhecidos. A conclusão da época estava invertida: não é falso
+  positivo de substring, é a MESMA CASA. O registro BR-04579/2026 sai no PesqEle com o nome
+  fantasia BOAS IDEIAS, ESTRATEGIA E INTELIGENCIA e contratante CANAL MEIO S.A., e a matéria da
+  Gazeta do Povo de 05/08/2026 sobre a rodada nacional do "instituto Ideia, em parceria com o
+  Canal Meio" fecha citando exatamente "Registro no TSE nº BR-04579/2026", campo 31/07 a 03/08,
+  N=1.500, margem de ±2,5. Ou seja: quando o radar apontar BOAS IDEIAS, leia Meio/Ideia, que JÁ
+  está no painel desde janeiro, e aplique a regra de uma rodada por instituto por mês. Fica a
+  regra geral, agora com dois casos: nome fantasia no PesqEle não é o nome que a imprensa usa, e
+  o que amarra os dois é o par CONTRATANTE + NÚMERO DE REGISTRO, não o nome.
 - "100 CIDADES" NO TSE É A FUTURA/APEX (03/08/2026). O radar vinha listando "100 CIDADES" como
   instituto desconhecido e não acompanhado desde 23/07/2026. É a mesma casa: o registro sai com o
   nome fantasia "100 CIDADES" (a marca 100% Cidades) e contratante FUTURA CONSULTORIA E ASSESSORIA
