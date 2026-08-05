@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 04/08/2026 23:32</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 04/08/2026 23:36</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -971,7 +971,7 @@
   // divergem, a própria divergência é informação. Usa SEMPRE o mês mais recente, não o mês
   // que o usuário está navegando.
   function sinteseHTML(){
-    var lm=ultimoMesCheio(), a2=adj2Month(lm), lim=2*moeMonth(lm);
+    var lm=mesParaSintese(), a2=adj2Month(lm), lim=2*moeMonth(lm);
     var mg=a2[2]>0?a2[1]:null, s1, s1lean=null;
     if(mg===null){ s1='<span style="color:'+P.mut+';">sem cenário de 2º turno em '+lm+'</span>'; }
     else { s1lean=mg>=0?'Lula':'Flávio';
@@ -989,7 +989,8 @@
     function row(t,v,h){ return '<div style="display:flex; align-items:baseline; gap:8px; padding:2px 0;"><span style="'+lab+'">'+t+'</span><span style="flex:1 1 auto;">'+v+(h?' <span style="color:'+P.mut+'; font-size:10.5px;">'+h+'</span>':'')+'</span></div>'; }
     return '<div style="padding:8px 14px 9px; background:'+P.surf+';">'+
       '<div style="font-size:9.5px; font-weight:700; color:'+P.goldtxt+'; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:4px;">Para onde isso está indo</div>'+
-      row('Pesquisas', s1, 'mediana de '+lm+', 2º turno ajustado')+
+      row('Pesquisas', s1, 'mediana de '+lm+', 2º turno ajustado'+(function(){ var u=ultimoMesCheio(); if(u===lm) return '';
+        var q=adj2Month(u)[2]; return ' &middot; '+u+' ainda tem '+(q===1?'1 rodada':q+' rodadas')+' com 2º turno, base fina demais para virar manchete'; })())+
       row('Mercados', s2, 'Polymarket e Kalshi')+
       row('Fundamentos', s3, FUND.det)+
       '<div style="font-size:11px; color:'+P.txt2+'; line-height:1.5; margin-top:6px; border-top:1px solid '+P.bsoft+'; padding-top:6px;">'+concl+'</div>'+
@@ -1037,6 +1038,13 @@
   // tem que apontar para o último mês que de fato tem pesquisa, senão o painel abre em zero.
   function ultimoMesCheio(){ for(var i=months.length-1;i>=0;i--){ if(DI[months[i]]&&DI[months[i]].rows.length) return months[i]; } return months[months.length-1]; }
   function mesVazio(m){ return !DI[m]||!DI[m].rows.length; }
+  // BASE MÍNIMA PARA A SÍNTESE (04/08/2026). O bloco "Para onde isso está indo" usava o último
+  // mês com QUALQUER rodada. Um mês recém-aberto pode ter uma só, e a mediana de uma pesquisa
+  // é a própria pesquisa: em 04/08 a síntese anunciava "Lula +1,0" apoiada numa única rodada
+  // (Nexus/BTG), enquanto julho, com 12, dava +3,3. Agora exige 3 rodadas COM 2º turno, que é
+  // a mesma régua que o gráfico já aplica para marcar mês provisório (linha tracejada).
+  function mesParaSintese(){ for(var i=months.length-1;i>=0;i--){ var m=months[i];
+    if(DI[m]&&DI[m].rows.length&&adj2Month(m)[2]>=3) return m; } return ultimoMesCheio(); }
   var tops=[['inst','Institutos'],['he','House effect'],['graf','Grafico'],['mapa','Mapa']];
   var cur={top:'inst',m:ultimoMesCheio(),dim:'pres',uf:null,stab:'inst',mapyear:'2026'};
   // Fatos notórios que mexem na corrida presidencial. Para adicionar um no futuro,
