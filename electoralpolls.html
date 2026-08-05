@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 04/08/2026 20:14</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 04/08/2026 23:29</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1044,12 +1044,17 @@
   // e a numeração aparecem sozinhas no gráfico, posicionadas pela data.
   // c = token de cor ('red'/'blue'), resolvido no render para acompanhar o tema claro/escuro.
   var PEVENTS=[
-    {d:'2026-05-13', c:'blue', t:'Revelação do Banco Master atinge Flávio (Intercept divulga áudio com Daniel Vorcaro e os R$ 134 mi para o filme do pai). Marca o início da queda do Flávio.'},
-    {d:'2026-06-25', c:'blue', t:'Michelle Bolsonaro publica vídeo contra Flávio e expõe o racha na família; abre disputa na direita e a AtlasIntel passa a testar o nome dela.'},
-    {d:'2026-06-26', c:'red', t:'PF aponta relação de Jaques Wagner (PT) com o Banco Master (apartamento e repasses); Wagner nega. Atinge o lado do governo.'},
-    {d:'2026-07-13', c:'blue', t:'Flávio lê nas redes uma "carta aos brasileiros" atribuída a Jair Bolsonaro, que o indica como porta-voz. Em resposta, Moraes proíbe Flávio de visitar o pai por 90 dias e veda a divulgação de manifestos político-eleitorais de terceiros. Atinge o lado do Flávio.'},
-    {d:'2026-07-15', c:'blue', t:'Divulgada foto de Flávio ao lado do "Sicário" (Luiz Philipi Mourão), apontado pela PF como do núcleo de intimidação de Vorcaro/Banco Master. Reportagem de Juliana Dal Piva (ICL). Flávio nega conhecê-lo e sugere IA; a jornalista diz que 5 detectores não acusaram manipulação.'},
-    {d:'2026-07-22', c:'red', t:'Entra em vigor o tarifaço dos EUA sobre produtos brasileiros; Lula responsabiliza a família Bolsonaro ("traidores") e trava embate direto com Flávio sobre quem tem razão.'}
+    {d:'2026-05-13', c:'blue', p:'-', t:'Revelação do Banco Master atinge Flávio (Intercept divulga áudio com Daniel Vorcaro e os R$ 134 mi para o filme do pai). Marca o início da queda do Flávio.'},
+    {d:'2026-06-25', c:'blue', p:'-', t:'Michelle Bolsonaro publica vídeo contra Flávio e expõe o racha na família; abre disputa na direita e a AtlasIntel passa a testar o nome dela.'},
+    {d:'2026-06-26', c:'red', p:'-', t:'PF aponta relação de Jaques Wagner (PT) com o Banco Master (apartamento e repasses); Wagner nega. Atinge o lado do governo.'},
+    {d:'2026-07-13', c:'blue', p:'-', t:'Flávio lê nas redes uma "carta aos brasileiros" atribuída a Jair Bolsonaro, que o indica como porta-voz. Em resposta, Moraes proíbe Flávio de visitar o pai por 90 dias e veda a divulgação de manifestos político-eleitorais de terceiros. Atinge o lado do Flávio.'},
+    {d:'2026-07-15', c:'blue', p:'-', t:'Divulgada foto de Flávio ao lado do "Sicário" (Luiz Philipi Mourão), apontado pela PF como do núcleo de intimidação de Vorcaro/Banco Master. Reportagem de Juliana Dal Piva (ICL). Flávio nega conhecê-lo e sugere IA; a jornalista diz que 5 detectores não acusaram manipulação.'},
+    {d:'2026-07-22', c:'red', p:'-', t:'Entra em vigor o tarifaço dos EUA sobre produtos brasileiros; Lula responsabiliza a família Bolsonaro ("traidores") e trava embate direto com Flávio sobre quem tem razão.'},
+    {d:'2026-07-22', c:'blue', p:'-', t:'A federação PP mais União Brasil, maior bancada da Câmara, declara neutralidade e recusa o palanque de Flávio, liberando os diretórios estaduais. O Centrão fica fora da coligação presidencial.'},
+    {d:'2026-07-25', c:'blue', p:'+', t:'Convenção do PL oficializa Flávio no Pacaembu, com Milei no palco e um vídeo de Jair Bolsonaro gerado por inteligência artificial, ele em prisão domiciliar e proibido de se manifestar. Michelle, ausente, manda vídeo de apoio e encerra publicamente o racha de 25/06.'},
+    {d:'2026-07-26', c:'blue', p:'-', t:'PSD lança Ronaldo Caiado à Presidência, com Gilberto Kassab de vice, e libera os diretórios estaduais. Consolida uma terceira candidatura à direita e fragmenta o voto antipetista no 1º turno.'},
+    {d:'2026-07-30', c:'red', p:'-', t:'Mendonça (STF) autoriza a PF a investigar Fábio Luís, o Lulinha, por tráfico de influência junto ao Ministério da Saúde no caso do Careca do INSS. Atinge a família do presidente.'},
+    {d:'2026-08-02', c:'red', p:'+', t:'Convenção do PT oficializa Lula e Alckmin com PT, PCdoB, PV, PSB, PSOL, Rede e PDT coligados. Flávio chega ao fim do prazo de convenções sem coligação e sem vice definido.'}
   ];
   function evc(e){ return e.c==='red'?P.red:P.blue; }
 
@@ -1060,10 +1065,13 @@
   function moeMonth(m){ var rs=DI[m].rows, A=[]; for(var i=0;i<rs.length;i++){ if(isOut(rs[i][0])) continue; var l=num(rs[i][1]),f=num(rs[i][2]); if(l===null||f===null) continue; var mo=MOE[rs[i][0]]; if(mo) A.push(parseFloat(mo.replace(',','.'))); } return A.length?med(A):2; }
   function chartSVG(){
     // DERIVADO do array `months`, nunca escrito à mão (já congelou o gráfico em meses velhos
-    // duas vezes). Regras: janeiro fica de fora porque o campo daquele mês ainda testava
-    // Tarcísio e Haddad como nome da direita, e um mês sem rodada publicada (mês recém-aberto)
-    // simplesmente não é plotado, senão a linha desabaria para zero.
-    var ms=months.filter(function(m){ return m!=='jan' && avgMonth(m)[2]>0; }), n=ms.length, sp=480/(n-1);
+    // duas vezes). Um mês sem rodada publicada (mês recém-aberto) simplesmente não é
+    // plotado, senão a linha desabaria para zero.
+    // JANEIRO foi reincluído em 04/08/2026 a pedido do usuário. RESSALVA: das 5 rodadas de
+    // janeiro só 3 testaram o Flávio (Paraná e Meio/Ideia não o citaram), e a da Quaest marca
+    // 23 com † porque o campo ainda tinha Tarcísio dividindo o voto da direita. Logo o ponto
+    // de janeiro do Flávio é o mais frágil da série e tende a subestimá-lo.
+    var ms=months.filter(function(m){ return avgMonth(m)[2]>0; }), n=ms.length, sp=480/(n-1);
     var xs=ms.map(function(_,i){ return 60+i*sp; });
     function yv(v){ return 57.5+(44-v)*16.0714; }
     var lMain='',fMain='',ldot='',fdot='',llab='',flab='', lUp=[],lLo=[],fUp=[],fLo=[], ljd='', fjd='', hollow='', prev=null;
@@ -1088,14 +1096,14 @@
     // N/30 adentro do mês (dia 15 fica no meio, dia 13 um pouco antes do meio, à DIREITA do rótulo).
     // Ancorar no dia 15 (como antes) fazia o dia 13 cair à esquerda do rótulo, parecendo "antes do mês".
     // Limite direito 648 (não 630): eventos de fim de julho ficam à direita do ponto de julho, não em cima.
-    var evList=PEVENTS.map(function(e,idx){ var p=e.d.split('-'), mn=parseInt(p[1],10), dy=parseInt(p[2],10); var frac=(mn-2)+(dy-1)/30; var ex=Math.max(60,Math.min(660,60+frac*sp)); return {e:e,n:idx+1,mn:mn,dy:dy,p:p,ex:ex}; });
+    var evList=PEVENTS.map(function(e,idx){ var p=e.d.split('-'), mn=parseInt(p[1],10), dy=parseInt(p[2],10); var frac=(mn-MESNUM[ms[0]])+(dy-1)/30; var ex=Math.max(60,Math.min(660,60+frac*sp)); return {e:e,n:idx+1,mn:mn,dy:dy,p:p,ex:ex}; });
     var placed=[];
     evList.forEach(function(o){ var lvl=0; while(placed.some(function(q){return q.lvl===lvl && Math.abs(q.ex-o.ex)<20;})) lvl++; o.lvl=lvl; placed.push(o); });
     var evMark='', evCap='';
     evList.forEach(function(o){ var e=o.e, n=o.n, ec=evc(e), cy=47-o.lvl*19, ex=(o.ex+o.lvl*3).toFixed(1), yt=(cy+8).toFixed(1);
       evMark+='<line x1="'+ex+'" y1="'+yt+'" x2="'+ex+'" y2="312" stroke="'+ec+'" stroke-width="1.4" stroke-dasharray="3,3" stroke-opacity="0.6"/>'+
-        '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+ec+'"/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">'+n+'</text>';
-      evCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+ec+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> &middot; '+e.t+'</span></div>';
+        (e.p==='+' ? '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+P.surf+'" stroke="'+ec+'" stroke-width="2.5"/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="'+ec+'">'+n+'</text>' : '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+ec+'"/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">'+n+'</text>');
+      evCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+ec+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> <span style="font-size:10px; font-weight:700; color:'+ec+'; border:1px solid '+ec+'; border-radius:8px; padding:0 5px; opacity:.85;">'+(e.p==='+'?'favorece ':'prejudica ')+(e.c==='red'?'Lula':'Flávio')+'</span> &middot; '+e.t+'</span></div>';
     });
     return ''+
     '<div style="display:flex; flex-wrap:wrap; gap:14px; padding:12px 14px 4px; font-size:12px; color:'+P.txt2+';">'+
@@ -1104,7 +1112,7 @@
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:11px; display:inline-block; background:repeating-linear-gradient(45deg,'+P.hatch+','+P.hatch+' 1.5px,transparent 1.5px,transparent 5px); border-radius:2px;"></span>margem de erro</span>'+
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; background:'+P.surf+'; border:2px solid '+P.mut+'; display:inline-block;"></span>mês recente, poucos institutos</span>'+
     '</div>'+
-    '<svg viewBox="0 0 680 360" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Linhas Lula e Flavio no 1o turno, ajustadas pelo house effect de cada instituto, mediana por mes de '+ms[0]+' a '+ms[n-1]+', com faixa de margem de erro; mes recente com poucos institutos aparece tracejado e com ponto vazado">'+
+    '<svg viewBox="0 -48 680 408" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Linhas Lula e Flavio no 1o turno, ajustadas pelo house effect de cada instituto, mediana por mes de '+ms[0]+' a '+ms[n-1]+', com faixa de margem de erro; mes recente com poucos institutos aparece tracejado e com ponto vazado">'+
       '<defs>'+
         '<pattern id="hatchR" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.red+'" stroke-width="1.3" stroke-opacity="0.32"/></pattern>'+
         '<pattern id="hatchB" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.blue+'" stroke-width="1.3" stroke-opacity="0.32"/></pattern>'+
@@ -1122,7 +1130,7 @@
       '<g fill="'+P.red+'" font-size="11" text-anchor="middle">'+llab+'</g>'+
       '<g fill="'+P.blue+'" font-size="11" text-anchor="middle">'+flab+'</g>'+
       evMark+
-      '<g fill="'+P.txt2+'" font-size="12" text-anchor="middle"><text x="60" y="340">fev</text><text x="156" y="340">mar</text><text x="252" y="340">abr</text><text x="348" y="340">mai</text><text x="444" y="340">jun</text><text x="540" y="340">jul</text></g>'+
+      '<g fill="'+P.txt2+'" font-size="12" text-anchor="middle">'+ms.map(function(mm,i){ return '<text x="'+xs[i].toFixed(1)+'" y="340">'+mm+'</text>'; }).join('')+'</g>'+
     '</svg>'+
     (evCap?'<div style="padding:6px 14px 12px; font-size:11.5px; line-height:1.45;"><div style="font-size:10px; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;">Fatos que mexeram na corrida</div>'+evCap+'</div>':''); }
 
@@ -1311,7 +1319,7 @@
     if(graf){ document.getElementById('table-area').innerHTML=
         '<div style="padding:14px 14px 0; font-size:13px; font-weight:600; color:'+P.ink+';">1º turno ajustado pelo house effect</div>'+
         chartSVG();
-      document.getElementById('note').textContent='Linhas de Lula e Flávio no 1º turno, mês a mês (fev a jul), já corrigidas pelo house effect de cada instituto (viés vs urna do TSE, regularizado por nº de eleições). A faixa hachurada é a margem de erro TÍPICA de uma pesquisa (não do agregado, que é menor); as linhas pontilhadas verticais marcam fatos que mexeram na corrida.';
+      document.getElementById('note').textContent='Linhas de Lula e Flávio no 1º turno, mês a mês (janeiro em diante), já corrigidas pelo house effect de cada instituto (viés vs urna do TSE, regularizado por nº de eleições). A faixa hachurada é a margem de erro TÍPICA de uma pesquisa (não do agregado, que é menor); as linhas pontilhadas verticais marcam fatos que mexeram na corrida.';
       document.getElementById('foot').innerHTML='Valores AJUSTADOS, não os brutos: cada pesquisa é corrigida pelo viés do seu instituto (encolhido conforme o nº de eleições) antes de entrar na MEDIANA do mês. O agregado é a mediana de TODOS os institutos, não a média: assim um instituto muito fora não desloca o centro, e por isso ninguém é excluído. Institutos sem histórico entram sem ajuste. O mês mais recente aparece tracejado e com ponto vazado enquanto tiver menos de 3 institutos. Os números brutos estão na aba Institutos; o 2º turno ajustado, na aba House effect.';
       return; }
 
