@@ -2,11 +2,22 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 04/08/2026 20:14. Mercados: Polymarket 64,5%/25,9%, Kalshi 65,0%/27,0%.
+Rodada de 05/08/2026 03:38. Mercados: Polymarket 65,5%/26,1%, Kalshi 67,0%/27,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
+- NOVO no TSE: ESTADUAL[GO], KLIK (Presidente), campo 30/07-04/08, divulgação 2026-08-05, N=1200, registro BR031212026
+- NOVO no TSE: ESTADUAL[GO], DATA RD (Presidente), campo 31/07-04/08, divulgação 2026-08-05, N=1509, registro BR078472026
+- NOVO no TSE: ESTADUAL[SE], ECM-PESQUISAS (Presidente), campo 31/07-03/08, divulgação 2026-08-05, N=1500, registro BR039652026
+- NOVO no TSE: GO, DATA RD (Governador, Senador), campo 31/07-04/08, divulgação 2026-08-05, N=1509, registro GO081422026
+- NOVO no TSE: GO, KLIK (Governador, Senador, Deputado Fede), campo 30/07-04/08, divulgação 2026-08-05, N=1200, registro GO010732026
+- NOVO no TSE: NACIONAL?, #NULO# (Presidente), campo 31/07-03/08, divulgação 2026-08-05, N=2004, registro BR065912026
+- NOVO no TSE: NACIONAL?, BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 31/07-03/08, divulgação 2026-08-05, N=1500, registro BR045792026
+- NOVO no TSE: PE, INSTITUTO DE PESQUISA MULTIP (Governador, Deputado Federal, Depu), campo 30/07-31/07, divulgação 2026-08-05, N=300, registro PE068992026
+- NOVO no TSE: RN, DATA CAPITAL PESQUISAS E CON (Governador, Senador, Deputado Fede), campo 25/07-28/07, divulgação 2026-08-05, N=2050, registro RN065792026
+- NOVO no TSE: RO, BRASIL DADOS (Governador, Senador, Deputado Fede), campo 31/07-02/08, divulgação 2026-08-05, N=1050, registro RO058932026
+- NOVO no TSE: SE, VISAO PESQUISAS (Senador, Deputado Federal, Deputad), campo 29/07-03/08, divulgação 2026-08-05, N=1000, registro SE024612026
+- NOVO no TSE: SE, ECM-PESQUISAS (Governador, Senador, Deputado Fede), campo 31/07-03/08, divulgação 2026-08-05, N=1500, registro SE057662026
 
 ## Últimas publicações do Veritá
 
@@ -25,9 +36,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-25 | ESTADUAL[PE] | DATATRENDS | Presidente | 20/07-22/07 | 1200 | BR030702026 |
-| 2026-07-25 | PE | DATATRENDS | Governador, Senador | 20/07-22/07 | 1200 | PE033442026 |
-| 2026-07-25 | TO | #NULO# | Governador, Senador | 21/07-24/07 | 1300 | TO068332026 |
 | 2026-07-26 | AL | PALPE PESQUISAS | Governador, Senador | 12/07-20/07 | 5000 | AL081232026 |
 | 2026-07-26 | ESTADUAL[AL] | PALPE PESQUISAS | Presidente | 12/07-20/07 | 5000 | BR012392026 |
 | 2026-07-26 | NACIONAL? | JOTA JORNALISMO | Presidente | 24/06-19/07 | 6000 | BR098232026 |
@@ -160,4 +168,16 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-04 | PA | REAL TIME BIG DATA | Governador, Senador | 30/07-03/08 | 1600 | PA084922026 |
 | 2026-08-04 | TO | #NULO# | Governador, Senador | 30/07-03/08 | 1250 | TO010562026 |
 | 2026-08-04 | TO | NEXUS | Governador, Senador | 30/07-02/08 | 1200 | TO017852026 |
+| 2026-08-05 | ESTADUAL[GO] | KLIK | Presidente | 30/07-04/08 | 1200 | BR031212026 |
+| 2026-08-05 | ESTADUAL[GO] | DATA RD | Presidente | 31/07-04/08 | 1509 | BR078472026 |
+| 2026-08-05 | ESTADUAL[SE] | ECM-PESQUISAS | Presidente | 31/07-03/08 | 1500 | BR039652026 |
+| 2026-08-05 | GO | DATA RD | Governador, Senador | 31/07-04/08 | 1509 | GO081422026 |
+| 2026-08-05 | GO | KLIK | Governador, Senador, Deputado Fede | 30/07-04/08 | 1200 | GO010732026 |
+| 2026-08-05 | NACIONAL? | #NULO# | Presidente | 31/07-03/08 | 2004 | BR065912026 |
+| 2026-08-05 | NACIONAL? | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 31/07-03/08 | 1500 | BR045792026 |
+| 2026-08-05 | PE | INSTITUTO DE PESQUISA MULTIP | Governador, Deputado Federal, Depu | 30/07-31/07 | 300 | PE068992026 |
+| 2026-08-05 | RN | DATA CAPITAL PESQUISAS E CON | Governador, Senador, Deputado Fede | 25/07-28/07 | 2050 | RN065792026 |
+| 2026-08-05 | RO | BRASIL DADOS | Governador, Senador, Deputado Fede | 31/07-02/08 | 1050 | RO058932026 |
+| 2026-08-05 | SE | VISAO PESQUISAS | Senador, Deputado Federal, Deputad | 29/07-03/08 | 1000 | SE024612026 |
+| 2026-08-05 | SE | ECM-PESQUISAS | Governador, Senador, Deputado Fede | 31/07-03/08 | 1500 | SE057662026 |
 
