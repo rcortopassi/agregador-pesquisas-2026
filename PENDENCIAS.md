@@ -2,22 +2,11 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 05/08/2026 03:38. Mercados: Polymarket 65,5%/26,1%, Kalshi 67,0%/27,0%.
+Rodada de 05/08/2026 09:09. Mercados: Polymarket 64,5%/25,9%, Kalshi 68,0%/27,0%.
 
 ## Precisa de olho humano nesta rodada
 
-- NOVO no TSE: ESTADUAL[GO], KLIK (Presidente), campo 30/07-04/08, divulgação 2026-08-05, N=1200, registro BR031212026
-- NOVO no TSE: ESTADUAL[GO], DATA RD (Presidente), campo 31/07-04/08, divulgação 2026-08-05, N=1509, registro BR078472026
-- NOVO no TSE: ESTADUAL[SE], ECM-PESQUISAS (Presidente), campo 31/07-03/08, divulgação 2026-08-05, N=1500, registro BR039652026
-- NOVO no TSE: GO, DATA RD (Governador, Senador), campo 31/07-04/08, divulgação 2026-08-05, N=1509, registro GO081422026
-- NOVO no TSE: GO, KLIK (Governador, Senador, Deputado Fede), campo 30/07-04/08, divulgação 2026-08-05, N=1200, registro GO010732026
-- NOVO no TSE: NACIONAL?, #NULO# (Presidente), campo 31/07-03/08, divulgação 2026-08-05, N=2004, registro BR065912026
-- NOVO no TSE: NACIONAL?, BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 31/07-03/08, divulgação 2026-08-05, N=1500, registro BR045792026
-- NOVO no TSE: PE, INSTITUTO DE PESQUISA MULTIP (Governador, Deputado Federal, Depu), campo 30/07-31/07, divulgação 2026-08-05, N=300, registro PE068992026
-- NOVO no TSE: RN, DATA CAPITAL PESQUISAS E CON (Governador, Senador, Deputado Fede), campo 25/07-28/07, divulgação 2026-08-05, N=2050, registro RN065792026
-- NOVO no TSE: RO, BRASIL DADOS (Governador, Senador, Deputado Fede), campo 31/07-02/08, divulgação 2026-08-05, N=1050, registro RO058932026
-- NOVO no TSE: SE, VISAO PESQUISAS (Senador, Deputado Federal, Deputad), campo 29/07-03/08, divulgação 2026-08-05, N=1000, registro SE024612026
-- NOVO no TSE: SE, ECM-PESQUISAS (Governador, Senador, Deputado Fede), campo 31/07-03/08, divulgação 2026-08-05, N=1500, registro SE057662026
+Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
 
 ## Últimas publicações do Veritá
 
