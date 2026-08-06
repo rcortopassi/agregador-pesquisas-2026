@@ -2,11 +2,18 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 05/08/2026 20:14. Mercados: Polymarket 64,5%/26,7%, Kalshi 67,0%/25,0%.
+Rodada de 06/08/2026 03:41. Mercados: Polymarket 64,5%/26,6%, Kalshi 67,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
+- NOVO no TSE: ESTADUAL[MG], IPSENSUS PESQUISAS (Presidente), campo 01/08-02/08, divulgação 2026-08-06, N=400, registro BR065502026
+- NOVO no TSE: ESTADUAL[MS], REAL TIME BIG DATA (Presidente), campo 01/08-05/08, divulgação 2026-08-06, N=1600, registro BR017842026
+- NOVO no TSE: ESTADUAL[PI], VETOR TECNOLOGIA E PESQUISAS (Presidente), campo 28/07-02/08, divulgação 2026-08-06, N=1602, registro BR018942026
+- NOVO no TSE: GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador), campo 31/07-04/08, divulgação 2026-08-06, N=500, registro GO071722026
+- NOVO no TSE: MG, IPSENSUS PESQUISAS (Governador, Senador, Deputado Fede), campo 01/08-02/08, divulgação 2026-08-06, N=400, registro MG095982026
+- NOVO no TSE: MS, REAL TIME BIG DATA (Governador, Senador), campo 01/08-05/08, divulgação 2026-08-06, N=1600, registro MS077062026
+- NOVO no TSE: NACIONAL?, INSTITUTO PHOENIX & ASSOCIAD (Presidente), campo 04/08-07/08, divulgação 2026-08-06, N=1311, registro BR010782026
+- NOVO no TSE: PI, VETOR TECNOLOGIA E PESQUISAS (Governador, Senador, Deputado Fede), campo 28/07-02/08, divulgação 2026-08-06, N=1602, registro PI025092026
 
 ## Últimas publicações do Veritá
 
@@ -25,12 +32,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-26 | AL | PALPE PESQUISAS | Governador, Senador | 12/07-20/07 | 5000 | AL081232026 |
-| 2026-07-26 | ESTADUAL[AL] | PALPE PESQUISAS | Presidente | 12/07-20/07 | 5000 | BR012392026 |
-| 2026-07-26 | NACIONAL? | JOTA JORNALISMO | Presidente | 24/06-19/07 | 6000 | BR098232026 |
-| 2026-07-26 | PI | INSTITUTO CREDIBILIDADE | Governador, Senador, Deputado Esta | 09/07-11/07 | 600 | PI024632026 |
-| 2026-07-26 | SP | #NULO# | Governador, Senador, Deputado Fede | 21/07-22/07 | 1200 | SP033412026 |
-| 2026-07-26 | TO | LUCRO ATIVO | Governador, Senador, Deputado Fede | 21/07-25/07 | 1500 | TO004372026 |
 | 2026-07-27 | AC | REAL TIME BIG DATA | Governador, Senador | 22/07-25/07 | 1600 | AC010692026 |
 | 2026-07-27 | ESTADUAL[AC] | REAL TIME BIG DATA | Presidente | 22/07-25/07 | 1600 | BR080862026 |
 | 2026-07-27 | ESTADUAL[MT] | INSTITUTO MAIS | Presidente | 21/07-26/07 | 1200 | BR078782026 |
@@ -169,4 +170,12 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-05 | RO | BRASIL DADOS | Governador, Senador, Deputado Fede | 31/07-02/08 | 1050 | RO058932026 |
 | 2026-08-05 | SE | VISAO PESQUISAS | Senador, Deputado Federal, Deputad | 29/07-03/08 | 1000 | SE024612026 |
 | 2026-08-05 | SE | ECM-PESQUISAS | Governador, Senador, Deputado Fede | 31/07-03/08 | 1500 | SE057662026 |
+| 2026-08-06 | ESTADUAL[MG] | IPSENSUS PESQUISAS | Presidente | 01/08-02/08 | 400 | BR065502026 |
+| 2026-08-06 | ESTADUAL[MS] | REAL TIME BIG DATA | Presidente | 01/08-05/08 | 1600 | BR017842026 |
+| 2026-08-06 | ESTADUAL[PI] | VETOR TECNOLOGIA E PESQUISAS | Presidente | 28/07-02/08 | 1602 | BR018942026 |
+| 2026-08-06 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador | 31/07-04/08 | 500 | GO071722026 |
+| 2026-08-06 | MG | IPSENSUS PESQUISAS | Governador, Senador, Deputado Fede | 01/08-02/08 | 400 | MG095982026 |
+| 2026-08-06 | MS | REAL TIME BIG DATA | Governador, Senador | 01/08-05/08 | 1600 | MS077062026 |
+| 2026-08-06 | NACIONAL? | INSTITUTO PHOENIX & ASSOCIAD | Presidente | 04/08-07/08 | 1311 | BR010782026 |
+| 2026-08-06 | PI | VETOR TECNOLOGIA E PESQUISAS | Governador, Senador, Deputado Fede | 28/07-02/08 | 1602 | PI025092026 |
 
