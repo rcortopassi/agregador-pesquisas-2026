@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/08/2026 09:12</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/08/2026 11:44</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1051,16 +1051,20 @@
   // basta acrescentar uma linha: {d:'AAAA-MM-DD', c:cor, t:'texto'}. A linha pontilhada
   // e a numeração aparecem sozinhas no gráfico, posicionadas pela data.
   // c = token de cor ('red'/'blue'), resolvido no render para acompanhar o tema claro/escuro.
+  // c diz de QUEM é o fato (red=lado do Lula, blue=lado do Flávio), e só isso. NÃO voltar a
+  // marcar se o fato favorece ou prejudica: o usuário mandou tirar em 06/08/2026 porque essa
+  // direção não é avaliável com honestidade. Não reintroduzir o campo p nem o selo
+  // 'favorece/prejudica' nem o círculo vazado que os distinguia no gráfico.
   var PEVENTS=[
-    {d:'2026-05-13', c:'blue', p:'-', t:'Revelação do Banco Master atinge Flávio (Intercept divulga áudio com Daniel Vorcaro e os R$ 134 mi para o filme do pai). Marca o início da queda do Flávio.'},
-    {d:'2026-06-25', c:'blue', p:'-', t:'Michelle Bolsonaro publica vídeo contra Flávio e expõe o racha na família; abre disputa na direita e a AtlasIntel passa a testar o nome dela.'},
-    {d:'2026-06-26', c:'red', p:'-', t:'PF aponta relação de Jaques Wagner (PT) com o Banco Master (apartamento e repasses); Wagner nega. Atinge o lado do governo.'},
-    {d:'2026-07-13', c:'blue', p:'-', t:'Flávio lê nas redes uma "carta aos brasileiros" atribuída a Jair Bolsonaro, que o indica como porta-voz. Em resposta, Moraes proíbe Flávio de visitar o pai por 90 dias e veda a divulgação de manifestos político-eleitorais de terceiros. Atinge o lado do Flávio.'},
-    {d:'2026-07-15', c:'blue', p:'-', t:'Divulgada foto de Flávio ao lado do "Sicário" (Luiz Philipi Mourão), apontado pela PF como do núcleo de intimidação de Vorcaro/Banco Master. Reportagem de Juliana Dal Piva (ICL). Flávio nega conhecê-lo e sugere IA; a jornalista diz que 5 detectores não acusaram manipulação.'},
-    {d:'2026-07-22', c:'red', p:'-', t:'Entra em vigor o tarifaço dos EUA sobre produtos brasileiros; Lula responsabiliza a família Bolsonaro ("traidores") e trava embate direto com Flávio sobre quem tem razão.'},
-    {d:'2026-07-25', c:'blue', p:'+', t:'Convenção do PL oficializa Flávio no Pacaembu, com Milei no palco e um vídeo de Jair Bolsonaro gerado por inteligência artificial, ele em prisão domiciliar e proibido de se manifestar. Michelle, ausente, manda vídeo de apoio e encerra publicamente o racha de 25/06.'},
-    {d:'2026-07-30', c:'red', p:'-', t:'Mendonça (STF) autoriza a PF a investigar Fábio Luís, o Lulinha, por tráfico de influência junto ao Ministério da Saúde no caso do Careca do INSS. Atinge a família do presidente.'},
-    {d:'2026-08-05', c:'blue', p:'-', t:'No último dia do prazo das convenções, Flávio anuncia como vice o deputado Alfredo Gaspar (PL-AL), relator da CPMI do INSS, de quem destaca ter pedido a prisão de Lulinha. Depois de prometer uma mulher e de negociar com Tereza Cristina (PP) e Daniella Marques (Republicanos), fecha chapa puro-sangue do PL: PP, União Brasil, Republicanos e Podemos declararam neutralidade. Reforça a linha de ataque no caso do INSS, mas escancara o isolamento partidário e a falta de palanques estaduais.'}
+    {d:'2026-05-13', c:'blue', t:'Revelação do Banco Master atinge Flávio (Intercept divulga áudio com Daniel Vorcaro e os R$ 134 mi para o filme do pai).'},
+    {d:'2026-06-25', c:'blue', t:'Michelle Bolsonaro publica vídeo contra Flávio e expõe o racha na família; abre disputa na direita e a AtlasIntel passa a testar o nome dela.'},
+    {d:'2026-06-26', c:'red', t:'PF aponta relação de Jaques Wagner (PT) com o Banco Master (apartamento e repasses); Wagner nega.'},
+    {d:'2026-07-13', c:'blue', t:'Flávio lê nas redes uma "carta aos brasileiros" atribuída a Jair Bolsonaro, que o indica como porta-voz. Em resposta, Moraes proíbe Flávio de visitar o pai por 90 dias e veda a divulgação de manifestos político-eleitorais de terceiros.'},
+    {d:'2026-07-15', c:'blue', t:'Divulgada foto de Flávio ao lado do "Sicário" (Luiz Philipi Mourão), apontado pela PF como do núcleo de intimidação de Vorcaro/Banco Master. Reportagem de Juliana Dal Piva (ICL). Flávio nega conhecê-lo e sugere IA; a jornalista diz que 5 detectores não acusaram manipulação.'},
+    {d:'2026-07-22', c:'red', t:'Entra em vigor o tarifaço dos EUA sobre produtos brasileiros; Lula responsabiliza a família Bolsonaro ("traidores") e trava embate direto com Flávio sobre quem tem razão.'},
+    {d:'2026-07-25', c:'blue', t:'Convenção do PL oficializa Flávio no Pacaembu, com Milei no palco e um vídeo de Jair Bolsonaro gerado por inteligência artificial, ele em prisão domiciliar e proibido de se manifestar. Michelle, ausente, manda vídeo de apoio e encerra publicamente o racha de 25/06.'},
+    {d:'2026-07-30', c:'red', t:'Mendonça (STF) autoriza a PF a investigar Fábio Luís, o Lulinha, por tráfico de influência junto ao Ministério da Saúde no caso do Careca do INSS. Atinge a família do presidente.'},
+    {d:'2026-08-05', c:'blue', t:'No último dia do prazo das convenções, Flávio anuncia como vice o deputado Alfredo Gaspar (PL-AL), relator da CPMI do INSS, de quem destaca ter pedido a prisão de Lulinha. Depois de prometer uma mulher e de negociar com Tereza Cristina (PP) e Daniella Marques (Republicanos), fecha chapa puro-sangue do PL: PP, União Brasil, Republicanos e Podemos declararam neutralidade. Reforça a linha de ataque no caso do INSS, mas escancara o isolamento partidário e a falta de palanques estaduais.'}
   ];
   function evc(e){ return e.c==='red'?P.red:P.blue; }
 
@@ -1108,8 +1112,8 @@
     var evMark='', evCap='';
     evList.forEach(function(o){ var e=o.e, n=o.n, ec=evc(e), cy=47-o.lvl*19, ex=(o.ex+o.lvl*3).toFixed(1), yt=(cy+8).toFixed(1);
       evMark+='<line x1="'+ex+'" y1="'+yt+'" x2="'+ex+'" y2="312" stroke="'+ec+'" stroke-width="1.4" stroke-dasharray="3,3" stroke-opacity="0.6"/>'+
-        (e.p==='+' ? '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+P.surf+'" stroke="'+ec+'" stroke-width="2.5"/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="'+ec+'">'+n+'</text>' : '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+ec+'"/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">'+n+'</text>');
-      evCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+ec+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> <span style="font-size:10px; font-weight:700; color:'+ec+'; border:1px solid '+ec+'; border-radius:8px; padding:0 5px; opacity:.85;">'+(e.p==='+'?'favorece ':'prejudica ')+(e.c==='red'?'Lula':'Flávio')+'</span> &middot; '+e.t+'</span></div>';
+        '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+ec+'"/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">'+n+'</text>';
+      evCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+ec+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> <span style="font-size:10px; font-weight:700; color:'+ec+'; border:1px solid '+ec+'; border-radius:8px; padding:0 5px; opacity:.85;">'+(e.c==='red'?'Lula':'Flávio')+'</span> &middot; '+e.t+'</span></div>';
     });
     return ''+
     '<div style="display:flex; flex-wrap:wrap; gap:14px; padding:12px 14px 4px; font-size:12px; color:'+P.txt2+';">'+

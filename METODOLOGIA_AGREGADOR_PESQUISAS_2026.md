@@ -76,6 +76,14 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   O rótulo do 2º turno virou "2º turno · cenário", porque antes do 1º turno (4/out) toda
   simulação de 2º turno é condicional: um estudo de 423 eleições em dois turnos achou ~30% de
   viradas do 2º colocado, e o resultado do 1º turno realinha o jogo.
+- MARCOS DA CORRIDA SEM DIREÇÃO (06/08/2026, a pedido do usuário). O objeto `PEVENTS` tinha um campo
+  `p` ('+'/'-') que virava um selo "favorece Flávio" / "prejudica Lula" na legenda do gráfico e
+  distinguia o marcador (círculo vazado para favorece, cheio para prejudica). O usuário mandou TIRAR:
+  "isso não é tão fácil de avaliar assim". Dizer que um fato ajudou ou atrapalhou alguém é inferência
+  causal sobre uma série que tem ruído amostral maior que o efeito, e o painel não tem como sustentar.
+  O QUE FICOU: o selo nomeia apenas de quem é o fato (Lula ou Flávio), que é factual, e a cor `c`
+  segue sendo só isso. Todos os marcadores são cheios. NÃO reintroduzir o campo `p`, o selo
+  "favorece/prejudica" nem o círculo vazado sem o usuário pedir.
 - PENDÊNCIAS DATADAS (registrar agora, executar depois):
   (a) SETEMBRO: implementar detector de herding (ADPA do Silver Bulletin). Se na última quinzena
   a dispersão entre institutos ficar ABAIXO do mínimo teórico dado o erro amostral, é manada e a
