@@ -2,12 +2,11 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 07/08/2026 02:48. Mercados: Polymarket 64,5%/27,0%, Kalshi 68,0%/26,0%.
+Rodada de 07/08/2026 08:03. Mercados: Polymarket 64,5%/27,0%, Kalshi 69,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
-- NOVO no TSE: ESTADUAL[SC], #NULO# (Presidente), campo 03/08-08/08, divulgação 2026-08-07, N=880, registro BR092282026
-- NOVO no TSE: SC, #NULO# (Governador, Senador, Deputado Fede), campo 03/08-08/08, divulgação 2026-08-07, N=880, registro SC031922026
+Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
 
 ## Últimas publicações do Veritá
 
