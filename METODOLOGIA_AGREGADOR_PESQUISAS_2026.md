@@ -352,11 +352,44 @@ Estrutura do painel: QUATRO abas no topo (acima dos meses):
 - Aba "Mapa": mapa do Brasil com seletor de ano 2018/2022/2026 (botões chamam `setMapYear`). Vermelho = esquerda/PT (Haddad 2018, Lula 2022/2026), azul = direita (Bolsonaro 2018/2022, Flávio 2026). 2018/2022 colorem todos os estados (resultado de urna); 2026 só os ~9 com pesquisa, resto bege. Estados clicáveis abrem gaveta com o dado do ano + fonte (TSE p/ urna, instituto p/ pesquisa). Funções `presLead` (lê `cur.mapyear`)/`drawPresMap`/`openPresState`; helper `ufOf`.
 Objeto de dados a manter: `DI` (brutos por instituto, jan-jul). Ao atualizar números, acrescentar rodadas ao `DI`; house effect (2º turno), gráfico e mapa derivam dele. O objeto `VHIST`/`VLULA` (1º turno) ainda existe só para a gaveta lateral, NÃO para o gráfico.
 
+## O `PENDENCIAS.md` só mostra o DELTA, e por isso uma pesquisa pode sumir
+
+Registrado em 07/08/2026. O `rotina_6h.py` marca cada registro do TSE em `estado_rotina.json`
+assim que o vê e, da rodada seguinte em diante, ele deixa de ser "novo". Se a rodada humana que
+recebeu o aviso não inseriu o dado, seja porque o número ainda não estava publicado, seja porque
+a sessão fez outra coisa, NINGUÉM avisa de novo: as rodadas seguintes dizem "nada novo" e a
+pesquisa fica de fora para sempre.
+
+Foi exatamente o que houve com a Real Time Big Data de Mato Grosso do Sul (campo 1 a 5/8,
+divulgação 6/8, registros MS-07706/2026 e BR-01784/2026). Ela foi sinalizada, não entrou, e na
+rodada de 07/08 02:48 o relatório já dizia "nada novo". Só apareceu porque, ao investigar a
+pendência de Santa Catarina, a capa da Gazeta do Povo mostrava a matéria de MS como a mais
+recente e o painel não tinha agosto naquele estado.
+
+REMÉDIO ENQUANTO NÃO HOUVER CONFERÊNCIA AUTOMÁTICA: quando o `PENDENCIAS.md` apontar qualquer
+novidade, antes de encerrar compare a capa da Gazeta do Povo e a tag `pesquisa-eleitoral` do
+Poder360 com o que o painel tem no MÊS CORRENTE. É barato e pega o que escorreu. Cuidado para
+não confundir com a regra de não fazer varredura pesada quando NÃO há novidade: aí a rodada
+acaba em duas linhas mesmo.
+
 ## Fontes dos dados
 
 - Agregador Wikipédia: "Pesquisas de opinião para a eleição presidencial no Brasil em 2026" (base principal, por instituto e mês).
 - Agregador Gazeta do Povo (eleicoes/2026/pesquisa-eleitoral-2026).
 - Fontes primárias dos institutos e cobertura (CNN, Poder360, Exame, InfoMoney).
+
+ONDE ACHAR O GÊMEO PRESIDENCIAL DE UMA ESTADUAL (aprendido em 07/08/2026, custou meia dúzia de
+tentativas). A matéria do presidencial por estado NÃO aparece na capa da tag `pesquisa-eleitoral`
+do Poder360, que lista sobretudo o governador e o senado. Ela está na TAG DO INSTITUTO, por
+exemplo `poder360.com.br/tag/real-time-big-data/`, com título no formato "Flávio tem X% e Lula,
+Y%, no 2º turno no UF". Vá pela tag do instituto sempre que o TSE mostrar um registro BR com
+escopo ESTADUAL[UF] e a capa não trouxer nada.
+
+E NÃO ADIANTA ADIVINHAR O NOME DO PDF: o do estadual e o do presidencial seguem padrões
+diferentes, mesmo instituto e mesmo dia. Em 06/08/2026 o de MS saiu como
+`Mato-Grosso-do-Sul-MS-07706_2026-AGO26-1.pdf` (registro no nome) e o presidencial como
+`presidente-mato-grosso-do-sul-real-time-big-data-6ago.pdf` (sem registro nenhum). Abra a matéria
+e leia o href; sondar URL por tentativa só gasta rodada.
 
 ## Três métricas no painel
 
