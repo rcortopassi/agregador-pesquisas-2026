@@ -372,6 +372,30 @@ Poder360 com o que o painel tem no MÊS CORRENTE. É barato e pega o que escorre
 não confundir com a regra de não fazer varredura pesada quando NÃO há novidade: aí a rodada
 acaba em duas linhas mesmo.
 
+## Registro com divulgação liberada ANTES do fim do campo (e o atalho do Poder360)
+
+Registrado em 07/08/2026, a partir da pendência de Santa Catarina. O TSE pode ter DT_DIVULGACAO
+anterior ao fim do campo: a Visão Pesquisas registrou SC-03192/2026 (governador, senador e
+deputados) e o gêmeo presidencial BR-09228/2026, N=880, campo de 03/08 a 08/08, com divulgação
+liberada em 07/08. Ou seja, o `PENDENCIAS.md` sinaliza a pesquisa como nova enquanto as
+entrevistas ainda estão sendo feitas, e não existe número para procurar. Não é instituto que
+registra e não publica: é pesquisa que ainda não terminou. Nesse caso não se insere nada e a
+busca só faz sentido DEPOIS da data de fim do campo.
+
+ATALHO QUE RESOLVE ISSO EM UMA PÁGINA: o Poder360 publica todo dia, por volta das 7h, a matéria
+"Saiba quais pesquisas eleitorais podem sair nesta 6ª feira" (o dia da semana muda), na tag
+`pesquisa-eleitoral`. Ela lista os levantamentos liberados para divulgação naquele dia com
+instituto, contratante e as datas de entrevista. É a maneira mais barata de separar "vai sair
+hoje" de "ainda está em campo", e de confirmar o contratante sem abrir o CSV do TSE. A de
+07/08/2026 trazia exatamente a Visão Pesquisas de SC, financiamento próprio, entrevistas de 3 a
+8 de agosto.
+
+PENDENTE PARA A PRÓXIMA RODADA (senão o delta engole, como engoliu o MS): procurar o resultado da
+Visão Pesquisas em SC a partir de 09/08/2026, presidencial, governador e senador. O painel hoje
+tem SC com Neokemp de 22-24 jul no `DG`/`DS` e IPC/ACJ de 9-13 jul no `PRES26`, nenhum de agosto.
+A busca do dia 07/08 no Poder360, na Gazeta do Povo e na web aberta não achou nada da Visão em
+2026, só as rodadas dela de 2022, o que é coerente com o campo em andamento.
+
 ## Fontes dos dados
 
 - Agregador Wikipédia: "Pesquisas de opinião para a eleição presidencial no Brasil em 2026" (base principal, por instituto e mês).
