@@ -2,11 +2,12 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 06/08/2026 22:32. Mercados: Polymarket 64,5%/26,9%, Kalshi 68,0%/26,0%.
+Rodada de 07/08/2026 02:48. Mercados: Polymarket 64,5%/27,0%, Kalshi 68,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
+- NOVO no TSE: ESTADUAL[SC], #NULO# (Presidente), campo 03/08-08/08, divulgação 2026-08-07, N=880, registro BR092282026
+- NOVO no TSE: SC, #NULO# (Governador, Senador, Deputado Fede), campo 03/08-08/08, divulgação 2026-08-07, N=880, registro SC031922026
 
 ## Últimas publicações do Veritá
 
@@ -25,27 +26,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-27 | AC | REAL TIME BIG DATA | Governador, Senador | 22/07-25/07 | 1600 | AC010692026 |
-| 2026-07-27 | ESTADUAL[AC] | REAL TIME BIG DATA | Presidente | 22/07-25/07 | 1600 | BR080862026 |
-| 2026-07-27 | ESTADUAL[MT] | INSTITUTO MAIS | Presidente | 21/07-26/07 | 1200 | BR078782026 |
-| 2026-07-27 | ESTADUAL[PA] | #NULO# | Presidente | 21/07-25/07 | 900 | BR067522026 |
-| 2026-07-27 | ESTADUAL[PR] | #NULO# | Presidente | 21/07-25/07 | 1104 | BR034452026 |
-| 2026-07-27 | ESTADUAL[RJ] | #NULO# | Presidente | 21/07-25/07 | 1200 | BR076702026 |
-| 2026-07-27 | ESTADUAL[RN] | TS2 SOLUCOES | Presidente | 22/07-27/07 | 1800 | BR067512026 |
-| 2026-07-27 | ESTADUAL[SC] | NEOKEMP PESQUISAS | Presidente | 22/07-24/07 | 1008 | BR059532026 |
-| 2026-07-27 | GO | DIAGNOSTICO PESQUISAS DE COM | Governador, Senador, Deputado Esta | 23/07-24/07 | 1100 | GO033102026 |
-| 2026-07-27 | MT | MT DADOS PESQUISAS | Governador, Senador, Deputado Fede | 15/07-21/07 | 2800 | MT048792026 |
-| 2026-07-27 | MT | INSTITUTO MAIS | Governador, Senador, Deputado Fede | 21/07-26/07 | 1200 | MT056752026 |
-| 2026-07-27 | NACIONAL? | NEXUS | Presidente | 24/07-26/07 | 2000 | BR014892026 |
-| 2026-07-27 | NACIONAL? | ACADEMIA DE PESQUISA | Presidente | 25/07-25/07 | 400 | BR087742026 |
-| 2026-07-27 | PA | #NULO# | Governador, Senador | 21/07-25/07 | 900 | PA045482026 |
-| 2026-07-27 | PE | INSTITUTO DE PESQUISA MULTIP | Governador | 24/07-26/07 | 900 | PE000282026 |
-| 2026-07-27 | PR | #NULO# | Governador, Senador | 21/07-25/07 | 1104 | PR048182026 |
-| 2026-07-27 | RJ | #NULO# | Governador, Senador | 21/07-25/07 | 1200 | RJ026712026 |
-| 2026-07-27 | RN | TS2 SOLUCOES | Governador, Senador, Deputado Fede | 22/07-27/07 | 1800 | RN022772026 |
-| 2026-07-27 | SC | NEOKEMP PESQUISAS | Governador, Senador | 22/07-24/07 | 1008 | SC021942026 |
-| 2026-07-27 | SE | CTAS TECNOLOGIA | Governador, Senador, Deputado Fede | 21/07-24/07 | 1224 | SE019522026 |
-| 2026-07-27 | SP | ACADEMIA DE PESQUISA | Governador, Deputado Estadual | 25/07-25/07 | 4000 | SP085032026 |
 | 2026-07-28 | CE | IPEC | Governador, Senador | 22/07-28/07 | 800 | CE057392026 |
 | 2026-07-28 | ESTADUAL[CE] | IPEC | Presidente | 22/07-28/07 | 800 | BR072352026 |
 | 2026-07-28 | ESTADUAL[MG] | #NULO# | Presidente | 22/07-26/07 | 1482 | BR093332026 |
@@ -171,4 +151,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-06 | MS | REAL TIME BIG DATA | Governador, Senador | 01/08-05/08 | 1600 | MS077062026 |
 | 2026-08-06 | NACIONAL? | INSTITUTO PHOENIX & ASSOCIAD | Presidente | 04/08-07/08 | 1311 | BR010782026 |
 | 2026-08-06 | PI | VETOR TECNOLOGIA E PESQUISAS | Governador, Senador, Deputado Fede | 28/07-02/08 | 1602 | PI025092026 |
+| 2026-08-07 | ESTADUAL[SC] | #NULO# | Presidente | 03/08-08/08 | 880 | BR092282026 |
+| 2026-08-07 | SC | #NULO# | Governador, Senador, Deputado Fede | 03/08-08/08 | 880 | SC031922026 |
 
