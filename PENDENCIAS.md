@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 07/08/2026 19:50. Mercados: Polymarket 64,5%/27,0%, Kalshi 67,0%/26,0%.
+Rodada de 08/08/2026 02:07. Mercados: Polymarket 64,5%/27,0%, Kalshi 68,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -25,20 +25,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-28 | CE | IPEC | Governador, Senador | 22/07-28/07 | 800 | CE057392026 |
-| 2026-07-28 | ESTADUAL[CE] | IPEC | Presidente | 22/07-28/07 | 800 | BR072352026 |
-| 2026-07-28 | ESTADUAL[MG] | #NULO# | Presidente | 22/07-26/07 | 1482 | BR093332026 |
-| 2026-07-28 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 23/07-27/07 | 1200 | BR008222026 |
-| 2026-07-28 | ESTADUAL[PE] | #NULO# | Presidente | 22/07-26/07 | 900 | BR038102026 |
-| 2026-07-28 | ESTADUAL[PE] | #NULO# | Presidente | 22/07-25/07 | 1000 | BR087072026 |
-| 2026-07-28 | ESTADUAL[RJ] | REAL TIME BIG DATA | Presidente | 23/07-27/07 | 2000 | BR060742026 |
-| 2026-07-28 | MG | #NULO# | Governador, Senador | 22/07-26/07 | 1482 | MG034902026 |
-| 2026-07-28 | MT | PERCENT PESQUISA DE MERCADO  | Governador, Senador, Deputado Fede | 23/07-27/07 | 1200 | MT022512026 |
-| 2026-07-28 | NACIONAL? | ATLASINTEL | Presidente | 22/07-27/07 | 5000 | BR086022026 |
-| 2026-07-28 | PE | #NULO# | Governador, Senador | 22/07-26/07 | 900 | PE096492026 |
-| 2026-07-28 | PE | #NULO# | Governador, Senador | 22/07-25/07 | 1000 | PE002972026 |
-| 2026-07-28 | RJ | REAL TIME BIG DATA | Governador, Senador | 23/07-27/07 | 2000 | RJ034872026 |
-| 2026-07-28 | RN | MEDIA - INTELIGENCIA EM PESQ | Governador, Senador, Deputado Fede | 23/07-24/07 | 500 | RN030022026 |
 | 2026-07-29 | BA | #NULO# | Governador, Senador | 23/07-27/07 | 1200 | BA023312026 |
 | 2026-07-29 | ESTADUAL[BA] | #NULO# | Presidente | 23/07-27/07 | 1200 | BR058562026 |
 | 2026-07-29 | ESTADUAL[PE] | BADRA COMUNICACAO | Presidente | 24/07-29/07 | 1500 | BR032892026 |
