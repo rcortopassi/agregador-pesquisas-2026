@@ -2,14 +2,11 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 09/08/2026 02:14. Mercados: Polymarket 64,5%/27,0%, Kalshi 67,0%/26,0%.
+Rodada de 09/08/2026 07:48. Mercados: Polymarket 64,5%/27,0%, Kalshi 68,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
-- NOVO no TSE: ESTADUAL[SP], AMERICAN ANALYTICS (Presidente), campo 04/08-08/08, divulgação 2026-08-09, N=1500, registro BR030252026
-- NOVO no TSE: MA, INOP PREVISAO PESQUISAS SERV (Governador, Senador, Deputado Fede), campo 28/07-05/08, divulgação 2026-08-09, N=2660, registro MA076872026
-- NOVO no TSE: PR, INDICE INTELIGENCIA (Governador, Senador), campo 04/08-06/08, divulgação 2026-08-09, N=1200, registro PR070342026
-- NOVO no TSE: SP, AMERICAN ANALYTICS (Governador, Senador), campo 04/08-08/08, divulgação 2026-08-09, N=1500, registro SP034632026
+Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
 
 ## Últimas publicações do Veritá
 
