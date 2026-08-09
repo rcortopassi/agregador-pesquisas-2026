@@ -2,11 +2,14 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 08/08/2026 19:41. Mercados: Polymarket 64,5%/27,0%, Kalshi 67,0%/26,0%.
+Rodada de 09/08/2026 02:14. Mercados: Polymarket 64,5%/27,0%, Kalshi 67,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
+- NOVO no TSE: ESTADUAL[SP], AMERICAN ANALYTICS (Presidente), campo 04/08-08/08, divulgação 2026-08-09, N=1500, registro BR030252026
+- NOVO no TSE: MA, INOP PREVISAO PESQUISAS SERV (Governador, Senador, Deputado Fede), campo 28/07-05/08, divulgação 2026-08-09, N=2660, registro MA076872026
+- NOVO no TSE: PR, INDICE INTELIGENCIA (Governador, Senador), campo 04/08-06/08, divulgação 2026-08-09, N=1200, registro PR070342026
+- NOVO no TSE: SP, AMERICAN ANALYTICS (Governador, Senador), campo 04/08-08/08, divulgação 2026-08-09, N=1500, registro SP034632026
 
 ## Últimas publicações do Veritá
 
@@ -25,22 +28,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-29 | BA | #NULO# | Governador, Senador | 23/07-27/07 | 1200 | BA023312026 |
-| 2026-07-29 | ESTADUAL[BA] | #NULO# | Presidente | 23/07-27/07 | 1200 | BR058562026 |
-| 2026-07-29 | ESTADUAL[PE] | BADRA COMUNICACAO | Presidente | 24/07-29/07 | 1500 | BR032892026 |
-| 2026-07-29 | ESTADUAL[PE] | INSTITUTO FOCUS | Presidente | 24/07-25/07 | 400 | BR081332026 |
-| 2026-07-29 | ESTADUAL[RN] | PERFIL PESQUISAS TECNICAS | Presidente | 23/07-26/07 | 1600 | BR052252026 |
-| 2026-07-29 | ESTADUAL[SP] | #NULO# | Presidente | 25/07-28/07 | 1680 | BR090712026 |
-| 2026-07-29 | ESTADUAL[SP] | #NULO# | Presidente | 23/07-27/07 | 1650 | BR099982026 |
-| 2026-07-29 | MA | IPSENSUS PESQUISAS | Governador, Senador, Deputado Fede | 21/07-25/07 | 1800 | MA096772026 |
-| 2026-07-29 | NACIONAL? | 100 CIDADES | Presidente | 21/07-24/07 | 1200 | BR080542026 |
-| 2026-07-29 | PE | BADRA COMUNICACAO | Governador | 24/07-29/07 | 1500 | PE066412026 |
-| 2026-07-29 | PE | INSTITUTO FOCUS | Governador, Senador, Deputado Fede | 24/07-25/07 | 400 | PE048122026 |
-| 2026-07-29 | PI | INSTITUTO CREDIBILIDADE | Governador, Senador, Deputado Fede | 18/07-19/07 | 359 | PI032172026 |
-| 2026-07-29 | PR | #NULO# | Governador, Senador | 24/07-28/07 | 1200 | PR031912026 |
-| 2026-07-29 | RN | PERFIL PESQUISAS TECNICAS | Governador, Senador, Deputado Fede | 23/07-26/07 | 1600 | RN003372026 |
-| 2026-07-29 | SP | #NULO# | Governador, Senador | 23/07-27/07 | 1650 | SP048462026 |
-| 2026-07-29 | SP | #NULO# | Governador, Senador | 25/07-28/07 | 1680 | SP046242026 |
 | 2026-07-30 | CE | INSTITUTO OPINIAO | Governador | 24/07-27/07 | 1535 | CE082262026 |
 | 2026-07-30 | CE | #NULO# | Governador, Senador | 24/07-28/07 | 1002 | CE092772026 |
 | 2026-07-30 | ESTADUAL[CE] | #NULO# | Presidente | 24/07-28/07 | 1002 | BR032382026 |
@@ -138,4 +125,8 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-06 | PI | VETOR TECNOLOGIA E PESQUISAS | Governador, Senador, Deputado Fede | 28/07-02/08 | 1602 | PI025092026 |
 | 2026-08-07 | ESTADUAL[SC] | #NULO# | Presidente | 03/08-08/08 | 880 | BR092282026 |
 | 2026-08-07 | SC | #NULO# | Governador, Senador, Deputado Fede | 03/08-08/08 | 880 | SC031922026 |
+| 2026-08-09 | ESTADUAL[SP] | AMERICAN ANALYTICS | Presidente | 04/08-08/08 | 1500 | BR030252026 |
+| 2026-08-09 | MA | INOP PREVISAO PESQUISAS SERV | Governador, Senador, Deputado Fede | 28/07-05/08 | 2660 | MA076872026 |
+| 2026-08-09 | PR | INDICE INTELIGENCIA | Governador, Senador | 04/08-06/08 | 1200 | PR070342026 |
+| 2026-08-09 | SP | AMERICAN ANALYTICS | Governador, Senador | 04/08-08/08 | 1500 | SP034632026 |
 
