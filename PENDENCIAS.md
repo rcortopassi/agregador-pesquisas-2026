@@ -2,11 +2,15 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 10/08/2026 08:17. Mercados: Polymarket 63,5%/27,0%, Kalshi 68,0%/26,0%.
+Rodada de 10/08/2026 14:03. Mercados: Polymarket 63,5%/27,3%, Kalshi 68,0%/27,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
+A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
+
+- [aguardando desde 2026-08-06] TSE NACIONAL?, INSTITUTO PHOENIX & ASSOCIAD (Presidente), campo 04/08-07/08, divulgação 2026-08-06, N=1311, registro BR010782026
+- [aguardando desde 2026-08-10] TSE NACIONAL?, PALVER (Presidente), campo 03/08-09/08, divulgação 2026-08-10, N=5000, registro BR065962026
+- [aguardando desde 2026-08-10] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 06/08-10/08, divulgação 2026-08-10, N=2400, registro BR080452026
 
 ## Últimas publicações do Veritá
 
