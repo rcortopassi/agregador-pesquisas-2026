@@ -31,10 +31,32 @@ um modelo lendo PDF no CI, com `ANTHROPIC_API_KEY` no repositório, que não exi
 criada sem o Rafael pedir.
 
 **COMECE PELO `PENDENCIAS.md`.** Ele é gerado a cada rodada do Actions e diz, na primeira seção,
-se apareceu algo novo desde a rodada anterior. Se disser que não apareceu nada, sua rodada acaba
-em duas linhas: NÃO refaça o radar, NÃO rode mercados, NÃO mexa no carimbo, NÃO dê commit vazio.
-O arquivo é reescrito inteiro toda vez, então não o edite à mão. O estado de "o que eu já vi"
-mora em `estado_rotina.json`, que também é do script, não seu.
+o que está NA FILA esperando olho humano. Se a fila estiver vazia, sua rodada acaba em duas
+linhas: NÃO refaça o radar, NÃO rode mercados, NÃO mexa no carimbo, NÃO dê commit vazio.
+O arquivo é reescrito inteiro toda vez, então não o edite à mão. O estado mora em
+`estado_rotina.json`, que também é do script, não seu.
+
+**A FILA NÃO SE ESVAZIA SOZINHA, e isso é de propósito (10/08/2026).** Até esta data a primeira
+seção era o diff de UMA rodada, e o protocolo era marcado como visto na mesma hora em que era
+anunciado. Como o ZIP do TSE é regerado uma vez por dia, de madrugada, toda novidade caía na
+primeira rodada do dia (~02h40) e era apagada pela seguinte (~08h17), enquanto a rodada local lê
+07h30/13h30/19h30. Em 10/08 as três nacionais do dia (Nexus/BTG, Palver e GERP) foram
+sinalizadas às 02h40 e o arquivo já dizia "nada novo" às 08h17: o painel passou de 07/08 a 10/08
+sem dado novo sem que ninguém tivesse decidido isso.
+
+Agora cada item fica na fila, rodada após rodada, marcado `[NOVO]` ou `[aguardando desde DATA]`,
+até você fechá-lo:
+
+```bash
+python3 rotina_6h.py --resolver BR084282026            # um ou vários, separados por vírgula
+python3 rotina_6h.py --resolver tudo                   # limpa a fila inteira
+```
+
+**Resolver quer dizer as duas coisas:** inserido no painel, OU verificado que o instituto
+registrou e não publicou número. Marque também o que você descartou, senão volta amanhã e a fila
+vira ruído. Item não resolvido sai sozinho depois de 21 dias, e a saída é anunciada no próprio
+`PENDENCIAS.md`, nunca silenciosa. `--resolver` só mexe na fila: não carimba, não lê mercado e
+não toca no painel, então pode ser usado à vontade sem gerar rodada mecânica.
 
 Se o `PENDENCIAS.md` estiver velho (data de mais de 7 horas atrás), o Actions falhou: confira com
 `gh run list --workflow=rotina.yml --limit 3` e, aí sim, rode `python3 rotina_6h.py` à mão.
