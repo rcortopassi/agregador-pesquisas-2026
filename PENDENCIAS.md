@@ -2,23 +2,11 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 10/08/2026 02:40. Mercados: Polymarket 63,5%/27,3%, Kalshi 68,0%/26,0%.
+Rodada de 10/08/2026 08:17. Mercados: Polymarket 63,5%/27,0%, Kalshi 68,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
-- NOVO no TSE: AC, #NULO# (Governador, Senador), campo 05/08-08/08, divulgação 2026-08-10, N=800, registro AC016492026
-- NOVO no TSE: ESTADUAL[AC], #NULO# (Presidente), campo 05/08-08/08, divulgação 2026-08-10, N=800, registro BR031132026
-- NOVO no TSE: ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 05/08-06/08, divulgação 2026-08-10, N=550, registro BR094412026
-- NOVO no TSE: ESTADUAL[RN], METADATA (Presidente), campo 06/08-08/08, divulgação 2026-08-10, N=1536, registro BR057362026
-- NOVO no TSE: ESTADUAL[SP], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 05/08-08/08, divulgação 2026-08-10, N=1800, registro BR080362026
-- NOVO no TSE: NACIONAL?, NEXUS (Presidente), campo 07/08-09/08, divulgação 2026-08-10, N=2000, registro BR084282026
-- NOVO no TSE: NACIONAL?, PALVER (Presidente), campo 03/08-09/08, divulgação 2026-08-10, N=5000, registro BR065962026
-- NOVO no TSE: NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 06/08-10/08, divulgação 2026-08-10, N=2400, registro BR080452026
-- NOVO no TSE: PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 05/08-06/08, divulgação 2026-08-10, N=550, registro PB008662026
-- NOVO no TSE: PI, DATA MAX (Governador, Senador, Deputado Fede), campo 27/07-05/08, divulgação 2026-08-10, N=2000, registro PI034622026
-- NOVO no TSE: PR, ALFA INTELIGENCIA (Governador, Senador), campo 05/08-09/08, divulgação 2026-08-10, N=1200, registro PR018572026
-- NOVO no TSE: RN, METADATA (Governador, Senador, Deputado Fede), campo 06/08-08/08, divulgação 2026-08-10, N=1536, registro RN036822026
-- NOVO no TSE: SP, BOAS IDEIAS, ESTRATEGIA E IN (Governador, Senador), campo 05/08-08/08, divulgação 2026-08-10, N=1800, registro SP049562026
+Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
 
 ## Últimas publicações do Veritá
 
