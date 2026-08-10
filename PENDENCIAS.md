@@ -2,11 +2,23 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 09/08/2026 19:44. Mercados: Polymarket 63,5%/27,2%, Kalshi 66,0%/26,0%.
+Rodada de 10/08/2026 02:40. Mercados: Polymarket 63,5%/27,3%, Kalshi 68,0%/26,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse visto, e o Veritá não publicou relatório novo.
+- NOVO no TSE: AC, #NULO# (Governador, Senador), campo 05/08-08/08, divulgação 2026-08-10, N=800, registro AC016492026
+- NOVO no TSE: ESTADUAL[AC], #NULO# (Presidente), campo 05/08-08/08, divulgação 2026-08-10, N=800, registro BR031132026
+- NOVO no TSE: ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 05/08-06/08, divulgação 2026-08-10, N=550, registro BR094412026
+- NOVO no TSE: ESTADUAL[RN], METADATA (Presidente), campo 06/08-08/08, divulgação 2026-08-10, N=1536, registro BR057362026
+- NOVO no TSE: ESTADUAL[SP], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 05/08-08/08, divulgação 2026-08-10, N=1800, registro BR080362026
+- NOVO no TSE: NACIONAL?, NEXUS (Presidente), campo 07/08-09/08, divulgação 2026-08-10, N=2000, registro BR084282026
+- NOVO no TSE: NACIONAL?, PALVER (Presidente), campo 03/08-09/08, divulgação 2026-08-10, N=5000, registro BR065962026
+- NOVO no TSE: NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 06/08-10/08, divulgação 2026-08-10, N=2400, registro BR080452026
+- NOVO no TSE: PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 05/08-06/08, divulgação 2026-08-10, N=550, registro PB008662026
+- NOVO no TSE: PI, DATA MAX (Governador, Senador, Deputado Fede), campo 27/07-05/08, divulgação 2026-08-10, N=2000, registro PI034622026
+- NOVO no TSE: PR, ALFA INTELIGENCIA (Governador, Senador), campo 05/08-09/08, divulgação 2026-08-10, N=1200, registro PR018572026
+- NOVO no TSE: RN, METADATA (Governador, Senador, Deputado Fede), campo 06/08-08/08, divulgação 2026-08-10, N=1536, registro RN036822026
+- NOVO no TSE: SP, BOAS IDEIAS, ESTRATEGIA E IN (Governador, Senador), campo 05/08-08/08, divulgação 2026-08-10, N=1800, registro SP049562026
 
 ## Últimas publicações do Veritá
 
@@ -25,17 +37,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-07-30 | CE | INSTITUTO OPINIAO | Governador | 24/07-27/07 | 1535 | CE082262026 |
-| 2026-07-30 | CE | #NULO# | Governador, Senador | 24/07-28/07 | 1002 | CE092772026 |
-| 2026-07-30 | ESTADUAL[CE] | #NULO# | Presidente | 24/07-28/07 | 1002 | BR032382026 |
-| 2026-07-30 | ESTADUAL[GO] | #NULO# | Presidente | 24/07-28/07 | 1104 | BR018712026 |
-| 2026-07-30 | ESTADUAL[GO] | #NULO# | Presidente | 24/07-28/07 | 1104 | BR080632026 |
-| 2026-07-30 | ESTADUAL[MG] | REAL TIME BIG DATA | Presidente | 25/07-29/07 | 2000 | BR009682026 |
-| 2026-07-30 | GO | #NULO# | Governador, Senador | 24/07-28/07 | 1104 | GO017012026 |
-| 2026-07-30 | MG | REAL TIME BIG DATA | Governador, Senador | 25/07-29/07 | 2000 | MG064752026 |
-| 2026-07-30 | NACIONAL? | PODERDATA | Presidente | 26/07-29/07 | 2400 | BR078452026 |
-| 2026-07-30 | RS | #NULO# | Governador, Senador | 24/07-28/07 | 1104 | RS047902026 |
-| 2026-07-30 | SE | #NULO# | Governador, Senador | 27/07-29/07 | 1070 | SE002812026 |
 | 2026-07-31 | AP | GRUPO GERP GERP MERCADO GERP | Governador, Senador | 27/07-29/07 | 1000 | AP059062026 |
 | 2026-07-31 | ESTADUAL[MS] | NOVO IBRAPE | Presidente | 25/07-29/07 | 1000 | BR059132026 |
 | 2026-07-31 | ESTADUAL[PE] | REAL TIME BIG DATA | Presidente | 27/07-30/07 | 1600 | BR083542026 |
@@ -126,4 +127,17 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-09 | MA | INOP PREVISAO PESQUISAS SERV | Governador, Senador, Deputado Fede | 28/07-05/08 | 2660 | MA076872026 |
 | 2026-08-09 | PR | INDICE INTELIGENCIA | Governador, Senador | 04/08-06/08 | 1200 | PR070342026 |
 | 2026-08-09 | SP | AMERICAN ANALYTICS | Governador, Senador | 04/08-08/08 | 1500 | SP034632026 |
+| 2026-08-10 | AC | #NULO# | Governador, Senador | 05/08-08/08 | 800 | AC016492026 |
+| 2026-08-10 | ESTADUAL[AC] | #NULO# | Presidente | 05/08-08/08 | 800 | BR031132026 |
+| 2026-08-10 | ESTADUAL[PB] | INSTITUTO SETA DE PESQUISA | Presidente | 05/08-06/08 | 550 | BR094412026 |
+| 2026-08-10 | ESTADUAL[RN] | METADATA | Presidente | 06/08-08/08 | 1536 | BR057362026 |
+| 2026-08-10 | ESTADUAL[SP] | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 05/08-08/08 | 1800 | BR080362026 |
+| 2026-08-10 | NACIONAL? | NEXUS | Presidente | 07/08-09/08 | 2000 | BR084282026 |
+| 2026-08-10 | NACIONAL? | PALVER | Presidente | 03/08-09/08 | 5000 | BR065962026 |
+| 2026-08-10 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 06/08-10/08 | 2400 | BR080452026 |
+| 2026-08-10 | PB | INSTITUTO SETA DE PESQUISA | Governador, Senador, Deputado Fede | 05/08-06/08 | 550 | PB008662026 |
+| 2026-08-10 | PI | DATA MAX | Governador, Senador, Deputado Fede | 27/07-05/08 | 2000 | PI034622026 |
+| 2026-08-10 | PR | ALFA INTELIGENCIA | Governador, Senador | 05/08-09/08 | 1200 | PR018572026 |
+| 2026-08-10 | RN | METADATA | Governador, Senador, Deputado Fede | 06/08-08/08 | 1536 | RN036822026 |
+| 2026-08-10 | SP | BOAS IDEIAS, ESTRATEGIA E IN | Governador, Senador | 05/08-08/08 | 1800 | SP049562026 |
 
