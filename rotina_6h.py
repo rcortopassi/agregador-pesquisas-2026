@@ -47,6 +47,10 @@ VERITA_HOME = "https://eleicoes26.institutoverita.com.br/"
 VERITA_REST = ("https://lgjdbpskgjfbmlffbntx.supabase.co/rest/v1/pesquisas"
                "?select=id,titulo,descricao,pdf_url,created_at&order=created_at.desc&limit=12")
 DIAS_JANELA = 10  # quanto tempo para tras o relatorio lista divulgacoes
+# Quanto tempo um item fica na fila sem ser resolvido antes de sair sozinho. Existe por causa
+# do instituto que registra e nunca publica (caso JOTA): sem isso a fila so cresce. A saida e
+# ANUNCIADA no PENDENCIAS, nunca silenciosa.
+DIAS_EXPIRA = 21
 
 
 def agora():
@@ -54,10 +58,15 @@ def agora():
 
 
 def ler_estado():
+    vazio = {"tse_vistos": [], "verita_vistos": [], "pendentes": [],
+             "verita_pendentes": [], "ultima_rodada": None}
     if os.path.exists(ESTADO):
         with open(ESTADO, encoding="utf-8") as fh:
-            return json.load(fh)
-    return {"tse_vistos": [], "verita_vistos": [], "ultima_rodada": None}
+            estado = json.load(fh)
+        for k, v in vazio.items():
+            estado.setdefault(k, v)
+        return estado
+    return vazio
 
 
 # ---------------------------------------------------------------- TSE
@@ -198,7 +207,8 @@ def valida_js(caminho):
 
 # ---------------------------------------------------------------- relatorio
 
-def escreve_pendencias(itens, novos_tse, verita, novos_verita, nota_mercados, carimbo):
+def escreve_pendencias(itens, pendentes, novos_agora, verita, ver_pendentes, ver_novos,
+                       expirados, nota_mercados, carimbo):
     L = []
     L.append("# Pendências do agregador")
     L.append("")
@@ -210,18 +220,31 @@ def escreve_pendencias(itens, novos_tse, verita, novos_verita, nota_mercados, ca
 
     L.append("## Precisa de olho humano nesta rodada")
     L.append("")
-    if not novos_tse and not novos_verita:
-        L.append("Nada novo. O TSE não registrou divulgação que a rotina ainda não tivesse "
-                 "visto, e o Veritá não publicou relatório novo.")
+    if not pendentes and not ver_pendentes:
+        L.append("Nada pendente. Tudo que o TSE registrou e o Veritá publicou já foi "
+                 "olhado por uma rodada local e baixado da fila.")
     else:
-        for it in novos_tse:
-            L.append("- NOVO no TSE: %s, %s (%s), campo %s, divulgação %s, N=%s, registro %s"
-                     % (it["escopo"], it["inst"], it["cargo"], it["campo"],
+        L.append("A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após "
+                 "rodada, até uma rodada local resolvê-lo com "
+                 "`python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas "
+                 "coisas: inserido no painel, ou verificado que o instituto não publicou "
+                 "número. Marque também o que descartar, senão volta amanhã.")
+        L.append("")
+        for it in pendentes:
+            marca = "NOVO" if it["proto"] in novos_agora else "aguardando desde %s" % it["visto"]
+            L.append("- [%s] TSE %s, %s (%s), campo %s, divulgação %s, N=%s, registro %s"
+                     % (marca, it["escopo"], it["inst"], it["cargo"], it["campo"],
                         it["div"], it["n"], it["proto"]))
-        for v in novos_verita:
-            L.append("- NOVO no Veritá: %s. %s PDF: %s"
-                     % (v.get("titulo", "?"), (v.get("descricao") or "").strip(),
+        for v in ver_pendentes:
+            marca = "NOVO" if v.get("id") in ver_novos else "aguardando desde %s" % v.get("visto", "?")
+            L.append("- [%s] Veritá: %s. %s PDF: %s"
+                     % (marca, v.get("titulo", "?"), (v.get("descricao") or "").strip(),
                         v.get("pdf_url", "?")))
+    if expirados:
+        L.append("")
+        L.append("Saíram da fila por idade nesta rodada (mais de %d dias sem serem "
+                 "resolvidos, provavelmente instituto que registrou e nunca publicou): %s."
+                 % (DIAS_EXPIRA, ", ".join(expirados)))
     L.append("")
 
     L.append("## Últimas publicações do Veritá")
@@ -251,13 +274,57 @@ def escreve_pendencias(itens, novos_tse, verita, novos_verita, nota_mercados, ca
 
 # ---------------------------------------------------------------- main
 
+def resolver(estado, alvos):
+    """Tira da fila o que uma rodada local ja tratou. Nao mexe em `tse_vistos`.
+
+    Aceita protocolo do TSE, id do Verita ou `--resolver tudo`. Quem chama e a rodada local,
+    depois de inserir no painel OU de confirmar que o instituto nao publicou numero.
+    """
+    fila = estado.get("pendentes", [])
+    vfila = estado.get("verita_pendentes", [])
+    if "tudo" in alvos:
+        estado["pendentes"], estado["verita_pendentes"] = [], []
+        return [i["proto"] for i in fila] + [str(v.get("id")) for v in vfila]
+    baixados = [i["proto"] for i in fila if i["proto"] in alvos]
+    baixados += [str(v.get("id")) for v in vfila if str(v.get("id")) in alvos]
+    estado["pendentes"] = [i for i in fila if i["proto"] not in alvos]
+    estado["verita_pendentes"] = [v for v in vfila if str(v.get("id")) not in alvos]
+    return baixados
+
+
 def main():
-    args = set(sys.argv[1:])
+    argv = sys.argv[1:]
+    args = set(argv)
     dry = "--dry-run" in args
     semear = "--semear" in args
     sem_mercados = "--sem-mercados" in args or semear
 
     estado = ler_estado()
+
+    # --resolver: so mexe na fila e sai. Nao carimba, nao le mercado, nao toca no painel,
+    # para a rodada local poder fechar item sem gerar uma rodada mecanica por tabela.
+    if "--resolver" in argv:
+        i = argv.index("--resolver")
+        alvos = set()
+        for a in argv[i + 1:]:
+            if a.startswith("--"):
+                break
+            alvos.update(x.strip() for x in a.split(",") if x.strip())
+        if not alvos:
+            print("uso: rotina_6h.py --resolver BR012342026[,BR056782026 | tudo]")
+            return 1
+        baixados = resolver(estado, alvos)
+        nao_achei = alvos - set(baixados) - {"tudo"}
+        if not dry:
+            with open(ESTADO, "w", encoding="utf-8") as fh:
+                json.dump(estado, fh, ensure_ascii=False, indent=1)
+        print("resolvidos (%d): %s" % (len(baixados), ", ".join(baixados) or "nenhum"))
+        if nao_achei:
+            print("não estavam na fila: %s" % ", ".join(sorted(nao_achei)))
+        print("restam na fila: %d TSE, %d Veritá"
+              % (len(estado["pendentes"]), len(estado["verita_pendentes"])))
+        return 0
+
     vistos_tse = set(estado.get("tse_vistos", []))
     vistos_ver = set(estado.get("verita_vistos", []))
     resumo = []
@@ -287,6 +354,46 @@ def main():
         novos_ver = [v for v in verita if v.get("id") not in vistos_ver]
     if verita is not None:
         resumo.append(f"Veritá: {len(verita)} publicações lidas, {len(novos_ver)} novas")
+
+    # 2b. FILA. O que e novo entra; o que ja estava CONTINUA, ate `--resolver` tirar.
+    #
+    # Por que isto existe (10/08/2026): antes, `novos_tse` era o diff de UMA rodada e o
+    # estado era marcado como visto na mesma hora. Como o ZIP do TSE e regerado uma vez por
+    # dia, de madrugada, toda novidade caia na primeira rodada do dia (~02h40) e era apagada
+    # pela seguinte (~08h17), enquanto a rodada local le 07h30/13h30/19h30. Resultado medido:
+    # em 10/08 as tres nacionais do dia (Nexus/BTG, Palver e GERP) foram sinalizadas as 02h40
+    # e o arquivo ja dizia "nada novo" as 08h17. O painel ficou tres dias sem dado novo sem
+    # que ninguem tivesse decidido isso.
+    hoje = agora().date()
+    fila = list(estado.get("pendentes", []))
+    ja_na_fila = {i["proto"] for i in fila}
+    novos_agora = {i["proto"] for i in novos_tse}
+    for it in novos_tse:
+        if it["proto"] not in ja_na_fila:
+            fila.append(dict(it, visto=hoje.isoformat()))
+
+    def velho(it):
+        try:
+            d = datetime.strptime(it.get("visto", ""), "%Y-%m-%d").date()
+        except ValueError:
+            return False
+        return (hoje - d).days > DIAS_EXPIRA
+
+    expirados = [i["proto"] for i in fila if velho(i)]
+    fila = [i for i in fila if not velho(i)]
+    fila.sort(key=lambda x: (x["div"], x["escopo"]))
+
+    vfila = list(estado.get("verita_pendentes", []))
+    ja_ver = {v.get("id") for v in vfila}
+    ver_novos = {v.get("id") for v in novos_ver}
+    for v in novos_ver:
+        if v.get("id") not in ja_ver:
+            vfila.append(dict(v, visto=hoje.isoformat()))
+
+    resumo.append("Fila: %d pendentes no TSE (%d entraram agora), %d no Veritá"
+                  % (len(fila), len(novos_agora - ja_na_fila), len(vfila)))
+    if expirados:
+        resumo.append("Saíram por idade (>%d dias): %s" % (DIAS_EXPIRA, ", ".join(expirados)))
 
     # 3. mercados
     pm = kal = None
@@ -325,23 +432,31 @@ def main():
                 return 1
             resumo.append("Painel: " + ", ".join(trocas))
 
-        texto = escreve_pendencias(itens, novos_tse, verita, novos_ver, nota_mercados, carimbo)
+        texto = escreve_pendencias(itens, fila, novos_agora, verita, vfila, ver_novos,
+                                   expirados, nota_mercados, carimbo)
         if not dry:
             with open(PENDENCIAS, "w", encoding="utf-8") as fh:
                 fh.write(texto + "\n")
 
     # 5. estado
     if not dry:
+        # `tse_vistos` responde "ja passei os olhos nisto" e evita reanunciar como NOVO.
+        # `pendentes` responde "ainda falta alguem tratar", e SO sai com --resolver. Sao
+        # perguntas diferentes: era confundir as duas que fazia o aviso evaporar.
         estado["tse_vistos"] = sorted({i["proto"] for i in itens} | vistos_tse)
         if verita is not None:
             estado["verita_vistos"] = sorted({v["id"] for v in verita} | vistos_ver)
+        estado["pendentes"] = fila
+        estado["verita_pendentes"] = vfila
         estado["ultima_rodada"] = ts.isoformat()
         with open(ESTADO, "w", encoding="utf-8") as fh:
             json.dump(estado, fh, ensure_ascii=False, indent=1)
 
     for linha in resumo:
         print(linha)
-    tem_novidade = bool(novos_tse or novos_ver)
+    # O veredito e a FILA, nao o diff desta rodada. Uma rodada que nao descobriu nada mas
+    # tem item esperando ha dois dias continua tendo trabalho para a rodada local.
+    tem_novidade = bool(fila or vfila)
     print("NOVIDADE: sim" if tem_novidade else "NOVIDADE: nao")
 
     # Deixa o veredito no resumo do Actions, para dar para ver sem abrir o log.
@@ -351,12 +466,13 @@ def main():
             fh.write("## Rotina de 6h, %s\n\n" % carimbo)
             for linha in resumo:
                 fh.write("- %s\n" % linha)
-            fh.write("\n**%s**\n\n" % ("Tem coisa nova para a rodada local olhar"
-                                       if tem_novidade else "Nada novo"))
-            for it in novos_tse:
-                fh.write("- TSE %s %s %s (div %s)\n" % (it["escopo"], it["inst"],
-                                                        it["campo"], it["div"]))
-            for v in novos_ver:
+            fh.write("\n**%s**\n\n" % ("Tem coisa na fila para a rodada local olhar"
+                                       if tem_novidade else "Fila vazia"))
+            for it in fila:
+                fh.write("- TSE %s %s %s (div %s)%s\n"
+                         % (it["escopo"], it["inst"], it["campo"], it["div"],
+                            "" if it["proto"] in novos_agora else " [aguardando]"))
+            for v in vfila:
                 fh.write("- Veritá %s\n" % v.get("titulo", "?"))
     return 0
 
