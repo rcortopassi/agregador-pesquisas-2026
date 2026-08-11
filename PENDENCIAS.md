@@ -2,27 +2,25 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 11/08/2026 02:17. Mercados: Polymarket 63,5%/27,3%, Kalshi 67,0%/27,0%.
+Rodada de 11/08/2026 08:00. Mercados: Polymarket 63,5%/27,3%, Kalshi 67,0%/27,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
 - [aguardando desde 2026-08-10] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 06/08-10/08, divulgação 2026-08-10, N=2400, registro BR080452026
-- [NOVO] TSE AC, DELTA AGENCIA DE PESQUISA (Governador, Senador), campo 04/08-09/08, divulgação 2026-08-11, N=1006, registro AC067872026
-- [NOVO] TSE BA, REAL TIME BIG DATA (Governador, Senador), campo 06/08-10/08, divulgação 2026-08-11, N=1600, registro BA002772026
-- [NOVO] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 04/08-09/08, divulgação 2026-08-11, N=1006, registro BR076042026
-- [NOVO] TSE ESTADUAL[BA], REAL TIME BIG DATA (Presidente), campo 06/08-10/08, divulgação 2026-08-11, N=1600, registro BR052052026
-- [NOVO] TSE ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 06/08-07/08, divulgação 2026-08-11, N=450, registro BR079962026
-- [NOVO] TSE ESTADUAL[RN], AGORASEI PESQUISA (Presidente), campo 02/08-05/08, divulgação 2026-08-11, N=1500, registro BR089512026
-- [NOVO] TSE ESTADUAL[SP], #NULO# (Presidente), campo 05/08-10/08, divulgação 2026-08-11, N=800, registro BR036562026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 05/08-09/08, divulgação 2026-08-11, N=2002, registro BR069352026
-- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 03/08-06/08, divulgação 2026-08-11, N=2000, registro BR081092026
-- [NOVO] TSE PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 06/08-07/08, divulgação 2026-08-11, N=450, registro PB092192026
-- [NOVO] TSE PE, CONTEXTTO E REVILLO (Governador, Senador), campo 06/08-10/08, divulgação 2026-08-11, N=1200, registro PE002622026
-- [NOVO] TSE RN, AGORASEI PESQUISA (Governador, Senador, Deputado Fede), campo 02/08-05/08, divulgação 2026-08-11, N=1500, registro RN068552026
-- [NOVO] TSE RN, QUALITTA EMPREENDIMENTOS (Governador, Senador, Deputado Fede), campo 06/08-10/08, divulgação 2026-08-11, N=1200, registro RN020472026
-- [NOVO] TSE SP, #NULO# (Governador, Senador, Deputado Fede), campo 05/08-10/08, divulgação 2026-08-11, N=800, registro SP099632026
+- [aguardando desde 2026-08-11] TSE AC, DELTA AGENCIA DE PESQUISA (Governador, Senador), campo 04/08-09/08, divulgação 2026-08-11, N=1006, registro AC067872026
+- [aguardando desde 2026-08-11] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 04/08-09/08, divulgação 2026-08-11, N=1006, registro BR076042026
+- [aguardando desde 2026-08-11] TSE ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 06/08-07/08, divulgação 2026-08-11, N=450, registro BR079962026
+- [aguardando desde 2026-08-11] TSE ESTADUAL[RN], AGORASEI PESQUISA (Presidente), campo 02/08-05/08, divulgação 2026-08-11, N=1500, registro BR089512026
+- [aguardando desde 2026-08-11] TSE ESTADUAL[SP], #NULO# (Presidente), campo 05/08-10/08, divulgação 2026-08-11, N=800, registro BR036562026
+- [aguardando desde 2026-08-11] TSE NACIONAL?, #NULO# (Presidente), campo 05/08-09/08, divulgação 2026-08-11, N=2002, registro BR069352026
+- [aguardando desde 2026-08-11] TSE NACIONAL?, 100 CIDADES (Presidente), campo 03/08-06/08, divulgação 2026-08-11, N=2000, registro BR081092026
+- [aguardando desde 2026-08-11] TSE PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 06/08-07/08, divulgação 2026-08-11, N=450, registro PB092192026
+- [aguardando desde 2026-08-11] TSE PE, CONTEXTTO E REVILLO (Governador, Senador), campo 06/08-10/08, divulgação 2026-08-11, N=1200, registro PE002622026
+- [aguardando desde 2026-08-11] TSE RN, AGORASEI PESQUISA (Governador, Senador, Deputado Fede), campo 02/08-05/08, divulgação 2026-08-11, N=1500, registro RN068552026
+- [aguardando desde 2026-08-11] TSE RN, QUALITTA EMPREENDIMENTOS (Governador, Senador, Deputado Fede), campo 06/08-10/08, divulgação 2026-08-11, N=1200, registro RN020472026
+- [aguardando desde 2026-08-11] TSE SP, #NULO# (Governador, Senador, Deputado Fede), campo 05/08-10/08, divulgação 2026-08-11, N=800, registro SP099632026
 
 ## Últimas publicações do Veritá
 
