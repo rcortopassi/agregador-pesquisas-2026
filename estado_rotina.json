@@ -223,27 +223,6 @@
   "eb0342b6-979f-46d5-ab83-949ff53dc67b"
  ],
  "ultima_rodada": "2026-08-11T14:08:50.944050-03:00",
- "pendentes": [
-  {
-   "proto": "AC067872026",
-   "escopo": "AC",
-   "inst": "DELTA AGENCIA DE PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "04/08-09/08",
-   "div": "2026-08-11",
-   "n": "1006",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "BR076042026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "DELTA AGENCIA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "04/08-09/08",
-   "div": "2026-08-11",
-   "n": "1006",
-   "visto": "2026-08-11"
-  }
- ],
+ "pendentes": [],
  "verita_pendentes": []
 }
