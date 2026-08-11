@@ -225,16 +225,6 @@
  "ultima_rodada": "2026-08-11T08:00:31.072875-03:00",
  "pendentes": [
   {
-   "proto": "BR080452026",
-   "escopo": "NACIONAL?",
-   "inst": "GRUPO GERP GERP MERCADO GERP",
-   "cargo": "Presidente",
-   "campo": "06/08-10/08",
-   "div": "2026-08-10",
-   "n": "2400",
-   "visto": "2026-08-10"
-  },
-  {
    "proto": "AC067872026",
    "escopo": "AC",
    "inst": "DELTA AGENCIA DE PESQUISA",
@@ -252,106 +242,6 @@
    "campo": "04/08-09/08",
    "div": "2026-08-11",
    "n": "1006",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "BR079962026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "06/08-07/08",
-   "div": "2026-08-11",
-   "n": "450",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "BR089512026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "AGORASEI PESQUISA",
-   "cargo": "Presidente",
-   "campo": "02/08-05/08",
-   "div": "2026-08-11",
-   "n": "1500",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "BR036562026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "05/08-10/08",
-   "div": "2026-08-11",
-   "n": "800",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "BR069352026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "05/08-09/08",
-   "div": "2026-08-11",
-   "n": "2002",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "BR081092026",
-   "escopo": "NACIONAL?",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "03/08-06/08",
-   "div": "2026-08-11",
-   "n": "2000",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "PB092192026",
-   "escopo": "PB",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "06/08-07/08",
-   "div": "2026-08-11",
-   "n": "450",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "PE002622026",
-   "escopo": "PE",
-   "inst": "CONTEXTTO E REVILLO",
-   "cargo": "Governador, Senador",
-   "campo": "06/08-10/08",
-   "div": "2026-08-11",
-   "n": "1200",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "RN068552026",
-   "escopo": "RN",
-   "inst": "AGORASEI PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "02/08-05/08",
-   "div": "2026-08-11",
-   "n": "1500",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "RN020472026",
-   "escopo": "RN",
-   "inst": "QUALITTA EMPREENDIMENTOS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "06/08-10/08",
-   "div": "2026-08-11",
-   "n": "1200",
-   "visto": "2026-08-11"
-  },
-  {
-   "proto": "SP099632026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "05/08-10/08",
-   "div": "2026-08-11",
-   "n": "800",
    "visto": "2026-08-11"
   }
  ],
