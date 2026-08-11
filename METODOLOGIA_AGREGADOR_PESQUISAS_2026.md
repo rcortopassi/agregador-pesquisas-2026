@@ -128,6 +128,18 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   anteriores, das quais 5 de institutos que não acompanhamos (DMP, Boas Ideias, 100 Cidades,
   IGAPE, Instituto Mais). ARMADILHA do filtro: "Boas Ideias" casa com a palavra "IDEIA" da lista
   de institutos conhecidos e passa batido; conferir por nome inteiro, não por substring.
+- CORREÇÃO DA ARMADILHA "BOAS IDEIAS" (11/08/2026). A regra do parágrafo acima continua valendo
+  para substring, mas a CONCLUSÃO que se tirou dela em 23/07 estava errada: a "Boas Ideias" foi
+  listada entre os 5 institutos "que não acompanhamos", e ela é justamente o instituto que o
+  painel chama de **Meio/Ideia**. Conferido POR CNPJ, que é o método certo: CNPJ
+  13.475.743/0001-60, razão social BOAS IDEIAS INTELIGENCIA EM PESQUISA E ESTRATEGIA DIGITAL
+  LTDA, fantasia "BOAS IDEIAS, ESTRATEGIA E INTELIGENCIA DIGITAL.". As 12 nacionais dela em 2026
+  batem uma a uma com a cadência mensal do Meio/Ideia no `DI`, incluindo BR-05628/2026
+  (campo 3-6 jul, a rodada de julho do painel) e BR-04579/2026 (campo 31/7-3/8, a de agosto).
+  A CEO é a Cila Schulman, e o Poder360 e a Gazeta do Povo escrevem ora "Meio/Ideia" ora só
+  "Ideia", conforme quem contratou a rodada. LIÇÃO: nome fantasia do TSE e nome de mercado do
+  instituto são coisas diferentes; o desempate é sempre o CNPJ, do mesmo jeito que na auditoria
+  de house effect. Não voltar a tratar "Boas Ideias" como instituto desconhecido.
 - QUEM PODE TER HOUSE EFFECT: AUDITORIA POR CNPJ (31/07/2026). PERGUNTA que originou: o usuário
   reparou que a Alfa e a Vox Brasil, acrescentadas ao `DI` de julho, entravam sem ajuste, e mandou
   verificar se isso era corrigível. MÉTODO, que vale para qualquer instituto novo: baixar os ZIPs
