@@ -897,6 +897,28 @@
     for(var n in pr){ if(isOut(n)) continue; var L=pr[n][0], F=pr[n][1]; if(L+F<=0) continue;
       A.push((L-F)/(L+F)*100 - avies2(n)); }
     return A.length? med(A) : null; }
+  // PLACAR DO 2º TURNO (11/08/2026, a pedido do usuário). O banner mostrava o 1º turno como
+  // placar ("Lula 41,5 · Flávio 37,3") e o 2º turno só como margem ("Lula +3,5"), o que obrigava
+  // o leitor a imaginar os dois níveis do cenário que de fato decide a eleição. Agora os dois
+  // aparecem do mesmo jeito, e a margem desce para uma linha própria.
+  // COMO É CONSTRUÍDO, e por que NÃO é a mediana de cada lado separadamente: a margem que o
+  // painel publica (`adj2Month`) é a MEDIANA DAS MARGENS, já com house effect. Mediana das
+  // margens e diferença das medianas de cada lado não são a mesma conta, e a diferença não é
+  // desprezível: em jul/2026 dão 3,9 e 4,1; em ago/2026, com só 4 institutos, dão 3,5 e 2,6.
+  // Publicar o placar por medianas separadas faria o banner se contradizer na MESMA linha
+  // (um placar de 46,5 x 43,9 ao lado de um "+3,5"). Então o placar DECOMPÕE a margem oficial
+  // em torno de um centro medido: centro = mediana de (Lula+Flávio)/2 entre os institutos do
+  // mês, ou seja, quanto da amostra os dois juntos ocupam; Lula = centro + margem/2 e
+  // Flávio = centro − margem/2. A soma é medida de verdade e a diferença bate com a margem
+  // publicada por construção. Em julho, com 12 institutos, as duas contas quase coincidem
+  // (46,5/42,5 contra 46,7/42,5), o que é o teste de sanidade da escolha.
+  // BASE: amostra total, a mesma do "amostra total" da linha de margem. NÃO é votos válidos.
+  // Retorna null quando o mês não tem pares no `T2R` (meses anteriores a julho), e aí o banner
+  // volta sozinho ao formato antigo, só com a margem.
+  function t2placar(m){ var pr=T2R[m]; if(!pr) return null; var S=[];
+    for(var n in pr){ if(isOut(n)) continue; var L=pr[n][0], F=pr[n][1]; if(L+F<=0) continue; S.push((L+F)/2); }
+    if(!S.length) return null; var c=med(S), mg=adj2Month(m)[1];
+    return [c+mg/2, c-mg/2, S.length]; }
   // STRESS TEST DO INDECISO (22/07/2026). Os "votos válidos" assumem que o indeciso se divide na
   // MESMA proporção dos declarados. Em 2022 isso foi FALSO e caro: entre a pesquisa de sábado e a
   // urna de domingo do 1º turno, Bolsonaro subiu 7,8 pontos e Lula 2,8 (Opinião Pública, 2024),
@@ -1241,14 +1263,26 @@
     var mstr2=(a2[1]>=0?'Lula +':'Flávio +')+fmt(Math.abs(a2[1]));
     var v2=tem2?t2valid(cur.m):null;  // margem do 2º turno em VOTOS VÁLIDOS (null se não há pares)
     var vstr2=v2!=null?((v2>=0?'Lula +':'Flávio +')+fmt(Math.abs(v2))):'';
+    var pl2=tem2?t2placar(cur.m):null;  // placar do 2º turno (null nos meses sem pares no T2R)
     var labSty='font-size:10px; font-weight:700; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em;';
     var subSty='color:'+P.mut+'; font-size:10px;';
     var scen='<div style="width:100%; display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:5px; font-size:13px;">'
       +'<span><span style="'+labSty+'">1º turno</span>&nbsp; <span style="color:'+P.red+'; font-weight:600;">Lula '+fmt(l1)+'</span> <span style="color:'+P.mut+';">&middot;</span> <span style="color:'+P.blue+'; font-weight:600;">Flávio '+fmt(f1)+'</span></span>'
-      +(tem2?'<span style="color:'+P.bord+';">|</span><span><span style="'+labSty+'" title="Cenário hipotético: o 1º turno ainda não aconteceu. Em ~30% das eleições de dois turnos o 2º colocado vira no 2º turno, e o resultado do 1º realinha o jogo.">2º turno &middot; cenário</span>&nbsp; <span style="color:'+(a2[1]>=0?P.red:P.blue)+'; font-weight:600;">'+mstr2+'</span> <span style="'+subSty+'">amostra total</span>'
-        +(v2!=null?' <span style="color:'+P.mut+';">&middot;</span> <span style="color:'+(v2>=0?P.red:P.blue)+'; font-weight:600;" title="Votos válidos: exclui brancos, nulos e indecisos, assumindo que se dividiriam na mesma proporção dos declarados. É a base em que a eleição é apurada pelo TSE.">'+vstr2+'</span> <span style="'+subSty+'">votos válidos</span>':'')
+      +(tem2?'<span style="color:'+P.bord+';">|</span><span><span style="'+labSty+'" title="Cenário hipotético: o 1º turno ainda não aconteceu. Em ~30% das eleições de dois turnos o 2º colocado vira no 2º turno, e o resultado do 1º realinha o jogo.">2º turno &middot; cenário</span>&nbsp; '
+        // PLACAR, igual ao do 1º turno. Sem pares no mês (`pl2` null) cai no formato antigo,
+        // só com a margem, que é tudo que existe nesses meses.
+        +(pl2!=null?'<span style="color:'+P.red+'; font-weight:600;" title="Placar do cenário de 2º turno em amostra total, já com house effect. Os dois somam '+fmt(pl2[0]+pl2[1])+', que é a fatia da amostra que os institutos do mês dão aos dois juntos; o resto é branco, nulo e indeciso.">Lula '+fmt(pl2[0])+'</span> <span style="color:'+P.mut+';">&middot;</span> <span style="color:'+P.blue+'; font-weight:600;">Flávio '+fmt(pl2[1])+'</span>'
+              :'<span style="color:'+(a2[1]>=0?P.red:P.blue)+'; font-weight:600;">'+mstr2+'</span> <span style="'+subSty+'">amostra total</span>')
         +'</span>':'')
       +'</div>'
+      // MARGEM DO 2º TURNO em linha própria. Saiu de dentro da linha dos cenários quando o
+      // placar entrou (11/08/2026), senão a linha ficava com quatro números e nenhum rótulo
+      // sobrava legível no celular. As duas leituras, amostra total e votos válidos, continuam
+      // lado a lado, que é o par que a padronização de 22/07 existe para mostrar.
+      +(tem2&&pl2!=null?'<div style="width:100%; text-align:center; margin-top:3px; font-size:12px;">'
+        +'<span style="'+labSty+'">margem do 2º turno</span>&nbsp; <span style="color:'+(a2[1]>=0?P.red:P.blue)+'; font-weight:600;">'+mstr2+'</span> <span style="'+subSty+'">amostra total</span>'
+        +(v2!=null?' <span style="color:'+P.mut+';">&middot;</span> <span style="color:'+(v2>=0?P.red:P.blue)+'; font-weight:600;" title="Votos válidos: exclui brancos, nulos e indecisos, assumindo que se dividiriam na mesma proporção dos declarados. É a base em que a eleição é apurada pelo TSE.">'+vstr2+'</span> <span style="'+subSty+'">votos válidos</span>':'')
+        +'</div>':'')
       // STRESS TEST visível: o que acontece se o indeciso NÃO se dividir proporcionalmente.
       +(function(){ var s=tem2?t2stress(cur.m):null; if(s==null) return '';
           var sc=s>=0?P.red:P.blue, ss=(s>=0?'Lula +':'Flávio +')+fmt(Math.abs(s));
@@ -1256,12 +1290,14 @@
           // Bloco explicativo que abre ao TOCAR (title não funciona em celular). Explica de uma
           // vez as quatro leituras do banner, porque todas dependiam de hover.
           var exVal='<b>Amostra total x votos válidos.</b> Amostra total é o número como o instituto publicou, com brancos, nulos e indecisos dentro da conta. Votos válidos exclui esses e redistribui proporcionalmente entre os dois candidatos, que é a base em que o TSE apura. A diferença entre as duas leituras cresce quanto mais indeciso a pesquisa tem.';
+          var exPla='<b>Como se lê o placar do 2º turno.</b> Os dois números são o cenário direto Lula x Flávio, em amostra total e já com house effect, e não somam 100 porque o que falta é branco, nulo e indeciso. O placar é construído a partir da própria margem publicada logo abaixo dele: o centro é a mediana de quanto os dois candidatos somam juntos nas pesquisas do mês, e a margem é aberta em volta desse centro. É por isso que placar e margem nunca se contradizem. Tirar a mediana de cada lado em separado daria uma conta diferente da margem publicada, e em agosto, com quatro institutos, a diferença chegaria a quase 1 ponto na mesma tela.';
           var exCen='<b>Por que "cenário".</b> O 1º turno ainda não aconteceu, então toda simulação de 2º turno é condicional. Num estudo de 423 eleições em dois turnos, cerca de 30% terminaram com virada do segundo colocado, e o resultado do 1º turno realinha o jogo.';
           var exAdj='<b>Por que o 1º turno aparece ajustado.</b> Cada instituto é corrigido pelo viés que ele mesmo teve nas eleições passadas, medido contra a urna do TSE (finais de 2014, 2018 e 2022). Medimos que o campo brasileiro superestimou a margem do PT em 21 de 21 meses comparáveis, subestimando o candidato de direita em 5 a 7 pontos. Os valores brutos, sem correção, aparecem ao lado.';
           return '<div style="width:100%; text-align:center; font-size:11px; color:'+P.mut+'; margin-top:4px; padding:0 10px;">'
             +'<span onclick="toggleBx(\'bxexpl\')" style="cursor:pointer;"><b style="color:'+P.goldtxt+';">Cenário de estresse</b> &middot; se o indeciso quebrar como em 2022 (74% para a direita na reta final), '+cur.m+' vira <b style="color:'+sc+';">'+ss+'</b> <span style="text-decoration:underline; opacity:.75;">entenda estes números</span></span>'
             +'<div id="bxexpl" style="display:none; text-align:left; max-width:660px; margin:7px auto 0; padding:9px 11px; background:'+P.surf2+'; border:1px solid '+P.bsoft+'; border-radius:6px; line-height:1.6; color:'+P.txt2+'; font-size:11px;">'
               +'<div style="margin-bottom:7px;"><b style="color:'+P.goldtxt+';">Cenário de estresse.</b> '+expl+'</div>'
+              +(pl2!=null?'<div style="margin-bottom:7px;">'+exPla+'</div>':'')
               +'<div style="margin-bottom:7px;">'+exVal+'</div>'
               +'<div style="margin-bottom:7px;">'+exCen+'</div>'
               +'<div>'+exAdj+'</div>'

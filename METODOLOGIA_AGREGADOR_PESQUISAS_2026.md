@@ -84,6 +84,28 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   O QUE FICOU: o selo nomeia apenas de quem é o fato (Lula ou Flávio), que é factual, e a cor `c`
   segue sendo só isso. Todos os marcadores são cheios. NÃO reintroduzir o campo `p`, o selo
   "favorece/prejudica" nem o círculo vazado sem o usuário pedir.
+- PLACAR DO 2º TURNO NO BANNER (11/08/2026, a pedido do usuário). Ele perguntou se dava para
+  apresentar o cenário de 2º turno do mesmo jeito que o de 1º turno. Dava, e agora o banner traz
+  "2º TURNO · CENÁRIO Lula 47,4 · Flávio 43,9", com as duas margens (amostra total e votos
+  válidos) descendo para uma linha própria logo abaixo. Função `t2placar`.
+  A ARMADILHA, que é o motivo de este parágrafo existir: o caminho óbvio seria tirar a mediana de
+  cada lado em separado, como faz o `adjMonth` do 1º turno. NÃO SERVE aqui. A margem que o painel
+  publica é o `adj2Month`, que é a MEDIANA DAS MARGENS, e mediana das margens não é igual à
+  diferença das medianas de cada lado. Medido: em jul/2026, com 12 institutos, dá 3,9 contra 4,1,
+  diferença tolerável; em ago/2026, com 4 institutos, dá 3,5 contra 2,6. Um placar de 46,5 x 43,9
+  ao lado de um "+3,5" na mesma tela é o painel se contradizendo, que é exatamente o tipo de erro
+  que esta seção existe para evitar.
+  SOLUÇÃO ADOTADA: o placar DECOMPÕE a margem oficial em torno de um centro medido. Centro =
+  mediana de (Lula+Flávio)/2 entre os institutos do mês, ou seja, quanto da amostra os dois
+  ocupam juntos; Lula = centro + margem/2, Flávio = centro − margem/2. A soma é medida de
+  verdade, a diferença bate com a margem publicada por construção, e em julho as duas contas
+  quase coincidem (46,5/42,5 contra 46,7/42,5), que foi o teste de sanidade.
+  ESCOPO: depende do `T2R`, que só tem pares de julho em diante. Nos meses anteriores `t2placar`
+  devolve null e o banner volta sozinho ao formato antigo, com a margem em linha. Conferido em
+  jun (cai no fallback), jul e ago, no desktop e em 375px.
+  NÃO transformar isso em novo agregado: o número que manda continua sendo o `adj2Month`, e o
+  placar é apresentação dele. Se um dia se quiser trocar o estimador, o lugar é o `adj2Month`,
+  e aí muda banner, gráfico e síntese juntos, que é decisão do usuário, não de apresentação.
 - PENDÊNCIAS DATADAS (registrar agora, executar depois):
   (a) SETEMBRO: implementar detector de herding (ADPA do Silver Bulletin). Se na última quinzena
   a dispersão entre institutos ficar ABAIXO do mínimo teórico dado o erro amostral, é manada e a
