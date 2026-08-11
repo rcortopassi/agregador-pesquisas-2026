@@ -106,6 +106,23 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   NÃO transformar isso em novo agregado: o número que manda continua sendo o `adj2Month`, e o
   placar é apresentação dele. Se um dia se quiser trocar o estimador, o lugar é o `adj2Month`,
   e aí muda banner, gráfico e síntese juntos, que é decisão do usuário, não de apresentação.
+  MESMA COISA NO CENÁRIO DE ESTRESSE (11/08/2026, no mesmo dia, a pedido do usuário). A linha do
+  estresse era a última que ainda falava só em margem ("ago vira Flávio +2,5") e agora traz o
+  placar também, `t2placarStress`. Aqui o centro NÃO precisa ser estimado: o estresse distribui
+  TODO o indeciso entre os dois, então o cenário já sai em votos válidos e o centro é exatamente
+  50. Ou seja, os dois placares do banner estão em bases diferentes de propósito, o de cima em
+  amostra total e o do estresse em válidos, e isso está dito na caixa "entenda estes números".
+  ARREDONDAMENTO, que virou função (`par1`): com uma casa decimal, abrir a margem em torno do
+  centro e arredondar cada lado por si pode fazer a subtração do placar não bater com a margem
+  exibida ao lado. Caso real: margem de 2,512 vira "+2,5" no rótulo e 2,6 na subtração de
+  51,3 menos 48,7. `par1` arredonda a margem primeiro e deriva o segundo número do primeiro,
+  então a diferença EXIBIDA é sempre a margem EXIBIDA. O preço é que a soma do par pode mostrar
+  100,1 em vez de 100 no estresse; foi escolhido assim porque a margem está impressa na tela ao
+  lado e a soma não. Não voltar a arredondar os dois lados separadamente.
+  TAMBÉM DE 11/08: mapa `MESEXT`/`mesExt` para escrever o mês por extenso em frase corrida
+  ("o 2º turno de agosto vira..."), que a abreviação deixava truncada. É constante da língua, não
+  série de dados; a lista de meses do painel continua saindo do `months` e do `DI`, e o que
+  faltar no mapa cai na própria abreviação.
 - PENDÊNCIAS DATADAS (registrar agora, executar depois):
   (a) SETEMBRO: implementar detector de herding (ADPA do Silver Bulletin). Se na última quinzena
   a dispersão entre institutos ficar ABAIXO do mínimo teórico dado o erro amostral, é manada e a
