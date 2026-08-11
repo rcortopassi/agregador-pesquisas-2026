@@ -2,14 +2,11 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 11/08/2026 14:08. Mercados: Polymarket 63,5%/27,0%, Kalshi 67,0%/27,0%.
+Rodada de 11/08/2026 19:56. Mercados: Polymarket 63,5%/27,0%, Kalshi 66,0%/27,0%.
 
 ## Precisa de olho humano nesta rodada
 
-A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
-
-- [aguardando desde 2026-08-11] TSE AC, DELTA AGENCIA DE PESQUISA (Governador, Senador), campo 04/08-09/08, divulgação 2026-08-11, N=1006, registro AC067872026
-- [aguardando desde 2026-08-11] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 04/08-09/08, divulgação 2026-08-11, N=1006, registro BR076042026
+Nada pendente. Tudo que o TSE registrou e o Veritá publicou já foi olhado por uma rodada local e baixado da fila.
 
 ## Últimas publicações do Veritá
 
