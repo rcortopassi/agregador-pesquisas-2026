@@ -341,6 +341,15 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   BR-06278/2026) mas há decisão do TRE mantendo restrição à divulgação, e nenhum número da rodada
   apareceu publicado. Não inserir AL da DataTrends sem antes checar a situação judicial, conforme a
   regra de checagem de suspensão que já vale para o ciclo.
+- SUMÁRIO DA ÍNTEGRA PROMETE SEÇÃO QUE O PDF NÃO TEM (13/08/2026). A íntegra da AtlasIntel/Focus do
+  Ceará (CE-02777/2026, campo 6-11/8, publicada pelo Poder360 em
+  `static.poder360.com.br/uploads/2026/08/pesquisa-atlasintel-governo-ce-12ago2026.pdf`) traz no
+  sumário oito seções, entre elas "3 Eleição para Presidente no Ceará", mas o arquivo tem 23 páginas
+  e termina na do Senado: as seções 3 a 7 não foram divulgadas. Governo e Senado entraram no painel;
+  o gêmeo presidencial BR-08314/2026, que alimentaria o `PRES26` do CE, FICOU SEM NÚMERO e segue na
+  fila do `PENDENCIAS.md` à espera de o instituto liberar o resto. Regra que fica: o sumário de um
+  deck NÃO é prova de que o número existe publicado, e nesses casos vale conferir a última página
+  antes de contar com a seção. Não preencher `PRES26` por dedução do resultado estadual.
 - SENADO, VAGAS E NEGRITO (21/07/2026). Em 2026 TODOS os 27 estados elegem DOIS senadores: o Senado tem 81 cadeiras, 3 por unidade da federação, renovadas alternadamente em 1/3 (1 vaga) e 2/3 (2 vagas), e 2026 é ano de 2/3 (2014 e 2022 foram 1; 2018 e 2026 são 2). O painel destaca em negrito tantos nomes quantas forem as vagas: 2 no Senado, 1 no Governador. Implementado em `SENVAGAS_PADRAO=2` + `SENVAGAS_UF={}` (override por estado, hoje vazio, para vaga extra por cassação/renúncia/morte) + `senVagas(uf)` + `nDestaque(office,uf)`, consumidos por `stateSinglePoll(d,nb)` e `stateInstTable(monthsObj,nb)`. Não fixar o 2 no código nem voltar a destacar só o primeiro colocado.
 
 O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o estado ATUAL abaixo, nunca versões antigas desta metodologia:
