@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 13/08/2026 02:45. Mercados: Polymarket 63,5%/28,1%, Kalshi 67,0%/28,0%.
+Rodada de 13/08/2026 08:08. Mercados: Polymarket 63,5%/28,0%, Kalshi 67,0%/28,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -23,28 +23,28 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-12] TSE PE, OPINIAO PESQUISAS SOCIAIS (Governador, Senador), campo 06/08-09/08, divulgação 2026-08-12, N=2000, registro PE089822026
 - [aguardando desde 2026-08-12] TSE PR, NEOKEMP PESQUISAS (Governador, Senador), campo 10/08-12/08, divulgação 2026-08-12, N=1008, registro PR032422026
 - [aguardando desde 2026-08-12] TSE RN, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 07/08-09/08, divulgação 2026-08-12, N=1500, registro RN070322026
-- [NOVO] TSE CE, #NULO# (Governador, Senador), campo 10/08-13/08, divulgação 2026-08-13, N=1022, registro CE042922026
-- [NOVO] TSE ESTADUAL[CE], #NULO# (Presidente), campo 10/08-13/08, divulgação 2026-08-13, N=1022, registro BR009942026
-- [NOVO] TSE ESTADUAL[MS], RANKING BRASIL INTELIGENCIA (Presidente), campo 07/08-12/08, divulgação 2026-08-13, N=2000, registro BR034932026
-- [NOVO] TSE ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 08/08-09/08, divulgação 2026-08-13, N=800, registro BR006092026
-- [NOVO] TSE ESTADUAL[RN], #NULO# (Presidente), campo 10/08-13/08, divulgação 2026-08-13, N=2000, registro BR078402026
-- [NOVO] TSE ESTADUAL[SE], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 10/08-12/08, divulgação 2026-08-13, N=2400, registro BR058082026
-- [NOVO] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 08/08-10/08, divulgação 2026-08-13, N=500, registro GO048942026
-- [NOVO] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Esta), campo 08/08-09/08, divulgação 2026-08-13, N=400, registro GO044912026
-- [NOVO] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 08/08-09/08, divulgação 2026-08-13, N=500, registro GO058362026
-- [NOVO] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 08/08-11/08, divulgação 2026-08-13, N=800, registro GO021182026
-- [NOVO] TSE MA, VERITAS PLANEJAMENTO (Governador, Senador), campo 08/08-11/08, divulgação 2026-08-13, N=1000, registro MA016322026
-- [NOVO] TSE MG, INPAC (Governador, Senador, Deputado Fede), campo 01/08-04/08, divulgação 2026-08-13, N=500, registro MG038372026
-- [NOVO] TSE MS, RANKING BRASIL INTELIGENCIA (Governador, Senador, Deputado Fede), campo 07/08-12/08, divulgação 2026-08-13, N=2000, registro MS095902026
-- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 09/08-12/08, divulgação 2026-08-13, N=2400, registro BR068682026
-- [NOVO] TSE PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 08/08-09/08, divulgação 2026-08-13, N=800, registro PB069922026
-- [NOVO] TSE PE, INSTITUTO REVISTA TOTAL BRAS (Governador, Senador), campo 07/08-09/08, divulgação 2026-08-13, N=1200, registro PE050262026
-- [NOVO] TSE PI, OPINAR PESQUISAS (Senador), campo 03/08-06/08, divulgação 2026-08-13, N=1200, registro PI020522026
-- [NOVO] TSE PI, INSTITUTO CREDIBILIDADE (Governador, Senador, Deputado Fede), campo 05/08-06/08, divulgação 2026-08-13, N=426, registro PI000172026
-- [NOVO] TSE PR, #NULO# (Governador, Senador), campo 08/08-12/08, divulgação 2026-08-13, N=1350, registro PR093012026
-- [NOVO] TSE RN, #NULO# (Senador, Deputado Federal, Deputad), campo 10/08-13/08, divulgação 2026-08-13, N=2000, registro RN093072026
-- [NOVO] TSE SE, VERITA (Governador, Senador), campo 08/08-12/08, divulgação 2026-08-13, N=1220, registro SE052622026
-- [NOVO] TSE SE, INSTITUTO FRANCA DE PESQUISA (Governador, Senador, Deputado Fede), campo 10/08-12/08, divulgação 2026-08-13, N=2400, registro SE042262026
+- [aguardando desde 2026-08-13] TSE CE, #NULO# (Governador, Senador), campo 10/08-13/08, divulgação 2026-08-13, N=1022, registro CE042922026
+- [aguardando desde 2026-08-13] TSE ESTADUAL[CE], #NULO# (Presidente), campo 10/08-13/08, divulgação 2026-08-13, N=1022, registro BR009942026
+- [aguardando desde 2026-08-13] TSE ESTADUAL[MS], RANKING BRASIL INTELIGENCIA (Presidente), campo 07/08-12/08, divulgação 2026-08-13, N=2000, registro BR034932026
+- [aguardando desde 2026-08-13] TSE ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 08/08-09/08, divulgação 2026-08-13, N=800, registro BR006092026
+- [aguardando desde 2026-08-13] TSE ESTADUAL[RN], #NULO# (Presidente), campo 10/08-13/08, divulgação 2026-08-13, N=2000, registro BR078402026
+- [aguardando desde 2026-08-13] TSE ESTADUAL[SE], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 10/08-12/08, divulgação 2026-08-13, N=2400, registro BR058082026
+- [aguardando desde 2026-08-13] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 08/08-10/08, divulgação 2026-08-13, N=500, registro GO048942026
+- [aguardando desde 2026-08-13] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Esta), campo 08/08-09/08, divulgação 2026-08-13, N=400, registro GO044912026
+- [aguardando desde 2026-08-13] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 08/08-09/08, divulgação 2026-08-13, N=500, registro GO058362026
+- [aguardando desde 2026-08-13] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 08/08-11/08, divulgação 2026-08-13, N=800, registro GO021182026
+- [aguardando desde 2026-08-13] TSE MA, VERITAS PLANEJAMENTO (Governador, Senador), campo 08/08-11/08, divulgação 2026-08-13, N=1000, registro MA016322026
+- [aguardando desde 2026-08-13] TSE MG, INPAC (Governador, Senador, Deputado Fede), campo 01/08-04/08, divulgação 2026-08-13, N=500, registro MG038372026
+- [aguardando desde 2026-08-13] TSE MS, RANKING BRASIL INTELIGENCIA (Governador, Senador, Deputado Fede), campo 07/08-12/08, divulgação 2026-08-13, N=2000, registro MS095902026
+- [aguardando desde 2026-08-13] TSE NACIONAL?, PODERDATA (Presidente), campo 09/08-12/08, divulgação 2026-08-13, N=2400, registro BR068682026
+- [aguardando desde 2026-08-13] TSE PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 08/08-09/08, divulgação 2026-08-13, N=800, registro PB069922026
+- [aguardando desde 2026-08-13] TSE PE, INSTITUTO REVISTA TOTAL BRAS (Governador, Senador), campo 07/08-09/08, divulgação 2026-08-13, N=1200, registro PE050262026
+- [aguardando desde 2026-08-13] TSE PI, OPINAR PESQUISAS (Senador), campo 03/08-06/08, divulgação 2026-08-13, N=1200, registro PI020522026
+- [aguardando desde 2026-08-13] TSE PI, INSTITUTO CREDIBILIDADE (Governador, Senador, Deputado Fede), campo 05/08-06/08, divulgação 2026-08-13, N=426, registro PI000172026
+- [aguardando desde 2026-08-13] TSE PR, #NULO# (Governador, Senador), campo 08/08-12/08, divulgação 2026-08-13, N=1350, registro PR093012026
+- [aguardando desde 2026-08-13] TSE RN, #NULO# (Senador, Deputado Federal, Deputad), campo 10/08-13/08, divulgação 2026-08-13, N=2000, registro RN093072026
+- [aguardando desde 2026-08-13] TSE SE, VERITA (Governador, Senador), campo 08/08-12/08, divulgação 2026-08-13, N=1220, registro SE052622026
+- [aguardando desde 2026-08-13] TSE SE, INSTITUTO FRANCA DE PESQUISA (Governador, Senador, Deputado Fede), campo 10/08-12/08, divulgação 2026-08-13, N=2400, registro SE042262026
 
 ## Últimas publicações do Veritá
 
