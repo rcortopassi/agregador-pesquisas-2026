@@ -350,6 +350,37 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   fila do `PENDENCIAS.md` à espera de o instituto liberar o resto. Regra que fica: o sumário de um
   deck NÃO é prova de que o número existe publicado, e nesses casos vale conferir a última página
   antes de contar com a seção. Não preencher `PRES26` por dedução do resultado estadual.
+- O SUPABASE DO VERITÁ SAIU DO AR (14/08/2026). O `radar_verita()` do `rotina_6h.py` vinha falhando
+  em silêncio ("Não consegui ler a lista do Veritá nesta rodada") e a causa NÃO é bloqueio nem
+  mudança de bundle: o projeto `lgjdbpskgjfbmlffbntx.supabase.co` responde **NXDOMAIN** no DNS do
+  sistema, no 8.8.8.8, no DoH do Google e no da Cloudflare, enquanto o apex `supabase.co` resolve
+  normalmente. A home `eleicoes26.institutoverita.com.br` continua no ar e o bundle JS ainda traz a
+  MESMA chave anon e o MESMO ref (conferido, `iss:supabase, ref:lgjdbpskgjfbmlffbntx`), ou seja o
+  site do instituto está apontando para um projeto que não existe mais. CONSEQUÊNCIA QUE IMPORTA
+  PARA O PAINEL: os PDFs do Veritá hospedados nesse Supabase viraram link morto, e um deles era o
+  campo `u` do `PRES26` do Paraná (`1785685708802_Relatorio_Parana_Agosto_2026.pdf`), trocado nesta
+  rodada junto com o dado. Antes de citar Veritá como fonte, teste o link; e se a lista voltar, é
+  porque eles recriaram o projeto, o que muda o ref e exige atualizar `VERITA_REST`.
+- PESQUISA MUNICIPAL REGISTRADA COM CÓDIGO ESTADUAL: SETA/POLÊMICA NA PARAÍBA (14/08/2026). A fila
+  vinha acumulando registros do INSTITUTO SETA na PB com N pequeno (450, 550, 800) e gêmeo
+  presidencial BR-, o que parecia rodada estadual nova toda semana. Não é: são as rodadas
+  MUNICIPAIS da série Polêmica Paraíba/Seta. Confirmado no caso PB-00866/2026 (N=550, campo 5-6/8,
+  gêmeo BR-09441/2026), que o próprio Polêmica publica como "a disputa para o Governo **na cidade
+  de Santa Rita**", com margem de 4 pontos. Ou seja, a amostra é de um município e a pergunta de
+  governador é sobre o voto daquele município, o que NÃO alimenta `DGM`/`DSM` (série estadual) nem
+  `PRES26` (mapa por UF). REGRA QUE FICA: na Paraíba, Seta com N abaixo de ~1.000 é municipal até
+  prova em contrário; abra a matéria do Polêmica antes de inserir, porque o cargo no registro do
+  TSE diz "Governador" mesmo quando o universo é uma cidade. É o primo do desempate pelo gêmeo: lá
+  o gêmeo estadual denuncia a falsa nacional, aqui o N pequeno denuncia a falsa estadual.
+- PRES26 NÃO É SÓ "A MAIS RECENTE" QUANDO A MAIS RECENTE É MAIS POBRE (14/08/2026). O Ranking Brasil
+  Inteligência publicou presidencial em MS (BR-03493/2026, campo 7-12/8, N=2.000): Flávio 40, Lula
+  33, sem cenário de 2º turno. Era 7 dias mais nova que a do Real Time Big Data (1-5/8) que estava
+  no `PRES26`, e mesmo assim NÃO entrou. Motivo: a do RTBD traz 2º turno (Lula 38 x Flávio 50), e é
+  do 2º turno que o `pmargin` tira a intensidade da cor do mapa; trocar por uma sem 2º turno faria o
+  mapa perder informação para ganhar seis dias, com as duas apontando o mesmo `lead` ('F'). A regra
+  geral continua sendo a mais recente por UF; a exceção é quando a mais recente não publica 2º turno
+  e a anterior publica, e a diferença de data é de poucos dias. Registrar no resumo quando acontecer,
+  senão a próxima rodada acha que o radar deixou passar.
 - SENADO, VAGAS E NEGRITO (21/07/2026). Em 2026 TODOS os 27 estados elegem DOIS senadores: o Senado tem 81 cadeiras, 3 por unidade da federação, renovadas alternadamente em 1/3 (1 vaga) e 2/3 (2 vagas), e 2026 é ano de 2/3 (2014 e 2022 foram 1; 2018 e 2026 são 2). O painel destaca em negrito tantos nomes quantas forem as vagas: 2 no Senado, 1 no Governador. Implementado em `SENVAGAS_PADRAO=2` + `SENVAGAS_UF={}` (override por estado, hoje vazio, para vaga extra por cassação/renúncia/morte) + `senVagas(uf)` + `nDestaque(office,uf)`, consumidos por `stateSinglePoll(d,nb)` e `stateInstTable(monthsObj,nb)`. Não fixar o 2 no código nem voltar a destacar só o primeiro colocado.
 
 O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o estado ATUAL abaixo, nunca versões antigas desta metodologia:
