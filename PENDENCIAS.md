@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 14/08/2026 02:43. Mercados: Polymarket 63,5%/28,4%, Kalshi 67,0%/28,0%.
+Rodada de 14/08/2026 08:06. Mercados: Polymarket 63,5%/28,6%, Kalshi 67,0%/29,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -38,12 +38,12 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-13] TSE RN, #NULO# (Senador, Deputado Federal, Deputad), campo 10/08-13/08, divulgação 2026-08-13, N=2000, registro RN093072026
 - [aguardando desde 2026-08-13] TSE SE, VERITA (Governador, Senador), campo 08/08-12/08, divulgação 2026-08-13, N=1220, registro SE052622026
 - [aguardando desde 2026-08-13] TSE SE, INSTITUTO FRANCA DE PESQUISA (Governador, Senador, Deputado Fede), campo 10/08-12/08, divulgação 2026-08-13, N=2400, registro SE042262026
-- [NOVO] TSE ESTADUAL[RN], DATAVERO INSTITUTO DE PESQUI (Presidente), campo 10/08-12/08, divulgação 2026-08-14, N=1500, registro BR053372026
-- [NOVO] TSE ESTADUAL[RN], CONSULT PESQUISA (Presidente), campo 08/08-10/08, divulgação 2026-08-14, N=1700, registro BR094182026
-- [NOVO] TSE GO, GOIAS PESQUISAS (Governador, Senador), campo 10/08-12/08, divulgação 2026-08-14, N=1150, registro GO068862026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 10/08-13/08, divulgação 2026-08-14, N=2004, registro BR067732026
-- [NOVO] TSE RN, DATAVERO INSTITUTO DE PESQUI (Governador, Senador, Deputado Fede), campo 10/08-12/08, divulgação 2026-08-14, N=1500, registro RN063132026
-- [NOVO] TSE RN, CONSULT PESQUISA (Governador, Senador, Deputado Fede), campo 08/08-10/08, divulgação 2026-08-14, N=1700, registro RN085092026
+- [aguardando desde 2026-08-14] TSE ESTADUAL[RN], DATAVERO INSTITUTO DE PESQUI (Presidente), campo 10/08-12/08, divulgação 2026-08-14, N=1500, registro BR053372026
+- [aguardando desde 2026-08-14] TSE ESTADUAL[RN], CONSULT PESQUISA (Presidente), campo 08/08-10/08, divulgação 2026-08-14, N=1700, registro BR094182026
+- [aguardando desde 2026-08-14] TSE GO, GOIAS PESQUISAS (Governador, Senador), campo 10/08-12/08, divulgação 2026-08-14, N=1150, registro GO068862026
+- [aguardando desde 2026-08-14] TSE NACIONAL?, #NULO# (Presidente), campo 10/08-13/08, divulgação 2026-08-14, N=2004, registro BR067732026
+- [aguardando desde 2026-08-14] TSE RN, DATAVERO INSTITUTO DE PESQUI (Governador, Senador, Deputado Fede), campo 10/08-12/08, divulgação 2026-08-14, N=1500, registro RN063132026
+- [aguardando desde 2026-08-14] TSE RN, CONSULT PESQUISA (Governador, Senador, Deputado Fede), campo 08/08-10/08, divulgação 2026-08-14, N=1700, registro RN085092026
 
 ## Últimas publicações do Veritá
 
