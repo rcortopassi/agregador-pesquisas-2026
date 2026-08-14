@@ -381,6 +381,35 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   geral continua sendo a mais recente por UF; a exceção é quando a mais recente não publica 2º turno
   e a anterior publica, e a diferença de data é de poucos dias. Registrar no resumo quando acontecer,
   senão a próxima rodada acha que o radar deixou passar.
+- DUAS SUSPENSÕES JUDICIAIS NO MESMO DIA, E O QUE ELAS ENSINAM (14/08/2026). Duas pesquisas que
+  estavam na fila do `PENDENCIAS.md` com divulgação vencida NÃO existem como dado publicável, porque
+  a Justiça Eleitoral barrou as duas ANTES da data de divulgação, e o radar do TSE não tem como saber
+  disso: ele lê o registro, não a liminar. **PE-08982/2026** (Opinião Pesquisas Sociais, campo 6-9/08,
+  R$ 45 mil, contratada pelo Blog do Magno Martins) foi suspensa em 11/08 pelo desembargador Paulo
+  Augusto de Freitas Oliveira, a pedido da coligação de Raquel Lyra, por "aparente incoerência" no
+  universo amostral, mistura de métodos de amostragem e falta de clareza sobre a origem dos recursos;
+  a liminar proíbe até recortes e tabelas, com multa de R$ 30 mil por descumprimento. **SE-04226/2026**
+  (Instituto França, campo 10-12/08, divulgação prevista para 13/08) foi suspensa pelo TRE-SE por
+  inconsistências metodológicas e vícios de amostragem, com multa diária de R$ 10 mil, e junto dela caiu
+  a SE-07506/2026 do mesmo instituto. Descartados também os gêmeos presidenciais BR-03921/2026 e
+  BR-05808/2026, que são a mesma coleta. REGRA QUE FICA: antes de inserir pesquisa de instituto local
+  pouco conhecido, procurar "TRE-UF suspende pesquisa" no período entre o registro e a divulgação. O
+  sinal de alerta é o mesmo nos dois casos: contratante que é parte interessada (blog que faz campanha
+  aberta por um dos candidatos) ou instituto sem histórico. O painel já tem a convenção certa para isso
+  no `DGM`/`DSM`, o terceiro elemento do par com o texto da suspensão (ver AL, AM, MS, RO, TO); use-a
+  quando a pesquisa já estiver no painel e a suspensão vier depois, e simplesmente não insira quando a
+  suspensão for anterior.
+- PRES26 RN: A DIVERGÊNCIA QUE FICOU REGISTRADA (14/08/2026). O Instituto Consult/Tribuna do Norte
+  (BR-09418/2026, campo 8-10/08, N=1.700) deu Lula 42,41 x Flávio 31,76 no RN, 10,65 pontos. A Metadata/
+  Grupo Dial (BR-05736/2026, campo 6-8/08), que está no `PRES26`, dá Lula 54,6 x Flávio 23,4, mais de 31
+  pontos, com 2º turno 60,2 x 30,7. Duas coletas separadas por DOIS dias e uma diferença de margem de 3
+  para 1. Mantive a Metadata pela regra do dia anterior (a mais recente não tem 2º turno, e é dele que o
+  `pmargin` tira a cor), e as duas dão o mesmo `lead` ('L'), então o mapa não muda de cor, só de
+  intensidade. Mas fica o registro: essa é a maior discordância entre dois institutos na mesma janela
+  que apareceu até aqui no mapa estadual, e quando a Datavero (RN-06313/2026) ou a do Mega Portal
+  (RN-09307/2026) publicarem, elas servem de desempate. Conferido que a Metadata é ESTADUAL apesar do
+  "Natal" no nome: são 1.536 entrevistas em 63 municípios do RN, e "Grupo Dial Natal" é o nome do grupo
+  de comunicação, não o recorte da amostra. Não repetir a suspeita a cada rodada.
 - SENADO, VAGAS E NEGRITO (21/07/2026). Em 2026 TODOS os 27 estados elegem DOIS senadores: o Senado tem 81 cadeiras, 3 por unidade da federação, renovadas alternadamente em 1/3 (1 vaga) e 2/3 (2 vagas), e 2026 é ano de 2/3 (2014 e 2022 foram 1; 2018 e 2026 são 2). O painel destaca em negrito tantos nomes quantas forem as vagas: 2 no Senado, 1 no Governador. Implementado em `SENVAGAS_PADRAO=2` + `SENVAGAS_UF={}` (override por estado, hoje vazio, para vaga extra por cassação/renúncia/morte) + `senVagas(uf)` + `nDestaque(office,uf)`, consumidos por `stateSinglePoll(d,nb)` e `stateInstTable(monthsObj,nb)`. Não fixar o 2 no código nem voltar a destacar só o primeiro colocado.
 
 O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o estado ATUAL abaixo, nunca versões antigas desta metodologia:

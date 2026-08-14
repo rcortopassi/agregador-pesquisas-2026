@@ -268,16 +268,6 @@
  "ultima_rodada": "2026-08-14T08:06:06.721402-03:00",
  "pendentes": [
   {
-   "proto": "BR022282026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "07/08-08/08",
-   "div": "2026-08-12",
-   "n": "450",
-   "visto": "2026-08-12"
-  },
-  {
    "proto": "BR042442026",
    "escopo": "ESTADUAL[PE]",
    "inst": "INSTITUTO DE PESQUISA MULTIP",
@@ -285,16 +275,6 @@
    "campo": "08/08-11/08",
    "div": "2026-08-12",
    "n": "900",
-   "visto": "2026-08-12"
-  },
-  {
-   "proto": "BR039212026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "OPINIAO PESQUISAS SOCIAIS",
-   "cargo": "Presidente",
-   "campo": "06/08-09/08",
-   "div": "2026-08-12",
-   "n": "2000",
    "visto": "2026-08-12"
   },
   {
@@ -318,36 +298,6 @@
    "visto": "2026-08-12"
   },
   {
-   "proto": "PB092182026",
-   "escopo": "PB",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "07/08-08/08",
-   "div": "2026-08-12",
-   "n": "450",
-   "visto": "2026-08-12"
-  },
-  {
-   "proto": "PE063442026",
-   "escopo": "PE",
-   "inst": "INSTITUTO DE PESQUISA MULTIP",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "08/08-11/08",
-   "div": "2026-08-12",
-   "n": "900",
-   "visto": "2026-08-12"
-  },
-  {
-   "proto": "PE089822026",
-   "escopo": "PE",
-   "inst": "OPINIAO PESQUISAS SOCIAIS",
-   "cargo": "Governador, Senador",
-   "campo": "06/08-09/08",
-   "div": "2026-08-12",
-   "n": "2000",
-   "visto": "2026-08-12"
-  },
-  {
    "proto": "RN070322026",
    "escopo": "RN",
    "inst": "INSTITUTO SETA DE PESQUISA",
@@ -368,16 +318,6 @@
    "visto": "2026-08-13"
   },
   {
-   "proto": "BR006092026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "08/08-09/08",
-   "div": "2026-08-13",
-   "n": "800",
-   "visto": "2026-08-13"
-  },
-  {
    "proto": "BR078402026",
    "escopo": "ESTADUAL[RN]",
    "inst": "#NULO#",
@@ -385,16 +325,6 @@
    "campo": "10/08-13/08",
    "div": "2026-08-13",
    "n": "2000",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "BR058082026",
-   "escopo": "ESTADUAL[SE]",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "10/08-12/08",
-   "div": "2026-08-13",
-   "n": "2400",
    "visto": "2026-08-13"
   },
   {
@@ -458,16 +388,6 @@
    "visto": "2026-08-13"
   },
   {
-   "proto": "PB069922026",
-   "escopo": "PB",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "08/08-09/08",
-   "div": "2026-08-13",
-   "n": "800",
-   "visto": "2026-08-13"
-  },
-  {
    "proto": "PE050262026",
    "escopo": "PE",
    "inst": "INSTITUTO REVISTA TOTAL BRAS",
@@ -518,16 +438,6 @@
    "visto": "2026-08-13"
   },
   {
-   "proto": "SE042262026",
-   "escopo": "SE",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "10/08-12/08",
-   "div": "2026-08-13",
-   "n": "2400",
-   "visto": "2026-08-13"
-  },
-  {
    "proto": "BR053372026",
    "escopo": "ESTADUAL[RN]",
    "inst": "DATAVERO INSTITUTO DE PESQUI",
@@ -535,16 +445,6 @@
    "campo": "10/08-12/08",
    "div": "2026-08-14",
    "n": "1500",
-   "visto": "2026-08-14"
-  },
-  {
-   "proto": "BR094182026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "CONSULT PESQUISA",
-   "cargo": "Presidente",
-   "campo": "08/08-10/08",
-   "div": "2026-08-14",
-   "n": "1700",
    "visto": "2026-08-14"
   },
   {
@@ -575,16 +475,6 @@
    "campo": "10/08-12/08",
    "div": "2026-08-14",
    "n": "1500",
-   "visto": "2026-08-14"
-  },
-  {
-   "proto": "RN085092026",
-   "escopo": "RN",
-   "inst": "CONSULT PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "08/08-10/08",
-   "div": "2026-08-14",
-   "n": "1700",
    "visto": "2026-08-14"
   }
  ],
