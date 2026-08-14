@@ -262,16 +262,6 @@
  "ultima_rodada": "2026-08-13T19:56:36.968453-03:00",
  "pendentes": [
   {
-   "proto": "BR083142026",
-   "escopo": "ESTADUAL[CE]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "06/08-11/08",
-   "div": "2026-08-12",
-   "n": "1800",
-   "visto": "2026-08-12"
-  },
-  {
    "proto": "BR068332026",
    "escopo": "ESTADUAL[MT]",
    "inst": "REAL TIME BIG DATA",
@@ -342,16 +332,6 @@
    "visto": "2026-08-12"
   },
   {
-   "proto": "MT045602026",
-   "escopo": "MT",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "07/08-11/08",
-   "div": "2026-08-12",
-   "n": "1600",
-   "visto": "2026-08-12"
-  },
-  {
    "proto": "PB092182026",
    "escopo": "PB",
    "inst": "INSTITUTO SETA DE PESQUISA",
@@ -382,16 +362,6 @@
    "visto": "2026-08-12"
   },
   {
-   "proto": "PR032422026",
-   "escopo": "PR",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "10/08-12/08",
-   "div": "2026-08-12",
-   "n": "1008",
-   "visto": "2026-08-12"
-  },
-  {
    "proto": "RN070322026",
    "escopo": "RN",
    "inst": "INSTITUTO SETA DE PESQUISA",
@@ -400,16 +370,6 @@
    "div": "2026-08-12",
    "n": "1500",
    "visto": "2026-08-12"
-  },
-  {
-   "proto": "CE042922026",
-   "escopo": "CE",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "10/08-13/08",
-   "div": "2026-08-13",
-   "n": "1022",
-   "visto": "2026-08-13"
   },
   {
    "proto": "BR009942026",
@@ -569,16 +529,6 @@
    "campo": "05/08-06/08",
    "div": "2026-08-13",
    "n": "426",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "PR093012026",
-   "escopo": "PR",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "08/08-12/08",
-   "div": "2026-08-13",
-   "n": "1350",
    "visto": "2026-08-13"
   },
   {
