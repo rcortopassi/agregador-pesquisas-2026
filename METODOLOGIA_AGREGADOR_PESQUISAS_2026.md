@@ -274,6 +274,12 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   naquele UF/mês e repetir exatamente. Detector, que roda em segundos sobre o próprio HTML: para
   cada UF e mês, listar os nomes e apontar par em que um é substring do outro. CUIDADO com falso
   positivo de sobrenome comum: 'Joel Rodrigues' x 'Toni Rodrigues' no PI são duas pessoas.
+  O CASO INVERSO, que o detector de substring NÃO pega (15/08/2026): no RN o painel escreve
+  'Rodrigo Bolsonaro' e a íntegra do Item/Difusora escreve 'Rodrigo Vieira (AGIR)'. É a MESMA
+  pessoa, Karlo Rodrigo Lúcio Vieira, lançado pelo Agir em 3/8 e que pediu para usar 'Rodrigo
+  Bolsonaro' na urna (o MP Eleitoral se opôs ao nome de urna, o que não muda quem é o candidato).
+  Nenhum nome é substring do outro, então só a conferência humana pega. Quando o jornal trocar o
+  nome de urna pelo nome civil, casar pelo partido antes de criar candidato novo.
 - FEED DE PUBLICAÇÃO DO VERITÁ, QUE RESOLVE "REGISTRADA MAS NÃO DIVULGADA" (02/08/2026, 21h).
   PROBLEMA RECORRENTE: o Veritá é, de longe, o instituto que mais aparece no radar do TSE, e
   registra vários estados na MESMA leva (mesmo CNPJ, mesmas datas de campo). Só que ele divulga
@@ -372,6 +378,43 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   prova em contrário; abra a matéria do Polêmica antes de inserir, porque o cargo no registro do
   TSE diz "Governador" mesmo quando o universo é uma cidade. É o primo do desempate pelo gêmeo: lá
   o gêmeo estadual denuncia a falsa nacional, aqui o N pequeno denuncia a falsa estadual.
+- A REGRA DO N PEQUENO SE CONFIRMOU FORA DA PARAÍBA (15/08/2026). O caso irmão do parágrafo acima
+  apareceu no PIAUÍ: PI-00017/2026, INSTITUTO CREDIBILIDADE, cargo "Governador, Senador, Deputado
+  Federal" no registro do TSE, N=426, campo 5-6/8. A matéria do 180graus mostra que o universo é o
+  MUNICÍPIO DE CORRENTE, no sul do estado, e o número que sai é "Fonteles 76,65% dos votos válidos
+  em Corrente". Descartada, não entrou em `DGM`/`DSM`. Na mesma rodada, GO-04894, GO-02118 (IGAPE,
+  N=500 e 800) e GO-04491, GO-05836 (Direct Pesquisas, N=400 e 500) tinham divulgação vencida em
+  13/8 e NENHUM número publicado dois dias depois, enquanto as rodadas ESTADUAIS desses dois
+  institutos em Goiás saem sempre com N de 1.150 a 1.500 e viram matéria no mesmo dia. REGRA QUE
+  FICA, agora geral e não só da PB: registro estadual com N abaixo de ~1.000 é candidato a
+  municipal ou regional; confira o universo na matéria antes de inserir, e quando não houver
+  matéria nenhuma, o mais provável é que a rodada seja de recorte local que ninguém publica.
+- "VÉRITAS PLANEJAMENTO" NÃO É O "INSTITUTO VERITÁ" (15/08/2026). Armadilha de nome com potencial de
+  estrago, porque o Veritá é o instituto com histórico sistêmico de suspensão (onze estados) e
+  aparece na base estadual do painel. São empresas diferentes: a VERITAS PLANEJAMENTO assinou
+  MA-01632/2026 (campo 8-11/8, N=1000, contratante Farol Pesquisa e Comunicação) e o TRE-MA
+  REJEITOU o pedido de suspensão apresentado pela coligação do Felipe Camarão, decisão do juiz
+  auxiliar Rubem Lima de Paula Filho, ou seja a divulgação está liberada. No painel ela entra como
+  `Véritas Planejamento`, com acento e sobrenome, exatamente para não colar no `Veritá` que já
+  existe em MA/mar e MA/jul. Não unificar os dois nomes.
+- O MARANHÃO VIROU DE CABEÇA PARA BAIXO EM QUATRO DIAS (15/08/2026, registrado porque parece erro e
+  não é). O `DG['MA']` passou de "Eduardo Braide 44 x Orleans Brandão 25,9" (IPPI/Café Quente,
+  campo 6-10/8) para "Orleans Brandão 47,5 x Eduardo Braide 39,1" (Véritas Planejamento, campo
+  8-11/8). Não é troca de sinal por engano de digitação nem inversão de colunas: são dois
+  institutos diferentes, com campos quase sobrepostos, divergindo em mais de 30 pontos de margem.
+  As duas rodadas estão no `DGM['MA'].ago`, lado a lado, que é o lugar onde a divergência fica
+  visível; o `DG` mostra a mais recente porque essa é a regra do mapa. Se alguém for mexer, mexa no
+  critério do `DG`, não apague uma das duas.
+- NÚMERO PUBLICADO SEM NENHUMA METODOLOGIA NÃO ENTRA (15/08/2026). O Mega Portal RN publicou em
+  15/8 "Pesquisa Data Census / Mega Portal RN: 1º Voto para o Senado", com treze nomes e
+  percentuais (Styvenson 22,1 · Zenaide 20,0 · Samanda 7,2 · Rafael Motta 7,2 · Cel. Hélio 6,7).
+  A matéria não traz campo, nem N, nem margem, nem registro no TSE, e nenhum outro veículo
+  republicou com metodologia. O único registro compatível na janela é RN-09307/2026 (contratante
+  Mega Assessoria / Mega Portal RN, campo 10-13/8, N=2000), mas isso é inferência, não confirmação.
+  Somado a que o Data Census já teve a RN-05562/2026 SUSPENSA no RN, a decisão foi NÃO inserir e
+  deixar o item na fila. Vale como regra: casar número com registro é condição de entrada, e
+  "só um portal publicou, sem ficha técnica" é motivo suficiente para segurar, ainda mais quando o
+  instituto tem suspensão no mesmo estado. Ver [[feedback_checagem_judicial_pesquisas]].
 - PRES26 NÃO É SÓ "A MAIS RECENTE" QUANDO A MAIS RECENTE É MAIS POBRE (14/08/2026). O Ranking Brasil
   Inteligência publicou presidencial em MS (BR-03493/2026, campo 7-12/8, N=2.000): Flávio 40, Lula
   33, sem cenário de 2º turno. Era 7 dias mais nova que a do Real Time Big Data (1-5/8) que estava

@@ -281,86 +281,6 @@
    "visto": "2026-08-13"
   },
   {
-   "proto": "GO048942026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "08/08-10/08",
-   "div": "2026-08-13",
-   "n": "500",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "GO044912026",
-   "escopo": "GO",
-   "inst": "DIRECT PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Esta",
-   "campo": "08/08-09/08",
-   "div": "2026-08-13",
-   "n": "400",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "GO058362026",
-   "escopo": "GO",
-   "inst": "DIRECT PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "08/08-09/08",
-   "div": "2026-08-13",
-   "n": "500",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "GO021182026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "08/08-11/08",
-   "div": "2026-08-13",
-   "n": "800",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "MA016322026",
-   "escopo": "MA",
-   "inst": "VERITAS PLANEJAMENTO",
-   "cargo": "Governador, Senador",
-   "campo": "08/08-11/08",
-   "div": "2026-08-13",
-   "n": "1000",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "MG038372026",
-   "escopo": "MG",
-   "inst": "INPAC",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "01/08-04/08",
-   "div": "2026-08-13",
-   "n": "500",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "PI020522026",
-   "escopo": "PI",
-   "inst": "OPINAR PESQUISAS",
-   "cargo": "Senador",
-   "campo": "03/08-06/08",
-   "div": "2026-08-13",
-   "n": "1200",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "PI000172026",
-   "escopo": "PI",
-   "inst": "INSTITUTO CREDIBILIDADE",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "05/08-06/08",
-   "div": "2026-08-13",
-   "n": "426",
-   "visto": "2026-08-13"
-  },
-  {
    "proto": "RN093072026",
    "escopo": "RN",
    "inst": "#NULO#",
@@ -375,16 +295,6 @@
    "escopo": "ESTADUAL[RN]",
    "inst": "ITEM PESQUISAS TECNICAS",
    "cargo": "Presidente",
-   "campo": "10/08-14/08",
-   "div": "2026-08-15",
-   "n": "1250",
-   "visto": "2026-08-15"
-  },
-  {
-   "proto": "RN001662026",
-   "escopo": "RN",
-   "inst": "ITEM PESQUISAS TECNICAS",
-   "cargo": "Governador, Senador, Deputado Fede",
    "campo": "10/08-14/08",
    "div": "2026-08-15",
    "n": "1250",
