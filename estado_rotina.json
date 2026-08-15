@@ -271,26 +271,6 @@
  "ultima_rodada": "2026-08-15T19:33:23.364554-03:00",
  "pendentes": [
   {
-   "proto": "BR078402026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "10/08-13/08",
-   "div": "2026-08-13",
-   "n": "2000",
-   "visto": "2026-08-13"
-  },
-  {
-   "proto": "RN093072026",
-   "escopo": "RN",
-   "inst": "#NULO#",
-   "cargo": "Senador, Deputado Federal, Deputad",
-   "campo": "10/08-13/08",
-   "div": "2026-08-13",
-   "n": "2000",
-   "visto": "2026-08-13"
-  },
-  {
    "proto": "BR086952026",
    "escopo": "ESTADUAL[RN]",
    "inst": "ITEM PESQUISAS TECNICAS",
