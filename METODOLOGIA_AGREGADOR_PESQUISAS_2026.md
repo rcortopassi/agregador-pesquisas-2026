@@ -410,6 +410,24 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   (RN-09307/2026) publicarem, elas servem de desempate. Conferido que a Metadata é ESTADUAL apesar do
   "Natal" no nome: são 1.536 entrevistas em 63 municípios do RN, e "Grupo Dial Natal" é o nome do grupo
   de comunicação, não o recorte da amostra. Não repetir a suspeita a cada rodada.
+- A QUAEST TROCOU DE CONTRATANTE, E ISSO MUDA O QUE ESPERAR DELA (14/08/2026). A rodada de 10-13/8
+  (BR-06773/2026, N=2.004, divulgada em 14/8 às 18h) é a PRIMEIRA encomendada pela GLOBO em parceria
+  com o jornal O Globo. Até a rodada de 31/7 a 3/8 quem pagava era o Banco Genial, e o painel a
+  chamava de Genial/Quaest, com `ctt:'financeiro'`. Agora é `ct:'Globo e O Globo'` e `ctt:'mídia'`.
+  O nome da CHAVE no `DI`, `T2R`, `IM` e `VH2DET` continua 'Quaest' e NÃO deve ser renomeado, senão o
+  house effect para de casar. O que importa para as próximas rodadas: a Globo anunciou 130 pesquisas
+  até 3 de outubro, de presidente, Senado e governos de todos os estados e do DF, divididas entre
+  Quaest e Datafolha. Ou seja, a lacuna estadual do painel deve fechar sozinha nas próximas semanas,
+  e o radar do TSE vai passar a acusar muita coisa com contratante GLOBO COMUNICACAO E PARTICIPACOES.
+- POR QUE A MEDIANA DO 1º TURNO NÃO SE MEXEU COM A QUAEST NOVA (14/08/2026). A rodada nova trocou
+  Lula 39 x Flávio 30 por 38 x 31, e a mediana de agosto ficou parada em Lula 40,5 x Flávio 35. Não é
+  erro de conta: com oito institutos a mediana é a média dos dois valores centrais, e a Quaest está
+  ABAIXO da mediana nos dois lados, tanto antes quanto depois, então ela nunca entra no meio da fila.
+  O 2º turno, sim, andou, porque ali a conta é a mediana das MARGENS: caiu de Lula +3,4 para +2,5 em
+  amostra total e de +3,6 para +2,9 em votos válidos, e o placar do banner foi de 47,1 x 43,7 para
+  46,6 x 44,1. Já o cenário de estresse ficou idêntico em Flávio +2,5, porque ele parte da mediana
+  BRUTA das margens, que continua 2,75. Guardar este exemplo: rodada nova de um instituto de cauda
+  mexe no 2º turno e não mexe no 1º, e isso é propriedade da mediana, não defeito.
 - SENADO, VAGAS E NEGRITO (21/07/2026). Em 2026 TODOS os 27 estados elegem DOIS senadores: o Senado tem 81 cadeiras, 3 por unidade da federação, renovadas alternadamente em 1/3 (1 vaga) e 2/3 (2 vagas), e 2026 é ano de 2/3 (2014 e 2022 foram 1; 2018 e 2026 são 2). O painel destaca em negrito tantos nomes quantas forem as vagas: 2 no Senado, 1 no Governador. Implementado em `SENVAGAS_PADRAO=2` + `SENVAGAS_UF={}` (override por estado, hoje vazio, para vaga extra por cassação/renúncia/morte) + `senVagas(uf)` + `nDestaque(office,uf)`, consumidos por `stateSinglePoll(d,nb)` e `stateInstTable(monthsObj,nb)`. Não fixar o 2 no código nem voltar a destacar só o primeiro colocado.
 
 O painel foi muito reformulado em jun-jul/2026. Ao regenerar/atualizar, siga o estado ATUAL abaixo, nunca versões antigas desta metodologia:
