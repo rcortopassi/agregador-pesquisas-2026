@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 14/08/2026 19:35. Mercados: Polymarket 63,5%/28,1%, Kalshi 64,0%/28,0%.
+Rodada de 15/08/2026 01:41. Mercados: Polymarket 63,5%/28,2%, Kalshi 63,0%/28,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -26,9 +26,10 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-13] TSE RN, #NULO# (Senador, Deputado Federal, Deputad), campo 10/08-13/08, divulgação 2026-08-13, N=2000, registro RN093072026
 - [aguardando desde 2026-08-13] TSE SE, VERITA (Governador, Senador), campo 08/08-12/08, divulgação 2026-08-13, N=1220, registro SE052622026
 - [aguardando desde 2026-08-14] TSE ESTADUAL[RN], DATAVERO INSTITUTO DE PESQUI (Presidente), campo 10/08-12/08, divulgação 2026-08-14, N=1500, registro BR053372026
-- [aguardando desde 2026-08-14] TSE GO, GOIAS PESQUISAS (Governador, Senador), campo 10/08-12/08, divulgação 2026-08-14, N=1150, registro GO068862026
-- [aguardando desde 2026-08-14] TSE NACIONAL?, #NULO# (Presidente), campo 10/08-13/08, divulgação 2026-08-14, N=2004, registro BR067732026
 - [aguardando desde 2026-08-14] TSE RN, DATAVERO INSTITUTO DE PESQUI (Governador, Senador, Deputado Fede), campo 10/08-12/08, divulgação 2026-08-14, N=1500, registro RN063132026
+- [NOVO] TSE ESTADUAL[RN], ITEM PESQUISAS TECNICAS (Presidente), campo 10/08-14/08, divulgação 2026-08-15, N=1250, registro BR086952026
+- [NOVO] TSE RN, ITEM PESQUISAS TECNICAS (Governador, Senador, Deputado Fede), campo 10/08-14/08, divulgação 2026-08-15, N=1250, registro RN001662026
+- [NOVO] TSE SE, ECM-PESQUISAS (Governador, Senador, Deputado Fede), campo 09/08-12/08, divulgação 2026-08-15, N=1500, registro SE026822026
 
 ## Últimas publicações do Veritá
 
@@ -40,16 +41,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-04 | ESTADUAL[MT] | NOVO IBRAPE | Presidente | 29/07-03/08 | 1000 | BR087302026 |
-| 2026-08-04 | ESTADUAL[PA] | REAL TIME BIG DATA | Presidente | 30/07-03/08 | 1600 | BR096502026 |
-| 2026-08-04 | ESTADUAL[TO] | NEXUS | Presidente | 30/07-02/08 | 1200 | BR055732026 |
-| 2026-08-04 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 24/07-27/07 | 600 | GO015282026 |
-| 2026-08-04 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 23/07-25/07 | 500 | GO076702026 |
-| 2026-08-04 | MG | F5 ATUALIZA DADOS | Governador, Senador, Deputado Fede | 30/07-31/07 | 472 | MG082142026 |
-| 2026-08-04 | MT | NOVO IBRAPE | Governador, Senador, Deputado Fede | 29/07-03/08 | 1000 | MT050422026 |
-| 2026-08-04 | PA | REAL TIME BIG DATA | Governador, Senador | 30/07-03/08 | 1600 | PA084922026 |
-| 2026-08-04 | TO | #NULO# | Governador, Senador | 30/07-03/08 | 1250 | TO010562026 |
-| 2026-08-04 | TO | NEXUS | Governador, Senador | 30/07-02/08 | 1200 | TO017852026 |
 | 2026-08-05 | ESTADUAL[GO] | KLIK | Presidente | 30/07-04/08 | 1200 | BR031212026 |
 | 2026-08-05 | ESTADUAL[GO] | DATA RD | Presidente | 31/07-04/08 | 1509 | BR078472026 |
 | 2026-08-05 | ESTADUAL[SE] | ECM-PESQUISAS | Presidente | 31/07-03/08 | 1500 | BR039652026 |
@@ -146,4 +137,7 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-14 | NACIONAL? | #NULO# | Presidente | 10/08-13/08 | 2004 | BR067732026 |
 | 2026-08-14 | RN | DATAVERO INSTITUTO DE PESQUI | Governador, Senador, Deputado Fede | 10/08-12/08 | 1500 | RN063132026 |
 | 2026-08-14 | RN | CONSULT PESQUISA | Governador, Senador, Deputado Fede | 08/08-10/08 | 1700 | RN085092026 |
+| 2026-08-15 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 10/08-14/08 | 1250 | BR086952026 |
+| 2026-08-15 | RN | ITEM PESQUISAS TECNICAS | Governador, Senador, Deputado Fede | 10/08-14/08 | 1250 | RN001662026 |
+| 2026-08-15 | SE | ECM-PESQUISAS | Governador, Senador, Deputado Fede | 09/08-12/08 | 1500 | SE026822026 |
 
