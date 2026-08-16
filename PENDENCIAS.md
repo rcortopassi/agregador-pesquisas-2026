@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 16/08/2026 13:37. Mercados: Polymarket 66,5%/28,6%, Kalshi 65,0%/34,0%.
+Rodada de 16/08/2026 19:32. Mercados: Polymarket 66,5%/29,4%, Kalshi 65,0%/32,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -54,9 +54,9 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-10 | ESTADUAL[PB] | INSTITUTO SETA DE PESQUISA | Presidente | 05/08-06/08 | 550 | BR094412026 |
 | 2026-08-10 | ESTADUAL[RN] | METADATA | Presidente | 06/08-08/08 | 1536 | BR057362026 |
 | 2026-08-10 | ESTADUAL[SP] | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 05/08-08/08 | 1800 | BR080362026 |
-| 2026-08-10 | NACIONAL? | PALVER | Presidente | 03/08-09/08 | 5000 | BR065962026 |
-| 2026-08-10 | NACIONAL? | NEXUS | Presidente | 07/08-09/08 | 2000 | BR084282026 |
 | 2026-08-10 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 06/08-10/08 | 2400 | BR080452026 |
+| 2026-08-10 | NACIONAL? | NEXUS | Presidente | 07/08-09/08 | 2000 | BR084282026 |
+| 2026-08-10 | NACIONAL? | PALVER | Presidente | 03/08-09/08 | 5000 | BR065962026 |
 | 2026-08-10 | PB | INSTITUTO SETA DE PESQUISA | Governador, Senador, Deputado Fede | 05/08-06/08 | 550 | PB008662026 |
 | 2026-08-10 | PI | DATA MAX | Governador, Senador, Deputado Fede | 27/07-05/08 | 2000 | PI034622026 |
 | 2026-08-10 | PR | ALFA INTELIGENCIA | Governador, Senador | 05/08-09/08 | 1200 | PR018572026 |
@@ -69,8 +69,8 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-11 | ESTADUAL[PB] | INSTITUTO SETA DE PESQUISA | Presidente | 06/08-07/08 | 450 | BR079962026 |
 | 2026-08-11 | ESTADUAL[RN] | AGORASEI PESQUISA | Presidente | 02/08-05/08 | 1500 | BR089512026 |
 | 2026-08-11 | ESTADUAL[SP] | #NULO# | Presidente | 05/08-10/08 | 800 | BR036562026 |
-| 2026-08-11 | NACIONAL? | #NULO# | Presidente | 05/08-09/08 | 2002 | BR069352026 |
 | 2026-08-11 | NACIONAL? | 100 CIDADES | Presidente | 03/08-06/08 | 2000 | BR081092026 |
+| 2026-08-11 | NACIONAL? | #NULO# | Presidente | 05/08-09/08 | 2002 | BR069352026 |
 | 2026-08-11 | PB | INSTITUTO SETA DE PESQUISA | Governador, Senador, Deputado Fede | 06/08-07/08 | 450 | PB092192026 |
 | 2026-08-11 | PE | CONTEXTTO E REVILLO | Governador, Senador | 06/08-10/08 | 1200 | PE002622026 |
 | 2026-08-11 | RN | QUALITTA EMPREENDIMENTOS | Governador, Senador, Deputado Fede | 06/08-10/08 | 1200 | RN020472026 |
@@ -87,8 +87,8 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-12 | MA | IPPI - PESQUISAS E CONSULTOR | Governador, Senador, Deputado Fede | 06/08-10/08 | 1500 | MA028102026 |
 | 2026-08-12 | MT | REAL TIME BIG DATA | Governador, Senador | 07/08-11/08 | 1600 | MT045602026 |
 | 2026-08-12 | PB | INSTITUTO SETA DE PESQUISA | Governador, Senador, Deputado Fede | 07/08-08/08 | 450 | PB092182026 |
-| 2026-08-12 | PE | OPINIAO PESQUISAS SOCIAIS | Governador, Senador | 06/08-09/08 | 2000 | PE089822026 |
 | 2026-08-12 | PE | INSTITUTO DE PESQUISA MULTIP | Governador, Senador, Deputado Fede | 08/08-11/08 | 900 | PE063442026 |
+| 2026-08-12 | PE | OPINIAO PESQUISAS SOCIAIS | Governador, Senador | 06/08-09/08 | 2000 | PE089822026 |
 | 2026-08-12 | PR | NEOKEMP PESQUISAS | Governador, Senador | 10/08-12/08 | 1008 | PR032422026 |
 | 2026-08-12 | RN | INSTITUTO SETA DE PESQUISA | Governador, Senador, Deputado Fede | 07/08-09/08 | 1500 | RN070322026 |
 | 2026-08-13 | CE | #NULO# | Governador, Senador | 10/08-13/08 | 1022 | CE042922026 |
@@ -97,22 +97,22 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-13 | ESTADUAL[PB] | INSTITUTO SETA DE PESQUISA | Presidente | 08/08-09/08 | 800 | BR006092026 |
 | 2026-08-13 | ESTADUAL[RN] | #NULO# | Presidente | 10/08-13/08 | 2000 | BR078402026 |
 | 2026-08-13 | ESTADUAL[SE] | INSTITUTO FRANCA DE PESQUISA | Presidente | 10/08-12/08 | 2400 | BR058082026 |
-| 2026-08-13 | GO | DIRECT PESQUISAS | Governador, Senador, Deputado Esta | 08/08-09/08 | 400 | GO044912026 |
-| 2026-08-13 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 08/08-10/08 | 500 | GO048942026 |
 | 2026-08-13 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 08/08-11/08 | 800 | GO021182026 |
+| 2026-08-13 | GO | DIRECT PESQUISAS | Governador, Senador, Deputado Esta | 08/08-09/08 | 400 | GO044912026 |
 | 2026-08-13 | GO | DIRECT PESQUISAS | Governador, Senador, Deputado Fede | 08/08-09/08 | 500 | GO058362026 |
+| 2026-08-13 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 08/08-10/08 | 500 | GO048942026 |
 | 2026-08-13 | MA | VERITAS PLANEJAMENTO | Governador, Senador | 08/08-11/08 | 1000 | MA016322026 |
 | 2026-08-13 | MG | INPAC | Governador, Senador, Deputado Fede | 01/08-04/08 | 500 | MG038372026 |
 | 2026-08-13 | MS | RANKING BRASIL INTELIGENCIA | Governador, Senador, Deputado Fede | 07/08-12/08 | 2000 | MS095902026 |
 | 2026-08-13 | NACIONAL? | PODERDATA | Presidente | 09/08-12/08 | 2400 | BR068682026 |
 | 2026-08-13 | PB | INSTITUTO SETA DE PESQUISA | Governador, Senador, Deputado Fede | 08/08-09/08 | 800 | PB069922026 |
 | 2026-08-13 | PE | INSTITUTO REVISTA TOTAL BRAS | Governador, Senador | 07/08-09/08 | 1200 | PE050262026 |
-| 2026-08-13 | PI | INSTITUTO CREDIBILIDADE | Governador, Senador, Deputado Fede | 05/08-06/08 | 426 | PI000172026 |
 | 2026-08-13 | PI | OPINAR PESQUISAS | Senador | 03/08-06/08 | 1200 | PI020522026 |
+| 2026-08-13 | PI | INSTITUTO CREDIBILIDADE | Governador, Senador, Deputado Fede | 05/08-06/08 | 426 | PI000172026 |
 | 2026-08-13 | PR | #NULO# | Governador, Senador | 08/08-12/08 | 1350 | PR093012026 |
 | 2026-08-13 | RN | #NULO# | Senador, Deputado Federal, Deputad | 10/08-13/08 | 2000 | RN093072026 |
-| 2026-08-13 | SE | INSTITUTO FRANCA DE PESQUISA | Governador, Senador, Deputado Fede | 10/08-12/08 | 2400 | SE042262026 |
 | 2026-08-13 | SE | VERITA | Governador, Senador | 08/08-12/08 | 1220 | SE052622026 |
+| 2026-08-13 | SE | INSTITUTO FRANCA DE PESQUISA | Governador, Senador, Deputado Fede | 10/08-12/08 | 2400 | SE042262026 |
 | 2026-08-14 | ESTADUAL[RN] | DATAVERO INSTITUTO DE PESQUI | Presidente | 10/08-12/08 | 1500 | BR053372026 |
 | 2026-08-14 | ESTADUAL[RN] | CONSULT PESQUISA | Presidente | 08/08-10/08 | 1700 | BR094182026 |
 | 2026-08-14 | GO | GOIAS PESQUISAS | Governador, Senador | 10/08-12/08 | 1150 | GO068862026 |
