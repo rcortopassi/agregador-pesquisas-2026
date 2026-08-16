@@ -2,16 +2,28 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 15/08/2026 19:33. Mercados: Polymarket 65,5%/28,3%, Kalshi 65,0%/28,0%.
+Rodada de 16/08/2026 01:46. Mercados: Polymarket 65,5%/28,7%, Kalshi 64,0%/29,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
-- [aguardando desde 2026-08-13] TSE ESTADUAL[RN], #NULO# (Presidente), campo 10/08-13/08, divulgação 2026-08-13, N=2000, registro BR078402026
-- [aguardando desde 2026-08-13] TSE RN, #NULO# (Senador, Deputado Federal, Deputad), campo 10/08-13/08, divulgação 2026-08-13, N=2000, registro RN093072026
 - [aguardando desde 2026-08-15] TSE ESTADUAL[RN], ITEM PESQUISAS TECNICAS (Presidente), campo 10/08-14/08, divulgação 2026-08-15, N=1250, registro BR086952026
 - [aguardando desde 2026-08-15] TSE SE, ECM-PESQUISAS (Governador, Senador, Deputado Fede), campo 09/08-12/08, divulgação 2026-08-15, N=1500, registro SE026822026
+- [NOVO] TSE AP, AMERICAN ANALYTICS (Governador, Senador), campo 10/08-14/08, divulgação 2026-08-16, N=1000, registro AP009852026
+- [NOVO] TSE ESTADUAL[AP], AMERICAN ANALYTICS (Presidente), campo 10/08-14/08, divulgação 2026-08-16, N=1000, registro BR001362026
+- [NOVO] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 07/08-10/08, divulgação 2026-08-16, N=1200, registro BR014952026
+- [NOVO] TSE ESTADUAL[PA], DOXA (Presidente), campo 10/08-15/08, divulgação 2026-08-16, N=2000, registro BR060052026
+- [NOVO] TSE ESTADUAL[PI], AMOSTRAGEM OPINIAO E MERCADO (Presidente), campo 04/08-08/08, divulgação 2026-08-16, N=1700, registro BR006622026
+- [NOVO] TSE ESTADUAL[RN], #NULO# (Presidente), campo 08/08-10/08, divulgação 2026-08-16, N=500, registro BR093462026
+- [NOVO] TSE ESTADUAL[SP], #NULO# (Presidente), campo 11/08-14/08, divulgação 2026-08-16, N=2000, registro BR022442026
+- [NOVO] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 10/08-15/08, divulgação 2026-08-16, N=1500, registro GO085092026
+- [NOVO] TSE MT, PERCENT PESQUISA DE MERCADO  (Governador, Senador, Deputado Fede), campo 07/08-10/08, divulgação 2026-08-16, N=1200, registro MT031542026
+- [NOVO] TSE PA, DOXA (Governador, Senador, Deputado Fede), campo 10/08-15/08, divulgação 2026-08-16, N=2000, registro PA018572026
+- [NOVO] TSE PI, AMOSTRAGEM OPINIAO E MERCADO (Governador, Senador, Deputado Fede), campo 04/08-08/08, divulgação 2026-08-16, N=1700, registro PI007482026
+- [NOVO] TSE RN, #NULO# (Governador, Senador, Deputado Fede), campo 08/08-10/08, divulgação 2026-08-16, N=500, registro RN075722026
+- [NOVO] TSE SP, #NULO# (Governador, Senador, Deputado Fede), campo 11/08-14/08, divulgação 2026-08-16, N=2000, registro SP055112026
+- [NOVO] TSE SP, #NULO# (Governador, Senador), campo 11/08-13/08, divulgação 2026-08-16, N=1480, registro SP046702026
 
 ## Últimas publicações do Veritá
 
@@ -23,18 +35,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-05 | ESTADUAL[GO] | DATA RD | Presidente | 31/07-04/08 | 1509 | BR078472026 |
-| 2026-08-05 | ESTADUAL[GO] | KLIK | Presidente | 30/07-04/08 | 1200 | BR031212026 |
-| 2026-08-05 | ESTADUAL[SE] | ECM-PESQUISAS | Presidente | 31/07-03/08 | 1500 | BR039652026 |
-| 2026-08-05 | GO | KLIK | Governador, Senador, Deputado Fede | 30/07-04/08 | 1200 | GO010732026 |
-| 2026-08-05 | GO | DATA RD | Governador, Senador | 31/07-04/08 | 1509 | GO081422026 |
-| 2026-08-05 | NACIONAL? | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 31/07-03/08 | 1500 | BR045792026 |
-| 2026-08-05 | NACIONAL? | #NULO# | Presidente | 31/07-03/08 | 2004 | BR065912026 |
-| 2026-08-05 | PE | INSTITUTO DE PESQUISA MULTIP | Governador, Deputado Federal, Depu | 30/07-31/07 | 300 | PE068992026 |
-| 2026-08-05 | RN | DATA CAPITAL PESQUISAS E CON | Governador, Senador, Deputado Fede | 25/07-28/07 | 2050 | RN065792026 |
-| 2026-08-05 | RO | BRASIL DADOS | Governador, Senador, Deputado Fede | 31/07-02/08 | 1050 | RO058932026 |
-| 2026-08-05 | SE | VISAO PESQUISAS | Senador, Deputado Federal, Deputad | 29/07-03/08 | 1000 | SE024612026 |
-| 2026-08-05 | SE | ECM-PESQUISAS | Governador, Senador, Deputado Fede | 31/07-03/08 | 1500 | SE057662026 |
 | 2026-08-06 | ESTADUAL[MG] | IPSENSUS PESQUISAS | Presidente | 01/08-02/08 | 400 | BR065502026 |
 | 2026-08-06 | ESTADUAL[MS] | REAL TIME BIG DATA | Presidente | 01/08-05/08 | 1600 | BR017842026 |
 | 2026-08-06 | ESTADUAL[PI] | VETOR TECNOLOGIA E PESQUISAS | Presidente | 28/07-02/08 | 1602 | BR018942026 |
@@ -122,4 +122,18 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-15 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 10/08-14/08 | 1250 | BR086952026 |
 | 2026-08-15 | RN | ITEM PESQUISAS TECNICAS | Governador, Senador, Deputado Fede | 10/08-14/08 | 1250 | RN001662026 |
 | 2026-08-15 | SE | ECM-PESQUISAS | Governador, Senador, Deputado Fede | 09/08-12/08 | 1500 | SE026822026 |
+| 2026-08-16 | AP | AMERICAN ANALYTICS | Governador, Senador | 10/08-14/08 | 1000 | AP009852026 |
+| 2026-08-16 | ESTADUAL[AP] | AMERICAN ANALYTICS | Presidente | 10/08-14/08 | 1000 | BR001362026 |
+| 2026-08-16 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 07/08-10/08 | 1200 | BR014952026 |
+| 2026-08-16 | ESTADUAL[PA] | DOXA | Presidente | 10/08-15/08 | 2000 | BR060052026 |
+| 2026-08-16 | ESTADUAL[PI] | AMOSTRAGEM OPINIAO E MERCADO | Presidente | 04/08-08/08 | 1700 | BR006622026 |
+| 2026-08-16 | ESTADUAL[RN] | #NULO# | Presidente | 08/08-10/08 | 500 | BR093462026 |
+| 2026-08-16 | ESTADUAL[SP] | #NULO# | Presidente | 11/08-14/08 | 2000 | BR022442026 |
+| 2026-08-16 | GO | DIRECT PESQUISAS | Governador, Senador, Deputado Fede | 10/08-15/08 | 1500 | GO085092026 |
+| 2026-08-16 | MT | PERCENT PESQUISA DE MERCADO  | Governador, Senador, Deputado Fede | 07/08-10/08 | 1200 | MT031542026 |
+| 2026-08-16 | PA | DOXA | Governador, Senador, Deputado Fede | 10/08-15/08 | 2000 | PA018572026 |
+| 2026-08-16 | PI | AMOSTRAGEM OPINIAO E MERCADO | Governador, Senador, Deputado Fede | 04/08-08/08 | 1700 | PI007482026 |
+| 2026-08-16 | RN | #NULO# | Governador, Senador, Deputado Fede | 08/08-10/08 | 500 | RN075722026 |
+| 2026-08-16 | SP | #NULO# | Governador, Senador, Deputado Fede | 11/08-14/08 | 2000 | SP055112026 |
+| 2026-08-16 | SP | #NULO# | Governador, Senador | 11/08-13/08 | 1480 | SP046702026 |
 
