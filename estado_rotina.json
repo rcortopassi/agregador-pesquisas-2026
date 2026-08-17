@@ -297,26 +297,6 @@
  "ultima_rodada": "2026-08-17T19:35:18.339501-03:00",
  "pendentes": [
   {
-   "proto": "BR086952026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "ITEM PESQUISAS TECNICAS",
-   "cargo": "Presidente",
-   "campo": "10/08-14/08",
-   "div": "2026-08-15",
-   "n": "1250",
-   "visto": "2026-08-15"
-  },
-  {
-   "proto": "SE026822026",
-   "escopo": "SE",
-   "inst": "ECM-PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "09/08-12/08",
-   "div": "2026-08-15",
-   "n": "1500",
-   "visto": "2026-08-15"
-  },
-  {
    "proto": "AP009852026",
    "escopo": "AP",
    "inst": "AMERICAN ANALYTICS",
@@ -337,26 +317,6 @@
    "visto": "2026-08-16"
   },
   {
-   "proto": "BR060052026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "DOXA",
-   "cargo": "Presidente",
-   "campo": "10/08-15/08",
-   "div": "2026-08-16",
-   "n": "2000",
-   "visto": "2026-08-16"
-  },
-  {
-   "proto": "BR006622026",
-   "escopo": "ESTADUAL[PI]",
-   "inst": "AMOSTRAGEM OPINIAO E MERCADO",
-   "cargo": "Presidente",
-   "campo": "04/08-08/08",
-   "div": "2026-08-16",
-   "n": "1700",
-   "visto": "2026-08-16"
-  },
-  {
    "proto": "BR022442026",
    "escopo": "ESTADUAL[SP]",
    "inst": "#NULO#",
@@ -364,36 +324,6 @@
    "campo": "11/08-14/08",
    "div": "2026-08-16",
    "n": "2000",
-   "visto": "2026-08-16"
-  },
-  {
-   "proto": "GO085092026",
-   "escopo": "GO",
-   "inst": "DIRECT PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "10/08-15/08",
-   "div": "2026-08-16",
-   "n": "1500",
-   "visto": "2026-08-16"
-  },
-  {
-   "proto": "PA018572026",
-   "escopo": "PA",
-   "inst": "DOXA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "10/08-15/08",
-   "div": "2026-08-16",
-   "n": "2000",
-   "visto": "2026-08-16"
-  },
-  {
-   "proto": "PI007482026",
-   "escopo": "PI",
-   "inst": "AMOSTRAGEM OPINIAO E MERCADO",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "04/08-08/08",
-   "div": "2026-08-16",
-   "n": "1700",
    "visto": "2026-08-16"
   },
   {
@@ -444,16 +374,6 @@
    "campo": "11/08-13/08",
    "div": "2026-08-17",
    "n": "1200",
-   "visto": "2026-08-17"
-  },
-  {
-   "proto": "RJ065802026",
-   "escopo": "RJ",
-   "inst": "D ART PROMOCOES",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "06/08-07/08",
-   "div": "2026-08-17",
-   "n": "474",
    "visto": "2026-08-17"
   }
  ],

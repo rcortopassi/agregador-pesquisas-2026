@@ -558,6 +558,44 @@ Estrutura do painel: QUATRO abas no topo (acima dos meses):
   ATENÇÃO PARA A PRÓXIMA RODADA: a ECM tem registro novo na fila, SE-02682/2026 (campo 9-12/08,
   divulgação 15/08). Dado o histórico, não inserir ECM em Sergipe sem antes conferir se a decisão
   de 04/08 alcança também essa rodada.
+- O PLANO AMOSTRAL RESOLVE A FILA MAIS BARATO DO QUE QUALQUER BUSCA (17/08/2026, à noite). A regra de
+  17/08 sobre a DMP do Amazonas ("leia `DS_PLANO_AMOSTRAL` antes de qualquer outra coisa") vale muito
+  além do desempate nacional x estadual: aplicada aos 16 itens da fila, ela matou dois de uma vez, sem
+  abrir uma página. **RJ-06580/2026** (D'Art, N=474, contratante RJInterior Comunicação) diz com todas
+  as letras "distribuídas entre as localidades do município de Macaé (RJ)": é municipal, não alimenta
+  `DGM`/`DSM`. **PI-00748/2026 e o gêmeo BR-00662/2026** (Instituto Amostragem, N=1.700) dizem "o
+  conjunto do eleitorado do município ... referente ao município TERESINA-PI": também municipal,
+  apesar do N grande e do cargo "Governador, Senador" no registro. Ou seja, o N pequeno é um INDÍCIO
+  de recorte local (regra de 14 e 15/08), mas o plano amostral é a PROVA, e ele pega o caso que o N
+  deixa passar: 1.700 entrevistas só em Teresina parecem estaduais até você ler o campo. Ler o plano
+  amostral dos itens da fila deve ser o PRIMEIRO passo da rodada humana, antes de qualquer busca.
+- O INSTITUTO AMOSTRAGEM TEVE O GOVERNADOR SUSPENSO NO PIAUÍ POR EFEITO DE ANCORAGEM (17/08/2026).
+  Além de ser municipal (parágrafo acima), a PI-00748/2026 foi suspensa em 14/08 pela desembargadora
+  Lucicleide Pereira Belo, do TRE-PI, a pedido da federação União Progressista. O fundamento é novo
+  no ciclo e vale guardar: não é amostra nem dinheiro, é a ORDEM DAS PERGUNTAS. O questionário punha
+  uma sequência longa de avaliação do governador (Piauí Saúde Digital, Escola de Tempo Integral, Mais
+  Asfalto e outros) e a pergunta "qual a maior obra do gestor" ANTES da espontânea de intenção de
+  voto, o que a decisão chamou de efeito de ancoragem "manifesto e auto evidente". A suspensão é
+  PARCIAL: senador, deputado federal e estadual seguem liberados, só governador está barrado. Fonte:
+  GP1, 15/08/2026. Regra que fica: suspensão pode alcançar um cargo só, então antes de descartar a
+  rodada inteira confira o alcance da decisão, e antes de inserir governador de instituto local
+  procure também por "pergunta tendenciosa" e "ancoragem", não só por "origem dos recursos".
+- FONTE QUE SOME EM 24 HORAS: A DOXA NO PARÁ (17/08/2026). A rodada PA-01857/2026 + BR-06005/2026
+  (Doxa, campo 10-15/08, N=2.000, margem 3,1, contratante a própria Doxa) foi divulgada em 16/08 e no
+  dia seguinte TRÊS das quatro fontes já estavam mortas: o post do próprio instituto
+  (`pesquisasdoxa.com/post/...`) e as duas matérias da Gazeta Carajás (governo, Senado e presidente)
+  devolvem 404, embora os trechos sigam no índice do buscador. Não há decisão judicial contra a Doxa
+  que explique isso (a suspensão do TRE-PA em julho foi do Veritá, PA-09674/2026). O que sobreviveu
+  foi o Portal O Fato, e é dele que saiu o governador que entrou no `DGM`: Hana Ghassan 35,1 e
+  Dr. Daniel 30,2, só os dois nomes, porque a matéria viva só publicou a estimulada da dupla. O
+  Senado (Helder 25,32) e o presidencial (Lula 38,5 x Flávio 32,6, sem 2º turno conhecido) ficaram de
+  FORA por não terem fonte viva que se possa citar no campo `u`. Por isso o `PRES26['PA']` continua
+  com o Real Time Big Data de 30/07-03/08, que tem 2º turno (45 x 36) e link que abre, e o `DG['PA']`
+  também continua no RTBD, que é a linha completa com cinco nomes e 2º turno. É desvio consciente do
+  "DG mostra a mais recente": trocar cinco nomes mais 2º turno por dois nomes sem 2º turno degradaria
+  o cartão do mapa por onze dias de recência. REGRA QUE FICA: quando a fonte de prioridade 1 e 2 cair,
+  não se insere pelo snippet do buscador; e vale COPIAR o número e o link vivo na mesma sessão em que
+  se acha, porque em pesquisa regional a janela pode ser de horas.
 Objeto de dados a manter: `DI` (brutos por instituto, jan-jul). Ao atualizar números, acrescentar rodadas ao `DI`; house effect (2º turno), gráfico e mapa derivam dele. O objeto `VHIST`/`VLULA` (1º turno) ainda existe só para a gaveta lateral, NÃO para o gráfico.
 
 ## O `PENDENCIAS.md` só mostra o DELTA, e por isso uma pesquisa pode sumir
