@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 17/08/2026 13:39. Mercados: Polymarket 64,5%/30,9%, Kalshi 66,0%/32,0%.
+Rodada de 17/08/2026 19:35. Mercados: Polymarket 63,5%/31,1%, Kalshi 65,0%/31,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -19,12 +19,9 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-16] TSE PA, DOXA (Governador, Senador, Deputado Fede), campo 10/08-15/08, divulgação 2026-08-16, N=2000, registro PA018572026
 - [aguardando desde 2026-08-16] TSE PI, AMOSTRAGEM OPINIAO E MERCADO (Governador, Senador, Deputado Fede), campo 04/08-08/08, divulgação 2026-08-16, N=1700, registro PI007482026
 - [aguardando desde 2026-08-16] TSE SP, #NULO# (Governador, Senador, Deputado Fede), campo 11/08-14/08, divulgação 2026-08-16, N=2000, registro SP055112026
-- [aguardando desde 2026-08-17] TSE ESTADUAL[PE], DATATRENDS (Presidente), campo 12/08-14/08, divulgação 2026-08-17, N=1200, registro BR099232026
 - [aguardando desde 2026-08-17] TSE ESTADUAL[PE], BADRA COMUNICACAO (Presidente), campo 12/08-18/08, divulgação 2026-08-17, N=1500, registro BR005232026
 - [aguardando desde 2026-08-17] TSE ESTADUAL[PI], INSTITUTO GP1 DE PESQUISA (Presidente), campo 11/08-13/08, divulgação 2026-08-17, N=1200, registro BR098032026
-- [aguardando desde 2026-08-17] TSE NACIONAL?, DMP PESQUISA E EVENTOS (Presidente), campo 11/08-14/08, divulgação 2026-08-17, N=2000, registro BR080202026
 - [aguardando desde 2026-08-17] TSE PE, BADRA COMUNICACAO (Governador), campo 12/08-18/08, divulgação 2026-08-17, N=1500, registro PE000802026
-- [aguardando desde 2026-08-17] TSE PE, DATATRENDS (Governador, Senador), campo 12/08-14/08, divulgação 2026-08-17, N=1200, registro PE027742026
 - [aguardando desde 2026-08-17] TSE PI, INSTITUTO GP1 DE PESQUISA (Governador, Senador, Deputado Fede), campo 11/08-13/08, divulgação 2026-08-17, N=1200, registro PI022942026
 - [aguardando desde 2026-08-17] TSE RJ, D ART PROMOCOES (Governador, Senador, Deputado Fede), campo 06/08-07/08, divulgação 2026-08-17, N=474, registro RJ065802026
 
