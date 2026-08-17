@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 16/08/2026 19:32. Mercados: Polymarket 66,5%/29,4%, Kalshi 65,0%/32,0%.
+Rodada de 17/08/2026 01:53. Mercados: Polymarket 65,5%/29,8%, Kalshi 65,0%/32,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -24,6 +24,18 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-16] TSE RN, #NULO# (Governador, Senador, Deputado Fede), campo 08/08-10/08, divulgação 2026-08-16, N=500, registro RN075722026
 - [aguardando desde 2026-08-16] TSE SP, #NULO# (Governador, Senador, Deputado Fede), campo 11/08-14/08, divulgação 2026-08-16, N=2000, registro SP055112026
 - [aguardando desde 2026-08-16] TSE SP, #NULO# (Governador, Senador), campo 11/08-13/08, divulgação 2026-08-16, N=1480, registro SP046702026
+- [NOVO] TSE ESTADUAL[PE], REAL TIME BIG DATA (Presidente), campo 12/08-15/08, divulgação 2026-08-17, N=1600, registro BR085922026
+- [NOVO] TSE ESTADUAL[PE], DATATRENDS (Presidente), campo 12/08-14/08, divulgação 2026-08-17, N=1200, registro BR099232026
+- [NOVO] TSE ESTADUAL[PE], BADRA COMUNICACAO (Presidente), campo 12/08-18/08, divulgação 2026-08-17, N=1500, registro BR005232026
+- [NOVO] TSE ESTADUAL[PI], INSTITUTO GP1 DE PESQUISA (Presidente), campo 11/08-13/08, divulgação 2026-08-17, N=1200, registro BR098032026
+- [NOVO] TSE NACIONAL?, NEXUS (Presidente), campo 14/08-16/08, divulgação 2026-08-17, N=2000, registro BR033172026
+- [NOVO] TSE NACIONAL?, DMP PESQUISA E EVENTOS (Presidente), campo 11/08-14/08, divulgação 2026-08-17, N=2000, registro BR080202026
+- [NOVO] TSE PE, BADRA COMUNICACAO (Governador), campo 12/08-18/08, divulgação 2026-08-17, N=1500, registro PE000802026
+- [NOVO] TSE PE, DATATRENDS (Governador, Senador), campo 12/08-14/08, divulgação 2026-08-17, N=1200, registro PE027742026
+- [NOVO] TSE PE, REAL TIME BIG DATA (Governador, Senador), campo 12/08-15/08, divulgação 2026-08-17, N=1600, registro PE060562026
+- [NOVO] TSE PI, INSTITUTO GP1 DE PESQUISA (Governador, Senador, Deputado Fede), campo 11/08-13/08, divulgação 2026-08-17, N=1200, registro PI022942026
+- [NOVO] TSE PR, #NULO# (Governador, Senador), campo 13/08-16/08, divulgação 2026-08-17, N=1520, registro PR090482026
+- [NOVO] TSE RJ, D ART PROMOCOES (Governador, Senador, Deputado Fede), campo 06/08-07/08, divulgação 2026-08-17, N=474, registro RJ065802026
 
 ## Últimas publicações do Veritá
 
@@ -35,14 +47,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-06 | ESTADUAL[MG] | IPSENSUS PESQUISAS | Presidente | 01/08-02/08 | 400 | BR065502026 |
-| 2026-08-06 | ESTADUAL[MS] | REAL TIME BIG DATA | Presidente | 01/08-05/08 | 1600 | BR017842026 |
-| 2026-08-06 | ESTADUAL[PI] | VETOR TECNOLOGIA E PESQUISAS | Presidente | 28/07-02/08 | 1602 | BR018942026 |
-| 2026-08-06 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador | 31/07-04/08 | 500 | GO071722026 |
-| 2026-08-06 | MG | IPSENSUS PESQUISAS | Governador, Senador, Deputado Fede | 01/08-02/08 | 400 | MG095982026 |
-| 2026-08-06 | MS | REAL TIME BIG DATA | Governador, Senador | 01/08-05/08 | 1600 | MS077062026 |
-| 2026-08-06 | NACIONAL? | INSTITUTO PHOENIX & ASSOCIAD | Presidente | 04/08-07/08 | 1311 | BR010782026 |
-| 2026-08-06 | PI | VETOR TECNOLOGIA E PESQUISAS | Governador, Senador, Deputado Fede | 28/07-02/08 | 1602 | PI025092026 |
 | 2026-08-07 | ESTADUAL[SC] | #NULO# | Presidente | 03/08-08/08 | 880 | BR092282026 |
 | 2026-08-07 | SC | #NULO# | Governador, Senador, Deputado Fede | 03/08-08/08 | 880 | SC031922026 |
 | 2026-08-09 | ESTADUAL[SP] | AMERICAN ANALYTICS | Presidente | 04/08-08/08 | 1500 | BR030252026 |
@@ -136,4 +140,16 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-16 | RN | #NULO# | Governador, Senador, Deputado Fede | 08/08-10/08 | 500 | RN075722026 |
 | 2026-08-16 | SP | #NULO# | Governador, Senador, Deputado Fede | 11/08-14/08 | 2000 | SP055112026 |
 | 2026-08-16 | SP | #NULO# | Governador, Senador | 11/08-13/08 | 1480 | SP046702026 |
+| 2026-08-17 | ESTADUAL[PE] | REAL TIME BIG DATA | Presidente | 12/08-15/08 | 1600 | BR085922026 |
+| 2026-08-17 | ESTADUAL[PE] | DATATRENDS | Presidente | 12/08-14/08 | 1200 | BR099232026 |
+| 2026-08-17 | ESTADUAL[PE] | BADRA COMUNICACAO | Presidente | 12/08-18/08 | 1500 | BR005232026 |
+| 2026-08-17 | ESTADUAL[PI] | INSTITUTO GP1 DE PESQUISA | Presidente | 11/08-13/08 | 1200 | BR098032026 |
+| 2026-08-17 | NACIONAL? | NEXUS | Presidente | 14/08-16/08 | 2000 | BR033172026 |
+| 2026-08-17 | NACIONAL? | DMP PESQUISA E EVENTOS | Presidente | 11/08-14/08 | 2000 | BR080202026 |
+| 2026-08-17 | PE | BADRA COMUNICACAO | Governador | 12/08-18/08 | 1500 | PE000802026 |
+| 2026-08-17 | PE | DATATRENDS | Governador, Senador | 12/08-14/08 | 1200 | PE027742026 |
+| 2026-08-17 | PE | REAL TIME BIG DATA | Governador, Senador | 12/08-15/08 | 1600 | PE060562026 |
+| 2026-08-17 | PI | INSTITUTO GP1 DE PESQUISA | Governador, Senador, Deputado Fede | 11/08-13/08 | 1200 | PI022942026 |
+| 2026-08-17 | PR | #NULO# | Governador, Senador | 13/08-16/08 | 1520 | PR090482026 |
+| 2026-08-17 | RJ | D ART PROMOCOES | Governador, Senador, Deputado Fede | 06/08-07/08 | 474 | RJ065802026 |
 
