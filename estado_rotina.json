@@ -337,16 +337,6 @@
    "visto": "2026-08-16"
   },
   {
-   "proto": "BR014952026",
-   "escopo": "ESTADUAL[MT]",
-   "inst": "PERCENT PESQUISA DE MERCADO ",
-   "cargo": "Presidente",
-   "campo": "07/08-10/08",
-   "div": "2026-08-16",
-   "n": "1200",
-   "visto": "2026-08-16"
-  },
-  {
    "proto": "BR060052026",
    "escopo": "ESTADUAL[PA]",
    "inst": "DOXA",
@@ -364,16 +354,6 @@
    "campo": "04/08-08/08",
    "div": "2026-08-16",
    "n": "1700",
-   "visto": "2026-08-16"
-  },
-  {
-   "proto": "BR093462026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "08/08-10/08",
-   "div": "2026-08-16",
-   "n": "500",
    "visto": "2026-08-16"
   },
   {
@@ -397,16 +377,6 @@
    "visto": "2026-08-16"
   },
   {
-   "proto": "MT031542026",
-   "escopo": "MT",
-   "inst": "PERCENT PESQUISA DE MERCADO ",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "07/08-10/08",
-   "div": "2026-08-16",
-   "n": "1200",
-   "visto": "2026-08-16"
-  },
-  {
    "proto": "PA018572026",
    "escopo": "PA",
    "inst": "DOXA",
@@ -427,16 +397,6 @@
    "visto": "2026-08-16"
   },
   {
-   "proto": "RN075722026",
-   "escopo": "RN",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "08/08-10/08",
-   "div": "2026-08-16",
-   "n": "500",
-   "visto": "2026-08-16"
-  },
-  {
    "proto": "SP055112026",
    "escopo": "SP",
    "inst": "#NULO#",
@@ -445,26 +405,6 @@
    "div": "2026-08-16",
    "n": "2000",
    "visto": "2026-08-16"
-  },
-  {
-   "proto": "SP046702026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "11/08-13/08",
-   "div": "2026-08-16",
-   "n": "1480",
-   "visto": "2026-08-16"
-  },
-  {
-   "proto": "BR085922026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "12/08-15/08",
-   "div": "2026-08-17",
-   "n": "1600",
-   "visto": "2026-08-17"
   },
   {
    "proto": "BR099232026",
@@ -494,16 +434,6 @@
    "campo": "11/08-13/08",
    "div": "2026-08-17",
    "n": "1200",
-   "visto": "2026-08-17"
-  },
-  {
-   "proto": "BR033172026",
-   "escopo": "NACIONAL?",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "14/08-16/08",
-   "div": "2026-08-17",
-   "n": "2000",
    "visto": "2026-08-17"
   },
   {
@@ -537,16 +467,6 @@
    "visto": "2026-08-17"
   },
   {
-   "proto": "PE060562026",
-   "escopo": "PE",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "12/08-15/08",
-   "div": "2026-08-17",
-   "n": "1600",
-   "visto": "2026-08-17"
-  },
-  {
    "proto": "PI022942026",
    "escopo": "PI",
    "inst": "INSTITUTO GP1 DE PESQUISA",
@@ -554,16 +474,6 @@
    "campo": "11/08-13/08",
    "div": "2026-08-17",
    "n": "1200",
-   "visto": "2026-08-17"
-  },
-  {
-   "proto": "PR090482026",
-   "escopo": "PR",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "13/08-16/08",
-   "div": "2026-08-17",
-   "n": "1520",
    "visto": "2026-08-17"
   },
   {
