@@ -533,6 +533,31 @@ Estrutura do painel: QUATRO abas no topo (acima dos meses):
 - Aba "Mapa": mapa do Brasil com seletor de ano 2018/2022/2026 (botões chamam `setMapYear`). Vermelho = esquerda/PT (Haddad 2018, Lula 2022/2026), azul = direita (Bolsonaro 2018/2022, Flávio 2026). 2018/2022 colorem todos os estados (resultado de urna); 2026 só os ~9 com pesquisa, resto bege. Estados clicáveis abrem gaveta com o dado do ano + fonte (TSE p/ urna, instituto p/ pesquisa). Funções `presLead` (lê `cur.mapyear`)/`drawPresMap`/`openPresState`; helper `ufOf`.
 - VERITÁ ESTÁ BARRADO EM SE E RN (constatado em 15/08/2026). O TRE-SE proibiu em 07/08/2026 a divulgação de pesquisa do instituto por super-representar eleitor com ensino superior (declarou 31,1% quando o dado oficial é 12,82%), e o TRE-RN fez o mesmo em 12/08/2026 para governo e Senado (34% de superior contra 13,73% reais), em reincidência que já rendera multa de mais de R$ 58 mil. O registro SE-05262/2026, campo 08 a 12/08 e divulgação em 13/08, é justamente o novo levantamento feito com os mesmos critérios tidos como irregulares, e por isso NÃO foi inserido. Antes de inserir qualquer Veritá estadual, conferir se aquele estado tem proibição vigente. Isso vale só para o estadual: `OUTLIERS={}` continua vazio e o Veritá nacional segue contando no `DI`.
 - ESCALA DO SENADO VARIA ENTRE INSTITUTOS, e misturar corrompe o `stateBanner`. Em 2026 cada eleitor escolhe DOIS senadores, então uns publicam o "1º voto" (soma perto de 100), outros o "consolidado" dos dois votos (soma perto de 200). Constatado em 15/08/2026 no RN: o Seta publica consolidado (Styvenson 45,5 e Zenaide 40 em agosto) enquanto Metadata, Consult e DataVero publicam escala de voto único (Styvenson entre 19,8 e 27,5). Alguém já resolveu isso em julho DIVIDINDO o Seta por 2 (47,7 virou 23,85, 41,6 virou 20,8), o que não é conversão válida e não estava documentado. Por isso o Seta de agosto entrou só em governador, onde a escala é inequívoca, e ficou de fora do `DSM`. Regra: conferir a soma da linha antes de inserir Senado e, se passar de 100, ou achar a tabela de 1º voto ou não inserir.
+- FALSO POSITIVO DE NACIONAL: A DMP É DO AMAZONAS (17/08/2026). O radar apontou BR-08020/2026 (DMP
+  PESQUISA E EVENTOS, campo 11-14/08, N=2.000, contratante REDE DE RADIO E TELEVISAO TIRADENTES)
+  como NACIONAL?, por não ter gêmeo estadual registrado. Não é nacional. O campo
+  `DS_PLANO_AMOSTRAL` do próprio CSV do TSE resolve sem sair do terminal: "o universo da pesquisa é
+  composto por eleitores que residem e votam na capital (Manaus) e nos 61 municípios do estado do
+  Amazonas". A rodada anterior do mesmo instituto, BR-05620/2026 (campo 1-3/07, N=1.200), diz a
+  mesma coisa com 19 municípios. As duas alimentam o `PRES26` do AM, nunca o `DI`. REGRA QUE FICA,
+  e que é mais barata que abrir matéria: quando o registro aparecer como NACIONAL? sem gêmeo, LEIA
+  `DS_PLANO_AMOSTRAL` e `DS_DADO_MUNICIPIO` antes de qualquer outra coisa. O texto do plano amostral
+  quase sempre declara o universo com todas as letras, e vale mais do que o N ou o custo.
+- A SUSPENSÃO ATRIBUÍDA AO INSTITUTO FRANÇA EM SE NÃO SE CONFIRMOU (17/08/2026). A nota de
+  14/08/2026 acima diz que SE-04226/2026 e os gêmeos presidenciais BR-03921/2026 e BR-05808/2026
+  (Instituto França, campo 10-12/08) foram suspensos pelo TRE-SE. Fui conferir antes de inserir e
+  não achei nenhuma decisão contra o França. As suspensões de pesquisa em Sergipe neste ciclo que
+  se confirmam nas fontes são de OUTROS institutos: a ECM (Edição, Comunicação & Marketing Eireli),
+  barrada em 04/08/2026 a pedido do Republicanos por não comprovar a origem dos recursos, com multa
+  diária de R$ 5 mil; o Instituto CTAS (SE-05326/2026 e SE-06052/2026, junho); e uma do Real Time
+  Big Data. A confusão provável é com a ECM, que também põe Mitidieri na frente. Contra a suspensão
+  pesa ainda o fato de a rodada ter sido publicada em 15/08 por veículos de Sergipe e em 16/08 pelo
+  Poder360, que hospedou a ÍNTEGRA em `static.poder360.com.br` e citou o BR-05808/2026 no texto,
+  o que não aconteceria sob liminar com multa diária. Por isso ela ENTROU no painel em 17/08, nas
+  três frentes (governo e Senado no `DGM`/`DSM` e no `DG`/`DS`, presidencial no `PRES26` do SE).
+  ATENÇÃO PARA A PRÓXIMA RODADA: a ECM tem registro novo na fila, SE-02682/2026 (campo 9-12/08,
+  divulgação 15/08). Dado o histórico, não inserir ECM em Sergipe sem antes conferir se a decisão
+  de 04/08 alcança também essa rodada.
 Objeto de dados a manter: `DI` (brutos por instituto, jan-jul). Ao atualizar números, acrescentar rodadas ao `DI`; house effect (2º turno), gráfico e mapa derivam dele. O objeto `VHIST`/`VLULA` (1º turno) ainda existe só para a gaveta lateral, NÃO para o gráfico.
 
 ## O `PENDENCIAS.md` só mostra o DELTA, e por isso uma pesquisa pode sumir

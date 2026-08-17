@@ -407,16 +407,6 @@
    "visto": "2026-08-16"
   },
   {
-   "proto": "BR099232026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "12/08-14/08",
-   "div": "2026-08-17",
-   "n": "1200",
-   "visto": "2026-08-17"
-  },
-  {
    "proto": "BR005232026",
    "escopo": "ESTADUAL[PE]",
    "inst": "BADRA COMUNICACAO",
@@ -437,16 +427,6 @@
    "visto": "2026-08-17"
   },
   {
-   "proto": "BR080202026",
-   "escopo": "NACIONAL?",
-   "inst": "DMP PESQUISA E EVENTOS",
-   "cargo": "Presidente",
-   "campo": "11/08-14/08",
-   "div": "2026-08-17",
-   "n": "2000",
-   "visto": "2026-08-17"
-  },
-  {
    "proto": "PE000802026",
    "escopo": "PE",
    "inst": "BADRA COMUNICACAO",
@@ -454,16 +434,6 @@
    "campo": "12/08-18/08",
    "div": "2026-08-17",
    "n": "1500",
-   "visto": "2026-08-17"
-  },
-  {
-   "proto": "PE027742026",
-   "escopo": "PE",
-   "inst": "DATATRENDS",
-   "cargo": "Governador, Senador",
-   "campo": "12/08-14/08",
-   "div": "2026-08-17",
-   "n": "1200",
    "visto": "2026-08-17"
   },
   {
