@@ -123,6 +123,27 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   ("o 2º turno de agosto vira..."), que a abreviação deixava truncada. É constante da língua, não
   série de dados; a lista de meses do painel continua saindo do `months` e do `DI`, e o que
   faltar no mapa cai na própria abreviação.
+- RECORTE REGIONAL REGISTRADO COMO SE FOSSE ESTADUAL (18/08/2026). ARMADILHA NOVA, irmã do
+  desempate do gêmeo. O TSE registrou SP-05511/2026 (Vox Brasil, campo 11-14/08, N=2000, cargos
+  Governador/Deputado Federal/Deputado Estadual) com o gêmeo BR-02244/2026 para Presidente. Pelo
+  método do gêmeo isso qualificaria como pesquisa ESTADUAL de São Paulo, insumo de DG/DGM e do
+  PRES26. É FALSO: a íntegra publicada pelo ABC Repórter
+  (abcreporter.com.br/wp-content/uploads/2026/08/PESQUISA-VOX-BRASIL-CENARIO-ABC-16-de-Agosto.pdf)
+  traz na ficha técnica "MUNICÍPIO/UF: ELEIÇÕES GERAIS 2026 - REGIÃO ABC PAULISTA". Os 2.000
+  entrevistados são só do ABC, e as perguntas de governador de SP e de presidente são respondidas
+  por esse eleitorado regional (Tarcísio 44,6 x Haddad 29,5; Lula 43,5 x Flávio 30,2), números que
+  não representam o estado. DESCARTADA, nas duas frentes.
+  O QUE ISSO ENSINA: o campo do TSE que separa estadual de municipal não separa estadual de
+  REGIONAL. A amostra pode ser de uma região metropolitana, de um grupo de municípios ou de uma
+  única cidade e ainda assim vir marcada com a UF. O gêmeo não protege contra isso, porque o par
+  BR- + UF existe do mesmo jeito. O que protege é ABRIR A ÍNTEGRA e ler "MUNICÍPIO/UF" na ficha
+  técnica antes de inserir. Sinal barato de suspeita, quando não se tem a íntegra à mão: quem
+  divulga é veículo de uma região específica (aqui, o ABC Repórter, o SBT RP e a TV Metropolitana
+  de Piracicaba), e não a imprensa estadual.
+  CUIDADO PARA NÃO CONFUNDIR: a Vox Brasil TEM uma rodada estadual de SP no mesmo período,
+  SP-04670/2026, campo 11-13/08, N=1480, e é essa que está no painel (Tarcísio 53,7 x Haddad 34,0).
+  Duas rodadas do mesmo instituto, quase as mesmas datas, uma estadual e uma regional. O que
+  distingue é a íntegra, não a data nem o N.
 - PENDÊNCIAS DATADAS (registrar agora, executar depois):
   (a) SETEMBRO: implementar detector de herding (ADPA do Silver Bulletin). Se na última quinzena
   a dispersão entre institutos ficar ABAIXO do mínimo teórico dado o erro amostral, é manada e a

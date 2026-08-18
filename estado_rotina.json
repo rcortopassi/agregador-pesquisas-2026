@@ -324,26 +324,6 @@
    "visto": "2026-08-16"
   },
   {
-   "proto": "BR022442026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "11/08-14/08",
-   "div": "2026-08-16",
-   "n": "2000",
-   "visto": "2026-08-16"
-  },
-  {
-   "proto": "SP055112026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "11/08-14/08",
-   "div": "2026-08-16",
-   "n": "2000",
-   "visto": "2026-08-16"
-  },
-  {
    "proto": "BR005232026",
    "escopo": "ESTADUAL[PE]",
    "inst": "BADRA COMUNICACAO",
@@ -384,16 +364,6 @@
    "visto": "2026-08-18"
   },
   {
-   "proto": "GO017912026",
-   "escopo": "GO",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "14/08-17/08",
-   "div": "2026-08-18",
-   "n": "1240",
-   "visto": "2026-08-18"
-  },
-  {
    "proto": "GO044452026",
    "escopo": "GO",
    "inst": "DIRECT PESQUISAS",
@@ -411,16 +381,6 @@
    "campo": "13/08-15/08",
    "div": "2026-08-18",
    "n": "2000",
-   "visto": "2026-08-18"
-  },
-  {
-   "proto": "PR092622026",
-   "escopo": "PR",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "13/08-17/08",
-   "div": "2026-08-18",
-   "n": "1600",
    "visto": "2026-08-18"
   },
   {
