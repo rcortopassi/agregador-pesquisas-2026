@@ -144,6 +144,39 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   SP-04670/2026, campo 11-13/08, N=1480, e é essa que está no painel (Tarcísio 53,7 x Haddad 34,0).
   Duas rodadas do mesmo instituto, quase as mesmas datas, uma estadual e uma regional. O que
   distingue é a íntegra, não a data nem o N.
+- BACKEND DO VERITÁ SUMIU DO DNS (18/08/2026). O `rotina_6h.py` vem escrevendo "Não consegui ler a
+  lista do Veritá nesta rodada" e a causa NÃO é nossa: o `radar_verita()` acha a home, acha o bundle
+  JS e acha a chave anon corretamente, mas o host do projeto Supabase que o próprio site do Veritá
+  chama, `lgjdbpskgjfbmlffbntx.supabase.co`, responde NXDOMAIN. Conferido em dois resolvedores
+  independentes (DoH do Google e da Cloudflare, Status 3 nos dois), enquanto
+  `eleicoes26.institutoverita.com.br` resolve normalmente para 185.158.133.1. O bundle atual
+  (`/assets/index-ZXY8sPJe.js`) continua apontando para esse mesmo host e não tem nenhum outro
+  endpoint, ou seja, o painel de pesquisas DELES está quebrado para todo mundo, não só para nós.
+  CONSEQUÊNCIA PRÁTICA: enquanto isso durar, pesquisa do Veritá só se acha pela imprensa ou pelo
+  registro do TSE, e a seção "Últimas publicações do Veritá" do `PENDENCIAS.md` fica vazia sem que
+  isso seja falha da rodada. NÃO reescrever o `radar_verita()` tentando consertar: se um dia eles
+  republicarem, o caminho volta a funcionar sozinho; se mudarem de projeto, o que muda é a URL no
+  bundle, e é lá que se olha primeiro.
+  NOTA DE AMBIENTE, de quebra: o `urllib` da tarefa local não resolve nome nenhum neste sandbox
+  (`URLError ... nodename nor servname`), então rodar `radar_verita()` à mão pelo `python3 -c`
+  engana e parece queda do Veritá. O `curl_cffi` com `impersonate="chrome"` resolve e é o que
+  serve para apurar; o NXDOMAIN acima foi medido por ele, não pelo urllib.
+- DATA DE DIVULGAÇÃO PODE SER ANTERIOR AO FIM DO CAMPO (18/08/2026). Terceira armadilha da mesma
+  família das duas acima, e a mais barata de cair. A Badra registrou PE-00080/2026 (e o gêmeo
+  BR-00523/2026) com divulgação em 17/08 e campo de 12/08 a 18/08: o radar listou como "divulgação
+  vencida" e o item entrou na fila, mas o campo só fecha depois, então o número NÃO PODE existir
+  ainda. Antes de sair procurando íntegra que não existe, e principalmente antes de descartar o
+  item como "registra e não publica", compare `DT_DIVULGACAO` com `DT_FIM_PESQUISA`: se a
+  divulgação vem antes, o item é só PREMATURO, e o lugar dele é continuar na fila.
+  REGRA GERAL QUE VALE PARA A FILA INTEIRA: item cuja divulgação é de HOJE quase nunca está
+  publicado quando a rodada local acorda, porque o TSE libera a divulgação e o veículo publica ao
+  longo do dia. Descartar no primeiro dia é o erro; o custo de deixar na fila é zero, ela sai
+  sozinha em 21 dias e a saída é anunciada. Só marque descarte quando houver motivo POSITIVO
+  (recorte regional, veículo publicou outra coisa, instituto com histórico de não divulgar).
+  CADÊNCIA POR PARCELAS, mesmo assunto: o GP1 divulgou a rodada de 11-13/08 em capítulos, governador
+  em 17/08, senador e deputados em 18/08, e o presidencial (BR-09803/2026) ainda não saiu. Um mesmo
+  registro pode estar metade publicado, então "o gêmeo estadual já entrou" não implica que o
+  presidencial exista.
 - PENDÊNCIAS DATADAS (registrar agora, executar depois):
   (a) SETEMBRO: implementar detector de herding (ADPA do Silver Bulletin). Se na última quinzena
   a dispersão entre institutos ficar ABAIXO do mínimo teórico dado o erro amostral, é manada e a
