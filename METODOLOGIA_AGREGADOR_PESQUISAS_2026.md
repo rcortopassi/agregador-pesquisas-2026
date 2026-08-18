@@ -650,6 +650,14 @@ Estrutura do painel: QUATRO abas no topo (acima dos meses):
   o cartão do mapa por onze dias de recência. REGRA QUE FICA: quando a fonte de prioridade 1 e 2 cair,
   não se insere pelo snippet do buscador; e vale COPIAR o número e o link vivo na mesma sessão em que
   se acha, porque em pesquisa regional a janela pode ser de horas.
+- `pmargin` LIA MARGEM COM DECIMAL PELA METADE (18/08/2026). Nos estados sem 2º turno divulgado, a
+  intensidade de cor do mapa sai do texto do campo `t2`, e a expressão era `/(\d+)\s*pontos/`: em
+  "Lula abre 9,4 pontos" ela casava com "4 pontos" e o estado era pintado como se a diferença fosse
+  de 4, não de 9,4. Era o caso do AM. A expressão passou a aceitar o decimal e a trocar vírgula por
+  ponto antes do `parseFloat`. Ao escrever `t2` em texto, o número pode agora ter vírgula, mas
+  confira que ele é o PRIMEIRO "N pontos" da frase, porque `match` sem `/g` pega só a primeira
+  ocorrência.
+
 Objeto de dados a manter: `DI` (brutos por instituto, jan-jul). Ao atualizar números, acrescentar rodadas ao `DI`; house effect (2º turno), gráfico e mapa derivam dele. O objeto `VHIST`/`VLULA` (1º turno) ainda existe só para a gaveta lateral, NÃO para o gráfico.
 
 ## O `PENDENCIAS.md` só mostra o DELTA, e por isso uma pesquisa pode sumir

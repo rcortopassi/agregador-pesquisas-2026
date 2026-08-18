@@ -304,26 +304,6 @@
  "ultima_rodada": "2026-08-18T19:36:09.700170-03:00",
  "pendentes": [
   {
-   "proto": "AP009852026",
-   "escopo": "AP",
-   "inst": "AMERICAN ANALYTICS",
-   "cargo": "Governador, Senador",
-   "campo": "10/08-14/08",
-   "div": "2026-08-16",
-   "n": "1000",
-   "visto": "2026-08-16"
-  },
-  {
-   "proto": "BR001362026",
-   "escopo": "ESTADUAL[AP]",
-   "inst": "AMERICAN ANALYTICS",
-   "cargo": "Presidente",
-   "campo": "10/08-14/08",
-   "div": "2026-08-16",
-   "n": "1000",
-   "visto": "2026-08-16"
-  },
-  {
    "proto": "BR005232026",
    "escopo": "ESTADUAL[PE]",
    "inst": "BADRA COMUNICACAO",
@@ -331,16 +311,6 @@
    "campo": "12/08-18/08",
    "div": "2026-08-17",
    "n": "1500",
-   "visto": "2026-08-17"
-  },
-  {
-   "proto": "BR098032026",
-   "escopo": "ESTADUAL[PI]",
-   "inst": "INSTITUTO GP1 DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "11/08-13/08",
-   "div": "2026-08-17",
-   "n": "1200",
    "visto": "2026-08-17"
   },
   {
