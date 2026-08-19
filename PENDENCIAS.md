@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 19/08/2026 13:42. Mercados: Polymarket 63,5%/32,6%, Kalshi 63,0%/32,0%.
+Rodada de 19/08/2026 19:35. Mercados: Polymarket 63,5%/32,6%, Kalshi 65,0%/32,0%.
 
 ## Precisa de olho humano nesta rodada
 
