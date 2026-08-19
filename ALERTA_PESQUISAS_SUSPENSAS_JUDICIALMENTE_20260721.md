@@ -288,3 +288,59 @@ ENTRAR no painel, em vez de contaminar dado já publicado.
   (01/07/2026) e uma de abril de 2026. Nenhuma delas é a Badra.
 - Se a liminar cair, o caminho é reabrir pelo registro no TSE, não pela fila: o item
   já saiu dela.
+
+## ATUALIZAÇÃO 19/08/2026 — VERITÁ BARRADO EM 13 ESTADOS E NO DF, E O CASO DO INSTITUTO FRANÇA EM SERGIPE
+
+Apurado na rodada local das 7h30 de 19/08/2026, ao investigar a fila do `PENDENCIAS.md`.
+
+### Veritá: a suspensão virou padrão nacional, não caso isolado
+
+Metrópoles (coluna Demétrio Vecchioli, 14/08/2026) e Diário do Centro do Mundo
+(14/08/2026) relatam que o Veritá teve pesquisas proibidas em **13 estados e no
+Distrito Federal** só em 2026. Os fundamentos repetem os que este arquivo já listava
+desde julho e acrescentam dois:
+
+- Super-representação de eleitor rico e escolarizado. Em Sergipe a amostra do Veritá
+  trouxe 31,1% de eleitores com ensino superior completo ou incompleto, contra 19,2%
+  da PNAD Contínua, a própria fonte declarada pelo instituto, e 12,82% do cadastro
+  eleitoral do TSE. No Rio Grande do Norte foram 34% com superior, contra 13,73% do
+  cadastro, e 25% na faixa de maior renda, o dobro dos outros institutos. O TRE-RN
+  fixou multa de mais de R$ 58 mil por reincidência.
+- Ponderação 1. O Veritá registra método probabilístico PPT e declara que a amostra
+  já reflete o eleitorado, portanto não aplica ajuste posterior. É esse ponto que os
+  tribunais vêm derrubando, porque a coleta bruta não confere com o eleitorado real.
+
+Em 12/08/2026 os TREs do RN e de Sergipe proibiram, no mesmo dia, a divulgação de
+levantamentos do instituto para governo e Senado.
+
+### O que isso significa para a fila
+
+- **SE-08978/2026** (Veritá, campo 13 a 17/08, N=1220, contratante TV Atalaia), item da
+  fila desde 18/08: o Metrópoles registra que o TRE-SE proibiu a pesquisa **registrada
+  em 07/08** (que é a SE-05262/2026, campo 08 a 12/08, mesmo contratante) e que "um novo
+  levantamento, com os mesmos critérios tidos como irregulares, foi computado nesta
+  quarta-feira (12) para ser publicado na próxima semana". Esse novo levantamento é a
+  SE-08978/2026. Até 19/08 pela manhã nenhum número apareceu publicado: nem no portal
+  da TV Atalaia (a8se.com), nem na imprensa sergipana, nem no site do próprio instituto
+  (`eleicoes26.institutoverita.com.br`, que segue dizendo "Nenhuma pesquisa publicada
+  ainda" e por isso a seção "Últimas publicações do Veritá" do `PENDENCIAS.md` volta
+  vazia toda rodada). O item ficou na fila.
+
+### Instituto França em Sergipe: suspensa e depois liberada, e ESTÁ no painel
+
+Este merece atenção porque o dado está publicado no painel hoje.
+
+- **SE-04226/2026** (Instituto França, governador e Senado, campo 10 a 12/08, N=2400) é
+  exatamente a rodada que alimenta `DG['SE']`, `DS['SE']`, `DGM.SE.ago` e `DSM.SE.ago`.
+- Em 12/08 a Justiça Eleitoral deferiu liminar suspendendo a divulgação, com multa
+  diária de R$ 10 mil, a pedido da coligação "Muda Sergipe com a Força do Povo"
+  (Valmir). Uma segunda pesquisa do mesmo instituto, SE-07506/2026, também foi barrada.
+- Em 15/08, porém, o **TRE-SE rejeitou o pedido de suspensão** e a divulgação seguiu.
+  Poder360, Imprensa 24h e A Voz do Povo publicaram os números entre 13 e 16/08.
+- CONCLUSÃO: não há o que remover. Fica o registro de que o instituto tem histórico
+  pesado (mais de 20 pesquisas retiradas do ar em ciclos anteriores, segundo a imprensa
+  capixaba) e de que esta rodada específica sobreviveu ao questionamento judicial.
+- LIMITE DA APURAÇÃO: a notícia da rejeição em 15/08 veio de uma postagem do perfil
+  Observatório Sergipe no Instagram, indexada em busca. A liminar de 12 e 13/08 tem
+  fonte melhor (NE Notícias, FaxAju, Roacontece, HoraNews). Se algum dia for preciso
+  decidir sobre o dado, confirmar a rejeição no andamento processual do TRE-SE.

@@ -304,16 +304,6 @@
  "ultima_rodada": "2026-08-19T07:40:26.616544-03:00",
  "pendentes": [
   {
-   "proto": "GO044452026",
-   "escopo": "GO",
-   "inst": "DIRECT PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "10/08-11/08",
-   "div": "2026-08-18",
-   "n": "400",
-   "visto": "2026-08-18"
-  },
-  {
    "proto": "PB078152026",
    "escopo": "PB",
    "inst": "INDICE INTELIGENCIA",

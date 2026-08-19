@@ -842,6 +842,38 @@ A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm n
   A resposta traz título, período de campo na descrição, URL do PDF e o `created_at` da publicação, que é o carimbo real de quando o número passou a existir. O nome do arquivo do bundle (`index-ZXY8sPJe.js`) muda a cada deploy do site deles; se der 404, pegue o novo com `curl -sL https://eleicoes26.institutoverita.com.br/ | grep -o 'src="/assets/[^"]*"'`. A chave é a anon pública que o próprio site expõe no JS.
 - O PDF do MARANHÃO do Veritá (25 a 29/07, `1785685809495_Relatorio_Maranhao_Julho_2026.pdf`) NÃO tem seção presidencial, apesar do título do post dizer "Presidente, Governador e Senador". Conferido pergunta a pergunta: o relatório começa na PERGUNTA 04 (governador espontânea) e termina na 13 (rejeição a senador); as três primeiras são só perfil demográfico. Por isso o `PRES26.MA` continua com o Real Time Big Data de 6-7 jul, que é mais antigo mas é o dado que existe. Não reabrir esse PDF procurando Lula x Flávio.
 - O `radar_tse.py` guarda o ZIP baixado por DIA, e o ZIP do TSE também é regerado uma vez por dia (o cabeçalho do radar diz "ZIP gerado em"). Numa tarefa de hora em hora isso significa que apagar o cache no meio do dia normalmente NÃO traz registro novo: dá o mesmo arquivo. Vale apagar uma vez por dia, na primeira rodada depois da virada, não a cada hora.
+- QUEM É O `#NULO#` DE SERGIPE, E ONDE ELE PUBLICA (19/08/2026). No CSV do TSE o campo
+  `NM_EMPRESA_FANTASIA` volta `#NULO#` em vários registros, e o radar mostra só o
+  contratante. Em Sergipe, `#NULO#` + contratante **MARTINS, PRODUÇÕES E PUBLICIDADE
+  LTDA** + N=1070 + margem 3,0 é o **INOR** (Instituto de Pesquisa do Nordeste). A
+  conferência: a SE-00281/2026 (campo 27 a 29/07, N=1070, mesmo contratante) saiu
+  assinada pelo INOR no NE Notícias em 05 e 06/08. Ou seja, a **SE-04930/2026** (campo
+  13 a 16/08, divulgação 18/08), que está na fila, é rodada do INOR e o lugar de
+  procurar o número é `nenoticias.com.br` e a Nova Brasil FM, não o site de instituto.
+- LACUNAS ESTADUAIS CONFERIDAS EM 19/08/2026 E NÃO INSERIDAS. Ao investigar a fila
+  apareceram rodadas estaduais publicadas que o painel não tem. Ficam anotadas para
+  serem inseridas com fonte primária, porque a fonte onde as encontrei foi a Wikipédia,
+  que é último recurso pela regra do `AGENTS.md`:
+  - SERGIPE, julho: o `DGM.SE.jul` traz o INOR de 6 a 8/07 (Mitidieri 32,90, Valmir
+    38,69, Ricardo Marques 8,97), mas existe rodada MAIS RECENTE do mesmo instituto no
+    mesmo mês, a de 27 a 29/07 (Mitidieri 37,94, Valmir 46,07, Ricardo Marques 7,01,
+    SE-00281/2026, N=1070), e essa tem fonte primária boa (NE Notícias, com dados
+    técnicos completos). Pela regra de uma rodada por instituto por mês, valendo a mais
+    recente, a entrada de julho deveria ser essa. Faltam também W1 de 14 a 18/07 e CTAS
+    de 21 a 24/07.
+  - GOIÁS, julho: faltam Directa de 28 a 31/07 (N=2000, Daniel Vilela 45,8, Marconi
+    24,5, Wilder 13,1) e Veritá de 12 a 16/07.
+  - PARAÍBA, julho: falta Índice de 10 a 12/07 (N=2000, Cícero Lucena 33,4, Lucas
+    Ribeiro 28,3, Efraim Filho 16,5).
+  AGOSTO, por outro lado, está em dia nos três estados: GO tem Paraná Pesquisas e Goiás
+  Pesquisas/Mais Goiás, SE tem Real Time Big Data, Instituto França e ECM, e a Paraíba
+  não teve nenhuma rodada publicada no mês até 19/08.
+- REGISTRO QUE MUDA DEPOIS DE ENTRAR NA FILA (19/08/2026). A PB-07815/2026 (Índice
+  Inteligência, N=2000) entrou na fila em 18/08 com campo de 13 a 15/08. No ZIP do dia
+  19/08 o mesmo registro aparece com campo de **18 a 20/08** e divulgação em 18/08, que
+  é incoerente por si só e indica retificação do registro. Enquanto o campo não fecha
+  não existe número para procurar. Antes de dar um item por "não publicado", reler a
+  linha no radar do dia: ela pode ter mudado desde que entrou na fila.
 
 ## Como atualizar
 
