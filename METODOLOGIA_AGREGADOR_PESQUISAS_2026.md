@@ -868,6 +868,55 @@ A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm n
   AGOSTO, por outro lado, está em dia nos três estados: GO tem Paraná Pesquisas e Goiás
   Pesquisas/Mais Goiás, SE tem Real Time Big Data, Instituto França e ECM, e a Paraíba
   não teve nenhuma rodada publicada no mês até 19/08.
+- API DE POSTS DOS PORTAIS SERGIPANOS: O CAMINHO BARATO (19/08/2026, rodada das 13h30).
+  Procurar número estadual abrindo jornal no navegador é caro e falha quando a busca do
+  site é renderizada em JS (o `?s=pesquisa` do NE Notícias devolve página vazia). O que
+  funciona, em um comando e sem navegador, é a API REST do WordPress:
+
+  ```bash
+  curl -s "https://www.nenoticias.com.br/wp-json/wp/v2/posts?search=INOR&per_page=10&orderby=date&order=desc"
+  ```
+
+  Devolve título, data, link e o CONTEÚDO INTEIRO da matéria em JSON, com as tabelas de
+  percentual. Conferido funcionando em `nenoticias.com.br`, `faxaju.com.br`,
+  `roacontece.com.br` e `infonet.com.br`. NÃO tem API: `a8se.com` (portal da TV Atalaia),
+  `jornaldacidade.net`, `horanews.com.br`, `cinform.com.br`, `f5news.com.br`. Trocar
+  `search=` pelo nome do instituto é mais eficaz do que procurar por "pesquisa", porque
+  pega a matéria mesmo quando o título não traz a palavra.
+
+- JULHO DE SERGIPE FECHADO COM FONTE PRIMÁRIA (19/08/2026, rodada das 13h30). A lacuna
+  anotada de manhã foi resolvida. O `DGM.SE.jul` trazia o INOR da rodada de 06 a 08/07
+  (SE-05317/2026: Valmir 38,69, Mitidieri 32,90, Ricardo Marques 8,97). Pela regra de uma
+  rodada por instituto por mês, valendo a MAIS RECENTE, o certo é a de 27 a 29/07
+  (**SE-00281/2026**, N=1070, contratante Martins Produções, divulgada pela Nova Brasil e
+  publicada pelo NE Notícias em 05 e 06/08). Números inseridos, da estimulada:
+  **Valmir 46,07, Mitidieri 37,94, Ricardo Marques 7,01, Emanuel Cacho 0,28,
+  Helton Monteiro 0,19**. Fonte primária:
+  `https://www.nenoticias.com.br/inor-valmir-mitidieri-pesquisa-governo-sergipe/`.
+  O `DSM.SE.jul` NÃO mudou: o registro no TSE cobre Governador e Senador, mas a matéria
+  publicou só governador e rejeição, então o Senado de julho segue com a rodada de 06 a
+  08/07. Não é descuido; é o que existe publicado.
+
+- 'IFP' ERA O INSTITUTO FRANÇA (19/08/2026). O `DGM.SE.jul` e o `DSM.SE.jul` traziam um
+  instituto chamado `IFP`, que não aparecia em nenhum outro mês. É o **Instituto França**:
+  os números (Mitidieri 40,67, Valmir 29,22, Ricardo Marques 4,89) batem exatamente com a
+  rodada de 30/06 a 02/07, N=1116, publicada pelo NE Notícias em 09/07. Renomeado para
+  'Instituto França' nos dois objetos, que é como março e agosto já escrevem. O gráfico do
+  estado não usa nome de instituto (o `stateChart` faz média por CANDIDATO), então a
+  troca é de rótulo, mas evita que uma rodada futura ache que falta o Instituto França em
+  julho e insira uma segunda linha do mesmo instituto no mesmo mês.
+
+- SENADO DO ECM EM AGOSTO: LACUNA QUE NÃO DÁ PARA FECHAR AINDA (19/08/2026). O
+  `DGM.SE.ago` tem a rodada do ECM (SE-02682/2026, campo 09 a 12/08, N=1500), mas o
+  `DSM.SE.ago` NÃO tem, e o ECM mediu Senado. O número existe publicado, só que apenas em
+  release de campanha: roacontece e faxaju, em 18/08, com texto idêntico assinado
+  "assessoria", dão SÓ o André Moura (15,07% no primeiro voto, a 2,86 pontos do primeiro
+  colocado, 24,07% somando primeiro e segundo voto, 9% na segunda opção). Não dizem quem
+  lidera nem com quanto. Pela regra de não inventar número, NÃO foi inserido: daria para
+  deduzir que o líder tem ~17,93%, mas não quem é. O que fecha isso é a tabela completa,
+  provavelmente no Cinform (que publicou o recorte de deputado estadual da mesma rodada) ou
+  na íntegra registrada no TSE.
+
 - REGISTRO QUE MUDA DEPOIS DE ENTRAR NA FILA (19/08/2026). A PB-07815/2026 (Índice
   Inteligência, N=2000) entrou na fila em 18/08 com campo de 13 a 15/08. No ZIP do dia
   19/08 o mesmo registro aparece com campo de **18 a 20/08** e divulgação em 18/08, que
