@@ -304,26 +304,6 @@
  "ultima_rodada": "2026-08-19T01:47:21.948475-03:00",
  "pendentes": [
   {
-   "proto": "BR005232026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "BADRA COMUNICACAO",
-   "cargo": "Presidente",
-   "campo": "12/08-18/08",
-   "div": "2026-08-17",
-   "n": "1500",
-   "visto": "2026-08-17"
-  },
-  {
-   "proto": "PE000802026",
-   "escopo": "PE",
-   "inst": "BADRA COMUNICACAO",
-   "cargo": "Governador",
-   "campo": "12/08-18/08",
-   "div": "2026-08-17",
-   "n": "1500",
-   "visto": "2026-08-17"
-  },
-  {
    "proto": "GO044452026",
    "escopo": "GO",
    "inst": "DIRECT PESQUISAS",

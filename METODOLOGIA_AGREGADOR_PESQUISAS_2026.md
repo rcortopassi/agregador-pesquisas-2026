@@ -168,6 +168,15 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   ainda. Antes de sair procurando íntegra que não existe, e principalmente antes de descartar o
   item como "registra e não publica", compare `DT_DIVULGACAO` com `DT_FIM_PESQUISA`: se a
   divulgação vem antes, o item é só PREMATURO, e o lugar dele é continuar na fila.
+  DESFECHO DESTE CASO, 19/08/2026: a Badra não era só prematura. O TRE-PE deferiu
+  liminar em 16/08 (processo 0601502-34.2026.6.17.0000) proibindo divulgar qualquer
+  resultado da PE-00080/2026, com multa de R$ 30 mil por ato, e um dos fundamentos foi
+  exatamente a divulgação marcada para antes do fim da coleta. Ou seja, o descompasso
+  entre DT_DIVULGACAO e DT_FIM_PESQUISA não é só sinal de que o número ainda não
+  existe: é também sinal de irregularidade que a Justiça Eleitoral pune. Os dois
+  registros (PE-00080 e o gêmeo BR-00523) saíram da fila como DESCARTE, e o detalhe
+  está no ALERTA_PESQUISAS_SUSPENSAS_JUDICIALMENTE_20260721.md. Antes de descartar por
+  "prematuro que nunca saiu", procure a liminar: ela costuma ser a explicação.
   REGRA GERAL QUE VALE PARA A FILA INTEIRA: item cuja divulgação é de HOJE quase nunca está
   publicado quando a rodada local acorda, porque o TSE libera a divulgação e o veículo publica ao
   longo do dia. Descartar no primeiro dia é o erro; o custo de deixar na fila é zero, ela sai

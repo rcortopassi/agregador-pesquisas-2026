@@ -257,3 +257,34 @@ informação relevante de transparência que o leitor do painel não tem.
   Real Time Big Data. NÃO afirmar identidade sem checar.
 - A contagem de "10 pesquisas suspensas no TO" vem de fonte que bloqueou acesso
   automatizado; foram individualizados 9 casos por outras fontes.
+
+## ATUALIZAÇÃO 19/08/2026 — PERNAMBUCO, BADRA (barrada ANTES de entrar)
+
+Caso novo e de tipo diferente dos acima: aqui a suspensão impediu a pesquisa de
+ENTRAR no painel, em vez de contaminar dado já publicado.
+
+- **PE-00080/2026** (Badra Comunicação, governador, campo 12 a 18/08, N=1500,
+  divulgação registrada para 17/08) e o gêmeo presidencial **BR-00523/2026**.
+- O TRE-PE deferiu tutela de urgência em 16/08/2026 (domingo), processo
+  **0601502-34.2026.6.17.0000**, a pedido da Coligação Pernambuco de Coração
+  (Raquel Lyra). Proibiu divulgar qualquer resultado por qualquer meio, incluindo
+  recortes, releases e gráficos, com **multa de R$ 30 mil por ato de descumprimento**.
+- Fundamentos alegados: quesitos estranhos ao cargo de governador; divulgação marcada
+  para 17/08 com coleta indo até 18/08; inconsistências de plano amostral (nível
+  econômico e ponderação); e amostragem por cota, não probabilística, apresentada com
+  margem de erro de 2,5 pontos e confiança de 95%. Sobre esse último ponto a decisão
+  ressalvou que a questão é técnica e ficou para depois da instrução.
+- DECISÃO NOSSA: os dois registros foram RESOLVIDOS COMO DESCARTE na fila do
+  `PENDENCIAS.md`. Nenhum número da Badra entrou em DG/DS, DGM/DSM ou PRES26, e não
+  deve entrar enquanto a liminar durar. Nada foi encontrado publicado por veículo
+  nenhum, o que é coerente com a liminar.
+- LIMITE DA APURAÇÃO, para ser honesto: a decisão foi noticiada por um blog
+  (sramos.net, reproduzindo o Blog do Mário Flávio) e não achei segunda fonte
+  independente para ESTE caso. O que sustenta a confiança é a conferência interna: o
+  número do registro, o número do processo, o N, as datas de campo e de divulgação e a
+  margem batem, um a um, com o que está no CSV do TSE. CUIDADO para não confundir com
+  três outras suspensões de PE que aparecem nas mesmas buscas e são de outros
+  institutos: Instituto Opinião (11/08/2026), Instituto Conecta PE-05044/2026
+  (01/07/2026) e uma de abril de 2026. Nenhuma delas é a Badra.
+- Se a liminar cair, o caminho é reabrir pelo registro no TSE, não pela fila: o item
+  já saiu dela.
