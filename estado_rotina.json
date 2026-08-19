@@ -302,37 +302,6 @@
   "eb0342b6-979f-46d5-ab83-949ff53dc67b"
  ],
  "ultima_rodada": "2026-08-19T19:35:50.320064-03:00",
- "pendentes": [
-  {
-   "proto": "PB078152026",
-   "escopo": "PB",
-   "inst": "INDICE INTELIGENCIA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "13/08-15/08",
-   "div": "2026-08-18",
-   "n": "2000",
-   "visto": "2026-08-18"
-  },
-  {
-   "proto": "SE089782026",
-   "escopo": "SE",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "13/08-17/08",
-   "div": "2026-08-18",
-   "n": "1220",
-   "visto": "2026-08-18"
-  },
-  {
-   "proto": "SE049302026",
-   "escopo": "SE",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "13/08-16/08",
-   "div": "2026-08-18",
-   "n": "1070",
-   "visto": "2026-08-18"
-  }
- ],
+ "pendentes": [],
  "verita_pendentes": []
 }

@@ -84,7 +84,9 @@ def radar_tse():
     hoje = agora().date()
     corte = hoje - timedelta(days=DIAS_JANELA)
 
-    nao_br = [r for r in pe if r["_UF"] != "BRASIL"]
+    # SG_UF, nao o nome do arquivo: o CSV de BRASIL guarda tambem os registros ESTADUAIS de
+    # quem perguntou presidente. Ver a nota em radar_tse.carregar().
+    nao_br = [r for r in pe if r["_SGUF"] != "BR"]
     gemeos = {}
     for r in nao_br:
         k = (r["NR_CNPJ_EMPRESA"], r["DT_INICIO_PESQUISA"],
@@ -115,9 +117,9 @@ def radar_tse():
             k = (r["NR_CNPJ_EMPRESA"], r["DT_INICIO_PESQUISA"],
                  r["DT_FIM_PESQUISA"], r["QT_ENTREVISTADO"])
             g = gemeos.get(k)
-            escopo = f"ESTADUAL[{g[0]['_UF']}]" if g else "NACIONAL?"
+            escopo = f"ESTADUAL[{g[0]['_SGUF']}]" if g else "NACIONAL?"
         else:
-            escopo = r["_UF"]
+            escopo = r["_SGUF"]
         itens.append({
             "proto": r["NR_PROTOCOLO_REGISTRO"],
             "escopo": escopo,
@@ -208,7 +210,7 @@ def valida_js(caminho):
 # ---------------------------------------------------------------- relatorio
 
 def escreve_pendencias(itens, pendentes, novos_agora, verita, ver_pendentes, ver_novos,
-                       expirados, nota_mercados, carimbo):
+                       expirados, nota_mercados, carimbo, erro_tse=None):
     L = []
     L.append("# Pendências do agregador")
     L.append("")
@@ -220,6 +222,12 @@ def escreve_pendencias(itens, pendentes, novos_agora, verita, ver_pendentes, ver
 
     L.append("## Precisa de olho humano nesta rodada")
     L.append("")
+    if erro_tse:
+        L.append("**O RADAR DO TSE FALHOU NESTA RODADA E NADA FOI VARRIDO.** Fila e tabela "
+                 "abaixo estao INCOMPLETAS: ausencia aqui nao quer dizer que nao houve "
+                 "pesquisa nova. Rode `python3 radar_tse.py` a mao antes de encerrar a "
+                 "rodada. Erro: %s" % erro_tse)
+        L.append("")
     if not pendentes and not ver_pendentes:
         L.append("Nada pendente. Tudo que o TSE registrou e o Veritá publicou já foi "
                  "olhado por uma rodada local e baixado da fila.")
@@ -330,11 +338,12 @@ def main():
     resumo = []
 
     # 1. TSE
+    erro_tse = None
     try:
         itens = radar_tse()
     except Exception as e:
         print("radar do TSE falhou:", e)
-        itens = []
+        itens, erro_tse = [], str(e)[:200]
     novos_tse = [] if semear else [i for i in itens if i["proto"] not in vistos_tse]
     if vistos_tse or semear:
         resumo.append(f"TSE: {len(itens)} divulgações na janela, {len(novos_tse)} novas")
@@ -433,7 +442,8 @@ def main():
             resumo.append("Painel: " + ", ".join(trocas))
 
         texto = escreve_pendencias(itens, fila, novos_agora, verita, vfila, ver_novos,
-                                   expirados, nota_mercados, carimbo)
+                                   expirados, nota_mercados, carimbo,
+                                   erro_tse=erro_tse)
         if not dry:
             with open(PENDENCIAS, "w", encoding="utf-8") as fh:
                 fh.write(texto + "\n")

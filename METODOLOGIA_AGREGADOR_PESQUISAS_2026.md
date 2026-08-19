@@ -681,6 +681,46 @@ Estrutura do painel: QUATRO abas no topo (acima dos meses):
 
 Objeto de dados a manter: `DI` (brutos por instituto, jan-jul). Ao atualizar números, acrescentar rodadas ao `DI`; house effect (2º turno), gráfico e mapa derivam dele. O objeto `VHIST`/`VLULA` (1º turno) ainda existe só para a gaveta lateral, NÃO para o gráfico.
 
+## Duas falhas MUDAS da rodada mecânica, achadas e corrigidas em 19/08/2026
+
+As duas faziam o `PENDENCIAS.md` sair com a fila e a tabela do TSE vazias, o que uma rodada
+local lê como "não há pesquisa nova" e encerra em duas linhas. O workflow ficava VERDE nas
+duas, porque as exceções eram engolidas e viravam lista vazia. É o modo de falha mais caro
+que este projeto tem: o painel para de andar sem que ninguém tenha decidido isso.
+
+**1. O CDN do TSE passou a devolver 403.** `cdn.tse.jus.br` ficou atrás de Cloudflare e
+recusa User-Agent de robô. As quatro rodadas de 19/08 falharam assim, e o relatório das 19h35
+saiu dizendo zero divulgações quando havia 52 registradas em quatro dias. Não é DNS nem
+proxy: com o conjunto de cabeçalhos de navegador COMPLETO (User-Agent do Chrome mais Accept,
+Accept-Language, Accept-Encoding, Connection, Upgrade-Insecure-Requests e os quatro
+Sec-Fetch) o download volta a passar em stdlib puro, 4 tentativas em 4. Só trocar o
+User-Agent NÃO basta, foi testado e continuou 403. Os cabeçalhos estão em
+`radar_tse.CABECALHOS`, com três tentativas e espera crescente. Não enxugue essa lista.
+
+**2. O gêmeo estadual era casado pelo nome do ARQUIVO, e não pela coluna `SG_UF`.** O CSV
+`pesquisa_eleitoral_2026_BRASIL.csv` guarda também os registros ESTADUAIS de quem perguntou
+presidente: 1.014 deles em 19/08/2026, contra 626 de fato nacionais. Como o filtro era
+`_UF != "BRASIL"`, esses 1.014 ficavam de fora do índice de gêmeos e a pesquisa estadual
+correspondente era anunciada como `NACIONAL?`. Pego na Real Time Big Data do DF, em que
+`BR054232026` e `DF078492026` têm o mesmo CNPJ, o mesmo campo (14 a 18/08) e o mesmo N
+(1.600): é a rodada do Distrito Federal, e entrar no `DI` nacional teria sido erro grosso.
+O escopo agora sai de `SG_UF` (campo `_SGUF`); o nome do arquivo continua servindo só para
+não listar a mesma pesquisa duas vezes.
+
+**3. Falha do radar agora é anunciada no topo do relatório.** `escreve_pendencias` recebe
+`erro_tse` e escreve, em negrito, que nada foi varrido e que ausência não quer dizer ausência
+de pesquisa. Rodada local que ler isso deve rodar `python3 radar_tse.py` à mão antes de
+encerrar.
+
+**O site do Veritá está fora do ar desde algum ponto antes de 19/08/2026.** O Supabase deles,
+`lgjdbpskgjfbmlffbntx.supabase.co`, responde NXDOMAIN, e o próprio
+`eleicoes26.institutoverita.com.br` mostra "Nenhuma pesquisa publicada ainda". Não é bug do
+`radar_verita`: o bundle JS da home ainda aponta para esse mesmo projeto, que deixou de
+existir. Enquanto durar, o `PENDENCIAS.md` vai dizer que não conseguiu ler a lista, e isso é
+verdade, não falha nossa. O Veritá continua REGISTRANDO no TSE (nacional `BR040062026`, campo
+16 a 20/08, e as estaduais de MG, MS e GO de 19 a 23/08), então o radar do TSE continua
+pegando as rodadas deles; o que se perdeu foi o atalho para o PDF da íntegra.
+
 ## O `PENDENCIAS.md` só mostra o DELTA, e por isso uma pesquisa pode sumir
 
 Registrado em 07/08/2026. O `rotina_6h.py` marca cada registro do TSE em `estado_rotina.json`

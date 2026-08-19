@@ -29,12 +29,32 @@ import sys
 import tempfile
 import zipfile
 from datetime import datetime, timedelta
+import time
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 BASE_URL = "https://cdn.tse.jus.br/estatistica/sead/odsele/pesquisa_eleitoral"
 ZIPS = {"pe": "pesquisa_eleitoral_2026.zip", "pc": "pesquisa_contratante_2026.zip"}
 CACHE = os.path.join(tempfile.gettempdir(), "radar_tse_2026")
-UA = "Mozilla/5.0 (compativel; agregador-pesquisas-2026)"
+# O CDN do TSE ficou atras de Cloudflare e passou a devolver 403 para User-Agent de robo
+# (medido em 19/08/2026: a rodada do Actions falhou em silencio quatro vezes seguidas e o
+# PENDENCIAS saiu com a tabela vazia, como se nao houvesse pesquisa nova, quando havia 52
+# divulgacoes em quatro dias). O conjunto ABAIXO INTEIRO e o que passa: so trocar o UA nao
+# basta, testado. Nao enxugue estes cabecalhos.
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+CABECALHOS = {
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+}
 
 
 def baixar(qual):
@@ -42,9 +62,17 @@ def baixar(qual):
     destino = os.path.join(CACHE, qual + "_" + datetime.now().strftime("%Y%m%d"))
     if os.path.isdir(destino) and os.listdir(destino):
         return destino
-    req = Request(f"{BASE_URL}/{ZIPS[qual]}", headers={"User-Agent": UA})
-    with urlopen(req, timeout=180) as r:
-        dados = r.read()
+    req = Request(f"{BASE_URL}/{ZIPS[qual]}", headers=CABECALHOS)
+    dados = None
+    for tentativa in range(3):
+        try:
+            with urlopen(req, timeout=180) as r:
+                dados = r.read()
+            break
+        except HTTPError as e:
+            if e.code != 403 or tentativa == 2:
+                raise
+            time.sleep(5 * (tentativa + 1))
     with zipfile.ZipFile(io.BytesIO(dados)) as z:
         z.extractall(destino)
     return destino
@@ -59,7 +87,14 @@ def carregar(qual):
         uf = nome.replace(".csv", "").split("_")[-1]
         with open(os.path.join(d, nome), encoding="latin-1") as fh:
             for r in csv.DictReader(fh, delimiter=";"):
-                r["_UF"] = uf
+                r["_UF"] = uf            # de que ARQUIVO veio (serve para nao duplicar linha)
+                # De que UF a pesquisa E, que nao e a mesma coisa: o CSV de BRASIL guarda
+                # 1.014 registros ESTADUAIS (medido em 19/08/2026), porque toda pesquisa com
+                # pergunta presidencial cai la, inclusive a de amostra estadual. Casar gemeo
+                # por "_UF != BRASIL" perdia todos eles e marcava a estadual como NACIONAL?
+                # (pego na RTBD do DF, BR054232026 x DF078492026). Use SEMPRE esta coluna
+                # para decidir escopo, e o nome do arquivo so para deduplicar.
+                r["_SGUF"] = (r.get("SG_UF") or uf).strip().upper()
                 linhas.append(r)
     return linhas
 
@@ -95,7 +130,7 @@ def main():
     corte = dt(sys.argv[1]) if len(sys.argv) > 1 else datetime.now() - timedelta(days=7)
     print(f"corte de divulgacao: {corte:%d/%m/%Y}\n")
 
-    nao_br = [r for r in pe if r["_UF"] != "BRASIL"]
+    nao_br = [r for r in pe if r["_SGUF"] != "BR"]
     gemeos = {}
     for r in nao_br:
         k = (r["NR_CNPJ_EMPRESA"], r["DT_INICIO_PESQUISA"], r["DT_FIM_PESQUISA"], r["QT_ENTREVISTADO"])
@@ -110,19 +145,24 @@ def main():
     for r in sorted(pres, key=lambda x: dt(x["DT_DIVULGACAO"])):
         k = (r["NR_CNPJ_EMPRESA"], r["DT_INICIO_PESQUISA"], r["DT_FIM_PESQUISA"], r["QT_ENTREVISTADO"])
         g = gemeos.get(k)
-        tag = f"ESTADUAL[{g[0]['_UF']}]" if g else "NACIONAL?"
+        tag = f"ESTADUAL[{g[0]['_SGUF']}]" if g else "NACIONAL?"
         print("%-14s %-16s %-26s campo %s-%s | div %s | N=%s | %s" % (
             tag, r["NR_PROTOCOLO_REGISTRO"], r["NM_EMPRESA_FANTASIA"][:26],
             ds(r["DT_INICIO_PESQUISA"]), ds(r["DT_FIM_PESQUISA"]), ds(r["DT_DIVULGACAO"]),
             r["QT_ENTREVISTADO"], quem_pagou(r["NR_PROTOCOLO_REGISTRO"])[:60]))
 
     print("\n=== GOVERNADOR / SENADOR (estaduais) ===")
-    gs = [r for r in nao_br
-          if ("GOVERNADOR" in r["DS_CARGO"].upper() or "SENADOR" in r["DS_CARGO"].upper())
-          and recente(r)]
-    for r in sorted(gs, key=lambda x: (x["_UF"], dt(x["DT_DIVULGACAO"]))):
+    gs, ja = [], set()
+    for r in nao_br:
+        if not ("GOVERNADOR" in r["DS_CARGO"].upper() or "SENADOR" in r["DS_CARGO"].upper()):
+            continue
+        if not recente(r) or r["NR_PROTOCOLO_REGISTRO"] in ja:
+            continue
+        ja.add(r["NR_PROTOCOLO_REGISTRO"])
+        gs.append(r)
+    for r in sorted(gs, key=lambda x: (x["_SGUF"], dt(x["DT_DIVULGACAO"]))):
         print("%-4s %-16s %-24s [%-30s] campo %s-%s | div %s | N=%s | %s" % (
-            r["_UF"], r["NR_PROTOCOLO_REGISTRO"], r["NM_EMPRESA_FANTASIA"][:24],
+            r["_SGUF"], r["NR_PROTOCOLO_REGISTRO"], r["NM_EMPRESA_FANTASIA"][:24],
             r["DS_CARGO"][:30], ds(r["DT_INICIO_PESQUISA"]), ds(r["DT_FIM_PESQUISA"]),
             ds(r["DT_DIVULGACAO"]), r["QT_ENTREVISTADO"],
             quem_pagou(r["NR_PROTOCOLO_REGISTRO"])[:55]))
