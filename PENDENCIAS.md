@@ -2,14 +2,12 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 19/08/2026 01:47. Mercados: Polymarket 63,5%/32,6%, Kalshi 65,0%/32,0%.
+Rodada de 19/08/2026 07:40. Mercados: Polymarket 63,5%/32,6%, Kalshi 65,0%/31,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
-- [aguardando desde 2026-08-17] TSE ESTADUAL[PE], BADRA COMUNICACAO (Presidente), campo 12/08-18/08, divulgação 2026-08-17, N=1500, registro BR005232026
-- [aguardando desde 2026-08-17] TSE PE, BADRA COMUNICACAO (Governador), campo 12/08-18/08, divulgação 2026-08-17, N=1500, registro PE000802026
 - [aguardando desde 2026-08-18] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 10/08-11/08, divulgação 2026-08-18, N=400, registro GO044452026
 - [aguardando desde 2026-08-18] TSE PB, INDICE INTELIGENCIA (Governador, Senador, Deputado Fede), campo 13/08-15/08, divulgação 2026-08-18, N=2000, registro PB078152026
 - [aguardando desde 2026-08-18] TSE SE, VERITA (Governador, Senador), campo 13/08-17/08, divulgação 2026-08-18, N=1220, registro SE089782026
