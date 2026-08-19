@@ -161,6 +161,18 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
   (`URLError ... nodename nor servname`), então rodar `radar_verita()` à mão pelo `python3 -c`
   engana e parece queda do Veritá. O `curl_cffi` com `impersonate="chrome"` resolve e é o que
   serve para apurar; o NXDOMAIN acima foi medido por ele, não pelo urllib.
+  MESMO PROBLEMA NO `radar_tse.py` (19/08/2026). Rodar o radar à mão na máquina local morre com
+  **HTTP 403** no `cdn.tse.jus.br`, e não é bloqueio do TSE contra nós: é o `urlopen` do script,
+  que o CDN recusa. O `curl` de linha de comando com User-Agent de navegador também toma 403.
+  O que passa é o `curl_cffi` com `impersonate="chrome"`. O radar reaproveita o que já está no
+  cache do dia, então o contorno é baixar os dois ZIPs por fora e descompactar onde ele procura:
+
+      D=$(python3 -c "import tempfile,os;print(os.path.join(tempfile.gettempdir(),'radar_tse_2026'))")
+      # curl_cffi baixa pesquisa_eleitoral_2026.zip e pesquisa_contratante_2026.zip para $D
+      # e extrai em $D/pe_AAAAMMDD e $D/pc_AAAAMMDD
+
+  Depois disso `python3 radar_tse.py AAAA-MM-DD` roda normalmente. NÃO alterar o `radar_tse.py`
+  para usar curl_cffi: ele roda no Actions, onde o urllib funciona, e a dependência não está lá.
 - DATA DE DIVULGAÇÃO PODE SER ANTERIOR AO FIM DO CAMPO (18/08/2026). Terceira armadilha da mesma
   família das duas acima, e a mais barata de cair. A Badra registrou PE-00080/2026 (e o gêmeo
   BR-00523/2026) com divulgação em 17/08 e campo de 12/08 a 18/08: o radar listou como "divulgação
