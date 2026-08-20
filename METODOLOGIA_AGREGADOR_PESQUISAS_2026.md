@@ -964,6 +964,25 @@ A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm n
   não existe número para procurar. Antes de dar um item por "não publicado", reler a
   linha no radar do dia: ela pode ter mudado desde que entrou na fila.
 
+- ITEM RESOLVIDO COMO "NAO PUBLICADO" PODE PUBLICAR DEPOIS, E A FILA NAO O REABRE
+  (20/08/2026). Os tres itens de 18/08 foram fechados sem insercao em 19/08 e reconferidos
+  na madrugada de 20/08, com o mesmo resultado: nenhum numero publicado. Fica o alerta de
+  cadencia, porque "nao publicou ate a data de divulgacao" nao quer dizer "nunca vai
+  publicar":
+  - **SE-04930/2026 (INOR, campo 13 a 16/08)**: o INOR publica com cerca de UMA SEMANA de
+    atraso sobre o fim de campo. A rodada anterior do mesmo instituto e do mesmo
+    contratante (SE-00281/2026, campo 27 a 29/07) so saiu no NE Noticias em 05 e 06/08.
+    Pela mesma regua, esta deve aparecer entre 22 e 24/08, quando a fila ja nao vai
+    lembrar dela. Vale procurar `search=INOR` no `nenoticias.com.br` nas rodadas desses
+    dias e, se sair, entra no `DGM.SE.ago` e no `DSM.SE.ago` como rodada mais recente do
+    instituto no mes.
+  - **SE-08978/2026 (Verita, contratante TV Atalaia)**: em 20/08, tres dias depois do fim
+    de campo, nada no portal do proprio contratante (`a8se.com`, que nao tem API REST e
+    precisa de navegador), nada nas APIs do `nenoticias`, `faxaju` e `roacontece`, e o
+    backend do instituto continua fora do ar. Com o TRE-SE tendo proibido a divulgacao do
+    Verita para governo e Senado em 12/08, o desfecho provavel e que este numero nunca
+    apareca. Nao insistir a cada rodada.
+
 ## Como atualizar
 
 1. Coletar as novas rodadas (Wikipédia/Gazeta/institutos).

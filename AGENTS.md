@@ -36,6 +36,24 @@ linhas: NÃO refaça o radar, NÃO rode mercados, NÃO mexa no carimbo, NÃO dê
 O arquivo é reescrito inteiro toda vez, então não o edite à mão. O estado mora em
 `estado_rotina.json`, que também é do script, não seu.
 
+**CONFIRA A FILA NO `estado_rotina.json` ANTES DE INVESTIGAR (20/08/2026).** O `PENDENCIAS.md`
+só é reescrito pelo Actions, de 6 em 6 horas, e o `--resolver` NÃO o reescreve: mexe apenas na
+chave `pendentes` do `estado_rotina.json`. Então, quando uma rodada local resolve itens DEPOIS
+da última rodada do Actions, o `PENDENCIAS.md` continua anunciando fila cheia até o próximo
+carimbo mecânico, e a rodada seguinte reabre trabalho já feito. Foi o que aconteceu na madrugada
+de 20/08: os três itens de 18/08 (PB-07815, SE-08978 e SE-04930) já tinham sido resolvidos às
+20h11 de 19/08, mas o `PENDENCIAS.md` de 19h35 ainda os listava, e eles foram reapurados do zero.
+
+O teste é de uma linha, e vale mais do que o texto do relatório:
+
+```bash
+python3 -c "import json;print(json.load(open('estado_rotina.json'))['pendentes'])"
+```
+
+Lista vazia quer dizer fila vazia, mesmo que o `PENDENCIAS.md` diga o contrário: sua rodada acaba
+ali. Se as duas discordarem, quem manda é o `estado_rotina.json`, e o motivo da divergência
+costuma estar na mensagem do último commit local.
+
 **A FILA NÃO SE ESVAZIA SOZINHA, e isso é de propósito (10/08/2026).** Até esta data a primeira
 seção era o diff de UMA rodada, e o protocolo era marcado como visto na mesma hora em que era
 anunciado. Como o ZIP do TSE é regerado uma vez por dia, de madrugada, toda novidade caía na
