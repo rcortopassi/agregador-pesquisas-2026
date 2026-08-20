@@ -342,16 +342,6 @@
    "visto": "2026-08-20"
   },
   {
-   "proto": "BA033672026",
-   "escopo": "BA",
-   "inst": "DATATRENDS",
-   "cargo": "Governador, Senador",
-   "campo": "15/08-17/08",
-   "div": "2026-08-19",
-   "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
    "proto": "CE001952026",
    "escopo": "CE",
    "inst": "IPEC",
@@ -402,26 +392,6 @@
    "visto": "2026-08-20"
   },
   {
-   "proto": "PR039532026",
-   "escopo": "PR",
-   "inst": "INSTITUTO RANKING PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "14/08-16/08",
-   "div": "2026-08-19",
-   "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "TO043782026",
-   "escopo": "TO",
-   "inst": "LUCRO ATIVO",
-   "cargo": "Governador, Senador",
-   "campo": "10/08-15/08",
-   "div": "2026-08-19",
-   "n": "1500",
-   "visto": "2026-08-20"
-  },
-  {
    "proto": "TO095732026",
    "escopo": "TO",
    "inst": "NEXUS",
@@ -439,26 +409,6 @@
    "campo": "15/08-19/08",
    "div": "2026-08-20",
    "n": "2020",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "GO071632026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "14/08-18/08",
-   "div": "2026-08-20",
-   "n": "2200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "GO036872026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "10/08-18/08",
-   "div": "2026-08-20",
-   "n": "4100",
    "visto": "2026-08-20"
   },
   {
