@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 20/08/2026 07:41. Mercados: Polymarket 63,5%/32,8%, Kalshi 63,0%/36,0%.
+Rodada de 20/08/2026 13:47. Mercados: Polymarket 63,5%/32,6%, Kalshi 65,0%/32,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -14,26 +14,14 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-20] TSE ESTADUAL[BA], DATATRENDS (Presidente), campo 15/08-17/08, divulgação 2026-08-19, N=1200, registro BR079472026
 - [aguardando desde 2026-08-20] TSE ESTADUAL[BA], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 14/08-18/08, divulgação 2026-08-19, N=1500, registro BR009762026
 - [aguardando desde 2026-08-20] TSE ESTADUAL[CE], IPEC (Presidente), campo 13/08-19/08, divulgação 2026-08-19, N=800, registro BR062312026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[DF], REAL TIME BIG DATA (Presidente), campo 14/08-18/08, divulgação 2026-08-19, N=1600, registro BR054232026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[RN], PERFIL PESQUISAS TECNICAS (Presidente), campo 13/08-16/08, divulgação 2026-08-19, N=1600, registro BR061882026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[SE], ECM-PESQUISAS (Presidente), campo 09/08-12/08, divulgação 2026-08-19, N=1500, registro BR027862026
 - [aguardando desde 2026-08-20] TSE ESTADUAL[TO], NEXUS (Presidente), campo 13/08-18/08, divulgação 2026-08-19, N=1200, registro BR019012026
-- [aguardando desde 2026-08-20] TSE GO, EXATA.GO (Governador, Senador), campo 10/08-15/08, divulgação 2026-08-19, N=3200, registro GO038442026
 - [aguardando desde 2026-08-20] TSE PR, INSTITUTO RANKING PESQUISA (Governador, Senador), campo 14/08-16/08, divulgação 2026-08-19, N=1200, registro PR039532026
-- [aguardando desde 2026-08-20] TSE RN, PERFIL PESQUISAS TECNICAS (Governador, Senador, Deputado Fede), campo 13/08-16/08, divulgação 2026-08-19, N=1600, registro RN005222026
-- [aguardando desde 2026-08-20] TSE SP, #NULO# (Governador, Senador), campo 16/08-18/08, divulgação 2026-08-19, N=1680, registro SP089132026
 - [aguardando desde 2026-08-20] TSE TO, LUCRO ATIVO (Governador, Senador), campo 10/08-15/08, divulgação 2026-08-19, N=1500, registro TO043782026
 - [aguardando desde 2026-08-20] TSE TO, NEXUS (Governador, Senador), campo 13/08-18/08, divulgação 2026-08-19, N=1200, registro TO095732026
 - [aguardando desde 2026-08-20] TSE BA, VERITA (Governador, Senador), campo 15/08-19/08, divulgação 2026-08-20, N=2020, registro BA028062026
-- [aguardando desde 2026-08-20] TSE CE, REAL TIME BIG DATA (Governador, Senador), campo 15/08-19/08, divulgação 2026-08-20, N=1600, registro CE082232026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[CE], REAL TIME BIG DATA (Presidente), campo 15/08-19/08, divulgação 2026-08-20, N=1600, registro BR087912026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[PA], ATLASINTEL (Presidente), campo 14/08-19/08, divulgação 2026-08-20, N=1200, registro BR062672026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[PI], AMOSTRAGEM OPINIAO E MERCADO (Presidente), campo 08/08-12/08, divulgação 2026-08-20, N=1137, registro BR057142026
 - [aguardando desde 2026-08-20] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 14/08-18/08, divulgação 2026-08-20, N=2200, registro GO071632026
 - [aguardando desde 2026-08-20] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 10/08-18/08, divulgação 2026-08-20, N=4100, registro GO036872026
 - [aguardando desde 2026-08-20] TSE MA, IPSENSUS PESQUISAS (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-20, N=1480, registro MA099712026
-- [aguardando desde 2026-08-20] TSE PA, ATLASINTEL (Governador, Senador), campo 14/08-19/08, divulgação 2026-08-20, N=1200, registro PA045332026
-- [aguardando desde 2026-08-20] TSE PI, AMOSTRAGEM OPINIAO E MERCADO (Governador, Senador, Deputado Fede), campo 08/08-12/08, divulgação 2026-08-20, N=1137, registro PI021882026
 - [aguardando desde 2026-08-20] TSE RN, DATA CAPITAL PESQUISAS E CON (Governador, Senador, Deputado Fede), campo 15/08-18/08, divulgação 2026-08-20, N=2100, registro RN060932026
 - [aguardando desde 2026-08-20] TSE TO, VERITA (Governador, Senador), campo 15/08-19/08, divulgação 2026-08-20, N=1220, registro TO078962026
 
