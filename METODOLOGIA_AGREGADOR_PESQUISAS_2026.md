@@ -983,6 +983,30 @@ A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm n
     Verita para governo e Senado em 12/08, o desfecho provavel e que este numero nunca
     apareca. Nao insistir a cada rodada.
 
+## Nomes de urna e cenarios que nao entram (rodada de 20/08/2026)
+
+- **RN: "Cadu de Lula" E "Cadu Xavier"**, a mesma pessoa. O candidato do PT ao governo do RN
+  foi lancado como Cadu Xavier e registrou na Justica Eleitoral o nome de urna Cadu de Lula, e
+  a imprensa potiguar passou a usar as duas formas trocando de uma materia para outra. O painel
+  ja tinha SEIS rodadas de agosto escritas como `Cadu Xavier`, entao a rodada Perfil/Blog do BG
+  entrou tambem como `Cadu Xavier`. Se algum dia entrar como `Cadu de Lula`, o `stateBanner`
+  vai anunciar dois terceiros colocados numa corrida de um so.
+
+- **CE: `Vera Lucia` no Ceara nao e a `Vera Lucia` de Sao Paulo.** No Ceara e a candidata do
+  Novo ao governo, e em Sao Paulo e a do PSTU. Como o `stateBanner` agrega por UF e mes, nao ha
+  colisao, mas nao vale "consertar" o nome achando que e a mesma pessoa. Duas fontes
+  independentes (Gazeta do Povo e GCMais) escrevem assim a rodada do Real Time Big Data de
+  15 a 19/08.
+
+- **PI: o cenario de Senado do Instituto Amostragem NAO ENTRA.** Sao tres motivos somados, e
+  o terceiro sozinho ja bastaria. Primeiro, os percentuais saem em VOTOS VALIDOS, e o `DSM`
+  guarda amostra total. Segundo, os candidatos sao apresentados ACOMPANHADOS DO APOIO POLITICO
+  ("Marcelo Castro, com o apoio do presidente Lula"), o que nao e a mesma pergunta que os
+  outros institutos fazem. Terceiro, em 18/08/2026 a desembargadora Lucicleide Pereira Belo
+  suspendeu liminarmente a divulgacao da rodada anterior do mesmo instituto para senador
+  (PI-00748/2026). Da rodada PI-02188/2026 (campo 8 a 12/08) entrou SO o governador, e so os
+  dois numeros publicados em amostra total: Rafael Fonteles 58,84 e Joel Rodrigues 15,3.
+
 ## Como atualizar
 
 1. Coletar as novas rodadas (Wikipédia/Gazeta/institutos).

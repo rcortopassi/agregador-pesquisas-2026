@@ -392,36 +392,6 @@
    "visto": "2026-08-20"
   },
   {
-   "proto": "BR054232026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "14/08-18/08",
-   "div": "2026-08-19",
-   "n": "1600",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BR061882026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "PERFIL PESQUISAS TECNICAS",
-   "cargo": "Presidente",
-   "campo": "13/08-16/08",
-   "div": "2026-08-19",
-   "n": "1600",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BR027862026",
-   "escopo": "ESTADUAL[SE]",
-   "inst": "ECM-PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "09/08-12/08",
-   "div": "2026-08-19",
-   "n": "1500",
-   "visto": "2026-08-20"
-  },
-  {
    "proto": "BR019012026",
    "escopo": "ESTADUAL[TO]",
    "inst": "NEXUS",
@@ -432,16 +402,6 @@
    "visto": "2026-08-20"
   },
   {
-   "proto": "GO038442026",
-   "escopo": "GO",
-   "inst": "EXATA.GO",
-   "cargo": "Governador, Senador",
-   "campo": "10/08-15/08",
-   "div": "2026-08-19",
-   "n": "3200",
-   "visto": "2026-08-20"
-  },
-  {
    "proto": "PR039532026",
    "escopo": "PR",
    "inst": "INSTITUTO RANKING PESQUISA",
@@ -449,26 +409,6 @@
    "campo": "14/08-16/08",
    "div": "2026-08-19",
    "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "RN005222026",
-   "escopo": "RN",
-   "inst": "PERFIL PESQUISAS TECNICAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "13/08-16/08",
-   "div": "2026-08-19",
-   "n": "1600",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "SP089132026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "16/08-18/08",
-   "div": "2026-08-19",
-   "n": "1680",
    "visto": "2026-08-20"
   },
   {
@@ -502,46 +442,6 @@
    "visto": "2026-08-20"
   },
   {
-   "proto": "CE082232026",
-   "escopo": "CE",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "15/08-19/08",
-   "div": "2026-08-20",
-   "n": "1600",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BR087912026",
-   "escopo": "ESTADUAL[CE]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "15/08-19/08",
-   "div": "2026-08-20",
-   "n": "1600",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BR062672026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "14/08-19/08",
-   "div": "2026-08-20",
-   "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BR057142026",
-   "escopo": "ESTADUAL[PI]",
-   "inst": "AMOSTRAGEM OPINIAO E MERCADO",
-   "cargo": "Presidente",
-   "campo": "08/08-12/08",
-   "div": "2026-08-20",
-   "n": "1137",
-   "visto": "2026-08-20"
-  },
-  {
    "proto": "GO071632026",
    "escopo": "GO",
    "inst": "IGAPE- INSTITUTO GAZETA DE P",
@@ -569,26 +469,6 @@
    "campo": "15/08-20/08",
    "div": "2026-08-20",
    "n": "1480",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "PA045332026",
-   "escopo": "PA",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "14/08-19/08",
-   "div": "2026-08-20",
-   "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "PI021882026",
-   "escopo": "PI",
-   "inst": "AMOSTRAGEM OPINIAO E MERCADO",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "08/08-12/08",
-   "div": "2026-08-20",
-   "n": "1137",
    "visto": "2026-08-20"
   },
   {
