@@ -351,26 +351,6 @@
  "ultima_rodada": "2026-08-21T01:49:57.502152-03:00",
  "pendentes": [
   {
-   "proto": "BA097622026",
-   "escopo": "BA",
-   "inst": "BOAS IDEIAS, ESTRATEGIA E IN",
-   "cargo": "Governador, Senador",
-   "campo": "14/08-18/08",
-   "div": "2026-08-19",
-   "n": "1500",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "CE001952026",
-   "escopo": "CE",
-   "inst": "IPEC",
-   "cargo": "Governador, Senador",
-   "campo": "13/08-19/08",
-   "div": "2026-08-19",
-   "n": "800",
-   "visto": "2026-08-20"
-  },
-  {
    "proto": "BR079472026",
    "escopo": "ESTADUAL[BA]",
    "inst": "DATATRENDS",
@@ -378,26 +358,6 @@
    "campo": "15/08-17/08",
    "div": "2026-08-19",
    "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BR009762026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "BOAS IDEIAS, ESTRATEGIA E IN",
-   "cargo": "Presidente",
-   "campo": "14/08-18/08",
-   "div": "2026-08-19",
-   "n": "1500",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BR062312026",
-   "escopo": "ESTADUAL[CE]",
-   "inst": "IPEC",
-   "cargo": "Presidente",
-   "campo": "13/08-19/08",
-   "div": "2026-08-19",
-   "n": "800",
    "visto": "2026-08-20"
   },
   {
@@ -418,46 +378,6 @@
    "campo": "13/08-18/08",
    "div": "2026-08-19",
    "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BA028062026",
-   "escopo": "BA",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "15/08-19/08",
-   "div": "2026-08-20",
-   "n": "2020",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "MA099712026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "15/08-20/08",
-   "div": "2026-08-20",
-   "n": "1480",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "RN060932026",
-   "escopo": "RN",
-   "inst": "DATA CAPITAL PESQUISAS E CON",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "15/08-18/08",
-   "div": "2026-08-20",
-   "n": "2100",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "TO078962026",
-   "escopo": "TO",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "15/08-19/08",
-   "div": "2026-08-20",
-   "n": "1220",
    "visto": "2026-08-20"
   },
   {
