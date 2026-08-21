@@ -983,6 +983,32 @@ A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm n
     Verita para governo e Senado em 12/08, o desfecho provavel e que este numero nunca
     apareca. Nao insistir a cada rodada.
 
+## Rodada de 21/08/2026 (segunda passagem): Rio Grande do Sul de agosto
+
+- **O RS DE AGOSTO ENTROU COM A PARANA PESQUISAS DE 18 A 20/08** (RS-03898/2026, N=1504, 67
+  municipios, margem 2,6, paga pelo PL por R$ 135.200). Governador: Zucco 34,4, Brizola 31,4,
+  Gabriel Souza 11,3, Maranata 4,1, com Cesar Pontes 2,3, Rejane de Oliveira 1,3 e Priscila
+  Voigt 1,1 no `DG`. Senado: d'Avila 33,6, van Hattem 26,9, Rigotto 24,3, Pimenta 22,5 e
+  Sanderson 16,0. Entrou nos quatro objetos (`DGM`, `DSM`, `DG`, `DS`) e as duas chaves de
+  contratante foram marcadas no `CONTR` como partido.
+- **UM ITEM PODE NASCER PUBLICADO ENTRE DUAS RODADAS LOCAIS.** A RS-03898 foi anunciada como
+  NOVA pela rodada do Actions de 01h49 e a materia do Poder360 so saiu as 7h00, ou seja, depois
+  que a rodada local anterior ja estava rodando. Quem pegar a fila logo apos o Actions vai
+  achar item sem numero que ganha numero uma hora depois. Nao dar por "nao publicado" item cuja
+  divulgacao e do proprio dia: o certo e deixar na fila e olhar de novo na rodada seguinte.
+- **A PARANA PESQUISAS PUBLICA O SENADO NA SOMA DA 1a COM A 2a OPCAO**, igual a DataTrends da
+  Bahia, e a propria arte diz isso na observacao 2. Por isso a coluna do `DSM.RS.ago` passa de
+  100 e o aviso ficou no `t2` do `DS.RS`. O `DSM.RS.jul` da mesma empresa ja seguia essa regua,
+  entao a serie e comparavel dentro do instituto.
+- **SEM 2o TURNO NO RS.** A rodada nao publicou simulacao de 2o turno para o governo, so 1o
+  turno e rejeicao, entao o `t2` do `DG.RS` ficou vazio e o placar "Brizola 35 x Zucco 31" da
+  Genial/Quaest de 24 a 28/07 saiu do mapa por ser rodada mais velha. Nao e perda de dado: o
+  numero da Quaest continua no `DGM.RS.jul`.
+- **NEXUS NO TOCANTINS CONTINUA SEM NUMERO.** TO-09573/2026 e o gemeo BR-01901/2026 tinham
+  divulgacao em 19/08 e ate a manha de 21/08 nao ha materia, nem no Poder360, nem em busca por
+  protocolo, nem nos portais do estado. Contratante e a federacao das radios comunitarias do
+  Tocantins, entao a divulgacao, se vier, sai em radio local. Fica na fila.
+
 ## Rodada de 21/08/2026 (7h30): CE, BA e MA de agosto
 
 - **INSTITUTO QUE SOLTA A MESMA RODADA EM PARCELAS, UM CARGO POR DIA.** A DataTrends
