@@ -983,6 +983,59 @@ A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm n
     Verita para governo e Senado em 12/08, o desfecho provavel e que este numero nunca
     apareca. Nao insistir a cada rodada.
 
+## Rodada de 21/08/2026 (7h30): CE, BA e MA de agosto
+
+- **INSTITUTO QUE SOLTA A MESMA RODADA EM PARCELAS, UM CARGO POR DIA.** A DataTrends
+  registrou BA-03367/2026 e o gemeo BR-07947/2026 numa unica pesquisa de campo (15 a 17/08,
+  N=1200) e publicou GOVERNADOR em 19 e 20/08, SENADO so em 21/08 e a parte PRESIDENCIAL ainda
+  nao publicou. A rodada de 20/08 fechou o governador e nao tinha como ver o resto. Licao para
+  quem for dar um item por "nao publicado": conferir a data de cada CARGO, nao a da pesquisa.
+  Enquanto um cargo do mesmo registro ainda esta saindo, o registro nao esta morto. Por isso a
+  BR-07947/2026 ficou DELIBERADAMENTE na fila nesta rodada, e nao foi resolvida.
+  O Senado da BA entrou agora no `DSM.BA.ago` e no `DS.BA`, com fonte primaria no Blog do
+  Waldiney Passos (21/08).
+- **SENADO DA BAHIA MISTURA DUAS REGUAS, E ISSO NAO E ERRO DE DIGITACAO.** O `DSM.BA.ago` tem
+  Real Time Big Data com Rui Costa em 25 e DataTrends com Rui Costa em 51. O RTBD publica o
+  PRIMEIRO voto (a soma da coluna fecha em 100); Parana Pesquisas e DataTrends publicam a SOMA
+  do primeiro com o segundo voto, e a coluna passa de 100 porque cada eleitor escolhe dois
+  nomes. Nao "corrigir" o 51 para 25: o numero esta certo e a fonte diz isso com todas as
+  letras. O `DS.BA` traz o aviso no campo `t2`.
+- **O RELEASE DO IPSOS-IPEC E MELHOR QUE A MATERIA, E DA OS DOIS REGISTROS DE UMA VEZ.** A
+  CE-00195/2026 (estadual) e a BR-06231/2026 (presidencial no CE) sao a MESMA coleta, e o
+  release do Ipsos traz governador, Senado e presidente no mesmo texto, com a ficha tecnica no
+  fim. O Poder360 hospeda o PDF em `static.poder360.com.br`, e `pdftotext -layout` le tudo sem
+  precisar renderizar imagem. Caminho para achar: buscar no Google pelo protocolo, que os
+  portais regionais sempre citam.
+  ARMADILHA DE DATA, ja conhecida e confirmada aqui: o registro no TSE diz campo de 13 a 19/08,
+  o release do proprio instituto diz 14 a 17/08. Vale a regra do `AGENTS.md`, que manda usar o
+  REGISTRO, mas a diferenca importa na hora de decidir qual rodada e a mais recente do estado.
+- **PRES26.CE NAO MUDOU, E FOI DECISAO, NAO ESQUECIMENTO.** O Ipsos-Ipec publicou presidencial
+  no Ceara (Lula 57, Flavio 24; 2o turno Lula 61 x Flavio 29), mas o `PRES26.CE` ja tinha o Real
+  Time Big Data de 15 a 19/08, cujo campo e mais recente pelos dois criterios (registro e
+  release). Ficou o RTBD. O mesmo raciocinio vale para o `DG.CE` e o `DS.CE`.
+- **VERITA NA BAHIA E NO TOCANTINS: NAO INSISTIR.** BA-02806/2026 e TO-07896/2026 tinham
+  divulgacao em 20/08 e nada apareceu. O instituto acumula suspensoes em 13 estados e no DF, e
+  no proprio Tocantins ja houve decisao apontando "vicio substancial" na fonte da amostra.
+  Cuidado com um falso positivo que aparece na busca: ha post do Instituto Verita de 30/07 com
+  a Bahia em ACM Neto 39 x Jeronimo 38, que e rodada ANTERIOR e nao tem registro de campo em
+  agosto no ZIP do TSE (os registros baianos do Verita sao mar, abr, mai e ago).
+- **REGISTRO QUE TROCA DE PROTOCOLO, NAO SO DE DATA.** A RN-06093/2026 (Data Capital, N=2100,
+  campo 15 a 18/08, divulgacao 20/08) simplesmente NAO EXISTE MAIS no ZIP do dia 20/08. No lugar
+  dela ha a RN-02513/2026, do mesmo instituto, mesmo campo, mesmo N, com divulgacao empurrada
+  para 25/08. E o irmao do caso PB-07815 de 19/08: la o registro mudou de data, aqui mudou de
+  numero. Antes de sair procurando numero de um item da fila, conferir se o protocolo ainda
+  esta no ZIP; se nao estiver, foi retificado e nao ha o que procurar.
+- **AGREGADOR DO PODER360 NAO SERVE COMO FONTE.** Em 20/08 o Poder360 abriu o acesso ao
+  agregador dele (`drive.poder360.com.br/agregador-de-pesquisas`), com mais de 620 levantamentos
+  de 2026. Foi testado: o dado nao vem por API publica nem esta no bundle JS, e o recorte
+  estadual cai em paywall ("assine / entrar"). Nao vale gastar rodada tentando raspar de la.
+- **DATAFOLHA NACIONAL COM PABLO MARCAL SAI EM 21/08.** A Gazeta do Povo anunciou em 20/08 que
+  o Datafolha publicaria na sexta a primeira nacional depois do registro das candidaturas, com
+  DOIS cenarios, um com e outro sem Pablo Marcal (que voltou ao PRTB por liminar e esta
+  inelegivel ate 2032, com o TSE tendo ate 14/09 para decidir). Quando entrar no `DI`, escolher
+  UM cenario e dizer qual na nota do mes: empilhar os dois viraria duas linhas do mesmo
+  instituto no mesmo mes, que e exatamente o que a regra de uma rodada por instituto proibe.
+
 ## Nomes de urna e cenarios que nao entram (rodada de 20/08/2026)
 
 - **RN: "Cadu de Lula" E "Cadu Xavier"**, a mesma pessoa. O candidato do PT ao governo do RN
