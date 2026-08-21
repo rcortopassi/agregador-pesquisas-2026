@@ -2,42 +2,33 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 21/08/2026 01:49. Mercados: Polymarket 63,5%/32,9%, Kalshi 65,0%/36,0%.
+Rodada de 21/08/2026 07:41. Mercados: Polymarket 63,5%/32,9%, Kalshi 65,0%/36,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
-- [aguardando desde 2026-08-20] TSE BA, BOAS IDEIAS, ESTRATEGIA E IN (Governador, Senador), campo 14/08-18/08, divulgação 2026-08-19, N=1500, registro BA097622026
-- [aguardando desde 2026-08-20] TSE CE, IPEC (Governador, Senador), campo 13/08-19/08, divulgação 2026-08-19, N=800, registro CE001952026
 - [aguardando desde 2026-08-20] TSE ESTADUAL[BA], DATATRENDS (Presidente), campo 15/08-17/08, divulgação 2026-08-19, N=1200, registro BR079472026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[BA], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 14/08-18/08, divulgação 2026-08-19, N=1500, registro BR009762026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[CE], IPEC (Presidente), campo 13/08-19/08, divulgação 2026-08-19, N=800, registro BR062312026
 - [aguardando desde 2026-08-20] TSE ESTADUAL[TO], NEXUS (Presidente), campo 13/08-18/08, divulgação 2026-08-19, N=1200, registro BR019012026
 - [aguardando desde 2026-08-20] TSE TO, NEXUS (Governador, Senador), campo 13/08-18/08, divulgação 2026-08-19, N=1200, registro TO095732026
-- [aguardando desde 2026-08-20] TSE BA, VERITA (Governador, Senador), campo 15/08-19/08, divulgação 2026-08-20, N=2020, registro BA028062026
-- [aguardando desde 2026-08-20] TSE MA, IPSENSUS PESQUISAS (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-20, N=1480, registro MA099712026
-- [aguardando desde 2026-08-20] TSE RN, DATA CAPITAL PESQUISAS E CON (Governador, Senador, Deputado Fede), campo 15/08-18/08, divulgação 2026-08-20, N=2100, registro RN060932026
-- [aguardando desde 2026-08-20] TSE TO, VERITA (Governador, Senador), campo 15/08-19/08, divulgação 2026-08-20, N=1220, registro TO078962026
-- [NOVO] TSE ESTADUAL[DF], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=910, registro BR020942026
-- [NOVO] TSE ESTADUAL[MT], MT DADOS PESQUISAS (Presidente), campo 15/08-20/08, divulgação 2026-08-21, N=3080, registro BR074552026
-- [NOVO] TSE ESTADUAL[PI], INSTITUTO ESTIMATIVA (Presidente), campo 16/08-17/08, divulgação 2026-08-21, N=301, registro BR094792026
-- [NOVO] TSE ESTADUAL[PI], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=826, registro BR056722026
-- [NOVO] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR043962026
-- [NOVO] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR084482026
-- [NOVO] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR001092026
-- [NOVO] TSE ESTADUAL[SP], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1610, registro BR071852026
-- [NOVO] TSE MG, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro MG004462026
-- [NOVO] TSE MT, META PUBLICIDADE E PESQUISA (Senador), campo 12/08-13/08, divulgação 2026-08-21, N=500, registro MT024222026
-- [NOVO] TSE MT, MT DADOS PESQUISAS (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-21, N=3080, registro MT043902026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 18/08-20/08, divulgação 2026-08-21, N=2058, registro BR044962026
-- [NOVO] TSE NACIONAL?, VERITA (Presidente), campo 16/08-20/08, divulgação 2026-08-21, N=3840, registro BR040062026
-- [NOVO] TSE PE, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro PE015282026
-- [NOVO] TSE PI, INSTITUTO ESTIMATIVA (Governador, Senador, Deputado Fede), campo 16/08-17/08, divulgação 2026-08-21, N=301, registro PI041382026
-- [NOVO] TSE RJ, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro RJ029452026
-- [NOVO] TSE RO, INSTITUTO PHOENIX & ASSOCIAD (Governador, Senador, Deputado Fede), campo 15/08-18/08, divulgação 2026-08-21, N=961, registro RO067472026
-- [NOVO] TSE RS, #NULO# (Governador, Senador), campo 18/08-20/08, divulgação 2026-08-21, N=1504, registro RS038982026
-- [NOVO] TSE SP, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1610, registro SP018062026
+- [aguardando desde 2026-08-21] TSE ESTADUAL[DF], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=910, registro BR020942026
+- [aguardando desde 2026-08-21] TSE ESTADUAL[MT], MT DADOS PESQUISAS (Presidente), campo 15/08-20/08, divulgação 2026-08-21, N=3080, registro BR074552026
+- [aguardando desde 2026-08-21] TSE ESTADUAL[PI], INSTITUTO ESTIMATIVA (Presidente), campo 16/08-17/08, divulgação 2026-08-21, N=301, registro BR094792026
+- [aguardando desde 2026-08-21] TSE ESTADUAL[PI], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=826, registro BR056722026
+- [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR043962026
+- [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR084482026
+- [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR001092026
+- [aguardando desde 2026-08-21] TSE ESTADUAL[SP], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1610, registro BR071852026
+- [aguardando desde 2026-08-21] TSE MG, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro MG004462026
+- [aguardando desde 2026-08-21] TSE MT, META PUBLICIDADE E PESQUISA (Senador), campo 12/08-13/08, divulgação 2026-08-21, N=500, registro MT024222026
+- [aguardando desde 2026-08-21] TSE MT, MT DADOS PESQUISAS (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-21, N=3080, registro MT043902026
+- [aguardando desde 2026-08-21] TSE NACIONAL?, #NULO# (Presidente), campo 18/08-20/08, divulgação 2026-08-21, N=2058, registro BR044962026
+- [aguardando desde 2026-08-21] TSE NACIONAL?, VERITA (Presidente), campo 16/08-20/08, divulgação 2026-08-21, N=3840, registro BR040062026
+- [aguardando desde 2026-08-21] TSE PE, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro PE015282026
+- [aguardando desde 2026-08-21] TSE PI, INSTITUTO ESTIMATIVA (Governador, Senador, Deputado Fede), campo 16/08-17/08, divulgação 2026-08-21, N=301, registro PI041382026
+- [aguardando desde 2026-08-21] TSE RJ, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro RJ029452026
+- [aguardando desde 2026-08-21] TSE RO, INSTITUTO PHOENIX & ASSOCIAD (Governador, Senador, Deputado Fede), campo 15/08-18/08, divulgação 2026-08-21, N=961, registro RO067472026
+- [aguardando desde 2026-08-21] TSE SP, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1610, registro SP018062026
 
 ## Últimas publicações do Veritá
 
