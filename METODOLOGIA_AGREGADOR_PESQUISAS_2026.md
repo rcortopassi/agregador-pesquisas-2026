@@ -1004,6 +1004,15 @@ A fonte (agregador Wikipédia) NÃO separa brancos/nulos de indecisos — vêm n
   turno e rejeicao, entao o `t2` do `DG.RS` ficou vazio e o placar "Brizola 35 x Zucco 31" da
   Genial/Quaest de 24 a 28/07 saiu do mapa por ser rodada mais velha. Nao e perda de dado: o
   numero da Quaest continua no `DGM.RS.jul`.
+- **PUSH DA RODADA LOCAL EM CIMA DA RODADA DO ACTIONS DERRUBA O WORKFLOW.** Em 21/08/2026 o
+  `rotina.yml` comecou as 10h40m20s UTC e o push desta rodada entrou as 10h40m23s. O workflow
+  commitou, tentou `pull --rebase`, bateu CONFLITO no `electoralpolls.html` (os dois lados
+  mexem na linha do carimbo) e morreu com exit 1: nao publicou, nao gravou mercado nenhum e
+  perdeu o `PENDENCIAS.md` que tinha acabado de gerar. O horario do cron do GitHub anda,
+  entao nao da para "evitar a janela". A regra pratica e outra: DEPOIS de dar push numa rodada
+  local, rodar `gh run list --workflow=rotina.yml --limit 2`; se a rodada mecanica estiver
+  vermelha por conflito, refazer a mao com `python3 rotina_6h.py`, publicar e commitar. Foi o
+  que se fez aqui, e o painel ficou com carimbo de 07h41 e os mercados do dia.
 - **NEXUS NO TOCANTINS CONTINUA SEM NUMERO.** TO-09573/2026 e o gemeo BR-01901/2026 tinham
   divulgacao em 19/08 e ate a manha de 21/08 nao ha materia, nem no Poder360, nem em busca por
   protocolo, nem nos portais do estado. Contratante e a federacao das radios comunitarias do
