@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 21/08/2026 13:47. Mercados: Polymarket 63,5%/32,8%, Kalshi 64,0%/37,0%.
+Rodada de 21/08/2026 19:36. Mercados: Polymarket 62,5%/33,6%, Kalshi 62,0%/36,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -13,7 +13,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-20] TSE TO, NEXUS (Governador, Senador), campo 13/08-18/08, divulgação 2026-08-19, N=1200, registro TO095732026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[DF], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=910, registro BR020942026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[MT], MT DADOS PESQUISAS (Presidente), campo 15/08-20/08, divulgação 2026-08-21, N=3080, registro BR074552026
-- [aguardando desde 2026-08-21] TSE ESTADUAL[PI], INSTITUTO ESTIMATIVA (Presidente), campo 16/08-17/08, divulgação 2026-08-21, N=301, registro BR094792026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[PI], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=826, registro BR056722026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR043962026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR084482026
@@ -25,9 +24,7 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-21] TSE NACIONAL?, #NULO# (Presidente), campo 18/08-20/08, divulgação 2026-08-21, N=2058, registro BR044962026
 - [aguardando desde 2026-08-21] TSE NACIONAL?, VERITA (Presidente), campo 16/08-20/08, divulgação 2026-08-21, N=3840, registro BR040062026
 - [aguardando desde 2026-08-21] TSE PE, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro PE015282026
-- [aguardando desde 2026-08-21] TSE PI, INSTITUTO ESTIMATIVA (Governador, Senador, Deputado Fede), campo 16/08-17/08, divulgação 2026-08-21, N=301, registro PI041382026
 - [aguardando desde 2026-08-21] TSE RJ, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro RJ029452026
-- [aguardando desde 2026-08-21] TSE RO, INSTITUTO PHOENIX & ASSOCIAD (Governador, Senador, Deputado Fede), campo 15/08-18/08, divulgação 2026-08-21, N=961, registro RO067472026
 - [aguardando desde 2026-08-21] TSE SP, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1610, registro SP018062026
 
 ## Últimas publicações do Veritá
