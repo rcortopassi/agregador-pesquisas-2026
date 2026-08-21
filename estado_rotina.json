@@ -401,16 +401,6 @@
    "visto": "2026-08-21"
   },
   {
-   "proto": "BR094792026",
-   "escopo": "ESTADUAL[PI]",
-   "inst": "INSTITUTO ESTIMATIVA",
-   "cargo": "Presidente",
-   "campo": "16/08-17/08",
-   "div": "2026-08-21",
-   "n": "301",
-   "visto": "2026-08-21"
-  },
-  {
    "proto": "BR056722026",
    "escopo": "ESTADUAL[PI]",
    "inst": "#NULO#",
@@ -521,16 +511,6 @@
    "visto": "2026-08-21"
   },
   {
-   "proto": "PI041382026",
-   "escopo": "PI",
-   "inst": "INSTITUTO ESTIMATIVA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "16/08-17/08",
-   "div": "2026-08-21",
-   "n": "301",
-   "visto": "2026-08-21"
-  },
-  {
    "proto": "RJ029452026",
    "escopo": "RJ",
    "inst": "#NULO#",
@@ -538,16 +518,6 @@
    "campo": "18/08-21/08",
    "div": "2026-08-21",
    "n": "1204",
-   "visto": "2026-08-21"
-  },
-  {
-   "proto": "RO067472026",
-   "escopo": "RO",
-   "inst": "INSTITUTO PHOENIX & ASSOCIAD",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "15/08-18/08",
-   "div": "2026-08-21",
-   "n": "961",
    "visto": "2026-08-21"
   },
   {
