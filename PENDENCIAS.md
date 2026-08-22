@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 21/08/2026 19:36. Mercados: Polymarket 62,5%/33,6%, Kalshi 62,0%/36,0%.
+Rodada de 22/08/2026 01:44. Mercados: Polymarket 63,5%/33,6%, Kalshi 63,0%/34,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -18,14 +18,13 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR084482026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR001092026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[SP], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1610, registro BR071852026
-- [aguardando desde 2026-08-21] TSE MG, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro MG004462026
 - [aguardando desde 2026-08-21] TSE MT, META PUBLICIDADE E PESQUISA (Senador), campo 12/08-13/08, divulgação 2026-08-21, N=500, registro MT024222026
 - [aguardando desde 2026-08-21] TSE MT, MT DADOS PESQUISAS (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-21, N=3080, registro MT043902026
-- [aguardando desde 2026-08-21] TSE NACIONAL?, #NULO# (Presidente), campo 18/08-20/08, divulgação 2026-08-21, N=2058, registro BR044962026
 - [aguardando desde 2026-08-21] TSE NACIONAL?, VERITA (Presidente), campo 16/08-20/08, divulgação 2026-08-21, N=3840, registro BR040062026
-- [aguardando desde 2026-08-21] TSE PE, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro PE015282026
-- [aguardando desde 2026-08-21] TSE RJ, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro RJ029452026
-- [aguardando desde 2026-08-21] TSE SP, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-21, N=1610, registro SP018062026
+- [NOVO] TSE MA, COMPLETA PESQUISAS DE OPNIAO (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-22, N=1500, registro MA005662026
+- [NOVO] TSE PI, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-22, N=826, registro PI066562026
+- [NOVO] TSE PR, INDICE INTELIGENCIA (Governador, Senador), campo 17/08-19/08, divulgação 2026-08-22, N=1200, registro PR017542026
+- [NOVO] TSE SE, CTAS TECNOLOGIA (Governador, Senador, Deputado Fede), campo 17/08-21/08, divulgação 2026-08-22, N=1224, registro SE084322026
 
 ## Últimas publicações do Veritá
 
@@ -37,20 +36,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-11 | AC | DELTA AGENCIA DE PESQUISA | Governador, Senador | 04/08-09/08 | 1006 | AC067872026 |
-| 2026-08-11 | BA | REAL TIME BIG DATA | Governador, Senador | 06/08-10/08 | 1600 | BA002772026 |
-| 2026-08-11 | ESTADUAL[AC] | DELTA AGENCIA DE PESQUISA | Presidente | 04/08-09/08 | 1006 | BR076042026 |
-| 2026-08-11 | ESTADUAL[BA] | REAL TIME BIG DATA | Presidente | 06/08-10/08 | 1600 | BR052052026 |
-| 2026-08-11 | ESTADUAL[PB] | INSTITUTO SETA DE PESQUISA | Presidente | 06/08-07/08 | 450 | BR079962026 |
-| 2026-08-11 | ESTADUAL[RN] | AGORASEI PESQUISA | Presidente | 02/08-05/08 | 1500 | BR089512026 |
-| 2026-08-11 | ESTADUAL[SP] | #NULO# | Presidente | 05/08-10/08 | 800 | BR036562026 |
-| 2026-08-11 | NACIONAL? | #NULO# | Presidente | 05/08-09/08 | 2002 | BR069352026 |
-| 2026-08-11 | NACIONAL? | 100 CIDADES | Presidente | 03/08-06/08 | 2000 | BR081092026 |
-| 2026-08-11 | PB | INSTITUTO SETA DE PESQUISA | Governador, Senador, Deputado Fede | 06/08-07/08 | 450 | PB092192026 |
-| 2026-08-11 | PE | CONTEXTTO E REVILLO | Governador, Senador | 06/08-10/08 | 1200 | PE002622026 |
-| 2026-08-11 | RN | QUALITTA EMPREENDIMENTOS | Governador, Senador, Deputado Fede | 06/08-10/08 | 1200 | RN020472026 |
-| 2026-08-11 | RN | AGORASEI PESQUISA | Governador, Senador, Deputado Fede | 02/08-05/08 | 1500 | RN068552026 |
-| 2026-08-11 | SP | #NULO# | Governador, Senador, Deputado Fede | 05/08-10/08 | 800 | SP099632026 |
 | 2026-08-12 | CE | ATLASINTEL | Governador, Senador | 06/08-11/08 | 1800 | CE027772026 |
 | 2026-08-12 | ESTADUAL[CE] | ATLASINTEL | Presidente | 06/08-11/08 | 1800 | BR083142026 |
 | 2026-08-12 | ESTADUAL[MT] | REAL TIME BIG DATA | Presidente | 07/08-11/08 | 1600 | BR068332026 |
@@ -176,4 +161,8 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-21 | RO | INSTITUTO PHOENIX & ASSOCIAD | Governador, Senador, Deputado Fede | 15/08-18/08 | 961 | RO067472026 |
 | 2026-08-21 | RS | #NULO# | Governador, Senador | 18/08-20/08 | 1504 | RS038982026 |
 | 2026-08-21 | SP | #NULO# | Governador, Senador | 18/08-21/08 | 1610 | SP018062026 |
+| 2026-08-22 | MA | COMPLETA PESQUISAS DE OPNIAO | Governador, Senador, Deputado Fede | 15/08-20/08 | 1500 | MA005662026 |
+| 2026-08-22 | PI | #NULO# | Governador, Senador | 18/08-21/08 | 826 | PI066562026 |
+| 2026-08-22 | PR | INDICE INTELIGENCIA | Governador, Senador | 17/08-19/08 | 1200 | PR017542026 |
+| 2026-08-22 | SE | CTAS TECNOLOGIA | Governador, Senador, Deputado Fede | 17/08-21/08 | 1224 | SE084322026 |
 

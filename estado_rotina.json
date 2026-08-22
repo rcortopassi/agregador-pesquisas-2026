@@ -188,6 +188,7 @@
   "GO081422026",
   "GO085092026",
   "GO088332026",
+  "MA005662026",
   "MA014552026",
   "MA016322026",
   "MA023642026",
@@ -257,7 +258,9 @@
   "PI034622026",
   "PI041382026",
   "PI044882026",
+  "PI066562026",
   "PI079102026",
+  "PR017542026",
   "PR018572026",
   "PR031912026",
   "PR032422026",
@@ -309,6 +312,7 @@
   "SE052622026",
   "SE057662026",
   "SE073272026",
+  "SE084322026",
   "SE089782026",
   "SP001422026",
   "SP018062026",
@@ -348,7 +352,7 @@
   "c6dd6aaa-6d80-4b84-ac45-10c45a84b0f7",
   "eb0342b6-979f-46d5-ab83-949ff53dc67b"
  ],
- "ultima_rodada": "2026-08-21T19:36:14.117723-03:00",
+ "ultima_rodada": "2026-08-22T01:44:12.654820-03:00",
  "pendentes": [
   {
    "proto": "BR079472026",
@@ -479,6 +483,46 @@
    "div": "2026-08-21",
    "n": "3840",
    "visto": "2026-08-21"
+  },
+  {
+   "proto": "MA005662026",
+   "escopo": "MA",
+   "inst": "COMPLETA PESQUISAS DE OPNIAO",
+   "cargo": "Governador, Senador, Deputado Fede",
+   "campo": "15/08-20/08",
+   "div": "2026-08-22",
+   "n": "1500",
+   "visto": "2026-08-22"
+  },
+  {
+   "proto": "PI066562026",
+   "escopo": "PI",
+   "inst": "#NULO#",
+   "cargo": "Governador, Senador",
+   "campo": "18/08-21/08",
+   "div": "2026-08-22",
+   "n": "826",
+   "visto": "2026-08-22"
+  },
+  {
+   "proto": "PR017542026",
+   "escopo": "PR",
+   "inst": "INDICE INTELIGENCIA",
+   "cargo": "Governador, Senador",
+   "campo": "17/08-19/08",
+   "div": "2026-08-22",
+   "n": "1200",
+   "visto": "2026-08-22"
+  },
+  {
+   "proto": "SE084322026",
+   "escopo": "SE",
+   "inst": "CTAS TECNOLOGIA",
+   "cargo": "Governador, Senador, Deputado Fede",
+   "campo": "17/08-21/08",
+   "div": "2026-08-22",
+   "n": "1224",
+   "visto": "2026-08-22"
   }
  ],
  "verita_pendentes": []
