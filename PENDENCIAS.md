@@ -2,15 +2,12 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 22/08/2026 07:35. Mercados: Polymarket 63,5%/33,7%, Kalshi 63,0%/36,0%.
+Rodada de 22/08/2026 13:36. Mercados: Polymarket 62,5%/33,8%, Kalshi 63,0%/34,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
-- [aguardando desde 2026-08-20] TSE ESTADUAL[BA], DATATRENDS (Presidente), campo 15/08-17/08, divulgação 2026-08-19, N=1200, registro BR079472026
-- [aguardando desde 2026-08-20] TSE ESTADUAL[TO], NEXUS (Presidente), campo 13/08-18/08, divulgação 2026-08-19, N=1200, registro BR019012026
-- [aguardando desde 2026-08-20] TSE TO, NEXUS (Governador, Senador), campo 13/08-18/08, divulgação 2026-08-19, N=1200, registro TO095732026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[DF], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=910, registro BR020942026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[MT], MT DADOS PESQUISAS (Presidente), campo 15/08-20/08, divulgação 2026-08-21, N=3080, registro BR074552026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[PI], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=826, registro BR056722026
