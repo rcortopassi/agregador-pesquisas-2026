@@ -355,36 +355,6 @@
  "ultima_rodada": "2026-08-22T07:35:14.604339-03:00",
  "pendentes": [
   {
-   "proto": "BR079472026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "15/08-17/08",
-   "div": "2026-08-19",
-   "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "BR019012026",
-   "escopo": "ESTADUAL[TO]",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "13/08-18/08",
-   "div": "2026-08-19",
-   "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
-   "proto": "TO095732026",
-   "escopo": "TO",
-   "inst": "NEXUS",
-   "cargo": "Governador, Senador",
-   "campo": "13/08-18/08",
-   "div": "2026-08-19",
-   "n": "1200",
-   "visto": "2026-08-20"
-  },
-  {
    "proto": "BR020942026",
    "escopo": "ESTADUAL[DF]",
    "inst": "#NULO#",
