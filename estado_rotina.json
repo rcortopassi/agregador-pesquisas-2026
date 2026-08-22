@@ -451,16 +451,6 @@
    "visto": "2026-08-21"
   },
   {
-   "proto": "MG004462026",
-   "escopo": "MG",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "18/08-21/08",
-   "div": "2026-08-21",
-   "n": "1204",
-   "visto": "2026-08-21"
-  },
-  {
    "proto": "MT024222026",
    "escopo": "MT",
    "inst": "META PUBLICIDADE E PESQUISA",
@@ -481,16 +471,6 @@
    "visto": "2026-08-21"
   },
   {
-   "proto": "BR044962026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "18/08-20/08",
-   "div": "2026-08-21",
-   "n": "2058",
-   "visto": "2026-08-21"
-  },
-  {
    "proto": "BR040062026",
    "escopo": "NACIONAL?",
    "inst": "VERITA",
@@ -498,36 +478,6 @@
    "campo": "16/08-20/08",
    "div": "2026-08-21",
    "n": "3840",
-   "visto": "2026-08-21"
-  },
-  {
-   "proto": "PE015282026",
-   "escopo": "PE",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "18/08-21/08",
-   "div": "2026-08-21",
-   "n": "1204",
-   "visto": "2026-08-21"
-  },
-  {
-   "proto": "RJ029452026",
-   "escopo": "RJ",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "18/08-21/08",
-   "div": "2026-08-21",
-   "n": "1204",
-   "visto": "2026-08-21"
-  },
-  {
-   "proto": "SP018062026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "18/08-21/08",
-   "div": "2026-08-21",
-   "n": "1610",
    "visto": "2026-08-21"
   }
  ],
