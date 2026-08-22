@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 21/08/2026 21:48</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 21/08/2026 23:48</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1201,7 +1201,300 @@
   // a mesma régua que o gráfico já aplica para marcar mês provisório (linha tracejada).
   function mesParaSintese(){ for(var i=months.length-1;i>=0;i--){ var m=months[i];
     if(DI[m]&&DI[m].rows.length&&adj2Month(m)[2]>=3) return m; } return ultimoMesCheio(); }
-  var tops=[['inst','Institutos'],['he','House effect'],['graf','Grafico'],['mapa','Mapa']];
+
+  // ================= PREVISÃO PARA 4 DE OUTUBRO (21/08/2026) =================
+  // O QUE É: projeção do 1º turno em VOTOS VÁLIDOS, ancorada no mês mais recente do DI e
+  // corrigida pelo que o campo de pesquisas historicamente errou NAQUELE ponto do calendário.
+  // Reconstruído por nós a partir de 390 pesquisas de 1º turno de 2010, 2014, 2018 e 2022,
+  // pesquisa a pesquisa, com a MESMA régua do painel (uma rodada por instituto por mês, a mais
+  // recente) e o mesmo denominador (só colunas de candidato, que é o que "votos válidos" quer
+  // dizer). Conferido contra números publicados pelos próprios institutos: reproduz o Datafolha
+  // final de 2022 (Lula 50 x Bolsonaro 36) e o Ibope final de 2014 (Dilma 46 x Aécio 27).
+  //
+  // POR QUE NÃO É A MÉDIA DOS QUATRO CICLOS: 2026 não se parece com os quatro. Os pesos saem de
+  // uma distância medida em três indicadores (consolidação do campo, volatilidade recente e
+  // tamanho da margem), e 2022 fica com a maior parte porque é quase gêmeo de 2026 nos três.
+  // NÃO fixar os pesos à mão: eles são recalculados a cada mês novo do DI, e é isso que faz a
+  // previsão andar sozinha quando sai pesquisa nova.
+  //
+  // O ACHADO QUE SUSTENTA A CORREÇÃO: o campo subestima a DIREITA. Em agosto, o erro do lado
+  // direito foi -13,8 em 2014, -13,2 em 2018 e -4,2 em 2022 (pontos de voto válido). Só 2010
+  // acertou. É por isso que a projeção fecha mais apertada que o agregado bruto.
+  var HIST1T={
+    '2010':{par:'Dilma x Serra',urna:{m:14.30,t:79.52},nota:'Sem incumbente na disputa. Campo pouco consolidado e muito volátil; a virada de agosto veio com o horário eleitoral.',mes:{1:{m:-7.7,t:75.9,d:80.3,n:2,p:2},2:{m:-9.4,t:75.6,d:80.0,n:2,p:2},3:{m:-6.1,t:79.3,d:82.0,n:3,p:3},4:{m:-8.6,t:78.2,d:83.3,n:3,p:3},5:{m:3.2,t:89.6,d:80.0,n:3,p:3},6:{m:3.0,t:89.5,d:85.5,n:2,p:4},7:{m:2.5,t:89.6,d:81.5,n:2,p:4},8:{m:22.4,t:90.2,d:83.6,n:4,p:9},9:{m:25.7,t:85.9,d:88.0,n:4,p:42}}},
+    '2014':{par:'Dilma x Aécio',urna:{m:8.04,t:75.14},nota:'Dilma incumbente. Campo em choque: Eduardo Campos morre em 13/08 e a Marina entra, segurando voto anti-Dilma que na urna foi para o Aécio.',mes:{2:{m:37.0,t:83.7,d:72.0,n:2,p:2},4:{m:41.4,t:96.2,d:58.0,n:3,p:3},5:{m:29.3,t:92.9,d:63.0,n:2,p:2},6:{m:28.1,t:93.8,d:64.0,n:3,p:4},7:{m:24.6,t:89.2,d:65.0,n:2,p:3},8:{m:22.4,t:62.0,d:84.0,n:3,p:5},9:{m:23.6,t:69.0,d:86.0,n:4,p:18},10:{m:18.5,t:72.9,d:88.2,n:4,p:6}}},
+    '2018':{par:'Haddad x Bolsonaro',urna:{m:-16.75,t:75.31},nota:'Pior análogo possível para agosto: o candidato do PT era o Lula até 11/09, então o Haddad de agosto é um nome que o eleitor mal conhecia.',mes:{3:{m:-29.5,t:37.2,d:60.0,n:1,p:3},4:{m:-24.8,t:34.2,d:62.7,n:2,p:5},5:{m:-29.6,t:39.7,d:62.8,n:3,p:7},6:{m:-25.9,t:34.3,d:62.5,n:4,p:12},7:{m:-28.1,t:37.3,d:63.5,n:4,p:11},8:{m:-24.7,t:39.7,d:72.0,n:5,p:14},9:{m:-7.0,t:62.4,d:83.0,n:11,p:32},10:{m:-15.4,t:66.5,d:86.1,n:9,p:12}}},
+    '2022':{par:'Lula x Bolsonaro',urna:{m:5.23,t:91.63},nota:'Bolsonaro incumbente, dois polos definidos havia mais de um ano, campo muito consolidado e estável. O erro veio quase todo de subestimar a direita.',mes:{4:{m:9.6,t:84.5,d:87.0,n:9,p:33},5:{m:9.8,t:85.7,d:89.0,n:11,p:37},6:{m:11.2,t:86.1,d:89.0,n:8,p:13},7:{m:10.8,t:86.3,d:89.0,n:8,p:16},8:{m:8.3,t:86.0,d:90.7,n:15,p:25},9:{m:9.2,t:87.1,d:93.4,n:15,p:50},10:{m:14.4,t:86.7,d:94.0,n:2,p:2}}}
+  };;
+  var CICLOS1T=['2010','2014','2018','2022'];
+  // Previsões de terceiros, para o leitor comparar. Atualizar a mão, com a data.
+  var PREVEXT=[
+    {n:'Plano Político',t:'modelo estatístico',v:'Lula 45,4 x Flávio 39,6',p:'Lula 65%',d:'21/08/2026',
+     u:'https://www.planopolitico.com.br/modelos-eleitorais/presidencial',
+     o:'Simula a eleição milhares de vezes. Usa o erro histórico só para calibrar a INCERTEZA, e declara que não pressupõe que as pesquisas erram sempre para o mesmo lado. É exatamente aí que ele e a nossa projeção discordam.'},
+    {n:'Polymarket',t:'mercado de apostas',v:'—',p:'Lula 62,5%',d:'21/08/2026',
+     u:'https://polymarket.com/event/brazil-presidential-election',o:'Dinheiro real, sobre o vencedor da eleição.'},
+    {n:'Kalshi',t:'mercado regulado',v:'—',p:'Lula 62,0%',d:'21/08/2026',
+     u:'https://kalshi.com/markets/kxbrpres/brazil-presidency/kxbrpres-26',o:'Dinheiro real, sobre o vencedor da eleição.'},
+    {n:'Manifold',t:'mercado com moeda própria',v:'—',p:'64%',d:'21/08/2026',
+     u:'https://manifold.markets',o:'Pergunta mais larga: Lula ou quem ele apoiar.'},
+    {n:'Metaculus',t:'comunidade de previsores',v:'—',p:'Lula 55%',d:'21/08/2026',
+     u:'https://www.metaculus.com/questions/22310/will-lula-be-reelected-in-2026/',
+     o:'113 previsores. É a estimativa mais pessimista para o Lula entre as externas, e a menos movimentada.'}
+  ];
+
+  // Série de 2026 em votos válidos, DERIVADA do DI. Denominador = 100 menos Br/N/Ind, que é a
+  // soma de todos os candidatos, inclusive os que não têm coluna própria na tabela.
+  function v26(m){
+    if(!DI[m]||!DI[m].rows.length) return null;
+    var rs=DI[m].rows, L=[],F=[],G=[],T=[],D=[];
+    for(var i=0;i<rs.length;i++){
+      if(isOut(rs[i][0])) continue;
+      var l=num(rs[i][1]), f=num(rs[i][2]), b=num(rs[i][6]);
+      if(l===null||f===null||b===null) continue;
+      var den=100-b; if(den<=40) continue;
+      L.push(l/den*100); F.push(f/den*100); G.push((l-f)/den*100); T.push((l+f)/den*100); D.push(den);
+    }
+    return L.length? {l:med(L),f:med(F),m:med(G),t:med(T),d:med(D),n:L.length} : null;
+  }
+  function meses26(){ return months.filter(function(m){ return v26(m)!==null; }); }
+  function ancora26(){ var ms=meses26(); return ms.length? ms[ms.length-1] : null; }
+  function volLista(a){ if(a.length<2) return 0; var s=0; for(var i=1;i<a.length;i++) s+=Math.abs(a[i]-a[i-1]); return s/(a.length-1); }
+  function feat26(){
+    var ms=meses26(); if(!ms.length) return null;
+    var a=v26(ms[ms.length-1]), serie=ms.map(function(m){ return v26(m).m; });
+    return {d:a.d, vol:volLista(serie.slice(-5)), m:a.m};
+  }
+  function featHist(c,mn){
+    var H=HIST1T[c]; if(!H.mes[mn]) return null;
+    var ks=[]; for(var k in H.mes){ if(+k<=mn) ks.push(+k); }
+    ks.sort(function(x,y){ return x-y; });
+    var serie=ks.map(function(k){ return H.mes[k].m; });
+    return {d:H.mes[mn].d, vol:volLista(serie.slice(-5)), m:H.mes[mn].m};
+  }
+  // Peso por semelhança: distância euclidiana nos três indicadores padronizados, com kernel
+  // gaussiano. Quanto mais parecido o ciclo com 2026 HOJE, mais ele manda na projeção.
+  function pesos26(mn){
+    var alvo=feat26(); if(!alvo) return null;
+    var fs={}, lista=[];
+    for(var i=0;i<CICLOS1T.length;i++){ var f=featHist(CICLOS1T[i],mn); if(f){ fs[CICLOS1T[i]]=f; lista.push(f); } }
+    if(!lista.length) return null;
+    lista.push(alvo);
+    var chaves=['d','vol','m'], mu={}, sd={};
+    for(var j=0;j<chaves.length;j++){ var k=chaves[j], a=lista.map(function(x){ return x[k]; });
+      var m0=0; for(var q=0;q<a.length;q++) m0+=a[q]; m0/=a.length;
+      var s0=0; for(var q2=0;q2<a.length;q2++) s0+=(a[q2]-m0)*(a[q2]-m0); s0=Math.sqrt(s0/a.length);
+      mu[k]=m0; sd[k]=s0||1; }
+    var w={}, tot=0, dist={};
+    for(var c in fs){ var d2=0;
+      for(var j2=0;j2<chaves.length;j2++){ var k2=chaves[j2];
+        var z=(fs[c][k2]-alvo[k2])/sd[k2]; d2+=z*z; }
+      dist[c]=Math.sqrt(d2); w[c]=Math.exp(-d2/2); tot+=w[c]; }
+    for(var c2 in w) w[c2]/=tot;
+    return {w:w, dist:dist, alvo:alvo, fs:fs};
+  }
+  function pnorm(z){
+    var t=1/(1+0.2316419*Math.abs(z)), d=0.3989423*Math.exp(-z*z/2);
+    var p=d*t*(0.3193815+t*(-0.3565638+t*(1.781478+t*(-1.821256+t*1.330274))));
+    return z>0? 1-p : p;
+  }
+  // A projeção. Cada ciclo vira um CENÁRIO: pega o quanto a margem e a soma dos dois primeiros
+  // andaram daquele mês até a urna, e aplica em cima do 2026 de hoje.
+  function projeta26(){
+    var a=ancora26(); if(!a) return null;
+    var mn=MESNUM[a], base=v26(a), pw=pesos26(mn); if(!pw) return null;
+    var cen=[];
+    for(var c in pw.w){ var H=HIST1T[c], h=H.mes[mn]; if(!h) continue;
+      var dm=H.urna.m-h.m, dt=H.urna.t-h.t, m2=base.m+dm, t2=base.t+dt;
+      cen.push({c:c, w:pw.w[c], dist:pw.dist[c], m:m2, l:(t2+m2)/2, f:(t2-m2)/2, dm:dm, nota:H.nota, par:H.par}); }
+    if(!cen.length) return null;
+    var tw=0; for(var i=0;i<cen.length;i++) tw+=cen[i].w;
+    var ml=0,mf=0,mm=0;
+    for(var i2=0;i2<cen.length;i2++){ var o=cen[i2]; ml+=o.w/tw*o.l; mf+=o.w/tw*o.f; mm+=o.w/tw*o.m; }
+    var vw=0,mu=0;
+    for(var i3=0;i3<cen.length;i3++){ vw+=cen[i3].w/tw*(cen[i3].m-mm)*(cen[i3].m-mm); mu+=cen[i3].m; }
+    mu/=cen.length;
+    var vu=0; for(var i4=0;i4<cen.length;i4++) vu+=(cen[i4].m-mu)*(cen[i4].m-mu); vu/=cen.length;
+    // DESVIO ADOTADO: metade da dispersão ponderada, metade da dispersão sem ponderar. Confiar
+    // só na ponderada seria fingir que a semelhança medida em quatro casos é certeza.
+    var sd=Math.sqrt(0.5*vw+0.5*vu);
+    cen.sort(function(x,y){ return y.w-x.w; });
+    // pontos intermediários: onde o campo tende a estar nos meses que faltam
+    var cam=[];
+    for(var mm2=mn+1; mm2<=10; mm2++){
+      var sm=0,sw=0;
+      for(var i5=0;i5<cen.length;i5++){ var H2=HIST1T[cen[i5].c];
+        if(H2.mes[mm2]&&H2.mes[mn]){ sm+=cen[i5].w*(base.m+(H2.mes[mm2].m-H2.mes[mn].m)); sw+=cen[i5].w; } }
+      if(sw>0) cam.push({mn:mm2, m:sm/sw});
+    }
+    return {anc:a, mn:mn, base:base, cen:cen, l:ml, f:mf, m:mm, sd:sd, cam:cam, p:pnorm(mm/sd)};
+  }
+
+  // Gráfico da previsão. Linha cheia = o que as pesquisas mediram; linha pontilhada = projeção.
+  // Tudo em VOTOS VÁLIDOS, porque é a única base em que pesquisa e urna são comparáveis: a urna
+  // não tem indeciso. Por isso esta aba NÃO usa a mesma escala da aba Gráfico, que é amostra total.
+  function prevSVG(){
+    var P0=projeta26(); if(!P0) return '<div style="padding:20px; color:'+P.mut+';">Sem base para projetar.</div>';
+    var ms=meses26(), mn=P0.mn;
+    var fut=[]; for(var k=mn+1;k<=10;k++) fut.push(k);
+    var eixo=ms.map(function(m){ return {rot:m, mn:MESNUM[m], obs:true}; })
+      .concat(fut.map(function(k){ return {rot:(k===9?'set':'out'), mn:k, obs:false}; }));
+    var n=eixo.length, L=54, R=96, T=18, B=40, W=680, Hh=360, pw=W-L-R, ph=Hh-T-B;
+    var lo=28, hi=56;
+    function X(i){ return L+i*pw/(n-1); }
+    function Y(v){ return T+(hi-v)/(hi-lo)*ph; }
+    var obs=eixo.filter(function(o){ return o.obs; });
+    var iAnc=obs.length-1;
+    var pl='',pf='',dots='';
+    for(var i=0;i<obs.length;i++){ var v=v26(obs[i].rot);
+      pl+=X(i).toFixed(1)+','+Y(v.l).toFixed(1)+' '; pf+=X(i).toFixed(1)+','+Y(v.f).toFixed(1)+' ';
+      dots+='<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v.l).toFixed(1)+'" r="3" fill="'+P.red+'"/>'+
+            '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v.f).toFixed(1)+'" r="3" fill="'+P.blue+'"/>';
+    }
+    // caminho projetado: do mês âncora até outubro, passando pelos pontos intermediários
+    // A LINHA PONTILHADA VAI DIRETO DA ÂNCORA À URNA, sem passar pelos meses do meio (21/08/2026).
+    // Motivo: "onde o campo deve estar em setembro" e "resultado de 4 de outubro" são grandezas
+    // DIFERENTES, pesquisa e urna, e é exatamente entre as duas que mora a correção histórica.
+    // Ligá-las numa curva só escondia o degrau. O ponto de setembro continua desenhado, mas como
+    // marcador vazado à parte, que é o que o leitor vai poder conferir quando sair pesquisa nova.
+    var base=P0.base, top0=base.t, topF=P0.l+P0.f;
+    var pts=[{i:iAnc, l:base.l, f:base.f},{i:n-1, l:P0.l, f:P0.f}];
+    var meio2='';
+    for(var c2=0;c2<P0.cam.length-1;c2++){
+      var idx=obs.length+c2, passo=(c2+1)/P0.cam.length;
+      var tt=top0+(topF-top0)*passo, mm2=P0.cam[c2].m;
+      var el=(tt+mm2)/2, ef=(tt-mm2)/2;
+      meio2+='<circle cx="'+X(idx).toFixed(1)+'" cy="'+Y(el).toFixed(1)+'" r="3.6" fill="none" stroke="'+P.red+'" stroke-width="1.6" stroke-opacity="0.55"/>'+
+             '<circle cx="'+X(idx).toFixed(1)+'" cy="'+Y(ef).toFixed(1)+'" r="3.6" fill="none" stroke="'+P.blue+'" stroke-width="1.6" stroke-opacity="0.55"/>'+
+             '<text x="'+X(idx).toFixed(1)+'" y="'+(Y(el)-9).toFixed(1)+'" text-anchor="middle" font-size="9" fill="'+P.mut+'">campo esperado</text>';
+    }
+    var dl='',df='';
+    for(var q=0;q<pts.length;q++){ dl+=X(pts[q].i).toFixed(1)+','+Y(pts[q].l).toFixed(1)+' ';
+      df+=X(pts[q].i).toFixed(1)+','+Y(pts[q].f).toFixed(1)+' '; }
+    // faixa de 90% em torno do ponto final, aberta a partir da âncora
+    var meio=1.645*P0.sd/2, ult=pts[pts.length-1];
+    var faixaL='', faixaB='';
+    for(var q2=0;q2<pts.length;q2++){ var fr=q2/(pts.length-1);
+      faixaL+=X(pts[q2].i).toFixed(1)+','+Y(pts[q2].l+meio*fr).toFixed(1)+' '; }
+    for(var q3=pts.length-1;q3>=0;q3--){ var fr3=q3/(pts.length-1);
+      faixaL+=X(pts[q3].i).toFixed(1)+','+Y(pts[q3].l-meio*fr3).toFixed(1)+' '; }
+    for(var q4=0;q4<pts.length;q4++){ var fr4=q4/(pts.length-1);
+      faixaB+=X(pts[q4].i).toFixed(1)+','+Y(pts[q4].f+meio*fr4).toFixed(1)+' '; }
+    for(var q5=pts.length-1;q5>=0;q5--){ var fr5=q5/(pts.length-1);
+      faixaB+=X(pts[q5].i).toFixed(1)+','+Y(pts[q5].f-meio*fr5).toFixed(1)+' '; }
+    // pontas dos cenários em outubro, tamanho pelo peso
+    var cd='';
+    for(var s=0;s<P0.cen.length;s++){ var o=P0.cen[s];
+      if(o.l<lo||o.l>hi||o.f<lo||o.f>hi) continue;
+      var rr=(3+7*o.w).toFixed(1), xx=(X(n-1)+9).toFixed(1);
+      cd+='<circle cx="'+xx+'" cy="'+Y(o.l).toFixed(1)+'" r="'+rr+'" fill="'+P.red+'" fill-opacity="0.30"/>'+
+          '<circle cx="'+xx+'" cy="'+Y(o.f).toFixed(1)+'" r="'+rr+'" fill="'+P.blue+'" fill-opacity="0.30"/>'+
+          '<text x="'+(X(n-1)+22)+'" y="'+(Y((o.l+o.f)/2)+4).toFixed(1)+'" font-size="9.5" fill="'+P.mut+'">'+o.c+'</text>';
+    }
+    var grade='',rot='';
+    for(var g=30;g<=55;g+=5){ grade+='<line x1="'+L+'" y1="'+Y(g).toFixed(1)+'" x2="'+(W-R)+'" y2="'+Y(g).toFixed(1)+'" stroke="'+P.bsoft+'"/>'+
+      '<text x="'+(L-8)+'" y="'+(Y(g)+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="'+P.mut+'">'+g+'</text>'; }
+    for(var e=0;e<n;e++){ rot+='<text x="'+X(e).toFixed(1)+'" y="'+(Hh-14)+'" text-anchor="middle" font-size="12" fill="'+(eixo[e].obs?P.txt2:P.goldtxt)+'">'+eixo[e].rot+'</text>'; }
+    var xAnc=X(iAnc).toFixed(1);
+    return ''+
+    '<div style="display:flex; flex-wrap:wrap; gap:14px; padding:12px 14px 4px; font-size:12px; color:'+P.txt2+';">'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:3px; background:'+P.red+'; display:inline-block; border-radius:2px;"></span>Lula medido</span>'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:3px; background:'+P.blue+'; display:inline-block; border-radius:2px;"></span>Flávio medido</span>'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:0; border-top:2.5px dotted '+P.ink+'; display:inline-block;"></span>projeção</span>'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:11px; display:inline-block; background:repeating-linear-gradient(45deg,'+P.hatch+','+P.hatch+' 1.5px,transparent 1.5px,transparent 5px); border-radius:2px;"></span>faixa de 90%</span>'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; border:2px solid '+P.mut+'; display:inline-block;"></span>onde o campo deve estar</span>'+'<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; background:'+P.mut+'; opacity:.4; display:inline-block;"></span>cenário por ciclo, tamanho = peso</span>'+
+    '</div>'+
+    '<svg viewBox="0 0 '+W+' '+Hh+'" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Projecao do 1o turno em votos validos ate 4 de outubro; linha cheia e o medido pelas pesquisas, pontilhada e a projecao com faixa de 90 por cento">'+
+      '<defs>'+
+        '<pattern id="hp1" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.red+'" stroke-width="1.3" stroke-opacity="0.28"/></pattern>'+
+        '<pattern id="hp2" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.blue+'" stroke-width="1.3" stroke-opacity="0.28"/></pattern>'+
+      '</defs>'+
+      grade+
+      '<rect x="'+xAnc+'" y="'+T+'" width="'+(W-R-parseFloat(xAnc))+'" height="'+ph+'" fill="'+P.gold+'" fill-opacity="0.05"/>'+
+      '<line x1="'+xAnc+'" y1="'+T+'" x2="'+xAnc+'" y2="'+(T+ph)+'" stroke="'+P.goldtxt+'" stroke-width="1.2" stroke-dasharray="3,3" stroke-opacity="0.7"/>'+
+      '<text x="'+(parseFloat(xAnc)+6)+'" y="'+(T+12)+'" font-size="10" fill="'+P.goldtxt+'">daqui para a frente é projeção</text>'+
+      '<polygon fill="url(#hp1)" points="'+faixaL+'"/>'+
+      '<polygon fill="url(#hp2)" points="'+faixaB+'"/>'+
+      '<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" points="'+pl+'"/>'+
+      '<polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" points="'+pf+'"/>'+
+      '<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" stroke-dasharray="6,5" points="'+dl+'"/>'+
+      '<polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" stroke-dasharray="6,5" points="'+df+'"/>'+
+      dots+meio2+cd+
+      '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.l).toFixed(1)+'" r="4.5" fill="'+P.surf+'" stroke="'+P.red+'" stroke-width="2.5"/>'+
+      '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.f).toFixed(1)+'" r="4.5" fill="'+P.surf+'" stroke="'+P.blue+'" stroke-width="2.5"/>'+
+      '<text x="'+X(n-1).toFixed(1)+'" y="'+(Y(ult.l)-11).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="700" fill="'+P.red+'">'+fmt(ult.l)+'</text>'+
+      '<text x="'+X(n-1).toFixed(1)+'" y="'+(Y(ult.f)+18).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="700" fill="'+P.blue+'">'+fmt(ult.f)+'</text>'+
+      rot+
+    '</svg>';
+  }
+
+  // Texto da aba de previsão. DERIVADO da projeção, nunca escrito à mão: se entrar pesquisa
+  // nova, os números da frase mudam junto com o gráfico.
+  function prevTexto(){
+    var P0=projeta26(); if(!P0) return '';
+    var frente=P0.m>=0?'Lula':'Flávio', pf=P0.m>=0?P0.p:1-P0.p;
+    var lo=P0.m-1.645*P0.sd, hi=P0.m+1.645*P0.sd;
+    var h='';
+    h+='<div style="padding:14px 14px 2px; font-size:13px; font-weight:600; color:'+P.ink+';">Projeção para 4 de outubro, 1º turno em votos válidos</div>';
+    h+='<div style="display:flex; gap:8px; padding:8px 12px 4px; flex-wrap:wrap;">'+
+       box('Projeção do 1º turno','<span style="color:'+P.red+';">Lula '+fmt(P0.l)+'</span> &nbsp; <span style="color:'+P.blue+';">Flávio '+fmt(P0.f)+'</span>')+
+       box('Margem projetada','<span style="color:'+(P0.m>=0?P.red:P.blue)+';">'+frente+' +'+fmt(Math.abs(P0.m))+'</span>')+
+       box('Chance de liderar o 1º turno','<span style="color:'+(P0.m>=0?P.red:P.blue)+';">'+frente+' '+Math.round(pf*100)+'%</span>')+
+       '</div>';
+    h+='<div style="padding:4px 14px 10px; font-size:12.5px; color:'+P.txt+'; line-height:1.55;">'+
+       'O agregado de <b>'+P0.anc+'</b> está em Lula '+fmt(P0.base.l)+' x Flávio '+fmt(P0.base.f)+' em votos válidos, margem de '+
+       (P0.base.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(P0.base.m))+'. A projeção fecha essa margem para <b>'+frente+' +'+fmt(Math.abs(P0.m))+'</b>, '+
+       'com faixa de 90% de '+fmt(lo)+' a '+fmt(hi)+' (positivo é Lula à frente). '+
+       'A correção não é palpite: é o que o campo de pesquisas errou neste mesmo ponto do calendário nas quatro eleições que reconstruímos, '+
+       'e ela aperta a disputa porque em três das quatro o campo <b>subestimou a direita</b>.'+
+       '</div>';
+    h+='<div style="padding:2px 14px 8px; font-size:12.5px; font-weight:600; color:'+P.ink+';">Os quatro cenários, e por que 2022 pesa mais</div>';
+    h+='<table style="width:100%; border-collapse:collapse; font-size:12px;">'+
+       '<thead><tr style="background:'+P.purple+'; color:#fff; font-size:10.5px;">'+
+       '<th style="padding:5px 6px; text-align:left;">se 2026 andar como</th><th style="padding:5px 6px;">peso</th>'+
+       '<th style="padding:5px 6px;">Lula</th><th style="padding:5px 6px;">Flávio</th><th style="padding:5px 6px;">margem</th>'+
+       '<th style="padding:5px 6px; text-align:left;">por quê</th></tr></thead><tbody>';
+    for(var i=0;i<P0.cen.length;i++){ var o=P0.cen[i], soma=o.l+o.f;
+      // CENÁRIO IMPOSSÍVEL: quando os dois projetados somam mais de 100 ou menos de 60 em votos
+      // válidos, o ciclo não serve de análogo naquele mês e o número seria ruído com cara de dado.
+      // É o caso de 2018 em agosto, quando o candidato do PT ainda era o Lula. O peso já zera
+      // sozinho pela semelhança; aqui só evitamos IMPRIMIR um número que não existe.
+      var ok=(soma<=100&&soma>=60);
+      h+='<tr style="border-bottom:1px solid '+P.bsoft+'; background:'+(i%2?P.rowhl:'transparent')+';">'+
+        '<td style="padding:5px 6px; font-weight:600;">'+o.c+' <span style="color:'+P.mut+'; font-weight:400;">'+o.par+'</span></td>'+
+        '<td style="padding:5px 6px; text-align:center; font-weight:700; color:'+(o.w>0.4?P.goldtxt:P.txt2)+';">'+(o.w<0.005?'&lt;1%':Math.round(o.w*100)+'%')+'</td>'+
+        '<td style="padding:5px 6px; text-align:center; color:'+(ok?P.red:P.mut)+';">'+(ok?fmt(o.l):'&mdash;')+'</td>'+
+        '<td style="padding:5px 6px; text-align:center; color:'+(ok?P.blue:P.mut)+';">'+(ok?fmt(o.f):'&mdash;')+'</td>'+
+        '<td style="padding:5px 6px; text-align:center; color:'+(ok?(o.m>=0?P.red:P.blue):P.mut)+'; font-weight:600;">'+(ok?((o.m>=0?'L +':'F +')+fmt(Math.abs(o.m))):'&mdash;')+'</td>'+
+        '<td style="padding:5px 6px; color:'+P.txt2+'; font-size:10.5px; line-height:1.4;">'+o.nota+(ok?'':' <b style="color:'+P.warn+';">Cenário descartado: os dois projetados não somam um resultado possível.</b>')+'</td></tr>';
+    }
+    h+='</tbody></table>';
+    h+='<div style="padding:8px 14px 2px; font-size:12.5px; font-weight:600; color:'+P.ink+';">Como nos comparamos com quem também prevê</div>';
+    h+='<table style="width:100%; border-collapse:collapse; font-size:12px;"><tbody>';
+    h+='<tr style="border-bottom:1px solid '+P.bord+'; background:'+P.rowhl+';">'+
+       '<td style="padding:6px; font-weight:700;">Este painel</td><td style="padding:6px; color:'+P.mut+'; font-size:10.5px;">projeção com correção histórica</td>'+
+       '<td style="padding:6px; text-align:center;"><span style="color:'+P.red+';">'+fmt(P0.l)+'</span> x <span style="color:'+P.blue+';">'+fmt(P0.f)+'</span></td>'+
+       '<td style="padding:6px; text-align:center;">'+frente+' '+Math.round(pf*100)+'% <span style="color:'+P.mut+'; font-size:10px;">(liderar o 1º turno)</span></td></tr>';
+    for(var j=0;j<PREVEXT.length;j++){ var e=PREVEXT[j];
+      h+='<tr style="border-bottom:1px solid '+P.bsoft+';">'+
+        '<td style="padding:6px;"><a href="'+e.u+'" target="_blank" style="color:'+P.link+';">'+e.n+' &#8599;</a></td>'+
+        '<td style="padding:6px; color:'+P.mut+'; font-size:10.5px;">'+e.t+'</td>'+
+        '<td style="padding:6px; text-align:center;">'+e.v+'</td>'+
+        '<td style="padding:6px; text-align:center;">'+e.p+'</td></tr>'+
+        '<tr><td colspan="4" style="padding:0 6px 6px 6px; color:'+P.txt2+'; font-size:10.5px; line-height:1.4;">'+e.o+'</td></tr>';
+    }
+    h+='</tbody></table>';
+    h+='<div style="padding:10px 14px 14px; font-size:11.5px; color:'+P.txt2+'; line-height:1.5;">'+
+       '<b style="color:'+P.warn+';">O que esta projeção não é.</b> Não é previsão do vencedor da eleição: ela projeta o <b>1º turno</b>, e quem ganha depende do 2º, '+
+       'que exige hipótese de transferência de voto que ainda não reconstruímos. Os percentuais de mercado e do Metaculus na tabela acima respondem a outra pergunta, '+
+       'quem vence, e por isso não são diretamente comparáveis com a nossa coluna. '+
+       'A base são quatro eleições, e quatro é pouco: por isso a faixa de 90% é larga de propósito e o desvio adotado mistura a dispersão ponderada com a sem ponderar. '+
+       'O maior risco conhecido é o horário eleitoral de rádio e TV, que começa na segunda metade de agosto: em 2010 a margem do campo saltou 20 pontos de julho para agosto por causa dele.'+
+       '</div>';
+    return h;
+  }
+
+  var tops=[['inst','Institutos'],['he','House effect'],['graf','Grafico'],['mapa','Mapa'],['prev','Previsão']];
   var cur={top:'inst',m:ultimoMesCheio(),dim:'pres',uf:null,stab:'inst',mapyear:'2026'};
   // Fatos notórios que mexem na corrida presidencial. Para adicionar um no futuro,
   // basta acrescentar uma linha: {d:'AAAA-MM-DD', c:cor, t:'texto'}. A linha pontilhada
@@ -1463,7 +1756,7 @@
       // Ver METODOLOGIA, seção "incerteza por distância da eleição".
       (HERR[cur.m]?'<div style="width:100%; text-align:center; font-size:10.5px; color:'+P.goldtxt+'; margin-top:4px; padding:0 10px; line-height:1.45;">A margem acima é só o erro de amostragem. A esta altura do ciclo o agregado já errou bem mais: em '+cur.m+' a mediana do campo ficou '+HERR[cur.m][0]+' do resultado em 2010 e '+HERR[cur.m][1]+' em 2022.</div>':'');
 
-    var graf=cur.top==='graf', mapa=cur.top==='mapa', hide=graf||mapa;
+    var graf=cur.top==='graf', mapa=cur.top==='mapa', prev=cur.top==='prev', hide=graf||mapa||prev;
     document.getElementById('m-tabs').style.display=hide?'none':'flex';
     document.getElementById('headline').style.display=hide?'none':'flex';
     document.getElementById('clegend').style.display=hide?'none':'flex';
@@ -1505,6 +1798,11 @@
       document.getElementById('foot').innerHTML=foot;
       return;
     }
+    if(prev){
+      document.getElementById('table-area').innerHTML=prevTexto()+prevSVG();
+      document.getElementById('note').textContent='Projeção do 1º turno para 4 de outubro, em votos válidos. A linha cheia é o que as pesquisas mediram mês a mês; a pontilhada é a projeção, que corrige o agregado de hoje pelo erro que o campo cometeu neste mesmo ponto do calendário em 2010, 2014, 2018 e 2022. Os pesos de cada ciclo são recalculados sozinhos e mudam quando entra pesquisa nova.';
+      document.getElementById('foot').innerHTML='Reconstruímos 390 pesquisas de 1º turno dos quatro ciclos, com a mesma régua deste painel (uma rodada por instituto por mês) e o mesmo denominador de votos válidos. O extrator reproduz o Datafolha final de 2022 (Lula 50 x Bolsonaro 36) e o Ibope final de 2014 (Dilma 46 x Aécio 27). Esta aba usa VOTOS VÁLIDOS, e não amostra total como a aba Gráfico, porque a urna não tem indeciso e essa é a única base em que pesquisa e resultado são comparáveis.';
+      return; }
     if(graf){ document.getElementById('table-area').innerHTML=
         '<div style="padding:14px 14px 0; font-size:13px; font-weight:600; color:'+P.ink+';">1º turno ajustado pelo house effect</div>'+
         chartSVG();

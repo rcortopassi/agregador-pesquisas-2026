@@ -6,6 +6,24 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- ABA PREVISÃO (21/08/2026, pedido do usuário). Projeção do 1º turno para 4 de outubro, em VOTOS VÁLIDOS. Objetos `HIST1T` e `PREVEXT`, funções `v26`, `pesos26`, `projeta26`, `prevSVG` e `prevTexto`. Números de 21/08: Lula 45,4 x Flávio 44,4, margem Lula +0,9, faixa de 90% de -10,0 a +11,9, chance de liderar o 1º turno 56%. Sete coisas que o próximo agente precisa saber:
+
+  1. É TUDO DERIVADO, nada escrito à mão. A âncora é o último mês do `DI`, a série de 2026 sai do próprio `DI` e os pesos por semelhança são recalculados a cada render. Quando entrar pesquisa nova, o gráfico, os números do texto e os pesos andam sozinhos. NÃO congelar nenhum desses valores em texto literal.
+
+  2. A BASE é a reconstrução em `reconstrucao_1t/`: 390 pesquisas de 1º turno de 2010, 2014, 2018 e 2022, extraídas pesquisa a pesquisa das tabelas da Wikipédia, com a régua deste painel e denominador de votos válidos. O `LEIAME.md` da pasta registra as decisões e as armadilhas. O extrator reproduz o Datafolha final de 2022 e o Ibope final de 2014 em válidos, que é a conferência.
+
+  3. NÃO EXISTEM 1998, 2002 E 2006. Foi conferido título por título nas Wikipédias pt e en, artigo e predefinição: não há página de pesquisas para esses ciclos. Quatro é o teto desta fonte. O 2014, que parecia não existir, existe: mora em predefinição transcluída.
+
+  4. A CORREÇÃO É DIRECIONAL, e isso contraria a decisão de 21/07 sobre o `HERR`. Não é contradição, é objeto diferente: o `HERR` mede o 2º TURNO, onde só há duas séries completas e elas erraram em direções opostas. No 1º TURNO, com quatro ciclos, o campo subestima a DIREITA em três deles (erro do lado direito em agosto: -13,8 em 2014, -13,2 em 2018, -4,2 em 2022; só 2010 acertou). NÃO usar isto para mexer no `HERR` nem na classificação do banner, que continuam como estão.
+
+  5. OS PESOS NÃO SÃO IGUAIS DE PROPÓSITO. 2026 é quase gêmeo de 2022 nos três indicadores medidos (consolidação do campo 90,0 contra 90,7; volatilidade recente 2,1 contra 1,1; margem +6,4 contra +8,3) e não se parece com 2010, 2014 nem 2018. Tratar os quatro como iguais daria margem perto de zero e seria pior, não mais neutro.
+
+  6. A LINHA PONTILHADA VAI DIRETO DA ÂNCORA À URNA. Ela não passa pelos meses do meio porque "onde o campo deve estar em setembro" e "resultado de 4 de outubro" são grandezas diferentes, pesquisa e urna, e o degrau entre as duas É a correção. O ponto de setembro aparece como marcador vazado à parte, e é o que permite conferir o modelo quando setembro fechar. NÃO ligar os dois numa curva só.
+
+  7. ESTA ABA USA VOTOS VÁLIDOS, a aba Gráfico usa amostra total. Não unificar: a urna não tem indeciso, então projetar em amostra total não teria ponto final definido.
+
+- COMPARAÇÃO COM QUEM TAMBÉM PREVÊ (21/08/2026). O `PREVEXT` guarda as previsões de terceiros, com data, e precisa ser atualizado à mão. O concorrente sério é o Plano Político (planopolitico.com.br), modelo de simulação atualizado diariamente, que em 21/08 dava Lula 45,4 x Flávio 39,6 no 1º turno e 65% de vitória. A DISCORDÂNCIA entre ele e nós é toda no Flávio, e é metodológica e declarada: ele usa o erro histórico só para calibrar a incerteza e diz explicitamente que não pressupõe que as pesquisas erram sempre para o mesmo lado; nós aplicamos a correção direcional do item 4. Os outros são mercados (Polymarket 62,5%, Kalshi 62,0%, Manifold 64%) e o Metaculus (55%, 113 previsores), que respondem outra pergunta, quem VENCE a eleição, e por isso não se comparam com a nossa coluna, que é liderar o 1º TURNO.
+
 - LOTE DATAFOLHA DE 21/08/2026, E O ESCOPO QUE O RADAR ERRA (21/08/2026). O Datafolha (CNPJ 07630546000175, que no CSV do TSE vem com `NM_EMPRESA_FANTASIA` = `#NULO#`) divulgou em 21/08 a primeira leva das 130 pesquisas que Globo e Folha anunciaram até 3 de outubro: uma nacional (BR-04496/2026, N=2058, campo 18 a 20/8) e as estaduais de SP, MG, RJ, PE, DF e PI. Entraram no painel a nacional e o governo/senado de SP, MG, RJ, PE e DF. Duas coisas para o próximo agente:
 
   1. O ESCOPO `ESTADUAL[UF]` DO RADAR NÃO É CONFIÁVEL QUANDO VÁRIOS REGISTROS COMPARTILHAM CNPJ, DATAS E N. O `radar_tse.py` casa o gêmeo por (CNPJ, início, fim, N). Neste lote, MG, RJ e PE têm os três exatamente iguais (1.204 entrevistas, 18 a 21/8, mesmo CNPJ), então o desempate cai no primeiro gêmeo encontrado e os três presidenciais saíram rotulados como `ESTADUAL[MG]` numa rodada e `ESTADUAL[RJ]` na fila da anterior. O rótulo estava errado nas duas. Quem manda é a coluna `DS_DADO_MUNICIPIO` do CSV, que diz em texto de qual estado é a amostra: BR-04396 é MINAS GERAIS, BR-08448 é RIO DE JANEIRO e BR-00109 é PERNAMBUCO. Confira sempre essa coluna antes de escrever UF no `PRES26`.
