@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 22/08/2026 08:00</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 22/08/2026 08:20</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -905,6 +905,23 @@
     for(var n in pr){ if(isOut(n)) continue; var L=pr[n][0], F=pr[n][1]; if(L+F<=0) continue;
       A.push((L-F)/(L+F)*100 - avies2(n)); }
     return A.length? med(A) : null; }
+  // TRANSFERÊNCIA IMPLÍCITA DO BLOCO DE TERCEIRAS VIAS (22/08/2026). Identidade contábil, não
+  // estimativa: quando o MESMO instituto pergunta 1º e 2º turno na MESMA pesquisa, o que Lula e
+  // Flávio ganham do 1º para o 2º soma exatamente o bloco liberado (terceiras vias + indecisos
+  // que se decidem). A fração desse bloco que vai ao Flávio saiu estável: mediana ~63%, todos os
+  // pares entre 53% e 75%, atravessando institutos com house effects opostos. É inferência
+  // ECOLÓGICA (sabe-se quanto o bloco anda, não quem anda); os cruzamentos individuais não são
+  // públicos (verificado em 22/08 nas íntegras: Atlas só demografia, Datafolha pago, Quaest fechou).
+  function transfFlv(){ var A=[];
+    for(var mi=0;mi<months.length;mi++){ var m=months[mi], d=DI[m], pr=T2R[m];
+      if(!d||!d.rows.length||!pr) continue;
+      for(var i=0;i<d.rows.length;i++){ var r=d.rows[i], inst=r[0];
+        if(!pr[inst]||isOut(inst)) continue;
+        var L1=num(r[1]), F1=num(r[2]); if(L1===null||F1===null) continue;
+        var gL=pr[inst][0]-L1, gF=pr[inst][1]-F1, pool=gL+gF;
+        if(pool<=0.5) continue; // pool nulo/negativo: pergunta não comparável, fora
+        A.push(gF/pool); } }
+    return A.length? {t:med(A), n:A.length, lo:Math.min.apply(null,A), hi:Math.max.apply(null,A)} : null; }
   // PLACAR DO 2º TURNO (11/08/2026, a pedido do usuário). O banner mostrava o 1º turno como
   // placar ("Lula 41,5 · Flávio 37,3") e o 2º turno só como margem ("Lula +3,5"), o que obrigava
   // o leitor a imaginar os dois níveis do cenário que de fato decide a eleição. Agora os dois
@@ -1497,6 +1514,38 @@
         '<td style="padding:5px 6px; color:'+P.txt2+'; font-size:10.5px; line-height:1.4;">'+o.nota+(ok?'':' <b style="color:'+P.warn+';">Cenário descartado: os dois projetados não somam um resultado possível.</b>')+'</td></tr>';
     }
     h+='</tbody></table>';
+    // E O 2º TURNO? (22/08/2026, a pedido do usuário). Duas contas independentes, mostradas
+    // lado a lado porque hoje DISCORDAM, e esconder uma delas seria escolher em silêncio.
+    // Caminho A: 1º turno projetado + transferência implícita do bloco de terceiras vias
+    // (transfFlv). Caminho B: 2º turno perguntado direto no mês âncora, com o house effect de
+    // 2º turno (t2valid). A fraqueza conhecida do B: o viés foi medido na pesquisa FINAL, a dias
+    // da urna, e aplicá-lo a agosto é outra grandeza; a do A: acumula o erro da projeção do 1º
+    // turno. O desempate é o backtest por mês de ciclo, ainda não reconstruído.
+    (function(){
+      var tf=transfFlv(), mB=t2valid(P0.anc);
+      if(!tf&&mB===null) return;
+      h+='<div style="padding:10px 14px 2px; font-size:12.5px; font-weight:600; color:'+P.ink+';">E o 2º turno? Duas contas, e elas discordam</div>';
+      var bloco=100-P0.l-P0.f, cxs='';
+      if(tf&&bloco>0){
+        var F2a=P0.f+tf.t*bloco, L2a=P0.l+(1-tf.t)*bloco, mA=L2a-F2a;
+        var beq=(1+(P0.l-P0.f)/bloco)/2;
+        cxs+=box('A: projetar e transferir','<span style="color:'+(mA>=0?P.red:P.blue)+';">'+(mA>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(mA))+'</span> <span style="color:'+P.mut+'; font-weight:400;">'+fmt(L2a)+' x '+fmt(F2a)+'</span>');
+      }
+      if(mB!==null){
+        cxs+=box('B: 2º turno perguntado','<span style="color:'+(mB>=0?P.red:P.blue)+';">'+(mB>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(mB))+'</span> <span style="color:'+P.mut+'; font-weight:400;">'+fmt(50+mB/2)+' x '+fmt(50-mB/2)+'</span>');
+      }
+      h+='<div style="display:flex; gap:8px; padding:6px 12px 4px; flex-wrap:wrap;">'+cxs+'</div>';
+      var det='';
+      if(tf&&bloco>0){
+        var beq2=(1+(P0.l-P0.f)/bloco)/2;
+        det+='O caminho <b>A</b> pega o 1º turno projetado acima e reparte o bloco de '+fmt(bloco)+' pontos das terceiras vias: nas '+tf.n+' pesquisas que perguntaram os dois turnos juntas, a fração desse bloco que migra para o Flávio tem mediana de <b>'+Math.round(tf.t*100)+'%</b> (todas entre '+Math.round(tf.lo*100)+'% e '+Math.round(tf.hi*100)+'%), e ele precisaria de '+fmt(beq2*100)+'% para empatar. ';
+      }
+      if(mB!==null){
+        det+='O caminho <b>B</b> usa o 2º turno que os institutos perguntaram em '+P0.anc+', em válidos e com o house effect de 2º turno. ';
+      }
+      det+='<b style="color:'+P.goldtxt+';">A divergência é a informação:</b> o B aplica um viés medido na pesquisa FINAL de cada ciclo, a dias da urna, a uma pergunta feita meses antes; o A acumula o erro da projeção do 1º turno e assume que a transferência de hoje segura até outubro. O desempate honesto é reconstruir o erro do 2º turno por mês de ciclo (2010, 2014, 2018, 2022), como já foi feito para o 1º; até lá, nenhuma das duas vira manchete.';
+      h+='<div style="padding:2px 14px 8px; font-size:12px; color:'+P.txt+'; line-height:1.55;">'+det+'</div>';
+    })();
     h+='<div style="padding:8px 14px 2px; font-size:12.5px; font-weight:600; color:'+P.ink+';">Como nos comparamos com quem também prevê</div>';
     h+='<table style="width:100%; border-collapse:collapse; font-size:12px;"><tbody>';
     h+='<tr style="border-bottom:1px solid '+P.bord+'; background:'+P.rowhl+';">'+
@@ -1513,8 +1562,7 @@
     }
     h+='</tbody></table>';
     h+='<div style="padding:10px 14px 14px; font-size:11.5px; color:'+P.txt2+'; line-height:1.5;">'+
-       '<b style="color:'+P.warn+';">O que esta projeção não é.</b> Não é previsão do vencedor da eleição: ela projeta o <b>1º turno</b>, e quem ganha depende do 2º, '+
-       'que exige hipótese de transferência de voto que ainda não reconstruímos. Os percentuais de mercado e do Metaculus na tabela acima respondem a outra pergunta, '+
+       '<b style="color:'+P.warn+';">O que esta projeção não é.</b> Não é previsão do vencedor da eleição: a manchete desta aba projeta o <b>1º turno</b>. Para o 2º, o bloco "E o 2º turno?" mostra as duas contas possíveis, que hoje apontam para lados opostos; enquanto o backtest histórico não decidir entre elas, nenhuma vira manchete. Os percentuais de mercado e do Metaculus na tabela acima respondem a outra pergunta, '+
        'quem vence, e por isso não são diretamente comparáveis com a nossa coluna. '+
        'A base são quatro eleições, e quatro é pouco: por isso a faixa de 90% é larga de propósito e o desvio adotado mistura a dispersão ponderada com a sem ponderar. '+
        'O maior risco conhecido é o horário eleitoral de rádio e TV, que começa na segunda metade de agosto: em 2010 a margem do campo saltou 20 pontos de julho para agosto por causa dele.'+
@@ -1533,7 +1581,7 @@
   // direção não é avaliável com honestidade. Não reintroduzir o campo p nem o selo
   // 'favorece/prejudica' nem o círculo vazado que os distinguia no gráfico.
   var PEVENTS=[
-    {d:'2026-05-13', c:'blue', t:'Revelação do Banco Master atinge Flávio (Intercept divulga áudio com Daniel Vorcaro e os R$ 134 mi para o filme do pai).'},
+    {d:'2026-05-13', c:'blue', t:'Caso "Dark Horse" atinge Flávio: Intercept divulga áudios com Daniel Vorcaro (Banco Master) sobre R$ 134 mi pedidos para o filme do pai; R$ 61 mi teriam sido aportados. Vorcaro foi preso um dia depois, no rombo de R$ 47 bi do FGC.'},
     {d:'2026-06-25', c:'blue', t:'Michelle Bolsonaro publica vídeo contra Flávio e expõe o racha na família; abre disputa na direita e a AtlasIntel passa a testar o nome dela.'},
     {d:'2026-06-26', c:'red', t:'PF aponta relação de Jaques Wagner (PT) com o Banco Master (apartamento e repasses); Wagner nega.'},
     {d:'2026-07-13', c:'blue', t:'Flávio lê nas redes uma "carta aos brasileiros" atribuída a Jair Bolsonaro, que o indica como porta-voz. Em resposta, Moraes proíbe Flávio de visitar o pai por 90 dias e veda a divulgação de manifestos político-eleitorais de terceiros.'},
