@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 22/08/2026 07:35</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 22/08/2026 08:00</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1330,6 +1330,12 @@
     return {anc:a, mn:mn, base:base, cen:cen, l:ml, f:mf, m:mm, sd:sd, cam:cam, p:pnorm(mm/sd)};
   }
 
+  // EXPLICADOR DO GRÁFICO DA PREVISÃO (22/08/2026, a pedido do usuário, que lê no celular:
+  // toque, não hover). Cada elemento clicável do SVG chama pjExp(chave), que preenche o painel
+  // #pj-exp com um texto DERIVADO dos dados vivos em PJXP, montado dentro de prevSVG().
+  var PJXP={};
+  window.pjExp=function(k){ var d=document.getElementById('pj-exp'); if(!d||!PJXP[k]) return;
+    d.innerHTML=PJXP[k]; d.style.borderLeftColor=P.goldtxt; };
   // Gráfico da previsão. Linha cheia = o que as pesquisas mediram; linha pontilhada = projeção.
   // Tudo em VOTOS VÁLIDOS, porque é a única base em que pesquisa e urna são comparáveis: a urna
   // não tem indeciso. Por isso esta aba NÃO usa a mesma escala da aba Gráfico, que é amostra total.
@@ -1350,6 +1356,11 @@
       pl+=X(i).toFixed(1)+','+Y(v.l).toFixed(1)+' '; pf+=X(i).toFixed(1)+','+Y(v.f).toFixed(1)+' ';
       dots+='<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v.l).toFixed(1)+'" r="3" fill="'+P.red+'"/>'+
             '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v.f).toFixed(1)+'" r="3" fill="'+P.blue+'"/>';
+      // alvo de toque invisível (r=12) por cima de cada ponto medido, um por candidato
+      var ko='obs-'+obs[i].rot;
+      PJXP[ko]='<b>Ponto medido de '+obs[i].rot+'</b>. Mediana das '+v.n+' pesquisas do mês, convertidas uma a uma para <b>votos válidos</b> (exclui brancos, nulos e indecisos, porque a urna não os tem): <b style="color:'+P.red+';">Lula '+fmt(v.l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(v.f)+'</b>, margem '+(v.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(v.m))+'. A linha cheia liga esses pontos: é o que o campo MEDIU, sem projeção.'+(i===obs.length-1?' Este é o último mês com rodada: é a <b>âncora</b> de onde a projeção parte.':'');
+      dots+='<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v.l).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\''+ko+'\')"/>'+
+            '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v.f).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\''+ko+'\')"/>';
     }
     // caminho projetado: do mês âncora até outubro, passando pelos pontos intermediários
     // A LINHA PONTILHADA VAI DIRETO DA ÂNCORA À URNA, sem passar pelos meses do meio (21/08/2026).
@@ -1367,6 +1378,11 @@
       meio2+='<circle cx="'+X(idx).toFixed(1)+'" cy="'+Y(el).toFixed(1)+'" r="3.6" fill="none" stroke="'+P.red+'" stroke-width="1.6" stroke-opacity="0.55"/>'+
              '<circle cx="'+X(idx).toFixed(1)+'" cy="'+Y(ef).toFixed(1)+'" r="3.6" fill="none" stroke="'+P.blue+'" stroke-width="1.6" stroke-opacity="0.55"/>'+
              '<text x="'+X(idx).toFixed(1)+'" y="'+(Y(el)-9).toFixed(1)+'" text-anchor="middle" font-size="9" fill="'+P.mut+'">campo esperado</text>';
+      var rotCam=(P0.cam[c2].mn===9?'setembro':'outubro'), kc='campo-'+P0.cam[c2].mn;
+      PJXP[kc]='<b>Onde o campo deve estar em '+rotCam+'</b>. Não é o resultado projetado: é onde as <b>pesquisas</b> tendem a estar em '+rotCam+' ('+'<b style="color:'+P.red+';">Lula '+fmt(el)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(ef)+'</b>) se 2026 andar como os ciclos análogos. Pesquisa e urna são grandezas diferentes; o marcador é vazado de propósito. Serve de teste da projeção: quando saírem as rodadas de '+rotCam+', compare com este círculo; se vierem longe dele, a projeção precisa ser revista.';
+      PJXP['campo']=PJXP[kc];
+      meio2+='<circle cx="'+X(idx).toFixed(1)+'" cy="'+Y(el).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\''+kc+'\')"/>'+
+             '<circle cx="'+X(idx).toFixed(1)+'" cy="'+Y(ef).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\''+kc+'\')"/>';
     }
     var dl='',df='';
     for(var q=0;q<pts.length;q++){ dl+=X(pts[q].i).toFixed(1)+','+Y(pts[q].l).toFixed(1)+' ';
@@ -1387,22 +1403,31 @@
     for(var s=0;s<P0.cen.length;s++){ var o=P0.cen[s];
       if(o.l<lo||o.l>hi||o.f<lo||o.f>hi) continue;
       var rr=(3+7*o.w).toFixed(1), xx=(X(n-1)+9).toFixed(1);
-      cd+='<circle cx="'+xx+'" cy="'+Y(o.l).toFixed(1)+'" r="'+rr+'" fill="'+P.red+'" fill-opacity="0.30"/>'+
-          '<circle cx="'+xx+'" cy="'+Y(o.f).toFixed(1)+'" r="'+rr+'" fill="'+P.blue+'" fill-opacity="0.30"/>'+
-          '<text x="'+(X(n-1)+22)+'" y="'+(Y((o.l+o.f)/2)+4).toFixed(1)+'" font-size="9.5" fill="'+P.mut+'">'+o.c+'</text>';
+      var kn='cen-'+o.c;
+      PJXP[kn]='<b>Cenário '+o.c+' ('+o.par+')</b>, peso de '+(o.w<0.005?'menos de 1':Math.round(o.w*100))+'% na projeção. Se de '+P0.anc+' até a urna a corrida de 2026 andar o mesmo que a de '+o.c+' andou, o 1º turno fecha em <b style="color:'+P.red+';">Lula '+fmt(o.l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(o.f)+'</b>. O tamanho do círculo é o peso, medido pela semelhança daquele ciclo com 2026 (consolidação, volatilidade e margem). '+o.nota;
+      cd+='<circle cx="'+xx+'" cy="'+Y(o.l).toFixed(1)+'" r="'+rr+'" fill="'+P.red+'" fill-opacity="0.30" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')"/>'+
+          '<circle cx="'+xx+'" cy="'+Y(o.f).toFixed(1)+'" r="'+rr+'" fill="'+P.blue+'" fill-opacity="0.30" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')"/>'+
+          '<circle cx="'+xx+'" cy="'+Y(o.l).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')"/>'+
+          '<circle cx="'+xx+'" cy="'+Y(o.f).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')"/>'+
+          '<text x="'+(X(n-1)+22)+'" y="'+(Y((o.l+o.f)/2)+4).toFixed(1)+'" font-size="9.5" fill="'+P.mut+'" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')">'+o.c+'</text>';
     }
     var grade='',rot='';
     for(var g=30;g<=55;g+=5){ grade+='<line x1="'+L+'" y1="'+Y(g).toFixed(1)+'" x2="'+(W-R)+'" y2="'+Y(g).toFixed(1)+'" stroke="'+P.bsoft+'"/>'+
       '<text x="'+(L-8)+'" y="'+(Y(g)+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="'+P.mut+'">'+g+'</text>'; }
     for(var e=0;e<n;e++){ rot+='<text x="'+X(e).toFixed(1)+'" y="'+(Hh-14)+'" text-anchor="middle" font-size="12" fill="'+(eixo[e].obs?P.txt2:P.goldtxt)+'">'+eixo[e].rot+'</text>'; }
     var xAnc=X(iAnc).toFixed(1);
+    // textos do explicador que dependem do conjunto, não de um ponto
+    var frenteP=P0.m>=0?'Lula':'Flávio';
+    PJXP['proj']='<b>Projeção para 4 de outubro</b> (pontas vazadas e linha pontilhada). Parte da âncora de '+P0.anc+' (Lula '+fmt(P0.base.l)+' x Flávio '+fmt(P0.base.f)+' em válidos) e aplica o quanto o campo de pesquisas ERROU deste mesmo ponto do calendário até a urna em 2010, 2014, 2018 e 2022, cada ciclo pesando pela semelhança com 2026. Resultado: <b style="color:'+P.red+';">Lula '+fmt(P0.l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(P0.f)+'</b>, margem '+frenteP+' +'+fmt(Math.abs(P0.m))+'. A pontilhada vai DIRETO da âncora a outubro porque a correção liga pesquisa a urna, não mês a mês; o degrau é justamente a correção.';
+    PJXP['faixa']='<b>Faixa de 90%</b> (área hachurada). A incerteza da projeção: a margem final tem 90% de chance de cair entre '+fmt(P0.m-1.645*P0.sd)+' e +'+fmt(P0.m+1.645*P0.sd)+' (positivo é Lula à frente); no desenho, a faixa reparte essa incerteza entre as duas linhas. O desvio ('+fmt(P0.sd)+') mistura meio a meio a dispersão dos cenários ponderada pela semelhança e a sem ponderar, porque quatro eleições é pouco para confiar cegamente nos pesos. Ela abre em leque a partir da âncora: quanto mais longe, menos se sabe.';
+    PJXP['anc']='<b>Área sombreada</b>. À esquerda da linha tracejada vertical está o que as pesquisas MEDIRAM, mês a mês; à direita, tudo é PROJEÇÃO construída sobre o erro histórico do campo. '+P0.anc+' é o último mês com rodada, a âncora. O maior risco conhecido desta fronteira: o horário eleitoral de rádio e TV começa em 16/8, e em 2010 ele moveu a margem em 20 pontos de julho para agosto.';
     return ''+
     '<div style="display:flex; flex-wrap:wrap; gap:14px; padding:12px 14px 4px; font-size:12px; color:'+P.txt2+';">'+
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:3px; background:'+P.red+'; display:inline-block; border-radius:2px;"></span>Lula medido</span>'+
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:3px; background:'+P.blue+'; display:inline-block; border-radius:2px;"></span>Flávio medido</span>'+
-      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:0; border-top:2.5px dotted '+P.ink+'; display:inline-block;"></span>projeção</span>'+
-      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:11px; display:inline-block; background:repeating-linear-gradient(45deg,'+P.hatch+','+P.hatch+' 1.5px,transparent 1.5px,transparent 5px); border-radius:2px;"></span>faixa de 90%</span>'+
-      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; border:2px solid '+P.mut+'; display:inline-block;"></span>onde o campo deve estar</span>'+'<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; background:'+P.mut+'; opacity:.4; display:inline-block;"></span>cenário por ciclo, tamanho = peso</span>'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:0; border-top:2.5px dotted '+P.ink+'; display:inline-block;"></span><span style="cursor:pointer; text-decoration:underline dotted;" onclick="pjExp(\'proj\')">projeção</span></span>'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:11px; display:inline-block; background:repeating-linear-gradient(45deg,'+P.hatch+','+P.hatch+' 1.5px,transparent 1.5px,transparent 5px); border-radius:2px;"></span><span style="cursor:pointer; text-decoration:underline dotted;" onclick="pjExp(\'faixa\')">faixa de 90%</span></span>'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; border:2px solid '+P.mut+'; display:inline-block;"></span><span style="cursor:pointer; text-decoration:underline dotted;" onclick="pjExp(\'campo\')">onde o campo deve estar</span></span>'+'<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; background:'+P.mut+'; opacity:.4; display:inline-block;"></span>cenário por ciclo, tamanho = peso</span>'+
     '</div>'+
     '<svg viewBox="0 0 '+W+' '+Hh+'" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Projecao do 1o turno em votos validos ate 4 de outubro; linha cheia e o medido pelas pesquisas, pontilhada e a projecao com faixa de 90 por cento">'+
       '<defs>'+
@@ -1410,22 +1435,25 @@
         '<pattern id="hp2" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.blue+'" stroke-width="1.3" stroke-opacity="0.28"/></pattern>'+
       '</defs>'+
       grade+
-      '<rect x="'+xAnc+'" y="'+T+'" width="'+(W-R-parseFloat(xAnc))+'" height="'+ph+'" fill="'+P.gold+'" fill-opacity="0.05"/>'+
+      '<rect x="'+xAnc+'" y="'+T+'" width="'+(W-R-parseFloat(xAnc))+'" height="'+ph+'" fill="'+P.gold+'" fill-opacity="0.05" style="cursor:pointer;" onclick="pjExp(\'anc\')"/>'+
       '<line x1="'+xAnc+'" y1="'+T+'" x2="'+xAnc+'" y2="'+(T+ph)+'" stroke="'+P.goldtxt+'" stroke-width="1.2" stroke-dasharray="3,3" stroke-opacity="0.7"/>'+
-      '<text x="'+(parseFloat(xAnc)+6)+'" y="'+(T+12)+'" font-size="10" fill="'+P.goldtxt+'">daqui para a frente é projeção</text>'+
-      '<polygon fill="url(#hp1)" points="'+faixaL+'"/>'+
-      '<polygon fill="url(#hp2)" points="'+faixaB+'"/>'+
+      '<text x="'+(parseFloat(xAnc)+6)+'" y="'+(T+12)+'" font-size="10" fill="'+P.goldtxt+'" style="cursor:pointer;" onclick="pjExp(\'anc\')">daqui para a frente é projeção</text>'+
+      '<polygon fill="url(#hp1)" points="'+faixaL+'" style="cursor:pointer;" onclick="pjExp(\'faixa\')"/>'+
+      '<polygon fill="url(#hp2)" points="'+faixaB+'" style="cursor:pointer;" onclick="pjExp(\'faixa\')"/>'+
       '<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" points="'+pl+'"/>'+
       '<polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" points="'+pf+'"/>'+
-      '<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" stroke-dasharray="6,5" points="'+dl+'"/>'+
-      '<polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" stroke-dasharray="6,5" points="'+df+'"/>'+
+      '<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" stroke-dasharray="6,5" points="'+dl+'" style="cursor:pointer; pointer-events:stroke;" onclick="pjExp(\'proj\')"/>'+
+      '<polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" stroke-dasharray="6,5" points="'+df+'" style="cursor:pointer; pointer-events:stroke;" onclick="pjExp(\'proj\')"/>'+
       dots+meio2+cd+
-      '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.l).toFixed(1)+'" r="4.5" fill="'+P.surf+'" stroke="'+P.red+'" stroke-width="2.5"/>'+
-      '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.f).toFixed(1)+'" r="4.5" fill="'+P.surf+'" stroke="'+P.blue+'" stroke-width="2.5"/>'+
+      '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.l).toFixed(1)+'" r="4.5" fill="'+P.surf+'" stroke="'+P.red+'" stroke-width="2.5" style="cursor:pointer;" onclick="pjExp(\'proj\')"/>'+
+      '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.f).toFixed(1)+'" r="4.5" fill="'+P.surf+'" stroke="'+P.blue+'" stroke-width="2.5" style="cursor:pointer;" onclick="pjExp(\'proj\')"/>'+
+      '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.l).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\'proj\')"/>'+
+      '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.f).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\'proj\')"/>'+
       '<text x="'+X(n-1).toFixed(1)+'" y="'+(Y(ult.l)-11).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="700" fill="'+P.red+'">'+fmt(ult.l)+'</text>'+
       '<text x="'+X(n-1).toFixed(1)+'" y="'+(Y(ult.f)+18).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="700" fill="'+P.blue+'">'+fmt(ult.f)+'</text>'+
       rot+
-    '</svg>';
+    '</svg>'+
+    '<div id="pj-exp" style="margin:6px 14px 12px; padding:9px 12px; font-size:12px; line-height:1.55; color:'+P.txt+'; background:'+P.surf2+'; border:1px solid '+P.bord+'; border-left:3px solid '+P.bord+'; border-radius:6px;">Toque em qualquer ponto do gráfico (bolinhas cheias, vazadas, linha pontilhada, faixa hachurada, círculos de 2010/2014/2022) para entender o que ele é e de onde o número sai.</div>';
   }
 
   // Texto da aba de previsão. DERIVADO da projeção, nunca escrito à mão: se entrar pesquisa
