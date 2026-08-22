@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 22/08/2026 01:44. Mercados: Polymarket 63,5%/33,6%, Kalshi 63,0%/34,0%.
+Rodada de 22/08/2026 07:35. Mercados: Polymarket 63,5%/33,7%, Kalshi 63,0%/36,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -18,13 +18,10 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR084482026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1204, registro BR001092026
 - [aguardando desde 2026-08-21] TSE ESTADUAL[SP], #NULO# (Presidente), campo 18/08-21/08, divulgação 2026-08-21, N=1610, registro BR071852026
-- [aguardando desde 2026-08-21] TSE MT, META PUBLICIDADE E PESQUISA (Senador), campo 12/08-13/08, divulgação 2026-08-21, N=500, registro MT024222026
-- [aguardando desde 2026-08-21] TSE MT, MT DADOS PESQUISAS (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-21, N=3080, registro MT043902026
-- [aguardando desde 2026-08-21] TSE NACIONAL?, VERITA (Presidente), campo 16/08-20/08, divulgação 2026-08-21, N=3840, registro BR040062026
-- [NOVO] TSE MA, COMPLETA PESQUISAS DE OPNIAO (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-22, N=1500, registro MA005662026
-- [NOVO] TSE PI, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-22, N=826, registro PI066562026
-- [NOVO] TSE PR, INDICE INTELIGENCIA (Governador, Senador), campo 17/08-19/08, divulgação 2026-08-22, N=1200, registro PR017542026
-- [NOVO] TSE SE, CTAS TECNOLOGIA (Governador, Senador, Deputado Fede), campo 17/08-21/08, divulgação 2026-08-22, N=1224, registro SE084322026
+- [aguardando desde 2026-08-22] TSE MA, COMPLETA PESQUISAS DE OPNIAO (Governador, Senador, Deputado Fede), campo 15/08-20/08, divulgação 2026-08-22, N=1500, registro MA005662026
+- [aguardando desde 2026-08-22] TSE PI, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-22, N=826, registro PI066562026
+- [aguardando desde 2026-08-22] TSE PR, INDICE INTELIGENCIA (Governador, Senador), campo 17/08-19/08, divulgação 2026-08-22, N=1200, registro PR017542026
+- [aguardando desde 2026-08-22] TSE SE, CTAS TECNOLOGIA (Governador, Senador, Deputado Fede), campo 17/08-21/08, divulgação 2026-08-22, N=1224, registro SE084322026
 
 ## Últimas publicações do Veritá
 
