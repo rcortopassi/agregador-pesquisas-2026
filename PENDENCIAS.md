@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 23/08/2026 01:48. Mercados: Polymarket 62,5%/33,7%, Kalshi 63,0%/36,0%.
+Rodada de 23/08/2026 07:35. Mercados: Polymarket 62,5%/33,5%, Kalshi 65,0%/36,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -19,23 +19,23 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-22] TSE PI, #NULO# (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-22, N=826, registro PI066562026
 - [aguardando desde 2026-08-22] TSE PR, INDICE INTELIGENCIA (Governador, Senador), campo 17/08-19/08, divulgação 2026-08-22, N=1200, registro PR017542026
 - [aguardando desde 2026-08-22] TSE SE, CTAS TECNOLOGIA (Governador, Senador, Deputado Fede), campo 17/08-21/08, divulgação 2026-08-22, N=1224, registro SE084322026
-- [NOVO] TSE AC, DATA CONTROL INSTITUTO DE PE (Governador, Senador, Deputado Fede), campo 17/08-23/08, divulgação 2026-08-23, N=1620, registro AC031292026
-- [NOVO] TSE AM, PROJETA PESQUISA DE MERCADO  (Governador, Senador), campo 17/08-21/08, divulgação 2026-08-23, N=3000, registro AM038242026
-- [NOVO] TSE BA, INSTITUTO OPNUS (Governador, Senador), campo 17/08-22/08, divulgação 2026-08-23, N=1200, registro BA044722026
-- [NOVO] TSE ES, #NULO# (Governador, Senador, Deputado Fede), campo 18/08-20/08, divulgação 2026-08-23, N=1000, registro ES016792026
-- [NOVO] TSE ESTADUAL[AC], DATA CONTROL INSTITUTO DE PE (Presidente), campo 17/08-23/08, divulgação 2026-08-23, N=1620, registro BR007412026
-- [NOVO] TSE ESTADUAL[BA], INSTITUTO OPNUS (Presidente), campo 17/08-22/08, divulgação 2026-08-23, N=1200, registro BR038682026
-- [NOVO] TSE ESTADUAL[ES], #NULO# (Presidente), campo 18/08-20/08, divulgação 2026-08-23, N=1000, registro BR087572026
-- [NOVO] TSE ESTADUAL[MG], #NULO# (Presidente), campo 17/08-20/08, divulgação 2026-08-23, N=1000, registro BR082752026
-- [NOVO] TSE ESTADUAL[PA], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 18/08-21/08, divulgação 2026-08-23, N=1000, registro BR077072026
-- [NOVO] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 16/08-18/08, divulgação 2026-08-23, N=700, registro GO008492026
-- [NOVO] TSE MG, #NULO# (Governador, Senador, Deputado Fede), campo 17/08-20/08, divulgação 2026-08-23, N=1000, registro MG037942026
-- [NOVO] TSE PA, BOAS IDEIAS, ESTRATEGIA E IN (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-23, N=1000, registro PA056642026
-- [NOVO] TSE PE, SIMPLEX CONSULTORIA ECONOMIC (Governador, Senador), campo 16/08-21/08, divulgação 2026-08-23, N=1067, registro PE066882026
-- [NOVO] TSE PE, INSTITUTO DE PESQUISA MULTIP (Governador, Senador), campo 18/08-18/08, divulgação 2026-08-23, N=250, registro PE019492026
-- [NOVO] TSE PI, INSTITUTO CREDIBILIDADE (Governador, Deputado Estadual), campo 12/08-13/08, divulgação 2026-08-23, N=400, registro PI041932026
-- [NOVO] TSE SE, POSITIVA PESQUISAS (Governador, Senador, Deputado Fede), campo 18/08-22/08, divulgação 2026-08-23, N=1000, registro SE015892026
-- [NOVO] TSE SP, GRUPO GERP GERP MERCADO GERP (Governador), campo 18/08-21/08, divulgação 2026-08-23, N=1800, registro SP014772026
+- [aguardando desde 2026-08-23] TSE AC, DATA CONTROL INSTITUTO DE PE (Governador, Senador, Deputado Fede), campo 17/08-23/08, divulgação 2026-08-23, N=1620, registro AC031292026
+- [aguardando desde 2026-08-23] TSE AM, PROJETA PESQUISA DE MERCADO  (Governador, Senador), campo 17/08-21/08, divulgação 2026-08-23, N=3000, registro AM038242026
+- [aguardando desde 2026-08-23] TSE BA, INSTITUTO OPNUS (Governador, Senador), campo 17/08-22/08, divulgação 2026-08-23, N=1200, registro BA044722026
+- [aguardando desde 2026-08-23] TSE ES, #NULO# (Governador, Senador, Deputado Fede), campo 18/08-20/08, divulgação 2026-08-23, N=1000, registro ES016792026
+- [aguardando desde 2026-08-23] TSE ESTADUAL[AC], DATA CONTROL INSTITUTO DE PE (Presidente), campo 17/08-23/08, divulgação 2026-08-23, N=1620, registro BR007412026
+- [aguardando desde 2026-08-23] TSE ESTADUAL[BA], INSTITUTO OPNUS (Presidente), campo 17/08-22/08, divulgação 2026-08-23, N=1200, registro BR038682026
+- [aguardando desde 2026-08-23] TSE ESTADUAL[ES], #NULO# (Presidente), campo 18/08-20/08, divulgação 2026-08-23, N=1000, registro BR087572026
+- [aguardando desde 2026-08-23] TSE ESTADUAL[MG], #NULO# (Presidente), campo 17/08-20/08, divulgação 2026-08-23, N=1000, registro BR082752026
+- [aguardando desde 2026-08-23] TSE ESTADUAL[PA], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 18/08-21/08, divulgação 2026-08-23, N=1000, registro BR077072026
+- [aguardando desde 2026-08-23] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 16/08-18/08, divulgação 2026-08-23, N=700, registro GO008492026
+- [aguardando desde 2026-08-23] TSE MG, #NULO# (Governador, Senador, Deputado Fede), campo 17/08-20/08, divulgação 2026-08-23, N=1000, registro MG037942026
+- [aguardando desde 2026-08-23] TSE PA, BOAS IDEIAS, ESTRATEGIA E IN (Governador, Senador), campo 18/08-21/08, divulgação 2026-08-23, N=1000, registro PA056642026
+- [aguardando desde 2026-08-23] TSE PE, SIMPLEX CONSULTORIA ECONOMIC (Governador, Senador), campo 16/08-21/08, divulgação 2026-08-23, N=1067, registro PE066882026
+- [aguardando desde 2026-08-23] TSE PE, INSTITUTO DE PESQUISA MULTIP (Governador, Senador), campo 18/08-18/08, divulgação 2026-08-23, N=250, registro PE019492026
+- [aguardando desde 2026-08-23] TSE PI, INSTITUTO CREDIBILIDADE (Governador, Deputado Estadual), campo 12/08-13/08, divulgação 2026-08-23, N=400, registro PI041932026
+- [aguardando desde 2026-08-23] TSE SE, POSITIVA PESQUISAS (Governador, Senador, Deputado Fede), campo 18/08-22/08, divulgação 2026-08-23, N=1000, registro SE015892026
+- [aguardando desde 2026-08-23] TSE SP, GRUPO GERP GERP MERCADO GERP (Governador), campo 18/08-21/08, divulgação 2026-08-23, N=1800, registro SP014772026
 - [aguardando desde 2026-08-22] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto Veritá entre os dias 16 a 20 de agosto de 2026 PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1787425853621_Relatorio_Brasil_Agosto_de_2026.pdf
 
 ## Últimas publicações do Veritá
