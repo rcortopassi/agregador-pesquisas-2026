@@ -403,16 +403,6 @@
    "visto": "2026-08-23"
   },
   {
-   "proto": "ES016792026",
-   "escopo": "ES",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "18/08-20/08",
-   "div": "2026-08-23",
-   "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
    "proto": "BR007412026",
    "escopo": "ESTADUAL[AC]",
    "inst": "DATA CONTROL INSTITUTO DE PE",
@@ -433,16 +423,6 @@
    "visto": "2026-08-23"
   },
   {
-   "proto": "BR087572026",
-   "escopo": "ESTADUAL[ES]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "18/08-20/08",
-   "div": "2026-08-23",
-   "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
    "proto": "BR082752026",
    "escopo": "ESTADUAL[MG]",
    "inst": "#NULO#",
@@ -460,16 +440,6 @@
    "campo": "18/08-21/08",
    "div": "2026-08-23",
    "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "GO008492026",
-   "escopo": "GO",
-   "inst": "DIRECT PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "16/08-18/08",
-   "div": "2026-08-23",
-   "n": "700",
    "visto": "2026-08-23"
   },
   {
@@ -503,26 +473,6 @@
    "visto": "2026-08-23"
   },
   {
-   "proto": "PE019492026",
-   "escopo": "PE",
-   "inst": "INSTITUTO DE PESQUISA MULTIP",
-   "cargo": "Governador, Senador",
-   "campo": "18/08-18/08",
-   "div": "2026-08-23",
-   "n": "250",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "PI041932026",
-   "escopo": "PI",
-   "inst": "INSTITUTO CREDIBILIDADE",
-   "cargo": "Governador, Deputado Estadual",
-   "campo": "12/08-13/08",
-   "div": "2026-08-23",
-   "n": "400",
-   "visto": "2026-08-23"
-  },
-  {
    "proto": "SE015892026",
    "escopo": "SE",
    "inst": "POSITIVA PESQUISAS",
@@ -543,14 +493,5 @@
    "visto": "2026-08-23"
   }
  ],
- "verita_pendentes": [
-  {
-   "id": "8e9d5a6b-e6b5-4870-a02f-131c565ed17f",
-   "titulo": "Pesquisa para Presidente no Brasil",
-   "descricao": "Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto Veritá entre os dias 16 a 20 de agosto de 2026",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1787425853621_Relatorio_Brasil_Agosto_de_2026.pdf",
-   "created_at": "2026-08-22T19:10:56.051969+00:00",
-   "visto": "2026-08-22"
-  }
- ]
+ "verita_pendentes": []
 }

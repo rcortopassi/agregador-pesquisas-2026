@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 23/08/2026 19:34</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 23/08/2026 19:35</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1087,11 +1087,19 @@
   // A parte VOLÁTIL é quem vai e quem falta: campanha confirma e desmarca até a véspera, então
   // cada debate carrega `sit` com a data da última conferência e o painel escreve essa data ao
   // lado da lista. Sem fonte, o nome entra como convidado, nunca como confirmado.
-  // O vídeo usa /embed/live_stream?channel=ID no youtube-nocookie, que toca o que estiver AO VIVO
-  // naquele canal: assim não depende de um id de vídeo, que só passa a existir quando a
-  // transmissão começa. Só leva embed o debate cujo organizador anunciou YouTube (Band) ou cujo
-  // consorciado mantém canal ao vivo próprio (CNN Brasil). Record e Globo não anunciaram YouTube,
-  // e por isso levam link para a plataforma oficial, que é o que de fato existe.
+  // O VÍDEO: `vid` PRIMEIRO, canal só como reserva (corrigido em 23/08/2026, 19h30).
+  // O quadro usava /embed/live_stream?channel=ID no youtube-nocookie, escolhido para não depender
+  // de um id de vídeo que só existe depois que a transmissão começa. Esse endpoint MORREU: durante
+  // o próprio debate da Band, com a live no ar e `playableInEmbed:true`, ele devolvia uma página
+  // sem nenhum videoId e o quadro escrevia "Este vídeo não está disponível". Foi medido nos dois
+  // caminhos no mesmo minuto: /embed/ID resolvia a transmissão, /embed/live_stream?channel=ID não.
+  // Agora cada debate pode trazer `vid`, o id da transmissão daquele dia, e o embed usa ele quando
+  // existe. Sem `vid` o painel NÃO abre player quebrado: mostra o aviso e manda para o canal.
+  // Como achar o id no dia do debate, sem chave de API:
+  //   curl -s https://www.youtube.com/@BandJornalismo/live | grep -o 'watch?v=[A-Za-z0-9_-]\{11\}'
+  // Só leva vídeo o debate cujo organizador anunciou YouTube (Band) ou cujo consorciado mantém
+  // canal ao vivo próprio (CNN Brasil). Record e Globo não anunciaram YouTube, e por isso levam
+  // link para a plataforma oficial, que é o que de fato existe.
   var DEBATES=[
     {d:'2026-08-23', dia:'domingo', hc:'20h', h:'20h na TV, com cobertura digital desde as 19h', org:'Band',
      tv:'Band na TV aberta, com sinal compartilhado com a BandNews TV e o Arte1 nos canais pagos. Transmitem também os parceiros do pool: TV Cultura, TV Gazeta e Jovem Pan.',
@@ -1099,6 +1107,7 @@
      vao:['Renan Santos (Missão)','Ronaldo Caiado (PSD)','Augusto Cury (Avante)','Romeu Zema (Novo)'],
      nao:['Lula (PT)','Flávio Bolsonaro (PL)'], sit:'21/8',
      yt:'UCoa-D_VfMkFrCYodrOC9-mA', ytlab:'Band Jornalismo',
+     vid:'8ejQOXgiMvI', vidnt:'Debate Presidencial 2026 na Band, transmissão de 23/8 no canal Band Jornalismo.',
      url:'https://www.youtube.com/@BandJornalismo/live',
      nt:'Os dois primeiros colocados nas pesquisas não vão. A campanha do Lula alegou que o formato concentraria os ataques no candidato à reeleição, e o PL definiu que o Flávio só participa de debate em que o Lula também esteja. A Band mantém vazio o púlpito de cada ausente durante toda a exibição. Por sorteio, a ordem no palco, da esquerda para a direita na visão do telespectador, é Renan Santos, Lula, Flávio, Caiado, Cury e Zema. O encontro estava marcado para 16/8 e foi adiado justamente para tentar garantir a presença do Lula.',
      fonte:'https://www.band.com.br/noticias/jornal-da-band/ultimas/band-confirma-regras-e-ordem-dos-candidatos-para-debate-presidencial-202608172013'},
@@ -1156,14 +1165,18 @@
     h+='<div style="font-size:11.5px; color:'+P.txt2+'; line-height:1.5; margin-top:6px;">'+db.nt+'</div>';
     var bt='display:inline-block; font-size:11.5px; padding:4px 9px; border-radius:4px; border:1px solid '+P.bord+'; background:'+P.surf3+'; color:'+P.ink+'; cursor:pointer; text-decoration:none;';
     h+='<div style="display:flex; gap:7px; flex-wrap:wrap; align-items:center; margin-top:8px;">';
-    if(db.yt) h+='<button onclick="playDebate('+i+')" style="'+bt+'">'+(aberto?'Fechar o vídeo':'Assistir aqui')+'</button>';
+    if(db.vid||db.yt) h+='<button onclick="playDebate('+i+')" style="'+bt+'">'+(aberto?'Fechar o vídeo':'Assistir aqui')+'</button>';
     h+='<a href="'+db.url+'" target="_blank" rel="noopener" style="'+bt+'">'+(db.yt?'Abrir no YouTube':'Abrir a página oficial')+' &#8599;</a>';
     h+='<a href="'+db.fonte+'" target="_blank" rel="noopener" style="font-size:11px; color:'+P.link+'; text-decoration:underline;">fonte &#8599;</a>';
     h+='</div>';
-    if(db.yt&&aberto){
-      h+='<div style="position:relative; width:100%; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:4px; background:'+P.surf3+'; margin-top:8px;">'+
-         '<iframe src="https://www.youtube-nocookie.com/embed/live_stream?channel='+db.yt+'" title="Transmissão ao vivo: '+db.ytlab+'" allowfullscreen loading="lazy" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe></div>';
-      h+='<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.45;">O quadro toca o que estiver AO VIVO no canal '+db.ytlab+'. Fora do horário do debate ele mostra outra transmissão do canal, ou aviso de que não há nenhuma no ar.</div>';
+    if((db.vid||db.yt)&&aberto){
+      if(db.vid){
+        h+='<div style="position:relative; width:100%; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:4px; background:'+P.surf3+'; margin-top:8px;">'+
+           '<iframe src="https://www.youtube-nocookie.com/embed/'+db.vid+'" title="'+(db.vidnt||('Transmissão: '+db.ytlab))+'" allowfullscreen loading="lazy" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe></div>';
+        h+='<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.45;">'+(db.vidnt||('Transmissão do canal '+db.ytlab+'.'))+' Terminado o debate, o mesmo endereço guarda a gravação.</div>';
+      } else {
+        h+='<div style="margin-top:8px; padding:9px 11px; border:1px dashed '+P.bord+'; border-radius:4px; font-size:11.5px; color:'+P.txt2+'; line-height:1.5;">A transmissão deste debate ainda não tem endereço próprio no YouTube. Ele passa a existir quando o canal '+db.ytlab+' abre a live, e o quadro só toca a partir daí. Enquanto isso, o botão ao lado abre o canal.</div>';
+      }
     }
     h+='</div>';
     return h;
