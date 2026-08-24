@@ -416,16 +416,6 @@
  "ultima_rodada": "2026-08-24T07:48:51.365231-03:00",
  "pendentes": [
   {
-   "proto": "BR038682026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "INSTITUTO OPNUS",
-   "cargo": "Presidente",
-   "campo": "17/08-22/08",
-   "div": "2026-08-23",
-   "n": "1200",
-   "visto": "2026-08-23"
-  },
-  {
    "proto": "BR082752026",
    "escopo": "ESTADUAL[MG]",
    "inst": "#NULO#",
@@ -463,16 +453,6 @@
    "campo": "18/08-21/08",
    "div": "2026-08-23",
    "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "PE066882026",
-   "escopo": "PE",
-   "inst": "SIMPLEX CONSULTORIA ECONOMIC",
-   "cargo": "Governador, Senador",
-   "campo": "16/08-21/08",
-   "div": "2026-08-23",
-   "n": "1067",
    "visto": "2026-08-23"
   },
   {
@@ -606,16 +586,6 @@
    "visto": "2026-08-24"
   },
   {
-   "proto": "BR087762026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "19/08-22/08",
-   "div": "2026-08-24",
-   "n": "1600",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "BR024452026",
    "escopo": "ESTADUAL[PB]",
    "inst": "INSTITUTO SETA DE PESQUISA",
@@ -683,16 +653,6 @@
    "campo": "19/08-20/08",
    "div": "2026-08-24",
    "n": "600",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "MA025582026",
-   "escopo": "MA",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "900",
    "visto": "2026-08-24"
   },
   {
@@ -813,16 +773,6 @@
    "campo": "19/08-23/08",
    "div": "2026-08-24",
    "n": "3025",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "TO003202026",
-   "escopo": "TO",
-   "inst": "PORTAL E INSTITUTO STYLO",
-   "cargo": "Governador, Senador",
-   "campo": "18/08-20/08",
-   "div": "2026-08-24",
-   "n": "1200",
    "visto": "2026-08-24"
   }
  ],
