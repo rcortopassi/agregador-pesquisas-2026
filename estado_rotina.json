@@ -416,76 +416,6 @@
  "ultima_rodada": "2026-08-24T19:38:26.737197-03:00",
  "pendentes": [
   {
-   "proto": "BR082752026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "17/08-20/08",
-   "div": "2026-08-23",
-   "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "BR077072026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "BOAS IDEIAS, ESTRATEGIA E IN",
-   "cargo": "Presidente",
-   "campo": "18/08-21/08",
-   "div": "2026-08-23",
-   "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "MG037942026",
-   "escopo": "MG",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "17/08-20/08",
-   "div": "2026-08-23",
-   "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "PA056642026",
-   "escopo": "PA",
-   "inst": "BOAS IDEIAS, ESTRATEGIA E IN",
-   "cargo": "Governador, Senador",
-   "campo": "18/08-21/08",
-   "div": "2026-08-23",
-   "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "SE015892026",
-   "escopo": "SE",
-   "inst": "POSITIVA PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "18/08-22/08",
-   "div": "2026-08-23",
-   "n": "1000",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "SP014772026",
-   "escopo": "SP",
-   "inst": "GRUPO GERP GERP MERCADO GERP",
-   "cargo": "Governador",
-   "campo": "18/08-21/08",
-   "div": "2026-08-23",
-   "n": "1800",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "AL055032026",
-   "escopo": "AL",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "BR071602026",
    "escopo": "ESTADUAL[AL]",
    "inst": "#NULO#",
@@ -516,16 +446,6 @@
    "visto": "2026-08-24"
   },
   {
-   "proto": "BR037612026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "BR046052026",
    "escopo": "ESTADUAL[GO]",
    "inst": "VERITA",
@@ -543,16 +463,6 @@
    "campo": "19/08-23/08",
    "div": "2026-08-24",
    "n": "1525",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "BR086122026",
-   "escopo": "ESTADUAL[MA]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "900",
    "visto": "2026-08-24"
   },
   {
@@ -726,38 +636,8 @@
    "visto": "2026-08-24"
   },
   {
-   "proto": "PR053882026",
-   "escopo": "PR",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "RN008762026",
    "escopo": "RN",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "RS068752026",
-   "escopo": "RS",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "900",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "SC005172026",
-   "escopo": "SC",
    "inst": "#NULO#",
    "cargo": "Governador, Senador",
    "campo": "20/08-23/08",
