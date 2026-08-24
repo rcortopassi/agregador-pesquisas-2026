@@ -416,46 +416,6 @@
  "ultima_rodada": "2026-08-24T07:48:51.365231-03:00",
  "pendentes": [
   {
-   "proto": "AC031292026",
-   "escopo": "AC",
-   "inst": "DATA CONTROL INSTITUTO DE PE",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "17/08-23/08",
-   "div": "2026-08-23",
-   "n": "1620",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "AM038242026",
-   "escopo": "AM",
-   "inst": "PROJETA PESQUISA DE MERCADO ",
-   "cargo": "Governador, Senador",
-   "campo": "17/08-21/08",
-   "div": "2026-08-23",
-   "n": "3000",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "BA044722026",
-   "escopo": "BA",
-   "inst": "INSTITUTO OPNUS",
-   "cargo": "Governador, Senador",
-   "campo": "17/08-22/08",
-   "div": "2026-08-23",
-   "n": "1200",
-   "visto": "2026-08-23"
-  },
-  {
-   "proto": "BR007412026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "DATA CONTROL INSTITUTO DE PE",
-   "cargo": "Presidente",
-   "campo": "17/08-23/08",
-   "div": "2026-08-23",
-   "n": "1620",
-   "visto": "2026-08-23"
-  },
-  {
    "proto": "BR038682026",
    "escopo": "ESTADUAL[BA]",
    "inst": "INSTITUTO OPNUS",
@@ -696,26 +656,6 @@
    "visto": "2026-08-24"
   },
   {
-   "proto": "BR086532026",
-   "escopo": "ESTADUAL[RO]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "19/08-23/08",
-   "div": "2026-08-24",
-   "n": "1220",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "BR065372026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "19/08-22/08",
-   "div": "2026-08-24",
-   "n": "2000",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "BR064772026",
    "escopo": "ESTADUAL[SP]",
    "inst": "VERITA",
@@ -743,16 +683,6 @@
    "campo": "19/08-20/08",
    "div": "2026-08-24",
    "n": "600",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "GO058062026",
-   "escopo": "GO",
-   "inst": "DIAGNOSTICO PESQUISAS DE COM",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "19/08-20/08",
-   "div": "2026-08-24",
-   "n": "627",
    "visto": "2026-08-24"
   },
   {
@@ -786,16 +716,6 @@
    "visto": "2026-08-24"
   },
   {
-   "proto": "MT021572026",
-   "escopo": "MT",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/08-23/08",
-   "div": "2026-08-24",
-   "n": "1504",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "MT059252026",
    "escopo": "MT",
    "inst": "VERITA",
@@ -803,16 +723,6 @@
    "campo": "19/08-23/08",
    "div": "2026-08-24",
    "n": "1220",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "BR090282026",
-   "escopo": "NACIONAL?",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "21/08-23/08",
-   "div": "2026-08-24",
-   "n": "2000",
    "visto": "2026-08-24"
   },
   {
@@ -846,26 +756,6 @@
    "visto": "2026-08-24"
   },
   {
-   "proto": "PB077902026",
-   "escopo": "PB",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "19/08-22/08",
-   "div": "2026-08-24",
-   "n": "1600",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "PB098802026",
-   "escopo": "PB",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "19/08-21/08",
-   "div": "2026-08-24",
-   "n": "1500",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "PE088582026",
    "escopo": "PE",
    "inst": "CONTEXTTO E REVILLO",
@@ -886,16 +776,6 @@
    "visto": "2026-08-24"
   },
   {
-   "proto": "PR050322026",
-   "escopo": "PR",
-   "inst": "ALFA INTELIGENCIA",
-   "cargo": "Governador, Senador",
-   "campo": "18/08-22/08",
-   "div": "2026-08-24",
-   "n": "1200",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "RN008762026",
    "escopo": "RN",
    "inst": "#NULO#",
@@ -903,16 +783,6 @@
    "campo": "20/08-23/08",
    "div": "2026-08-24",
    "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "RO030652026",
-   "escopo": "RO",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "19/08-23/08",
-   "div": "2026-08-24",
-   "n": "1220",
    "visto": "2026-08-24"
   },
   {
@@ -933,16 +803,6 @@
    "campo": "20/08-23/08",
    "div": "2026-08-24",
    "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "SP013472026",
-   "escopo": "SP",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "19/08-22/08",
-   "div": "2026-08-24",
-   "n": "2000",
    "visto": "2026-08-24"
   },
   {
