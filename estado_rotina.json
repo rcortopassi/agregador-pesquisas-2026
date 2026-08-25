@@ -824,16 +824,6 @@
    "visto": "2026-08-25"
   },
   {
-   "proto": "BR028232026",
-   "escopo": "ESTADUAL[RS]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "20/08-24/08",
-   "div": "2026-08-25",
-   "n": "1600",
-   "visto": "2026-08-25"
-  },
-  {
    "proto": "BR020962026",
    "escopo": "ESTADUAL[SP]",
    "inst": "#NULO#",
@@ -954,16 +944,6 @@
    "visto": "2026-08-25"
   },
   {
-   "proto": "RJ024222026",
-   "escopo": "RJ",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "22/08-24/08",
-   "div": "2026-08-25",
-   "n": "1600",
-   "visto": "2026-08-25"
-  },
-  {
    "proto": "RJ087482026",
    "escopo": "RJ",
    "inst": "#NULO#",
@@ -991,16 +971,6 @@
    "campo": "21/08-24/08",
    "div": "2026-08-25",
    "n": "804",
-   "visto": "2026-08-25"
-  },
-  {
-   "proto": "RS096402026",
-   "escopo": "RS",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-24/08",
-   "div": "2026-08-25",
-   "n": "1600",
    "visto": "2026-08-25"
   },
   {
