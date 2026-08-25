@@ -454,36 +454,6 @@
  "ultima_rodada": "2026-08-25T01:49:19.469066-03:00",
  "pendentes": [
   {
-   "proto": "BR071602026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "BR090912026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "BR063842026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "804",
-   "visto": "2026-08-24"
-  },
-  {
    "proto": "BR046052026",
    "escopo": "ESTADUAL[GO]",
    "inst": "VERITA",
@@ -501,16 +471,6 @@
    "campo": "19/08-23/08",
    "div": "2026-08-24",
    "n": "1525",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "BR013892026",
-   "escopo": "ESTADUAL[MA]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "900",
    "visto": "2026-08-24"
   },
   {
@@ -671,16 +631,6 @@
    "campo": "21/08-24/08",
    "div": "2026-08-24",
    "n": "1200",
-   "visto": "2026-08-24"
-  },
-  {
-   "proto": "RN008762026",
-   "escopo": "RN",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-23/08",
-   "div": "2026-08-24",
-   "n": "804",
    "visto": "2026-08-24"
   },
   {
