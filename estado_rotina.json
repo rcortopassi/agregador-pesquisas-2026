@@ -488,26 +488,6 @@
    "visto": "2026-08-26"
   },
   {
-   "proto": "GO086512026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "15/08-24/08",
-   "div": "2026-08-26",
-   "n": "4100",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "BR078062026",
-   "escopo": "NACIONAL?",
-   "inst": "JOTA JORNALISMO",
-   "cargo": "Presidente",
-   "campo": "27/07-24/08",
-   "div": "2026-08-26",
-   "n": "6000",
-   "visto": "2026-08-26"
-  },
-  {
    "proto": "PE013702026",
    "escopo": "PE",
    "inst": "INSTITUTO DE PESQUISA MULTIP",
@@ -515,16 +495,6 @@
    "campo": "22/08-24/08",
    "div": "2026-08-26",
    "n": "900",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "SE034772026",
-   "escopo": "SE",
-   "inst": "ECM-PESQUISAS",
-   "cargo": "Governador",
-   "campo": "21/08-23/08",
-   "div": "2026-08-26",
-   "n": "1200",
    "visto": "2026-08-26"
   }
  ],
