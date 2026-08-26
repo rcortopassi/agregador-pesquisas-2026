@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 25/08/2026 19:39. Mercados: Polymarket 62,5%/34,9%, Kalshi 62,0%/38,0%.
+Rodada de 26/08/2026 01:51. Mercados: Polymarket 62,5%/35,0%, Kalshi 62,0%/38,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -10,38 +10,25 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 
 - [aguardando desde 2026-08-25] TSE AC, DELTA AGENCIA DE PESQUISA (Governador, Senador), campo 20/08-24/08, divulgação 2026-08-25, N=1006, registro AC026582026
 - [aguardando desde 2026-08-25] TSE AL, INSTITUTO DATASENSUS (Governador, Senador, Deputado Fede), campo 20/08-22/08, divulgação 2026-08-25, N=5000, registro AL076562026
-- [aguardando desde 2026-08-25] TSE AM, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro AM045952026
-- [aguardando desde 2026-08-25] TSE AP, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro AP094382026
 - [aguardando desde 2026-08-25] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 20/08-24/08, divulgação 2026-08-25, N=1006, registro BR071842026
 - [aguardando desde 2026-08-25] TSE ESTADUAL[AL], INSTITUTO DATASENSUS (Presidente), campo 20/08-22/08, divulgação 2026-08-25, N=5000, registro BR059072026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[AM], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro BR006992026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[AM], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro BR043122026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[AM], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro BR088272026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[AM], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro BR008172026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[AM], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro BR091352026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[AM], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro BR062522026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[AM], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro BR004902026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[DF], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=1104, registro BR024032026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[MG], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=1506, registro BR098182026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[PE], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=1302, registro BR042812026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[PE], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=1302, registro BR098952026
-- [aguardando desde 2026-08-25] TSE ESTADUAL[SP], #NULO# (Presidente), campo 21/08-24/08, divulgação 2026-08-25, N=1800, registro BR020962026
 - [aguardando desde 2026-08-25] TSE MA, EPO - ESTRATEGIA PESQUISAS D (Governador, Senador), campo 19/08-24/08, divulgação 2026-08-25, N=2000, registro MA021712026
-- [aguardando desde 2026-08-25] TSE MG, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=1506, registro MG040602026
-- [aguardando desde 2026-08-25] TSE MS, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro MS007932026
-- [aguardando desde 2026-08-25] TSE MS, INSTITUTO DE PESQUISA RESULT (Governador, Senador), campo 19/08-23/08, divulgação 2026-08-25, N=784, registro MS076212026
-- [aguardando desde 2026-08-25] TSE MT, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro MT048462026
-- [aguardando desde 2026-08-25] TSE NACIONAL?, INSTITUTO DE PESQUISA RESULT (Presidente), campo 19/08-23/08, divulgação 2026-08-25, N=782, registro BR050122026
-- [aguardando desde 2026-08-25] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 20/08-23/08, divulgação 2026-08-25, N=2400, registro BR035472026
-- [aguardando desde 2026-08-25] TSE PB, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro PB078502026
 - [aguardando desde 2026-08-25] TSE PB, INDICE INTELIGENCIA (Governador, Senador, Deputado Fede), campo 20/08-22/08, divulgação 2026-08-25, N=2000, registro PB043512026
-- [aguardando desde 2026-08-25] TSE PE, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=1302, registro PE078282026
 - [aguardando desde 2026-08-25] TSE RJ, PREFAB FUTURE (Governador), campo 20/08-23/08, divulgação 2026-08-25, N=2000, registro RJ046052026
-- [aguardando desde 2026-08-25] TSE RJ, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=1302, registro RJ087482026
-- [aguardando desde 2026-08-25] TSE RN, DATA CAPITAL PESQUISAS E CON (Governador, Senador, Deputado Fede), campo 15/08-18/08, divulgação 2026-08-25, N=2100, registro RN025132026
-- [aguardando desde 2026-08-25] TSE RO, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro RO057112026
-- [aguardando desde 2026-08-25] TSE SP, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=1800, registro SP069462026
-- [aguardando desde 2026-08-25] TSE TO, #NULO# (Governador, Senador), campo 21/08-24/08, divulgação 2026-08-25, N=804, registro TO021612026
+- [NOVO] TSE AM, REAL TIME BIG DATA (Governador, Senador), campo 21/08-25/08, divulgação 2026-08-26, N=1600, registro AM099652026
+- [NOVO] TSE AM, DIRETO AO PONTO PESQUISAS (Governador, Senador, Deputado Fede), campo 19/08-24/08, divulgação 2026-08-26, N=1200, registro AM096302026
+- [NOVO] TSE ESTADUAL[AM], DIRETO AO PONTO PESQUISAS (Presidente), campo 19/08-24/08, divulgação 2026-08-26, N=1200, registro BR026432026
+- [NOVO] TSE ESTADUAL[AM], REAL TIME BIG DATA (Presidente), campo 21/08-25/08, divulgação 2026-08-26, N=1600, registro BR091402026
+- [NOVO] TSE ESTADUAL[AM], REAL TIME BIG DATA (Presidente), campo 21/08-25/08, divulgação 2026-08-26, N=1600, registro BR067082026
+- [NOVO] TSE ESTADUAL[SC], NEOKEMP PESQUISAS (Presidente), campo 24/08-26/08, divulgação 2026-08-26, N=1008, registro BR090782026
+- [NOVO] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 15/08-24/08, divulgação 2026-08-26, N=4100, registro GO086512026
+- [NOVO] TSE MA, INSTITUTO QUALITATIVA (Governador, Senador), campo 19/08-25/08, divulgação 2026-08-26, N=900, registro MA082632026
+- [NOVO] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 20/08-23/08, divulgação 2026-08-26, N=2000, registro BR063662026
+- [NOVO] TSE NACIONAL?, JOTA JORNALISMO (Presidente), campo 27/07-24/08, divulgação 2026-08-26, N=6000, registro BR078062026
+- [NOVO] TSE PE, INSTITUTO DE PESQUISA MULTIP (Governador, Senador, Deputado Fede), campo 22/08-24/08, divulgação 2026-08-26, N=900, registro PE013702026
+- [NOVO] TSE SC, NEOKEMP PESQUISAS (Governador, Senador), campo 24/08-26/08, divulgação 2026-08-26, N=1008, registro SC086942026
+- [NOVO] TSE SE, ECM-PESQUISAS (Governador), campo 21/08-23/08, divulgação 2026-08-26, N=1200, registro SE034772026
+- [NOVO] TSE TO, REAL TIME BIG DATA (Governador, Senador), campo 21/08-25/08, divulgação 2026-08-26, N=1600, registro TO096652026
 
 ## Últimas publicações do Veritá
 
@@ -60,9 +47,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-15 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 10/08-14/08 | 1250 | BR086952026 |
-| 2026-08-15 | RN | ITEM PESQUISAS TECNICAS | Governador, Senador, Deputado Fede | 10/08-14/08 | 1250 | RN001662026 |
-| 2026-08-15 | SE | ECM-PESQUISAS | Governador, Senador, Deputado Fede | 09/08-12/08 | 1500 | SE026822026 |
 | 2026-08-16 | AP | AMERICAN ANALYTICS | Governador, Senador | 10/08-14/08 | 1000 | AP009852026 |
 | 2026-08-16 | ESTADUAL[AP] | AMERICAN ANALYTICS | Presidente | 10/08-14/08 | 1000 | BR001362026 |
 | 2026-08-16 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 07/08-10/08 | 1200 | BR014952026 |
@@ -243,4 +227,18 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-25 | RS | REAL TIME BIG DATA | Governador, Senador | 20/08-24/08 | 1600 | RS096402026 |
 | 2026-08-25 | SP | #NULO# | Governador, Senador | 21/08-24/08 | 1800 | SP069462026 |
 | 2026-08-25 | TO | #NULO# | Governador, Senador | 21/08-24/08 | 804 | TO021612026 |
+| 2026-08-26 | AM | REAL TIME BIG DATA | Governador, Senador | 21/08-25/08 | 1600 | AM099652026 |
+| 2026-08-26 | AM | DIRETO AO PONTO PESQUISAS | Governador, Senador, Deputado Fede | 19/08-24/08 | 1200 | AM096302026 |
+| 2026-08-26 | ESTADUAL[AM] | DIRETO AO PONTO PESQUISAS | Presidente | 19/08-24/08 | 1200 | BR026432026 |
+| 2026-08-26 | ESTADUAL[AM] | REAL TIME BIG DATA | Presidente | 21/08-25/08 | 1600 | BR091402026 |
+| 2026-08-26 | ESTADUAL[AM] | REAL TIME BIG DATA | Presidente | 21/08-25/08 | 1600 | BR067082026 |
+| 2026-08-26 | ESTADUAL[SC] | NEOKEMP PESQUISAS | Presidente | 24/08-26/08 | 1008 | BR090782026 |
+| 2026-08-26 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 15/08-24/08 | 4100 | GO086512026 |
+| 2026-08-26 | MA | INSTITUTO QUALITATIVA | Governador, Senador | 19/08-25/08 | 900 | MA082632026 |
+| 2026-08-26 | NACIONAL? | INDEXA PESQUISAS | Presidente | 20/08-23/08 | 2000 | BR063662026 |
+| 2026-08-26 | NACIONAL? | JOTA JORNALISMO | Presidente | 27/07-24/08 | 6000 | BR078062026 |
+| 2026-08-26 | PE | INSTITUTO DE PESQUISA MULTIP | Governador, Senador, Deputado Fede | 22/08-24/08 | 900 | PE013702026 |
+| 2026-08-26 | SC | NEOKEMP PESQUISAS | Governador, Senador | 24/08-26/08 | 1008 | SC086942026 |
+| 2026-08-26 | SE | ECM-PESQUISAS | Governador | 21/08-23/08 | 1200 | SE034772026 |
+| 2026-08-26 | TO | REAL TIME BIG DATA | Governador, Senador | 21/08-25/08 | 1600 | TO096652026 |
 
