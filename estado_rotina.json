@@ -488,16 +488,6 @@
    "visto": "2026-08-26"
   },
   {
-   "proto": "BR090782026",
-   "escopo": "ESTADUAL[SC]",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "24/08-26/08",
-   "div": "2026-08-26",
-   "n": "1008",
-   "visto": "2026-08-26"
-  },
-  {
    "proto": "GO086512026",
    "escopo": "GO",
    "inst": "IGAPE- INSTITUTO GAZETA DE P",
@@ -505,26 +495,6 @@
    "campo": "15/08-24/08",
    "div": "2026-08-26",
    "n": "4100",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "MA082632026",
-   "escopo": "MA",
-   "inst": "INSTITUTO QUALITATIVA",
-   "cargo": "Governador, Senador",
-   "campo": "19/08-25/08",
-   "div": "2026-08-26",
-   "n": "900",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "BR063662026",
-   "escopo": "NACIONAL?",
-   "inst": "INDEXA PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "20/08-23/08",
-   "div": "2026-08-26",
-   "n": "2000",
    "visto": "2026-08-26"
   },
   {
@@ -545,16 +515,6 @@
    "campo": "22/08-24/08",
    "div": "2026-08-26",
    "n": "900",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "SC086942026",
-   "escopo": "SC",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-26/08",
-   "div": "2026-08-26",
-   "n": "1008",
    "visto": "2026-08-26"
   },
   {
