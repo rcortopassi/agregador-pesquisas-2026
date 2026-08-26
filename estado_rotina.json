@@ -468,86 +468,6 @@
  "ultima_rodada": "2026-08-26T07:47:23.079351-03:00",
  "pendentes": [
   {
-   "proto": "AC026582026",
-   "escopo": "AC",
-   "inst": "DELTA AGENCIA DE PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-24/08",
-   "div": "2026-08-25",
-   "n": "1006",
-   "visto": "2026-08-25"
-  },
-  {
-   "proto": "AL076562026",
-   "escopo": "AL",
-   "inst": "INSTITUTO DATASENSUS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "20/08-22/08",
-   "div": "2026-08-25",
-   "n": "5000",
-   "visto": "2026-08-25"
-  },
-  {
-   "proto": "BR071842026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "DELTA AGENCIA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "20/08-24/08",
-   "div": "2026-08-25",
-   "n": "1006",
-   "visto": "2026-08-25"
-  },
-  {
-   "proto": "BR059072026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "INSTITUTO DATASENSUS",
-   "cargo": "Presidente",
-   "campo": "20/08-22/08",
-   "div": "2026-08-25",
-   "n": "5000",
-   "visto": "2026-08-25"
-  },
-  {
-   "proto": "MA021712026",
-   "escopo": "MA",
-   "inst": "EPO - ESTRATEGIA PESQUISAS D",
-   "cargo": "Governador, Senador",
-   "campo": "19/08-24/08",
-   "div": "2026-08-25",
-   "n": "2000",
-   "visto": "2026-08-25"
-  },
-  {
-   "proto": "PB043512026",
-   "escopo": "PB",
-   "inst": "INDICE INTELIGENCIA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "20/08-22/08",
-   "div": "2026-08-25",
-   "n": "2000",
-   "visto": "2026-08-25"
-  },
-  {
-   "proto": "RJ046052026",
-   "escopo": "RJ",
-   "inst": "PREFAB FUTURE",
-   "cargo": "Governador",
-   "campo": "20/08-23/08",
-   "div": "2026-08-25",
-   "n": "2000",
-   "visto": "2026-08-25"
-  },
-  {
-   "proto": "AM099652026",
-   "escopo": "AM",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "21/08-25/08",
-   "div": "2026-08-26",
-   "n": "1600",
-   "visto": "2026-08-26"
-  },
-  {
    "proto": "AM096302026",
    "escopo": "AM",
    "inst": "DIRETO AO PONTO PESQUISAS",
@@ -565,26 +485,6 @@
    "campo": "19/08-24/08",
    "div": "2026-08-26",
    "n": "1200",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "BR091402026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "21/08-25/08",
-   "div": "2026-08-26",
-   "n": "1600",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "BR067082026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "21/08-25/08",
-   "div": "2026-08-26",
-   "n": "1600",
    "visto": "2026-08-26"
   },
   {
@@ -665,16 +565,6 @@
    "campo": "21/08-23/08",
    "div": "2026-08-26",
    "n": "1200",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "TO096652026",
-   "escopo": "TO",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "21/08-25/08",
-   "div": "2026-08-26",
-   "n": "1600",
    "visto": "2026-08-26"
   }
  ],
