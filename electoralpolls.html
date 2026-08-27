@@ -74,14 +74,13 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 27/08/2026 07:58</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 27/08/2026 09:33</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
 
   <div id="banner" style="display:flex; align-items:center; justify-content:center; gap:7px; padding:8px; background:var(--surf2); border-bottom:1px solid var(--bsoft); font-size:13px; color:var(--txt); flex-wrap:wrap;"></div>
 
-  <div id="sintese" style="border-bottom:1px solid var(--bsoft);"></div>
 
   <div id="calstrip" style="border-bottom:1px solid var(--bsoft);"></div>
   <div id="debates" style="border-bottom:1px solid var(--bsoft);"></div>
@@ -207,13 +206,6 @@
   var PM=['61,5%','35,1%'];
   var KAL=['62,0%','39,0%'];
   var MODEL={jan:['63%','37%'],fev:['50%','50%'],mar:['25%','75%'],abr:['29%','71%'],mai:['50%','50%'],jun:['48%','52%']};
-  // TERCEIRO SINAL: FUNDAMENTOS (22/07/2026). Não é pesquisa nem mercado: é a leitura dos
-  // fatores estruturais que a ciência política associa a reeleição presidencial. Serve para a
-  // síntese cruzar três fontes independentes em vez de depender só das pesquisas, que a esta
-  // distância da eleição são o sinal MAIS fraco dos três (ver HERR).
-  // ATUALIZAR quando a conjuntura mudar (é julgamento, não número medido).
-  var FUND={ lean:'Lula', txt:'levemente pró-incumbente',
-    det:'Desemprego na mínima histórica e renda em alta; inflação acima do teto, mas cedendo; incumbente na disputa (reeleição venceu em 1998, 2006 e 2014; só perdeu em 2022, com pandemia e economia ruim).' };
   var UFN={SP:'São Paulo',RJ:'Rio de Janeiro',MG:'Minas Gerais',ES:'Espírito Santo',PR:'Paraná',SC:'Santa Catarina',RS:'Rio Grande do Sul',BA:'Bahia',PE:'Pernambuco',CE:'Ceará',MA:'Maranhão',PB:'Paraíba',RN:'Rio Grande do Norte',AL:'Alagoas',SE:'Sergipe',PI:'Piauí',AM:'Amazonas',PA:'Pará',AC:'Acre',RO:'Rondônia',RR:'Roraima',AP:'Amapá',TO:'Tocantins',GO:'Goiás',MT:'Mato Grosso',MS:'Mato Grosso do Sul',DF:'Distrito Federal'};
   var DG={
   'SP':{i:'Quaest',d:'21-24 ago',c:[['Tarcísio',40],['Haddad',27],['Policial Edjane',2],['Vera Lúcia',1],['Carlos Machado',1],['Isadora Dias',1],['Vivian Mendes',1]],t2:'Tarcísio 47 x Haddad 30. A Quaest é a rodada de agosto que dá a menor vantagem a Tarcísio no 1º turno, 13 pontos, contra os 17 do Real Time Big Data e os 18 da Gerp'},
@@ -1033,37 +1025,6 @@
   function calFase(){ var h=new Date(); h.setHours(0,0,0,0);
     for(var i=0;i<CAL.length;i++){ if(h<=calD(CAL[i].fim)) return i; }
     return CAL.length-1; }
-  // SÍNTESE DOS TRÊS SINAIS (22/07/2026). Responde "para onde isso está indo?" cruzando três
-  // fontes INDEPENDENTES: pesquisas (fraco a esta distância, ver HERR), mercados de previsão
-  // (precificam também risco jurídico e dinâmica de campanha) e fundamentos (estruturais).
-  // Quando os três concordam, a leitura é mais confiável que qualquer um isolado; quando
-  // divergem, a própria divergência é informação. Usa SEMPRE o mês mais recente, não o mês
-  // que o usuário está navegando.
-  function sinteseHTML(){
-    var lm=mesParaSintese(), a2=adj2Month(lm), lim=2*moeMonth(lm);
-    var mg=a2[2]>0?a2[1]:null, s1, s1lean=null;
-    if(mg===null){ s1='<span style="color:'+P.mut+';">sem cenário de 2º turno em '+lm+'</span>'; }
-    else { s1lean=mg>=0?'Lula':'Flávio';
-      s1='<b style="color:'+(mg>=0?P.red:P.blue)+';">'+s1lean+' +'+fmt(Math.abs(mg))+'</b> <span style="color:'+P.mut+';">'+(Math.abs(mg)<lim?'empate técnico':(Math.abs(mg)<2*lim?'leve vantagem':'vantagem clara'))+'</span>'; }
-    function pn(s){ return parseFloat(String(s).replace('%','').replace(',','.')); }
-    var mL=(pn(PM[0])+pn(KAL[0]))/2, mF=(pn(PM[1])+pn(KAL[1]))/2, s2lean=mL>=mF?'Lula':'Flávio';
-    var s2='<b style="color:'+P.red+';">Lula '+Math.round(mL)+'%</b> <span style="color:'+P.mut+';">&middot;</span> <b style="color:'+P.blue+';">Flávio '+Math.round(mF)+'%</b> <span style="color:'+P.mut+';">de chance</span>';
-    var s3='<b style="color:'+(FUND.lean==='Lula'?P.red:P.blue)+';">'+FUND.txt+'</b>';
-    var leans=[s1lean,s2lean,FUND.lean].filter(Boolean), conv=leans.length>1&&leans.every(function(x){return x===leans[0];});
-    var lc=leans.length?(leans[0]==='Lula'?P.red:P.blue):P.mut;
-    var concl = conv
-      ? 'Os três sinais apontam para o mesmo lado, <b style="color:'+lc+';">'+leans[0]+' favorito</b>. Nenhum deles, porém, autoriza dizer que a eleição está decidida: a esta distância o erro histórico do campo é maior que a vantagem medida.'
-      : '<b style="color:'+P.goldtxt+';">Os sinais divergem entre si.</b> Divergência é informação: vale olhar cada um antes de concluir.';
-    var lab='font-size:9.5px; font-weight:700; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.05em; flex:0 0 88px;';
-    function row(t,v,h){ return '<div style="display:flex; align-items:baseline; gap:8px; padding:2px 0;"><span style="'+lab+'">'+t+'</span><span style="flex:1 1 auto;">'+v+(h?' <span style="color:'+P.mut+'; font-size:10.5px;">'+h+'</span>':'')+'</span></div>'; }
-    return '<div style="padding:8px 14px 9px; background:'+P.surf+';">'+
-      '<div style="font-size:9.5px; font-weight:700; color:'+P.goldtxt+'; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:4px;">Para onde isso está indo</div>'+
-      row('Pesquisas', s1, 'mediana de '+lm+', 2º turno ajustado'+(function(){ var u=ultimoMesCheio(); if(u===lm) return '';
-        var q=adj2Month(u)[2]; return ' &middot; '+u+' ainda tem '+(q===1?'1 rodada':q+' rodadas')+' com 2º turno, base fina demais para virar manchete'; })())+
-      row('Mercados', s2, 'Polymarket e Kalshi')+
-      row('Fundamentos', s3, FUND.det)+
-      '<div style="font-size:11px; color:'+P.txt2+'; line-height:1.5; margin-top:6px; border-top:1px solid '+P.bsoft+'; padding-top:6px;">'+concl+'</div>'+
-    '</div>'; }
   function calStrip(){
     var i=calFase(), h=new Date(); h.setHours(0,0,0,0);
     var segs=CAL.map(function(f,j){
@@ -1235,13 +1196,6 @@
   // tem que apontar para o último mês que de fato tem pesquisa, senão o painel abre em zero.
   function ultimoMesCheio(){ for(var i=months.length-1;i>=0;i--){ if(DI[months[i]]&&DI[months[i]].rows.length) return months[i]; } return months[months.length-1]; }
   function mesVazio(m){ return !DI[m]||!DI[m].rows.length; }
-  // BASE MÍNIMA PARA A SÍNTESE (04/08/2026). O bloco "Para onde isso está indo" usava o último
-  // mês com QUALQUER rodada. Um mês recém-aberto pode ter uma só, e a mediana de uma pesquisa
-  // é a própria pesquisa: em 04/08 a síntese anunciava "Lula +1,0" apoiada numa única rodada
-  // (Nexus/BTG), enquanto julho, com 12, dava +3,3. Agora exige 3 rodadas COM 2º turno, que é
-  // a mesma régua que o gráfico já aplica para marcar mês provisório (linha tracejada).
-  function mesParaSintese(){ for(var i=months.length-1;i>=0;i--){ var m=months[i];
-    if(DI[m]&&DI[m].rows.length&&adj2Month(m)[2]>=3) return m; } return ultimoMesCheio(); }
 
   // ================= PREVISÃO PARA 4 DE OUTUBRO (21/08/2026) =================
   // O QUE É: projeção do 1º turno em VOTOS VÁLIDOS, ancorada no mês mais recente do DI e
@@ -1742,9 +1696,6 @@
     document.getElementById('mapa').style.display=pres?'none':'block';
     document.getElementById('banner').style.display=pres?'flex':'none';
     // Faixa de fases do calendário: vale para as 3 dimensões, some só dentro do painel de um estado.
-    var sy=document.getElementById('sintese');
-    sy.style.display=pres?'block':'none';
-    if(pres) sy.innerHTML=sinteseHTML();
     var cs=document.getElementById('calstrip');
     cs.style.display=(!pres&&cur.uf)?'none':'block';
     if(cs.style.display!=='none') cs.innerHTML=calStrip();

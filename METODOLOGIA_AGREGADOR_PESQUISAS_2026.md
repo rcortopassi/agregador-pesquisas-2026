@@ -6,6 +6,11 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- O BLOCO "PARA ONDE ISSO ESTÁ INDO" FOI REMOVIDO A PEDIDO DO USUÁRIO (27/08/2026). Era a síntese dos três sinais criada em 22/07: uma faixa com as linhas PESQUISAS, MERCADOS e FUNDAMENTOS e uma conclusão em texto ("Os três sinais apontam para o mesmo lado"). Saiu inteira, e com ela o que só existia para alimentá-la: a `<div id="sintese">`, a função `sinteseHTML()`, a função `mesParaSintese()` e o objeto `FUND`. NÃO reintroduzir nenhum dos quatro.
+
+  O que NÃO saiu, e não deve ser confundido com isso: as cotações do Polymarket e do Kalshi seguem no painel, na faixa própria acima da tabela, e `PM` e `KAL` continuam sendo escritos pela rodada mecânica de 6 em 6 horas. O que sumiu foi só a leitura editorial que cruzava os três sinais.
+
+
 - A CNN TROCOU OS PROTOCOLOS NA MATÉRIA PRESIDENCIAL DO ES, E O CORPO DO TEXTO É QUE MANDA (27/08/2026, 07h50). A matéria da CNN sobre a Real Time Big Data no Espírito Santo tem título e subtítulo com o registro BR-03706/2026 (o gêmeo capixaba, N=1600) e um bloco "Metodologia" no rodapé que diz "1.600 eleitores mineiros" e cita BR-03147/2026, que é o gêmeo de MINAS, com N=2000. É colagem errada, e os números da matéria são do ES: o corpo fala em "eleitorado capixaba" duas vezes, e o 2º turno dela (Flávio 48 x Lula 42) é diferente do de Minas (Lula 46 x Flávio 44), publicado à parte pelo Metrópoles. O teste que resolve em um passo é comparar o N do registro com o N da matéria e conferir o gentílico no corpo, nunca o rodapé.
 
 - A REAL TIME DE MINAS DIVULGOU 2º TURNO PRESIDENCIAL E NÃO DIVULGOU 1º (27/08/2026, 07h50). MG-07972/2026 e o gêmeo BR-03147/2026 saíram com governo, Senado e um único cenário de 2º turno presidencial, Lula 46 x Flávio 44. Não é matéria faltando: o Metrópoles escreve "no único cenário de segundo turno testado" e nenhum veículo publicou 1º turno presidencial mineiro nessa rodada. O `PRES26` já trata isso sozinho, e a saída certa é OMITIR o campo `t1`: o painel então escreve "Este instituto não divulgou 1º turno neste estado" e passa a tirar o líder do 2º turno. Não invente um `t1` nem repita o da rodada anterior de outro instituto.
