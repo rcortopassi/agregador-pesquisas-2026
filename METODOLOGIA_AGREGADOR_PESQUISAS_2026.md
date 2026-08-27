@@ -6,6 +6,35 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- O LOTE DA GLOBO DE 23 A 26/8 É DE SEIS ESTADOS, E O RADAR CARIMBOU CINCO DOS SEIS GÊMEOS COMO ACRE (27/08/2026, 01h40). É a terceira vez que o rótulo `ESTADUAL[XX]` engana, e a causa é sempre a mesma: as afiliadas encomendam com N igual (804 em cinco estados, 900 na Bahia), o desempate do radar é por N mais datas, e ele empilha tudo no primeiro estado que casa. Desta vez o `DS_DADO_MUNICIPIO` da Agência Sertão resolve sem ambiguidade, porque ele escreve o estado por extenso ("a área de abrangência da coleta é o território do estado de X"). O mapa correto dos gêmeos presidenciais, que a rodada da noite deve usar sem reconferir:
+
+  | registro | rótulo do radar | estado REAL | contratante |
+  | --- | --- | --- | --- |
+  | BR-07281/2026 | ESTADUAL[AC] | SERGIPE | TV Sergipe |
+  | BR-08926/2026 | ESTADUAL[AC] | RORAIMA | Rede Amazônica |
+  | BR-06255/2026 | ESTADUAL[AC] | ESPÍRITO SANTO | TV Gazeta |
+  | BR-07810/2026 | ESTADUAL[AC] | GOIÁS | TV Anhanguera |
+  | BR-07015/2026 | ESTADUAL[AC] | ACRE | Rede Amazônica |
+  | BR-08870/2026 | ESTADUAL[BA] | BAHIA | TV Bahia |
+
+  Os estaduais de governo e Senado do mesmo lote são AC-09106 (Acre), BA-06206 (Bahia), ES-04444 (Espírito Santo), GO-06186 (Goiás), RR-04765 (Roraima) e SE-03536 (Sergipe). Todos com campo de 23 a 26/8 e divulgação em 27/8.
+
+  RORAIMA É O QUE IMPORTA NESTE LOTE. `PRES26` tem 26 dos 27 estados e o único buraco é RR, desde sempre. BR-08926/2026 é a primeira presidencial de Roraima do ciclo a aparecer no radar, e se ela sair com número o mapa fecha em 27 estados. Vale abrir o hub do g1 de Roraima e o site da Rede Amazônica antes de qualquer outro item da fila.
+
+- A VERITÁ E A NEOKEMP MARCADAS "NACIONAL?" EM 27/8 SÃO AS DUAS DO PARANÁ, E ISSO CONTAMINARIA O `DI` (27/08/2026, 01h40). BR-08989/2026 (Veritá, N=2010, campo de 21 a 25/8) e BR-05320/2026 (Neokemp, N=1008, campo de 25 a 27/8) entraram na fila como nacionais e não são: o `DS_PLANO_AMOSTRAL` da Veritá diz "representativa do eleitorado do estado DO PARANÁ" e o da Neokemp diz "abrangência estadual e será realizada no Estado do Paraná". As duas são insumo de `PRES26['PR']`, nunca do `DI`. O erro aqui seria caro e silencioso, porque uma rodada estadual entrando na mediana nacional não quebra o JS nem aparece no painel como anomalia: só desloca o agregado do mês.
+
+  O teste que pega isso é o mesmo endpoint da Agência Sertão, e ele responde em uma chamada. Vale o hábito: registro `BR` marcado "NACIONAL?" só é nacional depois que o `DS_DADO_MUNICIPIO` disser "a área de abrangência da coleta é nacional", que é exatamente o que a PoderData BR-04974/2026 diz, e por isso ela é a única nacional de verdade desta fila. A Neokemp reforça pelo contratante, o Jornal O Correio do Povo, o mesmo OCP News que publicou a rodada dela de Santa Catarina em 26/8.
+
+- QUATRO REGISTROS DA FILA DE 27/8 ERAM RECORTE MUNICIPAL, E O `DS_PLANO_AMOSTRAL` ENTREGOU OS QUATRO (27/08/2026, 01h40). Foram fechados como descartados, sem gastar uma busca em jornal: GO-02998/2026 (Plural, paga pela ACIM, a associação comercial de Morrinhos) declara universo de 37.220 eleitores, que é o município e não os 4,5 milhões de Goiás; PB-08796/2026 e PB-01288/2026 (Podium) dizem com todas as letras "o tamanho da amostra utilizada para o município de Guarabira" e "para o município de Campina Grande"; e MT-02402/2026 (Meta) diz "os eleitores da zona urbana município de Barra do Garças". Os quatro tinham N entre 379 e 500, e a regra prática que se confirma é que amostra abaixo de 600 num estado inteiro é quase sempre recorte municipal com cargos estaduais na boca de urna.
+
+  Cuidado com o falso positivo do inverso: SE-05445/2026 (TWS, N=1500) também tem cara de recorte, porque lista 26 municípios nominalmente, mas o plano diz "26 municípios selecionados dentre os 75 do Estado" por PPT, ou seja, é amostra estadual em dois estágios e continua na fila. Lista de municípios não é recorte; universo pequeno é.
+
+- A MADRUGADA DE 27/8 NÃO TINHA O QUE INSERIR, E ISSO ERA PREVISÍVEL PELO CALENDÁRIO (27/08/2026, 01h40). Trinta e cinco dos trinta e nove itens da fila têm divulgação em 27/8, e a rodada da madrugada acorda às 01h40 do próprio dia 27: o lote da Globo sai das 19h às 22h e a Real Time Big Data sai das 7h às 8h30, então nenhum deles podia estar publicado. Confirmado por varredura, e não por presunção: `wp-json` do Poder360 com `after=2026-08-27` devolve três matérias e nenhuma é pesquisa, e os seis hubs do g1 do lote não têm um único link `quaest-*` de 25 a 27/8.
+
+  A leitura de calendário que vale guardar é esta. A rodada da MADRUGADA colhe a cauda do dia ANTERIOR, não a véspera do dia que começa. Quando a fila é quase toda de itens com divulgação no mesmo dia, a rodada certa a esperar é a das 7h30 para a Real Time e a da madrugada SEGUINTE para o lote da Globo. Anunciar esses itens como "registrado e não publicado" às duas da manhã seria o erro simétrico ao de 25/8, quando a rodada das 19h30 fechou cedo demais.
+
+- OS DOIS ITENS QUE VENCERAM EM 26/8 TÊM DESTINOS DIFERENTES, E UM DELES TEM DATA MARCADA (27/08/2026, 01h40). PE-01370/2026 (Instituto de Pesquisa Múltipla, paga pela Facto Comunicação) NÃO está atrasada por acidente: o Blog do Ricardo Antunes anunciou às 00h08 de 27/8 que o portal divulga a rodada em parceria com a Múltipla "nesta quinta", e a série da Múltipla em Pernambuco já vem de 27/7 e 12/8. Fica na fila com motivo conhecido, e quem colhe é a rodada das 13h30. Já AM-09630/2026 e o gêmeo BR-02643/2026 (Direto ao Ponto, paga pela DCastro Comunicação) completaram um dia de divulgação vencida sem nada publicado: o Google Notícias só devolve a rodada de junho do mesmo instituto, e as homes do D24AM, do BNC Amazonas e do Radar Amazônico não trazem link novo dela. O que saiu no Amazonas em 26/8 foi a Real Time Big Data, que já está no painel. Fica na fila mais uma rodada antes de ser fechada como não publicada.
+
 - A FICHA DA AGÊNCIA SERTÃO SÓ ABRE PELO ENDPOINT JSON, E ELA MATA METADE DA FILA SOZINHA (26/08/2026, 19h40). A página `pesquisas.php?protocolo=...&uf=...` virou JS e devolve casca vazia por curl: o que responde é o endpoint que o próprio JS chama, e ele abre sem cabeçalho nenhum.
 
   ```bash

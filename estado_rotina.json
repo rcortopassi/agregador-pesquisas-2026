@@ -714,16 +714,6 @@
    "visto": "2026-08-27"
   },
   {
-   "proto": "GO029982026",
-   "escopo": "GO",
-   "inst": "PLURAL ASSESSORIA DE IMPRENS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "24/08-25/08",
-   "div": "2026-08-27",
-   "n": "379",
-   "visto": "2026-08-27"
-  },
-  {
    "proto": "GO061862026",
    "escopo": "GO",
    "inst": "#NULO#",
@@ -751,16 +741,6 @@
    "campo": "22/08-26/08",
    "div": "2026-08-27",
    "n": "2000",
-   "visto": "2026-08-27"
-  },
-  {
-   "proto": "MT024022026",
-   "escopo": "MT",
-   "inst": "META PUBLICIDADE E PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "12/08-13/08",
-   "div": "2026-08-27",
-   "n": "500",
    "visto": "2026-08-27"
   },
   {
@@ -801,26 +781,6 @@
    "campo": "17/08-19/08",
    "div": "2026-08-27",
    "n": "1000",
-   "visto": "2026-08-27"
-  },
-  {
-   "proto": "PB087962026",
-   "escopo": "PB",
-   "inst": "INSTITUTO DE PESQUISA PODIUM",
-   "cargo": "Governador, Senador",
-   "campo": "19/08-20/08",
-   "div": "2026-08-27",
-   "n": "381",
-   "visto": "2026-08-27"
-  },
-  {
-   "proto": "PB012882026",
-   "escopo": "PB",
-   "inst": "INSTITUTO DE PESQUISA PODIUM",
-   "cargo": "Governador, Senador",
-   "campo": "21/08-21/08",
-   "div": "2026-08-27",
-   "n": "384",
    "visto": "2026-08-27"
   },
   {
