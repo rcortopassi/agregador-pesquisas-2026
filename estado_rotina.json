@@ -504,26 +504,6 @@
  "ultima_rodada": "2026-08-27T00:05:45.119202-03:00",
  "pendentes": [
   {
-   "proto": "AM096302026",
-   "escopo": "AM",
-   "inst": "DIRETO AO PONTO PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "19/08-24/08",
-   "div": "2026-08-26",
-   "n": "1200",
-   "visto": "2026-08-26"
-  },
-  {
-   "proto": "BR026432026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "DIRETO AO PONTO PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "19/08-24/08",
-   "div": "2026-08-26",
-   "n": "1200",
-   "visto": "2026-08-26"
-  },
-  {
    "proto": "PE013702026",
    "escopo": "PE",
    "inst": "INSTITUTO DE PESQUISA MULTIP",
@@ -564,16 +544,6 @@
    "visto": "2026-08-27"
   },
   {
-   "proto": "BA076282026",
-   "escopo": "BA",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "23/08-25/08",
-   "div": "2026-08-27",
-   "n": "1400",
-   "visto": "2026-08-27"
-  },
-  {
    "proto": "BA089902026",
    "escopo": "BA",
    "inst": "100 CIDADES",
@@ -581,16 +551,6 @@
    "campo": "24/08-25/08",
    "div": "2026-08-27",
    "n": "1000",
-   "visto": "2026-08-27"
-  },
-  {
-   "proto": "ES050962026",
-   "escopo": "ES",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "22/08-26/08",
-   "div": "2026-08-27",
-   "n": "1600",
    "visto": "2026-08-27"
   },
   {
@@ -684,26 +644,6 @@
    "visto": "2026-08-27"
   },
   {
-   "proto": "BR037062026",
-   "escopo": "ESTADUAL[ES]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "22/08-26/08",
-   "div": "2026-08-27",
-   "n": "1600",
-   "visto": "2026-08-27"
-  },
-  {
-   "proto": "BR031472026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "22/08-26/08",
-   "div": "2026-08-27",
-   "n": "2000",
-   "visto": "2026-08-27"
-  },
-  {
    "proto": "BR095172026",
    "escopo": "ESTADUAL[RN]",
    "inst": "CONSULT PESQUISA",
@@ -734,16 +674,6 @@
    "visto": "2026-08-27"
   },
   {
-   "proto": "MG079722026",
-   "escopo": "MG",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "22/08-26/08",
-   "div": "2026-08-27",
-   "n": "2000",
-   "visto": "2026-08-27"
-  },
-  {
    "proto": "BR089892026",
    "escopo": "NACIONAL?",
    "inst": "VERITA",
@@ -751,16 +681,6 @@
    "campo": "21/08-25/08",
    "div": "2026-08-27",
    "n": "2010",
-   "visto": "2026-08-27"
-  },
-  {
-   "proto": "BR049742026",
-   "escopo": "NACIONAL?",
-   "inst": "PODERDATA",
-   "cargo": "Presidente",
-   "campo": "23/08-26/08",
-   "div": "2026-08-27",
-   "n": "2400",
    "visto": "2026-08-27"
   },
   {

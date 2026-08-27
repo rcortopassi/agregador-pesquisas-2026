@@ -6,6 +6,25 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- A CNN TROCOU OS PROTOCOLOS NA MATÉRIA PRESIDENCIAL DO ES, E O CORPO DO TEXTO É QUE MANDA (27/08/2026, 07h50). A matéria da CNN sobre a Real Time Big Data no Espírito Santo tem título e subtítulo com o registro BR-03706/2026 (o gêmeo capixaba, N=1600) e um bloco "Metodologia" no rodapé que diz "1.600 eleitores mineiros" e cita BR-03147/2026, que é o gêmeo de MINAS, com N=2000. É colagem errada, e os números da matéria são do ES: o corpo fala em "eleitorado capixaba" duas vezes, e o 2º turno dela (Flávio 48 x Lula 42) é diferente do de Minas (Lula 46 x Flávio 44), publicado à parte pelo Metrópoles. O teste que resolve em um passo é comparar o N do registro com o N da matéria e conferir o gentílico no corpo, nunca o rodapé.
+
+- A REAL TIME DE MINAS DIVULGOU 2º TURNO PRESIDENCIAL E NÃO DIVULGOU 1º (27/08/2026, 07h50). MG-07972/2026 e o gêmeo BR-03147/2026 saíram com governo, Senado e um único cenário de 2º turno presidencial, Lula 46 x Flávio 44. Não é matéria faltando: o Metrópoles escreve "no único cenário de segundo turno testado" e nenhum veículo publicou 1º turno presidencial mineiro nessa rodada. O `PRES26` já trata isso sozinho, e a saída certa é OMITIR o campo `t1`: o painel então escreve "Este instituto não divulgou 1º turno neste estado" e passa a tirar o líder do 2º turno. Não invente um `t1` nem repita o da rodada anterior de outro instituto.
+
+- COMO CONFERIR O EFEITO DE UMA NACIONAL NO AGREGADO SEM ABRIR O NAVEGADOR (27/08/2026, 07h50). O script do painel é um IIFE, então `new Function(code)` valida a sintaxe mas não dá acesso a `DI`, `med`, `adj2Month` e `t2valid`. O que funciona é rodar o miolo num contexto `vm` do Node depois de tirar o embrulho, com um `document` de mentira. O erro de DOM no fim é esperado e pode ser ignorado, porque a essa altura os objetos de dados já foram definidos:
+
+  ```js
+  const fs=require('fs'), vm=require('vm');
+  let code=fs.readFileSync('electoralpolls.html','utf8').match(/<script>([\s\S]*)<\/script>/)[1];
+  code=code.replace(/^\s*\(function\(\)\s*\{/,'').replace(/\}\)\(\)\s*;?\s*$/,'');
+  // ctx com document/window/getComputedStyle de mentira, vm.runInContext dentro de try
+  // depois: ctx.med, ctx.adj2Month('ago'), ctx.t2valid('ago'), ctx.t2placar('ago')
+  ```
+
+  Rodar isso ANTES e DEPOIS da edição é o que permite escrever a nota do mês com número em vez de impressão. Em 27/8 mostrou que a PoderData nova derruba a mediana do 1º turno de Lula 39,3 para 39 e NÃO mexe na margem do 2º turno (bruta +2,50, ajustada +1,90 antes e depois), porque a margem dela continua em Lula +1; o que muda é o placar do cenário, de 46 x 44,1 para 45,6 x 43,7, já que os dois juntos passam a ocupar menos da amostra. Margem parada com placar em movimento não é bug, é a decomposição descrita no comentário do `t2placar`.
+
+- 'ADRIANO FUNILEIRO' E 'ADRIANO TEIXEIRA' SÃO A MESMA PESSOA NO PARANÁ (27/08/2026, 07h50). A Neokemp escreve o nome de urna, 'Adriano Funileiro'; o painel já tinha 'Adriano Teixeira' em agosto, da Índice Inteligência. É o candidato do PCO ao governo do PR, confirmado na cobertura da CBN Curitiba e do Diário Causa Operária. Entrou como 'Adriano Teixeira' para não virar duas pessoas no `stateBanner`. Mesma família de armadilha do 'Moro' x 'Sergio Moro': antes de inserir, leia como o UF/mês já escreve o nome.
+
+
 - O LOTE DA GLOBO DE 23 A 26/8 É DE SEIS ESTADOS, E O RADAR CARIMBOU CINCO DOS SEIS GÊMEOS COMO ACRE (27/08/2026, 01h40). É a terceira vez que o rótulo `ESTADUAL[XX]` engana, e a causa é sempre a mesma: as afiliadas encomendam com N igual (804 em cinco estados, 900 na Bahia), o desempate do radar é por N mais datas, e ele empilha tudo no primeiro estado que casa. Desta vez o `DS_DADO_MUNICIPIO` da Agência Sertão resolve sem ambiguidade, porque ele escreve o estado por extenso ("a área de abrangência da coleta é o território do estado de X"). O mapa correto dos gêmeos presidenciais, que a rodada da noite deve usar sem reconferir:
 
   | registro | rótulo do radar | estado REAL | contratante |
