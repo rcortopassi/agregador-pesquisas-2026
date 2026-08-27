@@ -505,16 +505,6 @@
  "ultima_rodada": "2026-08-27T12:08:43.066547-03:00",
  "pendentes": [
   {
-   "proto": "PE013702026",
-   "escopo": "PE",
-   "inst": "INSTITUTO DE PESQUISA MULTIP",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "22/08-24/08",
-   "div": "2026-08-26",
-   "n": "900",
-   "visto": "2026-08-26"
-  },
-  {
    "proto": "AC094662026",
    "escopo": "AC",
    "inst": "PERFIL PESQUISAS",
@@ -685,16 +675,6 @@
    "visto": "2026-08-27"
   },
   {
-   "proto": "BR053202026",
-   "escopo": "NACIONAL?",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "25/08-27/08",
-   "div": "2026-08-27",
-   "n": "1008",
-   "visto": "2026-08-27"
-  },
-  {
    "proto": "PA006362026",
    "escopo": "PA",
    "inst": "100 CIDADES",
@@ -712,16 +692,6 @@
    "campo": "21/08-25/08",
    "div": "2026-08-27",
    "n": "1500",
-   "visto": "2026-08-27"
-  },
-  {
-   "proto": "PR044492026",
-   "escopo": "PR",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "25/08-27/08",
-   "div": "2026-08-27",
-   "n": "1008",
    "visto": "2026-08-27"
   },
   {
@@ -745,16 +715,6 @@
    "visto": "2026-08-27"
   },
   {
-   "proto": "SE065362026",
-   "escopo": "SE",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Senador",
-   "campo": "20/08-21/08",
-   "div": "2026-08-27",
-   "n": "1314",
-   "visto": "2026-08-27"
-  },
-  {
    "proto": "SE054452026",
    "escopo": "SE",
    "inst": "TWS POLITICA",
@@ -772,16 +732,6 @@
    "campo": "23/08-26/08",
    "div": "2026-08-27",
    "n": "804",
-   "visto": "2026-08-27"
-  },
-  {
-   "proto": "TO070462026",
-   "escopo": "TO",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "22/08-26/08",
-   "div": "2026-08-27",
-   "n": "1250",
    "visto": "2026-08-27"
   }
  ],
