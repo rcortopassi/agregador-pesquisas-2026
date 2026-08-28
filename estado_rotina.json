@@ -523,46 +523,6 @@
  "ultima_rodada": "2026-08-28T13:33:05.129609-03:00",
  "pendentes": [
   {
-   "proto": "AL037392026",
-   "escopo": "AL",
-   "inst": "INSTITUTO RANKING PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "23/08-24/08",
-   "div": "2026-08-28",
-   "n": "1200",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "AM049102026",
-   "escopo": "AM",
-   "inst": "EFICAZ PESQUISAS & TECNOLOGI",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-27/08",
-   "div": "2026-08-28",
-   "n": "1500",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "BR084922026",
-   "escopo": "ESTADUAL[GO]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "24/08-27/08",
-   "div": "2026-08-28",
-   "n": "1600",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "BR071712026",
-   "escopo": "ESTADUAL[GO]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "24/08-27/08",
-   "div": "2026-08-28",
-   "n": "1600",
-   "visto": "2026-08-28"
-  },
-  {
    "proto": "BR018822026",
    "escopo": "ESTADUAL[MS]",
    "inst": "RANKING BRASIL INTELIGENCIA",
@@ -570,16 +530,6 @@
    "campo": "23/08-27/08",
    "div": "2026-08-28",
    "n": "2000",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "BR067942026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "PARLA MENTORS CONSULTORIA",
-   "cargo": "Presidente",
-   "campo": "23/08-27/08",
-   "div": "2026-08-28",
-   "n": "1500",
    "visto": "2026-08-28"
   },
   {
@@ -603,16 +553,6 @@
    "visto": "2026-08-28"
   },
   {
-   "proto": "RN099082026",
-   "escopo": "RN",
-   "inst": "PARLA MENTORS CONSULTORIA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "23/08-27/08",
-   "div": "2026-08-28",
-   "n": "1500",
-   "visto": "2026-08-28"
-  },
-  {
    "proto": "SE094412026",
    "escopo": "SE",
    "inst": "C.D.L.",
@@ -620,26 +560,6 @@
    "campo": "01/09-03/09",
    "div": "2026-08-28",
    "n": "20000",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "SE007832026",
-   "escopo": "SE",
-   "inst": "EIPE - EXCLUSIVO INSTITUTO D",
-   "cargo": "Senador",
-   "campo": "22/08-26/08",
-   "div": "2026-08-28",
-   "n": "1206",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "TO029002026",
-   "escopo": "TO",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "25/08-27/08",
-   "div": "2026-08-28",
-   "n": "1504",
    "visto": "2026-08-28"
   }
  ],
