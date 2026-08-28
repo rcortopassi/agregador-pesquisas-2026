@@ -344,3 +344,35 @@ Este merece atenção porque o dado está publicado no painel hoje.
   Observatório Sergipe no Instagram, indexada em busca. A liminar de 12 e 13/08 tem
   fonte melhor (NE Notícias, FaxAju, Roacontece, HoraNews). Se algum dia for preciso
   decidir sobre o dado, confirmar a rejeição no andamento processual do TRE-SE.
+
+### Instituto Consult no Rio Grande do Norte: NÃO REGISTRADA, e ESTÁ no painel (28/08/2026)
+
+Achado da rodada local de 28/08/2026, ao apurar a fila do `PENDENCIAS.md`. É o caso mais
+direto de todos: não é suspensão liminar, é decisão de mérito do pleno.
+
+- **RN-06648/2026** (Instituto Consult, governador, senador e deputado federal, campo 03 a
+  05/07/2026, N=1700, contratante Empresa Jornalística Tribuna do Norte) foi declarada
+  **juridicamente NÃO REGISTRADA** pelo TRE-RN, por unanimidade, na sessão de terça-feira,
+  25/08/2026, em representação do diretório estadual do PSD. Multa de R$ 53.205,00 ao
+  instituto e **proibição de novas divulgações dos resultados**.
+- Fundamento: a Consult não informou o número de eleitores entrevistados por setor
+  censitário ou unidade territorial, informação obrigatória. A discussão foi sobre a
+  distribuição territorial da amostra, não sobre a preferência eleitoral apurada.
+- A Procuradoria Regional Eleitoral opinou pela improcedência e a Consult sustentou ter
+  prestado a informação. O plenário decidiu em sentido contrário.
+- ONDE BATE NO PAINEL: essa é a rodada que alimenta `DGM.RN.jul` e `DSM.RN.jul`, ambas na
+  linha `Instituto Consult`. O painel publica hoje número que a Justiça Eleitoral mandou
+  não divulgar mais. As linhas `Instituto Consult` de `mar` e de `ago` são de OUTROS
+  registros e não foram atingidas por esta decisão.
+- Fonte: Portal N10, 27/08/2026, "TRE-RN multa Instituto Consult em R$ 53 mil e proíbe nova
+  divulgação de pesquisa"
+  (portaln10.com.br/politica/eleicoes/tre-rn-multa-consult-pesquisa-eleitoral-351836/).
+  Confirmado também por Agora RN e bnewsrn. Nenhum dos veículos reproduz os percentuais,
+  justamente por causa da proibição.
+- NADA FOI REMOVIDO, seguindo a regra deste arquivo: a decisão é do Rafael. Se for para
+  remover, são duas linhas `['Instituto Consult',[...]]`, uma em `DGM.RN.jul` e outra em
+  `DSM.RN.jul`.
+- Nota de contexto: a Consult registrou nova rodada no RN, **RN-08989/2026** (campo 21 a
+  23/08, N=1700, mesma contratante), com divulgação vencida em 27/08. Até 28/08 de
+  madrugada nenhum número dela apareceu publicado, nem na Tribuna do Norte nem nos blogs
+  potiguares que costumam repercutir o instituto. Pode ser efeito da decisão de 25/08.
