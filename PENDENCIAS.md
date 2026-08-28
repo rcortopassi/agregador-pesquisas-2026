@@ -2,35 +2,27 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 27/08/2026 19:41. Mercados: Polymarket 59,5%/35,4%, Kalshi 60,0%/38,0%.
+Rodada de 27/08/2026 21:50. Mercados: Polymarket 57,5%/36,8%, Kalshi 60,0%/37,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
 - [aguardando desde 2026-08-27] TSE AC, PERFIL PESQUISAS (Governador, Senador, Deputado Fede), campo 20/08-27/08, divulgação 2026-08-27, N=1430, registro AC094662026
-- [aguardando desde 2026-08-27] TSE AC, #NULO# (Governador, Senador), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro AC091062026
-- [aguardando desde 2026-08-27] TSE BA, #NULO# (Governador, Senador), campo 23/08-26/08, divulgação 2026-08-27, N=900, registro BA062062026
 - [aguardando desde 2026-08-27] TSE BA, 100 CIDADES (Governador, Senador), campo 24/08-25/08, divulgação 2026-08-27, N=1000, registro BA089902026
-- [aguardando desde 2026-08-27] TSE ES, #NULO# (Governador, Senador), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro ES044442026
 - [aguardando desde 2026-08-27] TSE ESTADUAL[AC], #NULO# (Presidente), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro BR072812026
 - [aguardando desde 2026-08-27] TSE ESTADUAL[AC], #NULO# (Presidente), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro BR089262026
-- [aguardando desde 2026-08-27] TSE ESTADUAL[AC], #NULO# (Presidente), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro BR062552026
 - [aguardando desde 2026-08-27] TSE ESTADUAL[AC], #NULO# (Presidente), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro BR078102026
 - [aguardando desde 2026-08-27] TSE ESTADUAL[AC], PERFIL PESQUISAS (Presidente), campo 20/08-27/08, divulgação 2026-08-27, N=1430, registro BR072962026
-- [aguardando desde 2026-08-27] TSE ESTADUAL[AC], #NULO# (Presidente), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro BR070152026
 - [aguardando desde 2026-08-27] TSE ESTADUAL[BA], 100 CIDADES (Presidente), campo 24/08-25/08, divulgação 2026-08-27, N=1000, registro BR008282026
-- [aguardando desde 2026-08-27] TSE ESTADUAL[BA], #NULO# (Presidente), campo 23/08-26/08, divulgação 2026-08-27, N=900, registro BR088702026
 - [aguardando desde 2026-08-27] TSE ESTADUAL[RN], CONSULT PESQUISA (Presidente), campo 21/08-23/08, divulgação 2026-08-27, N=1700, registro BR095172026
 - [aguardando desde 2026-08-27] TSE GO, #NULO# (Governador, Senador), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro GO061862026
 - [aguardando desde 2026-08-27] TSE GO, BRASMARKET (Governador, Senador), campo 20/08-21/08, divulgação 2026-08-27, N=1200, registro GO046692026
-- [aguardando desde 2026-08-27] TSE NACIONAL?, VERITA (Presidente), campo 21/08-25/08, divulgação 2026-08-27, N=2010, registro BR089892026
 - [aguardando desde 2026-08-27] TSE PA, 100 CIDADES (Governador, Senador), campo 17/08-19/08, divulgação 2026-08-27, N=1000, registro PA006362026
 - [aguardando desde 2026-08-27] TSE PE, INSTITUTO REVISTA TOTAL BRAS (Governador, Senador), campo 21/08-25/08, divulgação 2026-08-27, N=1500, registro PE016212026
 - [aguardando desde 2026-08-27] TSE RN, CONSULT PESQUISA (Governador, Senador, Deputado Fede), campo 21/08-23/08, divulgação 2026-08-27, N=1700, registro RN089892026
 - [aguardando desde 2026-08-27] TSE RR, #NULO# (Governador, Senador), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro RR047652026
 - [aguardando desde 2026-08-27] TSE SE, TWS POLITICA (Governador, Senador), campo 19/08-24/08, divulgação 2026-08-27, N=1500, registro SE054452026
-- [aguardando desde 2026-08-27] TSE SE, #NULO# (Governador, Senador), campo 23/08-26/08, divulgação 2026-08-27, N=804, registro SE035362026
 
 ## Últimas publicações do Veritá
 
