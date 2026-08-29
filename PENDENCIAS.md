@@ -2,26 +2,23 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 29/08/2026 08:00. Mercados: Polymarket 57,5%/37,6%, Kalshi 59,0%/42,0%.
+Rodada de 29/08/2026 16:22. Mercados: Polymarket 55,5%/39,4%, Kalshi 53,0%/41,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
-- [aguardando desde 2026-08-29] TSE AM, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro AM021512026
 - [aguardando desde 2026-08-29] TSE AP, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=1030, registro AP053822026
 - [aguardando desde 2026-08-29] TSE ES, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro ES074852026
 - [aguardando desde 2026-08-29] TSE ESTADUAL[AM], VERITA (Presidente), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro BR036882026
 - [aguardando desde 2026-08-29] TSE ESTADUAL[AM], VERITA (Presidente), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro BR099652026
 - [aguardando desde 2026-08-29] TSE ESTADUAL[AM], VERITA (Presidente), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro BR081102026
-- [aguardando desde 2026-08-29] TSE ESTADUAL[AM], VERITA (Presidente), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro BR095242026
 - [aguardando desde 2026-08-29] TSE ESTADUAL[AP], VERITA (Presidente), campo 24/08-28/08, divulgação 2026-08-29, N=1030, registro BR082902026
 - [aguardando desde 2026-08-29] TSE ESTADUAL[PA], #NULO# (Presidente), campo 25/08-28/08, divulgação 2026-08-29, N=804, registro BR053092026
 - [aguardando desde 2026-08-29] TSE ESTADUAL[RJ], VERITA (Presidente), campo 24/08-28/08, divulgação 2026-08-29, N=2030, registro BR033462026
 - [aguardando desde 2026-08-29] TSE ESTADUAL[RS], VERITA (Presidente), campo 24/08-28/08, divulgação 2026-08-29, N=2020, registro BR054622026
 - [aguardando desde 2026-08-29] TSE PA, #NULO# (Governador, Senador), campo 25/08-28/08, divulgação 2026-08-29, N=804, registro PA077182026
 - [aguardando desde 2026-08-29] TSE PI, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro PI060002026
-- [aguardando desde 2026-08-29] TSE PI, INSTITUTO CREDIBILIDADE (Governador, Senador, Deputado Fede), campo 21/08-22/08, divulgação 2026-08-29, N=473, registro PI077572026
 - [aguardando desde 2026-08-29] TSE RJ, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=2030, registro RJ060782026
 - [aguardando desde 2026-08-29] TSE RO, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro RO034032026
 - [aguardando desde 2026-08-29] TSE RS, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=2020, registro RS065212026
