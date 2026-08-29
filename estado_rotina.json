@@ -545,46 +545,6 @@
  "ultima_rodada": "2026-08-29T00:40:49.220081-03:00",
  "pendentes": [
   {
-   "proto": "BR018822026",
-   "escopo": "ESTADUAL[MS]",
-   "inst": "RANKING BRASIL INTELIGENCIA",
-   "cargo": "Presidente",
-   "campo": "23/08-27/08",
-   "div": "2026-08-28",
-   "n": "2000",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "BR040412026",
-   "escopo": "ESTADUAL[SE]",
-   "inst": "C.D.L.",
-   "cargo": "Presidente",
-   "campo": "01/09-03/09",
-   "div": "2026-08-28",
-   "n": "20000",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "MS065602026",
-   "escopo": "MS",
-   "inst": "RANKING BRASIL INTELIGENCIA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "23/08-27/08",
-   "div": "2026-08-28",
-   "n": "2000",
-   "visto": "2026-08-28"
-  },
-  {
-   "proto": "SE094412026",
-   "escopo": "SE",
-   "inst": "C.D.L.",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "01/09-03/09",
-   "div": "2026-08-28",
-   "n": "20000",
-   "visto": "2026-08-28"
-  },
-  {
    "proto": "AM021512026",
    "escopo": "AM",
    "inst": "VERITA",
@@ -592,16 +552,6 @@
    "campo": "24/08-28/08",
    "div": "2026-08-29",
    "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "AP000622026",
-   "escopo": "AP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "26/08-28/08",
-   "div": "2026-08-29",
-   "n": "1080",
    "visto": "2026-08-29"
   },
   {
@@ -715,16 +665,6 @@
    "visto": "2026-08-29"
   },
   {
-   "proto": "BR055192026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "25/08-27/08",
-   "div": "2026-08-29",
-   "n": "2100",
-   "visto": "2026-08-29"
-  },
-  {
    "proto": "PA077182026",
    "escopo": "PA",
    "inst": "#NULO#",
@@ -732,26 +672,6 @@
    "campo": "25/08-28/08",
    "div": "2026-08-29",
    "n": "804",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "PB075782026",
-   "escopo": "PB",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "PE022222026",
-   "escopo": "PE",
-   "inst": "DATATRENDS",
-   "cargo": "Governador, Senador",
-   "campo": "25/08-27/08",
-   "div": "2026-08-29",
-   "n": "1200",
    "visto": "2026-08-29"
   },
   {
