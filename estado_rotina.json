@@ -545,16 +545,6 @@
  "ultima_rodada": "2026-08-29T08:00:04.455154-03:00",
  "pendentes": [
   {
-   "proto": "AM021512026",
-   "escopo": "AM",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
    "proto": "AP053822026",
    "escopo": "AP",
    "inst": "VERITA",
@@ -596,16 +586,6 @@
   },
   {
    "proto": "BR081102026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "BR095242026",
    "escopo": "ESTADUAL[AM]",
    "inst": "VERITA",
    "cargo": "Presidente",
@@ -672,16 +652,6 @@
    "campo": "24/08-28/08",
    "div": "2026-08-29",
    "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "PI077572026",
-   "escopo": "PI",
-   "inst": "INSTITUTO CREDIBILIDADE",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "21/08-22/08",
-   "div": "2026-08-29",
-   "n": "473",
    "visto": "2026-08-29"
   },
   {
