@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 29/08/2026 13:50</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 29/08/2026 15:29</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1067,8 +1067,12 @@
     {d:'2026-08-23', dia:'domingo', hc:'20h', h:'20h na TV, com cobertura digital desde as 19h', org:'Band',
      tv:'Band na TV aberta, com sinal compartilhado com a BandNews TV e o Arte1 nos canais pagos. Transmitem também os parceiros do pool: TV Cultura, TV Gazeta e Jovem Pan.',
      web:'Bandplay, Band.com.br, canal Band Jornalismo no YouTube e Kwai, mais as rádios Bandeirantes e BandNews FM.',
-     vao:['Renan Santos (Missão)','Ronaldo Caiado (PSD)','Augusto Cury (Avante)','Romeu Zema (Novo)'],
-     nao:['Lula (PT)','Flávio Bolsonaro (PL)'], sit:'21/8',
+     vao:['Renan Santos (Missão)','Ronaldo Caiado (PSD)','Augusto Cury (Avante)'],
+     nao:['Lula (PT)','Flávio Bolsonaro (PL)','Romeu Zema (Novo)'], sit:'23/8',
+     ganhou:[
+       ['Público','não houve pesquisa probabilística perguntando quem venceu. A única leitura de eleitores é qualitativa: o Instituto Travessia reuniu 12 eleitores de São Paulo numa sala de espelho, acompanhado pelo Estadão, e quem terminou melhor avaliado foi Ronaldo Caiado, com quase 60 cartões verdes contra 2 vermelhos e a única unanimidade da noite, numa proposta sobre violência contra a mulher. Duas das três eleitoras que chegaram votando em Flávio Bolsonaro saíram em Caiado; Renan Santos avançou entre homens e indecisos. São 12 pessoas, e isso não se projeta para o eleitorado. Nas redes o vencedor é outro: a Vox Radar mediu 421.380 publicações no dia e deu a Renan Santos 41.240 menções, 2,9 vezes as de Caiado, com 51,6 por cento delas negativas.','https://www.estadao.com.br/politica/eleicoes/caiado-e-renan-despontam-flavio-perde-forca-e-lula-resiste-veja-reacoes-ao-1-debate-presidencial/'],
+       ['Analistas','os oito colunistas do Globo deram nota de 1 a 5 e reprovaram os três: Caiado 2,0, Augusto Cury 1,9 e Renan Santos 1,6, ou seja, o primeiro colocado não chegou à metade da escala. Na BBC News Brasil os analistas ouvidos não viram vencedor nítido e disseram que quem melhor aproveitou a noite foi Renan Santos, pelo material que gerou para circular depois; Mayra Goulart (UFRJ) o chamou de o grande personagem da noite e Rafael Cortez (Tendências) lembrou que debate costuma render mais a quem é menos conhecido.','https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/08/23/debate-presidencial-2026-na-band-colunistas-do-globo-avaliam-quem-ganhou-o-duelo-entre-os-candidatos.ghtml'],
+       ['Em uma linha','ninguém saiu vencedor de um debate sem os dois primeiros colocados. Caiado ganha onde se mediu convencimento, Renan Santos ganha onde se mediu atenção, e o debate mais esvaziado desde 1989 não moveu as intenções de voto.','https://www.bbc.com/portuguese/articles/cdj0jj12deeo']],
      yt:'UCoa-D_VfMkFrCYodrOC9-mA', ytlab:'Band Jornalismo',
      vid:'8ejQOXgiMvI', vidnt:'Debate Presidencial 2026 na Band, transmissão de 23/8 no canal Band Jornalismo.',
      url:'https://www.youtube.com/@BandJornalismo/live',
@@ -1119,13 +1123,25 @@
        '<span style="font-size:12px; color:'+P.txt2+';">'+db.dia+', '+debDia(db.d)+', '+db.h+'</span></div>';
     h+='<div style="font-size:12px; color:'+P.txt+'; line-height:1.55; margin-top:5px;"><span style="font-size:9.5px; font-weight:700; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.05em;">Na TV</span> '+db.tv+'</div>';
     h+='<div style="font-size:12px; color:'+P.txt+'; line-height:1.55; margin-top:2px;"><span style="font-size:9.5px; font-weight:700; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.05em;">Na internet</span> '+db.web+'</div>';
-    h+=debLista('Confirmados',db.vao,P.txt);
-    h+=debLista('Não vão',db.nao,P.warn);
+    // Depois da data o debate deixa de ser previsão: os rótulos passam a falar do que aconteceu.
+    var hoje0=new Date(); hoje0.setHours(0,0,0,0); var passou=debD(db.d)<hoje0;
+    h+=debLista(passou?'Quem foi':'Confirmados',db.vao,P.txt);
+    h+=debLista(passou?'Quem faltou':'Não vão',db.nao,P.warn);
     h+=debLista('Convidados',db.conv,P.txt);
     if(!(db.vao&&db.vao.length)&&!(db.conv&&db.conv.length))
       h+='<div style="margin-top:3px; font-size:12px; color:'+P.mut+';">Lista de convidados ainda não divulgada.</div>';
-    h+='<div style="font-size:10.5px; color:'+P.mut+'; margin-top:2px;">Presenças conferidas em '+db.sit+'; campanha ainda pode mudar de ideia até a véspera.</div>';
+    h+='<div style="font-size:10.5px; color:'+P.mut+'; margin-top:2px;">'+(passou?'Presenças efetivas, conferidas na cobertura do dia.':'Presenças conferidas em '+db.sit+'; campanha ainda pode mudar de ideia até a véspera.')+'</div>';
     h+='<div style="font-size:11.5px; color:'+P.txt2+'; line-height:1.5; margin-top:6px;">'+db.nt+'</div>';
+    // Veredito do debate: só aparece nos que já aconteceram e tiveram leitura publicada.
+    // Cada linha é [rótulo, texto, fonte]. Sem o campo, nada é desenhado.
+    if(db.ganhou&&db.ganhou.length){
+      h+='<div style="margin-top:8px; padding-top:7px; border-top:1px solid '+P.bsoft+';">';
+      h+='<div style="font-size:9.5px; font-weight:700; color:'+P.goldtxt+'; text-transform:uppercase; letter-spacing:0.05em;">Quem ganhou</div>';
+      for(var g=0; g<db.ganhou.length; g++){ var lin=db.ganhou[g];
+        h+='<div style="font-size:11.5px; color:'+P.txt2+'; line-height:1.5; margin-top:4px;"><b style="color:'+P.ink+';">'+lin[0]+'</b> '+lin[1]+
+           (lin[2]?' <a href="'+lin[2]+'" target="_blank" rel="noopener" style="color:'+P.link+'; text-decoration:underline;">fonte &#8599;</a>':'')+'</div>'; }
+      h+='</div>';
+    }
     var bt='display:inline-block; font-size:11.5px; padding:4px 9px; border-radius:4px; border:1px solid '+P.bord+'; background:'+P.surf3+'; color:'+P.ink+'; cursor:pointer; text-decoration:none;';
     h+='<div style="display:flex; gap:7px; flex-wrap:wrap; align-items:center; margin-top:8px;">';
     if(db.vid||db.yt) h+='<button onclick="playDebate('+i+')" style="'+bt+'">'+(aberto?'Fechar o vídeo':'Assistir aqui')+'</button>';
