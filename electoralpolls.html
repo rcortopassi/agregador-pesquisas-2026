@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 29/08/2026 12:36</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 29/08/2026 12:59</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1571,6 +1571,22 @@
   ];
   function evc(e){ return e.c==='red'?P.red:P.blue; }
 
+  // MARCADOR DOS DEBATES NO GRAFICO (29/08/2026). O usuario pediu marcadores "um pouco
+  // diferentes, para facilitar a visao de que se trata de outra marcacao". Por isso o debate
+  // NAO e circulo colorido no alto como o PEVENTS, e sim LOSANGO dourado embaixo, rente ao eixo
+  // dos meses, com linha PONTILHADA (a do fato e tracejada). Sao quatro sinais de distincao ao
+  // mesmo tempo: forma, cor, posicao e padrao da linha. Dourado porque debate nao tem lado:
+  // nao pode sair vermelho nem azul.
+  // A FONTE E O OBJETO `DEBATES` LA DE CIMA, o mesmo que alimenta o quadro de debates. Nao crie
+  // um segundo array de datas: a primeira versao desta rodada criou, redeclarou `DEBATES` no
+  // meio do arquivo, apagou o objeto rico do quadro e o painel inteiro parou de renderizar com
+  // "Cannot read properties of undefined (reading 'split')". Data nova de debate entra em UM
+  // lugar so, no `DEBATES` de cima, e o losango aparece sozinho.
+  // Losango centrado em (cx,cy) com semidiagonal r.
+  function diamond(cx,cy,r){ cx=+cx; cy=+cy; r=+r; return 'M'+cx+','+(cy-r)+' L'+(cx+r)+','+cy+' L'+cx+','+(cy+r)+' L'+(cx-r)+','+cy+' Z'; }
+  // Realizado x marcado sai do relogio, nunca de campo escrito a mao, senao envelhece sozinho.
+  function debFeito(e){ var h=new Date(); h.setHours(0,0,0,0); return debD(e.d) < h; }
+
   function t2color(v){ if(v.indexOf('Lula')===0) return ''+P.red+''; if(v.indexOf('Fl')===0) return ''+P.blue+''; return ''+P.mut+''; }
   function box(title,big){ return '<div style="flex:1; border:1px solid '+P.bord+'; border-radius:4px; overflow:hidden;"><div style="background:'+P.purple+'; color:#fff; text-align:center; padding:6px; font-size:13px; font-weight:500;">'+title+'</div><div style="text-align:center; padding:8px; font-size:15px; font-weight:600;">'+big+'</div></div>'; }
   function avgMonth(m){ var rs=DI[m].rows, L=[],F=[]; for(var i=0;i<rs.length;i++){ if(isOut(rs[i][0])) continue; var l=num(rs[i][1]),f=num(rs[i][2]); if(l!==null&&f!==null){ L.push(l); F.push(f); } } return L.length?[med(L),med(F),L.length]:[0,0,0]; }
@@ -1618,12 +1634,35 @@
         '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+ec+'"/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">'+n+'</text>';
       evCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+ec+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> <span style="font-size:10px; font-weight:700; color:'+ec+'; border:1px solid '+ec+'; border-radius:8px; padding:0 5px; opacity:.85;">'+(e.c==='red'?'Lula':'Flávio')+'</span> &middot; '+e.t+'</span></div>';
     });
+    // Losangos dos debates, no rodape do grafico. So entra o debate cuja data CABE no eixo
+    // (o eixo termina no ultimo mes com rodada publicada). Debate futuro nao ganha posicao
+    // inventada na borda: fica so na legenda, e o losango aparece sozinho quando o mes abrir.
+    // `n` e a ordem do debate no calendario (1 a 4), NAO a ordem entre os desenhados: e o que
+    // faz o losango do grafico e a linha da legenda falarem do mesmo debate.
+    var debList=DEBATES.map(function(e,idx){ var dp=e.d.split('-'), mn=parseInt(dp[1],10), dy=parseInt(dp[2],10);
+      var frac=(mn-MESNUM[ms[0]])+(dy-1)/30, exRaw=60+frac*sp;
+      return {e:e, n:idx+1, mn:mn, dy:dy, p:dp, ex:exRaw, cabe:(exRaw>=60 && exRaw<=660)}; });
+    var debMark='';
+    debList.forEach(function(o){ if(!o.cabe) return; var exn=Math.round(o.ex*10)/10, ex=exn.toFixed(1);
+      debMark+='<line x1="'+ex+'" y1="312" x2="'+ex+'" y2="57.5" stroke="'+P.gold+'" stroke-width="1.2" stroke-dasharray="1.5,3.5" stroke-opacity="0.68"/>'+
+        '<path d="'+diamond(exn,319,8.5)+'" fill="'+P.surf+'" stroke="'+P.gold+'" stroke-width="2"/>'+
+        '<text x="'+ex+'" y="322.6" text-anchor="middle" font-size="10" font-weight="700" fill="'+P.goldtxt+'">'+o.n+'</text>';
+    });
+    var debCap='';
+    debList.forEach(function(o){ var e=o.e, feito=debFeito(e);
+      debCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;'+(feito?'':' opacity:.75;')+'">'+
+        '<span style="flex:0 0 auto; width:13px; height:13px; margin:2px 2px 0; display:inline-block; transform:rotate(45deg); background:'+(feito?P.gold:P.surf)+'; border:1.5px solid '+P.gold+';"></span>'+
+        '<span style="color:'+P.txt2+';"><b style="color:'+P.goldtxt+';">'+o.n+'. '+o.dy+'/'+MES[o.mn-1]+'</b> '+
+        '<span style="font-size:10px; font-weight:700; color:'+P.goldtxt+'; border:1px solid '+P.gold+'; border-radius:8px; padding:0 5px; opacity:.85;">'+(feito?'realizado':'marcado')+'</span> '+
+        '&middot; '+e.org+', '+e.dia+', '+e.hc+(o.cabe?'':'. Fora do intervalo do gráfico por enquanto')+'.</span></div>';
+    });
     return ''+
     '<div style="display:flex; flex-wrap:wrap; gap:14px; padding:12px 14px 4px; font-size:12px; color:'+P.txt2+';">'+
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:3px; background:'+P.red+'; display:inline-block; border-radius:2px;"></span>Lula (ajustado)</span>'+
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:3px; background:'+P.blue+'; display:inline-block; border-radius:2px;"></span>Flávio (ajustado)</span>'+
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:18px; height:11px; display:inline-block; background:repeating-linear-gradient(45deg,'+P.hatch+','+P.hatch+' 1.5px,transparent 1.5px,transparent 5px); border-radius:2px;"></span>margem de erro</span>'+
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; background:'+P.surf+'; border:2px solid '+P.mut+'; display:inline-block;"></span>mês recente, poucos institutos</span>'+
+      '<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; transform:rotate(45deg); background:'+P.surf+'; border:2px solid '+P.gold+'; display:inline-block;"></span>debate presidencial</span>'+
     '</div>'+
     '<svg viewBox="0 -48 680 408" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Linhas Lula e Flavio no 1o turno, ajustadas pelo house effect de cada instituto, mediana por mes de '+ms[0]+' a '+ms[n-1]+', com faixa de margem de erro; mes recente com poucos institutos aparece tracejado e com ponto vazado">'+
       '<defs>'+
@@ -1643,9 +1682,11 @@
       '<g fill="'+P.red+'" font-size="11" text-anchor="middle">'+llab+'</g>'+
       '<g fill="'+P.blue+'" font-size="11" text-anchor="middle">'+flab+'</g>'+
       evMark+
+      debMark+
       '<g fill="'+P.txt2+'" font-size="12" text-anchor="middle">'+ms.map(function(mm,i){ return '<text x="'+xs[i].toFixed(1)+'" y="340">'+mm+'</text>'; }).join('')+'</g>'+
     '</svg>'+
-    (evCap?'<div style="padding:6px 14px 12px; font-size:11.5px; line-height:1.45;"><div style="font-size:10px; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;">Fatos que mexeram na corrida</div>'+evCap+'</div>':''); }
+    (evCap?'<div style="padding:6px 14px 12px; font-size:11.5px; line-height:1.45;"><div style="font-size:10px; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;">Fatos que mexeram na corrida</div>'+evCap+'</div>':'')+
+    (debCap?'<div style="padding:0 14px 12px; font-size:11.5px; line-height:1.45;"><div style="font-size:10px; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;">Debates presidenciais do 1º turno</div>'+debCap+'<div style="font-size:10.5px; color:'+P.mut+'; margin-top:5px;">O losango entra no gráfico na data do debate; os que ainda não têm mês no eixo aparecem quando o mês abrir.</div></div>':''); }
 
   function marginChart(){
     var ms=['mar','abr','mai','jun','jul'], pts=[];
