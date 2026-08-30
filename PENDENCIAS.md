@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 30/08/2026 06:54. Mercados: Polymarket 55,5%/40,8%, Kalshi 56,0%/40,0%.
+Rodada de 30/08/2026 11:49. Mercados: Polymarket 55,5%/41,2%, Kalshi 57,0%/41,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -20,24 +20,24 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-29] TSE RJ, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=2030, registro RJ060782026
 - [aguardando desde 2026-08-29] TSE RO, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=1220, registro RO034032026
 - [aguardando desde 2026-08-29] TSE RS, VERITA (Governador, Senador), campo 24/08-28/08, divulgação 2026-08-29, N=2020, registro RS065212026
-- [NOVO] TSE ESTADUAL[DF], IGAPE- INSTITUTO GAZETA DE P (Presidente), campo 25/08-29/08, divulgação 2026-08-30, N=2000, registro BR034532026
-- [NOVO] TSE ESTADUAL[GO], IGAPE- INSTITUTO GAZETA DE P (Presidente), campo 20/08-29/08, divulgação 2026-08-30, N=3000, registro BR051142026
-- [NOVO] TSE ESTADUAL[MG], SECTRAL NEGOCIOS (Presidente), campo 25/08-29/08, divulgação 2026-08-30, N=1100, registro BR027722026
-- [NOVO] TSE ESTADUAL[PB], DATATRENDS (Presidente), campo 26/08-28/08, divulgação 2026-08-30, N=1200, registro BR085622026
-- [NOVO] TSE ESTADUAL[PE], DATATRENDS (Presidente), campo 25/08-27/08, divulgação 2026-08-30, N=1200, registro BR033962026
-- [NOVO] TSE ESTADUAL[RN], PERFIL PESQUISAS TECNICAS (Presidente), campo 21/08-23/08, divulgação 2026-08-30, N=700, registro BR079892026
-- [NOVO] TSE ESTADUAL[RN], DATA PLUS PESQUISA E CONSULT (Presidente), campo 15/08-19/08, divulgação 2026-08-30, N=1500, registro BR018182026
-- [NOVO] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 21/08-24/08, divulgação 2026-08-30, N=600, registro GO011612026
-- [NOVO] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 20/08-29/08, divulgação 2026-08-30, N=3000, registro GO093022026
-- [NOVO] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 25/08-26/08, divulgação 2026-08-30, N=500, registro GO083382026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 20/08-26/08, divulgação 2026-08-30, N=1200, registro BR035152026
-- [NOVO] TSE PB, DATATRENDS (Governador, Senador), campo 26/08-28/08, divulgação 2026-08-30, N=1200, registro PB027412026
-- [NOVO] TSE PB, INSTITUTO DE PESQUISA PODIUM (Governador, Senador), campo 22/08-24/08, divulgação 2026-08-30, N=374, registro PB047242026
-- [NOVO] TSE PI, DATATRENDS (Governador, Senador), campo 25/08-27/08, divulgação 2026-08-30, N=1200, registro PI058522026
-- [NOVO] TSE RN, PERFIL PESQUISAS TECNICAS (Governador, Senador, Deputado Fede), campo 21/08-23/08, divulgação 2026-08-30, N=700, registro RN069532026
-- [NOVO] TSE RN, DATA PLUS PESQUISA E CONSULT (Governador, Senador, Deputado Fede), campo 15/08-19/08, divulgação 2026-08-30, N=1500, registro RN009682026
-- [NOVO] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 24/08-30/08, divulgação 2026-08-30, N=1500, registro RR083232026
-- [NOVO] TSE SE, INSTITUTO FRANCA DE PESQUISA (Governador, Senador), campo 20/08-21/08, divulgação 2026-08-30, N=1314, registro SE055002026
+- [aguardando desde 2026-08-30] TSE ESTADUAL[DF], IGAPE- INSTITUTO GAZETA DE P (Presidente), campo 25/08-29/08, divulgação 2026-08-30, N=2000, registro BR034532026
+- [aguardando desde 2026-08-30] TSE ESTADUAL[GO], IGAPE- INSTITUTO GAZETA DE P (Presidente), campo 20/08-29/08, divulgação 2026-08-30, N=3000, registro BR051142026
+- [aguardando desde 2026-08-30] TSE ESTADUAL[MG], SECTRAL NEGOCIOS (Presidente), campo 25/08-29/08, divulgação 2026-08-30, N=1100, registro BR027722026
+- [aguardando desde 2026-08-30] TSE ESTADUAL[PB], DATATRENDS (Presidente), campo 26/08-28/08, divulgação 2026-08-30, N=1200, registro BR085622026
+- [aguardando desde 2026-08-30] TSE ESTADUAL[PE], DATATRENDS (Presidente), campo 25/08-27/08, divulgação 2026-08-30, N=1200, registro BR033962026
+- [aguardando desde 2026-08-30] TSE ESTADUAL[RN], PERFIL PESQUISAS TECNICAS (Presidente), campo 21/08-23/08, divulgação 2026-08-30, N=700, registro BR079892026
+- [aguardando desde 2026-08-30] TSE ESTADUAL[RN], DATA PLUS PESQUISA E CONSULT (Presidente), campo 15/08-19/08, divulgação 2026-08-30, N=1500, registro BR018182026
+- [aguardando desde 2026-08-30] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 21/08-24/08, divulgação 2026-08-30, N=600, registro GO011612026
+- [aguardando desde 2026-08-30] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 20/08-29/08, divulgação 2026-08-30, N=3000, registro GO093022026
+- [aguardando desde 2026-08-30] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 25/08-26/08, divulgação 2026-08-30, N=500, registro GO083382026
+- [aguardando desde 2026-08-30] TSE NACIONAL?, #NULO# (Presidente), campo 20/08-26/08, divulgação 2026-08-30, N=1200, registro BR035152026
+- [aguardando desde 2026-08-30] TSE PB, DATATRENDS (Governador, Senador), campo 26/08-28/08, divulgação 2026-08-30, N=1200, registro PB027412026
+- [aguardando desde 2026-08-30] TSE PB, INSTITUTO DE PESQUISA PODIUM (Governador, Senador), campo 22/08-24/08, divulgação 2026-08-30, N=374, registro PB047242026
+- [aguardando desde 2026-08-30] TSE PI, DATATRENDS (Governador, Senador), campo 25/08-27/08, divulgação 2026-08-30, N=1200, registro PI058522026
+- [aguardando desde 2026-08-30] TSE RN, PERFIL PESQUISAS TECNICAS (Governador, Senador, Deputado Fede), campo 21/08-23/08, divulgação 2026-08-30, N=700, registro RN069532026
+- [aguardando desde 2026-08-30] TSE RN, DATA PLUS PESQUISA E CONSULT (Governador, Senador, Deputado Fede), campo 15/08-19/08, divulgação 2026-08-30, N=1500, registro RN009682026
+- [aguardando desde 2026-08-30] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 24/08-30/08, divulgação 2026-08-30, N=1500, registro RR083232026
+- [aguardando desde 2026-08-30] TSE SE, INSTITUTO FRANCA DE PESQUISA (Governador, Senador), campo 20/08-21/08, divulgação 2026-08-30, N=1314, registro SE055002026
 
 ## Últimas publicações do Veritá
 
