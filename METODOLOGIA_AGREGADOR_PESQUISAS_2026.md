@@ -6,6 +6,32 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- O DISTRITO FEDERAL ENTROU NAS TRÊS FRENTES PELA IGAPE, E FLÁVIO RETOMOU O ESTADO (30/08/2026, 15h30). DF-02089/2026 e o gêmeo BR-03453/2026, Instituto Gazeta de Pesquisas contratado pela TV Atual, afiliada da Record News, campo de 25 a 29/8, 2.000 entrevistas presenciais em domicílio, margem 2,2. Saiu no domingo em três matérias do Metrópoles, entre 15h58 e 18h11, e a do governo também no Jornal de Brasília.
+
+  O QUE ENTROU. Governo: Celina Leão 35,4, Arruda 24,3, Leandro Grass 10,7, Paula Belmonte 4,8, Ricardo Cappelli 3,8, Kiko Caputo 2,5, Elisson 1,3, Robson Raimundo 1,1, Expedito Mendonça e Samara Mineiro 0,7, sem 2º turno testado. Senado, PRIMEIRO VOTO: Michelle Bolsonaro 27,1, Leila Barros 13,7, Érika Kokay 10,3, Bia Kicis 8,7, Sebastião Coelho 2,8. Presidencial: Flávio 32,7 x Lula 21,3, com Cury 8,9 e Caiado 8,4, sem 2º turno.
+
+  O `PRES26['DF']` VIROU DE EMPATE TÉCNICO PARA FLÁVIO, e a mudança é grande: a Quaest de 21 a 24/8 dava Lula 28 x Flávio 26, e a Igape, cinco dias depois, dá 11,4 pontos ao Flávio. No governo o movimento é o oposto e menor: Celina continua líder folgada, mas a vantagem cai de 14 para 11,1 pontos porque Arruda sobe de 20 para 24,3.
+
+  A MÉTRICA DO SENADO É O PRIMEIRO VOTO, e isso está dito na nota do `DS`. A Igape pergunta primeiro e segundo voto em separado e NÃO reduz o consolidado a 100, ao contrário da Quaest que ela substitui, então o nível não se compara com o da rodada anterior, só a ordem. No segundo voto a ordem muda: Michelle 14,8, Bia Kicis 10,2, Leila Barros 8,7, Érika Kokay 5,4, com 46,5 por cento de indecisos.
+
+  A GRAFIA 'IGUAPE' DE JUNHO ERA ERRO E FOI NORMALIZADA para 'Igape' no `DGM['DF']` e no `DSM['DF']`. É a mesma casa, o Instituto Gazeta de Pesquisas, que aparecia com nome trocado desde a rodada de junho e por isso quebrava a série da casa no painel do estado.
+
+  O GOIÁS DA MESMA ONDA NÃO SAIU até as 15h30. GO-09302/2026 e BR-05114/2026, também TV Atual, campo de 20 a 29/8, 3.000 entrevistas POR TELEFONE. Varridos sem resultado o Google Notícias e o `wp-json` do Diário Goianiense, do Diário da Manhã, do Diário de Goiás e da Tribuna do Planalto. Ficam na fila.
+
+- O GOVERNADOR DE SERGIPE DO INSTITUTO FRANÇA SAIU NOVE DIAS DEPOIS DO SENADO, POR OUTRO REGISTRO (30/08/2026, 15h30). SE-05500/2026, campo de 20 e 21/8, 1.314 entrevistas, margem 2,7, iniciativa própria da casa: Mitidieri 39,69, Valmir de Francisquinho 28,43, Ricardo Marques 4,46, Emanuel Cacho 1,47, Taty Cristina 0,80, Dr. Helton 0,55, com confronto direto Mitidieri 43,45 x Valmir 32,16.
+
+  É O MESMO CAMPO cujo governador o TRE-SE tinha proibido de divulgar sob o SE-06536/2026, o registro de Senado que entrou no painel em 27/8. A casa registrou os dois cargos duas vezes e publicou o governo pela porta que estava livre. A regra que fica: proibição judicial de divulgação recai sobre O REGISTRO, não sobre o campo, e o mesmo número pode reaparecer legalmente por outro protocolo. Antes de dar um dado por barrado, procure se a casa tem registro gêmeo.
+
+  ENTROU SÓ NO `DGM['SE']['ago']`, no lugar da rodada de 10 a 12/8 da mesma casa (SE-04226/2026, 38,94 x 28,76). O `DG['SE']` continua sendo a Quaest de 23 a 26/8, que é mais recente. Não há gêmeo presidencial registrado, então o `PRES26['SE']` não muda.
+
+- SETE REGISTROS DA FILA ERAM AMOSTRA DE UM MUNICÍPIO SÓ, E FORAM DESCARTADOS DE UMA VEZ (30/08/2026, 15h30). O plano amostral do CSV do TSE resolve isto sem abrir matéria nenhuma, e é o filtro mais barato que existe: leia `DS_METODOLOGIA_PESQUISA` e `DS_PLANO_AMOSTRAL` ANTES de sair procurando número. Foram BR-03515/2026 da IPAT/A Tribuna de Santos, que o radar dava como NACIONAL e é amostra de cinco municípios da Baixada Santista (Cubatão, Guarujá, Praia Grande, Santos e São Vicente); RN-06953/2026 e o gêmeo BR-07989/2026 da Perfil, que é Parnamirim; GO-08338/2026 da Direct, que é Valparaíso de Goiás; GO-01161/2026 da Igape, que é Catalão; BR-02772/2026 da Sectral, que é Juiz de Fora; e PB-04724/2026 do Podium, que é o município de Mari.
+
+  A DA TRIBUNA DE SANTOS É A ARMADILHA MAIS CARA, porque entra na lista como presidencial nacional, com N=1.200 e contratante de mídia, e teria virado linha do `DI` se alguém confiasse no rótulo do radar. O gêmeo estadual não existe para ela, então o desempate automático não tinha como pegar: quem pega é o plano amostral.
+
+- A DATATRENDS TEM DOIS GÊMEOS PRESIDENCIAIS DO MESMO CAMPO EM PERNAMBUCO, E OS DOIS MORREM JUNTOS (30/08/2026, 15h30). BR-03396/2026 foi resolvido pelo mesmo motivo do BR-01927/2026 na véspera: são dois registros `BR` do mesmo campo de 25 a 27/8, ligados ao PE-02222/2026, e a matéria do CEO da casa publicou só governador. Quando um gêmeo é fechado como registro sem número, procure irmãos com campo idêntico e feche todos, senão a fila reabre o mesmo caso amanhã.
+
+- A ONDA DA VERITÁ DE 24 A 28/8 CONTINUA SEM PUBLICAR ONZE ESTADOS ÀS 15H30 DE 30/8 (30/08/2026, 15h30). Conferidos nesta rodada e negativos: o Supabase do instituto segue parado em 22/8, e o feed de busca do Diário do Poder por "Veritá" não tem nada depois das 15h56 de sábado, do Amazonas. Doze itens na fila, sem novidade desde ontem.
+
 - O LOTE DA TV LIBERAL NO PARÁ ERA A QUAEST, E SAIU ÀS 19H30 DE 29/8 (29/08/2026, 19h45). O `#NULO#` de N=804 que estava na fila desde a divulgação de meia-noite é a primeira Quaest contratada pela TV Liberal no estado: PA-07718/2026 e BR-05309/2026, campo de 25 a 28/8, presencial domiciliar, margem 3, com os dois registros citados no rodapé das quatro matérias. Duas varreduras anteriores, às 7h50 e às 13h30, não acharam nada porque a matéria ainda não existia: a divulgação carimbada para as 0h saiu dezenove horas e meia depois.
 
   AS TRÊS FRENTES ENTRARAM. Governo: Dr. Daniel 28, Hana Ghassan 27, Gal Leite 2, Well Macedo 2, Araceli Lemos 2, José Moita 1, com 2º turno Hana Ghassan 36 x Dr. Daniel 36. Senado, consolidado do primeiro e do segundo voto reduzido a 100, como a Quaest faz em SP e no RJ: Helder Barbalho 23, Éder Mauro 14, Zequinha Marinho 11, Celso Sabino 7, Chicão Melo 5. Presidencial: Lula 39 x Flávio 28, sem 2º turno. A casa desbancou a AtlasIntel de 14 a 19 de agosto em `DG['PA']`, `DS['PA']` e `PRES26['PA']` pela data.

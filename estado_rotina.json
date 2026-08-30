@@ -683,16 +683,6 @@
    "visto": "2026-08-29"
   },
   {
-   "proto": "BR034532026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Presidente",
-   "campo": "25/08-29/08",
-   "div": "2026-08-30",
-   "n": "2000",
-   "visto": "2026-08-30"
-  },
-  {
    "proto": "BR051142026",
    "escopo": "ESTADUAL[GO]",
    "inst": "IGAPE- INSTITUTO GAZETA DE P",
@@ -700,16 +690,6 @@
    "campo": "20/08-29/08",
    "div": "2026-08-30",
    "n": "3000",
-   "visto": "2026-08-30"
-  },
-  {
-   "proto": "BR027722026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "SECTRAL NEGOCIOS",
-   "cargo": "Presidente",
-   "campo": "25/08-29/08",
-   "div": "2026-08-30",
-   "n": "1100",
    "visto": "2026-08-30"
   },
   {
@@ -723,26 +703,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "BR033962026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "25/08-27/08",
-   "div": "2026-08-30",
-   "n": "1200",
-   "visto": "2026-08-30"
-  },
-  {
-   "proto": "BR079892026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "PERFIL PESQUISAS TECNICAS",
-   "cargo": "Presidente",
-   "campo": "21/08-23/08",
-   "div": "2026-08-30",
-   "n": "700",
-   "visto": "2026-08-30"
-  },
-  {
    "proto": "BR018182026",
    "escopo": "ESTADUAL[RN]",
    "inst": "DATA PLUS PESQUISA E CONSULT",
@@ -750,16 +710,6 @@
    "campo": "15/08-19/08",
    "div": "2026-08-30",
    "n": "1500",
-   "visto": "2026-08-30"
-  },
-  {
-   "proto": "GO011612026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "21/08-24/08",
-   "div": "2026-08-30",
-   "n": "600",
    "visto": "2026-08-30"
   },
   {
@@ -773,26 +723,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "GO083382026",
-   "escopo": "GO",
-   "inst": "DIRECT PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "25/08-26/08",
-   "div": "2026-08-30",
-   "n": "500",
-   "visto": "2026-08-30"
-  },
-  {
-   "proto": "BR035152026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "20/08-26/08",
-   "div": "2026-08-30",
-   "n": "1200",
-   "visto": "2026-08-30"
-  },
-  {
    "proto": "PB027412026",
    "escopo": "PB",
    "inst": "DATATRENDS",
@@ -803,16 +733,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "PB047242026",
-   "escopo": "PB",
-   "inst": "INSTITUTO DE PESQUISA PODIUM",
-   "cargo": "Governador, Senador",
-   "campo": "22/08-24/08",
-   "div": "2026-08-30",
-   "n": "374",
-   "visto": "2026-08-30"
-  },
-  {
    "proto": "PI058522026",
    "escopo": "PI",
    "inst": "DATATRENDS",
@@ -820,16 +740,6 @@
    "campo": "25/08-27/08",
    "div": "2026-08-30",
    "n": "1200",
-   "visto": "2026-08-30"
-  },
-  {
-   "proto": "RN069532026",
-   "escopo": "RN",
-   "inst": "PERFIL PESQUISAS TECNICAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "21/08-23/08",
-   "div": "2026-08-30",
-   "n": "700",
    "visto": "2026-08-30"
   },
   {
@@ -850,16 +760,6 @@
    "campo": "24/08-30/08",
    "div": "2026-08-30",
    "n": "1500",
-   "visto": "2026-08-30"
-  },
-  {
-   "proto": "SE055002026",
-   "escopo": "SE",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "20/08-21/08",
-   "div": "2026-08-30",
-   "n": "1314",
    "visto": "2026-08-30"
   }
  ],
