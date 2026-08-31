@@ -776,36 +776,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "AL033162026",
-   "escopo": "AL",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "26/08-29/08",
-   "div": "2026-08-31",
-   "n": "1400",
-   "visto": "2026-08-31"
-  },
-  {
-   "proto": "ES028592026",
-   "escopo": "ES",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "27/08-30/08",
-   "div": "2026-08-31",
-   "n": "1800",
-   "visto": "2026-08-31"
-  },
-  {
-   "proto": "BR005302026",
-   "escopo": "ESTADUAL[ES]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "27/08-30/08",
-   "div": "2026-08-31",
-   "n": "1800",
-   "visto": "2026-08-31"
-  },
-  {
    "proto": "BR044032026",
    "escopo": "ESTADUAL[RN]",
    "inst": "ITEM PESQUISAS TECNICAS",
@@ -853,26 +823,6 @@
    "campo": "25/08-29/08",
    "div": "2026-08-31",
    "n": "1100",
-   "visto": "2026-08-31"
-  },
-  {
-   "proto": "BR089002026",
-   "escopo": "NACIONAL?",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "28/08-30/08",
-   "div": "2026-08-31",
-   "n": "2000",
-   "visto": "2026-08-31"
-  },
-  {
-   "proto": "BR079722026",
-   "escopo": "NACIONAL?",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "25/08-30/08",
-   "div": "2026-08-31",
-   "n": "5000",
    "visto": "2026-08-31"
   },
   {
