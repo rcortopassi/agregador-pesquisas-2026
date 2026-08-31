@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 30/08/2026 21:28. Mercados: Polymarket 55,5%/41,3%, Kalshi 54,0%/43,0%.
+Rodada de 31/08/2026 07:47. Mercados: Polymarket 55,5%/39,5%, Kalshi 57,0%/43,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -28,6 +28,19 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-30] TSE PI, DATATRENDS (Governador, Senador), campo 25/08-27/08, divulgação 2026-08-30, N=1200, registro PI058522026
 - [aguardando desde 2026-08-30] TSE RN, DATA PLUS PESQUISA E CONSULT (Governador, Senador, Deputado Fede), campo 15/08-19/08, divulgação 2026-08-30, N=1500, registro RN009682026
 - [aguardando desde 2026-08-30] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 24/08-30/08, divulgação 2026-08-30, N=1500, registro RR083232026
+- [NOVO] TSE AL, #NULO# (Governador, Senador), campo 26/08-29/08, divulgação 2026-08-31, N=1400, registro AL033162026
+- [NOVO] TSE ES, #NULO# (Governador, Senador), campo 27/08-30/08, divulgação 2026-08-31, N=1800, registro ES028592026
+- [NOVO] TSE ESTADUAL[ES], #NULO# (Presidente), campo 27/08-30/08, divulgação 2026-08-31, N=1800, registro BR005302026
+- [NOVO] TSE ESTADUAL[RN], ITEM PESQUISAS TECNICAS (Presidente), campo 27/08-29/08, divulgação 2026-08-31, N=800, registro BR044032026
+- [NOVO] TSE GO, EXATA.GO (Governador, Deputado Federal, Depu), campo 25/08-26/08, divulgação 2026-08-31, N=400, registro GO041332026
+- [NOVO] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 22/08-26/08, divulgação 2026-08-31, N=800, registro GO023982026
+- [NOVO] TSE MA, INOP PREVISAO PESQUISAS SERV (Governador, Senador, Deputado Fede), campo 19/08-26/08, divulgação 2026-08-31, N=2600, registro MA075722026
+- [NOVO] TSE MG, SECTRAL NEGOCIOS (Governador, Senador, Deputado Fede), campo 25/08-29/08, divulgação 2026-08-31, N=1100, registro MG003662026
+- [NOVO] TSE NACIONAL?, NEXUS (Presidente), campo 28/08-30/08, divulgação 2026-08-31, N=2000, registro BR089002026
+- [NOVO] TSE NACIONAL?, ATLASINTEL (Presidente), campo 25/08-30/08, divulgação 2026-08-31, N=5000, registro BR079722026
+- [NOVO] TSE PR, INSTITUTO RANKING PESQUISA (Governador), campo 26/08-28/08, divulgação 2026-08-31, N=1200, registro PR011052026
+- [NOVO] TSE RN, ITEM PESQUISAS TECNICAS (Governador, Senador, Deputado Fede), campo 27/08-29/08, divulgação 2026-08-31, N=800, registro RN023842026
+- [NOVO] TSE TO, JORNAL O GIRASSOL (Governador, Senador), campo 25/08-27/08, divulgação 2026-08-31, N=1200, registro TO073492026
 
 ## Últimas publicações do Veritá
 
@@ -46,17 +59,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-20 | BA | VERITA | Governador, Senador | 15/08-19/08 | 2020 | BA028062026 |
-| 2026-08-20 | CE | REAL TIME BIG DATA | Governador, Senador | 15/08-19/08 | 1600 | CE082232026 |
-| 2026-08-20 | ESTADUAL[CE] | REAL TIME BIG DATA | Presidente | 15/08-19/08 | 1600 | BR087912026 |
-| 2026-08-20 | ESTADUAL[PA] | ATLASINTEL | Presidente | 14/08-19/08 | 1200 | BR062672026 |
-| 2026-08-20 | ESTADUAL[PI] | AMOSTRAGEM OPINIAO E MERCADO | Presidente | 08/08-12/08 | 1137 | BR057142026 |
-| 2026-08-20 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 10/08-18/08 | 4100 | GO036872026 |
-| 2026-08-20 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 14/08-18/08 | 2200 | GO071632026 |
-| 2026-08-20 | MA | IPSENSUS PESQUISAS | Governador, Senador, Deputado Fede | 15/08-20/08 | 1480 | MA099712026 |
-| 2026-08-20 | PA | ATLASINTEL | Governador, Senador | 14/08-19/08 | 1200 | PA045332026 |
-| 2026-08-20 | PI | AMOSTRAGEM OPINIAO E MERCADO | Governador, Senador, Deputado Fede | 08/08-12/08 | 1137 | PI021882026 |
-| 2026-08-20 | TO | VERITA | Governador, Senador | 15/08-19/08 | 1220 | TO078962026 |
 | 2026-08-21 | ESTADUAL[DF] | #NULO# | Presidente | 18/08-21/08 | 910 | BR020942026 |
 | 2026-08-21 | ESTADUAL[MT] | MT DADOS PESQUISAS | Presidente | 15/08-20/08 | 3080 | BR074552026 |
 | 2026-08-21 | ESTADUAL[PI] | #NULO# | Presidente | 18/08-21/08 | 826 | BR056722026 |
@@ -285,4 +287,17 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-08-30 | RN | DATA PLUS PESQUISA E CONSULT | Governador, Senador, Deputado Fede | 15/08-19/08 | 1500 | RN009682026 |
 | 2026-08-30 | RR | CIPET | Governador, Senador, Deputado Fede | 24/08-30/08 | 1500 | RR083232026 |
 | 2026-08-30 | SE | INSTITUTO FRANCA DE PESQUISA | Governador, Senador | 20/08-21/08 | 1314 | SE055002026 |
+| 2026-08-31 | AL | #NULO# | Governador, Senador | 26/08-29/08 | 1400 | AL033162026 |
+| 2026-08-31 | ES | #NULO# | Governador, Senador | 27/08-30/08 | 1800 | ES028592026 |
+| 2026-08-31 | ESTADUAL[ES] | #NULO# | Presidente | 27/08-30/08 | 1800 | BR005302026 |
+| 2026-08-31 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 27/08-29/08 | 800 | BR044032026 |
+| 2026-08-31 | GO | EXATA.GO | Governador, Deputado Federal, Depu | 25/08-26/08 | 400 | GO041332026 |
+| 2026-08-31 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 22/08-26/08 | 800 | GO023982026 |
+| 2026-08-31 | MA | INOP PREVISAO PESQUISAS SERV | Governador, Senador, Deputado Fede | 19/08-26/08 | 2600 | MA075722026 |
+| 2026-08-31 | MG | SECTRAL NEGOCIOS | Governador, Senador, Deputado Fede | 25/08-29/08 | 1100 | MG003662026 |
+| 2026-08-31 | NACIONAL? | NEXUS | Presidente | 28/08-30/08 | 2000 | BR089002026 |
+| 2026-08-31 | NACIONAL? | ATLASINTEL | Presidente | 25/08-30/08 | 5000 | BR079722026 |
+| 2026-08-31 | PR | INSTITUTO RANKING PESQUISA | Governador | 26/08-28/08 | 1200 | PR011052026 |
+| 2026-08-31 | RN | ITEM PESQUISAS TECNICAS | Governador, Senador, Deputado Fede | 27/08-29/08 | 800 | RN023842026 |
+| 2026-08-31 | TO | JORNAL O GIRASSOL | Governador, Senador | 25/08-27/08 | 1200 | TO073492026 |
 
