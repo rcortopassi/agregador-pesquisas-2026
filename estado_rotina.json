@@ -716,16 +716,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "BR018182026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "DATA PLUS PESQUISA E CONSULT",
-   "cargo": "Presidente",
-   "campo": "15/08-19/08",
-   "div": "2026-08-30",
-   "n": "1500",
-   "visto": "2026-08-30"
-  },
-  {
    "proto": "GO093022026",
    "escopo": "GO",
    "inst": "IGAPE- INSTITUTO GAZETA DE P",
@@ -756,16 +746,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "RN009682026",
-   "escopo": "RN",
-   "inst": "DATA PLUS PESQUISA E CONSULT",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "15/08-19/08",
-   "div": "2026-08-30",
-   "n": "1500",
-   "visto": "2026-08-30"
-  },
-  {
    "proto": "RR083232026",
    "escopo": "RR",
    "inst": "CIPET",
@@ -774,36 +754,6 @@
    "div": "2026-08-30",
    "n": "1500",
    "visto": "2026-08-30"
-  },
-  {
-   "proto": "BR044032026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "ITEM PESQUISAS TECNICAS",
-   "cargo": "Presidente",
-   "campo": "27/08-29/08",
-   "div": "2026-08-31",
-   "n": "800",
-   "visto": "2026-08-31"
-  },
-  {
-   "proto": "GO041332026",
-   "escopo": "GO",
-   "inst": "EXATA.GO",
-   "cargo": "Governador, Deputado Federal, Depu",
-   "campo": "25/08-26/08",
-   "div": "2026-08-31",
-   "n": "400",
-   "visto": "2026-08-31"
-  },
-  {
-   "proto": "GO023982026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "22/08-26/08",
-   "div": "2026-08-31",
-   "n": "800",
-   "visto": "2026-08-31"
   },
   {
    "proto": "MA075722026",
@@ -823,26 +773,6 @@
    "campo": "25/08-29/08",
    "div": "2026-08-31",
    "n": "1100",
-   "visto": "2026-08-31"
-  },
-  {
-   "proto": "PR011052026",
-   "escopo": "PR",
-   "inst": "INSTITUTO RANKING PESQUISA",
-   "cargo": "Governador",
-   "campo": "26/08-28/08",
-   "div": "2026-08-31",
-   "n": "1200",
-   "visto": "2026-08-31"
-  },
-  {
-   "proto": "RN023842026",
-   "escopo": "RN",
-   "inst": "ITEM PESQUISAS TECNICAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "27/08-29/08",
-   "div": "2026-08-31",
-   "n": "800",
    "visto": "2026-08-31"
   }
  ],
