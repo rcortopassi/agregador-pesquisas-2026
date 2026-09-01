@@ -376,3 +376,81 @@ direto de todos: não é suspensão liminar, é decisão de mérito do pleno.
   23/08, N=1700, mesma contratante), com divulgação vencida em 27/08. Até 28/08 de
   madrugada nenhum número dela apareceu publicado, nem na Tribuna do Norte nem nos blogs
   potiguares que costumam repercutir o instituto. Pode ser efeito da decisão de 25/08.
+
+## ATUALIZAÇÃO 01/09/2026 — RONDÔNIA: LIMINAR NO MESMO DIA DA INSERÇÃO, E FOI A PRIMEIRA VEZ QUE O PAINEL REAGIU SOZINHO
+
+Caso novo de um terceiro tipo: não é dado velho descoberto depois (como o TO ou o SC), nem
+pesquisa barrada antes de entrar (como a Badra em PE). Aqui a rodada entrou no painel às 9h40,
+foi completada às 13h50 com a íntegra em PDF, e foi SUSPENSA às 18h09 do MESMO DIA.
+
+- **RO-03403/2026** (Veritá, governador e Senado, campo 24 a 28/8, N=1.220, iniciativa própria).
+  Suspensão IMEDIATA da divulgação determinada em 1º/9/2026 pelo TRE-RO, liminar do juiz auxiliar
+  da Propaganda Eleitoral **Rinaldo Forti da Silva**, processo **0600757-16.2026.6.22.0000**, a
+  pedido da Coligação Rondônia com a Força do Trabalho e da União (Republicanos e União/PP).
+  **Multa diária de R$ 5 mil, limitada a R$ 100 mil.** O juiz levantou o segredo de justiça.
+- Fundamentos: (1) ausência do número exato de entrevistados por **setor censitário** — o
+  instituto apresentou só distribuição por município e bairro, sem a justificativa técnica formal
+  que a lei exige quando a metodologia impede a identificação por setor; (2) ausência do **nível
+  de confiança** nas peças de divulgação, contra a Res. TSE 23.600/2019. A decisão cita precedente
+  do TSE segundo o qual a falta de dado obrigatório por setor censitário pode equiparar a pesquisa
+  a NÃO REGISTRADA, e que a complementação posterior não elimina os efeitos da divulgação
+  irregular.
+- Fonte: Rondoniaovivo, 1º/9/2026 às 18h09, "FALTOU DADOS: TRE-RO suspende pesquisa Veritá em
+  Rondônia por falhas em dados técnicos", com o PDF `0600757_16.2026.6.22.0000.pdf` anexado à
+  matéria. Confirmado por Valor & Mercado RO e Painel Político no mesmo dia.
+- **DECISÃO NOSSA, e desta vez houve mexida no painel**, porque a liminar está VIGENTE e o dado
+  tinha acabado de entrar. Aplicada a recomendação nº 2 deste arquivo, marcar e tirar do cálculo:
+  - `DG['RO']` e `PRES26['RO']` voltaram para a **Quaest de 21 a 24/8**, que era quem ocupava o
+    resumo antes desta manhã. Nada foi perdido: é reversão para o estado anterior, não exclusão.
+  - A linha da Veritá **CONTINUA** em `DGM['RO']['ago']`, com o terceiro elemento de nota
+    registrando a suspensão. O painel a mostra riscada e com o aviso, igual à Veritá de maio
+    (RO-02673/2026). O leitor vê que a pesquisa existiu e foi barrada.
+- O gêmeo presidencial **BR-08653/2026 não é citado na decisão**, que trata só da RO-03403/2026.
+  Mesmo assim o `PRES26['RO']` saiu da Veritá, porque os percentuais vinham do MESMO relatório
+  suspenso. Se a liminar cair, reabrir pelos dois registros.
+- Nota de contexto: é a SEGUNDA suspensão da Veritá em Rondônia em 2026, depois da RO-02673/2026
+  de maio, e o instituto já acumula decisões em 13 estados e no DF, como este arquivo registra
+  desde 19/08.
+
+## ATUALIZAÇÃO 01/09/2026 — RIO GRANDE DO NORTE: PARECER DO MPE APONTA "ESQUEMA ORGANIZADO"
+
+O caso mais grave já registrado aqui, porque não trata de uma pesquisa, e sim de um conjunto.
+
+- Parecer do procurador eleitoral auxiliar **Kleber Martins de Araújo**, juntado em **28/8/2026**
+  a representação da coligação Esperança e Trabalho (Allyson) no TRE-RN contra o instituto Média.
+- Das **26** pesquisas de governo do RN registradas entre 3/4 e 13/7, **19 deram Allyson Bezerra
+  na frente e 7 deram Álvaro Dias**. O MPE afirma que **as sete** favoráveis ao candidato do PL
+  têm irregularidade documentada, e que se repetem os mesmos profissionais e possíveis conexões
+  entre institutos e contratantes. Institutos citados: **Veritá, PNH/Affare, Consult, Ipsensus e
+  Média**. Nomes citados: o estatístico Augusto da Silva Rocha (suspenso 12 meses pelo Conselho
+  Regional de Estatística em 2023) e o empresário Thales da Silva Vale, sócio-administrador da
+  Média. Conclusão do parecer: "esquema organizado de produção e divulgação de pesquisas
+  fraudulentas", com pedido de "apuração em amplitude máxima" e notícia-crime encaminhada
+  (divulgação de pesquisa fraudulenta, embaraço à fiscalização e falsidade ideológica eleitoral).
+- **RN-08092/2026** (Média, contratante Potengi Comunicação, campo 3 a 8/7, N=2.000, R$ 20 mil,
+  divulgada em 9/7, Álvaro 32,1 x Allyson 27,5) é a pesquisa analisada. Achados do parecer: 450
+  entrevistas (22,5% da amostra) feitas em 2/7, ANTES do período informado; nenhuma das 2.000
+  coordenadas de GPS dentro do município declarado, com as 450 de Natal georreferenciadas a até
+  158,8 km da capital; 85 municípios que na prática eram 31; 168 trocas de município exigindo
+  velocidades de 211 a 337 km/h; todos os 56 dias de trabalho começando entre 7h30 e 7h39, sem
+  intervalo menor que 6,5 minutos; e a distribuição de RENDA reproduzindo o plano amostral com
+  precisão de centésimos, coincidência estimada em uma em 10,8 bilhões, com teste de independência
+  indicando atribuição aleatória. A divulgação já estava suspensa, com multa diária de R$ 10 mil,
+  e o MPE pede proibição definitiva e execução da multa.
+- **RN-09520/2026** (Ipsensus): dois códigos de entrevistador respondem por 73,1% das 1.500
+  entrevistas e três por 90,1%; as equipes coincidem com profissionais ligados à Média, e o
+  endereço comercial da Média é o mesmo da contratante da pesquisa da Ipsensus. O MPE levanta uso
+  da Ipsensus como "pessoa jurídica interposta a serviço do mesmo grupo".
+- Fonte: Agora RN, 1º/9/2026 às 15h26, "Ministério Público vê 'esquema organizado' de pesquisas
+  fraudulentas que puseram Álvaro Dias na liderança".
+- **ONDE BATE NO PAINEL.** A `Media/O Potengi` de `DGM['RN']['jul']` É a RN-08092/2026: os três
+  percentuais batem um a um. Recebeu nota de ressalva no painel em 1º/9. Do mesmo grupo de sete
+  estão publicados `Affare` e `Potengi` em `mai`, `IPSsensus` em `jun` e `Instituto Consult` em
+  `jul`, este já marcado desde 28/8 como declarado NÃO REGISTRADO pelo pleno do TRE-RN.
+  **NADA FOI REMOVIDO:** a decisão de remover é do Rafael. O que existe hoje é a marcação.
+- **NÃO CONFUNDIR ESTADOS:** o IPSensus que entrou no painel em 1º/9 no governo do MARANHÃO
+  (MA-05404/2026) é outro registro, em outro estado, e não é objeto deste parecer.
+- Pendência ligada: o item de fila **RN-02043/2026** é justamente do instituto **Média**
+  (governador, senador e deputado federal, campo 25 a 30/8, divulgação vencida em 1º/9). Até as
+  20h45 de 1º/9 nenhum número dele apareceu publicado. Fica na fila, e se sair deve ser lido com
+  este parecer à mão.
