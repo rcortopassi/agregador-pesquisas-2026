@@ -6,6 +6,52 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- O REAL TIME BIG DATA FECHOU AGOSTO EM QUATORZE RODADAS, E É O MAIOR MOVIMENTO DO MÊS NO 2º TURNO (01/09/2026, 09h40). BR-03490/2026, campo de 27 a 31/8, 2.000 entrevistas, margem de 2, autofinanciada por R$ 30 mil, divulgada às 8h15 pelo Poder360 e às 7h03 pela Gazeta do Povo. Entrou no `DI['ago']`, no `T2R['ago']` e no `IM['RTBD']`, no lugar da rodada de 18 a 20 de julho.
+
+  ENTROU O CENÁRIO SEM MARÇAL, que é o comparável com as rodadas anteriores: Lula 38, Flávio 30, Augusto Cury 11, Renan Santos 7, Caiado 4, Zema 2, outros 2, nulo/branco 3 e NS/NR 3. No cenário com Pablo Marçal os números são Lula 38, Flávio 29, Cury 10, Renan Santos 6, Caiado 4, Marçal 3 e Zema 2. É a mesma escolha feita com a Nexus/BTG em 24/8.
+
+  O MÊS É AGOSTO, E NÃO SETEMBRO, ainda que a Gazeta do Povo batize a matéria de `real-time-big-data-presidente-setembro-2026`. A régua do painel é o mês em que o campo TERMINA, e o campo termina em 31/8. Quem pegar a fila não deve abrir um mês 'set' no `DI` por causa do slug de um veículo.
+
+  O EFEITO. No 1º turno quase nada: a mediana do Lula fica em 39 e a do Flávio sai de 34,1 para 34,05, porque com quatorze rodadas o valor do meio passa a ser a média dos dois centrais. No 2º turno é o maior movimento de agosto, porque o empate em 44 a 44 entra como margem zero, abaixo da mediana anterior: a margem bruta cai de Lula +2,5 para Lula +1,8, a ajustada de +1,9 para +1,5, a leitura em votos válidos de +2,5 para +1,8, o placar do cenário passa de Lula 45,8 x Flávio 43,9 para Lula 45,5 x Flávio 44, e o estresse do indeciso abre de Flávio +3,3 para Flávio +3,5. A rodada é a quinta de agosto sem vantagem do Lula no 2º turno, depois de Palver, Gerp, Veritá e Vox Brasil, e testou ainda Lula 43 x Caiado 45, Lula 43 x Zema 40 e Lula 44 x Renan Santos 37.
+
+  O CURY JÁ TEM TRÊS CASAS SEGUIDAS, com 11 aqui, 11 na Nexus/BTG e 7,8 na AtlasIntel, contra 1 na própria rodada de julho da RTBD. O painel continua sem coluna para ele e para o Marçal.
+
+- SÃO PAULO TROCOU DE MÃO NO GOVERNO E NO SENADO, COM A VOX BRASIL (01/09/2026, 09h40). SP-00940/2026, campo de 29 a 31/8, 1.480 entrevistas, margem 2,55, autofinanciada por R$ 50 mil, divulgada às 6h pelo Poder360. Tem o fim de campo mais recente de agosto no estado e assume `DG['SP']` e `DS['SP']`, no lugar da Quaest de 21 a 24/8, e substitui a própria rodada anterior da casa em `DGM['SP']['ago']` e `DSM['SP']['ago']`.
+
+  GOVERNADOR: Tarcísio 55,3, Haddad 35,1, Carlos Machado 1,1, Vera Lúcia 0,7, Vivian Mendes 0,5, Isadora Dias 0,3 e Policial Edjane 0,3, com 4,3 de nenhum, branco ou nulo e 2,4 de indecisos. No 2º turno Tarcísio 57,1 x Haddad 36,3, e 61,1 x 38,9 em votos válidos. Pelo 1º turno Tarcísio se elegeria em turno único, e a distância de 20,2 pontos é a maior de agosto no estado, contra os 13 da Quaest.
+
+  SENADO: Marina Silva 27,7, André do Prado 26,5, Simone Tebet 25,3, Guilherme Derrite 18,1, Ricardo Salles 17,5, Soninha Francine 4,9, Maíra de Souza 2,3, Weller Gonçalves 2,1, Geraldo Rufino 1,9, Dra Eliana Ferreira 1,5, Marcio Alves 1,1, Guto Schiavetto 0,3, William Teixeira 0,3, Petter Maahs 0,2 e Ednelson Cesaretti 0,1, com 19,3 de nenhum, branco ou nulo e 41,1 de indecisos. É SOMA do primeiro e do segundo voto, que o próprio gráfico diz chegar perto de 200 por cento, e por isso o NÍVEL não se compara com o da Quaest que ela substitui, que reduz o consolidado a 100. O que muda de verdade é a ORDEM: a Quaest punha Guilherme Derrite na primeira vaga e aqui ele cai para quarto, a 9,6 pontos da ponta, com Marina, André do Prado e Tebet dentro de 2,4 pontos, abaixo da margem de 2,55.
+
+  A GRAFIA FOI NORMALIZADA PARA A DO PAINEL, porque o `stateBanner` agrega por nome: o Poder360 e o gráfico escrevem "Izadora Dias", "Dra. Eliana Ferreira", "Márcio Alves", "Salles" e "Willian Teixeira", que entraram como 'Isadora Dias', 'Dra Eliana Ferreira', 'Marcio Alves', 'Ricardo Salles' e 'William Teixeira', exatamente como as outras rodadas de agosto do estado já os escrevem.
+
+- BUG CORRIGIDO: O `DSM['SP']` TINHA A CHAVE 'ago' DUAS VEZES, E A SEGUNDA APAGAVA A PRIMEIRA (01/09/2026, 09h40). O Datafolha entrou em 21/8 abrindo um segundo `'ago':[...]` no mesmo objeto de São Paulo. Em JavaScript a chave repetida no literal não soma nem quebra: a última vence em silêncio. O resultado é que a série mensal do Senado paulista mostrava SÓ o Datafolha, e Ideia/ACSP, Vox Brasil, Paraná Pesquisas, Real Time Big Data e Quaest sumiram do painel do estado sem que nada acusasse. As seis casas foram fundidas numa única chave e o painel voltou a mostrar a série inteira.
+
+  A VARREDURA QUE ACHOU ISSO é barata e vale rodar de vez em quando: para cada linha de `DGM` e `DSM`, extrair as chaves de mês por regex e comparar `len(ks)` com `len(set(ks))`. Nenhum outro estado tinha o problema, nos dois objetos.
+
+- A VERITÁ DE RONDÔNIA SAIU, E É A PRIMEIRA DA ONDA DE 24 A 28/8 A PUBLICAR (01/09/2026, 09h40). RO-03403/2026, campo de 24 a 28/8, 1.220 entrevistas, margem 3, iniciativa própria. Saiu às 15h18 de 31/8 no Rondoniaovivo e às 16h01 no Portal da Cidade, e foi replicada à noite no News Rondônia e no Notícias Tudo Aqui, as quatro com o mesmo texto de assessoria. Entrou no `DG['RO']` e no `DGM['RO']['ago']`, no lugar da Quaest de 21 a 24/8.
+
+  SÓ TRÊS NOMES FORAM PUBLICADOS: Marcos Rogério 40,7, Adaílton Fúria 22,4 e Expedito Netto 10,3, com 11,6 por cento agrupados em "outros" e 15 por cento em branco, nulo, não sabe ou não respondeu. O instituto NÃO abriu o valor de cada um dos demais, então eles não entraram em vez de virar número chutado. A ordem dos três primeiros é a mesma da Quaest; o que diverge é a distância, de 3 para 18,3 pontos, e a divergência é de instituto, não de momento de campo.
+
+  A MATÉRIA DO RONDONIAGORA ERRA O REGISTRO E O CAMPO, e quem manda é o TSE: ela escreve "RO-04301/2026 / BR-08859/2026" e "24/08 a 29/08", que são dígitos trocados e um dia a mais. O registro é RO-03403/2026, com o gêmeo presidencial BR-08653/2026, campo de 24 a 28/8, exatamente como as quatro matérias da assessoria dizem.
+
+  O SENADO DA MESMA RODADA E O GÊMEO BR-08653/2026 NÃO SAÍRAM, e o RO-03403/2026 fica na fila por causa do Senado. Quem pegar a fila NÃO precisa reapurar o governador. É o mesmo padrão de fatiamento por cargo já anotado para a Igape em Goiás e para a INOP no Maranhão.
+
+  O RÓTULO DO RADAR ERRA DE NOVO NESTA ONDA: o BR-08653/2026 aparece na tabela do TSE como ESTADUAL[AM], e é de RONDÔNIA. Confirma a anotação de 31/8 sobre BR-03688 (ES), BR-09965 (PB) e BR-08110 (PI).
+
+- TRÊS REGISTROS DA FILA MORRERAM NO PLANO AMOSTRAL, SEM ABRIR MATÉRIA NENHUMA (01/09/2026, 09h40). O filtro continua sendo o primeiro a rodar e continua pagando. GO-03639/2026, da Plural, é CATALÃO: universo de 75.553 eleitores, 382 entrevistas e a `DS_METODOLOGIA_PESQUISA` diz "no município de Catalão (GO)". O par da Vox Brasil SP-03652/2026 e BR-03621/2026 é PRESIDENTE PRUDENTE: os dois trazem "o conjunto do eleitorado de Presidente Prudente, Estado de São Paulo, com 16 anos ou mais foi tomado como universo da pesquisa".
+
+  O GÊMEO BR-03621/2026 É O CASO PERIGOSO, porque ele entraria no `PRES26['SP']` como presidencial do estado inteiro e ninguém veria o erro no painel: um município de 1.480 eleitores virando São Paulo. Registro estadual com amostra de uma cidade não entra em `PRES26` pela mesma razão que não entra em `DG`/`DS`.
+
+  NÃO CONFUNDIR A VOX DE PRESIDENTE PRUDENTE COM A VOX DE SÃO PAULO: as duas estavam na fila do mesmo dia. A do estado é SP-00940/2026, campo de 29 a 31/8, N=1.480, e é a que entrou; a do município é SP-03652/2026, campo de 27 a 28/8, N=1.200, e é a que foi descartada.
+
+- O INSTITUTO NOVO PERFIL DE RONDÔNIA É RONDÔNIA MESMO, E O ACRE É OUTRA PESQUISA (01/09/2026, 09h40). O Google Notícias devolve, para "Perfil Rondônia pesquisa", uma enxurrada de matérias do ACRE (Alan Rick 36,1 x Mailza 33,1, Bocalom 16,2), porque o instituto é sediado em Porto Velho e pesquisou o estado vizinho. O RO-06778/2026 e o gêmeo BR-01516/2026 dizem, nos dois campos, "o eleitorado do estado de Rondônia (RO)". Continuam na fila sem número.
+
+- A ONDA DA VERITÁ DE 24 A 28/8 SEGUE SEM PUBLICAR ONZE ESTADOS ÀS 9H40 DE 1º/9 (01/09/2026, 09h40). Oitava rodada, e a primeira com resultado parcial: só Rondônia saiu. O Supabase do instituto, lido pelo caminho do `rotina_6h.py`, continua com doze publicações e parado em 22/8, no Brasil nacional, ou seja, a casa publicou o RO pela assessoria do candidato e NÃO pelo próprio site. Buscas por estado no Google Notícias em 3 dias não devolvem nada de RS, RJ, ES, PI e AP. Ficam na fila AP, ES, PI, RJ, RS, o Senado do RO e os gêmeos `BR`.
+
+- ATLASINTEL, ÍNDICE, PALPE, TDL, DATA MAX, MEDIA, QUALITTA, IPSENSUS E AFERIR NÃO PUBLICARAM ATÉ AS 9H40 DE 1º/9 (01/09/2026, 09h40). A AtlasIntel registrou ES-00206, RJ-04067, SP-06964 e os gêmeos BR-05901, BR-02563 e BR-06459 com divulgação para hoje e campo de 26 a 31/8, e às 9h40 o Poder360, a Gazeta do Povo e o Google Notícias só têm a rodada NACIONAL dela de ontem. O Brasil de Fato anunciou em 31/8 que AtlasIntel e Real Time Big Data divulgariam o Rio "nesta semana", sem data. A cadência da casa é publicar mais tarde no dia, então vale voltar na rodada das 13h.
+
+  O PI-05483/2026 DA DATA MAX TEM CAMPO ATÉ 4/9 E DIVULGAÇÃO EM 1º/9, ou seja, é o caso já anotado de divulgação anterior ao fim do campo. Não há o que esperar hoje, e o item fica na fila sem gasto de busca até 4/9.
+
 - O SENADO DO PIAUÍ SAIU À MEIA-NOITE, PELO MESMO REGISTRO DO GOVERNADOR (01/09/2026, 01h45). O PI-05852/2026 da DataTrends estava na fila desde 30/8 justamente porque a casa publicou só o governo, às 3h da manhã de 31/8. O Senado saiu às 00h00 de 1º/9 no `edmarlyra.com`, canal próprio do CEO do instituto, e é a TERCEIRA confirmação seguida do padrão anotado em 30/8 para Pernambuco e em 31/8 para o Tocantins: a casa fatia a divulgação por cargo ao longo de dias, e registro sem número na primeira varredura costuma ser atraso, não registro morto. Quem pegar a fila NÃO precisa reapurar o governador, que está no painel desde a rodada das 10h de 31/8.
 
   O QUE ENTROU. Soma do primeiro e do segundo voto: Ciro Nogueira 36, Marcelo Castro 33, Júlio César 31 e Tiago Junqueira 8, com brancos e nulos 27 e 50 por cento sem opinião. Entrou no `DS['PI']` e no `DSM['PI']['ago']`, no lugar do Datafolha de 18 a 21/8.

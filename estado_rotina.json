@@ -868,26 +868,6 @@
    "visto": "2026-09-01"
   },
   {
-   "proto": "BR036212026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "27/08-28/08",
-   "div": "2026-09-01",
-   "n": "1200",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "GO036392026",
-   "escopo": "GO",
-   "inst": "PLURAL ASSESSORIA DE IMPRENS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "27/08-28/08",
-   "div": "2026-09-01",
-   "n": "382",
-   "visto": "2026-09-01"
-  },
-  {
    "proto": "MA054042026",
    "escopo": "MA",
    "inst": "IPSENSUS PESQUISAS",
@@ -905,16 +885,6 @@
    "campo": "29/08-31/08",
    "div": "2026-09-01",
    "n": "1200",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "BR034902026",
-   "escopo": "NACIONAL?",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "27/08-31/08",
-   "div": "2026-09-01",
-   "n": "2000",
    "visto": "2026-09-01"
   },
   {
@@ -978,16 +948,6 @@
    "visto": "2026-09-01"
   },
   {
-   "proto": "SP009402026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-31/08",
-   "div": "2026-09-01",
-   "n": "1480",
-   "visto": "2026-09-01"
-  },
-  {
    "proto": "SP069642026",
    "escopo": "SP",
    "inst": "ATLASINTEL",
@@ -995,16 +955,6 @@
    "campo": "26/08-31/08",
    "div": "2026-09-01",
    "n": "1800",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "SP036522026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Deputado Federal",
-   "campo": "27/08-28/08",
-   "div": "2026-09-01",
-   "n": "1200",
    "visto": "2026-09-01"
   }
  ],
