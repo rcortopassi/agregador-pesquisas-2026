@@ -699,16 +699,6 @@
    "visto": "2026-08-29"
   },
   {
-   "proto": "RO034032026",
-   "escopo": "RO",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
    "proto": "RS065212026",
    "escopo": "RS",
    "inst": "VERITA",
@@ -739,16 +729,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "GO093022026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "20/08-29/08",
-   "div": "2026-08-30",
-   "n": "3000",
-   "visto": "2026-08-30"
-  },
-  {
    "proto": "PB027412026",
    "escopo": "PB",
    "inst": "DATATRENDS",
@@ -769,16 +749,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "MA075722026",
-   "escopo": "MA",
-   "inst": "INOP PREVISAO PESQUISAS SERV",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "19/08-26/08",
-   "div": "2026-08-31",
-   "n": "2600",
-   "visto": "2026-08-31"
-  },
-  {
    "proto": "MG003662026",
    "escopo": "MG",
    "inst": "SECTRAL NEGOCIOS",
@@ -787,16 +757,6 @@
    "div": "2026-08-31",
    "n": "1100",
    "visto": "2026-08-31"
-  },
-  {
-   "proto": "AL058942026",
-   "escopo": "AL",
-   "inst": "INDICE INTELIGENCIA",
-   "cargo": "Governador, Senador",
-   "campo": "27/08-29/08",
-   "div": "2026-09-01",
-   "n": "1200",
-   "visto": "2026-09-01"
   },
   {
    "proto": "AL078642026",
@@ -866,16 +826,6 @@
    "campo": "25/08-29/08",
    "div": "2026-09-01",
    "n": "1480",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "MA054042026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "24/08-29/08",
-   "div": "2026-09-01",
-   "n": "1000",
    "visto": "2026-09-01"
   },
   {
@@ -959,14 +909,5 @@
    "visto": "2026-09-01"
   }
  ],
- "verita_pendentes": [
-  {
-   "id": "4c688ea9-6806-4e1e-bc62-fb50adb26edc",
-   "titulo": "Pesquisa em Rondônia - Governador e Presidente ",
-   "descricao": "Pesquisa de intenção de voto para Governador e Presidente realizada pelo Instituto Veritá entre os dias 24 a 28 de agosto de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1788274028228_Relatorio_Rondonia_08.2026.pdf",
-   "created_at": "2026-09-01T14:47:12.972374+00:00",
-   "visto": "2026-09-01"
-  }
- ]
+ "verita_pendentes": []
 }
