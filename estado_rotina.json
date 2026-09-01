@@ -584,6 +584,7 @@
   "10158b38-ce9a-4727-baa5-6b189c4d3e82",
   "28bab072-3b90-4367-83e3-1ade5a20389d",
   "29c4c04c-2da6-42f5-9b3a-b93a9e7ed1b9",
+  "4c688ea9-6806-4e1e-bc62-fb50adb26edc",
   "57556b95-226a-4bec-8623-b4d3ad5effbb",
   "59c0b78a-ac55-45b6-89c3-9280485638c9",
   "5e5c7328-c6cb-48d6-a7eb-ab6b7d10e71e",
@@ -595,7 +596,7 @@
   "c6dd6aaa-6d80-4b84-ac45-10c45a84b0f7",
   "eb0342b6-979f-46d5-ab83-949ff53dc67b"
  ],
- "ultima_rodada": "2026-09-01T06:21:29.539077-03:00",
+ "ultima_rodada": "2026-09-01T11:47:20.381423-03:00",
  "pendentes": [
   {
    "proto": "AP053822026",
@@ -958,5 +959,14 @@
    "visto": "2026-09-01"
   }
  ],
- "verita_pendentes": []
+ "verita_pendentes": [
+  {
+   "id": "4c688ea9-6806-4e1e-bc62-fb50adb26edc",
+   "titulo": "Pesquisa em Rondônia - Governador e Presidente ",
+   "descricao": "Pesquisa de intenção de voto para Governador e Presidente realizada pelo Instituto Veritá entre os dias 24 a 28 de agosto de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1788274028228_Relatorio_Rondonia_08.2026.pdf",
+   "created_at": "2026-09-01T14:47:12.972374+00:00",
+   "visto": "2026-09-01"
+  }
+ ]
 }

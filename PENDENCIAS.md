@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 01/09/2026 06:21. Mercados: Polymarket 55,5%/39,1%, Kalshi 56,0%/42,0%.
+Rodada de 01/09/2026 11:47. Mercados: Polymarket 55,5%/39,1%, Kalshi 55,0%/41,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -27,31 +27,28 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-30] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 24/08-30/08, divulgação 2026-08-30, N=1500, registro RR083232026
 - [aguardando desde 2026-08-31] TSE MA, INOP PREVISAO PESQUISAS SERV (Governador, Senador, Deputado Fede), campo 19/08-26/08, divulgação 2026-08-31, N=2600, registro MA075722026
 - [aguardando desde 2026-08-31] TSE MG, SECTRAL NEGOCIOS (Governador, Senador, Deputado Fede), campo 25/08-29/08, divulgação 2026-08-31, N=1100, registro MG003662026
-- [NOVO] TSE AL, INDICE INTELIGENCIA (Governador, Senador), campo 27/08-29/08, divulgação 2026-09-01, N=1200, registro AL058942026
-- [NOVO] TSE AL, PALPE PESQUISAS (Governador, Senador), campo 16/08-25/08, divulgação 2026-09-01, N=5000, registro AL078642026
-- [NOVO] TSE ES, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1200, registro ES002062026
-- [NOVO] TSE ESTADUAL[AL], PALPE PESQUISAS (Presidente), campo 16/08-25/08, divulgação 2026-09-01, N=5000, registro BR004052026
-- [NOVO] TSE ESTADUAL[ES], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1200, registro BR064592026
-- [NOVO] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro BR059012026
-- [NOVO] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro BR025632026
-- [NOVO] TSE ESTADUAL[RO], PERFIL PESQUISAS (Presidente), campo 25/08-29/08, divulgação 2026-09-01, N=1480, registro BR015162026
-- [NOVO] TSE ESTADUAL[SP], #NULO# (Presidente), campo 27/08-28/08, divulgação 2026-09-01, N=1200, registro BR036212026
-- [NOVO] TSE GO, PLURAL ASSESSORIA DE IMPRENS (Governador, Senador, Deputado Fede), campo 27/08-28/08, divulgação 2026-09-01, N=382, registro GO036392026
-- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador, Deputado Fede), campo 24/08-29/08, divulgação 2026-09-01, N=1000, registro MA054042026
-- [NOVO] TSE MA, INSTITUTO AFERIR (Governador, Senador, Deputado Fede), campo 29/08-31/08, divulgação 2026-09-01, N=1200, registro MA064902026
-- [NOVO] TSE NACIONAL?, REAL TIME BIG DATA (Presidente), campo 27/08-31/08, divulgação 2026-09-01, N=2000, registro BR034902026
-- [NOVO] TSE PB, TDL PESQUISA (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1200, registro PB043102026
-- [NOVO] TSE PI, DATA MAX (Governador, Senador, Deputado Fede), campo 25/08-04/09, divulgação 2026-09-01, N=2000, registro PI054832026
-- [NOVO] TSE RJ, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro RJ040672026
-- [NOVO] TSE RN, MEDIA - INTELIGENCIA EM PESQ (Governador, Senador, Deputado Fede), campo 25/08-30/08, divulgação 2026-09-01, N=2000, registro RN020432026
-- [NOVO] TSE RN, QUALITTA EMPREENDIMENTOS (Governador, Senador, Deputado Fede), campo 27/08-31/08, divulgação 2026-09-01, N=1200, registro RN067512026
-- [NOVO] TSE RO, PERFIL PESQUISAS (Governador, Senador, Deputado Fede), campo 25/08-29/08, divulgação 2026-09-01, N=1480, registro RO067782026
-- [NOVO] TSE SP, #NULO# (Governador, Senador), campo 29/08-31/08, divulgação 2026-09-01, N=1480, registro SP009402026
-- [NOVO] TSE SP, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro SP069642026
-- [NOVO] TSE SP, #NULO# (Governador, Deputado Federal), campo 27/08-28/08, divulgação 2026-09-01, N=1200, registro SP036522026
+- [aguardando desde 2026-09-01] TSE AL, INDICE INTELIGENCIA (Governador, Senador), campo 27/08-29/08, divulgação 2026-09-01, N=1200, registro AL058942026
+- [aguardando desde 2026-09-01] TSE AL, PALPE PESQUISAS (Governador, Senador), campo 16/08-25/08, divulgação 2026-09-01, N=5000, registro AL078642026
+- [aguardando desde 2026-09-01] TSE ES, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1200, registro ES002062026
+- [aguardando desde 2026-09-01] TSE ESTADUAL[AL], PALPE PESQUISAS (Presidente), campo 16/08-25/08, divulgação 2026-09-01, N=5000, registro BR004052026
+- [aguardando desde 2026-09-01] TSE ESTADUAL[ES], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1200, registro BR064592026
+- [aguardando desde 2026-09-01] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro BR059012026
+- [aguardando desde 2026-09-01] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro BR025632026
+- [aguardando desde 2026-09-01] TSE ESTADUAL[RO], PERFIL PESQUISAS (Presidente), campo 25/08-29/08, divulgação 2026-09-01, N=1480, registro BR015162026
+- [aguardando desde 2026-09-01] TSE MA, IPSENSUS PESQUISAS (Governador, Senador, Deputado Fede), campo 24/08-29/08, divulgação 2026-09-01, N=1000, registro MA054042026
+- [aguardando desde 2026-09-01] TSE MA, INSTITUTO AFERIR (Governador, Senador, Deputado Fede), campo 29/08-31/08, divulgação 2026-09-01, N=1200, registro MA064902026
+- [aguardando desde 2026-09-01] TSE PB, TDL PESQUISA (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1200, registro PB043102026
+- [aguardando desde 2026-09-01] TSE PI, DATA MAX (Governador, Senador, Deputado Fede), campo 25/08-04/09, divulgação 2026-09-01, N=2000, registro PI054832026
+- [aguardando desde 2026-09-01] TSE RJ, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro RJ040672026
+- [aguardando desde 2026-09-01] TSE RN, MEDIA - INTELIGENCIA EM PESQ (Governador, Senador, Deputado Fede), campo 25/08-30/08, divulgação 2026-09-01, N=2000, registro RN020432026
+- [aguardando desde 2026-09-01] TSE RN, QUALITTA EMPREENDIMENTOS (Governador, Senador, Deputado Fede), campo 27/08-31/08, divulgação 2026-09-01, N=1200, registro RN067512026
+- [aguardando desde 2026-09-01] TSE RO, PERFIL PESQUISAS (Governador, Senador, Deputado Fede), campo 25/08-29/08, divulgação 2026-09-01, N=1480, registro RO067782026
+- [aguardando desde 2026-09-01] TSE SP, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro SP069642026
+- [NOVO] Veritá: Pesquisa em Rondônia - Governador e Presidente . Pesquisa de intenção de voto para Governador e Presidente realizada pelo Instituto Veritá entre os dias 24 a 28 de agosto de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1788274028228_Relatorio_Rondonia_08.2026.pdf
 
 ## Últimas publicações do Veritá
 
+- 2026-09-01 | Pesquisa em Rondônia - Governador e Presidente 
 - 2026-08-22 | Pesquisa para Presidente no Brasil
 - 2026-08-02 | Pesquisa no Maranhão - Presidente, Governador e Senador
 - 2026-08-02 | Pesquisa no Paraná - Presidente, Governador e Senador
@@ -59,7 +56,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - 2026-07-07 | Pesquisa São Paulo - Presidente, Governador e Senador
 - 2026-07-07 | Pesquisa Amapá - Presidente, Governador e Senador
 - 2026-07-07 | Pesquisa Amazonas - Presidente, Governador e Senador
-- 2026-06-09 | Pesquisa Paraná - Governador e Senador - Junho 2026
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
