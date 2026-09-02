@@ -454,3 +454,57 @@ O caso mais grave já registrado aqui, porque não trata de uma pesquisa, e sim 
   (governador, senador e deputado federal, campo 25 a 30/8, divulgação vencida em 1º/9). Até as
   20h45 de 1º/9 nenhum número dele apareceu publicado. Fica na fila, e se sair deve ser lido com
   este parecer à mão.
+
+## ATUALIZAÇÃO 02/09/2026 — MARANHÃO: ATLASINTEL BARRADA ANTES DE PUBLICAR, E O MOTIVO É O GÊMEO PRESIDENCIAL
+
+Primeiro caso do ciclo em que a liminar alcança a rodada ANTES da divulgação, e não
+depois. É o inverso do que aconteceu com a Veritá de Rondônia em 1º/9, e por isso
+nada precisou ser marcado nem retirado do painel: não havia número inserido.
+
+**MA-09485/2026**, AtlasIntel Tecnologia de Dados Ltda, contratada pela Rádio e TV
+Difusora do Maranhão, campo de 29/8 a 1º/9, 2.000 entrevistas, divulgação autorizada
+para 2/9. Suspensão IMEDIATA determinada em liminar pelo desembargador José Nilo
+Ribeiro Filho, juiz eleitoral auxiliar do TRE-MA, em representação do PRTB/MA e do
+candidato a governador Roberto Coelho Rocha. Fonte: Blog do Gláucio Ericeira, 2/9
+às 8h08.
+
+### Fundamento 1: módulo presidencial sem registro correspondente
+
+A pesquisa está registrada para GOVERNADOR e SENADOR, mas o questionário aplicado traz
+um módulo completo de intenção de voto para PRESIDENTE: as questões 8 e 9 apresentam
+12 nomes e quatro simulações de 2º turno. O juiz consignou que não localizou, nos
+documentos vinculados ao registro, outro protocolo que abrangesse essas perguntas ou
+que esclarecesse a correspondência entre o módulo presidencial e eventual pesquisa
+registrada perante o órgão competente, e que a situação poderia resultar na divulgação
+de dados de cargo que não consta do registro.
+
+ISTO INTERESSA DIRETAMENTE AO PAINEL. O cruzamento do gêmeo estadual, que alimenta o
+`PRES26`, é exatamente esta estrutura: um registro estadual de governador e senador e
+um registro BR de presidente, com o mesmo campo e a mesma amostra. Aqui o gêmeo existe
+no TSE, é o **BR-08685/2026**, mas o juiz não o encontrou vinculado ao registro
+estadual. É o mesmo fundamento que já derrubara a **TO-04463/2026** do Instituto
+Paraná em Tocantins, anotada no topo deste arquivo. Ou seja, o segundo TRE a tratar a
+falta de amarração entre os dois registros como irregularidade grave, e não como
+detalhe formal.
+
+### Fundamento 2: escolha dos cenários de 2º turno estadual
+
+A questão 4 apresenta oito candidaturas no 1º turno estimulado (André Luís, Dimas
+Cassimiro, Eduardo Braide, Felipe Camarão, Orleans Brandão, Reginaldo Lima, Roberto
+Rocha e Saulo Arcangeli), e a questão 5 traz apenas três confrontos, todos envolvendo
+Eduardo Braide: contra Orleans Brandão, contra Felipe Camarão e contra Roberto Rocha.
+O juiz ressalvou que não há obrigação de testar todas as combinações possíveis, mas
+entendeu que a seleção deve se apoiar em parâmetro objetivo, e não encontrou
+justificativa no registro nem no questionário.
+
+### O que foi feito
+
+Nada foi inserido, porque nada foi publicado. MA-09485/2026 e BR-08685/2026 saíram da
+fila de pendências como SUSPENSOS, e não como não publicados: a distinção importa,
+porque instituto que não publica pode publicar amanhã, e este está proibido de fazê-lo
+até que preste esclarecimentos e se forme o contraditório. Se a liminar cair, o caminho
+é reabrir pelos dois registros.
+
+CUIDADO PARA NÃO ESTENDER A SUSPEITA. A decisão é sobre a rodada do MARANHÃO. A
+AtlasIntel tem registros pendentes de GO, MS, MT e RS com campo da mesma semana, e
+nenhum deles é alcançado por esta liminar.
