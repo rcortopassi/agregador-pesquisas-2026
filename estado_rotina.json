@@ -739,16 +739,6 @@
    "visto": "2026-08-30"
   },
   {
-   "proto": "RR083232026",
-   "escopo": "RR",
-   "inst": "CIPET",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "24/08-30/08",
-   "div": "2026-08-30",
-   "n": "1500",
-   "visto": "2026-08-30"
-  },
-  {
    "proto": "MG003662026",
    "escopo": "MG",
    "inst": "SECTRAL NEGOCIOS",
@@ -759,16 +749,6 @@
    "visto": "2026-08-31"
   },
   {
-   "proto": "AL078642026",
-   "escopo": "AL",
-   "inst": "PALPE PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "16/08-25/08",
-   "div": "2026-09-01",
-   "n": "5000",
-   "visto": "2026-09-01"
-  },
-  {
    "proto": "ES002062026",
    "escopo": "ES",
    "inst": "ATLASINTEL",
@@ -776,16 +756,6 @@
    "campo": "26/08-31/08",
    "div": "2026-09-01",
    "n": "1200",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "BR004052026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "PALPE PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "16/08-25/08",
-   "div": "2026-09-01",
-   "n": "5000",
    "visto": "2026-09-01"
   },
   {
