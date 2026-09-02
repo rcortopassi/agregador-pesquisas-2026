@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 01/09/2026 16:21. Mercados: Polymarket 55,5%/39,2%, Kalshi 56,0%/42,0%.
+Rodada de 01/09/2026 21:02. Mercados: Polymarket 55,5%/39,0%, Kalshi 56,0%/42,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -36,7 +36,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-01] TSE PI, DATA MAX (Governador, Senador, Deputado Fede), campo 25/08-04/09, divulgação 2026-09-01, N=2000, registro PI054832026
 - [aguardando desde 2026-09-01] TSE RJ, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro RJ040672026
 - [aguardando desde 2026-09-01] TSE RN, MEDIA - INTELIGENCIA EM PESQ (Governador, Senador, Deputado Fede), campo 25/08-30/08, divulgação 2026-09-01, N=2000, registro RN020432026
-- [aguardando desde 2026-09-01] TSE RN, QUALITTA EMPREENDIMENTOS (Governador, Senador, Deputado Fede), campo 27/08-31/08, divulgação 2026-09-01, N=1200, registro RN067512026
 - [aguardando desde 2026-09-01] TSE RO, PERFIL PESQUISAS (Governador, Senador, Deputado Fede), campo 25/08-29/08, divulgação 2026-09-01, N=1480, registro RO067782026
 - [aguardando desde 2026-09-01] TSE SP, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro SP069642026
 
