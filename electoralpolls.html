@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 01/09/2026 20:47</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 01/09/2026 21:01</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1251,20 +1251,25 @@
     '2022':{par:'Lula x Bolsonaro',urna:{m:5.23,t:91.63},nota:'Bolsonaro incumbente, dois polos definidos havia mais de um ano, campo muito consolidado e estável. O erro veio quase todo de subestimar a direita.',mes:{4:{m:9.6,t:84.5,d:87.0,n:9,p:33},5:{m:9.8,t:85.7,d:89.0,n:11,p:37},6:{m:11.2,t:86.1,d:89.0,n:8,p:13},7:{m:10.8,t:86.3,d:89.0,n:8,p:16},8:{m:8.3,t:86.0,d:90.7,n:15,p:25},9:{m:9.2,t:87.1,d:93.4,n:15,p:50},10:{m:14.4,t:86.7,d:94.0,n:2,p:2}}}
   };;
   var CICLOS1T=['2010','2014','2018','2022'];
-  // Previsões de terceiros, para o leitor comparar. Atualizar a mão, com a data.
+  // PREVISÕES DE TERCEIROS, para o leitor comparar.
+  // O Polymarket e o Kalshi NÃO são mais escritos à mão: leem `PM` e `KAL`, que a rodada do
+  // GitHub Actions atualiza de 6 em 6 horas. Antes eram literais e apodreciam em silêncio, e foi
+  // o que aconteceu entre 21/8 e 1º/9/2026: a tabela dizia Polymarket 62,5% enquanto o topo da
+  // MESMA página, alimentado pelo Actions, já dizia 55,5%. Os outros três seguem manuais, e por
+  // isso agora o campo `d` é EXIBIDO na tela: número velho passa a se denunciar sozinho.
   var PREVEXT=[
-    {n:'Plano Político',t:'modelo estatístico',v:'Lula 45,4 x Flávio 39,6',p:'Lula 65%',d:'21/08/2026',
+    {n:'Plano Político',t:'modelo estatístico',v:'Lula 41,9 x Flávio 36,6',p:'Lula 57%',d:'01/09/2026',
      u:'https://www.planopolitico.com.br/modelos-eleitorais/presidencial',
-     o:'Simula a eleição milhares de vezes. Usa o erro histórico só para calibrar a INCERTEZA, e declara que não pressupõe que as pesquisas erram sempre para o mesmo lado. É exatamente aí que ele e a nossa projeção discordam.'},
-    {n:'Polymarket',t:'mercado de apostas',v:'—',p:'Lula 62,5%',d:'21/08/2026',
-     u:'https://polymarket.com/event/brazil-presidential-election',o:'Dinheiro real, sobre o vencedor da eleição.'},
-    {n:'Kalshi',t:'mercado regulado',v:'—',p:'Lula 62,0%',d:'21/08/2026',
-     u:'https://kalshi.com/markets/kxbrpres/brazil-presidency/kxbrpres-26',o:'Dinheiro real, sobre o vencedor da eleição.'},
-    {n:'Manifold',t:'mercado com moeda própria',v:'—',p:'64%',d:'21/08/2026',
-     u:'https://manifold.markets',o:'Pergunta mais larga: Lula ou quem ele apoiar.'},
-    {n:'Metaculus',t:'comunidade de previsores',v:'—',p:'Lula 55%',d:'21/08/2026',
+     o:'Simula a eleição milhares de vezes. Usa o erro histórico só para calibrar a INCERTEZA, e declara que não pressupõe que as pesquisas erram sempre para o mesmo lado. É exatamente aí que ele e a nossa projeção discordam. Os números dele são em VOTOS VÁLIDOS, e os nossos, em amostra total: por isso o nível não se compara direto, só a distância. Modelo v1.10, sobre 98 pesquisas nacionais e 217 estaduais. Ele já incorporou o Augusto Cury, com 6,2 por cento e 60 por cento de chance de terminar em terceiro.'},
+    {n:'Polymarket',t:'mercado de apostas',v:'—',p:'Lula '+PM[0],d:'ao vivo',
+     u:'https://polymarket.com/event/brazil-presidential-election',o:'Dinheiro real, sobre o vencedor da eleição. Lido da API oficial pela rodada automática, de 6 em 6 horas.'},
+    {n:'Kalshi',t:'mercado regulado',v:'—',p:'Lula '+KAL[0],d:'ao vivo',
+     u:'https://kalshi.com/markets/kxbrpres/brazil-presidency/kxbrpres-26',o:'Dinheiro real, sobre o vencedor da eleição. Lido da API oficial pela rodada automática, de 6 em 6 horas.'},
+    {n:'Manifold',t:'mercado com moeda própria',v:'—',p:'56,3%',d:'01/09/2026',
+     u:'https://manifold.markets/BrunoParga/-2026-winner-is-lula-or-whoever-he',o:'Pergunta mais larga: Lula ou quem ele apoiar. 95 apostadores. CUIDADO ao reapurar: existe um clone do mesmo enunciado com dois apostadores e preço diferente; o mercado bom é o do BrunoParga, com volume perto de 96 mil.'},
+    {n:'Metaculus',t:'comunidade de previsores',v:'—',p:'Lula 55%',d:'01/09/2026',
      u:'https://www.metaculus.com/questions/22310/will-lula-be-reelected-in-2026/',
-     o:'113 previsores. É a estimativa mais pessimista para o Lula entre as externas, e a menos movimentada.'}
+     o:'115 previsores. É a estimativa mais parada das externas: seguia em 55 por cento em 1º/9, o mesmo valor de 21/8, enquanto as outras quatro recuaram.'}
   ];
 
   // Série de 2026 em votos válidos, DERIVADA do DI. Denominador = 100 menos Br/N/Ind, que é a
@@ -1561,7 +1566,7 @@
     for(var j=0;j<PREVEXT.length;j++){ var e=PREVEXT[j];
       h+='<tr style="border-bottom:1px solid '+P.bsoft+';">'+
         '<td style="padding:6px;"><a href="'+e.u+'" target="_blank" style="color:'+P.link+';">'+e.n+' &#8599;</a></td>'+
-        '<td style="padding:6px; color:'+P.mut+'; font-size:10.5px;">'+e.t+'</td>'+
+        '<td style="padding:6px; color:'+P.mut+'; font-size:10.5px;">'+e.t+'<br><span style="font-size:9.5px; opacity:0.8;">'+(e.d==='ao vivo'?'ao vivo':'lido em '+e.d)+'</span></td>'+
         '<td style="padding:6px; text-align:center;">'+e.v+'</td>'+
         '<td style="padding:6px; text-align:center;">'+e.p+'</td></tr>'+
         '<tr><td colspan="4" style="padding:0 6px 6px 6px; color:'+P.txt2+'; font-size:10.5px; line-height:1.4;">'+e.o+'</td></tr>';

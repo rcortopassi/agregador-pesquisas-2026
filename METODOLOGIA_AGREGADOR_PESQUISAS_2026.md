@@ -6,6 +6,18 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- A TABELA DE PREVISORES EXTERNOS ESTAVA ONZE DIAS PARADA, E DOIS DOS CINCO AGORA SE ATUALIZAM SOZINHOS (01/09/2026, 21h30). O Rafael viu a aba Previsão e perguntou se precisava atualizar. Precisava: os cinco comparadores do bloco "Como nos comparamos com quem também prevê" estavam carimbados em 21/08/2026, e o campo de data `d` existia no objeto mas NUNCA era renderizado, então o número velho não se denunciava.
+
+  O SINTOMA ERA VISÍVEL NA MESMA PÁGINA. O topo do painel dizia Polymarket Lula 55,5 por cento, lido pelo Actions de 6 em 6 horas, e a tabela da aba Previsão dizia Polymarket Lula 62,5 por cento. Mesma pergunta, mesma fonte, dois números, porque um era automático e o outro literal.
+
+  O CONSERTO. O Polymarket e o Kalshi passaram a ler `PM[0]` e `KAL[0]`, as mesmas variáveis que a rodada mecânica já atualiza, e mostram "ao vivo" no lugar da data. Não voltam a envelhecer. O Plano Político, o Manifold e o Metaculus continuam manuais, porque nenhum deles é lido pelo `rotina_6h.py`, mas agora a data aparece na tela, embaixo do tipo da fonte.
+
+  O QUE OS NÚMEROS NOVOS DIZEM, e é o achado que a tabela parada escondia: as CINCO externas andaram na mesma direção entre 21/8 e 1º/9, e todas para baixo do Lula. Plano Político de Lula 65 para 57 por cento, Polymarket de 62,5 para 55,5, Kalshi de 62,0 para 56,0, Manifold de 64 para 56,3, e só o Metaculus ficou parado, em 55. Ou seja, a distância entre a nossa projeção (Lula 56 por cento para liderar o 1º turno) e o consenso externo, que parecia grande, praticamente sumiu: o campo veio na nossa direção, e não o contrário. O movimento é coerente com a subida do Augusto Cury, que o próprio Plano Político já incorporou, com 6,2 por cento em votos válidos e 60 por cento de chance de terminar em terceiro.
+
+  CUIDADO AO REAPURAR O MANIFOLD: existe um clone do mesmo enunciado ("Lula ou quem ele apoiar") com dois apostadores e preço diferente, criado depois. O mercado bom é o do BrunoParga, com 95 apostadores e volume perto de 96 mil. O da tabela é esse.
+
+  RESSALVA DE BASE, que ficou escrita na própria linha: os números do Plano Político são em VOTOS VÁLIDOS e os nossos em amostra total, então o nível não se compara direto, só a distância.
+
 - SETEMBRO ABRE SOZINHO, E A RÉGUA DOS MESES DEIXOU DE SER ESCRITA À MÃO (01/09/2026, 20h45). Pedido do Rafael, e é regra permanente, não conserto de uma vez. O `var months=['jan',...,'ago']` era literal, então o painel só virava o mês quando alguém lembrava de editar: em 1º de setembro ele ainda terminava em agosto. Agora `months` deriva do relógio, a partir de `ORDEM_MESES`, e vai de janeiro até o mês CORRENTE; o mês que não existir no `DI` nasce com `rows` vazio. Isso não inventa dado nenhum: `mesVazio()` mostra a mensagem de mês recém-aberto, `ultimoMesCheio()` segura o banner, o agregado e o house effect no último mês com pesquisa, e o gráfico já filtrava por `avgMonth(m)[2]>0`. Quem pegar a fila em 1º de outubro vai encontrar `out` aberto sem fazer nada. NÃO volte a escrever a lista de meses à mão.
 
   POR QUE AGORA. A Quaest divulga em 2/9 e o Datafolha em 3/9, as duas com campo depois das sabatinas da Globo e do início do horário eleitoral, ou seja, campo terminando em SETEMBRO. Elas caem em `set` pela régua de sempre, que é o mês em que o campo TERMINA. A rodada da Real Time Big Data divulgada em 1º/9 continua em AGOSTO, porque o campo dela fecha em 31/8, e isso não mudou.
