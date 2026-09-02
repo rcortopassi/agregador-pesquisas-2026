@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 01/09/2026 21:02. Mercados: Polymarket 55,5%/39,0%, Kalshi 56,0%/42,0%.
+Rodada de 02/09/2026 05:44. Mercados: Polymarket 55,5%/40,0%, Kalshi 56,0%/38,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -22,11 +22,8 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-08-30] TSE ESTADUAL[GO], IGAPE- INSTITUTO GAZETA DE P (Presidente), campo 20/08-29/08, divulgação 2026-08-30, N=3000, registro BR051142026
 - [aguardando desde 2026-08-30] TSE ESTADUAL[PB], DATATRENDS (Presidente), campo 26/08-28/08, divulgação 2026-08-30, N=1200, registro BR085622026
 - [aguardando desde 2026-08-30] TSE PB, DATATRENDS (Governador, Senador), campo 26/08-28/08, divulgação 2026-08-30, N=1200, registro PB027412026
-- [aguardando desde 2026-08-30] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 24/08-30/08, divulgação 2026-08-30, N=1500, registro RR083232026
 - [aguardando desde 2026-08-31] TSE MG, SECTRAL NEGOCIOS (Governador, Senador, Deputado Fede), campo 25/08-29/08, divulgação 2026-08-31, N=1100, registro MG003662026
-- [aguardando desde 2026-09-01] TSE AL, PALPE PESQUISAS (Governador, Senador), campo 16/08-25/08, divulgação 2026-09-01, N=5000, registro AL078642026
 - [aguardando desde 2026-09-01] TSE ES, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1200, registro ES002062026
-- [aguardando desde 2026-09-01] TSE ESTADUAL[AL], PALPE PESQUISAS (Presidente), campo 16/08-25/08, divulgação 2026-09-01, N=5000, registro BR004052026
 - [aguardando desde 2026-09-01] TSE ESTADUAL[ES], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1200, registro BR064592026
 - [aguardando desde 2026-09-01] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro BR059012026
 - [aguardando desde 2026-09-01] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro BR025632026
@@ -38,6 +35,26 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-01] TSE RN, MEDIA - INTELIGENCIA EM PESQ (Governador, Senador, Deputado Fede), campo 25/08-30/08, divulgação 2026-09-01, N=2000, registro RN020432026
 - [aguardando desde 2026-09-01] TSE RO, PERFIL PESQUISAS (Governador, Senador, Deputado Fede), campo 25/08-29/08, divulgação 2026-09-01, N=1480, registro RO067782026
 - [aguardando desde 2026-09-01] TSE SP, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro SP069642026
+- [NOVO] TSE AM, IPEC (Governador, Senador), campo 27/08-02/09, divulgação 2026-09-02, N=800, registro AM077812026
+- [NOVO] TSE ESTADUAL[AM], IPEC (Presidente), campo 27/08-02/09, divulgação 2026-09-02, N=800, registro BR002532026
+- [NOVO] TSE ESTADUAL[MA], ATLASINTEL (Presidente), campo 29/08-01/09, divulgação 2026-09-02, N=2000, registro BR086852026
+- [NOVO] TSE ESTADUAL[MS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro BR064312026
+- [NOVO] TSE ESTADUAL[MS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro BR048432026
+- [NOVO] TSE ESTADUAL[MS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro BR047262026
+- [NOVO] TSE ESTADUAL[MS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro BR060802026
+- [NOVO] TSE ESTADUAL[RN], PARLA MENTORS CONSULTORIA (Presidente), campo 23/08-27/08, divulgação 2026-09-02, N=1500, registro BR059582026
+- [NOVO] TSE ESTADUAL[RS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1800, registro BR085822026
+- [NOVO] TSE GO, ATLASINTEL (Governador, Senador), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro GO052932026
+- [NOVO] TSE MA, ATLASINTEL (Governador, Senador), campo 29/08-01/09, divulgação 2026-09-02, N=2000, registro MA094852026
+- [NOVO] TSE MS, ATLASINTEL (Governador, Senador), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro MS020472026
+- [NOVO] TSE MT, ATLASINTEL (Governador, Senador), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro MT090672026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 30/08-01/09, divulgação 2026-09-02, N=2004, registro BR070652026
+- [NOVO] TSE NACIONAL?, REAL TIME BIG DATA (Presidente), campo 28/08-01/09, divulgação 2026-09-02, N=1600, registro BR083332026
+- [NOVO] TSE PA, SIMETRIA (Governador, Senador), campo 26/08-30/08, divulgação 2026-09-02, N=1200, registro PA054132026
+- [NOVO] TSE PB, INSTITUTO DE PESQUISA PODIUM (Governador, Senador), campo 24/08-26/08, divulgação 2026-09-02, N=381, registro PB064522026
+- [NOVO] TSE RJ, REAL TIME BIG DATA (Governador, Senador), campo 28/08-01/09, divulgação 2026-09-02, N=2000, registro RJ083502026
+- [NOVO] TSE RS, ATLASINTEL (Governador, Senador), campo 27/08-01/09, divulgação 2026-09-02, N=1800, registro RS006522026
+- [NOVO] TSE SP, #NULO# (Governador, Senador, Deputado Fede), campo 30/08-31/08, divulgação 2026-09-02, N=2000, registro SP058622026
 
 ## Últimas publicações do Veritá
 
@@ -56,10 +73,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-22 | MA | COMPLETA PESQUISAS DE OPNIAO | Governador, Senador, Deputado Fede | 15/08-20/08 | 1500 | MA005662026 |
-| 2026-08-22 | PI | #NULO# | Governador, Senador | 18/08-21/08 | 826 | PI066562026 |
-| 2026-08-22 | PR | INDICE INTELIGENCIA | Governador, Senador | 17/08-19/08 | 1200 | PR017542026 |
-| 2026-08-22 | SE | CTAS TECNOLOGIA | Governador, Senador, Deputado Fede | 17/08-21/08 | 1224 | SE084322026 |
 | 2026-08-23 | AC | DATA CONTROL INSTITUTO DE PE | Governador, Senador, Deputado Fede | 17/08-23/08 | 1620 | AC031292026 |
 | 2026-08-23 | AM | PROJETA PESQUISA DE MERCADO  | Governador, Senador | 17/08-21/08 | 3000 | AM038242026 |
 | 2026-08-23 | BA | INSTITUTO OPNUS | Governador, Senador | 17/08-22/08 | 1200 | BA044722026 |
@@ -299,4 +312,24 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-09-01 | SP | ATLASINTEL | Governador, Senador | 26/08-31/08 | 1800 | SP069642026 |
 | 2026-09-01 | SP | #NULO# | Governador, Deputado Federal | 27/08-28/08 | 1200 | SP036522026 |
 | 2026-09-01 | SP | #NULO# | Governador, Senador | 29/08-31/08 | 1480 | SP009402026 |
+| 2026-09-02 | AM | IPEC | Governador, Senador | 27/08-02/09 | 800 | AM077812026 |
+| 2026-09-02 | ESTADUAL[AM] | IPEC | Presidente | 27/08-02/09 | 800 | BR002532026 |
+| 2026-09-02 | ESTADUAL[MA] | ATLASINTEL | Presidente | 29/08-01/09 | 2000 | BR086852026 |
+| 2026-09-02 | ESTADUAL[MS] | ATLASINTEL | Presidente | 27/08-01/09 | 1200 | BR064312026 |
+| 2026-09-02 | ESTADUAL[MS] | ATLASINTEL | Presidente | 27/08-01/09 | 1200 | BR048432026 |
+| 2026-09-02 | ESTADUAL[MS] | ATLASINTEL | Presidente | 27/08-01/09 | 1200 | BR047262026 |
+| 2026-09-02 | ESTADUAL[MS] | ATLASINTEL | Presidente | 27/08-01/09 | 1200 | BR060802026 |
+| 2026-09-02 | ESTADUAL[RN] | PARLA MENTORS CONSULTORIA | Presidente | 23/08-27/08 | 1500 | BR059582026 |
+| 2026-09-02 | ESTADUAL[RS] | ATLASINTEL | Presidente | 27/08-01/09 | 1800 | BR085822026 |
+| 2026-09-02 | GO | ATLASINTEL | Governador, Senador | 27/08-01/09 | 1200 | GO052932026 |
+| 2026-09-02 | MA | ATLASINTEL | Governador, Senador | 29/08-01/09 | 2000 | MA094852026 |
+| 2026-09-02 | MS | ATLASINTEL | Governador, Senador | 27/08-01/09 | 1200 | MS020472026 |
+| 2026-09-02 | MT | ATLASINTEL | Governador, Senador | 27/08-01/09 | 1200 | MT090672026 |
+| 2026-09-02 | NACIONAL? | #NULO# | Presidente | 30/08-01/09 | 2004 | BR070652026 |
+| 2026-09-02 | NACIONAL? | REAL TIME BIG DATA | Presidente | 28/08-01/09 | 1600 | BR083332026 |
+| 2026-09-02 | PA | SIMETRIA | Governador, Senador | 26/08-30/08 | 1200 | PA054132026 |
+| 2026-09-02 | PB | INSTITUTO DE PESQUISA PODIUM | Governador, Senador | 24/08-26/08 | 381 | PB064522026 |
+| 2026-09-02 | RJ | REAL TIME BIG DATA | Governador, Senador | 28/08-01/09 | 2000 | RJ083502026 |
+| 2026-09-02 | RS | ATLASINTEL | Governador, Senador | 27/08-01/09 | 1800 | RS006522026 |
+| 2026-09-02 | SP | #NULO# | Governador, Senador, Deputado Fede | 30/08-31/08 | 2000 | SP058622026 |
 
