@@ -619,116 +619,6 @@
  "ultima_rodada": "2026-09-02T11:23:16.504888-03:00",
  "pendentes": [
   {
-   "proto": "AP053822026",
-   "escopo": "AP",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1030",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "ES074852026",
-   "escopo": "ES",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "BR036882026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "BR099652026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "BR081102026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "BR082902026",
-   "escopo": "ESTADUAL[AP]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1030",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "BR033462026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "2030",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "BR054622026",
-   "escopo": "ESTADUAL[RS]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "2020",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "PI060002026",
-   "escopo": "PI",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "1220",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "RJ060782026",
-   "escopo": "RJ",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "2030",
-   "visto": "2026-08-29"
-  },
-  {
-   "proto": "RS065212026",
-   "escopo": "RS",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "24/08-28/08",
-   "div": "2026-08-29",
-   "n": "2020",
-   "visto": "2026-08-29"
-  },
-  {
    "proto": "BR051142026",
    "escopo": "ESTADUAL[GO]",
    "inst": "IGAPE- INSTITUTO GAZETA DE P",
@@ -996,16 +886,6 @@
    "campo": "27/08-01/09",
    "div": "2026-09-02",
    "n": "1200",
-   "visto": "2026-09-02"
-  },
-  {
-   "proto": "BR070652026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "30/08-01/09",
-   "div": "2026-09-02",
-   "n": "2004",
    "visto": "2026-09-02"
   },
   {
