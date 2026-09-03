@@ -1019,16 +1019,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "BA088912026",
-   "escopo": "BA",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "28/08-02/09",
-   "div": "2026-09-03",
-   "n": "1800",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "BA029172026",
    "escopo": "BA",
    "inst": "VERITA",
@@ -1109,16 +1099,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "BR074112026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "28/08-02/09",
-   "div": "2026-09-03",
-   "n": "1800",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "BR045402026",
    "escopo": "ESTADUAL[BA]",
    "inst": "VERITA",
@@ -1126,16 +1106,6 @@
    "campo": "29/08-01/09",
    "div": "2026-09-03",
    "n": "2020",
-   "visto": "2026-09-03"
-  },
-  {
-   "proto": "BR077392026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "28/08-02/09",
-   "div": "2026-09-03",
-   "n": "1800",
    "visto": "2026-09-03"
   },
   {
@@ -1326,16 +1296,6 @@
    "campo": "31/08-02/09",
    "div": "2026-09-03",
    "n": "700",
-   "visto": "2026-09-03"
-  },
-  {
-   "proto": "BR075612026",
-   "escopo": "NACIONAL?",
-   "inst": "PODERDATA",
-   "cargo": "Presidente",
-   "campo": "30/08-02/09",
-   "div": "2026-09-03",
-   "n": "3000",
    "visto": "2026-09-03"
   },
   {
