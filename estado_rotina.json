@@ -664,9 +664,10 @@
   "b00dc36a-7542-4ed7-9ac2-2dc6c16f6062",
   "bdfa17c5-1662-4d9b-9a93-ca7027c5b44d",
   "c6dd6aaa-6d80-4b84-ac45-10c45a84b0f7",
+  "e4f31787-a1b2-4148-9b51-176ab101dc20",
   "eb0342b6-979f-46d5-ab83-949ff53dc67b"
  ],
- "ultima_rodada": "2026-09-03T16:16:07.697023-03:00",
+ "ultima_rodada": "2026-09-03T20:59:43.097660-03:00",
  "pendentes": [
   {
    "proto": "BR051142026",
@@ -1229,5 +1230,14 @@
    "visto": "2026-09-03"
   }
  ],
- "verita_pendentes": []
+ "verita_pendentes": [
+  {
+   "id": "e4f31787-a1b2-4148-9b51-176ab101dc20",
+   "titulo": "Pesquisa em Mato Grosso -  Governador e Presidente ",
+   "descricao": "Pesquisa de intenção de voto para Governador e Presidente realizada pelo Instituto Veritá entre os dias 19 a 23 de agosto de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1788465748816_Relatorio_Mato_Grosso_Agosto_2026.pdf",
+   "created_at": "2026-09-03T20:02:33.158024+00:00",
+   "visto": "2026-09-03"
+  }
+ ]
 }

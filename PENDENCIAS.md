@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 03/09/2026 16:16. Mercados: Polymarket 54,5%/40,4%, Kalshi 55,0%/44,0%.
+Rodada de 03/09/2026 20:59. Mercados: Polymarket 54,5%/44,0%, Kalshi 56,0%/44,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -22,19 +22,12 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-01] TSE SP, ATLASINTEL (Governador, Senador), campo 26/08-31/08, divulgação 2026-09-01, N=1800, registro SP069642026
 - [aguardando desde 2026-09-02] TSE AM, IPEC (Governador, Senador), campo 27/08-02/09, divulgação 2026-09-02, N=800, registro AM077812026
 - [aguardando desde 2026-09-02] TSE ESTADUAL[AM], IPEC (Presidente), campo 27/08-02/09, divulgação 2026-09-02, N=800, registro BR002532026
-- [aguardando desde 2026-09-02] TSE ESTADUAL[MS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro BR064312026
-- [aguardando desde 2026-09-02] TSE ESTADUAL[MS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro BR048432026
-- [aguardando desde 2026-09-02] TSE ESTADUAL[MS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro BR047262026
 - [aguardando desde 2026-09-02] TSE ESTADUAL[MS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro BR060802026
 - [aguardando desde 2026-09-02] TSE ESTADUAL[RN], PARLA MENTORS CONSULTORIA (Presidente), campo 23/08-27/08, divulgação 2026-09-02, N=1500, registro BR059582026
-- [aguardando desde 2026-09-02] TSE ESTADUAL[RS], ATLASINTEL (Presidente), campo 27/08-01/09, divulgação 2026-09-02, N=1800, registro BR085822026
-- [aguardando desde 2026-09-02] TSE GO, ATLASINTEL (Governador, Senador), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro GO052932026
-- [aguardando desde 2026-09-02] TSE MS, ATLASINTEL (Governador, Senador), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro MS020472026
 - [aguardando desde 2026-09-02] TSE MT, ATLASINTEL (Governador, Senador), campo 27/08-01/09, divulgação 2026-09-02, N=1200, registro MT090672026
 - [aguardando desde 2026-09-02] TSE NACIONAL?, REAL TIME BIG DATA (Presidente), campo 28/08-01/09, divulgação 2026-09-02, N=1600, registro BR083332026
 - [aguardando desde 2026-09-02] TSE PA, SIMETRIA (Governador, Senador), campo 26/08-30/08, divulgação 2026-09-02, N=1200, registro PA054132026
 - [aguardando desde 2026-09-02] TSE PB, INSTITUTO DE PESQUISA PODIUM (Governador, Senador), campo 24/08-26/08, divulgação 2026-09-02, N=381, registro PB064522026
-- [aguardando desde 2026-09-02] TSE RS, ATLASINTEL (Governador, Senador), campo 27/08-01/09, divulgação 2026-09-02, N=1800, registro RS006522026
 - [aguardando desde 2026-09-02] TSE SP, #NULO# (Governador, Senador, Deputado Fede), campo 30/08-31/08, divulgação 2026-09-02, N=2000, registro SP058622026
 - [aguardando desde 2026-09-03] TSE AC, VERITA (Governador, Senador), campo 29/08-01/09, divulgação 2026-09-03, N=1030, registro AC088162026
 - [aguardando desde 2026-09-03] TSE AL, VERITA (Governador, Senador), campo 29/08-01/09, divulgação 2026-09-03, N=1220, registro AL006982026
@@ -42,7 +35,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-03] TSE BA, VERITA (Governador, Senador), campo 29/08-01/09, divulgação 2026-09-03, N=2020, registro BA029172026
 - [aguardando desde 2026-09-03] TSE CE, ATLASINTEL (Governador, Senador), campo 28/08-02/09, divulgação 2026-09-03, N=1800, registro CE023572026
 - [aguardando desde 2026-09-03] TSE CE, VERITA (Governador, Senador), campo 29/08-01/09, divulgação 2026-09-03, N=1525, registro CE099712026
-- [aguardando desde 2026-09-03] TSE CE, #NULO# (Governador, Senador), campo 31/08-03/09, divulgação 2026-09-03, N=1204, registro CE041222026
 - [aguardando desde 2026-09-03] TSE ES, INSTITUTO FRANCA DE PESQUISA (Governador, Senador), campo 20/08-26/08, divulgação 2026-09-03, N=1326, registro ES073152026
 - [aguardando desde 2026-09-03] TSE ESTADUAL[AC], VERITA (Presidente), campo 29/08-01/09, divulgação 2026-09-03, N=1030, registro BR032462026
 - [aguardando desde 2026-09-03] TSE ESTADUAL[AL], VERITA (Presidente), campo 29/08-01/09, divulgação 2026-09-03, N=1220, registro BR057482026
@@ -54,7 +46,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-03] TSE ESTADUAL[GO], DATA RD (Presidente), campo 30/08-02/09, divulgação 2026-09-03, N=1495, registro BR055082026
 - [aguardando desde 2026-09-03] TSE ESTADUAL[PB], ATLASINTEL (Presidente), campo 28/08-02/09, divulgação 2026-09-03, N=1200, registro BR040832026
 - [aguardando desde 2026-09-03] TSE ESTADUAL[PE], BADRA COMUNICACAO (Presidente), campo 31/08-02/09, divulgação 2026-09-03, N=1500, registro BR079792026
-- [aguardando desde 2026-09-03] TSE ESTADUAL[PI], ATLASINTEL (Presidente), campo 28/08-02/09, divulgação 2026-09-03, N=1600, registro BR036362026
 - [aguardando desde 2026-09-03] TSE ESTADUAL[RN], DATA CAPITAL PESQUISAS E CON (Presidente), campo 29/08-01/09, divulgação 2026-09-03, N=2150, registro BR091182026
 - [aguardando desde 2026-09-03] TSE ESTADUAL[RN], PERFIL PESQUISAS TECNICAS (Presidente), campo 29/08-01/09, divulgação 2026-09-03, N=1600, registro BR076082026
 - [aguardando desde 2026-09-03] TSE ESTADUAL[RN], EXATUS CONSULTORIA E PESQUIS (Presidente), campo 31/08-03/09, divulgação 2026-09-03, N=1500, registro BR037752026
@@ -62,14 +53,10 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-03] TSE GO, DATA RD (Governador, Senador), campo 30/08-02/09, divulgação 2026-09-03, N=1495, registro GO072252026
 - [aguardando desde 2026-09-03] TSE MA, VERITA (Governador, Senador), campo 29/08-01/09, divulgação 2026-09-03, N=1525, registro MA019122026
 - [aguardando desde 2026-09-03] TSE MG, F5 ATUALIZA DADOS (Governador, Senador, Deputado Fede), campo 29/08-30/08, divulgação 2026-09-03, N=1000, registro MG039462026
-- [aguardando desde 2026-09-03] TSE NACIONAL?, 100 CIDADES (Presidente), campo 28/08-01/09, divulgação 2026-09-03, N=2000, registro BR027932026
 - [aguardando desde 2026-09-03] TSE NACIONAL?, FACTUM COMUNICACAO (Presidente), campo 31/08-02/09, divulgação 2026-09-03, N=700, registro BR085232026
-- [aguardando desde 2026-09-03] TSE NACIONAL?, #NULO# (Presidente), campo 01/09-03/09, divulgação 2026-09-03, N=2002, registro BR036692026
-- [aguardando desde 2026-09-03] TSE PB, ATLASINTEL (Governador, Senador), campo 28/08-02/09, divulgação 2026-09-03, N=1200, registro PB011182026
 - [aguardando desde 2026-09-03] TSE PB, INSTITUTO DE PESQUISA PODIUM (Governador, Senador), campo 27/08-27/08, divulgação 2026-09-03, N=380, registro PB099322026
 - [aguardando desde 2026-09-03] TSE PE, INSTITUTO RANKING PESQUISA (Governador, Senador), campo 29/08-31/08, divulgação 2026-09-03, N=1200, registro PE089012026
 - [aguardando desde 2026-09-03] TSE PE, BADRA COMUNICACAO (Governador, Senador, Deputado Fede), campo 31/08-02/09, divulgação 2026-09-03, N=1500, registro PE069012026
-- [aguardando desde 2026-09-03] TSE PI, ATLASINTEL (Governador, Senador), campo 28/08-02/09, divulgação 2026-09-03, N=1600, registro PI037712026
 - [aguardando desde 2026-09-03] TSE RN, PERFIL PESQUISAS TECNICAS (Governador, Senador, Deputado Fede), campo 29/08-01/09, divulgação 2026-09-03, N=1600, registro RN013682026
 - [aguardando desde 2026-09-03] TSE RN, EXATUS CONSULTORIA E PESQUIS (Governador, Senador, Deputado Fede), campo 31/08-03/09, divulgação 2026-09-03, N=1500, registro RN039242026
 - [aguardando desde 2026-09-03] TSE RN, DATA CAPITAL PESQUISAS E CON (Governador, Senador, Deputado Fede), campo 29/08-01/09, divulgação 2026-09-03, N=2150, registro RN037352026
@@ -77,9 +64,11 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-03] TSE SP, INTELLIGENCE PESQUISA E COMU (Governador, Senador, Deputado Fede), campo 29/08-30/08, divulgação 2026-09-03, N=1100, registro SP006812026
 - [aguardando desde 2026-09-03] TSE TO, EXATA.GO (Governador, Senador), campo 29/08-02/09, divulgação 2026-09-03, N=2000, registro TO044652026
 - [aguardando desde 2026-09-03] TSE TO, PORTAL E INSTITUTO STYLO (Governador, Senador), campo 28/08-31/08, divulgação 2026-09-03, N=1200, registro TO094452026
+- [NOVO] Veritá: Pesquisa em Mato Grosso -  Governador e Presidente . Pesquisa de intenção de voto para Governador e Presidente realizada pelo Instituto Veritá entre os dias 19 a 23 de agosto de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1788465748816_Relatorio_Mato_Grosso_Agosto_2026.pdf
 
 ## Últimas publicações do Veritá
 
+- 2026-09-03 | Pesquisa em Mato Grosso -  Governador e Presidente 
 - 2026-09-01 | Pesquisa em Rondônia - Governador e Presidente 
 - 2026-08-22 | Pesquisa para Presidente no Brasil
 - 2026-08-02 | Pesquisa no Maranhão - Presidente, Governador e Senador
@@ -87,7 +76,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - 2026-07-17 | Pesquisa em Goiás - Presidente, Governador e Senador
 - 2026-07-07 | Pesquisa São Paulo - Presidente, Governador e Senador
 - 2026-07-07 | Pesquisa Amapá - Presidente, Governador e Senador
-- 2026-07-07 | Pesquisa Amazonas - Presidente, Governador e Senador
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
