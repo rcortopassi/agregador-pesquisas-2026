@@ -729,26 +729,6 @@
    "visto": "2026-09-01"
   },
   {
-   "proto": "BR059012026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "26/08-31/08",
-   "div": "2026-09-01",
-   "n": "1800",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "BR025632026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "26/08-31/08",
-   "div": "2026-09-01",
-   "n": "1800",
-   "visto": "2026-09-01"
-  },
-  {
    "proto": "BR015162026",
    "escopo": "ESTADUAL[RO]",
    "inst": "PERFIL PESQUISAS",
@@ -1366,16 +1346,6 @@
    "campo": "28/08-02/09",
    "div": "2026-09-03",
    "n": "1600",
-   "visto": "2026-09-03"
-  },
-  {
-   "proto": "PR033992026",
-   "escopo": "PR",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "31/08-02/09",
-   "div": "2026-09-03",
-   "n": "1280",
    "visto": "2026-09-03"
   },
   {
