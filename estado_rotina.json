@@ -709,26 +709,6 @@
    "visto": "2026-08-31"
   },
   {
-   "proto": "ES002062026",
-   "escopo": "ES",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "26/08-31/08",
-   "div": "2026-09-01",
-   "n": "1200",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "BR064592026",
-   "escopo": "ESTADUAL[ES]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "26/08-31/08",
-   "div": "2026-09-01",
-   "n": "1200",
-   "visto": "2026-09-01"
-  },
-  {
    "proto": "BR015162026",
    "escopo": "ESTADUAL[RO]",
    "inst": "PERFIL PESQUISAS",
@@ -1129,26 +1109,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "BR046782026",
-   "escopo": "ESTADUAL[MT]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "29/08-02/09",
-   "div": "2026-09-03",
-   "n": "1600",
-   "visto": "2026-09-03"
-  },
-  {
-   "proto": "BR058622026",
-   "escopo": "ESTADUAL[MT]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "29/08-02/09",
-   "div": "2026-09-03",
-   "n": "1600",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "BR040832026",
    "escopo": "ESTADUAL[PB]",
    "inst": "ATLASINTEL",
@@ -1249,16 +1209,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "MT071562026",
-   "escopo": "MT",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-02/09",
-   "div": "2026-09-03",
-   "n": "1600",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "BR027932026",
    "escopo": "NACIONAL?",
    "inst": "100 CIDADES",
@@ -1326,16 +1276,6 @@
    "campo": "31/08-02/09",
    "div": "2026-09-03",
    "n": "1500",
-   "visto": "2026-09-03"
-  },
-  {
-   "proto": "PE091162026",
-   "escopo": "PE",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-02/09",
-   "div": "2026-09-03",
-   "n": "1600",
    "visto": "2026-09-03"
   },
   {
