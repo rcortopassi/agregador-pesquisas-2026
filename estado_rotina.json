@@ -938,16 +938,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "CE023572026",
-   "escopo": "CE",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "28/08-02/09",
-   "div": "2026-09-03",
-   "n": "1800",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "CE099712026",
    "escopo": "CE",
    "inst": "VERITA",
@@ -1218,16 +1208,6 @@
    "visto": "2026-09-04"
   },
   {
-   "proto": "AM049392026",
-   "escopo": "AM",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-03/09",
-   "div": "2026-09-04",
-   "n": "1200",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "BR083972026",
    "escopo": "ESTADUAL[AC]",
    "inst": "VERITA",
@@ -1393,16 +1373,6 @@
    "inst": "IPPI - PESQUISAS E CONSULTOR",
    "cargo": "Governador, Senador, Deputado Fede",
    "campo": "29/08-02/09",
-   "div": "2026-09-04",
-   "n": "1500",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "PA051782026",
-   "escopo": "PA",
-   "inst": "INDEXA PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "31/08-02/09",
    "div": "2026-09-04",
    "n": "1500",
    "visto": "2026-09-04"
