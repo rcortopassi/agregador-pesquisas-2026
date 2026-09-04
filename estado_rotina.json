@@ -1228,16 +1228,6 @@
    "visto": "2026-09-04"
   },
   {
-   "proto": "CE011492026",
-   "escopo": "CE",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "31/08-03/09",
-   "div": "2026-09-04",
-   "n": "900",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "BR083972026",
    "escopo": "ESTADUAL[AC]",
    "inst": "VERITA",
@@ -1285,16 +1275,6 @@
    "campo": "29/08-01/09",
    "div": "2026-09-04",
    "n": "1220",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "BR045762026",
-   "escopo": "ESTADUAL[CE]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "31/08-03/09",
-   "div": "2026-09-04",
-   "n": "900",
    "visto": "2026-09-04"
   },
   {
