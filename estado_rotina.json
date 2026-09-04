@@ -1208,26 +1208,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "AC013992026",
-   "escopo": "AC",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-03/09",
-   "div": "2026-09-04",
-   "n": "1200",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "AL050872026",
-   "escopo": "AL",
-   "inst": "DATATRENDS",
-   "cargo": "Governador, Senador",
-   "campo": "31/08-02/09",
-   "div": "2026-09-04",
-   "n": "1200",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "AL051212026",
    "escopo": "AL",
    "inst": "TDL PESQUISA",
@@ -1255,26 +1235,6 @@
    "campo": "31/08-03/09",
    "div": "2026-09-04",
    "n": "900",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "BR030462026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "29/08-03/09",
-   "div": "2026-09-04",
-   "n": "1200",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "BR017992026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "29/08-03/09",
-   "div": "2026-09-04",
-   "n": "1200",
    "visto": "2026-09-04"
   },
   {
@@ -1488,16 +1448,6 @@
    "visto": "2026-09-04"
   },
   {
-   "proto": "PR021792026",
-   "escopo": "PR",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "31/08-03/09",
-   "div": "2026-09-04",
-   "n": "1200",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "PR068512026",
    "escopo": "PR",
    "inst": "VERITA",
@@ -1535,16 +1485,6 @@
    "campo": "29/08-01/09",
    "div": "2026-09-04",
    "n": "1525",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "SE057432026",
-   "escopo": "SE",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "01/09-03/09",
-   "div": "2026-09-04",
-   "n": "1300",
    "visto": "2026-09-04"
   },
   {
