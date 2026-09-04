@@ -508,3 +508,46 @@ até que preste esclarecimentos e se forme o contraditório. Se a liminar cair, 
 CUIDADO PARA NÃO ESTENDER A SUSPEITA. A decisão é sobre a rodada do MARANHÃO. A
 AtlasIntel tem registros pendentes de GO, MS, MT e RS com campo da mesma semana, e
 nenhum deles é alcançado por esta liminar.
+
+## ATUALIZAÇÃO 04/09/2026 — RN: O TRE JÁ DERRUBOU SEIS RODADAS PRÓ-ÁLVARO, E TRÊS DELAS ESTÃO NO PAINEL
+
+O parecer do MPE de 1º/9 falava em suspeita. O balanço do Agora RN de 2/9 às 23h38
+("TRE já derrubou 6 pesquisas favoráveis a Álvaro, após constatar irregularidades")
+fecha o ciclo com JULGAMENTO DEFINITIVO e multa em quatro dos casos, e é isto que muda
+o estatuto do que está no painel: não é mais liminar contestável, é decisão de plenário.
+
+O que o TRE-RN decidiu, por registro:
+
+- **RN-02256/2026** e **RN-04097/2026** (Veritá, divulgadas em abril e maio). Suspensas
+  em liminar em 13/5 por inconsistência na composição da amostra, sobretudo escolaridade
+  e renda, e por falta de clareza sobre as bases; a segunda também por problema no
+  cronograma de aplicação. Em 16/6 o PLENÁRIO proibiu definitivamente a circulação das
+  duas e aplicou R$ 106.410 de multa, R$ 53.205 cada.
+- **RN-06276/2026** (Veritá, divulgada em 10/6, Álvaro 41,6 x Cadu Xavier 28,3 x Allyson
+  27,8). Suspensa dois dias depois. O plano amostral atribuía 34% da amostra a pessoas
+  com ensino superior e 25% a eleitores com renda acima de cinco salários mínimos. Em
+  11/8 o TRE declarou o levantamento irregular e multou em R$ 58.525,50.
+- **RN-07670/2026** (PNH/Affare, Álvaro 32,6 x Allyson 27,8 x Cadu 25). Em 4/8 o plenário
+  constatou que o plano previa 73,9% dos entrevistados com renda de até um salário
+  mínimo e que só 37,9% da amostra coletada estava nessa faixa. Multa de R$ 53.205.
+- **RN-09520/2026** (Ipsensus) e **RN-08092/2026** (Média): suspensas em 11 e 12/8, ainda
+  sem julgamento definitivo. Já estavam descritas na atualização de 1º/9.
+- Uma rodada da **DataVero** também foi declarada irregular. Esta dava Allyson na frente,
+  em empate técnico com Álvaro Dias, ou seja, o problema aqui é metodológico e não de
+  direção do resultado. A matéria não informa o número do registro, e por isso NÃO dá
+  para dizer se é alguma das DataVero que estão no painel. Fica como pergunta aberta.
+
+**ONDE BATE NO PAINEL, hoje.** Em `DGM['RN']`: `Veritá` em `mai` e `Affare` em `mai` são
+do grupo julgado e definitivamente proibido; `IPSsensus` em `jun` e `Media/O Potengi` em
+`jul` são as duas ainda suspensas em liminar. **NADA FOI REMOVIDO nesta rodada:** a
+decisão de remover série histórica continua sendo do Rafael, e o que existe é a marcação.
+O que mudou de 1º/9 para cá é que dois desses casos deixaram de ser liminar e viraram
+coisa julgada no plenário, com multa paga.
+
+**O QUE ISSO NÃO ALCANÇA.** A rodada do **Perfil/Blog do BG** de 29/8 a 1º/9
+(RN-01368/2026 e BR-07608/2026), inserida no painel em 4/9 em `DG`, `DS`, `DGM['RN']['set']`,
+`DSM['RN']['set']` e `PRES26['RN']`, é de instituto que não aparece em nenhuma das
+representações e dá Allyson na frente, na mesma direção da maioria das 26 rodadas
+registradas no estado. Não confundir.
+
+- Fonte: Agora RN, 2/9/2026 às 23h38, seção Política.

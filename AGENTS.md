@@ -143,7 +143,15 @@ Colunas úteis do CSV: `NR_PROTOCOLO_REGISTRO`, `NM_EMPRESA_FANTASIA`, `NR_CNPJ_
 `VR_PESQUISA`.
 
 Falsos positivos de "nacional" já pegos: Futura/Apex BR-08054/2026 (é de MINAS GERAIS, 291
-municípios mineiros) e Veritá de julho (6 registros, todos estaduais).
+municípios mineiros), Veritá de julho (6 registros, todos estaduais) e Factum BR-08523/2026
+(é MUNICIPAL: o campo `DS_DADO_MUNICIPIO` do registro diz "os bairros e distritos do município
+de CABO FRIO/RJ", com 700 entrevistas e R$ 20 mil).
+
+**O DESEMPATE ESTÁ NO `DS_DADO_MUNICIPIO` (04/09/2026).** Antes de abrir jornal atrás de um
+`NACIONAL?`, leia esse campo do próprio registro: ele diz em uma linha se a abrangência é
+nacional, de um estado ou de um município, e resolve a maioria dos casos sem sair do CSV. Foi
+assim que a Factum caiu, e é assim que se acha o estado do gêmeo quando o `NM_EMPRESA_FANTASIA`
+vem `#NULO#` (BR-05635/2026 diz "o estado de Ceará" e a `NM_EMPRESA` revela o Datafolha).
 
 ## Passo 2 — O gêmeo estadual É a fonte do PRES26
 
