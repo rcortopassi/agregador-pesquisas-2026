@@ -1268,16 +1268,6 @@
    "visto": "2026-09-04"
   },
   {
-   "proto": "BR065972026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "INDEXA PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "31/08-02/09",
-   "div": "2026-09-04",
-   "n": "1500",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "BR047752026",
    "escopo": "ESTADUAL[PI]",
    "inst": "AMOSTRAGEM OPINIAO E MERCADO",
@@ -1328,16 +1318,6 @@
    "visto": "2026-09-04"
   },
   {
-   "proto": "BR097662026",
-   "escopo": "ESTADUAL[SE]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "31/08-03/09",
-   "div": "2026-09-04",
-   "n": "1600",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "BR067202026",
    "escopo": "ESTADUAL[SP]",
    "inst": "100 CIDADES",
@@ -1365,16 +1345,6 @@
    "campo": "27/08-31/08",
    "div": "2026-09-04",
    "n": "600",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "MA088682026",
-   "escopo": "MA",
-   "inst": "IPPI - PESQUISAS E CONSULTOR",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "29/08-02/09",
-   "div": "2026-09-04",
-   "n": "1500",
    "visto": "2026-09-04"
   },
   {
@@ -1445,16 +1415,6 @@
    "campo": "31/08-03/09",
    "div": "2026-09-04",
    "n": "1224",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "SE057762026",
-   "escopo": "SE",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "31/08-03/09",
-   "div": "2026-09-04",
-   "n": "1600",
    "visto": "2026-09-04"
   },
   {
