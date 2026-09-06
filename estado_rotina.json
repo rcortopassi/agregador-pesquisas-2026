@@ -806,16 +806,6 @@
    "visto": "2026-09-01"
   },
   {
-   "proto": "PI054832026",
-   "escopo": "PI",
-   "inst": "DATA MAX",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "25/08-04/09",
-   "div": "2026-09-01",
-   "n": "2000",
-   "visto": "2026-09-01"
-  },
-  {
    "proto": "RJ040672026",
    "escopo": "RJ",
    "inst": "ATLASINTEL",
@@ -1076,16 +1066,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "BR091182026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "DATA CAPITAL PESQUISAS E CON",
-   "cargo": "Presidente",
-   "campo": "29/08-01/09",
-   "div": "2026-09-03",
-   "n": "2150",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "BR037752026",
    "escopo": "ESTADUAL[RN]",
    "inst": "EXATUS CONSULTORIA E PESQUIS",
@@ -1173,16 +1153,6 @@
    "campo": "31/08-03/09",
    "div": "2026-09-03",
    "n": "1500",
-   "visto": "2026-09-03"
-  },
-  {
-   "proto": "RN037352026",
-   "escopo": "RN",
-   "inst": "DATA CAPITAL PESQUISAS E CON",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "29/08-01/09",
-   "div": "2026-09-03",
-   "n": "2150",
    "visto": "2026-09-03"
   },
   {
@@ -1533,16 +1503,6 @@
    "campo": "30/08-04/09",
    "div": "2026-09-05",
    "n": "1800",
-   "visto": "2026-09-05"
-  },
-  {
-   "proto": "PI091172026",
-   "escopo": "PI",
-   "inst": "VETOR TECNOLOGIA E PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "24/08-29/08",
-   "div": "2026-09-05",
-   "n": "1602",
    "visto": "2026-09-05"
   },
   {
