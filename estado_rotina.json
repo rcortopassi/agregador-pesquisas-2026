@@ -1376,16 +1376,6 @@
    "visto": "2026-09-04"
   },
   {
-   "proto": "SC041992026",
-   "escopo": "SC",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-01/09",
-   "div": "2026-09-04",
-   "n": "1525",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "SE076392026",
    "escopo": "SE",
    "inst": "CTAS TECNOLOGIA",
@@ -1403,16 +1393,6 @@
    "campo": "01/09-03/09",
    "div": "2026-09-04",
    "n": "1600",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "TO080982026",
-   "escopo": "TO",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-01/09",
-   "div": "2026-09-04",
-   "n": "1220",
    "visto": "2026-09-04"
   },
   {
@@ -1443,36 +1423,6 @@
    "campo": "24/08-26/08",
    "div": "2026-09-05",
    "n": "500",
-   "visto": "2026-09-05"
-  },
-  {
-   "proto": "MA071802026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "30/08-02/09",
-   "div": "2026-09-05",
-   "n": "350",
-   "visto": "2026-09-05"
-  },
-  {
-   "proto": "MA018472026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "31/08-01/09",
-   "div": "2026-09-05",
-   "n": "350",
-   "visto": "2026-09-05"
-  },
-  {
-   "proto": "MA046482026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "30/08-02/09",
-   "div": "2026-09-05",
-   "n": "350",
    "visto": "2026-09-05"
   },
   {
@@ -1523,56 +1473,6 @@
    "campo": "01/09-09/09",
    "div": "2026-09-06",
    "n": "2500",
-   "visto": "2026-09-06"
-  },
-  {
-   "proto": "MA049252026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "01/09-05/09",
-   "div": "2026-09-06",
-   "n": "350",
-   "visto": "2026-09-06"
-  },
-  {
-   "proto": "MA033442026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "01/09-05/09",
-   "div": "2026-09-06",
-   "n": "350",
-   "visto": "2026-09-06"
-  },
-  {
-   "proto": "MA059742026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "01/09-05/09",
-   "div": "2026-09-06",
-   "n": "350",
-   "visto": "2026-09-06"
-  },
-  {
-   "proto": "MA009182026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "01/09-05/09",
-   "div": "2026-09-06",
-   "n": "350",
-   "visto": "2026-09-06"
-  },
-  {
-   "proto": "BR094262026",
-   "escopo": "NACIONAL?",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "01/09-04/09",
-   "div": "2026-09-06",
-   "n": "3840",
    "visto": "2026-09-06"
   },
   {
