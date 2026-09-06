@@ -806,16 +806,6 @@
    "visto": "2026-09-01"
   },
   {
-   "proto": "RJ040672026",
-   "escopo": "RJ",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "26/08-31/08",
-   "div": "2026-09-01",
-   "n": "1800",
-   "visto": "2026-09-01"
-  },
-  {
    "proto": "RN020432026",
    "escopo": "RN",
    "inst": "MEDIA - INTELIGENCIA EM PESQ",
@@ -833,16 +823,6 @@
    "campo": "25/08-29/08",
    "div": "2026-09-01",
    "n": "1480",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "SP069642026",
-   "escopo": "SP",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "26/08-31/08",
-   "div": "2026-09-01",
-   "n": "1800",
    "visto": "2026-09-01"
   },
   {
@@ -1536,16 +1516,6 @@
    "visto": "2026-09-06"
   },
   {
-   "proto": "BR087682026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "DATA CAPITAL PESQUISAS E CON",
-   "cargo": "Presidente",
-   "campo": "01/09-02/09",
-   "div": "2026-09-06",
-   "n": "850",
-   "visto": "2026-09-06"
-  },
-  {
    "proto": "BR087662026",
    "escopo": "ESTADUAL[RO]",
    "inst": "INSTITUTO AMAZONIA DE PESQUI",
@@ -1613,16 +1583,6 @@
    "campo": "02/09-04/09",
    "div": "2026-09-06",
    "n": "5000",
-   "visto": "2026-09-06"
-  },
-  {
-   "proto": "RN002962026",
-   "escopo": "RN",
-   "inst": "DATA CAPITAL PESQUISAS E CON",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "01/09-02/09",
-   "div": "2026-09-06",
-   "n": "850",
    "visto": "2026-09-06"
   },
   {
