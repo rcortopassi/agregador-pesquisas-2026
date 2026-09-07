@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 07/09/2026 06:16. Mercados: Polymarket 56,5%/40,2%, Kalshi 55,0%/42,0%.
+Rodada de 07/09/2026 12:46. Mercados: Polymarket 57,5%/39,6%, Kalshi 56,0%/41,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -90,33 +90,26 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-06] TSE SE, TWS POLITICA (Governador, Senador), campo 31/08-02/09, divulgação 2026-09-06, N=1500, registro SE041672026
 - [aguardando desde 2026-09-06] TSE SE, #NULO# (Governador, Senador), campo 01/09-04/09, divulgação 2026-09-06, N=1070, registro SE073592026
 - [aguardando desde 2026-09-06] TSE TO, INSTITUTO SONDA (Governador, Senador, Deputado Fede), campo 31/08-04/09, divulgação 2026-09-06, N=1000, registro TO058932026
-- [NOVO] TSE ESTADUAL[PB], ANOVA INSTITUTO DE PESQUISA (Presidente), campo 03/09-05/09, divulgação 2026-09-07, N=2000, registro BR027142026
-- [NOVO] TSE ESTADUAL[PE], INSTITUTO DE PESQUISA MULTIP (Presidente), campo 30/08-01/09, divulgação 2026-09-07, N=400, registro BR039312026
-- [NOVO] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 01/09-04/09, divulgação 2026-09-07, N=1000, registro GO052072026
-- [NOVO] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 02/09-04/09, divulgação 2026-09-07, N=600, registro GO082242026
-- [NOVO] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 31/08-01/09, divulgação 2026-09-07, N=450, registro GO010582026
-- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 01/09-06/09, divulgação 2026-09-07, N=350, registro MA073712026
-- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 01/09-06/09, divulgação 2026-09-07, N=350, registro MA030532026
-- [NOVO] TSE MA, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 01/09-02/09, divulgação 2026-09-07, N=400, registro MA021142026
-- [NOVO] TSE MA, DOXA (Governador, Senador), campo 01/09-05/09, divulgação 2026-09-07, N=2000, registro MA040332026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 03/09-06/09, divulgação 2026-09-07, N=2004, registro BR017202026
-- [NOVO] TSE PB, ANOVA INSTITUTO DE PESQUISA (Governador, Senador), campo 03/09-05/09, divulgação 2026-09-07, N=2000, registro PB014712026
-- [NOVO] TSE PE, INSTITUTO DE PESQUISA MULTIP (Governador, Senador, Deputado Fede), campo 30/08-01/09, divulgação 2026-09-07, N=400, registro PE015732026
-- [NOVO] TSE PI, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 27/08-29/08, divulgação 2026-09-07, N=304, registro PI057392026
-- [NOVO] TSE PR, INDICE INTELIGENCIA (Governador, Senador), campo 02/09-04/09, divulgação 2026-09-07, N=1200, registro PR010472026
-- [NOVO] TSE RO, INSTITUTO PHOENIX & ASSOCIAD (Governador, Senador, Deputado Fede), campo 03/09-06/09, divulgação 2026-09-07, N=1123, registro RO026202026
-- [NOVO] TSE TO, VR SKALA (Governador, Senador), campo 01/09-06/09, divulgação 2026-09-07, N=1600, registro TO088262026
+- [aguardando desde 2026-09-07] TSE ESTADUAL[PB], ANOVA INSTITUTO DE PESQUISA (Presidente), campo 03/09-05/09, divulgação 2026-09-07, N=2000, registro BR027142026
+- [aguardando desde 2026-09-07] TSE ESTADUAL[PE], INSTITUTO DE PESQUISA MULTIP (Presidente), campo 30/08-01/09, divulgação 2026-09-07, N=400, registro BR039312026
+- [aguardando desde 2026-09-07] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 01/09-04/09, divulgação 2026-09-07, N=1000, registro GO052072026
+- [aguardando desde 2026-09-07] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 02/09-04/09, divulgação 2026-09-07, N=600, registro GO082242026
+- [aguardando desde 2026-09-07] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 31/08-01/09, divulgação 2026-09-07, N=450, registro GO010582026
+- [aguardando desde 2026-09-07] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 01/09-06/09, divulgação 2026-09-07, N=350, registro MA073712026
+- [aguardando desde 2026-09-07] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 01/09-06/09, divulgação 2026-09-07, N=350, registro MA030532026
+- [aguardando desde 2026-09-07] TSE MA, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 01/09-02/09, divulgação 2026-09-07, N=400, registro MA021142026
+- [aguardando desde 2026-09-07] TSE MA, DOXA (Governador, Senador), campo 01/09-05/09, divulgação 2026-09-07, N=2000, registro MA040332026
+- [aguardando desde 2026-09-07] TSE NACIONAL?, #NULO# (Presidente), campo 03/09-06/09, divulgação 2026-09-07, N=2004, registro BR017202026
+- [aguardando desde 2026-09-07] TSE PB, ANOVA INSTITUTO DE PESQUISA (Governador, Senador), campo 03/09-05/09, divulgação 2026-09-07, N=2000, registro PB014712026
+- [aguardando desde 2026-09-07] TSE PE, INSTITUTO DE PESQUISA MULTIP (Governador, Senador, Deputado Fede), campo 30/08-01/09, divulgação 2026-09-07, N=400, registro PE015732026
+- [aguardando desde 2026-09-07] TSE PI, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 27/08-29/08, divulgação 2026-09-07, N=304, registro PI057392026
+- [aguardando desde 2026-09-07] TSE PR, INDICE INTELIGENCIA (Governador, Senador), campo 02/09-04/09, divulgação 2026-09-07, N=1200, registro PR010472026
+- [aguardando desde 2026-09-07] TSE RO, INSTITUTO PHOENIX & ASSOCIAD (Governador, Senador, Deputado Fede), campo 03/09-06/09, divulgação 2026-09-07, N=1123, registro RO026202026
+- [aguardando desde 2026-09-07] TSE TO, VR SKALA (Governador, Senador), campo 01/09-06/09, divulgação 2026-09-07, N=1600, registro TO088262026
 
 ## Últimas publicações do Veritá
 
-- 2026-09-03 | Pesquisa em Mato Grosso -  Governador e Presidente 
-- 2026-09-01 | Pesquisa em Rondônia - Governador e Presidente 
-- 2026-08-22 | Pesquisa para Presidente no Brasil
-- 2026-08-02 | Pesquisa no Maranhão - Presidente, Governador e Senador
-- 2026-08-02 | Pesquisa no Paraná - Presidente, Governador e Senador
-- 2026-07-17 | Pesquisa em Goiás - Presidente, Governador e Senador
-- 2026-07-07 | Pesquisa São Paulo - Presidente, Governador e Senador
-- 2026-07-07 | Pesquisa Amapá - Presidente, Governador e Senador
+Não consegui ler a lista do Veritá nesta rodada.
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
