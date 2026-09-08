@@ -993,16 +993,6 @@
    "visto": "2026-09-04"
   },
   {
-   "proto": "BR067202026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "01/09-03/09",
-   "div": "2026-09-04",
-   "n": "1600",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "GO013562026",
    "escopo": "GO",
    "inst": "IGAPE- INSTITUTO GAZETA DE P",
@@ -1021,26 +1011,6 @@
    "div": "2026-09-04",
    "n": "1030",
    "visto": "2026-09-04"
-  },
-  {
-   "proto": "SP001522026",
-   "escopo": "SP",
-   "inst": "100 CIDADES",
-   "cargo": "Governador, Senador",
-   "campo": "01/09-03/09",
-   "div": "2026-09-04",
-   "n": "1600",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "BR058522026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "30/08-04/09",
-   "div": "2026-09-05",
-   "n": "1800",
-   "visto": "2026-09-05"
   },
   {
    "proto": "BR010552026",
@@ -1243,26 +1213,6 @@
    "visto": "2026-09-08"
   },
   {
-   "proto": "BR095192026",
-   "escopo": "ESTADUAL[AP]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "03/09-07/09",
-   "div": "2026-09-08",
-   "n": "1600",
-   "visto": "2026-09-08"
-  },
-  {
-   "proto": "BR056432026",
-   "escopo": "ESTADUAL[AP]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "03/09-07/09",
-   "div": "2026-09-08",
-   "n": "1600",
-   "visto": "2026-09-08"
-  },
-  {
    "proto": "BR044422026",
    "escopo": "ESTADUAL[DF]",
    "inst": "#NULO#",
@@ -1270,16 +1220,6 @@
    "campo": "04/09-07/09",
    "div": "2026-09-08",
    "n": "1104",
-   "visto": "2026-09-08"
-  },
-  {
-   "proto": "BR018252026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "03/09-07/09",
-   "div": "2026-09-08",
-   "n": "2000",
    "visto": "2026-09-08"
   },
   {
