@@ -792,16 +792,6 @@
    "visto": "2026-09-01"
   },
   {
-   "proto": "AC088162026",
-   "escopo": "AC",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-01/09",
-   "div": "2026-09-03",
-   "n": "1030",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "BR032462026",
    "escopo": "ESTADUAL[AC]",
    "inst": "VERITA",
@@ -842,16 +832,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "BR037752026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "EXATUS CONSULTORIA E PESQUIS",
-   "cargo": "Presidente",
-   "campo": "31/08-03/09",
-   "div": "2026-09-03",
-   "n": "1500",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "GO072252026",
    "escopo": "GO",
    "inst": "DATA RD",
@@ -879,16 +859,6 @@
    "campo": "29/08-30/08",
    "div": "2026-09-03",
    "n": "1000",
-   "visto": "2026-09-03"
-  },
-  {
-   "proto": "RN039242026",
-   "escopo": "RN",
-   "inst": "EXATUS CONSULTORIA E PESQUIS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "31/08-03/09",
-   "div": "2026-09-03",
-   "n": "1500",
    "visto": "2026-09-03"
   },
   {
@@ -1092,16 +1062,6 @@
    "visto": "2026-09-06"
   },
   {
-   "proto": "BR001402026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO DATASENSUS",
-   "cargo": "Presidente",
-   "campo": "02/09-04/09",
-   "div": "2026-09-06",
-   "n": "5000",
-   "visto": "2026-09-06"
-  },
-  {
    "proto": "RO003622026",
    "escopo": "RO",
    "inst": "INSTITUTO AMAZONIA DE PESQUI",
@@ -1259,16 +1219,6 @@
    "campo": "03/09-06/09",
    "div": "2026-09-07",
    "n": "1123",
-   "visto": "2026-09-07"
-  },
-  {
-   "proto": "TO088262026",
-   "escopo": "TO",
-   "inst": "VR SKALA",
-   "cargo": "Governador, Senador",
-   "campo": "01/09-06/09",
-   "div": "2026-09-07",
-   "n": "1600",
    "visto": "2026-09-07"
   }
  ],
