@@ -783,16 +783,6 @@
  "ultima_rodada": "2026-09-08T05:49:10.223776-03:00",
  "pendentes": [
   {
-   "proto": "MG003662026",
-   "escopo": "MG",
-   "inst": "SECTRAL NEGOCIOS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "25/08-29/08",
-   "div": "2026-08-31",
-   "n": "1100",
-   "visto": "2026-08-31"
-  },
-  {
    "proto": "BR015162026",
    "escopo": "ESTADUAL[RO]",
    "inst": "PERFIL PESQUISAS",
@@ -880,16 +870,6 @@
    "campo": "29/08-01/09",
    "div": "2026-09-03",
    "n": "1525",
-   "visto": "2026-09-03"
-  },
-  {
-   "proto": "MG039462026",
-   "escopo": "MG",
-   "inst": "F5 ATUALIZA DADOS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "29/08-30/08",
-   "div": "2026-09-03",
-   "n": "1000",
    "visto": "2026-09-03"
   },
   {
@@ -1057,16 +1037,6 @@
    "escopo": "ESTADUAL[MG]",
    "inst": "ATLASINTEL",
    "cargo": "Presidente",
-   "campo": "30/08-04/09",
-   "div": "2026-09-05",
-   "n": "1800",
-   "visto": "2026-09-05"
-  },
-  {
-   "proto": "MG015792026",
-   "escopo": "MG",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
    "campo": "30/08-04/09",
    "div": "2026-09-05",
    "n": "1800",
@@ -1263,36 +1233,6 @@
    "visto": "2026-09-08"
   },
   {
-   "proto": "AP040002026",
-   "escopo": "AP",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "03/09-07/09",
-   "div": "2026-09-08",
-   "n": "1600",
-   "visto": "2026-09-08"
-  },
-  {
-   "proto": "AP020172026",
-   "escopo": "AP",
-   "inst": "CP3",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "29/08-30/08",
-   "div": "2026-09-08",
-   "n": "166",
-   "visto": "2026-09-08"
-  },
-  {
-   "proto": "CE032932026",
-   "escopo": "CE",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "03/09-07/09",
-   "div": "2026-09-08",
-   "n": "1600",
-   "visto": "2026-09-08"
-  },
-  {
    "proto": "BR044852026",
    "escopo": "ESTADUAL[AP]",
    "inst": "REAL TIME BIG DATA",
@@ -1463,26 +1403,6 @@
    "visto": "2026-09-08"
   },
   {
-   "proto": "MG009982026",
-   "escopo": "MG",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "03/09-07/09",
-   "div": "2026-09-08",
-   "n": "2000",
-   "visto": "2026-09-08"
-  },
-  {
-   "proto": "BR067902026",
-   "escopo": "NACIONAL?",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "04/09-07/09",
-   "div": "2026-09-08",
-   "n": "2000",
-   "visto": "2026-09-08"
-  },
-  {
    "proto": "BR002512026",
    "escopo": "NACIONAL?",
    "inst": "GRUPO GERP GERP MERCADO GERP",
@@ -1490,16 +1410,6 @@
    "campo": "03/09-08/09",
    "div": "2026-09-08",
    "n": "2400",
-   "visto": "2026-09-08"
-  },
-  {
-   "proto": "PA002062026",
-   "escopo": "PA",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "03/09-07/09",
-   "div": "2026-09-08",
-   "n": "1600",
    "visto": "2026-09-08"
   },
   {
@@ -1530,16 +1440,6 @@
    "campo": "04/09-07/09",
    "div": "2026-09-08",
    "n": "1302",
-   "visto": "2026-09-08"
-  },
-  {
-   "proto": "RJ016712026",
-   "escopo": "RJ",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "05/09-07/09",
-   "div": "2026-09-08",
-   "n": "1600",
    "visto": "2026-09-08"
   },
   {
