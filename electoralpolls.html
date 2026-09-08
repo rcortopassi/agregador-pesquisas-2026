@@ -1253,7 +1253,7 @@
   var HIST1T={
     '2010':{par:'Dilma x Serra',urna:{m:14.30,t:79.52},nota:'Sem incumbente na disputa. Campo pouco consolidado e muito volátil; a virada de agosto veio com o horário eleitoral.',mes:{1:{m:-7.7,t:75.9,d:80.3,n:2,p:2},2:{m:-9.4,t:75.6,d:80.0,n:2,p:2},3:{m:-6.1,t:79.3,d:82.0,n:3,p:3},4:{m:-8.6,t:78.2,d:83.3,n:3,p:3},5:{m:3.2,t:89.6,d:80.0,n:3,p:3},6:{m:3.0,t:89.5,d:85.5,n:2,p:4},7:{m:2.5,t:89.6,d:81.5,n:2,p:4},8:{m:22.4,t:90.2,d:83.6,n:4,p:9},9:{m:25.7,t:85.9,d:88.0,n:4,p:42}}},
     '2014':{par:'Dilma x Aécio',urna:{m:8.04,t:75.14},nota:'Dilma incumbente. Campo em choque: Eduardo Campos morre em 13/08 e a Marina entra, segurando voto anti-Dilma que na urna foi para o Aécio.',mes:{2:{m:37.0,t:83.7,d:72.0,n:2,p:2},4:{m:41.4,t:96.2,d:58.0,n:3,p:3},5:{m:29.3,t:92.9,d:63.0,n:2,p:2},6:{m:28.1,t:93.8,d:64.0,n:3,p:4},7:{m:24.6,t:89.2,d:65.0,n:2,p:3},8:{m:22.4,t:62.0,d:84.0,n:3,p:5},9:{m:23.6,t:69.0,d:86.0,n:4,p:18},10:{m:18.5,t:72.9,d:88.2,n:4,p:6}}},
-    '2018':{par:'Haddad x Bolsonaro',urna:{m:-16.75,t:75.31},nota:'Pior análogo possível para agosto: o candidato do PT era o Lula até 11/09, então o Haddad de agosto é um nome que o eleitor mal conhecia.',mes:{3:{m:-29.5,t:37.2,d:60.0,n:1,p:3},4:{m:-24.8,t:34.2,d:62.7,n:2,p:5},5:{m:-29.6,t:39.7,d:62.8,n:3,p:7},6:{m:-25.9,t:34.3,d:62.5,n:4,p:12},7:{m:-28.1,t:37.3,d:63.5,n:4,p:11},8:{m:-24.7,t:39.7,d:72.0,n:5,p:14},9:{m:-7.0,t:62.4,d:83.0,n:11,p:32},10:{m:-15.4,t:66.5,d:86.1,n:9,p:12}}},
+    '2018':{par:'Haddad x Bolsonaro',urna:{m:-16.75,t:75.31},nota:'Pior análogo possível: o candidato do PT era o Lula até 11/09, então o Haddad medido antes dessa data é um nome que o eleitor mal conhecia.',mes:{3:{m:-29.5,t:37.2,d:60.0,n:1,p:3},4:{m:-24.8,t:34.2,d:62.7,n:2,p:5},5:{m:-29.6,t:39.7,d:62.8,n:3,p:7},6:{m:-25.9,t:34.3,d:62.5,n:4,p:12},7:{m:-28.1,t:37.3,d:63.5,n:4,p:11},8:{m:-24.7,t:39.7,d:72.0,n:5,p:14},9:{m:-7.0,t:62.4,d:83.0,n:11,p:32},10:{m:-15.4,t:66.5,d:86.1,n:9,p:12}}},
     '2022':{par:'Lula x Bolsonaro',urna:{m:5.23,t:91.63},nota:'Bolsonaro incumbente, dois polos definidos havia mais de um ano, campo muito consolidado e estável. O erro veio quase todo de subestimar a direita.',mes:{4:{m:9.6,t:84.5,d:87.0,n:9,p:33},5:{m:9.8,t:85.7,d:89.0,n:11,p:37},6:{m:11.2,t:86.1,d:89.0,n:8,p:13},7:{m:10.8,t:86.3,d:89.0,n:8,p:16},8:{m:8.3,t:86.0,d:90.7,n:15,p:25},9:{m:9.2,t:87.1,d:93.4,n:15,p:50},10:{m:14.4,t:86.7,d:94.0,n:2,p:2}}}
   };;
   var CICLOS1T=['2010','2014','2018','2022'];
@@ -1499,6 +1499,21 @@
     var P0=projeta26(); if(!P0) return '';
     var frente=P0.m>=0?'Lula':'Flávio', pf=P0.m>=0?P0.p:1-P0.p;
     var lo=P0.m-1.645*P0.sd, hi=P0.m+1.645*P0.sd;
+    // DE QUANTOS CICLOS A CORREÇÃO VEM, E PARA QUE LADO (07/09/2026). Esta frase já foi escrita à
+    // mão ("nas quatro eleições ... em três das quatro subestimou a direita") e envelheceu sozinha:
+    // valia para a âncora de AGOSTO, em que a conta dá 3 de 4, e passou a mentir quando a âncora
+    // virou SETEMBRO, em que dá 4 de 4. Agora sai da própria projeção, como o resto do bloco.
+    var ncic=P0.cen.length, ndir=0;
+    for(var ic=0; ic<ncic; ic++) if(P0.cen[ic].dm<0) ndir++;
+    var nesq=ncic-ndir;
+    var EXT=['nenhuma','uma','duas','três','quatro','cinco','seis','sete','oito'];
+    function ext(n){ return EXT[n]!==undefined?EXT[n]:String(n); }
+    var lado = ndir>nesq ? (ndir===ncic ? 'em <b>todas as '+ext(ncic)+'</b> o campo subestimou a direita'
+                                         : 'em '+ext(ndir)+' das '+ext(ncic)+' o campo <b>subestimou a direita</b>')
+             : (nesq>ndir ? 'em '+ext(nesq)+' das '+ext(ncic)+' o campo <b>subestimou a esquerda</b>'
+                          : 'o campo errou para os dois lados, '+ext(ndir)+' das '+ext(ncic)+' subestimando a <b>direita</b>');
+    var efeito = ((P0.m>=0)!==(P0.base.m>=0)) ? 'ela inverte a liderança'
+               : (Math.abs(P0.m)<Math.abs(P0.base.m) ? 'ela aperta a disputa' : 'ela alarga a diferença');
     var h='';
     h+='<div style="padding:14px 14px 2px; font-size:13px; font-weight:600; color:'+P.ink+';">Projeção para 4 de outubro, 1º turno em votos válidos</div>';
     h+='<div style="display:flex; gap:8px; padding:8px 12px 4px; flex-wrap:wrap;">'+
@@ -1510,8 +1525,8 @@
        'O agregado de <b>'+P0.anc+'</b> está em Lula '+fmt(P0.base.l)+' x Flávio '+fmt(P0.base.f)+' em votos válidos, margem de '+
        (P0.base.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(P0.base.m))+'. A projeção fecha essa margem para <b>'+frente+' +'+fmt(Math.abs(P0.m))+'</b>, '+
        'com faixa de 90% de '+fmt(lo)+' a '+fmt(hi)+' (positivo é Lula à frente). '+
-       'A correção não é palpite: é o que o campo de pesquisas errou neste mesmo ponto do calendário nas quatro eleições que reconstruímos, '+
-       'e ela aperta a disputa porque em três das quatro o campo <b>subestimou a direita</b>.'+
+       'A correção não é palpite: é o que o campo de pesquisas errou neste mesmo ponto do calendário nas '+ext(ncic)+' eleições que reconstruímos, '+
+       'e '+efeito+' porque '+lado+'.'+
        '</div>';
     h+='<div style="padding:2px 14px 8px; font-size:12.5px; font-weight:600; color:'+P.ink+';">Os quatro cenários, e por que 2022 pesa mais</div>';
     h+='<table style="width:100%; border-collapse:collapse; font-size:12px;">'+
