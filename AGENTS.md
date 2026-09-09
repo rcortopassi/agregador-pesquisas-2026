@@ -197,6 +197,15 @@ intensidade de cor ao mapa.
 
 **DGM/DSM + DG/DS:** os dois objetos, sempre.
 
+**FORMATO DA LINHA DE `DGM`/`DSM`, e o 4º elemento importa (08/09/2026).** A linha é
+`[instituto, [[nome, valor], ...], nota, suspensa]`. O 3º elemento é NOTA de texto livre e sai
+esmaecida embaixo dos nomes. O 4º elemento só existe quando a Justiça Eleitoral barrou a
+divulgação: aí vale `1`, a nota passa a ser lida como motivo, a rodada ganha o sinal de alerta e
+os números aparecem RISCADOS, para não serem lidos como dado válido. Até 08/09/2026 a suspensão
+era o próprio 3º elemento, então TODA rodada com nota comum aparecia riscada, e 106 rodadas
+legítimas estavam assim. Nunca ponha `1` no 4º elemento por causa de reputação do instituto ou
+de cargo que não é o daquele objeto: risco é para decisão judicial contra AQUELA rodada.
+
 **NOME DO CANDIDATO IDÊNTICO DENTRO DO MESMO MÊS.** `stateBanner` agrega por nome. Se o mesmo
 candidato entra como 'Moro' numa pesquisa e 'Sergio Moro' noutra, viram duas pessoas e o banner
 anuncia empate numa corrida de 20 pontos (aconteceu no PR até 02/08/2026). Antes de inserir,
