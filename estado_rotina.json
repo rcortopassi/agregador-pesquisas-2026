@@ -1244,16 +1244,6 @@
    "visto": "2026-09-08"
   },
   {
-   "proto": "BR002512026",
-   "escopo": "NACIONAL?",
-   "inst": "GRUPO GERP GERP MERCADO GERP",
-   "cargo": "Presidente",
-   "campo": "03/09-08/09",
-   "div": "2026-09-08",
-   "n": "2400",
-   "visto": "2026-09-08"
-  },
-  {
    "proto": "PB080282026",
    "escopo": "PB",
    "inst": "INSTITUTO SETA DE PESQUISA",
@@ -1324,16 +1314,6 @@
    "visto": "2026-09-09"
   },
   {
-   "proto": "BA015682026",
-   "escopo": "BA",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-08/09",
-   "div": "2026-09-09",
-   "n": "1600",
-   "visto": "2026-09-09"
-  },
-  {
    "proto": "BA030162026",
    "escopo": "BA",
    "inst": "VERITA",
@@ -1351,16 +1331,6 @@
    "campo": "04/09-09/09",
    "div": "2026-09-09",
    "n": "1525",
-   "visto": "2026-09-09"
-  },
-  {
-   "proto": "ES019672026",
-   "escopo": "ES",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-08/09",
-   "div": "2026-09-09",
-   "n": "1600",
    "visto": "2026-09-09"
   },
   {
@@ -1544,16 +1514,6 @@
    "visto": "2026-09-09"
   },
   {
-   "proto": "MT015052026",
-   "escopo": "MT",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "06/09-08/09",
-   "div": "2026-09-09",
-   "n": "1352",
-   "visto": "2026-09-09"
-  },
-  {
    "proto": "BR054202026",
    "escopo": "NACIONAL?",
    "inst": "PALVER",
@@ -1561,16 +1521,6 @@
    "campo": "04/09-08/09",
    "div": "2026-09-09",
    "n": "5000",
-   "visto": "2026-09-09"
-  },
-  {
-   "proto": "BR079352026",
-   "escopo": "NACIONAL?",
-   "inst": "BOAS IDEIAS, ESTRATEGIA E IN",
-   "cargo": "Presidente",
-   "campo": "04/09-07/09",
-   "div": "2026-09-09",
-   "n": "1500",
    "visto": "2026-09-09"
   },
   {
