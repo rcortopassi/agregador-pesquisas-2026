@@ -783,36 +783,6 @@
  "ultima_rodada": "2026-09-08T21:06:54.463451-03:00",
  "pendentes": [
   {
-   "proto": "BR015162026",
-   "escopo": "ESTADUAL[RO]",
-   "inst": "PERFIL PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "25/08-29/08",
-   "div": "2026-09-01",
-   "n": "1480",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "MA064902026",
-   "escopo": "MA",
-   "inst": "INSTITUTO AFERIR",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "29/08-31/08",
-   "div": "2026-09-01",
-   "n": "1200",
-   "visto": "2026-09-01"
-  },
-  {
-   "proto": "RO067782026",
-   "escopo": "RO",
-   "inst": "PERFIL PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "25/08-29/08",
-   "div": "2026-09-01",
-   "n": "1480",
-   "visto": "2026-09-01"
-  },
-  {
    "proto": "BR032462026",
    "escopo": "ESTADUAL[AC]",
    "inst": "VERITA",
@@ -1093,16 +1063,6 @@
    "visto": "2026-09-06"
   },
   {
-   "proto": "BR027142026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "ANOVA INSTITUTO DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "03/09-05/09",
-   "div": "2026-09-07",
-   "n": "2000",
-   "visto": "2026-09-07"
-  },
-  {
    "proto": "GO052072026",
    "escopo": "GO",
    "inst": "DIRECT PESQUISAS",
@@ -1160,26 +1120,6 @@
    "campo": "01/09-05/09",
    "div": "2026-09-07",
    "n": "2000",
-   "visto": "2026-09-07"
-  },
-  {
-   "proto": "PB014712026",
-   "escopo": "PB",
-   "inst": "ANOVA INSTITUTO DE PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "03/09-05/09",
-   "div": "2026-09-07",
-   "n": "2000",
-   "visto": "2026-09-07"
-  },
-  {
-   "proto": "PR010472026",
-   "escopo": "PR",
-   "inst": "INDICE INTELIGENCIA",
-   "cargo": "Governador, Senador",
-   "campo": "02/09-04/09",
-   "div": "2026-09-07",
-   "n": "1200",
    "visto": "2026-09-07"
   },
   {
