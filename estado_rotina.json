@@ -874,16 +874,6 @@
    "visto": "2026-09-03"
   },
   {
-   "proto": "TO044652026",
-   "escopo": "TO",
-   "inst": "EXATA.GO",
-   "cargo": "Governador, Senador",
-   "campo": "29/08-02/09",
-   "div": "2026-09-03",
-   "n": "2000",
-   "visto": "2026-09-03"
-  },
-  {
    "proto": "TO094452026",
    "escopo": "TO",
    "inst": "PORTAL E INSTITUTO STYLO",
@@ -1144,26 +1134,6 @@
    "visto": "2026-09-07"
   },
   {
-   "proto": "RO026202026",
-   "escopo": "RO",
-   "inst": "INSTITUTO PHOENIX & ASSOCIAD",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "03/09-06/09",
-   "div": "2026-09-07",
-   "n": "1123",
-   "visto": "2026-09-07"
-  },
-  {
-   "proto": "AL017512026",
-   "escopo": "AL",
-   "inst": "INSTITUTO RANKING PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "03/09-05/09",
-   "div": "2026-09-08",
-   "n": "1200",
-   "visto": "2026-09-08"
-  },
-  {
    "proto": "BR003472026",
    "escopo": "ESTADUAL[PB]",
    "inst": "INSTITUTO SETA DE PESQUISA",
@@ -1181,16 +1151,6 @@
    "campo": "03/09-08/09",
    "div": "2026-09-08",
    "n": "1200",
-   "visto": "2026-09-08"
-  },
-  {
-   "proto": "GO062942026",
-   "escopo": "GO",
-   "inst": "GOIAS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "03/09-04/09",
-   "div": "2026-09-08",
-   "n": "1250",
    "visto": "2026-09-08"
   },
   {
@@ -1244,16 +1204,6 @@
    "visto": "2026-09-08"
   },
   {
-   "proto": "TO091462026",
-   "escopo": "TO",
-   "inst": "PORTAL E INSTITUTO STYLO",
-   "cargo": "Governador, Senador",
-   "campo": "03/09-05/09",
-   "div": "2026-09-08",
-   "n": "1200",
-   "visto": "2026-09-08"
-  },
-  {
    "proto": "AC058492026",
    "escopo": "AC",
    "inst": "VERITA",
@@ -1271,16 +1221,6 @@
    "campo": "04/09-09/09",
    "div": "2026-09-09",
    "n": "1220",
-   "visto": "2026-09-09"
-  },
-  {
-   "proto": "AL082272026",
-   "escopo": "AL",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-08/09",
-   "div": "2026-09-09",
-   "n": "1600",
    "visto": "2026-09-09"
   },
   {
@@ -1361,26 +1301,6 @@
    "campo": "04/09-09/09",
    "div": "2026-09-09",
    "n": "1220",
-   "visto": "2026-09-09"
-  },
-  {
-   "proto": "BR015552026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "04/09-08/09",
-   "div": "2026-09-09",
-   "n": "1600",
-   "visto": "2026-09-09"
-  },
-  {
-   "proto": "BR072752026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "04/09-08/09",
-   "div": "2026-09-09",
-   "n": "1600",
    "visto": "2026-09-09"
   },
   {
