@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 09/09/2026 16:14. Mercados: Polymarket 52,5%/46,0%, Kalshi 55,0%/45,0%.
+Rodada de 09/09/2026 21:07. Mercados: Polymarket 52,5%/46,4%, Kalshi 54,0%/46,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -60,9 +60,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-09] TSE CE, VERITA (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-09, N=1525, registro CE093432026
 - [aguardando desde 2026-09-09] TSE ESTADUAL[AC], VERITA (Presidente), campo 04/09-09/09, divulgação 2026-09-09, N=1030, registro BR052872026
 - [aguardando desde 2026-09-09] TSE ESTADUAL[AC], VERITA (Presidente), campo 04/09-09/09, divulgação 2026-09-09, N=1030, registro BR095802026
-- [aguardando desde 2026-09-09] TSE ESTADUAL[AL], REAL TIME BIG DATA (Presidente), campo 04/09-08/09, divulgação 2026-09-09, N=1600, registro BR065662026
-- [aguardando desde 2026-09-09] TSE ESTADUAL[AL], REAL TIME BIG DATA (Presidente), campo 04/09-08/09, divulgação 2026-09-09, N=1600, registro BR079322026
-- [aguardando desde 2026-09-09] TSE ESTADUAL[AL], REAL TIME BIG DATA (Presidente), campo 04/09-08/09, divulgação 2026-09-09, N=1600, registro BR082362026
 - [aguardando desde 2026-09-09] TSE ESTADUAL[AL], VERITA (Presidente), campo 04/09-09/09, divulgação 2026-09-09, N=1220, registro BR014622026
 - [aguardando desde 2026-09-09] TSE ESTADUAL[AL], VERITA (Presidente), campo 04/09-09/09, divulgação 2026-09-09, N=1220, registro BR097532026
 - [aguardando desde 2026-09-09] TSE ESTADUAL[AL], VERITA (Presidente), campo 04/09-09/09, divulgação 2026-09-09, N=1220, registro BR031002026
