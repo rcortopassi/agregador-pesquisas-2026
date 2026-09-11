@@ -1909,16 +1909,6 @@
    "visto": "2026-09-11"
   },
   {
-   "proto": "GO030962026",
-   "escopo": "GO",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "08/09-10/09",
-   "div": "2026-09-11",
-   "n": "1248",
-   "visto": "2026-09-11"
-  },
-  {
    "proto": "MA094512026",
    "escopo": "MA",
    "inst": "IPSENSUS PESQUISAS",
@@ -2146,16 +2136,6 @@
    "campo": "08/09-11/09",
    "div": "2026-09-11",
    "n": "1610",
-   "visto": "2026-09-11"
-  },
-  {
-   "proto": "SP080902026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "07/09-10/09",
-   "div": "2026-09-11",
-   "n": "1680",
    "visto": "2026-09-11"
   }
  ],
