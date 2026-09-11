@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 10/09/2026 22:30</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 10/09/2026 23:10</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -650,8 +650,8 @@
   };
   var NM2UF={'Acre':'AC','Rondônia':'RO'};
   function ufOf(d){ var u=(d.id||'').replace('BR.',''); return u||NM2UF[d.properties&&d.properties.name]||''; }
-  function presLead(uf){ if(cur.mapyear==='2018'){ var a=PRES2018[uf]; return a?(a.b>a.h?'F':'L'):''; } if(cur.mapyear==='2022'){ var b=PRES2022[uf]; return b?(b.l>b.b?'L':'F'):''; } return (PRES26[uf]&&PRES26[uf].lead)||''; }
-  function pmargin(uf,yr){ if(yr==='2018'){ var a=PRES2018[uf]; return a?Math.abs(a.b-a.h):0; } if(yr==='2022'){ var b=PRES2022[uf]; return b?Math.abs(b.l-b.b):0; } var p=PRES26[uf]; if(!p) return 0; if(p.t2l!=null&&p.t2f!=null) return Math.abs(p.t2l-p.t2f); if(p.t2){ var m=p.t2.match(/(\d+(?:[,.]\d+)?)\s*pontos/); if(m) return parseFloat(m[1].replace(',','.')); } return 0; }
+  function presLead(uf){ if(cur.mapyear==='2026'&&RES26.ativo) return resLead(uf); if(cur.mapyear==='2018'){ var a=PRES2018[uf]; return a?(a.b>a.h?'F':'L'):''; } if(cur.mapyear==='2022'){ var b=PRES2022[uf]; return b?(b.l>b.b?'L':'F'):''; } return (PRES26[uf]&&PRES26[uf].lead)||''; }
+  function pmargin(uf,yr){ if(yr==='2026'&&RES26.ativo) return resMargem(uf); if(yr==='2018'){ var a=PRES2018[uf]; return a?Math.abs(a.b-a.h):0; } if(yr==='2022'){ var b=PRES2022[uf]; return b?Math.abs(b.l-b.b):0; } var p=PRES26[uf]; if(!p) return 0; if(p.t2l!=null&&p.t2f!=null) return Math.abs(p.t2l-p.t2f); if(p.t2){ var m=p.t2.match(/(\d+(?:[,.]\d+)?)\s*pontos/); if(m) return parseFloat(m[1].replace(',','.')); } return 0; }
   // Mistura a cor do candidato com a cor de FUNDO do tema (branco no claro, cinza-escuro no escuro).
   // t=1 => cor cheia; t pequeno => quase a cor do fundo. Assim a intensidade funciona nos dois temas.
   function mixw(hex,t){ var v=parseInt(hex.slice(1),16), r=(v>>16)&255, g=(v>>8)&255, b=v&255;
@@ -669,6 +669,105 @@
     svg.selectAll('text').data(feats).join('text').attr('x',function(d){return path.centroid(d)[0];}).attr('y',function(d){return path.centroid(d)[1]+3;}).attr('text-anchor','middle').attr('font-size','10').attr('font-weight','600').attr('fill',function(d){var u=ufOf(d),l=presLead(u);if(!l)return ''+P.mut+'';if((l==='L'||l==='F')&&pInt(u)<0.55)return P.txt;return '#fff';}).attr('pointer-events','none').text(function(d){return ufOf(d);});
   }
   window.setMapYear=function(y){ cur.mapyear=y; render(); };
+
+  // ===================== APURAÇÃO AO VIVO DO TSE (10/09/2026) =====================
+  // No dia da eleição a aba Mapa, ano 2026, deixa de mostrar pesquisas e passa a mostrar a
+  // apuração oficial, lida DIRETO do navegador nos JSONs de resultados.tse.jus.br (o TSE serve com
+  // Access-Control-Allow-Origin: *, conferido em 10/09/2026 nos arquivos de 2022). Sem servidor no meio.
+  // O código da eleição de 2026 ainda não existia na configuração do TSE em 10/09; por isso ele é
+  // DESCOBERTO no dia: lê ele-c.json, pega as eleições com a data do turno e testa qual delas tem
+  // LULA no cargo 1 (presidente). Se a descoberta falhar, RES26_COD é o override manual.
+  // Formato dos JSONs (2022): cand[{nm, n, vap, pvap, e, st}], pst (% seções totalizadas), hg/dg
+  // (hora e data de geração), vv, vb, pvb, vn, pa (abstenção). Arquivos: br e um por UF (minúsculas).
+  // Teste sem esperar 4/10: abrir o painel com ?simula=2022 carrega a apuração real de 2022 no lugar.
+  var RES26_COD=null;
+  var RES26={cod:null,ano:'2026',br:null,uf:{},ativo:false,erro:'',timer:null,busy:false,simula:null};
+  var RES_UFS=['AC','AL','AM','AP','BA','CE','DF','ES','GO','MA','MG','MS','MT','PA','PB','PE','PI','PR','RJ','RN','RO','RR','RS','SC','SE','SP','TO'];
+  (function(){ try{ var q=(location.search||'').match(/simula=(2022)/); if(q) RES26.simula={ano:'2022',cod:'544'}; }catch(_){ } })();
+  function resNum(v){ if(typeof v==='number') return v; return parseFloat(String(v==null?'':v).replace(/\./g,'').replace(',','.'))||0; }
+  function fmtV(n){ try{ return Number(n).toLocaleString('pt-BR'); }catch(_){ return String(n); } }
+  function resUrl(path){ var c=('000000'+RES26.cod).slice(-6);
+    return 'https://resultados.tse.jus.br/oficial/ele'+RES26.ano+'/'+RES26.cod+'/dados-simplificados/'+path+'/'+path+'-c0001-e'+c+'-r.json?_='+Date.now(); }
+  function resDia(){ if(RES26.simula) return true; return new Date()>=new Date(2026,9,4,8,0,0); }
+  function resDescobre(){
+    if(RES26.simula){ RES26.ano=RES26.simula.ano; RES26.cod=RES26.simula.cod; return Promise.resolve(RES26.cod); }
+    if(RES26_COD){ RES26.cod=String(RES26_COD); return Promise.resolve(RES26.cod); }
+    var alvo = new Date()>=new Date(2026,9,25) ? '25/10/2026' : '04/10/2026';
+    var salvo=null; try{ salvo=localStorage.getItem('res26cod_'+alvo); }catch(_){ }
+    if(salvo){ RES26.cod=salvo; return Promise.resolve(salvo); }
+    return fetch('https://resultados.tse.jus.br/oficial/comum/config/ele-c.json?_='+Date.now()).then(function(r){ return r.json(); }).then(function(j){
+      var cands=[]; (j.pl||[]).forEach(function(pl){ if(pl.dt===alvo) (pl.e||[]).forEach(function(e){ cands.push(String(e.cd)); }); });
+      return cands.reduce(function(prev,cd){ return prev.then(function(ok){ if(ok) return ok; RES26.cod=cd;
+        return fetch(resUrl('br')).then(function(r){ return r.ok?r.json():null; })
+          .then(function(b){ return (b&&(b.cand||[]).some(function(c){ return /LULA/.test(c.nm||''); }))?cd:null; })
+          .catch(function(){ return null; }); }); }, Promise.resolve(null));
+    }).then(function(cd){ RES26.cod=cd||null; if(cd){ try{ localStorage.setItem('res26cod_'+alvo,cd); }catch(_){ } } return cd; })
+      .catch(function(){ RES26.cod=null; return null; });
+  }
+  window.resPuxa=function(){ if(RES26.busy) return; RES26.busy=true;
+    var go=RES26.cod?Promise.resolve(RES26.cod):resDescobre();
+    go.then(function(cd){
+      if(!cd){ RES26.erro='a eleição de 2026 ainda não apareceu na configuração do TSE; tento de novo em um minuto.'; RES26.busy=false; resRender(); return; }
+      var ps=[fetch(resUrl('br')).then(function(r){ return r.json(); })].concat(RES_UFS.map(function(u){
+        return fetch(resUrl(u.toLowerCase())).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }); }));
+      return Promise.all(ps).then(function(arr){ RES26.br=arr[0]; RES_UFS.forEach(function(u,i){ if(arr[i+1]) RES26.uf[u]=arr[i+1]; });
+        RES26.ativo=!!(RES26.br&&resNum(RES26.br.pst)>0); RES26.erro=''; RES26.busy=false; resRender(); });
+    }).catch(function(e){ RES26.erro='falha ao ler o TSE ('+(e&&e.message||e)+'); tento de novo em um minuto.'; RES26.busy=false; resRender(); });
+  };
+  function resRender(){ if(cur.top==='mapa'&&cur.mapyear==='2026') render(); }
+  function resLiga(){ if(RES26.timer) return; resPuxa(); RES26.timer=setInterval(function(){ if(cur.top==='mapa'&&cur.mapyear==='2026') resPuxa(); },60000); }
+  function resCands(j){ return (j&&j.cand||[]).slice().sort(function(a,b){ return resNum(b.vap)-resNum(a.vap); }); }
+  function resLF(j){ var cs=resCands(j), L=null, F=null;
+    cs.forEach(function(c){ var n=(c.nm||'').toUpperCase(); if(!L&&/LULA/.test(n)) L=c; if(!F&&/FL[AÁ]VIO|BOLSONARO/.test(n)) F=c; });
+    return {L:L,F:F,cs:cs}; }
+  function resLead(uf){ var j=RES26.uf[uf]; if(!j||resNum(j.pst)<=0) return ''; var o=resLF(j); if(!o.L||!o.F) return '';
+    var l=resNum(o.L.pvap), f=resNum(o.F.pvap); if(Math.abs(l-f)<0.05) return 'E'; return l>f?'L':'F'; }
+  function resMargem(uf){ var j=RES26.uf[uf]; if(!j) return 0; var o=resLF(j); if(!o.L||!o.F) return 0; return Math.abs(resNum(o.L.pvap)-resNum(o.F.pvap)); }
+  function resNome(c){ var n=(c.nm||''); if(/^LULA$/.test(n)) return 'Lula'; if(/FL[AÁ]VIO/.test(n)) return 'Flávio Bolsonaro'; if(/JAIR BOLSONARO/.test(n)) return 'Bolsonaro';
+    return n.toLowerCase().replace(/(^|\s)(\S)/g, function(m,a,b){ return a+b.toUpperCase(); }).replace(/\bD([aeo]s?)\b/g, function(m,x){ return 'd'+x; }); }
+  // Barra Lula x Flávio em votos válidos + tabela de todos os candidatos. j = br ou uma UF.
+  function resTabela(j, compacto){
+    var o=resLF(j), L=o.L, F=o.F, lp=L?resNum(L.pvap):0, fp=F?resNum(F.pvap):0, resto=Math.max(0,100-lp-fp);
+    var lider=lp===fp?null:(lp>fp?[(L?resNome(L):'Lula'),P.red,lp-fp]:[(F?resNome(F):'Flávio'),P.blue,fp-lp]);
+    var h='<div style="display:flex; justify-content:space-between; align-items:baseline; font-size:'+(compacto?'12.5px':'13px')+'; margin-bottom:4px;">'+
+      '<span style="color:'+P.red+'; font-weight:700;">'+(L?resNome(L):'Lula')+' '+fmt(lp)+'%</span>'+
+      '<span style="color:'+P.blue+'; font-weight:700;">'+(F?resNome(F):'Flávio')+' '+fmt(fp)+'%</span></div>'+
+      '<div style="position:relative;"><div style="display:flex; height:20px; border-radius:3px; overflow:hidden; border:1px solid '+P.bord+';">'+
+        '<div style="width:'+lp+'%; background:'+P.red+';"></div><div style="width:'+resto+'%; background:'+P.bsoft+';"></div><div style="width:'+fp+'%; background:'+P.blue+';"></div></div>'+
+        '<div style="position:absolute; left:50%; top:-3px; height:26px; width:2px; margin-left:-1px; background:'+P.txt+'; opacity:0.8;"></div></div>'+
+      '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">Votos válidos. A linha marca os 50%: quem passa dela vence sem 2º turno. O cinza são os demais candidatos.'+
+        (lider?' <b style="color:'+lider[1]+';">'+lider[0]+' à frente por '+fmt(lider[2])+' pontos.</b>':'')+'</div>';
+    h+='<table style="width:100%; border-collapse:collapse; font-size:'+(compacto?'11.5px':'12px')+'; margin-top:8px;">'+
+      '<tr style="color:'+P.mut+'; font-size:10px; text-transform:uppercase; letter-spacing:0.04em;"><td style="padding:2px 6px 3px 0;">Candidato</td><td style="text-align:right; padding-right:10px;">Votos</td><td style="text-align:right; padding-right:8px;">% válidos</td><td style="width:'+(compacto?'26':'34')+'%;"></td></tr>';
+    o.cs.forEach(function(c){ var pv=resNum(c.pvap), cor=(c===L?P.red:(c===F?P.blue:P.txt2));
+      h+='<tr style="border-top:1px solid '+P.bsoft+';"><td style="padding:3px 6px 3px 0; color:'+cor+'; font-weight:'+((c===L||c===F)?'700':'400')+'; white-space:nowrap;">'+resNome(c)+' <span style="color:'+P.mut+'; font-weight:400; font-size:10px;">'+(c.n||'')+'</span></td>'+
+        '<td style="text-align:right; padding-right:10px; color:'+P.txt+'; white-space:nowrap;">'+fmtV(resNum(c.vap))+'</td>'+
+        '<td style="text-align:right; padding-right:8px; color:'+P.txt+'; font-weight:600;">'+fmt(pv)+'</td>'+
+        '<td><div style="height:8px; width:'+Math.min(100,pv)+'%; background:'+cor+'; border-radius:2px; opacity:0.85;"></div></td></tr>'; });
+    h+='</table>';
+    h+='<div style="font-size:10.5px; color:'+P.mut+'; margin-top:6px; line-height:1.5;">Válidos '+fmtV(resNum(j.vv))+' &middot; brancos '+fmtV(resNum(j.vb))+' ('+fmt(resNum(j.pvb))+'%) &middot; nulos '+fmtV(resNum(j.vn))+' &middot; abstenção '+fmt(resNum(j.pa))+'%</div>';
+    return h; }
+  function resBarra(){ var b=RES26.br; if(!b) return '';
+    var pst=resNum(b.pst);
+    return '<div style="padding:9px 14px 6px;">'+
+      '<div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; font-size:11px; color:'+P.mut+'; margin-bottom:6px;">'+
+        '<span><b style="color:'+P.goldtxt+';">AO VIVO</b> &middot; apuração oficial do TSE, '+(RES26.simula?'simulação com o 1º turno de '+RES26.ano:(b.t==='2'||b.t===2?'2º turno de 2026':'1º turno de 2026'))+'</span>'+
+        '<span><b style="color:'+P.txt+';">'+fmt(pst)+'%</b> das seções totalizadas &middot; '+(b.hg||'')+' de '+(b.dg||'')+' &middot; <span onclick="resPuxa()" style="cursor:pointer; text-decoration:underline;">atualizar</span></span></div>'+
+      resTabela(b,false)+'</div>'; }
+  function resBloco(){
+    if(RES26.ativo) return resBarra();
+    if(!resDia()) return '<div style="padding:6px 14px 2px; font-size:11px; color:'+P.mut+';">No dia 4 de outubro, a partir da abertura das urnas, este mapa passa a mostrar a apuração oficial do TSE, atualizada a cada minuto, no lugar das pesquisas.</div>';
+    return '<div style="padding:8px 14px 4px; font-size:12px; color:'+P.txt2+';"><b style="color:'+P.goldtxt+';">Apuração ao vivo</b> &middot; '+
+      (RES26.erro?RES26.erro:(RES26.cod?'ligado ao TSE (eleição '+RES26.cod+'), aguardando as primeiras seções totalizadas, o que costuma começar às 17h.':'procurando a eleição na configuração do TSE...'))+
+      ' <span onclick="resPuxa()" style="cursor:pointer; text-decoration:underline; color:'+P.mut+';">atualizar agora</span></div>'; }
+  function resEstadoHTML(uf){ var j=RES26.uf[uf]; if(!j) return '<p style="font-size:12.5px; color:'+P.txt2+';">O TSE ainda não publicou o arquivo deste estado.</p>';
+    var pst=resNum(j.pst);
+    var h=field('Apuração','<span style="color:'+P.txt+'; font-weight:600;">'+fmt(pst)+'% das seções totalizadas</span> <span style="color:'+P.txt2+';">&middot; '+(j.hg||'')+'</span>');
+    if(pst<=0) return h+'<p style="font-size:12.5px; color:'+P.txt2+';">Nenhuma seção deste estado foi totalizada ainda.</p>';
+    h+=resTabela(j,true);
+    h+='<div style="font-size:11px; color:'+P.mut+'; margin:8px 0;">Números parciais: mudam até 100% das seções. Fonte primária: TSE, atualizado a cada minuto.</div>';
+    h+='<a href="https://resultados.tse.jus.br/oficial/app/index.html#/eleicao;e=e'+RES26.cod+';uf='+uf.toLowerCase()+'/resultados" target="_blank" style="display:inline-block; font-size:12.5px; color:'+P.link+'; text-decoration:underline;">Ver no site do TSE &#8599;</a>';
+    return h; }
   // Lista de fontes do mapa presidencial: um estado por linha, com INSTITUTO e DATA DE CAMPO.
   // Pedida pelo usuário em 27/07/2026, porque o mapa junta pesquisas de datas muito diferentes
   // (de junho a julho) e isso não aparecia em lugar nenhum sem clicar estado por estado.
@@ -705,7 +804,8 @@
   window.openPresState=function(uf){ if(!uf) return; var nm=UFN[uf]||uf; var yr=cur.mapyear;
     var h='<button onclick="closeInst()" style="position:absolute; top:12px; right:14px; border:none; background:none; font-size:20px; color:'+P.mut+'; cursor:pointer;">&times;</button>';
     h+='<div style="font-size:17px; font-weight:600; margin:2px 0 14px;">'+nm+' &middot; Presidencial '+yr+'</div>';
-    if(yr==='2026'){ var p=PRES26[uf];
+    if(yr==='2026'&&RES26.ativo){ h+=resEstadoHTML(uf); }
+    else if(yr==='2026'){ var p=PRES26[uf];
       if(p){ var ldm={L:['Lula',''+P.red+''],F:['Flávio',''+P.blue+''],CA:['Caiado','#2e8b57'],RE:['Renan Santos','#7a3fb0'],ZE:['Zema','#e8730c'],E:['empate técnico','#c9a227']}, lm=ldm[p.lead]||['—',''+P.txt2+''];
         // O líder vem do 1º turno SÓ onde o instituto publicou 1º turno (hoje SP, GO, MG e SC). Nos demais ele é
         // derivado do cenário de 2º turno — o rótulo tem que dizer isso, senão afirma um líder de 1º turno
@@ -1958,12 +2058,19 @@
     document.getElementById('heexpl').style.display=(cur.top==='he')?'block':'none';
     if(mapa){
       var yr=cur.mapyear;
-      var yrs=[['2018','2018'],['2022','2022'],['2026','2026 (pesquisas)']];
+      var yrs=[['2018','2018'],['2022','2022'],['2026',(RES26.ativo?'2026 (apuração)':'2026 (pesquisas)')]];
       var yt='<div style="display:flex; gap:6px; padding:8px 12px 2px;">'+yrs.map(function(o){ var on=o[0]===yr; return '<button onclick="setMapYear(\''+o[0]+'\')" style="flex:1; padding:7px 4px; font-size:13px; font-weight:600; cursor:pointer; border:1px solid '+P.bord+'; border-radius:4px; background:'+(on?P.purple:P.surf)+'; color:'+(on?'#fff':P.ink)+';">'+o[1]+'</button>'; }).join('')+'</div>';
       var leftNm=yr==='2018'?'Haddad':'Lula', rightNm=yr==='2026'?'Flávio':'Bolsonaro';
       function sw(c,t){ return '<span style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; border-radius:2px; background:'+c+'; display:inline-block;'+(c===''+P.mapempty+''?' border:1px solid '+P.bord+';':'')+'"></span>'+t+'</span>'; }
       var intro,legend,note,foot;
-      if(yr==='2026'){
+      if(yr==='2026'&&RES26.ativo){
+        var nL=0,nF=0,nS=0; RES_UFS.forEach(function(u){ var l=resLead(u); if(l==='L') nL++; else if(l==='F') nF++; else nS++; });
+        intro='<b>Apuração oficial do TSE, '+(RES26.simula?'simulação com '+RES26.ano:'1º turno de 2026')+', por estado. Clique num estado para ver todos os candidatos e quanto já foi apurado.</b> '+
+          'A cor é quem está à frente entre Lula e Flávio nos votos válidos do estado: '+nL+' com Lula, '+nF+' com Flávio'+(nS?', '+nS+' ainda sem seção apurada':'')+'. Tom mais forte = vantagem maior.';
+        legend=sw(''+P.red+'','Lula à frente')+sw(''+P.blue+'','Flávio à frente')+sw(''+P.mapempty+'','sem seção apurada');
+        note='Apuração ao vivo (TSE), atualizada a cada minuto. Vermelho = Lula, azul = Flávio.';
+        foot='Os números mudam até 100% das seções, e o interior costuma entrar depois das capitais. Lembre: no Brasil vale o voto popular nacional, que está na barra acima do mapa, não o número de estados.';
+      } else if(yr==='2026'){
         // O texto abaixo é DERIVADO do PRES26, nunca escrito à mão: já congelou uma vez, citando
         // estados e institutos que depois mudaram. Conta os estados e quem lidera na hora do render.
         var cnt={},nUF=0,com2t=0;
@@ -1987,8 +2094,9 @@
         note='2º turno de '+yr+' (resultado oficial do TSE). Vermelho = '+leftNm+', azul = '+rightNm+'. Tom mais forte = vantagem maior naquele estado.';
         foot='Comparando os anos dá para ver o mapa virar. Ex.: MG e AM foram do Bolsonaro em 2018 e do Lula em 2022 (as duas únicas viradas entre os dois mapas).';
       }
-      document.getElementById('table-area').innerHTML=yt+'<div style="padding:8px 12px 4px; font-size:12.5px; color:'+P.txt+'; line-height:1.5;">'+intro+'</div><div style="display:flex; gap:16px; padding:2px 14px 6px; font-size:12px; color:'+P.txt2+'; flex-wrap:wrap;">'+legend+'</div>'+natBar(yr)+'<div id="presmapc"></div>'+presFontes(yr);
+      document.getElementById('table-area').innerHTML=yt+'<div style="padding:8px 12px 4px; font-size:12.5px; color:'+P.txt+'; line-height:1.5;">'+intro+'</div><div style="display:flex; gap:16px; padding:2px 14px 6px; font-size:12px; color:'+P.txt2+'; flex-wrap:wrap;">'+legend+'</div>'+natBar(yr)+(yr==='2026'?resBloco():'')+'<div id="presmapc"></div>'+((yr==='2026'&&RES26.ativo)?'':presFontes(yr));
       drawPresMap();
+      if(yr==='2026'&&resDia()) resLiga();
       document.getElementById('note').textContent=note;
       document.getElementById('foot').innerHTML=foot;
       return;
