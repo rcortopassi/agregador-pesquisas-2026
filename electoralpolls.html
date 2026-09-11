@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 10/09/2026 22:05</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 10/09/2026 22:30</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -1333,13 +1333,9 @@
         var z=(fs[c][k2]-alvo[k2])/sd[k2]; d2+=z*z; }
       dist[c]=Math.sqrt(d2); w[c]=Math.exp(-d2/2); tot+=w[c]; }
     for(var c2 in w) w[c2]/=tot;
-    // TETO DE PESO POR CICLO (10/09/2026): nenhum ciclo passa de 70%. Com âncora em setembro, 2022
-    // chegou a 94% e a projeção virou "2026 = 2022", que é exatamente a aposta que errou a direção
-    // de agosto para setembro. O excedente é redistribuído aos demais na proporção que já tinham.
-    var WMAX=0.70, ks=Object.keys(w);
-    if(ks.length>1){ var big=null; for(var k3 in w) if(big===null||w[k3]>w[big]) big=k3;
-      if(w[big]>WMAX){ var resto=1-w[big], alvoResto=1-WMAX;
-        for(var k4 in w){ if(k4===big) w[k4]=WMAX; else w[k4]= resto>0 ? w[k4]/resto*alvoResto : alvoResto/(ks.length-1); } } }
+    // SEM TETO DE PESO (decisão de 10/09/2026, depois de testar um teto de 70%): o erro realizado
+    // de um mês para o outro informa a INCERTEZA, não a direção. Por isso ele entra como piso do
+    // desvio em projeta26(), e o ponto central continua sendo o que a semelhança medida diz.
     return {w:w, dist:dist, alvo:alvo, fs:fs};
   }
   function pnorm(z){
@@ -1553,7 +1549,7 @@
        'e '+efeito+' porque '+lado+'.'+
        '</div>';
     if(P0.teste){ var T=P0.teste;
-      h+='<div style="padding:2px 14px 8px; font-size:12px; color:'+P.txt2+'; line-height:1.55;"><b style="color:'+P.goldtxt+';">Teste do mês anterior.</b> Ancorado em '+T.de+', o modelo esperava para '+T.para+' margem de '+(T.esperado>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(T.esperado))+'; '+T.para+' mediu '+(T.medido>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(T.medido))+'. Erro de <b>'+fmt(T.erro)+'</b> pontos'+(P0.sd>P0.sdBruto?', que passou a ser o piso da incerteza desta projeção: o desvio calculado pelos cenários ('+fmt(P0.sdBruto)+') era menor que o erro recém-cometido':', abaixo do desvio da projeção ('+fmt(P0.sd)+')')+'. Nenhum ciclo pesa mais de 70%.</div>'; }
+      h+='<div style="padding:2px 14px 8px; font-size:12px; color:'+P.txt2+'; line-height:1.55;"><b style="color:'+P.goldtxt+';">Teste do mês anterior.</b> Ancorado em '+T.de+', o modelo esperava para '+T.para+' margem de '+(T.esperado>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(T.esperado))+'; '+T.para+' mediu '+(T.medido>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(T.medido))+'. Erro de <b>'+fmt(T.erro)+'</b> pontos'+(P0.sd>P0.sdBruto?', que passou a ser o piso da incerteza desta projeção: o desvio calculado pelos cenários ('+fmt(P0.sdBruto)+') era menor que o erro recém-cometido':', abaixo do desvio da projeção ('+fmt(P0.sd)+')')+'.</div>'; }
     h+='<div style="padding:2px 14px 8px; font-size:12.5px; font-weight:600; color:'+P.ink+';">Os quatro cenários, e por que 2022 pesa mais</div>';
     h+='<table style="width:100%; border-collapse:collapse; font-size:12px;">'+
        '<thead><tr style="background:'+P.purple+'; color:#fff; font-size:10.5px;">'+
