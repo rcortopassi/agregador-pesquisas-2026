@@ -1225,16 +1225,6 @@
    "visto": "2026-09-09"
   },
   {
-   "proto": "AM084472026",
-   "escopo": "AM",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-09/09",
-   "div": "2026-09-09",
-   "n": "1220",
-   "visto": "2026-09-09"
-  },
-  {
    "proto": "AP084592026",
    "escopo": "AP",
    "inst": "VERITA",
@@ -1242,16 +1232,6 @@
    "campo": "04/09-09/09",
    "div": "2026-09-09",
    "n": "1030",
-   "visto": "2026-09-09"
-  },
-  {
-   "proto": "CE093432026",
-   "escopo": "CE",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-09/09",
-   "div": "2026-09-09",
-   "n": "1525",
    "visto": "2026-09-09"
   },
   {
@@ -1395,16 +1375,6 @@
    "visto": "2026-09-10"
   },
   {
-   "proto": "BR006312026",
-   "escopo": "ESTADUAL[MA]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "05/09-09/09",
-   "div": "2026-09-10",
-   "n": "1600",
-   "visto": "2026-09-10"
-  },
-  {
    "proto": "BR028902026",
    "escopo": "ESTADUAL[MS]",
    "inst": "#NULO#",
@@ -1442,16 +1412,6 @@
    "campo": "04/09-09/09",
    "div": "2026-09-10",
    "n": "1800",
-   "visto": "2026-09-10"
-  },
-  {
-   "proto": "BR050532026",
-   "escopo": "ESTADUAL[PR]",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "08/09-10/09",
-   "div": "2026-09-10",
-   "n": "1008",
    "visto": "2026-09-10"
   },
   {
@@ -1565,16 +1525,6 @@
    "visto": "2026-09-10"
   },
   {
-   "proto": "PR044262026",
-   "escopo": "PR",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "08/09-10/09",
-   "div": "2026-09-10",
-   "n": "1008",
-   "visto": "2026-09-10"
-  },
-  {
    "proto": "RN030922026",
    "escopo": "RN",
    "inst": "INSTITUTO SETA DE PESQUISA",
@@ -1597,16 +1547,6 @@
   {
    "proto": "RR072802026",
    "escopo": "RR",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-09/09",
-   "div": "2026-09-10",
-   "n": "1200",
-   "visto": "2026-09-10"
-  },
-  {
-   "proto": "SC020362026",
-   "escopo": "SC",
    "inst": "ATLASINTEL",
    "cargo": "Governador, Senador",
    "campo": "04/09-09/09",
