@@ -194,7 +194,29 @@ def patch_painel(html, pm, kal, carimbo, data_cotacao):
                     "var KAL=['%s','%s'];" % (kal[0], kal[1]), "KAL", html)
         html = sub1(r"cotação de \d{1,2}/\d{1,2}/\d{4}",
                     "cotação de " + data_cotacao, "data da cotação", html)
+    # Manifold (10/09/2026): mercado do BrunoParga, "Lula ou quem ele apoiar". Nao e essencial:
+    # se a API falhar, a rodada segue e o painel fica com o valor anterior.
+    try:
+        mf = manifold()
+        if mf:
+            html = sub1(r"(\{n:'Manifold',t:'mercado com moeda própria',v:'—',p:')[^']*(',d:')[^']*(')",
+                        lambda mo: mo.group(1) + mf + mo.group(2) + carimbo[:10] + mo.group(3),
+                        "Manifold", html)
+    except Exception as e:
+        print("Manifold: nao atualizado (%s)" % str(e)[:120])
     return html, trocas
+
+
+def manifold():
+    """Probabilidade do mercado do BrunoParga, em texto '49,9%'. None se a resposta nao tiver o campo."""
+    req = Request("https://api.manifold.markets/v0/slug/-2026-winner-is-lula-or-whoever-he",
+                  headers={"User-Agent": "agregador-pesquisas-2026"})
+    with urlopen(req, timeout=30) as resp:
+        j = json.loads(resp.read().decode("utf-8"))
+    pr = j.get("probability")
+    if pr is None:
+        return None
+    return ("%.1f%%" % (pr * 100)).replace(".", ",")
 
 
 def valida_js(caminho):
