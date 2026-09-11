@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 10/09/2026 21:03. Mercados: Polymarket 45,5%/52,4%, Kalshi 46,0%/56,0%.
+Rodada de 11/09/2026 05:52. Mercados: Polymarket 44,5%/54,2%, Kalshi 44,0%/55,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -44,9 +44,7 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-08] TSE PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 03/09-04/09, divulgação 2026-09-08, N=700, registro PB080282026
 - [aguardando desde 2026-09-09] TSE AC, VERITA (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-09, N=1030, registro AC058492026
 - [aguardando desde 2026-09-09] TSE AL, VERITA (Senador), campo 04/09-09/09, divulgação 2026-09-09, N=1220, registro AL044652026
-- [aguardando desde 2026-09-09] TSE AM, VERITA (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-09, N=1220, registro AM084472026
 - [aguardando desde 2026-09-09] TSE AP, VERITA (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-09, N=1030, registro AP084592026
-- [aguardando desde 2026-09-09] TSE CE, VERITA (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-09, N=1525, registro CE093432026
 - [aguardando desde 2026-09-09] TSE ESTADUAL[AC], VERITA (Presidente), campo 04/09-09/09, divulgação 2026-09-09, N=1030, registro BR052872026
 - [aguardando desde 2026-09-09] TSE ESTADUAL[AC], VERITA (Presidente), campo 04/09-09/09, divulgação 2026-09-09, N=1030, registro BR095802026
 - [aguardando desde 2026-09-09] TSE ESTADUAL[AL], VERITA (Presidente), campo 04/09-09/09, divulgação 2026-09-09, N=1220, registro BR014622026
@@ -61,12 +59,10 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-10] TSE AP, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1200, registro AP036082026
 - [aguardando desde 2026-09-10] TSE ESTADUAL[AC], DATA CONTROL INSTITUTO DE PE (Presidente), campo 02/09-08/09, divulgação 2026-09-10, N=1800, registro BR012262026
 - [aguardando desde 2026-09-10] TSE ESTADUAL[GO], IGAPE- INSTITUTO GAZETA DE P (Presidente), campo 29/08-05/09, divulgação 2026-09-10, N=2000, registro BR099202026
-- [aguardando desde 2026-09-10] TSE ESTADUAL[MA], REAL TIME BIG DATA (Presidente), campo 05/09-09/09, divulgação 2026-09-10, N=1600, registro BR006312026
 - [aguardando desde 2026-09-10] TSE ESTADUAL[MS], #NULO# (Presidente), campo 05/09-10/09, divulgação 2026-09-10, N=800, registro BR028902026
 - [aguardando desde 2026-09-10] TSE ESTADUAL[MS], RANKING BRASIL INTELIGENCIA (Presidente), campo 04/09-09/09, divulgação 2026-09-10, N=2000, registro BR082882026
 - [aguardando desde 2026-09-10] TSE ESTADUAL[PE], ATLASINTEL (Presidente), campo 04/09-09/09, divulgação 2026-09-10, N=1800, registro BR070822026
 - [aguardando desde 2026-09-10] TSE ESTADUAL[PE], ATLASINTEL (Presidente), campo 04/09-09/09, divulgação 2026-09-10, N=1800, registro BR095812026
-- [aguardando desde 2026-09-10] TSE ESTADUAL[PR], NEOKEMP PESQUISAS (Presidente), campo 08/09-10/09, divulgação 2026-09-10, N=1008, registro BR050532026
 - [aguardando desde 2026-09-10] TSE ESTADUAL[RN], INSTITUTO SETA DE PESQUISA (Presidente), campo 03/09-05/09, divulgação 2026-09-10, N=1500, registro BR070192026
 - [aguardando desde 2026-09-10] TSE ESTADUAL[RN], DATAVERO INSTITUTO DE PESQUI (Presidente), campo 06/09-08/09, divulgação 2026-09-10, N=1500, registro BR009192026
 - [aguardando desde 2026-09-10] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 29/08-05/09, divulgação 2026-09-10, N=2000, registro GO060352026
@@ -78,12 +74,64 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-10] TSE PE, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1800, registro PE064642026
 - [aguardando desde 2026-09-10] TSE PI, INTENCAO INSTITUTO DE PEQUIS (Governador, Senador, Deputado Fede), campo 09/09-10/09, divulgação 2026-09-10, N=300, registro PI096382026
 - [aguardando desde 2026-09-10] TSE PR, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1800, registro PR096552026
-- [aguardando desde 2026-09-10] TSE PR, NEOKEMP PESQUISAS (Governador, Senador), campo 08/09-10/09, divulgação 2026-09-10, N=1008, registro PR044262026
 - [aguardando desde 2026-09-10] TSE RN, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 03/09-05/09, divulgação 2026-09-10, N=1500, registro RN030922026
 - [aguardando desde 2026-09-10] TSE RN, DATAVERO INSTITUTO DE PESQUI (Governador, Senador, Deputado Fede), campo 06/09-08/09, divulgação 2026-09-10, N=1500, registro RN082852026
 - [aguardando desde 2026-09-10] TSE RR, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1200, registro RR072802026
-- [aguardando desde 2026-09-10] TSE SC, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1200, registro SC020362026
 - [aguardando desde 2026-09-10] TSE SE, W1 WEBTV (Governador, Senador, Deputado Fede), campo 26/08-29/08, divulgação 2026-09-10, N=1000, registro SE061072026
+- [NOVO] TSE AC, INSTITUTO PHOENIX & ASSOCIAD (Governador, Senador, Deputado Fede), campo 05/09-08/09, divulgação 2026-09-11, N=615, registro AC096782026
+- [NOVO] TSE AL, INDICE INTELIGENCIA (Governador, Senador), campo 06/09-08/09, divulgação 2026-09-11, N=1200, registro AL010112026
+- [NOVO] TSE AM, #NULO# (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1500, registro AM051032026
+- [NOVO] TSE AP, DOXA (Governador, Senador), campo 05/09-09/09, divulgação 2026-09-11, N=800, registro AP054232026
+- [NOVO] TSE ES, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro ES013612026
+- [NOVO] TSE ESTADUAL[AP], DOXA (Presidente), campo 05/09-09/09, divulgação 2026-09-11, N=800, registro BR096242026
+- [NOVO] TSE ESTADUAL[DF], BADRA COMUNICACAO (Presidente), campo 08/09-10/09, divulgação 2026-09-11, N=1060, registro BR089972026
+- [NOVO] TSE ESTADUAL[DF], #NULO# (Presidente), campo 08/09-11/09, divulgação 2026-09-11, N=910, registro BR046232026
+- [NOVO] TSE ESTADUAL[MG], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=2030, registro BR098212026
+- [NOVO] TSE ESTADUAL[MG], #NULO# (Presidente), campo 08/09-11/09, divulgação 2026-09-11, N=1204, registro BR030222026
+- [NOVO] TSE ESTADUAL[MG], #NULO# (Presidente), campo 08/09-11/09, divulgação 2026-09-11, N=1204, registro BR059232026
+- [NOVO] TSE ESTADUAL[MG], #NULO# (Presidente), campo 08/09-11/09, divulgação 2026-09-11, N=1204, registro BR063612026
+- [NOVO] TSE ESTADUAL[MS], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro BR086592026
+- [NOVO] TSE ESTADUAL[MS], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro BR073422026
+- [NOVO] TSE ESTADUAL[MS], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro BR097422026
+- [NOVO] TSE ESTADUAL[PA], ATLASINTEL (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1200, registro BR079552026
+- [NOVO] TSE ESTADUAL[PA], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro BR068232026
+- [NOVO] TSE ESTADUAL[PA], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro BR027412026
+- [NOVO] TSE ESTADUAL[PA], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro BR080532026
+- [NOVO] TSE ESTADUAL[PE], VERITA (Presidente), campo 06/09-11/09, divulgação 2026-09-11, N=2010, registro BR007172026
+- [NOVO] TSE ESTADUAL[PE], VERITA (Presidente), campo 06/09-11/09, divulgação 2026-09-11, N=2010, registro BR099322026
+- [NOVO] TSE ESTADUAL[PE], DATATRENDS (Presidente), campo 07/09-09/09, divulgação 2026-09-11, N=1200, registro BR061282026
+- [NOVO] TSE ESTADUAL[RJ], VERITA (Presidente), campo 06/09-11/09, divulgação 2026-09-11, N=2030, registro BR095352026
+- [NOVO] TSE ESTADUAL[SE], VERITA (Presidente), campo 06/09-11/09, divulgação 2026-09-11, N=1220, registro BR057712026
+- [NOVO] TSE ESTADUAL[SE], VERITA (Presidente), campo 06/09-11/09, divulgação 2026-09-11, N=1220, registro BR057992026
+- [NOVO] TSE ESTADUAL[SE], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 08/09-10/09, divulgação 2026-09-11, N=1300, registro BR057702026
+- [NOVO] TSE ESTADUAL[SE], VERITA (Presidente), campo 06/09-11/09, divulgação 2026-09-11, N=1220, registro BR076772026
+- [NOVO] TSE ESTADUAL[SP], #NULO# (Presidente), campo 08/09-11/09, divulgação 2026-09-11, N=1610, registro BR039042026
+- [NOVO] TSE GO, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro GO008402026
+- [NOVO] TSE GO, #NULO# (Governador, Senador), campo 08/09-10/09, divulgação 2026-09-11, N=1248, registro GO030962026
+- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 05/09-09/09, divulgação 2026-09-11, N=350, registro MA094512026
+- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 05/09-09/09, divulgação 2026-09-11, N=350, registro MA034632026
+- [NOVO] TSE MA, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro MA064012026
+- [NOVO] TSE MG, #NULO# (Governador, Senador), campo 08/09-11/09, divulgação 2026-09-11, N=1204, registro MG016112026
+- [NOVO] TSE MG, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=2030, registro MG099182026
+- [NOVO] TSE MS, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro MS042092026
+- [NOVO] TSE MT, ITI - INSTITUTO TECNOLOGICO  (Governador, Senador, Deputado Fede), campo 04/09-06/09, divulgação 2026-09-11, N=360, registro MT091112026
+- [NOVO] TSE MT, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro MT059382026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 08/09-11/09, divulgação 2026-09-11, N=2002, registro BR018332026
+- [NOVO] TSE NACIONAL?, VERITA (Presidente), campo 06/09-11/09, divulgação 2026-09-11, N=40500, registro BR080932026
+- [NOVO] TSE PA, ATLASINTEL (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1200, registro PA096262026
+- [NOVO] TSE PA, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro PA071512026
+- [NOVO] TSE PB, VERITA (Governador, Senador), campo 06/09-11/09, divulgação 2026-09-11, N=1220, registro PB035152026
+- [NOVO] TSE PE, VERITA (Governador, Senador), campo 06/09-11/09, divulgação 2026-09-11, N=2010, registro PE056902026
+- [NOVO] TSE PE, #NULO# (Governador, Senador), campo 08/09-11/09, divulgação 2026-09-11, N=1204, registro PE044112026
+- [NOVO] TSE PE, DATATRENDS (Governador, Senador), campo 07/09-09/09, divulgação 2026-09-11, N=1200, registro PE081222026
+- [NOVO] TSE PI, VERITA (Governador, Senador), campo 06/09-11/09, divulgação 2026-09-11, N=1220, registro PI011852026
+- [NOVO] TSE RJ, #NULO# (Governador, Senador), campo 08/09-11/09, divulgação 2026-09-11, N=1204, registro RJ092172026
+- [NOVO] TSE RJ, VERITA (Governador, Senador), campo 06/09-11/09, divulgação 2026-09-11, N=2030, registro RJ014722026
+- [NOVO] TSE SE, VERITA (Governador, Senador), campo 06/09-11/09, divulgação 2026-09-11, N=1220, registro SE019362026
+- [NOVO] TSE SE, TWS POLITICA (Governador, Senador), campo 06/09-08/09, divulgação 2026-09-11, N=1500, registro SE010552026
+- [NOVO] TSE SE, INSTITUTO FRANCA DE PESQUISA (Governador, Senador), campo 08/09-10/09, divulgação 2026-09-11, N=1300, registro SE082752026
+- [NOVO] TSE SP, #NULO# (Governador), campo 08/09-11/09, divulgação 2026-09-11, N=1610, registro SP041892026
+- [NOVO] TSE SP, #NULO# (Governador, Senador), campo 07/09-10/09, divulgação 2026-09-11, N=1680, registro SP080902026
 
 ## Últimas publicações do Veritá
 
@@ -95,19 +143,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-08-31 | AL | #NULO# | Governador, Senador | 26/08-29/08 | 1400 | AL033162026 |
-| 2026-08-31 | ES | #NULO# | Governador, Senador | 27/08-30/08 | 1800 | ES028592026 |
-| 2026-08-31 | ESTADUAL[ES] | #NULO# | Presidente | 27/08-30/08 | 1800 | BR005302026 |
-| 2026-08-31 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 27/08-29/08 | 800 | BR044032026 |
-| 2026-08-31 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 22/08-26/08 | 800 | GO023982026 |
-| 2026-08-31 | GO | EXATA.GO | Governador, Deputado Federal, Depu | 25/08-26/08 | 400 | GO041332026 |
-| 2026-08-31 | MA | INOP PREVISAO PESQUISAS SERV | Governador, Senador, Deputado Fede | 19/08-26/08 | 2600 | MA075722026 |
-| 2026-08-31 | MG | SECTRAL NEGOCIOS | Governador, Senador, Deputado Fede | 25/08-29/08 | 1100 | MG003662026 |
-| 2026-08-31 | NACIONAL? | ATLASINTEL | Presidente | 25/08-30/08 | 5000 | BR079722026 |
-| 2026-08-31 | NACIONAL? | NEXUS | Presidente | 28/08-30/08 | 2000 | BR089002026 |
-| 2026-08-31 | PR | INSTITUTO RANKING PESQUISA | Governador | 26/08-28/08 | 1200 | PR011052026 |
-| 2026-08-31 | RN | ITEM PESQUISAS TECNICAS | Governador, Senador, Deputado Fede | 27/08-29/08 | 800 | RN023842026 |
-| 2026-08-31 | TO | JORNAL O GIRASSOL | Governador, Senador | 25/08-27/08 | 1200 | TO073492026 |
 | 2026-09-01 | AL | PALPE PESQUISAS | Governador, Senador | 16/08-25/08 | 5000 | AL078642026 |
 | 2026-09-01 | AL | INDICE INTELIGENCIA | Governador, Senador | 27/08-29/08 | 1200 | AL058942026 |
 | 2026-09-01 | ES | ATLASINTEL | Governador, Senador | 26/08-31/08 | 1200 | ES002062026 |
@@ -382,4 +417,58 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-09-10 | SC | ATLASINTEL | Governador, Senador | 04/09-09/09 | 1200 | SC020362026 |
 | 2026-09-10 | SE | ATLASINTEL | Governador, Senador | 04/09-09/09 | 1200 | SE038002026 |
 | 2026-09-10 | SE | W1 WEBTV | Governador, Senador, Deputado Fede | 26/08-29/08 | 1000 | SE061072026 |
+| 2026-09-11 | AC | INSTITUTO PHOENIX & ASSOCIAD | Governador, Senador, Deputado Fede | 05/09-08/09 | 615 | AC096782026 |
+| 2026-09-11 | AL | INDICE INTELIGENCIA | Governador, Senador | 06/09-08/09 | 1200 | AL010112026 |
+| 2026-09-11 | AM | #NULO# | Governador, Senador | 05/09-10/09 | 1500 | AM051032026 |
+| 2026-09-11 | AP | DOXA | Governador, Senador | 05/09-09/09 | 800 | AP054232026 |
+| 2026-09-11 | ES | VERITA | Governador, Senador | 05/09-10/09 | 1220 | ES013612026 |
+| 2026-09-11 | ESTADUAL[AP] | DOXA | Presidente | 05/09-09/09 | 800 | BR096242026 |
+| 2026-09-11 | ESTADUAL[DF] | BADRA COMUNICACAO | Presidente | 08/09-10/09 | 1060 | BR089972026 |
+| 2026-09-11 | ESTADUAL[DF] | #NULO# | Presidente | 08/09-11/09 | 910 | BR046232026 |
+| 2026-09-11 | ESTADUAL[MG] | VERITA | Presidente | 05/09-10/09 | 2030 | BR098212026 |
+| 2026-09-11 | ESTADUAL[MG] | #NULO# | Presidente | 08/09-11/09 | 1204 | BR030222026 |
+| 2026-09-11 | ESTADUAL[MG] | #NULO# | Presidente | 08/09-11/09 | 1204 | BR059232026 |
+| 2026-09-11 | ESTADUAL[MG] | #NULO# | Presidente | 08/09-11/09 | 1204 | BR063612026 |
+| 2026-09-11 | ESTADUAL[MS] | VERITA | Presidente | 05/09-10/09 | 1220 | BR086592026 |
+| 2026-09-11 | ESTADUAL[MS] | VERITA | Presidente | 05/09-10/09 | 1220 | BR073422026 |
+| 2026-09-11 | ESTADUAL[MS] | VERITA | Presidente | 05/09-10/09 | 1220 | BR097422026 |
+| 2026-09-11 | ESTADUAL[PA] | ATLASINTEL | Presidente | 05/09-10/09 | 1200 | BR079552026 |
+| 2026-09-11 | ESTADUAL[PA] | VERITA | Presidente | 05/09-10/09 | 1525 | BR068232026 |
+| 2026-09-11 | ESTADUAL[PA] | VERITA | Presidente | 05/09-10/09 | 1525 | BR027412026 |
+| 2026-09-11 | ESTADUAL[PA] | VERITA | Presidente | 05/09-10/09 | 1525 | BR080532026 |
+| 2026-09-11 | ESTADUAL[PE] | VERITA | Presidente | 06/09-11/09 | 2010 | BR007172026 |
+| 2026-09-11 | ESTADUAL[PE] | VERITA | Presidente | 06/09-11/09 | 2010 | BR099322026 |
+| 2026-09-11 | ESTADUAL[PE] | DATATRENDS | Presidente | 07/09-09/09 | 1200 | BR061282026 |
+| 2026-09-11 | ESTADUAL[RJ] | VERITA | Presidente | 06/09-11/09 | 2030 | BR095352026 |
+| 2026-09-11 | ESTADUAL[SE] | VERITA | Presidente | 06/09-11/09 | 1220 | BR057712026 |
+| 2026-09-11 | ESTADUAL[SE] | VERITA | Presidente | 06/09-11/09 | 1220 | BR057992026 |
+| 2026-09-11 | ESTADUAL[SE] | INSTITUTO FRANCA DE PESQUISA | Presidente | 08/09-10/09 | 1300 | BR057702026 |
+| 2026-09-11 | ESTADUAL[SE] | VERITA | Presidente | 06/09-11/09 | 1220 | BR076772026 |
+| 2026-09-11 | ESTADUAL[SP] | #NULO# | Presidente | 08/09-11/09 | 1610 | BR039042026 |
+| 2026-09-11 | GO | VERITA | Governador, Senador | 05/09-10/09 | 1525 | GO008402026 |
+| 2026-09-11 | GO | #NULO# | Governador, Senador | 08/09-10/09 | 1248 | GO030962026 |
+| 2026-09-11 | MA | IPSENSUS PESQUISAS | Governador, Senador | 05/09-09/09 | 350 | MA094512026 |
+| 2026-09-11 | MA | IPSENSUS PESQUISAS | Governador, Senador | 05/09-09/09 | 350 | MA034632026 |
+| 2026-09-11 | MA | VERITA | Governador, Senador | 05/09-10/09 | 1525 | MA064012026 |
+| 2026-09-11 | MG | #NULO# | Governador, Senador | 08/09-11/09 | 1204 | MG016112026 |
+| 2026-09-11 | MG | VERITA | Governador, Senador | 05/09-10/09 | 2030 | MG099182026 |
+| 2026-09-11 | MS | VERITA | Governador, Senador | 05/09-10/09 | 1220 | MS042092026 |
+| 2026-09-11 | MT | ITI - INSTITUTO TECNOLOGICO  | Governador, Senador, Deputado Fede | 04/09-06/09 | 360 | MT091112026 |
+| 2026-09-11 | MT | VERITA | Governador, Senador | 05/09-10/09 | 1220 | MT059382026 |
+| 2026-09-11 | NACIONAL? | #NULO# | Presidente | 08/09-11/09 | 2002 | BR018332026 |
+| 2026-09-11 | NACIONAL? | VERITA | Presidente | 06/09-11/09 | 40500 | BR080932026 |
+| 2026-09-11 | PA | ATLASINTEL | Governador, Senador | 05/09-10/09 | 1200 | PA096262026 |
+| 2026-09-11 | PA | VERITA | Governador, Senador | 05/09-10/09 | 1525 | PA071512026 |
+| 2026-09-11 | PB | VERITA | Governador, Senador | 06/09-11/09 | 1220 | PB035152026 |
+| 2026-09-11 | PE | VERITA | Governador, Senador | 06/09-11/09 | 2010 | PE056902026 |
+| 2026-09-11 | PE | #NULO# | Governador, Senador | 08/09-11/09 | 1204 | PE044112026 |
+| 2026-09-11 | PE | DATATRENDS | Governador, Senador | 07/09-09/09 | 1200 | PE081222026 |
+| 2026-09-11 | PI | VERITA | Governador, Senador | 06/09-11/09 | 1220 | PI011852026 |
+| 2026-09-11 | RJ | #NULO# | Governador, Senador | 08/09-11/09 | 1204 | RJ092172026 |
+| 2026-09-11 | RJ | VERITA | Governador, Senador | 06/09-11/09 | 2030 | RJ014722026 |
+| 2026-09-11 | SE | VERITA | Governador, Senador | 06/09-11/09 | 1220 | SE019362026 |
+| 2026-09-11 | SE | TWS POLITICA | Governador, Senador | 06/09-08/09 | 1500 | SE010552026 |
+| 2026-09-11 | SE | INSTITUTO FRANCA DE PESQUISA | Governador, Senador | 08/09-10/09 | 1300 | SE082752026 |
+| 2026-09-11 | SP | #NULO# | Governador | 08/09-11/09 | 1610 | SP041892026 |
+| 2026-09-11 | SP | #NULO# | Governador, Senador | 07/09-10/09 | 1680 | SP080902026 |
 
