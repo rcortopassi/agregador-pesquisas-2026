@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 12/09/2026 10:33. Mercados: Polymarket 48,5%/50,0%, Kalshi 48,0%/51,0%.
+Rodada de 12/09/2026 15:18. Mercados: Polymarket 48,5%/50,0%, Kalshi 49,0%/51,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -68,14 +68,12 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-10] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 29/08-05/09, divulgação 2026-09-10, N=2000, registro GO060352026
 - [aguardando desde 2026-09-10] TSE MS, #NULO# (Governador, Senador, Deputado Fede), campo 05/09-10/09, divulgação 2026-09-10, N=800, registro MS012382026
 - [aguardando desde 2026-09-10] TSE MS, RANKING BRASIL INTELIGENCIA (Governador, Senador, Deputado Fede), campo 04/09-09/09, divulgação 2026-09-10, N=2000, registro MS098942026
-- [aguardando desde 2026-09-10] TSE MT, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1200, registro MT027662026
 - [aguardando desde 2026-09-10] TSE PB, INSTITUTO RANKING PESQUISA (Governador, Senador, Deputado Fede), campo 05/09-07/09, divulgação 2026-09-10, N=2000, registro PB090372026
 - [aguardando desde 2026-09-10] TSE PE, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1800, registro PE064642026
 - [aguardando desde 2026-09-10] TSE PI, INTENCAO INSTITUTO DE PEQUIS (Governador, Senador, Deputado Fede), campo 09/09-10/09, divulgação 2026-09-10, N=300, registro PI096382026
 - [aguardando desde 2026-09-10] TSE PR, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1800, registro PR096552026
 - [aguardando desde 2026-09-10] TSE RN, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 03/09-05/09, divulgação 2026-09-10, N=1500, registro RN030922026
 - [aguardando desde 2026-09-10] TSE RN, DATAVERO INSTITUTO DE PESQUI (Governador, Senador, Deputado Fede), campo 06/09-08/09, divulgação 2026-09-10, N=1500, registro RN082852026
-- [aguardando desde 2026-09-10] TSE RR, ATLASINTEL (Governador, Senador), campo 04/09-09/09, divulgação 2026-09-10, N=1200, registro RR072802026
 - [aguardando desde 2026-09-10] TSE SE, W1 WEBTV (Governador, Senador, Deputado Fede), campo 26/08-29/08, divulgação 2026-09-10, N=1000, registro SE061072026
 - [aguardando desde 2026-09-11] TSE AC, INSTITUTO PHOENIX & ASSOCIAD (Governador, Senador, Deputado Fede), campo 05/09-08/09, divulgação 2026-09-11, N=615, registro AC096782026
 - [aguardando desde 2026-09-11] TSE AL, INDICE INTELIGENCIA (Governador, Senador), campo 06/09-08/09, divulgação 2026-09-11, N=1200, registro AL010112026
@@ -92,7 +90,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-11] TSE ESTADUAL[MS], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro BR086592026
 - [aguardando desde 2026-09-11] TSE ESTADUAL[MS], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro BR073422026
 - [aguardando desde 2026-09-11] TSE ESTADUAL[MS], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro BR097422026
-- [aguardando desde 2026-09-11] TSE ESTADUAL[PA], ATLASINTEL (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1200, registro BR079552026
 - [aguardando desde 2026-09-11] TSE ESTADUAL[PA], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro BR068232026
 - [aguardando desde 2026-09-11] TSE ESTADUAL[PA], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro BR027412026
 - [aguardando desde 2026-09-11] TSE ESTADUAL[PA], VERITA (Presidente), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro BR080532026
@@ -114,7 +111,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-11] TSE MT, ITI - INSTITUTO TECNOLOGICO  (Governador, Senador, Deputado Fede), campo 04/09-06/09, divulgação 2026-09-11, N=360, registro MT091112026
 - [aguardando desde 2026-09-11] TSE MT, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1220, registro MT059382026
 - [aguardando desde 2026-09-11] TSE NACIONAL?, VERITA (Presidente), campo 06/09-11/09, divulgação 2026-09-11, N=40500, registro BR080932026
-- [aguardando desde 2026-09-11] TSE PA, ATLASINTEL (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1200, registro PA096262026
 - [aguardando desde 2026-09-11] TSE PA, VERITA (Governador, Senador), campo 05/09-10/09, divulgação 2026-09-11, N=1525, registro PA071512026
 - [aguardando desde 2026-09-11] TSE PB, VERITA (Governador, Senador), campo 06/09-11/09, divulgação 2026-09-11, N=1220, registro PB035152026
 - [aguardando desde 2026-09-11] TSE PE, VERITA (Governador, Senador), campo 06/09-11/09, divulgação 2026-09-11, N=2010, registro PE056902026
