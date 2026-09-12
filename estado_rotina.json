@@ -1536,16 +1536,6 @@
    "visto": "2026-09-10"
   },
   {
-   "proto": "MT027662026",
-   "escopo": "MT",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-09/09",
-   "div": "2026-09-10",
-   "n": "1200",
-   "visto": "2026-09-10"
-  },
-  {
    "proto": "PB090372026",
    "escopo": "PB",
    "inst": "INSTITUTO RANKING PESQUISA",
@@ -1603,16 +1593,6 @@
    "campo": "06/09-08/09",
    "div": "2026-09-10",
    "n": "1500",
-   "visto": "2026-09-10"
-  },
-  {
-   "proto": "RR072802026",
-   "escopo": "RR",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-09/09",
-   "div": "2026-09-10",
-   "n": "1200",
    "visto": "2026-09-10"
   },
   {
@@ -1773,16 +1753,6 @@
    "campo": "05/09-10/09",
    "div": "2026-09-11",
    "n": "1220",
-   "visto": "2026-09-11"
-  },
-  {
-   "proto": "BR079552026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "05/09-10/09",
-   "div": "2026-09-11",
-   "n": "1200",
    "visto": "2026-09-11"
   },
   {
@@ -1993,16 +1963,6 @@
    "campo": "06/09-11/09",
    "div": "2026-09-11",
    "n": "40500",
-   "visto": "2026-09-11"
-  },
-  {
-   "proto": "PA096262026",
-   "escopo": "PA",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "05/09-10/09",
-   "div": "2026-09-11",
-   "n": "1200",
    "visto": "2026-09-11"
   },
   {
