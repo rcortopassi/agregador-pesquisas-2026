@@ -1037,16 +1037,6 @@
    "visto": "2026-09-04"
   },
   {
-   "proto": "BR091472026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "31/08-02/09",
-   "div": "2026-09-04",
-   "n": "1200",
-   "visto": "2026-09-04"
-  },
-  {
    "proto": "BR031742026",
    "escopo": "ESTADUAL[AL]",
    "inst": "VERITA",
@@ -1054,16 +1044,6 @@
    "campo": "29/08-01/09",
    "div": "2026-09-04",
    "n": "1220",
-   "visto": "2026-09-04"
-  },
-  {
-   "proto": "BR065532026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "BADRA COMUNICACAO",
-   "cargo": "Presidente",
-   "campo": "01/09-03/09",
-   "div": "2026-09-04",
-   "n": "1060",
    "visto": "2026-09-04"
   },
   {
@@ -1134,16 +1114,6 @@
    "campo": "02/09-05/09",
    "div": "2026-09-06",
    "n": "800",
-   "visto": "2026-09-06"
-  },
-  {
-   "proto": "BR087662026",
-   "escopo": "ESTADUAL[RO]",
-   "inst": "INSTITUTO AMAZONIA DE PESQUI",
-   "cargo": "Presidente",
-   "campo": "01/09-09/09",
-   "div": "2026-09-06",
-   "n": "2500",
    "visto": "2026-09-06"
   },
   {
@@ -1367,16 +1337,6 @@
    "visto": "2026-09-09"
   },
   {
-   "proto": "PR082202026",
-   "escopo": "PR",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-08/09",
-   "div": "2026-09-09",
-   "n": "1600",
-   "visto": "2026-09-12"
-  },
-  {
    "proto": "AC033792026",
    "escopo": "AC",
    "inst": "DATA CONTROL INSTITUTO DE PE",
@@ -1412,26 +1372,6 @@
    "inst": "IGAPE- INSTITUTO GAZETA DE P",
    "cargo": "Presidente",
    "campo": "29/08-05/09",
-   "div": "2026-09-10",
-   "n": "2000",
-   "visto": "2026-09-10"
-  },
-  {
-   "proto": "BR028902026",
-   "escopo": "ESTADUAL[MS]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "05/09-10/09",
-   "div": "2026-09-10",
-   "n": "800",
-   "visto": "2026-09-10"
-  },
-  {
-   "proto": "BR082882026",
-   "escopo": "ESTADUAL[MS]",
-   "inst": "RANKING BRASIL INTELIGENCIA",
-   "cargo": "Presidente",
-   "campo": "04/09-09/09",
    "div": "2026-09-10",
    "n": "2000",
    "visto": "2026-09-10"
@@ -1482,36 +1422,6 @@
    "inst": "IGAPE- INSTITUTO GAZETA DE P",
    "cargo": "Governador, Senador, Deputado Fede",
    "campo": "29/08-05/09",
-   "div": "2026-09-10",
-   "n": "2000",
-   "visto": "2026-09-10"
-  },
-  {
-   "proto": "MS012382026",
-   "escopo": "MS",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "05/09-10/09",
-   "div": "2026-09-10",
-   "n": "800",
-   "visto": "2026-09-10"
-  },
-  {
-   "proto": "MS098942026",
-   "escopo": "MS",
-   "inst": "RANKING BRASIL INTELIGENCIA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "04/09-09/09",
-   "div": "2026-09-10",
-   "n": "2000",
-   "visto": "2026-09-10"
-  },
-  {
-   "proto": "PB090372026",
-   "escopo": "PB",
-   "inst": "INSTITUTO RANKING PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "05/09-07/09",
    "div": "2026-09-10",
    "n": "2000",
    "visto": "2026-09-10"
@@ -1575,16 +1485,6 @@
    "div": "2026-09-10",
    "n": "1000",
    "visto": "2026-09-10"
-  },
-  {
-   "proto": "AL010112026",
-   "escopo": "AL",
-   "inst": "INDICE INTELIGENCIA",
-   "cargo": "Governador, Senador",
-   "campo": "06/09-08/09",
-   "div": "2026-09-11",
-   "n": "1200",
-   "visto": "2026-09-11"
   },
   {
    "proto": "AM051032026",
@@ -1724,16 +1624,6 @@
    "campo": "06/09-11/09",
    "div": "2026-09-11",
    "n": "1220",
-   "visto": "2026-09-11"
-  },
-  {
-   "proto": "BR057702026",
-   "escopo": "ESTADUAL[SE]",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "08/09-10/09",
-   "div": "2026-09-11",
-   "n": "1300",
    "visto": "2026-09-11"
   },
   {
