@@ -1215,16 +1215,6 @@
    "visto": "2026-09-14"
   },
   {
-   "proto": "BR076812026",
-   "escopo": "ESTADUAL[MS]",
-   "inst": "NOVO IBRAPE",
-   "cargo": "Presidente",
-   "campo": "08/09-13/09",
-   "div": "2026-09-14",
-   "n": "1000",
-   "visto": "2026-09-14"
-  },
-  {
    "proto": "BR035382026",
    "escopo": "ESTADUAL[PA]",
    "inst": "DOXA",
@@ -1275,26 +1265,6 @@
    "visto": "2026-09-14"
   },
   {
-   "proto": "MS098512026",
-   "escopo": "MS",
-   "inst": "NOVO IBRAPE",
-   "cargo": "Governador, Senador",
-   "campo": "08/09-13/09",
-   "div": "2026-09-14",
-   "n": "1000",
-   "visto": "2026-09-14"
-  },
-  {
-   "proto": "BR036072026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "10/09-13/09",
-   "div": "2026-09-14",
-   "n": "2004",
-   "visto": "2026-09-14"
-  },
-  {
    "proto": "PA067302026",
    "escopo": "PA",
    "inst": "DOXA",
@@ -1312,16 +1282,6 @@
    "campo": "09/09-11/09",
    "div": "2026-09-14",
    "n": "1200",
-   "visto": "2026-09-14"
-  },
-  {
-   "proto": "RJ039022026",
-   "escopo": "RJ",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "09/09-12/09",
-   "div": "2026-09-14",
-   "n": "2000",
    "visto": "2026-09-14"
   },
   {
