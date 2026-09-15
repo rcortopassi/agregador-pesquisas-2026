@@ -992,7 +992,7 @@
   "e8fa5ee2-cb14-41cc-bfaf-ac160865e84d",
   "eb0342b6-979f-46d5-ab83-949ff53dc67b"
  ],
- "ultima_rodada": "2026-09-14T13:19:47.485294-03:00",
+ "ultima_rodada": "2026-09-14T21:22:44.225799-03:00",
  "pendentes": [
   {
    "proto": "AC058492026",
@@ -1225,26 +1225,6 @@
    "visto": "2026-09-14"
   },
   {
-   "proto": "BR038302026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "METADATA",
-   "cargo": "Presidente",
-   "campo": "10/09-12/09",
-   "div": "2026-09-14",
-   "n": "1536",
-   "visto": "2026-09-14"
-  },
-  {
-   "proto": "BR086902026",
-   "escopo": "ESTADUAL[SC]",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "10/09-12/09",
-   "div": "2026-09-14",
-   "n": "1008",
-   "visto": "2026-09-14"
-  },
-  {
    "proto": "GO094442026",
    "escopo": "GO",
    "inst": "DIRECT PESQUISAS",
@@ -1265,16 +1245,6 @@
    "visto": "2026-09-14"
   },
   {
-   "proto": "PA067302026",
-   "escopo": "PA",
-   "inst": "DOXA",
-   "cargo": "Governador, Senador",
-   "campo": "08/09-12/09",
-   "div": "2026-09-14",
-   "n": "2000",
-   "visto": "2026-09-14"
-  },
-  {
    "proto": "PR043932026",
    "escopo": "PR",
    "inst": "INSTITUTO RANKING PESQUISA",
@@ -1282,26 +1252,6 @@
    "campo": "09/09-11/09",
    "div": "2026-09-14",
    "n": "1200",
-   "visto": "2026-09-14"
-  },
-  {
-   "proto": "RN025432026",
-   "escopo": "RN",
-   "inst": "METADATA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "10/09-12/09",
-   "div": "2026-09-14",
-   "n": "1536",
-   "visto": "2026-09-14"
-  },
-  {
-   "proto": "SC052062026",
-   "escopo": "SC",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "10/09-12/09",
-   "div": "2026-09-14",
-   "n": "1008",
    "visto": "2026-09-14"
   },
   {
