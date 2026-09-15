@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 15/09/2026 11:54. Mercados: Polymarket 44,5%/51,7%, Kalshi 45,0%/52,0%.
+Rodada de 15/09/2026 16:40. Mercados: Polymarket 46,5%/51,9%, Kalshi 46,0%/53,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -22,25 +22,19 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-13] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 08/09-12/09, divulgação 2026-09-13, N=1200, registro BR010192026
 - [aguardando desde 2026-09-13] TSE MT, PERCENT PESQUISA DE MERCADO  (Governador, Senador, Deputado Fede), campo 08/09-12/09, divulgação 2026-09-13, N=1200, registro MT004402026
 - [aguardando desde 2026-09-13] TSE PI, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 07/09-10/09, divulgação 2026-09-13, N=1200, registro PI070312026
-- [aguardando desde 2026-09-14] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 09/09-13/09, divulgação 2026-09-14, N=1200, registro GO094442026
 - [aguardando desde 2026-09-14] TSE MG, F5 ATUALIZA DADOS (Governador, Senador), campo 09/09-12/09, divulgação 2026-09-14, N=1560, registro MG090352026
 - [aguardando desde 2026-09-15] TSE AP, F5 PESQUISAS E CONSULTORIA (Governador, Senador, Deputado Fede), campo 10/09-14/09, divulgação 2026-09-15, N=1065, registro AP011522026
 - [aguardando desde 2026-09-15] TSE ESTADUAL[AL], REAL TIME BIG DATA (Presidente), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro BR013152026
 - [aguardando desde 2026-09-15] TSE ESTADUAL[GO], IGAPE- INSTITUTO GAZETA DE P (Presidente), campo 09/09-14/09, divulgação 2026-09-15, N=2000, registro BR039302026
 - [aguardando desde 2026-09-15] TSE ESTADUAL[MG], #NULO# (Presidente), campo 09/09-12/09, divulgação 2026-09-15, N=1000, registro BR023292026
 - [aguardando desde 2026-09-15] TSE ESTADUAL[RO], PERFIL PESQUISAS (Presidente), campo 09/09-14/09, divulgação 2026-09-15, N=1480, registro BR040782026
-- [aguardando desde 2026-09-15] TSE ESTADUAL[TO], #NULO# (Presidente), campo 12/09-14/09, divulgação 2026-09-15, N=1504, registro BR051432026
 - [aguardando desde 2026-09-15] TSE GO, EXATA.GO (Governador, Senador), campo 10/09-14/09, divulgação 2026-09-15, N=1700, registro GO014212026
 - [aguardando desde 2026-09-15] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 09/09-14/09, divulgação 2026-09-15, N=2000, registro GO018142026
 - [aguardando desde 2026-09-15] TSE MA, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 10/09-14/09, divulgação 2026-09-15, N=1500, registro MA096652026
 - [aguardando desde 2026-09-15] TSE MG, #NULO# (Governador, Senador, Deputado Fede), campo 09/09-12/09, divulgação 2026-09-15, N=1000, registro MG004682026
-- [aguardando desde 2026-09-15] TSE NACIONAL?, #NULO# (Presidente), campo 09/09-13/09, divulgação 2026-09-15, N=2002, registro BR069022026
-- [aguardando desde 2026-09-15] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 10/09-13/09, divulgação 2026-09-15, N=2000, registro BR034822026
-- [aguardando desde 2026-09-15] TSE PI, OPINAR PESQUISAS (Senador), campo 05/09-08/09, divulgação 2026-09-15, N=2000, registro PI028662026
 - [aguardando desde 2026-09-15] TSE RO, PERFIL PESQUISAS (Governador, Senador, Deputado Fede), campo 09/09-14/09, divulgação 2026-09-15, N=1480, registro RO055032026
 - [aguardando desde 2026-09-15] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 08/09-13/09, divulgação 2026-09-15, N=1500, registro RR073462026
 - [aguardando desde 2026-09-15] TSE TO, REAL TIME BIG DATA (Governador, Senador), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro TO058052026
-- [aguardando desde 2026-09-15] TSE TO, #NULO# (Governador, Senador), campo 12/09-14/09, divulgação 2026-09-15, N=1504, registro TO085782026
 
 ## Últimas publicações do Veritá
 
