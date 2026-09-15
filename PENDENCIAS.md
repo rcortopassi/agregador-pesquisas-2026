@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 14/09/2026 21:22. Mercados: Polymarket 45,5%/51,9%, Kalshi 46,0%/53,0%.
+Rodada de 14/09/2026 21:31. Mercados: Polymarket 45,5%/51,9%, Kalshi 46,0%/53,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -31,14 +31,9 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-13] TSE PI, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 07/09-10/09, divulgação 2026-09-13, N=1200, registro PI070312026
 - [aguardando desde 2026-09-14] TSE AL, TDL PESQUISA (Governador, Senador), campo 10/09-12/09, divulgação 2026-09-14, N=1200, registro AL089202026
 - [aguardando desde 2026-09-14] TSE ESTADUAL[PA], DOXA (Presidente), campo 08/09-12/09, divulgação 2026-09-14, N=2000, registro BR035382026
-- [aguardando desde 2026-09-14] TSE ESTADUAL[RN], METADATA (Presidente), campo 10/09-12/09, divulgação 2026-09-14, N=1536, registro BR038302026
-- [aguardando desde 2026-09-14] TSE ESTADUAL[SC], NEOKEMP PESQUISAS (Presidente), campo 10/09-12/09, divulgação 2026-09-14, N=1008, registro BR086902026
 - [aguardando desde 2026-09-14] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 09/09-13/09, divulgação 2026-09-14, N=1200, registro GO094442026
 - [aguardando desde 2026-09-14] TSE MG, F5 ATUALIZA DADOS (Governador, Senador), campo 09/09-12/09, divulgação 2026-09-14, N=1560, registro MG090352026
-- [aguardando desde 2026-09-14] TSE PA, DOXA (Governador, Senador), campo 08/09-12/09, divulgação 2026-09-14, N=2000, registro PA067302026
 - [aguardando desde 2026-09-14] TSE PR, INSTITUTO RANKING PESQUISA (Governador, Senador), campo 09/09-11/09, divulgação 2026-09-14, N=1200, registro PR043932026
-- [aguardando desde 2026-09-14] TSE RN, METADATA (Governador, Senador, Deputado Fede), campo 10/09-12/09, divulgação 2026-09-14, N=1536, registro RN025432026
-- [aguardando desde 2026-09-14] TSE SC, NEOKEMP PESQUISAS (Governador, Senador), campo 10/09-12/09, divulgação 2026-09-14, N=1008, registro SC052062026
 - [aguardando desde 2026-09-14] TSE SE, POSITIVA PESQUISAS (Governador, Senador, Deputado Fede), campo 09/09-12/09, divulgação 2026-09-14, N=1000, registro SE096802026
 
 ## Últimas publicações do Veritá
