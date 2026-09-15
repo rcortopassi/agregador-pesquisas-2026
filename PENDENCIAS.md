@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 14/09/2026 21:31. Mercados: Polymarket 45,5%/51,9%, Kalshi 46,0%/53,0%.
+Rodada de 15/09/2026 06:22. Mercados: Polymarket 44,5%/51,6%, Kalshi 43,0%/52,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -29,12 +29,41 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-13] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 08/09-12/09, divulgação 2026-09-13, N=1200, registro BR010192026
 - [aguardando desde 2026-09-13] TSE MT, PERCENT PESQUISA DE MERCADO  (Governador, Senador, Deputado Fede), campo 08/09-12/09, divulgação 2026-09-13, N=1200, registro MT004402026
 - [aguardando desde 2026-09-13] TSE PI, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 07/09-10/09, divulgação 2026-09-13, N=1200, registro PI070312026
-- [aguardando desde 2026-09-14] TSE AL, TDL PESQUISA (Governador, Senador), campo 10/09-12/09, divulgação 2026-09-14, N=1200, registro AL089202026
 - [aguardando desde 2026-09-14] TSE ESTADUAL[PA], DOXA (Presidente), campo 08/09-12/09, divulgação 2026-09-14, N=2000, registro BR035382026
 - [aguardando desde 2026-09-14] TSE GO, DIRECT PESQUISAS (Governador, Senador, Deputado Fede), campo 09/09-13/09, divulgação 2026-09-14, N=1200, registro GO094442026
 - [aguardando desde 2026-09-14] TSE MG, F5 ATUALIZA DADOS (Governador, Senador), campo 09/09-12/09, divulgação 2026-09-14, N=1560, registro MG090352026
 - [aguardando desde 2026-09-14] TSE PR, INSTITUTO RANKING PESQUISA (Governador, Senador), campo 09/09-11/09, divulgação 2026-09-14, N=1200, registro PR043932026
 - [aguardando desde 2026-09-14] TSE SE, POSITIVA PESQUISAS (Governador, Senador, Deputado Fede), campo 09/09-12/09, divulgação 2026-09-14, N=1000, registro SE096802026
+- [NOVO] TSE AL, REAL TIME BIG DATA (Governador, Senador), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro AL092482026
+- [NOVO] TSE AP, F5 PESQUISAS E CONSULTORIA (Governador, Senador, Deputado Fede), campo 10/09-14/09, divulgação 2026-09-15, N=1065, registro AP011522026
+- [NOVO] TSE ESTADUAL[AL], REAL TIME BIG DATA (Presidente), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro BR013152026
+- [NOVO] TSE ESTADUAL[AL], REAL TIME BIG DATA (Presidente), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro BR002832026
+- [NOVO] TSE ESTADUAL[AL], REAL TIME BIG DATA (Presidente), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro BR089182026
+- [NOVO] TSE ESTADUAL[AL], REAL TIME BIG DATA (Presidente), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro BR057112026
+- [NOVO] TSE ESTADUAL[GO], IGAPE- INSTITUTO GAZETA DE P (Presidente), campo 09/09-14/09, divulgação 2026-09-15, N=2000, registro BR039302026
+- [NOVO] TSE ESTADUAL[MG], #NULO# (Presidente), campo 09/09-12/09, divulgação 2026-09-15, N=1000, registro BR023292026
+- [NOVO] TSE ESTADUAL[RO], PERFIL PESQUISAS (Presidente), campo 09/09-14/09, divulgação 2026-09-15, N=1480, registro BR040782026
+- [NOVO] TSE ESTADUAL[TO], #NULO# (Presidente), campo 12/09-14/09, divulgação 2026-09-15, N=1504, registro BR051432026
+- [NOVO] TSE GO, EXATA.GO (Governador, Senador), campo 10/09-14/09, divulgação 2026-09-15, N=1700, registro GO014212026
+- [NOVO] TSE GO, IGAPE- INSTITUTO GAZETA DE P (Governador, Senador, Deputado Fede), campo 09/09-14/09, divulgação 2026-09-15, N=2000, registro GO018142026
+- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 10/09-14/09, divulgação 2026-09-15, N=350, registro MA096832026
+- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 09/09-13/09, divulgação 2026-09-15, N=350, registro MA043842026
+- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 09/09-12/09, divulgação 2026-09-15, N=350, registro MA056532026
+- [NOVO] TSE MA, IPSENSUS PESQUISAS (Governador, Senador), campo 09/09-13/09, divulgação 2026-09-15, N=350, registro MA064262026
+- [NOVO] TSE MA, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 10/09-14/09, divulgação 2026-09-15, N=1500, registro MA096652026
+- [NOVO] TSE MG, #NULO# (Governador, Senador, Deputado Fede), campo 09/09-12/09, divulgação 2026-09-15, N=1000, registro MG004682026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 09/09-13/09, divulgação 2026-09-15, N=2002, registro BR069022026
+- [NOVO] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 10/09-13/09, divulgação 2026-09-15, N=2000, registro BR034822026
+- [NOVO] TSE PA, REAL TIME BIG DATA (Governador, Senador), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro PA004152026
+- [NOVO] TSE PE, INSTITUTO DE PESQUISA MULTIP (Governador, Senador), campo 12/09-14/09, divulgação 2026-09-15, N=900, registro PE070352026
+- [NOVO] TSE PE, REAL TIME BIG DATA (Governador, Senador), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro PE079532026
+- [NOVO] TSE PI, OPINAR PESQUISAS (Senador), campo 05/09-08/09, divulgação 2026-09-15, N=2000, registro PI028662026
+- [NOVO] TSE PI, GAMA PESQUISA E CONSULTORIA (Governador, Senador, Deputado Fede), campo 05/09-06/09, divulgação 2026-09-15, N=300, registro PI085102026
+- [NOVO] TSE RO, PERFIL PESQUISAS (Governador, Senador, Deputado Fede), campo 09/09-14/09, divulgação 2026-09-15, N=1480, registro RO055032026
+- [NOVO] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 08/09-13/09, divulgação 2026-09-15, N=1500, registro RR073462026
+- [NOVO] TSE RS, STUDIO PESQUISAS (Governador, Senador), campo 05/09-08/09, divulgação 2026-09-15, N=960, registro RS045522026
+- [NOVO] TSE TO, REAL TIME BIG DATA (Governador, Senador), campo 10/09-14/09, divulgação 2026-09-15, N=1600, registro TO058052026
+- [NOVO] TSE TO, #NULO# (Governador, Senador), campo 12/09-14/09, divulgação 2026-09-15, N=1504, registro TO085782026
 
 ## Últimas publicações do Veritá
 
@@ -53,43 +82,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-04 | AC | ATLASINTEL | Governador, Senador | 29/08-03/09 | 1200 | AC013992026 |
-| 2026-09-04 | AL | TDL PESQUISA | Governador, Senador | 31/08-02/09 | 1200 | AL051212026 |
-| 2026-09-04 | AL | DATATRENDS | Governador, Senador | 31/08-02/09 | 1200 | AL050872026 |
-| 2026-09-04 | AM | ATLASINTEL | Governador, Senador | 29/08-03/09 | 1200 | AM049392026 |
-| 2026-09-04 | CE | #NULO# | Governador, Senador | 31/08-03/09 | 900 | CE011492026 |
-| 2026-09-04 | ESTADUAL[AC] | ATLASINTEL | Presidente | 29/08-03/09 | 1200 | BR017992026 |
-| 2026-09-04 | ESTADUAL[AC] | VERITA | Presidente | 29/08-01/09 | 1030 | BR083972026 |
-| 2026-09-04 | ESTADUAL[AC] | ATLASINTEL | Presidente | 29/08-03/09 | 1200 | BR030462026 |
-| 2026-09-04 | ESTADUAL[AL] | DATATRENDS | Presidente | 31/08-02/09 | 1200 | BR091472026 |
-| 2026-09-04 | ESTADUAL[AL] | VERITA | Presidente | 29/08-01/09 | 1220 | BR031742026 |
-| 2026-09-04 | ESTADUAL[AL] | VERITA | Presidente | 29/08-01/09 | 1220 | BR066292026 |
-| 2026-09-04 | ESTADUAL[AL] | VERITA | Presidente | 29/08-01/09 | 1220 | BR063562026 |
-| 2026-09-04 | ESTADUAL[CE] | VERITA | Presidente | 29/08-01/09 | 1525 | BR052862026 |
-| 2026-09-04 | ESTADUAL[CE] | #NULO# | Presidente | 31/08-03/09 | 900 | BR045762026 |
-| 2026-09-04 | ESTADUAL[CE] | VERITA | Presidente | 29/08-01/09 | 1525 | BR050452026 |
-| 2026-09-04 | ESTADUAL[DF] | BADRA COMUNICACAO | Presidente | 01/09-03/09 | 1060 | BR065532026 |
-| 2026-09-04 | ESTADUAL[PA] | INDEXA PESQUISAS | Presidente | 31/08-02/09 | 1500 | BR065972026 |
-| 2026-09-04 | ESTADUAL[PE] | VERITA | Presidente | 29/08-01/09 | 2010 | BR099602026 |
-| 2026-09-04 | ESTADUAL[PE] | VERITA | Presidente | 29/08-01/09 | 2010 | BR054882026 |
-| 2026-09-04 | ESTADUAL[PI] | AMOSTRAGEM OPINIAO E MERCADO | Presidente | 29/08-02/09 | 1137 | BR047752026 |
-| 2026-09-04 | ESTADUAL[SE] | REAL TIME BIG DATA | Presidente | 31/08-03/09 | 1600 | BR097662026 |
-| 2026-09-04 | ESTADUAL[SP] | 100 CIDADES | Presidente | 01/09-03/09 | 1600 | BR067202026 |
-| 2026-09-04 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 27/08-31/08 | 600 | GO004112026 |
-| 2026-09-04 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 30/08-02/09 | 800 | GO013562026 |
-| 2026-09-04 | MA | IPPI - PESQUISAS E CONSULTOR | Governador, Senador, Deputado Fede | 29/08-02/09 | 1500 | MA088682026 |
-| 2026-09-04 | PA | INDEXA PESQUISAS | Governador, Senador | 31/08-02/09 | 1500 | PA051782026 |
-| 2026-09-04 | PE | VERITA | Governador, Senador | 29/08-01/09 | 2010 | PE031122026 |
-| 2026-09-04 | PI | AMOSTRAGEM OPINIAO E MERCADO | Governador, Senador, Deputado Fede | 29/08-02/09 | 1137 | PI055422026 |
-| 2026-09-04 | PR | #NULO# | Governador, Senador | 31/08-03/09 | 1200 | PR021792026 |
-| 2026-09-04 | RN | VERITA | Governador, Senador | 29/08-01/09 | 1220 | RN032522026 |
-| 2026-09-04 | RR | VERITA | Governador, Senador | 29/08-01/09 | 1030 | RR057052026 |
-| 2026-09-04 | SC | VERITA | Governador, Senador | 29/08-01/09 | 1525 | SC041992026 |
-| 2026-09-04 | SE | REAL TIME BIG DATA | Governador, Senador | 31/08-03/09 | 1600 | SE057762026 |
-| 2026-09-04 | SE | INSTITUTO FRANCA DE PESQUISA | Governador, Senador, Deputado Fede | 01/09-03/09 | 1300 | SE057432026 |
-| 2026-09-04 | SE | CTAS TECNOLOGIA | Governador, Senador, Deputado Fede | 31/08-03/09 | 1224 | SE076392026 |
-| 2026-09-04 | SP | 100 CIDADES | Governador, Senador | 01/09-03/09 | 1600 | SP001522026 |
-| 2026-09-04 | TO | VERITA | Governador, Senador | 29/08-01/09 | 1220 | TO080982026 |
 | 2026-09-05 | AM | #NULO# | Governador, Senador | 02/09-04/09 | 1350 | AM011182026 |
 | 2026-09-05 | ESTADUAL[MG] | ATLASINTEL | Presidente | 30/08-04/09 | 1800 | BR058522026 |
 | 2026-09-05 | ESTADUAL[PI] | VETOR TECNOLOGIA E PESQUISAS | Presidente | 24/08-29/08 | 1602 | BR003412026 |
@@ -357,4 +349,34 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-09-14 | RN | MEDIA - INTELIGENCIA EM PESQ | Governador, Senador, Deputado Fede | 09/09-10/09 | 500 | RN086712026 |
 | 2026-09-14 | SC | NEOKEMP PESQUISAS | Governador, Senador | 10/09-12/09 | 1008 | SC052062026 |
 | 2026-09-14 | SP | REAL TIME BIG DATA | Governador, Senador | 09/09-12/09 | 2000 | SP027942026 |
+| 2026-09-15 | AL | REAL TIME BIG DATA | Governador, Senador | 10/09-14/09 | 1600 | AL092482026 |
+| 2026-09-15 | AP | F5 PESQUISAS E CONSULTORIA | Governador, Senador, Deputado Fede | 10/09-14/09 | 1065 | AP011522026 |
+| 2026-09-15 | ESTADUAL[AL] | REAL TIME BIG DATA | Presidente | 10/09-14/09 | 1600 | BR013152026 |
+| 2026-09-15 | ESTADUAL[AL] | REAL TIME BIG DATA | Presidente | 10/09-14/09 | 1600 | BR002832026 |
+| 2026-09-15 | ESTADUAL[AL] | REAL TIME BIG DATA | Presidente | 10/09-14/09 | 1600 | BR089182026 |
+| 2026-09-15 | ESTADUAL[AL] | REAL TIME BIG DATA | Presidente | 10/09-14/09 | 1600 | BR057112026 |
+| 2026-09-15 | ESTADUAL[GO] | IGAPE- INSTITUTO GAZETA DE P | Presidente | 09/09-14/09 | 2000 | BR039302026 |
+| 2026-09-15 | ESTADUAL[MG] | #NULO# | Presidente | 09/09-12/09 | 1000 | BR023292026 |
+| 2026-09-15 | ESTADUAL[RO] | PERFIL PESQUISAS | Presidente | 09/09-14/09 | 1480 | BR040782026 |
+| 2026-09-15 | ESTADUAL[TO] | #NULO# | Presidente | 12/09-14/09 | 1504 | BR051432026 |
+| 2026-09-15 | GO | EXATA.GO | Governador, Senador | 10/09-14/09 | 1700 | GO014212026 |
+| 2026-09-15 | GO | IGAPE- INSTITUTO GAZETA DE P | Governador, Senador, Deputado Fede | 09/09-14/09 | 2000 | GO018142026 |
+| 2026-09-15 | MA | IPSENSUS PESQUISAS | Governador, Senador | 10/09-14/09 | 350 | MA096832026 |
+| 2026-09-15 | MA | IPSENSUS PESQUISAS | Governador, Senador | 09/09-13/09 | 350 | MA043842026 |
+| 2026-09-15 | MA | IPSENSUS PESQUISAS | Governador, Senador | 09/09-12/09 | 350 | MA056532026 |
+| 2026-09-15 | MA | IPSENSUS PESQUISAS | Governador, Senador | 09/09-13/09 | 350 | MA064262026 |
+| 2026-09-15 | MA | IPPI - PESQUISAS E CONSULTOR | Governador, Senador, Deputado Fede | 10/09-14/09 | 1500 | MA096652026 |
+| 2026-09-15 | MG | #NULO# | Governador, Senador, Deputado Fede | 09/09-12/09 | 1000 | MG004682026 |
+| 2026-09-15 | NACIONAL? | #NULO# | Presidente | 09/09-13/09 | 2002 | BR069022026 |
+| 2026-09-15 | NACIONAL? | INDEXA PESQUISAS | Presidente | 10/09-13/09 | 2000 | BR034822026 |
+| 2026-09-15 | PA | REAL TIME BIG DATA | Governador, Senador | 10/09-14/09 | 1600 | PA004152026 |
+| 2026-09-15 | PE | INSTITUTO DE PESQUISA MULTIP | Governador, Senador | 12/09-14/09 | 900 | PE070352026 |
+| 2026-09-15 | PE | REAL TIME BIG DATA | Governador, Senador | 10/09-14/09 | 1600 | PE079532026 |
+| 2026-09-15 | PI | OPINAR PESQUISAS | Senador | 05/09-08/09 | 2000 | PI028662026 |
+| 2026-09-15 | PI | GAMA PESQUISA E CONSULTORIA | Governador, Senador, Deputado Fede | 05/09-06/09 | 300 | PI085102026 |
+| 2026-09-15 | RO | PERFIL PESQUISAS | Governador, Senador, Deputado Fede | 09/09-14/09 | 1480 | RO055032026 |
+| 2026-09-15 | RR | CIPET | Governador, Senador, Deputado Fede | 08/09-13/09 | 1500 | RR073462026 |
+| 2026-09-15 | RS | STUDIO PESQUISAS | Governador, Senador | 05/09-08/09 | 960 | RS045522026 |
+| 2026-09-15 | TO | REAL TIME BIG DATA | Governador, Senador | 10/09-14/09 | 1600 | TO058052026 |
+| 2026-09-15 | TO | #NULO# | Governador, Senador | 12/09-14/09 | 1504 | TO085782026 |
 
