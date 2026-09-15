@@ -1165,16 +1165,6 @@
    "visto": "2026-09-13"
   },
   {
-   "proto": "GO094442026",
-   "escopo": "GO",
-   "inst": "DIRECT PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "09/09-13/09",
-   "div": "2026-09-14",
-   "n": "1200",
-   "visto": "2026-09-14"
-  },
-  {
    "proto": "MG090352026",
    "escopo": "MG",
    "inst": "F5 ATUALIZA DADOS",
@@ -1235,16 +1225,6 @@
    "visto": "2026-09-15"
   },
   {
-   "proto": "BR051432026",
-   "escopo": "ESTADUAL[TO]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "12/09-14/09",
-   "div": "2026-09-15",
-   "n": "1504",
-   "visto": "2026-09-15"
-  },
-  {
    "proto": "GO014212026",
    "escopo": "GO",
    "inst": "EXATA.GO",
@@ -1285,36 +1265,6 @@
    "visto": "2026-09-15"
   },
   {
-   "proto": "BR069022026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "09/09-13/09",
-   "div": "2026-09-15",
-   "n": "2002",
-   "visto": "2026-09-15"
-  },
-  {
-   "proto": "BR034822026",
-   "escopo": "NACIONAL?",
-   "inst": "INDEXA PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "10/09-13/09",
-   "div": "2026-09-15",
-   "n": "2000",
-   "visto": "2026-09-15"
-  },
-  {
-   "proto": "PI028662026",
-   "escopo": "PI",
-   "inst": "OPINAR PESQUISAS",
-   "cargo": "Senador",
-   "campo": "05/09-08/09",
-   "div": "2026-09-15",
-   "n": "2000",
-   "visto": "2026-09-15"
-  },
-  {
    "proto": "RO055032026",
    "escopo": "RO",
    "inst": "PERFIL PESQUISAS",
@@ -1342,16 +1292,6 @@
    "campo": "10/09-14/09",
    "div": "2026-09-15",
    "n": "1600",
-   "visto": "2026-09-15"
-  },
-  {
-   "proto": "TO085782026",
-   "escopo": "TO",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "12/09-14/09",
-   "div": "2026-09-15",
-   "n": "1504",
    "visto": "2026-09-15"
   }
  ],
