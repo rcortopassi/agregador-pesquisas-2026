@@ -1068,16 +1068,6 @@
  "ultima_rodada": "2026-09-16T11:52:31.181873-03:00",
  "pendentes": [
   {
-   "proto": "AC058492026",
-   "escopo": "AC",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "04/09-09/09",
-   "div": "2026-09-09",
-   "n": "1030",
-   "visto": "2026-09-09"
-  },
-  {
    "proto": "AC033792026",
    "escopo": "AC",
    "inst": "DATA CONTROL INSTITUTO DE PE",
@@ -1238,26 +1228,6 @@
    "visto": "2026-09-15"
   },
   {
-   "proto": "GO014212026",
-   "escopo": "GO",
-   "inst": "EXATA.GO",
-   "cargo": "Governador, Senador",
-   "campo": "10/09-14/09",
-   "div": "2026-09-15",
-   "n": "1700",
-   "visto": "2026-09-15"
-  },
-  {
-   "proto": "GO018142026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "09/09-14/09",
-   "div": "2026-09-15",
-   "n": "2000",
-   "visto": "2026-09-15"
-  },
-  {
    "proto": "MG004682026",
    "escopo": "MG",
    "inst": "#NULO#",
@@ -1328,16 +1298,6 @@
    "visto": "2026-09-16"
   },
   {
-   "proto": "AM072662026",
-   "escopo": "AM",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "1220",
-   "visto": "2026-09-16"
-  },
-  {
    "proto": "AP061902026",
    "escopo": "AP",
    "inst": "VERITA",
@@ -1355,16 +1315,6 @@
    "campo": "10/09-15/09",
    "div": "2026-09-16",
    "n": "2020",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "BA004782026",
-   "escopo": "BA",
-   "inst": "SECULUS CONSULTORIA E ASSESS",
-   "cargo": "Governador, Senador",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "1535",
    "visto": "2026-09-16"
   },
   {
@@ -1418,16 +1368,6 @@
    "visto": "2026-09-16"
   },
   {
-   "proto": "BR071802026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "SECULUS CONSULTORIA E ASSESS",
-   "cargo": "Presidente",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "1535",
-   "visto": "2026-09-16"
-  },
-  {
    "proto": "BR071972026",
    "escopo": "ESTADUAL[BA]",
    "inst": "VERITA",
@@ -1475,46 +1415,6 @@
    "campo": "14/09-16/09",
    "div": "2026-09-16",
    "n": "1500",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "BR099272026",
-   "escopo": "ESTADUAL[RS]",
-   "inst": "STUDIO PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "05/09-08/09",
-   "div": "2026-09-16",
-   "n": "960",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "BR078882026",
-   "escopo": "ESTADUAL[TO]",
-   "inst": "INDITEPP",
-   "cargo": "Presidente",
-   "campo": "26/08-04/09",
-   "div": "2026-09-16",
-   "n": "1200",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "GO038252026",
-   "escopo": "GO",
-   "inst": "GOIAS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-15/09",
-   "div": "2026-09-16",
-   "n": "1250",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "BR086912026",
-   "escopo": "NACIONAL?",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "12/09-14/09",
-   "div": "2026-09-16",
-   "n": "2000",
    "visto": "2026-09-16"
   },
   {
@@ -1575,16 +1475,6 @@
    "campo": "13/09-15/09",
    "div": "2026-09-16",
    "n": "1224",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "TO074882026",
-   "escopo": "TO",
-   "inst": "INDITEPP",
-   "cargo": "Governador, Senador",
-   "campo": "26/08-04/09",
-   "div": "2026-09-16",
-   "n": "1200",
    "visto": "2026-09-16"
   },
   {
