@@ -1095,16 +1095,6 @@
    "visto": "2026-09-11"
   },
   {
-   "proto": "AM026162026",
-   "escopo": "AM",
-   "inst": "PONTUAL PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "05/09-11/09",
-   "div": "2026-09-12",
-   "n": "3000",
-   "visto": "2026-09-12"
-  },
-  {
    "proto": "RR004422026",
    "escopo": "RR",
    "inst": "VERITA",
@@ -1175,16 +1165,6 @@
    "visto": "2026-09-14"
   },
   {
-   "proto": "AP011522026",
-   "escopo": "AP",
-   "inst": "F5 PESQUISAS E CONSULTORIA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "10/09-14/09",
-   "div": "2026-09-15",
-   "n": "1065",
-   "visto": "2026-09-15"
-  },
-  {
    "proto": "BR013152026",
    "escopo": "ESTADUAL[AL]",
    "inst": "REAL TIME BIG DATA",
@@ -1242,16 +1222,6 @@
    "campo": "09/09-14/09",
    "div": "2026-09-15",
    "n": "2000",
-   "visto": "2026-09-15"
-  },
-  {
-   "proto": "MA096652026",
-   "escopo": "MA",
-   "inst": "IPPI - PESQUISAS E CONSULTOR",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "10/09-14/09",
-   "div": "2026-09-15",
-   "n": "1500",
    "visto": "2026-09-15"
   },
   {
