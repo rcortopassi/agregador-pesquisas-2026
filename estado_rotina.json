@@ -1113,26 +1113,6 @@
  "ultima_rodada": "2026-09-17T21:09:10.193898-03:00",
  "pendentes": [
   {
-   "proto": "MG090352026",
-   "escopo": "MG",
-   "inst": "F5 ATUALIZA DADOS",
-   "cargo": "Governador, Senador",
-   "campo": "09/09-12/09",
-   "div": "2026-09-14",
-   "n": "1560",
-   "visto": "2026-09-14"
-  },
-  {
-   "proto": "BR039302026",
-   "escopo": "ESTADUAL[GO]",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Presidente",
-   "campo": "09/09-14/09",
-   "div": "2026-09-15",
-   "n": "2000",
-   "visto": "2026-09-15"
-  },
-  {
    "proto": "BR023292026",
    "escopo": "ESTADUAL[MG]",
    "inst": "#NULO#",
@@ -1223,16 +1203,6 @@
    "visto": "2026-09-16"
   },
   {
-   "proto": "BA025312026",
-   "escopo": "BA",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "2020",
-   "visto": "2026-09-16"
-  },
-  {
    "proto": "BR023862026",
    "escopo": "ESTADUAL[AC]",
    "inst": "VERITA",
@@ -1280,16 +1250,6 @@
    "campo": "10/09-15/09",
    "div": "2026-09-16",
    "n": "2020",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "BR075512026",
-   "escopo": "ESTADUAL[CE]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "1525",
    "visto": "2026-09-16"
   },
   {
@@ -1480,16 +1440,6 @@
    "campo": "11/09-16/09",
    "div": "2026-09-17",
    "n": "1200",
-   "visto": "2026-09-17"
-  },
-  {
-   "proto": "BR040292026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "15/09-17/09",
-   "div": "2026-09-17",
-   "n": "2002",
    "visto": "2026-09-17"
   },
   {
