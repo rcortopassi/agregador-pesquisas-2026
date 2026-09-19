@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 18/09/2026 21:13</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 19/09/2026 05:45</div>
   </div>
 
   <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
@@ -203,8 +203,8 @@
     var A=[],B=[]; for(var k in VH1DET){ A.push(VHIST[k]); B.push(VLULA1[k]); }
     VHDEF=Math.round(md(A)*100)/100; VLDEF=Math.round(md(B)*100)/100; })();
   var VDEF=3.9;
-  var PM=['42,5%','56,5%'];
-  var KAL=['44,0%','54,0%'];
+  var PM=['42,5%','56,6%'];
+  var KAL=['44,0%','55,0%'];
   var MODEL={jan:['63%','37%'],fev:['50%','50%'],mar:['25%','75%'],abr:['29%','71%'],mai:['50%','50%'],jun:['48%','52%']};
   var UFN={SP:'São Paulo',RJ:'Rio de Janeiro',MG:'Minas Gerais',ES:'Espírito Santo',PR:'Paraná',SC:'Santa Catarina',RS:'Rio Grande do Sul',BA:'Bahia',PE:'Pernambuco',CE:'Ceará',MA:'Maranhão',PB:'Paraíba',RN:'Rio Grande do Norte',AL:'Alagoas',SE:'Sergipe',PI:'Piauí',AM:'Amazonas',PA:'Pará',AC:'Acre',RO:'Rondônia',RR:'Roraima',AP:'Amapá',TO:'Tocantins',GO:'Goiás',MT:'Mato Grosso',MS:'Mato Grosso do Sul',DF:'Distrito Federal'};
   var DG={
@@ -1378,7 +1378,7 @@
      u:'https://polymarket.com/event/brazil-presidential-election',o:'Dinheiro real, sobre o vencedor da eleição. Lido da API oficial pela rodada automática, de 6 em 6 horas.'},
     {n:'Kalshi',t:'mercado regulado',v:'—',p:'Lula '+KAL[0],d:'ao vivo',
      u:'https://kalshi.com/markets/kxbrpres/brazil-presidency/kxbrpres-26',o:'Dinheiro real, sobre o vencedor da eleição. Lido da API oficial pela rodada automática, de 6 em 6 horas.'},
-    {n:'Manifold',t:'mercado com moeda própria',v:'—',p:'44,0%',d:'18/09/2026',
+    {n:'Manifold',t:'mercado com moeda própria',v:'—',p:'43,5%',d:'19/09/2026',
      u:'https://manifold.markets/BrunoParga/-2026-winner-is-lula-or-whoever-he',o:'Pergunta mais larga: Lula ou quem ele apoiar. Lido da API oficial pela rodada automática, de 6 em 6 horas, como Polymarket e Kalshi. CUIDADO ao reapurar: existe um clone do mesmo enunciado com dois apostadores e preço diferente; o mercado bom é o do BrunoParga, com volume perto de 96 mil.'},
     {n:'Metaculus',t:'comunidade de previsores',v:'—',p:'Lula 55%',d:'10/09/2026',
      u:'https://www.metaculus.com/questions/22310/will-lula-be-reelected-in-2026/',
@@ -2140,7 +2140,7 @@
       th+='</tbody></table>';
       document.getElementById('table-area').innerHTML=th;
       document.getElementById('note').textContent=d.note;
-      document.getElementById('foot').innerHTML='O agregado do painel é a MEDIANA de TODOS os institutos (não a média): robusta a outlier, então ninguém é excluído. Br/N/Ind = brancos, nulos e indecisos; como esse bloco se reparte no 2º turno não é modelado aqui. Polymarket e Kalshi: mercados de "quem vence a presidência" (multicandidato, não somam 100), <b>cotação de 18/9/2026</b> (lida das APIs oficiais) que não atualiza sozinha, confira ao vivo.';
+      document.getElementById('foot').innerHTML='O agregado do painel é a MEDIANA de TODOS os institutos (não a média): robusta a outlier, então ninguém é excluído. Br/N/Ind = brancos, nulos e indecisos; como esse bloco se reparte no 2º turno não é modelado aqui. Polymarket e Kalshi: mercados de "quem vence a presidência" (multicandidato, não somam 100), <b>cotação de 19/9/2026</b> (lida das APIs oficiais) que não atualiza sozinha, confira ao vivo.';
     } else {
       var rs=DI[cur.m].rows, RM=[],AM=[],c=0, body='';
       for(var j=0;j<rs.length;j++){ var x=rs[j]; var mg=t2margin(x[7]); if(mg===null) continue;
