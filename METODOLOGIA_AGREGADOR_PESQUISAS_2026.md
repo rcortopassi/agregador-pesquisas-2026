@@ -6,6 +6,16 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- RIO GRANDE DO NORTE PASSA AO MEDIA NO GOVERNO E NO SENADO; SENADO DE PERNAMBUCO VAI À DATATRENDS; DATAFOLHA PRESIDENCIAL DO CEARÁ FICA FORA DO MAPA PELO DESEMPATE (19/09/2026, 13:50). Rodada local das 13h30, com o Actions das 10h53 verde. Apuração em três agentes (lote Veritá, Nordeste, demais). Fila acordou com 70; saem 3. O `DI` nacional e o `PRES26` NÃO mudaram.
+
+  RN. Media RN-00740 (12 a 17/9, 2.000, margem de 2,2, paga pela Potengi Comunicação; O Potengi 19/9 11h57 e 11h58, conferido por curl) assume `DG` e `DS` por ter o fim de campo mais recente (Exatus terminava 16/9) e entra em `DGM`/`DSM`. GOVERNO SÓ EM VOTOS VÁLIDOS (Allyson 38,19, Álvaro Dias 32,48, Cadu Xavier 27,11): a matéria não dá totais, e a nota do resumo avisa que o nível não se compara com a Exatus. Senado em SOMA dos dois votos, base 200, mesma régua da Exatus (Styvenson 31, Zenaide 20,7). O presidencial BR-08728 não saiu: FICA na fila.
+
+  PE. DataTrends PE-05602 SENADO saiu (Blog do Mário Flávio, 19/9 12h52): substitui a própria de 7 a 9/9 em `DSM` e assume `DS` no lugar da Real Time de 10 a 14/9 (Marília 16, Humberto 14, Mendonça 13; consolidado reduzido a 100, fecha com branco e nulo 18 e não sabem 19). PE-05602 sai da fila; o gêmeo BR-08061 FICA.
+
+  CE. Datafolha BR-00180 saiu (O Povo, 19/9 10h08): Lula 54 x Flávio 26 no 1º turno, 60 x 32 no 2º. NÃO entra no `PRES26`: mesmo fim de campo (17/9) da Real Time já no mapa, que fica pelo desempate por amostra (1.600 contra 1.204). Sai da fila por verificação. Se o Rafael quiser o presidencial estadual em série, este é o caso a usar.
+
+  NÃO SAIU ATÉ 13H45: todo o lote Veritá de 10 a 19/9 exceto um fragmento do governo do ES-00353 (TC Online 19/9 12h24, só Pazolini 40,5 em válidos e dois números sem nome; não inserido, FICA na fila). O POVO diz que o lote de 14 a 19/9 (RS, RO, TO, SP, SE, SC, RR) está liberado para 19/9. Fora da fila e ainda não no painel: Veritá PE-05690/BR-09932 (6 a 11/9, Raquel 51,4 x João 42,3; Ricardo Antunes 16/9) e o Senado da Veritá BA-02531 (Costa Sul FM 17/9, métrica incerta). Ranking MS-04287: Senado promete sair no site e no Jornal da Top de 20/9.
+
 - MINAS VIRA FLÁVIO NO MAPA PELA VERITÁ; ACRE, MATO GROSSO DO SUL, PERNAMBUCO E RIO GRANDE DO SUL TROCAM O RESUMO (19/09/2026, 08:47). Rodada local das 8h30, com o Actions das 5h45 verde. Apuração em dois agentes (lote Veritá e demais). Fila acordou com 77; saem 7. O `DI` nacional NÃO mudou.
 
   MG. Veritá MG-05919 (12 a 17/9, 2.030, URA; CNN 18/9 18h18, conferido por curl) assume `DG` (Cleitinho 47,4 x Patrus 21,2, Roscoe 8,4, Kalil 8,2, Mateus Simões 3,1; totais) e entra em `DGM`. O gêmeo BR-03240 (CNN 19h15) saiu SÓ com 2º turno, Flávio 45,6 x Lula 38,4, e assume `PRES26['MG']` sem `t1` (o render aceita): MG passa de 'E' a 'F'. O SENADO da MG-05919 saiu na CNN (Viana 30,8, Marília 19,6, Sávio 16,8) e foi DESPUBLICADO, com métrica desconhecida: MG-05919 FICA na fila só por ele. DataTempo MG-00468 SENADO saiu (O Tempo 19/9 7h, indicador das duas escolhas, fecha em 100) e entra em `DSM` como LISTA PARCIAL (Marília 13, Aécio 10,3, Viana 9,8, Sávio 7,2; os abaixo de 7 só em gráfico), sem resumo.

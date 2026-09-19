@@ -1467,16 +1467,6 @@
    "visto": "2026-09-17"
   },
   {
-   "proto": "BR001802026",
-   "escopo": "ESTADUAL[CE]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "14/09-17/09",
-   "div": "2026-09-18",
-   "n": "1204",
-   "visto": "2026-09-18"
-  },
-  {
    "proto": "BR031282026",
    "escopo": "ESTADUAL[DF]",
    "inst": "BADRA COMUNICACAO",
@@ -1637,16 +1627,6 @@
    "visto": "2026-09-18"
   },
   {
-   "proto": "RN007402026",
-   "escopo": "RN",
-   "inst": "MEDIA - INTELIGENCIA EM PESQ",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "12/09-17/09",
-   "div": "2026-09-18",
-   "n": "2000",
-   "visto": "2026-09-18"
-  },
-  {
    "proto": "BR080612026",
    "escopo": "ESTADUAL[PE]",
    "inst": "DATATRENDS",
@@ -1754,16 +1734,6 @@
    "campo": "14/09-18/09",
    "div": "2026-09-19",
    "n": "2000",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "PE056022026",
-   "escopo": "PE",
-   "inst": "DATATRENDS",
-   "cargo": "Governador, Senador",
-   "campo": "15/09-17/09",
-   "div": "2026-09-19",
-   "n": "1200",
    "visto": "2026-09-19"
   },
   {
