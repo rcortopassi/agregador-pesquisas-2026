@@ -1187,26 +1187,6 @@
    "visto": "2026-09-15"
   },
   {
-   "proto": "RO055032026",
-   "escopo": "RO",
-   "inst": "PERFIL PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "09/09-14/09",
-   "div": "2026-09-15",
-   "n": "1480",
-   "visto": "2026-09-15"
-  },
-  {
-   "proto": "AC068442026",
-   "escopo": "AC",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "1030",
-   "visto": "2026-09-16"
-  },
-  {
    "proto": "AL056672026",
    "escopo": "AL",
    "inst": "VERITA",
@@ -1424,36 +1404,6 @@
    "campo": "12/09-17/09",
    "div": "2026-09-17",
    "n": "2030",
-   "visto": "2026-09-17"
-  },
-  {
-   "proto": "MS009952026",
-   "escopo": "MS",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "12/09-17/09",
-   "div": "2026-09-17",
-   "n": "1220",
-   "visto": "2026-09-17"
-  },
-  {
-   "proto": "MT089562026",
-   "escopo": "MT",
-   "inst": "INSTITUTO MAIS",
-   "cargo": "Governador, Senador",
-   "campo": "11/09-16/09",
-   "div": "2026-09-17",
-   "n": "1200",
-   "visto": "2026-09-17"
-  },
-  {
-   "proto": "PE029892026",
-   "escopo": "PE",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "11/09-16/09",
-   "div": "2026-09-17",
-   "n": "1800",
    "visto": "2026-09-17"
   },
   {
@@ -1727,16 +1677,6 @@
    "visto": "2026-09-19"
   },
   {
-   "proto": "MS042872026",
-   "escopo": "MS",
-   "inst": "RANKING BRASIL INTELIGENCIA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "14/09-18/09",
-   "div": "2026-09-19",
-   "n": "2000",
-   "visto": "2026-09-19"
-  },
-  {
    "proto": "RN095702026",
    "escopo": "RN",
    "inst": "ITEM PESQUISAS TECNICAS",
@@ -1744,16 +1684,6 @@
    "campo": "15/09-17/09",
    "div": "2026-09-19",
    "n": "800",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "RO058482026",
-   "escopo": "RO",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1220",
    "visto": "2026-09-19"
   },
   {
