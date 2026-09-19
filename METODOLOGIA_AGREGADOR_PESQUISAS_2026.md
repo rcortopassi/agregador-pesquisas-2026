@@ -6,6 +6,22 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- MINAS VIRA FLÁVIO NO MAPA PELA VERITÁ; ACRE, MATO GROSSO DO SUL, PERNAMBUCO E RIO GRANDE DO SUL TROCAM O RESUMO (19/09/2026, 08:47). Rodada local das 8h30, com o Actions das 5h45 verde. Apuração em dois agentes (lote Veritá e demais). Fila acordou com 77; saem 7. O `DI` nacional NÃO mudou.
+
+  MG. Veritá MG-05919 (12 a 17/9, 2.030, URA; CNN 18/9 18h18, conferido por curl) assume `DG` (Cleitinho 47,4 x Patrus 21,2, Roscoe 8,4, Kalil 8,2, Mateus Simões 3,1; totais) e entra em `DGM`. O gêmeo BR-03240 (CNN 19h15) saiu SÓ com 2º turno, Flávio 45,6 x Lula 38,4, e assume `PRES26['MG']` sem `t1` (o render aceita): MG passa de 'E' a 'F'. O SENADO da MG-05919 saiu na CNN (Viana 30,8, Marília 19,6, Sávio 16,8) e foi DESPUBLICADO, com métrica desconhecida: MG-05919 FICA na fila só por ele. DataTempo MG-00468 SENADO saiu (O Tempo 19/9 7h, indicador das duas escolhas, fecha em 100) e entra em `DSM` como LISTA PARCIAL (Marília 13, Aécio 10,3, Viana 9,8, Sávio 7,2; os abaixo de 7 só em gráfico), sem resumo.
+
+  AC. Data Control AC-07272/BR-04858 (12 a 16/9, 1.356 domiciliares) assume `DG` (Mailza 40,4 x Alan Rick 26,1 x Bocalom 13,2), `DS` (consolidado reduzido a 100: Gladson 20,6, Bittar 17,5, Jorge Viana 13,1, Mara Rocha 12,65) e `PRES26` (Flávio 51 x Lula 24,8, sem 2º turno). Alan Rick contesta a pesquisa; sem notícia de suspensão.
+
+  MS. Ranking MS-04287/BR-06426 (14 a 18/9, Rádio FM D.A.) substitui a própria de 4 a 9/9 em `DGM` e assume `DG` (Riedel 49, Fábio Trad 19,5, Delcídio 11) e `PRES26` (Flávio 40 x Lula 31, sem 2º turno). Senado não saiu: MS-04287 FICA na fila.
+
+  PE. DataTrends PE-05602 (15 a 17/9, 1.200) substitui a própria de 7 a 9/9 e assume `DG`: Raquel Lyra 46 x João Campos 38; 49 x 41. Senado e o gêmeo BR-08061 não saíram, FICAM na fila. O "empate Flávio x Lula" do Blog da Polo de 18/9 é pesquisa MUNICIPAL de Santa Cruz do Capibaribe.
+
+  RS. RS-00319 (#NULO#) é a PARANÁ PESQUISAS, paga pelo PL (R$ 135 mil), 16 a 18/9, 1.352 (Poder360, 19/9 7h). Assume `DG` (Zucco 36,4 x Brizola 31,3 x Gabriel Souza 12,9) e `DS` (SOMA, os nomes dão 146,9, embora o Poder360 diga consolidado: Manuela 32,2, van Hattem 29,5, Pimenta 25,4, Sanderson 21,2, Rigotto 20,6); `CONTR` marcado nos dois cargos.
+
+  SÓ NA SÉRIE. Datafolha CE-01290 (14 a 17/9; Ciro 47 x Elmano 40; 51 x 43; Senado consolidado Cid 24, Wagner 21, Luizianne 18) substitui a própria de 31/8 a 2/9 em `DGM`/`DSM`, sem resumo pelo desempate por amostra com a Real Time. O PRESIDENCIAL BR-00180 sai HOJE às 10h no O POVO CBN: fica na fila. Phoenix AM-04753 (12 a 15/9; Omar 26,2, David 21,7, Cidade 19,8, Maria do Carmo 18,2) entra em `DGM` sem resumo: fonte única simpática a David Almeida e lista fechando em 100 sem branco e nulo. Senado não saiu, fica na fila.
+
+  RÓTULOS ERRADOS DA FILA (pareamento por hora de registro e valor): BR-07861 é AP (não AC); BR-07855 é MS (não ES); BR-06701 é GO e BR-07504 é MA (não PA; o gêmeo do Pará é BR-01223, fora da fila); BR-07059 é PI e BR-08734 é PB (não RN); BR-09946 é TO e BR-01212 é SE (não RO); BR-07923 sem par. SP-05656 (#NULO#) é a Vox Brasil, estadual. Nada mais saiu às 8h45, incluído todo o lote Veritá de 10 a 15/9, 12 a 17/9 (exceto MG) e 13 a 18/9. A CNN VOLTOU a publicar o Veritá em 18/9 (MG): vigiar cnnbrasil.com.br/eleicoes para os demais lotes.
+
 - SERGIPE VIRA PARA VALMIR PELO INOR, PERNAMBUCO GANHA A REVISTA TOTAL SÓ NA SÉRIE E A VERITÁ AM-08447 É RISCADA (18/09/2026, 13:52). Rodada local das 13h40, com o Actions das 11h24 verde. Apuração em três agentes (Nordeste, Norte/Centro-Oeste, Sudeste/Sul/nacional). Fila acordou com 52 e segue com 52: as duas rodadas que entraram publicaram só governo, e ficam na fila pelo Senado. O `DI` nacional e o `PRES26` NÃO mudaram.
 
   SE. INOR/Xodó FM SE-08844 (10 a 13/9, 1.070 presenciais em 31 municípios, margem de 3; RO Acontece, 18/9, 9h18, ficha completa conferida por curl) SUBSTITUI a própria rodada de 1º a 4/9 em `DGM` e ASSUME `DG['SE']` no lugar da Veritá de 6 a 11/9: Valmir 44,67 x Mitidieri 37,29, Ricardo Marques 4,86 (totais; válidos 50,26 x 41,96). A Global SE-03502 termina depois (15/9), mas segue fora do resumo por ser texto de assessoria e parcial. O resumo agora contraria as outras seis casas do mês: se sair a Veritá ou outra rodada de fim de campo posterior com fonte de imprensa, ela assume. Senado da SE-08844 não saiu: FICA na fila; a linha do INOR em `DSM` segue sendo a de 1º a 4/9.

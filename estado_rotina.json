@@ -1187,16 +1187,6 @@
    "visto": "2026-09-15"
   },
   {
-   "proto": "MG004682026",
-   "escopo": "MG",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "09/09-12/09",
-   "div": "2026-09-15",
-   "n": "1000",
-   "visto": "2026-09-15"
-  },
-  {
    "proto": "RO055032026",
    "escopo": "RO",
    "inst": "PERFIL PESQUISAS",
@@ -1367,16 +1357,6 @@
    "visto": "2026-09-17"
   },
   {
-   "proto": "BR032402026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "12/09-17/09",
-   "div": "2026-09-17",
-   "n": "2030",
-   "visto": "2026-09-17"
-  },
-  {
    "proto": "BR055912026",
    "escopo": "ESTADUAL[MT]",
    "inst": "INSTITUTO MAIS",
@@ -1485,36 +1465,6 @@
    "div": "2026-09-17",
    "n": "1500",
    "visto": "2026-09-17"
-  },
-  {
-   "proto": "AC072722026",
-   "escopo": "AC",
-   "inst": "DATA CONTROL INSTITUTO DE PE",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "12/09-16/09",
-   "div": "2026-09-18",
-   "n": "1356",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "CE012902026",
-   "escopo": "CE",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-17/09",
-   "div": "2026-09-18",
-   "n": "1204",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "BR048582026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "DATA CONTROL INSTITUTO DE PE",
-   "cargo": "Presidente",
-   "campo": "12/09-16/09",
-   "div": "2026-09-18",
-   "n": "1356",
-   "visto": "2026-09-18"
   },
   {
    "proto": "BR001802026",
@@ -1697,16 +1647,6 @@
    "visto": "2026-09-18"
   },
   {
-   "proto": "BR064262026",
-   "escopo": "ESTADUAL[MS]",
-   "inst": "RANKING BRASIL INTELIGENCIA",
-   "cargo": "Presidente",
-   "campo": "14/09-18/09",
-   "div": "2026-09-19",
-   "n": "2000",
-   "visto": "2026-09-19"
-  },
-  {
    "proto": "BR080612026",
    "escopo": "ESTADUAL[PE]",
    "inst": "DATATRENDS",
@@ -1864,16 +1804,6 @@
    "campo": "14/09-19/09",
    "div": "2026-09-19",
    "n": "1300",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "RS003192026",
-   "escopo": "RS",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "16/09-18/09",
-   "div": "2026-09-19",
-   "n": "1352",
    "visto": "2026-09-19"
   },
   {
