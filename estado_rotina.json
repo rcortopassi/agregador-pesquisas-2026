@@ -1304,26 +1304,6 @@
    "visto": "2026-09-16"
   },
   {
-   "proto": "SE088442026",
-   "escopo": "SE",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "10/09-13/09",
-   "div": "2026-09-16",
-   "n": "1070",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "SE035022026",
-   "escopo": "SE",
-   "inst": "INSTITUTO DE PESQUISAS E TEC",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "13/09-15/09",
-   "div": "2026-09-16",
-   "n": "1224",
-   "visto": "2026-09-16"
-  },
-  {
    "proto": "ES003532026",
    "escopo": "ES",
    "inst": "VERITA",
@@ -1404,16 +1384,6 @@
    "visto": "2026-09-17"
   },
   {
-   "proto": "MA089462026",
-   "escopo": "MA",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "12/09-17/09",
-   "div": "2026-09-17",
-   "n": "1525",
-   "visto": "2026-09-17"
-  },
-  {
    "proto": "MG059192026",
    "escopo": "MG",
    "inst": "VERITA",
@@ -1421,16 +1391,6 @@
    "campo": "12/09-17/09",
    "div": "2026-09-17",
    "n": "2030",
-   "visto": "2026-09-17"
-  },
-  {
-   "proto": "SE017352026",
-   "escopo": "SE",
-   "inst": "TWS POLITICA",
-   "cargo": "Governador, Senador",
-   "campo": "13/09-15/09",
-   "div": "2026-09-17",
-   "n": "1500",
    "visto": "2026-09-17"
   },
   {
@@ -1834,46 +1794,6 @@
    "visto": "2026-09-20"
   },
   {
-   "proto": "MA023742026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-18/09",
-   "div": "2026-09-20",
-   "n": "1000",
-   "visto": "2026-09-20"
-  },
-  {
-   "proto": "MA019912026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-18/09",
-   "div": "2026-09-20",
-   "n": "350",
-   "visto": "2026-09-20"
-  },
-  {
-   "proto": "MA064402026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-18/09",
-   "div": "2026-09-20",
-   "n": "350",
-   "visto": "2026-09-20"
-  },
-  {
-   "proto": "MA023612026",
-   "escopo": "MA",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-18/09",
-   "div": "2026-09-20",
-   "n": "350",
-   "visto": "2026-09-20"
-  },
-  {
    "proto": "MG078982026",
    "escopo": "MG",
    "inst": "F5 ATUALIZA DADOS",
@@ -1911,26 +1831,6 @@
    "campo": "18/09-20/09",
    "div": "2026-09-20",
    "n": "801",
-   "visto": "2026-09-20"
-  },
-  {
-   "proto": "SE011692026",
-   "escopo": "SE",
-   "inst": "POSITIVA PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "09/09-12/09",
-   "div": "2026-09-20",
-   "n": "1000",
-   "visto": "2026-09-20"
-  },
-  {
-   "proto": "SE035122026",
-   "escopo": "SE",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "17/09-19/09",
-   "div": "2026-09-20",
-   "n": "1300",
    "visto": "2026-09-20"
   }
  ],
