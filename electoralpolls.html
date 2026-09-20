@@ -1558,7 +1558,7 @@
     for(var q5=pts.length-1;q5>=0;q5--){ var fr5=q5/(pts.length-1);
       faixaB+=X(pts[q5].i).toFixed(1)+','+Y(pts[q5].f-meio*fr5).toFixed(1)+' '; }
     // pontas dos cenários em outubro, tamanho pelo peso
-    var cd='';
+    var cd='', cenLbl=[];
     for(var s=0;s<P0.cen.length;s++){ var o=P0.cen[s];
       if(o.l<lo||o.l>hi||o.f<lo||o.f>hi) continue;
       var rr=(3+7*o.w).toFixed(1), xx=(X(n-1)+9).toFixed(1);
@@ -1568,12 +1568,30 @@
           '<circle cx="'+xx+'" cy="'+Y(o.f).toFixed(1)+'" r="'+rr+'" fill="'+P.blue+'" fill-opacity="0.30" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')"/>'+
           '<circle cx="'+xx+'" cy="'+Y(o.l).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')"/>'+
           '<circle cx="'+xx+'" cy="'+Y(o.f).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')"/>'+
-          '<text x="'+(X(n-1)+22)+'" y="'+(Y((o.l+o.f)/2)+4).toFixed(1)+'" font-size="9.5" fill="'+P.mut+'" style="cursor:pointer;" onclick="pjExp(\''+kn+'\')">'+o.c+'</text>';
+          ''; cenLbl.push({y:Y((o.l+o.f)/2), c:o.c, k:kn});
     }
+    // Rótulos de ano dos cenários: dois ciclos podem ter a mesma média e o texto ficava um
+    // em cima do outro (2014 e 2022 em 19/09/2026, a 8,6px de distância com 11px de altura).
+    // Empurra para baixo o que estiver perto demais do anterior e, se a pilha estourar o
+    // gráfico, sobe o grupo inteiro. Nada disso muda o dado: só onde o texto é desenhado.
+    cenLbl.sort(function(a,b){ return a.y-b.y; });
+    var MINL=12;
+    for(var z=1;z<cenLbl.length;z++) if(cenLbl[z].y < cenLbl[z-1].y+MINL) cenLbl[z].y = cenLbl[z-1].y+MINL;
+    if(cenLbl.length){ var excesso=cenLbl[cenLbl.length-1].y-(T+ph-2); if(excesso>0) for(var z2=0;z2<cenLbl.length;z2++) cenLbl[z2].y-=excesso; }
+    for(var z3=0;z3<cenLbl.length;z3++){ var cl=cenLbl[z3];
+      cd+='<text x="'+(X(n-1)+22)+'" y="'+(cl.y+4).toFixed(1)+'" font-size="9.5" fill="'+P.mut+'" style="cursor:pointer;" onclick="pjExp(\''+cl.k+'\')">'+cl.c+'</text>'; }
     var grade='',rot='';
     for(var g=30;g<=55;g+=5){ grade+='<line x1="'+L+'" y1="'+Y(g).toFixed(1)+'" x2="'+(W-R)+'" y2="'+Y(g).toFixed(1)+'" stroke="'+P.bsoft+'"/>'+
       '<text x="'+(L-8)+'" y="'+(Y(g)+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="'+P.mut+'">'+g+'</text>'; }
     for(var e=0;e<n;e++){ rot+='<text x="'+X(e).toFixed(1)+'" y="'+(Hh-14)+'" text-anchor="middle" font-size="12" fill="'+(eixo[e].obs?P.txt2:P.goldtxt)+'">'+eixo[e].rot+'</text>'; }
+    // Rótulos das pontas: o de quem está por CIMA vai acima e o de quem está por baixo vai
+    // abaixo, calculado pelo valor. Antes as posições eram fixas (Lula acima, Flávio abaixo),
+    // e no dia em que o Flávio passou o Lula na projeção os dois números se encontraram no
+    // meio e ficaram ilegíveis (42,1 e 44,3 em 19/09/2026, sobrepostos). Ancorados à esquerda
+    // da ponta para deixar a margem direita inteira para as bolhas de ciclo e os anos.
+    var lemCima = ult.l >= ult.f;
+    var yLabL = lemCima ? Y(ult.l)-11 : Y(ult.l)+18;
+    var yLabF = lemCima ? Y(ult.f)+18 : Y(ult.f)-11;
     var xAnc=X(iAnc).toFixed(1);
     // textos do explicador que dependem do conjunto, não de um ponto
     var frenteP=P0.m>=0?'Lula':'Flávio';
@@ -1608,8 +1626,8 @@
       '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.f).toFixed(1)+'" r="4.5" fill="'+P.surf+'" stroke="'+P.blue+'" stroke-width="2.5" style="cursor:pointer;" onclick="pjExp(\'proj\')"/>'+
       '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.l).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\'proj\')"/>'+
       '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.f).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\'proj\')"/>'+
-      '<text x="'+X(n-1).toFixed(1)+'" y="'+(Y(ult.l)-11).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="700" fill="'+P.red+'">'+fmt(ult.l)+'</text>'+
-      '<text x="'+X(n-1).toFixed(1)+'" y="'+(Y(ult.f)+18).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="700" fill="'+P.blue+'">'+fmt(ult.f)+'</text>'+
+      '<text x="'+(X(n-1)-6).toFixed(1)+'" y="'+yLabL.toFixed(1)+'" text-anchor="end" font-size="12" font-weight="700" fill="'+P.red+'">'+fmt(ult.l)+'</text>'+
+      '<text x="'+(X(n-1)-6).toFixed(1)+'" y="'+yLabF.toFixed(1)+'" text-anchor="end" font-size="12" font-weight="700" fill="'+P.blue+'">'+fmt(ult.f)+'</text>'+
       rot+
     '</svg>'+
     '<div id="pj-exp" style="margin:6px 14px 12px; padding:9px 12px; font-size:12px; line-height:1.55; color:'+P.txt+'; background:'+P.surf2+'; border:1px solid '+P.bord+'; border-left:3px solid '+P.bord+'; border-radius:6px;">Toque em qualquer ponto do gráfico (bolinhas cheias, vazadas, linha pontilhada, faixa hachurada, círculos de 2010/2014/2022) para entender o que ele é e de onde o número sai.</div>';
