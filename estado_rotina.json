@@ -1249,16 +1249,6 @@
  "ultima_rodada": "2026-09-21T13:25:45.650540-03:00",
  "pendentes": [
   {
-   "proto": "BR040782026",
-   "escopo": "ESTADUAL[RO]",
-   "inst": "PERFIL PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "09/09-14/09",
-   "div": "2026-09-15",
-   "n": "1480",
-   "visto": "2026-09-15"
-  },
-  {
    "proto": "AM047532026",
    "escopo": "AM",
    "inst": "INSTITUTO PHOENIX & ASSOCIAD",
@@ -1279,60 +1269,10 @@
    "visto": "2026-09-16"
   },
   {
-   "proto": "BR078612026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "1030",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "BR019882026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "1220",
-   "visto": "2026-09-16"
-  },
-  {
-   "proto": "BR043832026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "10/09-15/09",
-   "div": "2026-09-16",
-   "n": "1220",
-   "visto": "2026-09-16"
-  },
-  {
    "proto": "ES003532026",
    "escopo": "ES",
    "inst": "VERITA",
    "cargo": "Governador, Senador",
-   "campo": "12/09-17/09",
-   "div": "2026-09-17",
-   "n": "1220",
-   "visto": "2026-09-17"
-  },
-  {
-   "proto": "BR007292026",
-   "escopo": "ESTADUAL[ES]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "12/09-17/09",
-   "div": "2026-09-17",
-   "n": "1220",
-   "visto": "2026-09-17"
-  },
-  {
-   "proto": "BR078552026",
-   "escopo": "ESTADUAL[ES]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
    "campo": "12/09-17/09",
    "div": "2026-09-17",
    "n": "1220",
@@ -1349,16 +1289,6 @@
    "visto": "2026-09-17"
   },
   {
-   "proto": "BR067012026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "12/09-17/09",
-   "div": "2026-09-17",
-   "n": "1525",
-   "visto": "2026-09-17"
-  },
-  {
    "proto": "BR075042026",
    "escopo": "ESTADUAL[PA]",
    "inst": "VERITA",
@@ -1366,16 +1296,6 @@
    "campo": "12/09-17/09",
    "div": "2026-09-17",
    "n": "1525",
-   "visto": "2026-09-17"
-  },
-  {
-   "proto": "BR088472026",
-   "escopo": "ESTADUAL[SE]",
-   "inst": "TWS POLITICA",
-   "cargo": "Presidente",
-   "campo": "13/09-15/09",
-   "div": "2026-09-17",
-   "n": "1500",
    "visto": "2026-09-17"
   },
   {
@@ -1409,16 +1329,6 @@
    "visto": "2026-09-18"
   },
   {
-   "proto": "BR078022026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "13/09-18/09",
-   "div": "2026-09-18",
-   "n": "2010",
-   "visto": "2026-09-18"
-  },
-  {
    "proto": "BR018392026",
    "escopo": "ESTADUAL[PE]",
    "inst": "VERITA",
@@ -1426,36 +1336,6 @@
    "campo": "13/09-18/09",
    "div": "2026-09-18",
    "n": "2010",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "BR026982026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "13/09-18/09",
-   "div": "2026-09-18",
-   "n": "2030",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "BR023992026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "13/09-18/09",
-   "div": "2026-09-18",
-   "n": "1220",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "BR087282026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "MEDIA - INTELIGENCIA EM PESQ",
-   "cargo": "Presidente",
-   "campo": "12/09-17/09",
-   "div": "2026-09-18",
-   "n": "2000",
    "visto": "2026-09-18"
   },
   {
@@ -1509,16 +1389,6 @@
    "visto": "2026-09-18"
   },
   {
-   "proto": "RJ013322026",
-   "escopo": "RJ",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "13/09-18/09",
-   "div": "2026-09-18",
-   "n": "2030",
-   "visto": "2026-09-18"
-  },
-  {
    "proto": "RN079212026",
    "escopo": "RN",
    "inst": "VERITA",
@@ -1527,66 +1397,6 @@
    "div": "2026-09-18",
    "n": "1220",
    "visto": "2026-09-18"
-  },
-  {
-   "proto": "BR099462026",
-   "escopo": "ESTADUAL[RO]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1220",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "BR079232026",
-   "escopo": "ESTADUAL[RO]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1220",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "BR012122026",
-   "escopo": "ESTADUAL[RO]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1220",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "BR072422026",
-   "escopo": "ESTADUAL[RR]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1030",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "BR069832026",
-   "escopo": "ESTADUAL[RS]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "2020",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "BR093222026",
-   "escopo": "ESTADUAL[SC]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1525",
-   "visto": "2026-09-19"
   },
   {
    "proto": "BR044702026",
@@ -1629,16 +1439,6 @@
    "visto": "2026-09-19"
   },
   {
-   "proto": "SC027042026",
-   "escopo": "SC",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1525",
-   "visto": "2026-09-19"
-  },
-  {
    "proto": "SE057832026",
    "escopo": "SE",
    "inst": "VERITA",
@@ -1659,26 +1459,6 @@
    "visto": "2026-09-19"
   },
   {
-   "proto": "TO053662026",
-   "escopo": "TO",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1220",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "AC093462026",
-   "escopo": "AC",
-   "inst": "DELTA AGENCIA DE PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-19/09",
-   "div": "2026-09-20",
-   "n": "1201",
-   "visto": "2026-09-20"
-  },
-  {
    "proto": "AM061362026",
    "escopo": "AM",
    "inst": "PROJETA PESQUISA DE MERCADO ",
@@ -1696,16 +1476,6 @@
    "campo": "14/09-19/09",
    "div": "2026-09-20",
    "n": "1201",
-   "visto": "2026-09-20"
-  },
-  {
-   "proto": "BR053602026",
-   "escopo": "ESTADUAL[RS]",
-   "inst": "STUDIO PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "15/09-18/09",
-   "div": "2026-09-20",
-   "n": "960",
    "visto": "2026-09-20"
   },
   {
@@ -1736,26 +1506,6 @@
    "campo": "16/09-19/09",
    "div": "2026-09-21",
    "n": "800",
-   "visto": "2026-09-21"
-  },
-  {
-   "proto": "BA068452026",
-   "escopo": "BA",
-   "inst": "100 CIDADES",
-   "cargo": "Governador, Senador",
-   "campo": "16/09-21/09",
-   "div": "2026-09-21",
-   "n": "1000",
-   "visto": "2026-09-21"
-  },
-  {
-   "proto": "CE022982026",
-   "escopo": "CE",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "15/09-20/09",
-   "div": "2026-09-21",
-   "n": "1800",
    "visto": "2026-09-21"
   },
   {
@@ -1800,16 +1550,6 @@
   },
   {
    "proto": "BR069962026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "15/09-20/09",
-   "div": "2026-09-21",
-   "n": "1800",
-   "visto": "2026-09-21"
-  },
-  {
-   "proto": "BR054932026",
    "escopo": "ESTADUAL[RJ]",
    "inst": "ATLASINTEL",
    "cargo": "Presidente",
@@ -1864,16 +1604,6 @@
    "inst": "#NULO#",
    "cargo": "Presidente",
    "campo": "16/09-20/09",
-   "div": "2026-09-21",
-   "n": "1200",
-   "visto": "2026-09-21"
-  },
-  {
-   "proto": "BR040862026",
-   "escopo": "ESTADUAL[RS]",
-   "inst": "BRASMARKET",
-   "cargo": "Presidente",
-   "campo": "17/09-18/09",
    "div": "2026-09-21",
    "n": "1200",
    "visto": "2026-09-21"
@@ -1939,16 +1669,6 @@
    "visto": "2026-09-21"
   },
   {
-   "proto": "BR060042026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "17/09-20/09",
-   "div": "2026-09-21",
-   "n": "2004",
-   "visto": "2026-09-21"
-  },
-  {
    "proto": "BR025872026",
    "escopo": "NACIONAL?",
    "inst": "AMERICAN ANALYTICS",
@@ -2009,16 +1729,6 @@
    "visto": "2026-09-21"
   },
   {
-   "proto": "RO083912026",
-   "escopo": "RO",
-   "inst": "BRASIL DADOS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "16/09-18/09",
-   "div": "2026-09-21",
-   "n": "1000",
-   "visto": "2026-09-21"
-  },
-  {
    "proto": "RS009812026",
    "escopo": "RS",
    "inst": "ATLASINTEL",
@@ -2029,16 +1739,6 @@
    "visto": "2026-09-21"
   },
   {
-   "proto": "RS074172026",
-   "escopo": "RS",
-   "inst": "BRASMARKET",
-   "cargo": "Governador, Senador",
-   "campo": "17/09-18/09",
-   "div": "2026-09-21",
-   "n": "1200",
-   "visto": "2026-09-21"
-  },
-  {
    "proto": "SC055232026",
    "escopo": "SC",
    "inst": "RUMO PESQUISAS",
@@ -2046,16 +1746,6 @@
    "campo": "18/09-20/09",
    "div": "2026-09-21",
    "n": "2100",
-   "visto": "2026-09-21"
-  },
-  {
-   "proto": "SE063382026",
-   "escopo": "SE",
-   "inst": "TWS POLITICA",
-   "cargo": "Governador, Senador",
-   "campo": "16/09-18/09",
-   "div": "2026-09-21",
-   "n": "1500",
    "visto": "2026-09-21"
   },
   {
@@ -2076,16 +1766,6 @@
    "campo": "15/09-20/09",
    "div": "2026-09-21",
    "n": "1800",
-   "visto": "2026-09-21"
-  },
-  {
-   "proto": "TO090592026",
-   "escopo": "TO",
-   "inst": "JORNAL O GIRASSOL",
-   "cargo": "Governador, Senador",
-   "campo": "15/09-17/09",
-   "div": "2026-09-21",
-   "n": "1200",
    "visto": "2026-09-21"
   }
  ],
