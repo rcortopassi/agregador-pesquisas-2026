@@ -1522,16 +1522,6 @@
    "visto": "2026-09-21"
   },
   {
-   "proto": "BR092562026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "15/09-20/09",
-   "div": "2026-09-21",
-   "n": "1800",
-   "visto": "2026-09-21"
-  },
-  {
    "proto": "BR079502026",
    "escopo": "ESTADUAL[RN]",
    "inst": "#NULO#",
@@ -1602,16 +1592,6 @@
    "visto": "2026-09-21"
   },
   {
-   "proto": "PE020232026",
-   "escopo": "PE",
-   "inst": "ATLASINTEL",
-   "cargo": "Governador, Senador",
-   "campo": "15/09-20/09",
-   "div": "2026-09-21",
-   "n": "1800",
-   "visto": "2026-09-21"
-  },
-  {
    "proto": "PR084652026",
    "escopo": "PR",
    "inst": "ATLASINTEL",
@@ -1672,16 +1652,6 @@
    "visto": "2026-09-21"
   },
   {
-   "proto": "BR099902026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "18/09-21/09",
-   "div": "2026-09-22",
-   "n": "804",
-   "visto": "2026-09-22"
-  },
-  {
    "proto": "BR018762026",
    "escopo": "ESTADUAL[SC]",
    "inst": "IPC - INSTITUTO DE PESQUISA",
@@ -1689,16 +1659,6 @@
    "campo": "17/09-20/09",
    "div": "2026-09-22",
    "n": "1050",
-   "visto": "2026-09-22"
-  },
-  {
-   "proto": "PB013252026",
-   "escopo": "PB",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "18/09-21/09",
-   "div": "2026-09-22",
-   "n": "804",
    "visto": "2026-09-22"
   },
   {
