@@ -1692,16 +1692,6 @@
    "visto": "2026-09-22"
   },
   {
-   "proto": "BR037082026",
-   "escopo": "ESTADUAL[SE]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "17/09-21/09",
-   "div": "2026-09-22",
-   "n": "1600",
-   "visto": "2026-09-22"
-  },
-  {
    "proto": "PB013252026",
    "escopo": "PB",
    "inst": "#NULO#",
@@ -1729,16 +1719,6 @@
    "campo": "17/09-20/09",
    "div": "2026-09-22",
    "n": "1050",
-   "visto": "2026-09-22"
-  },
-  {
-   "proto": "SE020302026",
-   "escopo": "SE",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Governador, Senador",
-   "campo": "17/09-21/09",
-   "div": "2026-09-22",
-   "n": "1600",
    "visto": "2026-09-22"
   },
   {
