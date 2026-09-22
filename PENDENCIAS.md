@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 22/09/2026 11:44. Mercados: Polymarket 40,5%/59,4%, Kalshi 41,0%/58,0%.
+Rodada de 22/09/2026 16:42. Mercados: Polymarket 40,5%/59,2%, Kalshi 42,0%/58,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -50,11 +50,9 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-21] TSE SP, ATLASINTEL (Governador, Senador), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro SP026762026
 - [aguardando desde 2026-09-22] TSE ESTADUAL[PB], #NULO# (Presidente), campo 18/09-21/09, divulgação 2026-09-22, N=804, registro BR099902026
 - [aguardando desde 2026-09-22] TSE ESTADUAL[SC], IPC - INSTITUTO DE PESQUISA (Presidente), campo 17/09-20/09, divulgação 2026-09-22, N=1050, registro BR018762026
-- [aguardando desde 2026-09-22] TSE ESTADUAL[SE], REAL TIME BIG DATA (Presidente), campo 17/09-21/09, divulgação 2026-09-22, N=1600, registro BR037082026
 - [aguardando desde 2026-09-22] TSE PB, #NULO# (Governador, Senador), campo 18/09-21/09, divulgação 2026-09-22, N=804, registro PB013252026
-- [NOVO] TSE PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 16/09-18/09, divulgação 2026-09-22, N=1500, registro PB047492026
+- [aguardando desde 2026-09-22] TSE PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 16/09-18/09, divulgação 2026-09-22, N=1500, registro PB047492026
 - [aguardando desde 2026-09-22] TSE SC, IPC - INSTITUTO DE PESQUISA (Governador, Senador), campo 17/09-20/09, divulgação 2026-09-22, N=1050, registro SC042542026
-- [aguardando desde 2026-09-22] TSE SE, REAL TIME BIG DATA (Governador, Senador), campo 17/09-21/09, divulgação 2026-09-22, N=1600, registro SE020302026
 - [aguardando desde 2026-09-22] TSE TO, OLHAR PUBLICO PESQUISAS DE O (Governador, Senador), campo 18/09-20/09, divulgação 2026-09-22, N=1220, registro TO059482026
 
 ## Últimas publicações do Veritá
