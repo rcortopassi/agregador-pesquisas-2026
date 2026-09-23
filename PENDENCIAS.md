@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 22/09/2026 16:42. Mercados: Polymarket 40,5%/59,2%, Kalshi 42,0%/58,0%.
+Rodada de 22/09/2026 21:22. Mercados: Polymarket 41,5%/58,6%, Kalshi 43,0%/58,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -33,7 +33,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-21] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro BR016222026
 - [aguardando desde 2026-09-21] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro BR042302026
 - [aguardando desde 2026-09-21] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro BR084372026
-- [aguardando desde 2026-09-21] TSE ESTADUAL[RJ], ATLASINTEL (Presidente), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro BR092562026
 - [aguardando desde 2026-09-21] TSE ESTADUAL[RN], #NULO# (Presidente), campo 16/09-20/09, divulgação 2026-09-21, N=1200, registro BR079502026
 - [aguardando desde 2026-09-21] TSE ESTADUAL[SC], RUMO PESQUISAS (Presidente), campo 18/09-20/09, divulgação 2026-09-21, N=2100, registro BR089022026
 - [aguardando desde 2026-09-21] TSE ESTADUAL[SE], ECM-PESQUISAS (Presidente), campo 16/09-19/09, divulgação 2026-09-21, N=1500, registro BR008132026
@@ -41,16 +40,13 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-21] TSE MG, ATLASINTEL (Governador, Senador), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro MG032902026
 - [aguardando desde 2026-09-21] TSE NACIONAL?, AMERICAN ANALYTICS (Presidente), campo 15/09-20/09, divulgação 2026-09-21, N=2000, registro BR025872026
 - [aguardando desde 2026-09-21] TSE PE, SIMPLEX CONSULTORIA ECONOMIC (Governador, Senador), campo 16/09-20/09, divulgação 2026-09-21, N=1067, registro PE079012026
-- [aguardando desde 2026-09-21] TSE PE, ATLASINTEL (Governador, Senador), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro PE020232026
 - [aguardando desde 2026-09-21] TSE PR, ATLASINTEL (Governador, Senador), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro PR084652026
 - [aguardando desde 2026-09-21] TSE RJ, ATLASINTEL (Governador, Senador), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro RJ011502026
 - [aguardando desde 2026-09-21] TSE RN, #NULO# (Governador, Senador, Deputado Fede), campo 16/09-20/09, divulgação 2026-09-21, N=1200, registro RN040222026
 - [aguardando desde 2026-09-21] TSE RS, ATLASINTEL (Governador, Senador), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro RS009812026
 - [aguardando desde 2026-09-21] TSE SE, ECM-PESQUISAS (Governador, Senador, Deputado Fede), campo 16/09-19/09, divulgação 2026-09-21, N=1500, registro SE061472026
 - [aguardando desde 2026-09-21] TSE SP, ATLASINTEL (Governador, Senador), campo 15/09-20/09, divulgação 2026-09-21, N=1800, registro SP026762026
-- [aguardando desde 2026-09-22] TSE ESTADUAL[PB], #NULO# (Presidente), campo 18/09-21/09, divulgação 2026-09-22, N=804, registro BR099902026
 - [aguardando desde 2026-09-22] TSE ESTADUAL[SC], IPC - INSTITUTO DE PESQUISA (Presidente), campo 17/09-20/09, divulgação 2026-09-22, N=1050, registro BR018762026
-- [aguardando desde 2026-09-22] TSE PB, #NULO# (Governador, Senador), campo 18/09-21/09, divulgação 2026-09-22, N=804, registro PB013252026
 - [aguardando desde 2026-09-22] TSE PB, INSTITUTO SETA DE PESQUISA (Governador, Senador, Deputado Fede), campo 16/09-18/09, divulgação 2026-09-22, N=1500, registro PB047492026
 - [aguardando desde 2026-09-22] TSE SC, IPC - INSTITUTO DE PESQUISA (Governador, Senador), campo 17/09-20/09, divulgação 2026-09-22, N=1050, registro SC042542026
 - [aguardando desde 2026-09-22] TSE TO, OLHAR PUBLICO PESQUISAS DE O (Governador, Senador), campo 18/09-20/09, divulgação 2026-09-22, N=1220, registro TO059482026
