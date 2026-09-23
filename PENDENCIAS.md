@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 23/09/2026 06:15. Mercados: Polymarket 40,5%/59,0%, Kalshi 43,0%/57,0%.
+Rodada de 23/09/2026 11:56. Mercados: Polymarket 40,5%/58,9%, Kalshi 43,0%/58,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -70,17 +70,14 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-23] TSE MA, IPPI - PESQUISAS E CONSULTOR (Governador, Senador, Deputado Fede), campo 15/09-17/09, divulgação 2026-09-23, N=300, registro MA007032026
 - [aguardando desde 2026-09-23] TSE MG, SCANY PESQUISA (Governador, Senador, Deputado Fede), campo 16/09-21/09, divulgação 2026-09-23, N=1000, registro MG042972026
 - [aguardando desde 2026-09-23] TSE MG, #NULO# (Governador, Senador), campo 19/09-22/09, divulgação 2026-09-23, N=1506, registro MG032762026
-- [aguardando desde 2026-09-23] TSE NACIONAL?, ATLASINTEL (Presidente), campo 17/09-22/09, divulgação 2026-09-23, N=5000, registro BR047392026
 - [aguardando desde 2026-09-23] TSE PB, ANOVA INSTITUTO DE PESQUISA (Governador, Senador), campo 20/09-22/09, divulgação 2026-09-23, N=2000, registro PB065642026
 - [aguardando desde 2026-09-23] TSE PE, #NULO# (Governador, Senador), campo 19/09-22/09, divulgação 2026-09-23, N=1302, registro PE056712026
 - [aguardando desde 2026-09-23] TSE RJ, PREFAB FUTURE (Governador, Senador), campo 19/09-22/09, divulgação 2026-09-23, N=2000, registro RJ016312026
-- [aguardando desde 2026-09-23] TSE RJ, #NULO# (Governador, Senador), campo 20/09-22/09, divulgação 2026-09-23, N=1600, registro RJ040362026
 - [aguardando desde 2026-09-23] TSE RJ, #NULO# (Governador, Senador), campo 19/09-22/09, divulgação 2026-09-23, N=1302, registro RJ049822026
 - [aguardando desde 2026-09-23] TSE RN, IPSENSUS PESQUISAS (Governador, Senador), campo 18/09-22/09, divulgação 2026-09-23, N=1200, registro RN074232026
 - [aguardando desde 2026-09-23] TSE RN, ITEM PESQUISAS TECNICAS (Governador, Senador, Deputado Fede), campo 19/09-22/09, divulgação 2026-09-23, N=1250, registro RN024672026
 - [aguardando desde 2026-09-23] TSE RN, DATA CAPITAL PESQUISAS E CON (Governador, Senador, Deputado Fede), campo 18/09-20/09, divulgação 2026-09-23, N=1500, registro RN079602026
 - [aguardando desde 2026-09-23] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 14/09-19/09, divulgação 2026-09-23, N=1500, registro RR017412026
-- [aguardando desde 2026-09-23] TSE SC, #NULO# (Governador, Senador), campo 20/09-22/09, divulgação 2026-09-23, N=1384, registro SC005232026
 - [aguardando desde 2026-09-23] TSE SP, SCANY PESQUISA (Governador, Senador, Deputado Esta), campo 16/09-21/09, divulgação 2026-09-23, N=1000, registro SP081902026
 - [aguardando desde 2026-09-23] TSE SP, #NULO# (Governador, Senador), campo 19/09-22/09, divulgação 2026-09-23, N=1800, registro SP024562026
 - [aguardando desde 2026-09-23] TSE TO, PORTAL E INSTITUTO STYLO (Governador, Senador), campo 18/09-20/09, divulgação 2026-09-23, N=1200, registro TO096642026
