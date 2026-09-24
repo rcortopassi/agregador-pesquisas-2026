@@ -1352,6 +1352,7 @@
  ],
  "verita_vistos": [
   "10158b38-ce9a-4727-baa5-6b189c4d3e82",
+  "260793c5-e924-44fd-876b-8b3ba33de4e4",
   "28bab072-3b90-4367-83e3-1ade5a20389d",
   "29c4c04c-2da6-42f5-9b3a-b93a9e7ed1b9",
   "2a8b919a-8a66-403c-8180-c7f16c3aef12",
@@ -1392,7 +1393,7 @@
   "eb0342b6-979f-46d5-ab83-949ff53dc67b",
   "f6f61fbd-9279-4ed9-9277-fd646400f2fb"
  ],
- "ultima_rodada": "2026-09-24T11:57:33.680889-03:00",
+ "ultima_rodada": "2026-09-24T16:57:44.009582-03:00",
  "pendentes": [
   {
    "proto": "AP061902026",
@@ -2015,5 +2016,14 @@
    "visto": "2026-09-24"
   }
  ],
- "verita_pendentes": []
+ "verita_pendentes": [
+  {
+   "id": "260793c5-e924-44fd-876b-8b3ba33de4e4",
+   "titulo": "Pesquisa para Presidente no Brasil",
+   "descricao": "Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 10 a 19 de setembro.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790267604047_Relatorio_Nacional_Verita_30_Anos_Eleicoes_2026_40.500_Entrevistas.pdf",
+   "created_at": "2026-09-24T16:33:29.489663+00:00",
+   "visto": "2026-09-24"
+  }
+ ]
 }

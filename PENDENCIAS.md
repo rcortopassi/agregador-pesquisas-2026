@@ -2,37 +2,29 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 24/09/2026 11:57. Mercados: Polymarket 42,5%/55,0%, Kalshi 45,0%/55,0%.
+Rodada de 24/09/2026 16:57. Mercados: Polymarket 42,5%/56,8%, Kalshi 47,0%/55,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
 - [aguardando desde 2026-09-16] TSE AP, VERITA (Governador, Senador), campo 10/09-15/09, divulgação 2026-09-16, N=1030, registro AP061902026
-- [aguardando desde 2026-09-18] TSE ESTADUAL[DF], BADRA COMUNICACAO (Presidente), campo 15/09-17/09, divulgação 2026-09-18, N=1060, registro BR031282026
-- [aguardando desde 2026-09-18] TSE ESTADUAL[MT], MT DADOS PESQUISAS (Presidente), campo 11/09-17/09, divulgação 2026-09-18, N=3080, registro BR062332026
 - [aguardando desde 2026-09-18] TSE MT, MT DADOS PESQUISAS (Governador, Senador, Deputado Fede), campo 11/09-17/09, divulgação 2026-09-18, N=3080, registro MT006912026
-- [aguardando desde 2026-09-18] TSE PA, QUALIQUANTI GAUSS (Governador, Senador), campo 12/09-18/09, divulgação 2026-09-18, N=3000, registro PA052622026
 - [aguardando desde 2026-09-19] TSE RR, VERITA (Governador, Senador), campo 14/09-19/09, divulgação 2026-09-19, N=1030, registro RR036812026
 - [aguardando desde 2026-09-19] TSE RS, VERITA (Governador, Senador), campo 14/09-19/09, divulgação 2026-09-19, N=2020, registro RS033932026
 - [aguardando desde 2026-09-19] TSE RS, VERITA (Senador), campo 14/09-19/09, divulgação 2026-09-19, N=2020, registro RS098292026
-- [aguardando desde 2026-09-20] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 14/09-19/09, divulgação 2026-09-20, N=1201, registro BR074032026
 - [aguardando desde 2026-09-20] TSE RO, INSTITUTO PHOENIX & ASSOCIAD (Governador, Senador, Deputado Esta), campo 18/09-20/09, divulgação 2026-09-20, N=801, registro RO005232026
-- [aguardando desde 2026-09-21] TSE ESTADUAL[PA], VERITATE (Presidente), campo 14/09-19/09, divulgação 2026-09-21, N=1400, registro BR005102026
 - [aguardando desde 2026-09-21] TSE ESTADUAL[RN], #NULO# (Presidente), campo 16/09-20/09, divulgação 2026-09-21, N=1200, registro BR079502026
 - [aguardando desde 2026-09-21] TSE ESTADUAL[SC], RUMO PESQUISAS (Presidente), campo 18/09-20/09, divulgação 2026-09-21, N=2100, registro BR089022026
 - [aguardando desde 2026-09-22] TSE ESTADUAL[SC], IPC - INSTITUTO DE PESQUISA (Presidente), campo 17/09-20/09, divulgação 2026-09-22, N=1050, registro BR018762026
 - [aguardando desde 2026-09-23] TSE AM, PONTUAL PESQUISAS (Governador, Senador), campo 15/09-23/09, divulgação 2026-09-23, N=3000, registro AM087422026
 - [aguardando desde 2026-09-23] TSE ESTADUAL[RN], DATA CAPITAL PESQUISAS E CON (Presidente), campo 18/09-20/09, divulgação 2026-09-23, N=1500, registro BR023452026
 - [aguardando desde 2026-09-23] TSE ESTADUAL[RN], ITEM PESQUISAS TECNICAS (Presidente), campo 19/09-22/09, divulgação 2026-09-23, N=1250, registro BR019142026
-- [aguardando desde 2026-09-23] TSE RJ, PREFAB FUTURE (Governador, Senador), campo 19/09-22/09, divulgação 2026-09-23, N=2000, registro RJ016312026
-- [aguardando desde 2026-09-23] TSE RN, IPSENSUS PESQUISAS (Governador, Senador), campo 18/09-22/09, divulgação 2026-09-23, N=1200, registro RN074232026
 - [aguardando desde 2026-09-23] TSE RN, ITEM PESQUISAS TECNICAS (Governador, Senador, Deputado Fede), campo 19/09-22/09, divulgação 2026-09-23, N=1250, registro RN024672026
 - [aguardando desde 2026-09-23] TSE RN, DATA CAPITAL PESQUISAS E CON (Governador, Senador, Deputado Fede), campo 18/09-20/09, divulgação 2026-09-23, N=1500, registro RN079602026
 - [aguardando desde 2026-09-23] TSE RR, CIPET (Governador, Senador, Deputado Fede), campo 14/09-19/09, divulgação 2026-09-23, N=1500, registro RR017412026
 - [aguardando desde 2026-09-23] TSE TO, PORTAL E INSTITUTO STYLO (Governador, Senador), campo 18/09-20/09, divulgação 2026-09-23, N=1200, registro TO096642026
 - [aguardando desde 2026-09-24] TSE AL, INSTITUTO DATASENSUS (Governador, Senador, Deputado Fede), campo 22/09-24/09, divulgação 2026-09-24, N=5000, registro AL075712026
-- [aguardando desde 2026-09-24] TSE AL, TDL PESQUISA (Governador, Senador), campo 20/09-22/09, divulgação 2026-09-24, N=1200, registro AL072992026
 - [aguardando desde 2026-09-24] TSE AM, ACTION MARKETING E PESQUISAS (Governador, Senador), campo 08/09-19/09, divulgação 2026-09-24, N=3000, registro AM066122026
 - [aguardando desde 2026-09-24] TSE AM, PODERDATA (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=1200, registro AM094992026
 - [aguardando desde 2026-09-24] TSE AM, #NULO# (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=804, registro AM018562026
@@ -65,38 +57,24 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-24] TSE MA, EPO - ESTRATEGIA PESQUISAS D (Governador, Senador), campo 18/09-22/09, divulgação 2026-09-24, N=2000, registro MA073042026
 - [aguardando desde 2026-09-24] TSE MG, #NULO# (Governador, Senador), campo 22/09-24/09, divulgação 2026-09-24, N=1204, registro MG074002026
 - [aguardando desde 2026-09-24] TSE MG, INSTITUTO ALVES LIMA (Governador, Senador), campo 16/09-23/09, divulgação 2026-09-24, N=1500, registro MG093812026
-- [aguardando desde 2026-09-24] TSE NACIONAL?, 100 CIDADES (Presidente), campo 18/09-24/09, divulgação 2026-09-24, N=2000, registro BR052682026
 - [aguardando desde 2026-09-24] TSE NACIONAL?, #NULO# (Presidente), campo 22/09-24/09, divulgação 2026-09-24, N=2002, registro BR003042026
-- [aguardando desde 2026-09-24] TSE NACIONAL?, PALVER (Presidente), campo 20/09-23/09, divulgação 2026-09-24, N=5000, registro BR095872026
 - [aguardando desde 2026-09-24] TSE PE, #NULO# (Governador, Senador), campo 22/09-24/09, divulgação 2026-09-24, N=1204, registro PE081252026
 - [aguardando desde 2026-09-24] TSE PI, INSTITUTO DE PESQUISA DATA A (Governador, Senador, Deputado Fede), campo 20/09-24/09, divulgação 2026-09-24, N=1200, registro PI078172026
 - [aguardando desde 2026-09-24] TSE PI, INSTITUTO GP1 DE PESQUISA (Governador, Senador), campo 21/09-23/09, divulgação 2026-09-24, N=1200, registro PI050002026
-- [NOVO] TSE PR, #NULO# (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=804, registro PR028022026
 - [aguardando desde 2026-09-24] TSE RJ, #NULO# (Governador, Senador), campo 22/09-24/09, divulgação 2026-09-24, N=1204, registro RJ022052026
 - [aguardando desde 2026-09-24] TSE RN, EXATUS CONSULTORIA E PESQUIS (Governador, Senador, Deputado Fede), campo 21/09-23/09, divulgação 2026-09-24, N=1500, registro RN007552026
 - [aguardando desde 2026-09-24] TSE RO, #NULO# (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=804, registro RO085562026
 - [aguardando desde 2026-09-24] TSE RS, #NULO# (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=900, registro RS013902026
 - [aguardando desde 2026-09-24] TSE SC, #NULO# (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=804, registro SC047832026
-- [aguardando desde 2026-09-24] TSE SE, POSITIVA PESQUISAS (Governador, Senador, Deputado Fede), campo 19/09-23/09, divulgação 2026-09-24, N=1000, registro SE023742026
 - [aguardando desde 2026-09-24] TSE SE, #NULO# (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=804, registro SE093432026
 - [aguardando desde 2026-09-24] TSE SE, #NULO# (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=1070, registro SE041102026
 - [aguardando desde 2026-09-24] TSE SE, INSTITUTO DATASENSUS (Governador, Senador, Deputado Fede), campo 21/09-22/09, divulgação 2026-09-24, N=800, registro SE099952026
 - [aguardando desde 2026-09-24] TSE SP, #NULO# (Governador, Senador), campo 22/09-24/09, divulgação 2026-09-24, N=1610, registro SP037302026
-- [NOVO] Veritá: Pesquisa no Ceará - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 10 a 15 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790259306991_Relatorio_Ceara_09.2026.pdf
-- [NOVO] Veritá: Pesquisa no Distrito Federal - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 10 a 15 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790259238496_Relatorio_Distrito_Federal_09.2026.pdf
-- [NOVO] Veritá: Pesquisa no Tocantins - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790259154227_Relatorio_Tocantins_09.2026.pdf
-- [NOVO] Veritá: Pesquisa em São Paulo - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790259060784_Relatorio_Sao_Paulo_09.2026.pdf
-- [NOVO] Veritá: Pesquisa em Sergipe - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258983926_Relatorio_Sergipe_09.2026.pdf
-- [NOVO] Veritá: Pesquisa em Santa Catarina - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258914433_Relatorio_Santa_Catarina_09.2026.pdf
-- [NOVO] Veritá: Pesquisa no Rio Grande do Sul - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258840783_Relatorio_Rio_Grande_do_Sul_09.2026.pdf
-- [NOVO] Veritá: Pesquisa em Roraima - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258753918_Relatorio_Roraima_09.2026.pdf
-- [NOVO] Veritá: Pesquisa no Rio Grande do Norte - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 13 a 18. de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258668696_Relatorio_Rio_Grande_do_Norte_09.2026.pdf
-- [NOVO] Veritá: Pesquisa no Rio de Janeiro - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 13 a 18 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258572255_Relatorio_Rio_de_Janeiro_09.2026.pdf
-- [NOVO] Veritá: Pesquisa no Paraná - Pesquisa. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 13 a 18 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258475978_Relatorio_Parana_09.2026.pdf
-- [NOVO] Veritá: Pesquisa no Piauí - Presidente. Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 13 a 18 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258398684_Relatorio_Piaui_09.2026.pdf
+- [NOVO] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 10 a 19 de setembro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790267604047_Relatorio_Nacional_Verita_30_Anos_Eleicoes_2026_40.500_Entrevistas.pdf
 
 ## Últimas publicações do Veritá
 
+- 2026-09-24 | Pesquisa para Presidente no Brasil
 - 2026-09-24 | Pesquisa no Ceará - Presidente
 - 2026-09-24 | Pesquisa no Distrito Federal - Presidente
 - 2026-09-24 | Pesquisa no Tocantins - Presidente
@@ -104,7 +82,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - 2026-09-24 | Pesquisa em Sergipe - Presidente
 - 2026-09-24 | Pesquisa em Santa Catarina - Presidente
 - 2026-09-24 | Pesquisa no Rio Grande do Sul - Presidente
-- 2026-09-24 | Pesquisa em Roraima - Presidente
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
