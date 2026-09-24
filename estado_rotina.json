@@ -1350,16 +1350,6 @@
    "visto": "2026-09-18"
   },
   {
-   "proto": "BR018392026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "13/09-18/09",
-   "div": "2026-09-18",
-   "n": "2010",
-   "visto": "2026-09-18"
-  },
-  {
    "proto": "MT006912026",
    "escopo": "MT",
    "inst": "MT DADOS PESQUISAS",
@@ -1377,26 +1367,6 @@
    "campo": "12/09-18/09",
    "div": "2026-09-18",
    "n": "3000",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "PE053932026",
-   "escopo": "PE",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "13/09-18/09",
-   "div": "2026-09-18",
-   "n": "2010",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "RN079212026",
-   "escopo": "RN",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "13/09-18/09",
-   "div": "2026-09-18",
-   "n": "1220",
    "visto": "2026-09-18"
   },
   {
@@ -1427,26 +1397,6 @@
    "campo": "14/09-19/09",
    "div": "2026-09-19",
    "n": "2020",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "SE057832026",
-   "escopo": "SE",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "1220",
-   "visto": "2026-09-19"
-  },
-  {
-   "proto": "SP021012026",
-   "escopo": "SP",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "14/09-19/09",
-   "div": "2026-09-19",
-   "n": "3025",
    "visto": "2026-09-19"
   },
   {
@@ -1530,26 +1480,6 @@
    "visto": "2026-09-22"
   },
   {
-   "proto": "PB047492026",
-   "escopo": "PB",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "16/09-18/09",
-   "div": "2026-09-22",
-   "n": "1500",
-   "visto": "2026-09-22"
-  },
-  {
-   "proto": "SC042542026",
-   "escopo": "SC",
-   "inst": "IPC - INSTITUTO DE PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "17/09-20/09",
-   "div": "2026-09-22",
-   "n": "1050",
-   "visto": "2026-09-22"
-  },
-  {
    "proto": "TO059482026",
    "escopo": "TO",
    "inst": "OLHAR PUBLICO PESQUISAS DE O",
@@ -1570,26 +1500,6 @@
    "visto": "2026-09-23"
   },
   {
-   "proto": "BR036092026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1104",
-   "visto": "2026-09-23"
-  },
-  {
-   "proto": "BR076642026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1506",
-   "visto": "2026-09-23"
-  },
-  {
    "proto": "BR094202026",
    "escopo": "ESTADUAL[PB]",
    "inst": "ANOVA INSTITUTO DE PESQUISA",
@@ -1597,26 +1507,6 @@
    "campo": "20/09-22/09",
    "div": "2026-09-23",
    "n": "2000",
-   "visto": "2026-09-23"
-  },
-  {
-   "proto": "BR078182026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1302",
-   "visto": "2026-09-23"
-  },
-  {
-   "proto": "BR085192026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1302",
    "visto": "2026-09-23"
   },
   {
@@ -1640,36 +1530,6 @@
    "visto": "2026-09-23"
   },
   {
-   "proto": "BR088862026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1800",
-   "visto": "2026-09-23"
-  },
-  {
-   "proto": "BR007812026",
-   "escopo": "ESTADUAL[TO]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "804",
-   "visto": "2026-09-23"
-  },
-  {
-   "proto": "MG032762026",
-   "escopo": "MG",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1506",
-   "visto": "2026-09-23"
-  },
-  {
    "proto": "PB065642026",
    "escopo": "PB",
    "inst": "ANOVA INSTITUTO DE PESQUISA",
@@ -1680,16 +1540,6 @@
    "visto": "2026-09-23"
   },
   {
-   "proto": "PE056712026",
-   "escopo": "PE",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1302",
-   "visto": "2026-09-23"
-  },
-  {
    "proto": "RJ016312026",
    "escopo": "RJ",
    "inst": "PREFAB FUTURE",
@@ -1697,16 +1547,6 @@
    "campo": "19/09-22/09",
    "div": "2026-09-23",
    "n": "2000",
-   "visto": "2026-09-23"
-  },
-  {
-   "proto": "RJ049822026",
-   "escopo": "RJ",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1302",
    "visto": "2026-09-23"
   },
   {
@@ -1750,16 +1590,6 @@
    "visto": "2026-09-23"
   },
   {
-   "proto": "SP024562026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "1800",
-   "visto": "2026-09-23"
-  },
-  {
    "proto": "TO096642026",
    "escopo": "TO",
    "inst": "PORTAL E INSTITUTO STYLO",
@@ -1767,16 +1597,6 @@
    "campo": "18/09-20/09",
    "div": "2026-09-23",
    "n": "1200",
-   "visto": "2026-09-23"
-  },
-  {
-   "proto": "TO003712026",
-   "escopo": "TO",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "804",
    "visto": "2026-09-23"
   }
  ],
