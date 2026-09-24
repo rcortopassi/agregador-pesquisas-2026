@@ -1405,26 +1405,6 @@
    "visto": "2026-09-16"
   },
   {
-   "proto": "BR031282026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "BADRA COMUNICACAO",
-   "cargo": "Presidente",
-   "campo": "15/09-17/09",
-   "div": "2026-09-18",
-   "n": "1060",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "BR062332026",
-   "escopo": "ESTADUAL[MT]",
-   "inst": "MT DADOS PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "11/09-17/09",
-   "div": "2026-09-18",
-   "n": "3080",
-   "visto": "2026-09-18"
-  },
-  {
    "proto": "MT006912026",
    "escopo": "MT",
    "inst": "MT DADOS PESQUISAS",
@@ -1432,16 +1412,6 @@
    "campo": "11/09-17/09",
    "div": "2026-09-18",
    "n": "3080",
-   "visto": "2026-09-18"
-  },
-  {
-   "proto": "PA052622026",
-   "escopo": "PA",
-   "inst": "QUALIQUANTI GAUSS",
-   "cargo": "Governador, Senador",
-   "campo": "12/09-18/09",
-   "div": "2026-09-18",
-   "n": "3000",
    "visto": "2026-09-18"
   },
   {
@@ -1475,16 +1445,6 @@
    "visto": "2026-09-19"
   },
   {
-   "proto": "BR074032026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "DELTA AGENCIA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "14/09-19/09",
-   "div": "2026-09-20",
-   "n": "1201",
-   "visto": "2026-09-20"
-  },
-  {
    "proto": "RO005232026",
    "escopo": "RO",
    "inst": "INSTITUTO PHOENIX & ASSOCIAD",
@@ -1493,16 +1453,6 @@
    "div": "2026-09-20",
    "n": "801",
    "visto": "2026-09-20"
-  },
-  {
-   "proto": "BR005102026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "VERITATE",
-   "cargo": "Presidente",
-   "campo": "14/09-19/09",
-   "div": "2026-09-21",
-   "n": "1400",
-   "visto": "2026-09-21"
   },
   {
    "proto": "BR079502026",
@@ -1565,26 +1515,6 @@
    "visto": "2026-09-23"
   },
   {
-   "proto": "RJ016312026",
-   "escopo": "RJ",
-   "inst": "PREFAB FUTURE",
-   "cargo": "Governador, Senador",
-   "campo": "19/09-22/09",
-   "div": "2026-09-23",
-   "n": "2000",
-   "visto": "2026-09-23"
-  },
-  {
-   "proto": "RN074232026",
-   "escopo": "RN",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "18/09-22/09",
-   "div": "2026-09-23",
-   "n": "1200",
-   "visto": "2026-09-23"
-  },
-  {
    "proto": "RN024672026",
    "escopo": "RN",
    "inst": "ITEM PESQUISAS TECNICAS",
@@ -1632,16 +1562,6 @@
    "campo": "22/09-24/09",
    "div": "2026-09-24",
    "n": "5000",
-   "visto": "2026-09-24"
-  },
-  {
-   "proto": "AL072992026",
-   "escopo": "AL",
-   "inst": "TDL PESQUISA",
-   "cargo": "Governador, Senador",
-   "campo": "20/09-22/09",
-   "div": "2026-09-24",
-   "n": "1200",
    "visto": "2026-09-24"
   },
   {
@@ -1965,16 +1885,6 @@
    "visto": "2026-09-24"
   },
   {
-   "proto": "BR052682026",
-   "escopo": "NACIONAL?",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "18/09-24/09",
-   "div": "2026-09-24",
-   "n": "2000",
-   "visto": "2026-09-24"
-  },
-  {
    "proto": "BR003042026",
    "escopo": "NACIONAL?",
    "inst": "#NULO#",
@@ -1982,16 +1892,6 @@
    "campo": "22/09-24/09",
    "div": "2026-09-24",
    "n": "2002",
-   "visto": "2026-09-24"
-  },
-  {
-   "proto": "BR095872026",
-   "escopo": "NACIONAL?",
-   "inst": "PALVER",
-   "cargo": "Presidente",
-   "campo": "20/09-23/09",
-   "div": "2026-09-24",
-   "n": "5000",
    "visto": "2026-09-24"
   },
   {
@@ -2022,16 +1922,6 @@
    "campo": "21/09-23/09",
    "div": "2026-09-24",
    "n": "1200",
-   "visto": "2026-09-24"
-  },
-  {
-   "proto": "PR028022026",
-   "escopo": "PR",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "20/09-23/09",
-   "div": "2026-09-24",
-   "n": "804",
    "visto": "2026-09-24"
   },
   {
@@ -2085,16 +1975,6 @@
    "visto": "2026-09-24"
   },
   {
-   "proto": "SE023742026",
-   "escopo": "SE",
-   "inst": "POSITIVA PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "19/09-23/09",
-   "div": "2026-09-24",
-   "n": "1000",
-   "visto": "2026-09-24"
-  },
-  {
    "proto": "SE093432026",
    "escopo": "SE",
    "inst": "#NULO#",
@@ -2135,102 +2015,5 @@
    "visto": "2026-09-24"
   }
  ],
- "verita_pendentes": [
-  {
-   "id": "f6f61fbd-9279-4ed9-9277-fd646400f2fb",
-   "titulo": "Pesquisa no Ceará - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 10 a 15 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790259306991_Relatorio_Ceara_09.2026.pdf",
-   "created_at": "2026-09-24T14:15:17.581181+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "bb751976-45ab-49b8-971e-c9699f617fe0",
-   "titulo": "Pesquisa no Distrito Federal - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 10 a 15 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790259238496_Relatorio_Distrito_Federal_09.2026.pdf",
-   "created_at": "2026-09-24T14:14:08.225672+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "7e15d5ff-a519-442e-8d52-f571ad0b36e5",
-   "titulo": "Pesquisa no Tocantins - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790259154227_Relatorio_Tocantins_09.2026.pdf",
-   "created_at": "2026-09-24T14:12:44.724709+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "deb1864c-4cd4-4991-b702-b8e76b53b1de",
-   "titulo": "Pesquisa em São Paulo - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790259060784_Relatorio_Sao_Paulo_09.2026.pdf",
-   "created_at": "2026-09-24T14:11:10.874566+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "ac207d19-8b12-4374-a184-b17eb68a313c",
-   "titulo": "Pesquisa em Sergipe - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258983926_Relatorio_Sergipe_09.2026.pdf",
-   "created_at": "2026-09-24T14:09:53.86811+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "84e01f29-1e6e-401f-a228-047a9a2b17b4",
-   "titulo": "Pesquisa em Santa Catarina - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258914433_Relatorio_Santa_Catarina_09.2026.pdf",
-   "created_at": "2026-09-24T14:08:44.960512+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "708aeb70-5652-4052-921d-c64c13a68115",
-   "titulo": "Pesquisa no Rio Grande do Sul - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258840783_Relatorio_Rio_Grande_do_Sul_09.2026.pdf",
-   "created_at": "2026-09-24T14:07:30.703663+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "e4d56ef7-25a4-4e1b-a30f-a5148fec1f93",
-   "titulo": "Pesquisa em Roraima - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 14 a 19 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258753918_Relatorio_Roraima_09.2026.pdf",
-   "created_at": "2026-09-24T14:06:03.823554+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "32fb9a0c-2679-4e4f-a53e-9a5c6710f8f9",
-   "titulo": "Pesquisa no Rio Grande do Norte - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 13 a 18. de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258668696_Relatorio_Rio_Grande_do_Norte_09.2026.pdf",
-   "created_at": "2026-09-24T14:04:38.622489+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "34041b58-567d-4384-a862-a8b92b03c9bb",
-   "titulo": "Pesquisa no Rio de Janeiro - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 13 a 18 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258572255_Relatorio_Rio_de_Janeiro_09.2026.pdf",
-   "created_at": "2026-09-24T14:03:02.452052+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "d0b668b0-f13c-47dd-b67d-79bce14fa58c",
-   "titulo": "Pesquisa no Paraná - Pesquisa",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 13 a 18 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258475978_Relatorio_Parana_09.2026.pdf",
-   "created_at": "2026-09-24T14:01:26.324333+00:00",
-   "visto": "2026-09-24"
-  },
-  {
-   "id": "9c08b53f-10be-4318-afdb-0c41efd540c3",
-   "titulo": "Pesquisa no Piauí - Presidente",
-   "descricao": "Pesquisa de intenção de voto para Presidente realizada pelo Instituto Veritá entre os dias 13 a 18 de setembro de 2026.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790258398684_Relatorio_Piaui_09.2026.pdf",
-   "created_at": "2026-09-24T14:00:09.469521+00:00",
-   "visto": "2026-09-24"
-  }
- ]
+ "verita_pendentes": []
 }
