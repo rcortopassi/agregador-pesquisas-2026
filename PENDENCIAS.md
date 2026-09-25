@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 24/09/2026 16:57. Mercados: Polymarket 42,5%/56,8%, Kalshi 47,0%/55,0%.
+Rodada de 24/09/2026 21:29. Mercados: Polymarket 43,5%/56,0%, Kalshi 45,0%/54,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -70,7 +70,7 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-24] TSE SE, #NULO# (Governador, Senador), campo 20/09-23/09, divulgação 2026-09-24, N=1070, registro SE041102026
 - [aguardando desde 2026-09-24] TSE SE, INSTITUTO DATASENSUS (Governador, Senador, Deputado Fede), campo 21/09-22/09, divulgação 2026-09-24, N=800, registro SE099952026
 - [aguardando desde 2026-09-24] TSE SP, #NULO# (Governador, Senador), campo 22/09-24/09, divulgação 2026-09-24, N=1610, registro SP037302026
-- [NOVO] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 10 a 19 de setembro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790267604047_Relatorio_Nacional_Verita_30_Anos_Eleicoes_2026_40.500_Entrevistas.pdf
+- [aguardando desde 2026-09-24] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 10 a 19 de setembro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790267604047_Relatorio_Nacional_Verita_30_Anos_Eleicoes_2026_40.500_Entrevistas.pdf
 
 ## Últimas publicações do Veritá
 
