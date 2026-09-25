@@ -2078,16 +2078,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "BR038312026",
-   "escopo": "ESTADUAL[RS]",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "23/09-25/09",
-   "div": "2026-09-25",
-   "n": "1008",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "BR052552026",
    "escopo": "ESTADUAL[SP]",
    "inst": "#NULO#",
@@ -2245,26 +2235,6 @@
    "campo": "21/09-24/09",
    "div": "2026-09-25",
    "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "RS083582026",
-   "escopo": "RS",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "23/09-25/09",
-   "div": "2026-09-25",
-   "n": "1008",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "SP041862026",
-   "escopo": "SP",
-   "inst": "#NULO#",
-   "cargo": "Governador",
-   "campo": "19/09-22/09",
-   "div": "2026-09-25",
-   "n": "1800",
    "visto": "2026-09-25"
   }
  ],
