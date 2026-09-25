@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 25/09/2026 12:10. Mercados: Polymarket 43,5%/55,5%, Kalshi 46,0%/54,0%.
+Rodada de 25/09/2026 16:59. Mercados: Polymarket 43,5%/55,5%, Kalshi 47,0%/53,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -68,7 +68,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-25] TSE ESTADUAL[PR], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=2010, registro BR064462026
 - [aguardando desde 2026-09-25] TSE ESTADUAL[RN], AFFARE INSTITUTE (Presidente), campo 20/09-23/09, divulgação 2026-09-25, N=1000, registro BR035932026
 - [aguardando desde 2026-09-25] TSE ESTADUAL[RN], METADATA (Presidente), campo 21/09-23/09, divulgação 2026-09-25, N=1536, registro BR085172026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[RS], NEOKEMP PESQUISAS (Presidente), campo 23/09-25/09, divulgação 2026-09-25, N=1008, registro BR038312026
 - [aguardando desde 2026-09-25] TSE ESTADUAL[SP], #NULO# (Presidente), campo 19/09-22/09, divulgação 2026-09-25, N=1800, registro BR052552026
 - [aguardando desde 2026-09-25] TSE GO, VERITA (Governador, Senador), campo 20/09-24/09, divulgação 2026-09-25, N=1525, registro GO087032026
 - [aguardando desde 2026-09-25] TSE MA, #NULO# (Governador, Senador), campo 21/09-24/09, divulgação 2026-09-25, N=900, registro MA070742026
@@ -85,8 +84,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-25] TSE RN, #NULO# (Governador, Senador), campo 21/09-24/09, divulgação 2026-09-25, N=804, registro RN014922026
 - [aguardando desde 2026-09-25] TSE RN, METADATA (Governador, Senador, Deputado Fede), campo 21/09-23/09, divulgação 2026-09-25, N=1536, registro RN004902026
 - [aguardando desde 2026-09-25] TSE RR, #NULO# (Governador, Senador), campo 21/09-24/09, divulgação 2026-09-25, N=804, registro RR036582026
-- [aguardando desde 2026-09-25] TSE RS, NEOKEMP PESQUISAS (Governador, Senador), campo 23/09-25/09, divulgação 2026-09-25, N=1008, registro RS083582026
-- [aguardando desde 2026-09-25] TSE SP, #NULO# (Governador), campo 19/09-22/09, divulgação 2026-09-25, N=1800, registro SP041862026
 
 ## Últimas publicações do Veritá
 
