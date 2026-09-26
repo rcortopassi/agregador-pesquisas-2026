@@ -1572,16 +1572,6 @@
    "visto": "2026-09-24"
   },
   {
-   "proto": "BR067692026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-24/09",
-   "div": "2026-09-24",
-   "n": "910",
-   "visto": "2026-09-24"
-  },
-  {
    "proto": "BR081512026",
    "escopo": "ESTADUAL[MG]",
    "inst": "INSTITUTO ALVES LIMA",
@@ -1612,36 +1602,6 @@
    "visto": "2026-09-24"
   },
   {
-   "proto": "BR057622026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-24/09",
-   "div": "2026-09-24",
-   "n": "1204",
-   "visto": "2026-09-24"
-  },
-  {
-   "proto": "BR068242026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-24/09",
-   "div": "2026-09-24",
-   "n": "1204",
-   "visto": "2026-09-24"
-  },
-  {
-   "proto": "BR054652026",
-   "escopo": "ESTADUAL[RJ]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-24/09",
-   "div": "2026-09-24",
-   "n": "1204",
-   "visto": "2026-09-24"
-  },
-  {
    "proto": "BR074362026",
    "escopo": "ESTADUAL[SE]",
    "inst": "INSTITUTO DATASENSUS",
@@ -1649,16 +1609,6 @@
    "campo": "21/09-22/09",
    "div": "2026-09-24",
    "n": "800",
-   "visto": "2026-09-24"
-  },
-  {
-   "proto": "BR093552026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-24/09",
-   "div": "2026-09-24",
-   "n": "1610",
    "visto": "2026-09-24"
   },
   {
@@ -1722,16 +1672,6 @@
    "visto": "2026-09-24"
   },
   {
-   "proto": "AC089682026",
-   "escopo": "AC",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "AC075312026",
    "escopo": "AC",
    "inst": "VERITA",
@@ -1749,16 +1689,6 @@
    "campo": "19/09-24/09",
    "div": "2026-09-25",
    "n": "1000",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "AL096922026",
-   "escopo": "AL",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
    "visto": "2026-09-25"
   },
   {
@@ -1802,16 +1732,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "CE001982026",
-   "escopo": "CE",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "22/09-24/09",
-   "div": "2026-09-25",
-   "n": "1204",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "CE006882026",
    "escopo": "CE",
    "inst": "REAL TIME BIG DATA",
@@ -1842,46 +1762,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "ES019782026",
-   "escopo": "ES",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "BR027772026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "BR047902026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "BR071492026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "BR070972026",
    "escopo": "ESTADUAL[AC]",
    "inst": "VERITA",
@@ -1892,36 +1772,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "BR041132026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "BR049382026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "BR034142026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "BR031172026",
    "escopo": "ESTADUAL[AC]",
    "inst": "VERITA",
@@ -1929,16 +1779,6 @@
    "campo": "20/09-24/09",
    "div": "2026-09-25",
    "n": "1030",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "BR095942026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
    "visto": "2026-09-25"
   },
   {
@@ -2042,16 +1882,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "BR048922026",
-   "escopo": "ESTADUAL[MA]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "900",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "BR092692026",
    "escopo": "ESTADUAL[MG]",
    "inst": "VERITA",
@@ -2152,16 +1982,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "MA070742026",
-   "escopo": "MA",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "900",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "MA005652026",
    "escopo": "MA",
    "inst": "VERITA",
@@ -2192,16 +2012,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "MS095802026",
-   "escopo": "MS",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "MT099752026",
    "escopo": "MT",
    "inst": "VERITA",
@@ -2209,16 +2019,6 @@
    "campo": "20/09-24/09",
    "div": "2026-09-25",
    "n": "1220",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "MT080982026",
-   "escopo": "MT",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
    "visto": "2026-09-25"
   },
   {
@@ -2262,16 +2062,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "RN014922026",
-   "escopo": "RN",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "RN004902026",
    "escopo": "RN",
    "inst": "METADATA",
@@ -2279,16 +2069,6 @@
    "campo": "21/09-23/09",
    "div": "2026-09-25",
    "n": "1536",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "RR036582026",
-   "escopo": "RR",
-   "inst": "#NULO#",
-   "cargo": "Governador, Senador",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "804",
    "visto": "2026-09-25"
   },
   {
