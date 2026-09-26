@@ -1632,16 +1632,6 @@
    "visto": "2026-09-24"
   },
   {
-   "proto": "PI078172026",
-   "escopo": "PI",
-   "inst": "INSTITUTO DE PESQUISA DATA A",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "20/09-24/09",
-   "div": "2026-09-24",
-   "n": "1200",
-   "visto": "2026-09-24"
-  },
-  {
    "proto": "PI050002026",
    "escopo": "PI",
    "inst": "INSTITUTO GP1 DE PESQUISA",
@@ -1679,16 +1669,6 @@
    "campo": "20/09-24/09",
    "div": "2026-09-25",
    "n": "1030",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "AC020012026",
-   "escopo": "AC",
-   "inst": "IPSENSUS PESQUISAS",
-   "cargo": "Governador, Senador",
-   "campo": "19/09-24/09",
-   "div": "2026-09-25",
-   "n": "1000",
    "visto": "2026-09-25"
   },
   {
@@ -1732,16 +1712,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "CE018442026",
-   "escopo": "CE",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "20/09-24/09",
-   "div": "2026-09-25",
-   "n": "1525",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "ES054332026",
    "escopo": "ES",
    "inst": "VERITA",
@@ -1769,16 +1739,6 @@
    "campo": "20/09-24/09",
    "div": "2026-09-25",
    "n": "1030",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "BR053162026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-25",
-   "n": "1600",
    "visto": "2026-09-25"
   },
   {
@@ -1839,16 +1799,6 @@
    "campo": "20/09-24/09",
    "div": "2026-09-25",
    "n": "2020",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "BR032962026",
-   "escopo": "ESTADUAL[CE]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-24/09",
-   "div": "2026-09-25",
-   "n": "1204",
    "visto": "2026-09-25"
   },
   {
@@ -1939,16 +1889,6 @@
    "campo": "19/09-22/09",
    "div": "2026-09-25",
    "n": "1800",
-   "visto": "2026-09-25"
-  },
-  {
-   "proto": "GO087032026",
-   "escopo": "GO",
-   "inst": "VERITA",
-   "cargo": "Governador, Senador",
-   "campo": "20/09-24/09",
-   "div": "2026-09-25",
-   "n": "1525",
    "visto": "2026-09-25"
   },
   {
@@ -2112,16 +2052,6 @@
    "visto": "2026-09-26"
   },
   {
-   "proto": "BR028822026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "21/09-24/09",
-   "div": "2026-09-26",
-   "n": "1500",
-   "visto": "2026-09-26"
-  },
-  {
    "proto": "BR052092026",
    "escopo": "ESTADUAL[RN]",
    "inst": "VERITA",
@@ -2212,26 +2142,6 @@
    "visto": "2026-09-26"
   },
   {
-   "proto": "GO003912026",
-   "escopo": "GO",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "20/09-21/09",
-   "div": "2026-09-26",
-   "n": "400",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "GO034122026",
-   "escopo": "GO",
-   "inst": "DIRECT PESQUISAS",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "2000",
-   "visto": "2026-09-26"
-  },
-  {
    "proto": "MA049682026",
    "escopo": "MA",
    "inst": "VOX BRASIL PUBLICIDADE MARKE",
@@ -2239,36 +2149,6 @@
    "campo": "17/09-20/09",
    "div": "2026-09-26",
    "n": "1910",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "MA053492026",
-   "escopo": "MA",
-   "inst": "IPPI - PESQUISAS E CONSULTOR",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "20/09-22/09",
-   "div": "2026-09-26",
-   "n": "400",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "MA012692026",
-   "escopo": "MA",
-   "inst": "IPPI - PESQUISAS E CONSULTOR",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "20/09-22/09",
-   "div": "2026-09-26",
-   "n": "300",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "MA033462026",
-   "escopo": "MA",
-   "inst": "IPPI - PESQUISAS E CONSULTOR",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "20/09-22/09",
-   "div": "2026-09-26",
-   "n": "400",
    "visto": "2026-09-26"
   },
   {
@@ -2362,16 +2242,6 @@
    "visto": "2026-09-26"
   },
   {
-   "proto": "RN063022026",
-   "escopo": "RN",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Governador, Senador, Deputado Fede",
-   "campo": "21/09-24/09",
-   "div": "2026-09-26",
-   "n": "1500",
-   "visto": "2026-09-26"
-  },
-  {
    "proto": "RN094412026",
    "escopo": "RN",
    "inst": "QUALITTA EMPREENDIMENTOS",
@@ -2449,16 +2319,6 @@
    "campo": "21/09-25/09",
    "div": "2026-09-26",
    "n": "1220",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "SP057692026",
-   "escopo": "SP",
-   "inst": "OLHAR PUBLICO PESQUISAS DE O",
-   "cargo": "Governador, Deputado Federal, Depu",
-   "campo": "22/09-25/09",
-   "div": "2026-09-26",
-   "n": "400",
    "visto": "2026-09-26"
   },
   {
