@@ -1782,16 +1782,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "BR046032026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-25/09",
-   "div": "2026-09-26",
-   "n": "804",
-   "visto": "2026-09-26"
-  },
-  {
    "proto": "BR038702026",
    "escopo": "ESTADUAL[PE]",
    "inst": "VERITA",
@@ -2059,26 +2049,6 @@
    "campo": "23/09-25/09",
    "div": "2026-09-27",
    "n": "1500",
-   "visto": "2026-09-27"
-  },
-  {
-   "proto": "BR010872026",
-   "escopo": "ESTADUAL[PI]",
-   "inst": "AMOSTRAGEM OPINIAO E MERCADO",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-27",
-   "n": "1137",
-   "visto": "2026-09-27"
-  },
-  {
-   "proto": "BR052542026",
-   "escopo": "ESTADUAL[PI]",
-   "inst": "VETOR TECNOLOGIA E PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "19/09-24/09",
-   "div": "2026-09-27",
-   "n": "1602",
    "visto": "2026-09-27"
   },
   {

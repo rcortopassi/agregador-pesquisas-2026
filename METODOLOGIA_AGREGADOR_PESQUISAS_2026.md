@@ -6,6 +6,26 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- MANHÃ DE 27/09, `PRES26`: QUAEST ASSUME O PARÁ (VIRA EMPATE) E AMOSTRAGEM ASSUME O PIAUÍ. Rodada
+  local das 7h50, Actions das 6h57 verde. Apuração em três agentes (nacionais; lote Veritá
+  estadual; demais estaduais). Fila acordou com 60; saem 3, fica em 57. O `DI` NÃO mudou: nem a
+  GERP (BR-03929/2026, campo 23-26/9) nem a Veritá nacional (BR-04467/2026, campo 20-25/9,
+  40.500 entrevistas) saíram até a manhã — a Veritá vem soltando só estaduais de governo/Senado
+  por imprensa regional, sem atualizar o Supabase, então a nacional deve demorar. PA: Quaest
+  BR-04603/2026 (22 a 25/9, 804 entrevistas, margem 3, TV Liberal/Globo) assume o `PRES26`, no
+  lugar da Veritá de 12-17/9; Lula 40 x Flávio 35, diferença de 5 dentro do dobro da margem (3):
+  vira EMPATE TÉCNICO, mudando a cor do estado no mapa. PI: Amostragem/Instituto Piauiense de
+  Opinião Pública BR-01087/2026 (21 a 25/9, 1.137 entrevistas em 49 municípios, margem 2,85, TV
+  Meio Norte) assume o `PRES26`, no lugar da Veritá de 13-18/9: Lula 69,39 x Flávio 16,53 em
+  totais (74,29 x 17,7 em válidos), sem 2º turno divulgado. A Vetor³/Conecta Piauí (BR-05254/2026,
+  19-24/9, 1.602 entrevistas: Lula 63,5 x Flávio 21,8 total, 68,3 x 23,4 válidos) tinha fim de
+  campo anterior ao da Amostragem e fica só na série. NÃO SAÍRAM as demais 13 pesquisas de
+  prioridade alta apuradas (Doxa PA, DataTrends AL, DataSensus AL estimulada, Instituto Franca
+  BA e PE, Insight Brasil MG, IGAPE GO e DF, Data Census e Media e Qualitta no RN, Data AZ e GP1
+  no PI) nem o lote Veritá de 20-24/9 e 21-25/9 em MG, PR, BA, AC, PE, RJ, RR, RS, SC, SP e RN
+  (só governo e Senado saíram até agora, em AM, PA, GO, RO e TO). Confirmado que BR-00467/2026
+  é do TO (não do RN) e BR-03566/2026 é de RO. RESOLVIDOS na fila: BR-04603 (PA), BR-01087 e
+  BR-05254 (PI, o segundo por decisão de não assumir).
 - MANHÃ DE 27/09: ABAS DE GOVERNADOR E SENADOR REMOVIDAS DA INTERFACE, A PEDIDO DO RAFAEL. Até
   aqui (26/09) o corte de escopo só tinha CONGELADO `DG`/`DS`/`DGM`/`DSM` (parava de receber
   rodada nova, mas o seletor Presidente/Governador/Senador continuava no topo do painel). Agora
