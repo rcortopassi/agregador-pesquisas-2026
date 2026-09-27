@@ -94,15 +94,19 @@ Ou seja, um agente de nuvem consegue editar arquivo e dar push, mas não consegu
 Como esta tarefa é 90 por cento apuração, ela não tem como rodar lá. Se algum dia o proxy passar
 a liberar esses domínios, o teste é rodar de novo o que está em `DIAGNOSTICO_NUVEM.md`.
 
-## São três frentes. Investigue as três.
+## Escopo desde 26/09/2026: só Presidente
+
+A pedido do Rafael, o agregador PAROU de acompanhar Governador e Senador. `rotina_6h.py` já
+filtra o radar do TSE para só trazer registros de Presidente; `DG`/`DS`/`DGM`/`DSM` (os objetos
+de Governador/Senador) ficam CONGELADOS com o que já tinha — não apague, não mexa, só não
+acrescente rodada nova. Se aparecer pesquisa de Governador ou Senador em qualquer fonte
+(Veritá, Gazeta, Wikipédia), ignore: fora de escopo agora, não é esquecimento seu.
+
+Restam duas frentes. Investigue as duas.
 
 1. **Presidencial nacional** → objeto `DI` (uma rodada por instituto por mês, a mais recente)
    + `T2R` (par de 2º turno) + `IM` (metadados do instituto).
-2. **Governador / senador por estado** → `DGM`/`DSM` (série mensal, alimenta o painel do estado)
-   **e** `DG`/`DS` (resumo do mapa). Mexa SEMPRE nos dois: só DG/DS deixa o painel do estado
-   velho, e só DGM/DSM deixa o mapa velho. Confira: se `DG[uf].d` diz "jul" mas `DGM[uf].jul`
-   não existe, faltou.
-3. **Presidencial por estado** → `PRES26` (aba Mapa). Hoje tem 26 dos 27 estados (falta RR).
+2. **Presidencial por estado** → `PRES26` (aba Mapa). Hoje tem 26 dos 27 estados (falta RR).
 
 ## Ferramentas do repositório
 
@@ -195,7 +199,9 @@ errados). Onde não há 2º turno, escreva o `t2` em texto contendo "N pontos" (
 divulgado; no 1º turno Lula abre 18 pontos"), porque `pmargin` lê esse número para dar
 intensidade de cor ao mapa.
 
-**DGM/DSM + DG/DS:** os dois objetos, sempre.
+**DGM/DSM + DG/DS: CONGELADOS desde 26/09/2026, não inserir mais nada aqui** (ver "Escopo desde
+26/09/2026" no topo deste arquivo). O texto abaixo descreve o formato só para referência
+histórica, caso um dia o escopo volte a incluir Governador/Senador.
 
 **FORMATO DA LINHA DE `DGM`/`DSM`, e o 4º elemento importa (08/09/2026).** A linha é
 `[instituto, [[nome, valor], ...], nota, suspensa]`. O 3º elemento é NOTA de texto livre e sai
@@ -292,7 +298,7 @@ run 30776807373.
 
 ## Passo 9 — Resumo
 
-O que entrou em cada uma das três frentes, como o agregado do mês mudou (1º turno e margem do 2º
+O que entrou em cada uma das duas frentes, como o agregado do mês mudou (1º turno e margem do 2º
 turno) e o que ficou pendente. Se nada novo surgiu, diga isso em duas linhas e pare: o carimbo já
 é do Actions e não precisa ser tocado.
 
