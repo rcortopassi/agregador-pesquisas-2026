@@ -97,12 +97,15 @@ def radar_tse():
     vistos = set()
     for r in pe:
         cargo = r["DS_CARGO"].upper()
-        if not any(c in cargo for c in ("PRESIDENTE", "GOVERNADOR", "SENADOR")):
+        # Escopo restrito a PRESIDENTE em 26/09/2026 a pedido do Rafael: o agregador parou
+        # de acompanhar Governador e Senador (o filtro incluia os tres desde a expansao
+        # estadual de 29/06/2026). Os paineis DG/DS/DGM/DSM ficam como estao, congelados;
+        # so o radar deixa de trazer pesquisa nova desses cargos.
+        if "PRESIDENTE" not in cargo:
             continue
-        # Uma pesquisa estadual aparece DUAS vezes: no CSV do estado e no de BRASIL. Sem
-        # este filtro cada linha estadual sai repetida no relatorio (73 repetidas em 195).
-        if "PRESIDENTE" not in cargo and r["_UF"] == "BRASIL":
-            continue
+        # (o filtro de duplicata estadual x BRASIL que existia aqui so valia para
+        # Governador/Senador, que nao chegam mais neste ponto; nada a filtrar para
+        # Presidente, que precisa das duas linhas para achar o gemeo nacional/estadual.)
         if r["NR_PROTOCOLO_REGISTRO"] in vistos:
             continue
         vistos.add(r["NR_PROTOCOLO_REGISTRO"])
