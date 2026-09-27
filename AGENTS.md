@@ -102,6 +102,17 @@ de Governador/Senador) ficam CONGELADOS com o que já tinha — não apague, nã
 acrescente rodada nova. Se aparecer pesquisa de Governador ou Senador em qualquer fonte
 (Veritá, Gazeta, Wikipédia), ignore: fora de escopo agora, não é esquecimento seu.
 
+**27/09/2026: as ABAS de Governador e Senador saíram da interface.** Não é mais só congelamento
+de dado: a pedido do Rafael, o seletor Presidente/Governador/Senador no topo do painel
+(`#dim-tabs`, array `dims` perto do fim do `<script>`) foi removido, e a div fica
+`display:none`, vazia. `cur.dim` nasce `'pres'` (linha do `var cur={...}`) e não existe mais
+botão que o troque, então o painel entra direto na visão presidencial e nunca mais renderiza o
+mapa/estado de `DG`/`DS`. Os objetos `DG`/`DS`/`DGM`/`DSM` e as funções que os leem
+(`drawMap`, `openState`, `renderStatePanel`, `renderStateContent`, `stateLeaderName`) continuam
+no código, mortos mas inofensivos — não precisam ser apagados, e apagá-los à toa é risco sem
+ganho. Se um dia o escopo voltar a incluir Governador/Senador, é reconstruir o array `dims` com
+os três itens e tirar o `display:none` do `#dim-tabs`.
+
 Restam duas frentes. Investigue as duas.
 
 1. **Presidencial nacional** → objeto `DI` (uma rodada por instituto por mês, a mais recente)

@@ -77,7 +77,10 @@
     <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 27/09/2026 06:57</div>
   </div>
 
-  <div id="dim-tabs" style="display:flex; border-bottom:1px solid var(--bord);"></div>
+  <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
+       acompanha Presidente desde 26/09/2026). O elemento fica no DOM vazio e escondido porque
+       o JS ainda referencia dim-tabs.children sem checar existência; ver var dims mais abaixo. -->
+  <div id="dim-tabs" style="display:none;"></div>
 
   <div id="banner" style="display:flex; align-items:center; justify-content:center; gap:7px; padding:8px; background:var(--surf2); border-bottom:1px solid var(--bsoft); font-size:13px; color:var(--txt); flex-wrap:wrap;"></div>
 
@@ -443,7 +446,7 @@
     var nInst=br[2], nRows=DI[m].rows.length;
     var comHE=DI[m].rows.filter(function(r){ return has2(r[0]); }).length;
     var totHE=Object.keys(VH2DET).length;
-    var nUF=Object.keys(PRES26).length, nGov=Object.keys(DG).length;
+    var nUF=Object.keys(PRES26).length;
     var nContr=Object.keys(CONTR).length;
     var vv=t2valid(m), st=t2stress(m);
     var semOut=Object.keys(OUTLIERS).length===0;
@@ -474,8 +477,8 @@
     h+=mP('A margem mostrada, hoje cerca de '+fmt(mo)+' pontos, é só o erro de AMOSTRAGEM de uma pesquisa típica. Ela não captura o risco maior em sistemas de dois turnos, que é o campo inteiro errar junto e para o mesmo lado. Por isso o painel mostra, em dourado, quanto a mediana do campo já errou neste mesmo mês do ciclo em 2010 e em 2022. Os dois erros foram em DIREÇÕES OPOSTAS, e é justamente por isso que o painel não aplica correção direcional: não há viés estável de campo que se possa defender com duas séries.');
 
     h+=mSec('Mapa e disputas estaduais');
-    h+=mP('O mapa presidencial cobre <b>'+nUF+' dos 27 estados</b>, cada um com a pesquisa estadual mais recente que publicou percentual. Como as datas de campo variam, o painel lista de quando é a de cada estado e marca em dourado o que passou de 45 dias. Governador e senador têm série própria, em <b>'+nGov+' estados</b>. Em 2026 todos os estados elegem DOIS senadores, então o painel destaca dois nomes no Senado e um no Governador.');
-    h+=mP('Quem pagou a pesquisa é sinal relevante, então rodadas estaduais bancadas por PARTIDO ou por instituição FINANCEIRA aparecem com alerta, hoje em <b>'+nContr+' linhas</b> (governador e senador contam separado). Pesquisa paga por veículo de imprensa ou pelo próprio instituto não recebe marca.');
+    h+=mP('O mapa presidencial cobre <b>'+nUF+' dos 27 estados</b>, cada um com a pesquisa estadual mais recente que publicou percentual para presidente. Como as datas de campo variam, o painel lista de quando é a de cada estado e marca em dourado o que passou de 45 dias. Desde 26/09/2026 o painel acompanha só a disputa presidencial; as séries de governador e senador que existiram até então ficaram congeladas e não recebem mais rodada nova.');
+    h+=mP('Quem pagou a pesquisa é sinal relevante, então rodadas estaduais bancadas por PARTIDO ou por instituição FINANCEIRA aparecem com alerta, hoje em <b>'+nContr+' linhas</b> (inclui marcas herdadas de quando o painel ainda cobria governador e senador). Pesquisa paga por veículo de imprensa ou pelo próprio instituto não recebe marca.');
 
     h+=mSec('Fontes, nesta ordem');
     h+=mP('1. TSE, base primária, tanto para resultado de urna quanto para o registro de pesquisas (PesqEle), que dá instituto, datas de campo, tamanho da amostra, custo e contratante.<br>2. A íntegra do levantamento em PDF, publicada pelo instituto ou pela imprensa.<br>3. Imprensa especializada e site do próprio instituto.<br>4. Wikipédia, só em último caso.');
@@ -2212,9 +2215,10 @@
     }
   }
 
-  var dims=[['pres','Presidente'],['gov','Governador'],['sen','Senador']];
-  var dtb=document.getElementById('dim-tabs');
-  dims.forEach(function(o,idx){ var b=document.createElement('div'); b.setAttribute('data-d',o[0]); b.textContent=o[1]; b.style.cssText='flex:1; text-align:center; padding:11px 4px; font-size:16px; font-weight:600; cursor:pointer; border-right:'+(idx<2?'1px solid '+P.bord+'':'none')+';'; b.onclick=function(){ cur.dim=o[0]; cur.uf=null; render(); }; dtb.appendChild(b); });
+  // Abas Presidente/Governador/Senador removidas em 27/09/2026: cur.dim fica travado em 'pres'
+  // (valor inicial, linha do var cur=...) porque não há mais botão que o troque. #dim-tabs
+  // segue no DOM, oculto e vazio; o render() ainda lê dim-tabs.children, e um NodeList vazio
+  // não quebra o for.
   var tt=document.getElementById('top-tabs');
   tops.forEach(function(o,idx){ var b=document.createElement('div'); b.setAttribute('data-t',o[0]); b.textContent=o[1]; b.style.cssText='flex:1; text-align:center; padding:11px 4px; font-size:15px; font-weight:600; cursor:pointer; border-right:'+(idx<tops.length-1?'1px solid '+P.bord+'':'none')+';'; b.onclick=function(){ cur.top=o[0]; render(); }; tt.appendChild(b); });
   var mt=document.getElementById('m-tabs');
