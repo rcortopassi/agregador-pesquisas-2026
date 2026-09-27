@@ -1068,6 +1068,7 @@
   "PB062752026",
   "PB064522026",
   "PB065642026",
+  "PB069272026",
   "PB069922026",
   "PB075782026",
   "PB077902026",
@@ -1529,8 +1530,18 @@
   "eb0342b6-979f-46d5-ab83-949ff53dc67b",
   "f6f61fbd-9279-4ed9-9277-fd646400f2fb"
  ],
- "ultima_rodada": "2026-09-26T16:11:03.066778-03:00",
+ "ultima_rodada": "2026-09-26T21:29:16.516015-03:00",
  "pendentes": [
+  {
+   "proto": "PB069272026",
+   "escopo": "PB",
+   "inst": "INSTITUTO RANKING PESQUISA",
+   "cargo": "Governador, Senador, Deputado Fede",
+   "campo": "16/09-18/09",
+   "div": "2026-09-21",
+   "n": "2000",
+   "visto": "2026-09-26"
+  },
   {
    "proto": "RR017412026",
    "escopo": "RR",
