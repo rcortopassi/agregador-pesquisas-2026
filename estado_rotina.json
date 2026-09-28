@@ -1791,16 +1791,6 @@
    "visto": "2026-09-25"
   },
   {
-   "proto": "BR044742026",
-   "escopo": "NACIONAL?",
-   "inst": "DOXA",
-   "cargo": "Presidente",
-   "campo": "19/09-24/09",
-   "div": "2026-09-25",
-   "n": "2000",
-   "visto": "2026-09-25"
-  },
-  {
    "proto": "BR038702026",
    "escopo": "ESTADUAL[PE]",
    "inst": "VERITA",
@@ -1971,16 +1961,6 @@
    "visto": "2026-09-26"
   },
   {
-   "proto": "BR051912026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "23/09-25/09",
-   "div": "2026-09-27",
-   "n": "1200",
-   "visto": "2026-09-27"
-  },
-  {
    "proto": "BR050032026",
    "escopo": "ESTADUAL[AL]",
    "inst": "PALPE PESQUISAS",
@@ -2051,16 +2031,6 @@
    "visto": "2026-09-27"
   },
   {
-   "proto": "BR083022026",
-   "escopo": "ESTADUAL[MT]",
-   "inst": "PERCENT PESQUISA DE MERCADO ",
-   "cargo": "Presidente",
-   "campo": "15/09-18/09",
-   "div": "2026-09-27",
-   "n": "600",
-   "visto": "2026-09-27"
-  },
-  {
    "proto": "BR067842026",
    "escopo": "ESTADUAL[PE]",
    "inst": "INSTITUTO FRANCA DE PESQUISA",
@@ -2091,26 +2061,6 @@
    "visto": "2026-09-27"
   },
   {
-   "proto": "BR009372026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "25/09-26/09",
-   "div": "2026-09-27",
-   "n": "321",
-   "visto": "2026-09-27"
-  },
-  {
-   "proto": "BR090272026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "17/09-23/09",
-   "div": "2026-09-27",
-   "n": "1200",
-   "visto": "2026-09-27"
-  },
-  {
    "proto": "BR066832026",
    "escopo": "NACIONAL?",
    "inst": "#NULO#",
@@ -2131,16 +2081,6 @@
    "visto": "2026-09-27"
   },
   {
-   "proto": "BR017912026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-24/09",
-   "div": "2026-09-27",
-   "n": "601",
-   "visto": "2026-09-27"
-  },
-  {
    "proto": "BR085452026",
    "escopo": "ESTADUAL[AM]",
    "inst": "IPEN - INSTITUTO DE PESQUISA",
@@ -2148,46 +2088,6 @@
    "campo": "18/09-25/09",
    "div": "2026-09-28",
    "n": "1200",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR008912026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "23/09-26/09",
-   "div": "2026-09-28",
-   "n": "1600",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR029382026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "23/09-26/09",
-   "div": "2026-09-28",
-   "n": "1600",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR023192026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "23/09-26/09",
-   "div": "2026-09-28",
-   "n": "1600",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR091892026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "24/09-26/09",
-   "div": "2026-09-28",
-   "n": "401",
    "visto": "2026-09-28"
   },
   {
@@ -2308,16 +2208,6 @@
    "campo": "24/09-27/09",
    "div": "2026-09-28",
    "n": "2004",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR075572026",
-   "escopo": "NACIONAL?",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "25/09-27/09",
-   "div": "2026-09-28",
-   "n": "2000",
    "visto": "2026-09-28"
   },
   {

@@ -6,6 +6,57 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- MANHÃ DE 28/09: NEXUS/BTG ASSUME O `DI` NACIONAL, DATATRENDS ASSUME AL E REAL TIME BIG DATA
+  ASSUME A BA NO `PRES26`. Rodada local das 10h20, apuração em quatro agentes (nacional; Veritá
+  estadual, que por sua vez abriu cinco sub-agentes regionais; e dois grupos de estaduais
+  restantes). Fila acordou com 76 (65 na hora desta rodada, contando os itens que o Actions já
+  tinha trazido desde 27/09); saem 11, ficam 65. NEXUS/BTG (BR-07557/2026, campo 25-27/9,
+  presencial, BTG Pactual) substitui a própria de 18-20/9 no `DI`: 1º turno Lula 42 x Flávio 37
+  (era 40 x 37) e 2º turno Lula 46 x Flávio 44 (era Lula 46 x Flávio 45) — a mediana do mês NÃO se
+  move (Lula 39,5 x Flávio 37 no 1º turno, Flávio +0,5 de margem bruta no 2º). AL: DATATRENDS
+  (BR-05191/2026, 23-25/9, 1.200 entrevistas, pesquisa própria) assume o `PRES26`, no lugar da Real
+  Time Big Data de 21-24/9: Lula 56 x Flávio 37 no 2º turno (era 53 x 38). BA: REAL TIME BIG DATA
+  (BR-02319/2026 e gêmeos BR-00891/BR-02938, mesmo lote, 23-26/9, 1.600 entrevistas) assume o
+  `PRES26`, no lugar da Quaest de 20-23/9: Lula 64 x Flávio 28 no 2º turno (era 62 x 27) — PROVISÓRIO,
+  o Instituto Franca (BR-07859/2026) tem o mesmo fim de campo (26/9) e ainda não publicou; se sair,
+  desempatar por amostra (Franca 2.000 x Real Time 1.600).
+  NADA MAIS SAIU: de 65 protocolos restantes na fila, NENHUM do lote Veritá de 20-25/9 foi
+  encontrado publicado em nenhum estado (AC, AL, BA, MG, PA, PR, PE, RJ, RN, RR, RS, SC, SP) — o
+  site institucional está no ar mas só lista rodadas anteriores (10-19/9); a do Paraná está
+  agendada para 29/9 segundo o Blog Politicamente. Também não saíram, apesar de fim de campo já
+  vencido: GERP nacional (BR-03929/2026), AtlasIntel nacional (BR-06243/2026), Quaest nacional
+  (BR-06520/2026, esperada para a noite de hoje, "última antes do 1º turno"), IPEN no AM (o
+  próprio TSE confirma que a empresa não entregou o relatório), IGAPE no DF, F5 de 25-26/9 e
+  Insight Brasil em MG, Instituto Franca na BA e PE, American Analytics em PE, 100% Cidades/Futura,
+  AtlasIntel e Real Time Big Data em SP (as três liberadas hoje, 28/9, pelo TSE segundo o Poder360).
+  BUG ACHADO NO `radar_tse.py`: o desempate de gêmeo por CNPJ+datas+N é ambíguo quando o mesmo
+  instituto roda o MESMO desenho em paralelo em vários estados no mesmo dia — a AtlasIntel de
+  22-27/9 (N=1.800) e a Real Time Big Data de 23-26/9 (N=2.000) tinham, cada uma, três/dois
+  protocolos que o radar casaria todos como SP por coincidência de chave. Conferido pelo
+  `DS_PLANO_AMOSTRAL`/`DS_DADO_MUNICIPIO` de cada um: só BR-09278/2026 é de SP (AtlasIntel);
+  BR-08984/2026 é de MG e BR-07401/2026 é do RJ. Da Real Time, só BR-09144/2026 é de SP;
+  BR-06289/2026 é de MG. E BR-06243/2026 (AtlasIntel, "NACIONAL?" no radar) é na verdade o gêmeo
+  do RN, não nacional. O script não foi corrigido ainda (só a leitura manual); quem for mexer
+  nele, considerar desempate também por `DS_DADO_MUNICIPIO`/`DS_PLANO_AMOSTRAL`, não só a
+  quádrupla CNPJ+início+fim+N.
+  DOIS ITENS FICARAM ÓRFÃOS DA APURAÇÃO (escaparam da divisão da fila por terem sido rotulados
+  "NACIONAL?" pelo radar quando na verdade são estaduais) e SEGUEM NA FILA, não descartados: (1)
+  BR-06683/2026, Instituto Data Census Potiguar, na verdade candidato ao `PRES26` do RN (campo até
+  26/9, mais recente que o Instituto Seta de 24/9 hoje no mapa) — contratante Mega Portal RN, sem
+  número publicado encontrado; (2) BR-09783/2026, Neokemp, na verdade candidato ao `PRES26` do PR
+  (campo até 27/9, mais recente que o Neokemp/OCP News de 24/9 já no mapa) — CUIDADO para não
+  confundir com o Neokemp/OCP News já inserido (contratante diferente: "Jornal O Correio do Povo"
+  nesta nova, não a OCP News da que já está no painel), sem número publicado encontrado.
+  DESCARTADOS por serem municipais/regionais disfarçados de estaduais ou nacionais pelo radar:
+  BR-00937 e BR-01791 (Datapress, Matão e Araraquara/SP), BR-09027 (IPAT, Baixada Santista/SP),
+  BR-09189 (Viavox, Três Pontas/MG) e BR-08302 (Percent, na verdade só Cuiabá/MT apesar do registro
+  dizer "BRASIL"). BR-04474 (Doxa) resolvido como duplicata: é o gêmeo do PA já decidido a favor da
+  Quaest em rodadas anteriores, Doxa nunca assumiu o mapa.
+  ARMADILHA NOVA ACHADA: BR-05963/2026 (IPESPE, PE, contratante Folha de Pernambuco) tem motivo
+  concreto para desconfiança — o Blog do Ricardo Antunes noticiou em 12/9 que a Folha de PE
+  ROMPEU com o Ipespe/Lavareda por desconfiança de imparcialidade (Lavareda assessora a campanha
+  de João Campos), então esta pesquisa registrada em nome da Folha pode nunca ter sido de fato
+  realizada como planejado. Deixado NA FILA, não descartado, até confirmação.
 - MANHÃ DE 27/09, `PRES26`: QUAEST ASSUME O PARÁ (VIRA EMPATE) E AMOSTRAGEM ASSUME O PIAUÍ. Rodada
   local das 7h50, Actions das 6h57 verde. Apuração em três agentes (nacionais; lote Veritá
   estadual; demais estaduais). Fila acordou com 60; saem 3, fica em 57. O `DI` NÃO mudou: nem a
