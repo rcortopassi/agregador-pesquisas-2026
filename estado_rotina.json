@@ -1981,26 +1981,6 @@
    "visto": "2026-09-27"
   },
   {
-   "proto": "BR037172026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Presidente",
-   "campo": "22/09-26/09",
-   "div": "2026-09-27",
-   "n": "2000",
-   "visto": "2026-09-27"
-  },
-  {
-   "proto": "BR063892026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "IGAPE- INSTITUTO GAZETA DE P",
-   "cargo": "Presidente",
-   "campo": "22/09-26/09",
-   "div": "2026-09-27",
-   "n": "2000",
-   "visto": "2026-09-27"
-  },
-  {
    "proto": "BR036252026",
    "escopo": "ESTADUAL[MG]",
    "inst": "F5 ATUALIZA DADOS",
@@ -2101,31 +2081,11 @@
    "visto": "2026-09-28"
   },
   {
-   "proto": "BR036902026",
-   "escopo": "ESTADUAL[MS]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/09-27/09",
-   "div": "2026-09-28",
-   "n": "820",
-   "visto": "2026-09-28"
-  },
-  {
    "proto": "BR073232026",
    "escopo": "ESTADUAL[PE]",
    "inst": "AMERICAN ANALYTICS",
    "cargo": "Presidente",
    "campo": "23/09-27/09",
-   "div": "2026-09-28",
-   "n": "1000",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR059632026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "23/09-26/09",
    "div": "2026-09-28",
    "n": "1000",
    "visto": "2026-09-28"
@@ -2198,16 +2158,6 @@
    "campo": "22/09-27/09",
    "div": "2026-09-28",
    "n": "1200",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR065202026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "24/09-27/09",
-   "div": "2026-09-28",
-   "n": "2004",
    "visto": "2026-09-28"
   },
   {
