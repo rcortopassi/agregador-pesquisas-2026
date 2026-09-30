@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 29/09/2026 22:14. Mercados: Polymarket 40,5%/58,7%, Kalshi 40,0%/59,0%.
+Rodada de 30/09/2026 10:22. Mercados: Polymarket 38,5%/60,5%, Kalshi 40,0%/59,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -97,6 +97,20 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-29] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 30/09-02/10, divulgação 2026-09-29, N=2400, registro BR005092026
 - [aguardando desde 2026-09-29] TSE NACIONAL?, PALVER (Presidente), campo 24/09-28/09, divulgação 2026-09-29, N=5000, registro BR029902026
 - [aguardando desde 2026-09-29] TSE NACIONAL?, INSTITUTO AMAZONIA DE PESQUI (Presidente), campo 23/09-26/09, divulgação 2026-09-29, N=2500, registro BR021062026
+- [NOVO] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 23/09-29/09, divulgação 2026-09-30, N=800, registro BR084762026
+- [NOVO] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 24/09-29/09, divulgação 2026-09-30, N=2000, registro BR006332026
+- [NOVO] TSE ESTADUAL[ES], #NULO# (Presidente), campo 28/09-30/09, divulgação 2026-09-30, N=500, registro BR024212026
+- [NOVO] TSE ESTADUAL[ES], AGILI PESQUISAS (Presidente), campo 24/09-29/09, divulgação 2026-09-30, N=1200, registro BR098162026
+- [NOVO] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 29/09-02/10, divulgação 2026-09-30, N=1200, registro BR075072026
+- [NOVO] TSE ESTADUAL[MT], E P P (Presidente), campo 12/09-18/09, divulgação 2026-09-30, N=2003, registro BR031422026
+- [NOVO] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 26/09-29/09, divulgação 2026-09-30, N=1200, registro BR076472026
+- [NOVO] TSE ESTADUAL[PI], PIAUI VOX (Presidente), campo 27/09-29/09, divulgação 2026-09-30, N=500, registro BR055222026
+- [NOVO] TSE ESTADUAL[PI], INSTITUTO ESTIMATIVA (Presidente), campo 24/09-25/09, divulgação 2026-09-30, N=460, registro BR055562026
+- [NOVO] TSE ESTADUAL[RJ], REAL TIME BIG DATA (Presidente), campo 25/09-29/09, divulgação 2026-09-30, N=2000, registro BR051932026
+- [NOVO] TSE ESTADUAL[SP], ASN PESQUISAS PUBLICAS (Presidente), campo 26/09-28/09, divulgação 2026-09-30, N=700, registro BR016552026
+- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 24/09-29/09, divulgação 2026-09-30, N=2000, registro BR011222026
+- [NOVO] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 27/09-29/09, divulgação 2026-09-30, N=2000, registro BR006982026
+- [NOVO] TSE NACIONAL?, BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 25/09-28/09, divulgação 2026-09-30, N=2000, registro BR087062026
 
 ## Últimas publicações do Veritá
 
@@ -115,16 +129,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-19 | ESTADUAL[MS] | RANKING BRASIL INTELIGENCIA | Presidente | 14/09-18/09 | 2000 | BR064262026 |
-| 2026-09-19 | ESTADUAL[PE] | DATATRENDS | Presidente | 15/09-17/09 | 1200 | BR080612026 |
-| 2026-09-19 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 15/09-17/09 | 800 | BR098532026 |
-| 2026-09-19 | ESTADUAL[RO] | VERITA | Presidente | 14/09-19/09 | 1220 | BR079232026 |
-| 2026-09-19 | ESTADUAL[RO] | VERITA | Presidente | 14/09-19/09 | 1220 | BR012122026 |
-| 2026-09-19 | ESTADUAL[RO] | VERITA | Presidente | 14/09-19/09 | 1220 | BR099462026 |
-| 2026-09-19 | ESTADUAL[RR] | VERITA | Presidente | 14/09-19/09 | 1030 | BR072422026 |
-| 2026-09-19 | ESTADUAL[RS] | VERITA | Presidente | 14/09-19/09 | 2020 | BR069832026 |
-| 2026-09-19 | ESTADUAL[SC] | VERITA | Presidente | 14/09-19/09 | 1525 | BR093222026 |
-| 2026-09-19 | ESTADUAL[SP] | VERITA | Presidente | 14/09-19/09 | 3025 | BR044702026 |
 | 2026-09-20 | ESTADUAL[AC] | DELTA AGENCIA DE PESQUISA | Presidente | 14/09-19/09 | 1201 | BR074032026 |
 | 2026-09-20 | ESTADUAL[RS] | STUDIO PESQUISAS | Presidente | 15/09-18/09 | 960 | BR053602026 |
 | 2026-09-20 | NACIONAL? | PALVER | Presidente | 15/09-20/09 | 5000 | BR008602026 |
@@ -325,4 +329,18 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-09-29 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 30/09-02/10 | 2400 | BR005092026 |
 | 2026-09-29 | NACIONAL? | PALVER | Presidente | 24/09-28/09 | 5000 | BR029902026 |
 | 2026-09-29 | NACIONAL? | INSTITUTO AMAZONIA DE PESQUI | Presidente | 23/09-26/09 | 2500 | BR021062026 |
+| 2026-09-30 | ESTADUAL[AC] | DELTA AGENCIA DE PESQUISA | Presidente | 23/09-29/09 | 800 | BR084762026 |
+| 2026-09-30 | ESTADUAL[BA] | ATLASINTEL | Presidente | 24/09-29/09 | 2000 | BR006332026 |
+| 2026-09-30 | ESTADUAL[ES] | #NULO# | Presidente | 28/09-30/09 | 500 | BR024212026 |
+| 2026-09-30 | ESTADUAL[ES] | AGILI PESQUISAS | Presidente | 24/09-29/09 | 1200 | BR098162026 |
+| 2026-09-30 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 29/09-02/10 | 1200 | BR075072026 |
+| 2026-09-30 | ESTADUAL[MT] | E P P | Presidente | 12/09-18/09 | 2003 | BR031422026 |
+| 2026-09-30 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 26/09-29/09 | 1200 | BR076472026 |
+| 2026-09-30 | ESTADUAL[PI] | PIAUI VOX | Presidente | 27/09-29/09 | 500 | BR055222026 |
+| 2026-09-30 | ESTADUAL[PI] | INSTITUTO ESTIMATIVA | Presidente | 24/09-25/09 | 460 | BR055562026 |
+| 2026-09-30 | ESTADUAL[RJ] | REAL TIME BIG DATA | Presidente | 25/09-29/09 | 2000 | BR051932026 |
+| 2026-09-30 | ESTADUAL[SP] | ASN PESQUISAS PUBLICAS | Presidente | 26/09-28/09 | 700 | BR016552026 |
+| 2026-09-30 | NACIONAL? | 100 CIDADES | Presidente | 24/09-29/09 | 2000 | BR011222026 |
+| 2026-09-30 | NACIONAL? | INDEXA PESQUISAS | Presidente | 27/09-29/09 | 2000 | BR006982026 |
+| 2026-09-30 | NACIONAL? | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 25/09-28/09 | 2000 | BR087062026 |
 
