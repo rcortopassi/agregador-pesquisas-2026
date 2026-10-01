@@ -2094,16 +2094,6 @@
    "visto": "2026-09-27"
   },
   {
-   "proto": "BR039292026",
-   "escopo": "NACIONAL?",
-   "inst": "GRUPO GERP GERP MERCADO GERP",
-   "cargo": "Presidente",
-   "campo": "23/09-26/09",
-   "div": "2026-09-27",
-   "n": "2400",
-   "visto": "2026-09-27"
-  },
-  {
    "proto": "BR085452026",
    "escopo": "ESTADUAL[AM]",
    "inst": "IPEN - INSTITUTO DE PESQUISA",
@@ -2434,16 +2424,6 @@
    "visto": "2026-09-29"
   },
   {
-   "proto": "BR043912026",
-   "escopo": "NACIONAL?",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "23/09-28/09",
-   "div": "2026-09-29",
-   "n": "5000",
-   "visto": "2026-09-29"
-  },
-  {
    "proto": "BR081682026",
    "escopo": "NACIONAL?",
    "inst": "GRUPO GERP GERP MERCADO GERP",
@@ -2464,16 +2444,6 @@
    "visto": "2026-09-29"
   },
   {
-   "proto": "BR008952026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "26/09-28/09",
-   "div": "2026-09-29",
-   "n": "2100",
-   "visto": "2026-09-29"
-  },
-  {
    "proto": "BR005092026",
    "escopo": "NACIONAL?",
    "inst": "GRUPO GERP GERP MERCADO GERP",
@@ -2481,16 +2451,6 @@
    "campo": "30/09-02/10",
    "div": "2026-09-29",
    "n": "2400",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR029902026",
-   "escopo": "NACIONAL?",
-   "inst": "PALVER",
-   "cargo": "Presidente",
-   "campo": "24/09-28/09",
-   "div": "2026-09-29",
-   "n": "5000",
    "visto": "2026-09-29"
   },
   {
@@ -2611,36 +2571,6 @@
    "campo": "26/09-28/09",
    "div": "2026-09-30",
    "n": "700",
-   "visto": "2026-09-30"
-  },
-  {
-   "proto": "BR011222026",
-   "escopo": "NACIONAL?",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "24/09-29/09",
-   "div": "2026-09-30",
-   "n": "2000",
-   "visto": "2026-09-30"
-  },
-  {
-   "proto": "BR006982026",
-   "escopo": "NACIONAL?",
-   "inst": "INDEXA PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "27/09-29/09",
-   "div": "2026-09-30",
-   "n": "2000",
-   "visto": "2026-09-30"
-  },
-  {
-   "proto": "BR087062026",
-   "escopo": "NACIONAL?",
-   "inst": "BOAS IDEIAS, ESTRATEGIA E IN",
-   "cargo": "Presidente",
-   "campo": "25/09-28/09",
-   "div": "2026-09-30",
-   "n": "2000",
    "visto": "2026-09-30"
   }
  ],
