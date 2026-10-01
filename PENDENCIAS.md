@@ -2,37 +2,12 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 30/09/2026 22:14. Mercados: Polymarket 38,5%/61,5%, Kalshi 40,0%/61,0%.
+Rodada de 01/10/2026 07:53. Mercados: Polymarket 36,5%/62,7%, Kalshi 40,0%/61,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
-- [aguardando desde 2026-09-24] TSE ESTADUAL[AL], INSTITUTO DATASENSUS (Presidente), campo 22/09-24/09, divulgação 2026-09-24, N=5000, registro BR004682026
-- [aguardando desde 2026-09-24] TSE ESTADUAL[MG], INSTITUTO ALVES LIMA (Presidente), campo 16/09-23/09, divulgação 2026-09-24, N=1500, registro BR081512026
-- [aguardando desde 2026-09-24] TSE ESTADUAL[PI], INSTITUTO GP1 DE PESQUISA (Presidente), campo 21/09-23/09, divulgação 2026-09-24, N=1200, registro BR042032026
-- [aguardando desde 2026-09-24] TSE ESTADUAL[PI], INSTITUTO DE PESQUISA DATA A (Presidente), campo 20/09-24/09, divulgação 2026-09-24, N=1200, registro BR064992026
-- [aguardando desde 2026-09-24] TSE ESTADUAL[SE], INSTITUTO DATASENSUS (Presidente), campo 21/09-22/09, divulgação 2026-09-24, N=800, registro BR074362026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[AC], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1030, registro BR070972026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[AC], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1030, registro BR031172026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[AL], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1220, registro BR032222026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[AL], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1220, registro BR034362026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[AL], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1220, registro BR044182026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[AL], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1220, registro BR067742026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[AL], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1220, registro BR045152026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[BA], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=2020, registro BR025462026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[DF], BADRA COMUNICACAO (Presidente), campo 22/09-24/09, divulgação 2026-09-25, N=1060, registro BR004962026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[MG], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=2030, registro BR092692026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[PA], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1525, registro BR098882026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[PA], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1525, registro BR027572026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[PA], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1525, registro BR087452026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[PA], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=1525, registro BR016842026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[PR], VERITA (Presidente), campo 20/09-24/09, divulgação 2026-09-25, N=2010, registro BR064462026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[RN], AFFARE INSTITUTE (Presidente), campo 20/09-23/09, divulgação 2026-09-25, N=1000, registro BR035932026
-- [aguardando desde 2026-09-25] TSE ESTADUAL[SP], #NULO# (Presidente), campo 19/09-22/09, divulgação 2026-09-25, N=1800, registro BR052552026
-- [aguardando desde 2026-09-26] TSE ESTADUAL[PE], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=2010, registro BR038702026
-- [aguardando desde 2026-09-26] TSE ESTADUAL[PE], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=2010, registro BR069692026
-- [aguardando desde 2026-09-26] TSE ESTADUAL[RJ], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=2030, registro BR056002026
 - [aguardando desde 2026-09-26] TSE ESTADUAL[RN], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=1220, registro BR004672026
 - [aguardando desde 2026-09-26] TSE ESTADUAL[RN], MEDIA - INTELIGENCIA EM PESQ (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=2000, registro BR041572026
 - [aguardando desde 2026-09-26] TSE ESTADUAL[RN], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=1220, registro BR035662026
@@ -45,65 +20,57 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-26] TSE ESTADUAL[RS], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=2020, registro BR043242026
 - [aguardando desde 2026-09-26] TSE ESTADUAL[SC], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=1525, registro BR070782026
 - [aguardando desde 2026-09-26] TSE ESTADUAL[SC], DATATRENDS (Presidente), campo 22/09-24/09, divulgação 2026-09-26, N=1200, registro BR096612026
-- [aguardando desde 2026-09-26] TSE ESTADUAL[SP], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=3025, registro BR041312026
 - [aguardando desde 2026-09-26] TSE NACIONAL?, VERITA (Presidente), campo 20/09-25/09, divulgação 2026-09-26, N=40500, registro BR044672026
-- [aguardando desde 2026-09-27] TSE ESTADUAL[AL], PALPE PESQUISAS (Presidente), campo 13/09-22/09, divulgação 2026-09-27, N=5000, registro BR050032026
-- [aguardando desde 2026-09-27] TSE ESTADUAL[BA], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 23/09-26/09, divulgação 2026-09-27, N=2000, registro BR078592026
-- [aguardando desde 2026-09-27] TSE ESTADUAL[MG], F5 ATUALIZA DADOS (Presidente), campo 23/09-24/09, divulgação 2026-09-27, N=468, registro BR036252026
-- [aguardando desde 2026-09-27] TSE ESTADUAL[MG], F5 ATUALIZA DADOS (Presidente), campo 23/09-24/09, divulgação 2026-09-27, N=595, registro BR099342026
-- [aguardando desde 2026-09-27] TSE ESTADUAL[MG], INSIGHT BRASIL (Presidente), campo 21/09-25/09, divulgação 2026-09-27, N=3000, registro BR059412026
-- [aguardando desde 2026-09-27] TSE ESTADUAL[PE], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 23/09-25/09, divulgação 2026-09-27, N=1500, registro BR067842026
-- [aguardando desde 2026-09-27] TSE ESTADUAL[SP], A. R. PUBLICIDADE E PESQUISA (Presidente), campo 21/09-22/09, divulgação 2026-09-27, N=1200, registro BR001642026
 - [aguardando desde 2026-09-27] TSE ESTADUAL[SP], ASN PESQUISAS PUBLICAS (Presidente), campo 25/09-28/09, divulgação 2026-09-27, N=700, registro BR011462026
 - [aguardando desde 2026-09-27] TSE NACIONAL?, #NULO# (Presidente), campo 22/09-26/09, divulgação 2026-09-27, N=2000, registro BR066832026
-- [aguardando desde 2026-09-28] TSE ESTADUAL[AM], IPEN - INSTITUTO DE PESQUISA (Presidente), campo 18/09-25/09, divulgação 2026-09-28, N=1200, registro BR085452026
-- [aguardando desde 2026-09-28] TSE ESTADUAL[MG], F5 ATUALIZA DADOS (Presidente), campo 25/09-26/09, divulgação 2026-09-28, N=777, registro BR056422026
 - [aguardando desde 2026-09-28] TSE ESTADUAL[PE], AMERICAN ANALYTICS (Presidente), campo 23/09-27/09, divulgação 2026-09-28, N=1000, registro BR073232026
-- [aguardando desde 2026-09-28] TSE ESTADUAL[SP], 100 CIDADES (Presidente), campo 22/09-26/09, divulgação 2026-09-28, N=1600, registro BR028052026
-- [aguardando desde 2026-09-28] TSE ESTADUAL[SP], REAL TIME BIG DATA (Presidente), campo 23/09-26/09, divulgação 2026-09-28, N=2000, registro BR091442026
 - [aguardando desde 2026-09-28] TSE ESTADUAL[SP], ATLASINTEL (Presidente), campo 22/09-27/09, divulgação 2026-09-28, N=1800, registro BR089842026
 - [aguardando desde 2026-09-28] TSE ESTADUAL[SP], ATLASINTEL (Presidente), campo 22/09-27/09, divulgação 2026-09-28, N=1800, registro BR092782026
 - [aguardando desde 2026-09-28] TSE ESTADUAL[SP], ATLASINTEL (Presidente), campo 22/09-27/09, divulgação 2026-09-28, N=1800, registro BR074012026
-- [aguardando desde 2026-09-28] TSE ESTADUAL[SP], REAL TIME BIG DATA (Presidente), campo 23/09-26/09, divulgação 2026-09-28, N=2000, registro BR062892026
 - [aguardando desde 2026-09-28] TSE NACIONAL?, ATLASINTEL (Presidente), campo 22/09-27/09, divulgação 2026-09-28, N=1200, registro BR062432026
-- [aguardando desde 2026-09-28] TSE NACIONAL?, NEOKEMP PESQUISAS (Presidente), campo 24/09-27/09, divulgação 2026-09-28, N=1008, registro BR097832026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[AC], DATA CONTROL INSTITUTO DE PE (Presidente), campo 24/09-30/09, divulgação 2026-09-29, N=1000, registro BR027242026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[CE], ATLASINTEL (Presidente), campo 23/09-28/09, divulgação 2026-09-29, N=1800, registro BR041942026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[DF], #NULO# (Presidente), campo 25/09-28/09, divulgação 2026-09-29, N=1104, registro BR005312026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[MG], STATS - PESQUISA E GESTAO (Presidente), campo 23/09-28/09, divulgação 2026-09-29, N=600, registro BR015742026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[MG], #NULO# (Presidente), campo 24/09-27/09, divulgação 2026-09-29, N=1000, registro BR045272026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[MG], F5 ATUALIZA DADOS (Presidente), campo 25/09-26/09, divulgação 2026-09-29, N=775, registro BR058392026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[MG], #NULO# (Presidente), campo 25/09-28/09, divulgação 2026-09-29, N=1506, registro BR084672026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[MS], NOVO IBRAPE (Presidente), campo 23/09-28/09, divulgação 2026-09-29, N=1000, registro BR074722026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[MT], IPSENSUS PESQUISAS (Presidente), campo 25/09-27/09, divulgação 2026-09-29, N=400, registro BR054102026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[PA], 100 CIDADES (Presidente), campo 24/09-28/09, divulgação 2026-09-29, N=1000, registro BR099522026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[PE], #NULO# (Presidente), campo 25/09-28/09, divulgação 2026-09-29, N=1302, registro BR082892026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[PE], #NULO# (Presidente), campo 25/09-28/09, divulgação 2026-09-29, N=1302, registro BR035342026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[PR], REAL TIME BIG DATA (Presidente), campo 24/09-28/09, divulgação 2026-09-29, N=1600, registro BR085462026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[PR], REAL TIME BIG DATA (Presidente), campo 24/09-28/09, divulgação 2026-09-29, N=1600, registro BR038752026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[PR], REAL TIME BIG DATA (Presidente), campo 24/09-28/09, divulgação 2026-09-29, N=1600, registro BR044822026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[RN], ATLASINTEL (Presidente), campo 23/09-28/09, divulgação 2026-09-29, N=1200, registro BR035362026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[RN], #NULO# (Presidente), campo 24/09-27/09, divulgação 2026-09-29, N=1200, registro BR020032026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[RN], ATLASINTEL (Presidente), campo 23/09-28/09, divulgação 2026-09-29, N=1200, registro BR074222026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[SP], #NULO# (Presidente), campo 27/09-28/09, divulgação 2026-09-29, N=1200, registro BR012802026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[SP], #NULO# (Presidente), campo 25/09-28/09, divulgação 2026-09-29, N=1800, registro BR051552026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[SP], #NULO# (Presidente), campo 23/09-27/09, divulgação 2026-09-29, N=800, registro BR037622026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[SP], REAL TIME BIG DATA (Presidente), campo 24/09-28/09, divulgação 2026-09-29, N=2000, registro BR098912026
 - [aguardando desde 2026-09-29] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 01/10-03/10, divulgação 2026-09-29, N=2400, registro BR081682026
-- [aguardando desde 2026-09-29] TSE NACIONAL?, JOTA JORNALISMO (Presidente), campo 03/09-28/09, divulgação 2026-09-29, N=6000, registro BR058692026
 - [aguardando desde 2026-09-29] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 30/09-02/10, divulgação 2026-09-29, N=2400, registro BR005092026
 - [aguardando desde 2026-09-29] TSE NACIONAL?, INSTITUTO AMAZONIA DE PESQUI (Presidente), campo 23/09-26/09, divulgação 2026-09-29, N=2500, registro BR021062026
-- [aguardando desde 2026-09-30] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 23/09-29/09, divulgação 2026-09-30, N=800, registro BR084762026
-- [aguardando desde 2026-09-30] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 24/09-29/09, divulgação 2026-09-30, N=2000, registro BR006332026
-- [aguardando desde 2026-09-30] TSE ESTADUAL[ES], #NULO# (Presidente), campo 28/09-30/09, divulgação 2026-09-30, N=500, registro BR024212026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[ES], AGILI PESQUISAS (Presidente), campo 24/09-29/09, divulgação 2026-09-30, N=1200, registro BR098162026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 29/09-02/10, divulgação 2026-09-30, N=1200, registro BR075072026
-- [aguardando desde 2026-09-30] TSE ESTADUAL[MT], E P P (Presidente), campo 12/09-18/09, divulgação 2026-09-30, N=2003, registro BR031422026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 26/09-29/09, divulgação 2026-09-30, N=1200, registro BR076472026
-- [aguardando desde 2026-09-30] TSE ESTADUAL[PI], PIAUI VOX (Presidente), campo 27/09-29/09, divulgação 2026-09-30, N=500, registro BR055222026
-- [aguardando desde 2026-09-30] TSE ESTADUAL[PI], INSTITUTO ESTIMATIVA (Presidente), campo 24/09-25/09, divulgação 2026-09-30, N=460, registro BR055562026
-- [aguardando desde 2026-09-30] TSE ESTADUAL[RJ], REAL TIME BIG DATA (Presidente), campo 25/09-29/09, divulgação 2026-09-30, N=2000, registro BR051932026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[SP], ASN PESQUISAS PUBLICAS (Presidente), campo 26/09-28/09, divulgação 2026-09-30, N=700, registro BR016552026
+- [NOVO] TSE ESTADUAL[AL], DATATRENDS (Presidente), campo 26/09-28/09, divulgação 2026-10-01, N=1200, registro BR006432026
+- [NOVO] TSE ESTADUAL[AP], DOXA (Presidente), campo 25/09-29/09, divulgação 2026-10-01, N=800, registro BR039022026
+- [NOVO] TSE ESTADUAL[GO], CERRADO PESQUISAS E CONSULTO (Presidente), campo 28/09-30/09, divulgação 2026-10-01, N=706, registro BR036162026
+- [NOVO] TSE ESTADUAL[MG], #NULO# (Presidente), campo 28/09-01/10, divulgação 2026-10-01, N=1204, registro BR012722026
+- [NOVO] TSE ESTADUAL[MG], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 25/09-29/09, divulgação 2026-10-01, N=1000, registro BR072872026
+- [NOVO] TSE ESTADUAL[MG], #NULO# (Presidente), campo 28/09-01/10, divulgação 2026-10-01, N=1204, registro BR036042026
+- [NOVO] TSE ESTADUAL[MG], #NULO# (Presidente), campo 28/09-01/10, divulgação 2026-10-01, N=1204, registro BR009502026
+- [NOVO] TSE ESTADUAL[MS], RANKING BRASIL INTELIGENCIA (Presidente), campo 27/09-30/09, divulgação 2026-10-01, N=2000, registro BR097492026
+- [NOVO] TSE ESTADUAL[MT], MT DADOS PESQUISAS (Presidente), campo 25/09-30/09, divulgação 2026-10-01, N=3080, registro BR036542026
+- [NOVO] TSE ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 27/09-30/09, divulgação 2026-10-01, N=1500, registro BR079022026
+- [NOVO] TSE ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 27/09-30/09, divulgação 2026-10-01, N=1500, registro BR024442026
+- [NOVO] TSE ESTADUAL[RN], PERFIL PESQUISAS TECNICAS (Presidente), campo 26/09-29/09, divulgação 2026-10-01, N=2000, registro BR015982026
+- [NOVO] TSE ESTADUAL[RN], TS2 SOLUCOES (Presidente), campo 26/09-30/09, divulgação 2026-10-01, N=1800, registro BR081842026
+- [NOVO] TSE ESTADUAL[RN], EXATUS CONSULTORIA E PESQUIS (Presidente), campo 28/09-30/09, divulgação 2026-10-01, N=1500, registro BR002422026
+- [NOVO] TSE ESTADUAL[RN], AFFARE INSTITUTE (Presidente), campo 26/09-28/09, divulgação 2026-10-01, N=1000, registro BR098522026
+- [NOVO] TSE ESTADUAL[RN], CONSULT PESQUISA (Presidente), campo 24/09-26/09, divulgação 2026-10-01, N=1700, registro BR048252026
+- [NOVO] TSE ESTADUAL[RN], DATA CAPITAL PESQUISAS E CON (Presidente), campo 22/09-26/09, divulgação 2026-10-01, N=2300, registro BR066802026
+- [NOVO] TSE ESTADUAL[RR], INST. DO NORTE DE OPINIAO PU (Presidente), campo 01/10-02/10, divulgação 2026-10-01, N=1079, registro BR078162026
+- [NOVO] TSE ESTADUAL[SC], NEOKEMP PESQUISAS (Presidente), campo 29/09-01/10, divulgação 2026-10-01, N=1008, registro BR085632026
+- [NOVO] TSE ESTADUAL[SC], NEOKEMP PESQUISAS (Presidente), campo 29/09-01/10, divulgação 2026-10-01, N=1008, registro BR005972026
+- [NOVO] TSE ESTADUAL[SP], #NULO# (Presidente), campo 28/09-01/10, divulgação 2026-10-01, N=1610, registro BR026762026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 28/09-01/10, divulgação 2026-10-01, N=2506, registro BR080392026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 28/09-01/10, divulgação 2026-10-01, N=921, registro BR095302026
+- [NOVO] TSE NACIONAL?, REAL TIME BIG DATA (Presidente), campo 26/09-30/09, divulgação 2026-10-01, N=2000, registro BR095032026
 
 ## Últimas publicações do Veritá
 
@@ -122,10 +89,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-20 | ESTADUAL[AC] | DELTA AGENCIA DE PESQUISA | Presidente | 14/09-19/09 | 1201 | BR074032026 |
-| 2026-09-20 | ESTADUAL[RS] | STUDIO PESQUISAS | Presidente | 15/09-18/09 | 960 | BR053602026 |
-| 2026-09-20 | NACIONAL? | PALVER | Presidente | 15/09-20/09 | 5000 | BR008602026 |
-| 2026-09-20 | NACIONAL? | PALVER | Presidente | 04/09-09/09 | 5000 | BR061002026 |
 | 2026-09-21 | ESTADUAL[AC] | REAL TIME BIG DATA | Presidente | 16/09-19/09 | 1600 | BR016202026 |
 | 2026-09-21 | ESTADUAL[BA] | 100 CIDADES | Presidente | 16/09-21/09 | 1000 | BR044912026 |
 | 2026-09-21 | ESTADUAL[GO] | IGAPE- INSTITUTO GAZETA DE P | Presidente | 14/09-19/09 | 2000 | BR087622026 |
@@ -336,4 +299,28 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-09-30 | NACIONAL? | INDEXA PESQUISAS | Presidente | 27/09-29/09 | 2000 | BR006982026 |
 | 2026-09-30 | NACIONAL? | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 25/09-28/09 | 2000 | BR087062026 |
 | 2026-09-30 | NACIONAL? | 100 CIDADES | Presidente | 24/09-29/09 | 2000 | BR011222026 |
+| 2026-10-01 | ESTADUAL[AL] | DATATRENDS | Presidente | 26/09-28/09 | 1200 | BR006432026 |
+| 2026-10-01 | ESTADUAL[AP] | DOXA | Presidente | 25/09-29/09 | 800 | BR039022026 |
+| 2026-10-01 | ESTADUAL[GO] | CERRADO PESQUISAS E CONSULTO | Presidente | 28/09-30/09 | 706 | BR036162026 |
+| 2026-10-01 | ESTADUAL[MG] | #NULO# | Presidente | 28/09-01/10 | 1204 | BR012722026 |
+| 2026-10-01 | ESTADUAL[MG] | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 25/09-29/09 | 1000 | BR072872026 |
+| 2026-10-01 | ESTADUAL[MG] | #NULO# | Presidente | 28/09-01/10 | 1204 | BR036042026 |
+| 2026-10-01 | ESTADUAL[MG] | #NULO# | Presidente | 28/09-01/10 | 1204 | BR009502026 |
+| 2026-10-01 | ESTADUAL[MS] | RANKING BRASIL INTELIGENCIA | Presidente | 27/09-30/09 | 2000 | BR097492026 |
+| 2026-10-01 | ESTADUAL[MT] | MT DADOS PESQUISAS | Presidente | 25/09-30/09 | 3080 | BR036542026 |
+| 2026-10-01 | ESTADUAL[PB] | INSTITUTO SETA DE PESQUISA | Presidente | 27/09-30/09 | 1500 | BR079022026 |
+| 2026-10-01 | ESTADUAL[PB] | INSTITUTO SETA DE PESQUISA | Presidente | 27/09-30/09 | 1500 | BR024442026 |
+| 2026-10-01 | ESTADUAL[RN] | PERFIL PESQUISAS TECNICAS | Presidente | 26/09-29/09 | 2000 | BR015982026 |
+| 2026-10-01 | ESTADUAL[RN] | TS2 SOLUCOES | Presidente | 26/09-30/09 | 1800 | BR081842026 |
+| 2026-10-01 | ESTADUAL[RN] | EXATUS CONSULTORIA E PESQUIS | Presidente | 28/09-30/09 | 1500 | BR002422026 |
+| 2026-10-01 | ESTADUAL[RN] | AFFARE INSTITUTE | Presidente | 26/09-28/09 | 1000 | BR098522026 |
+| 2026-10-01 | ESTADUAL[RN] | CONSULT PESQUISA | Presidente | 24/09-26/09 | 1700 | BR048252026 |
+| 2026-10-01 | ESTADUAL[RN] | DATA CAPITAL PESQUISAS E CON | Presidente | 22/09-26/09 | 2300 | BR066802026 |
+| 2026-10-01 | ESTADUAL[RR] | INST. DO NORTE DE OPINIAO PU | Presidente | 01/10-02/10 | 1079 | BR078162026 |
+| 2026-10-01 | ESTADUAL[SC] | NEOKEMP PESQUISAS | Presidente | 29/09-01/10 | 1008 | BR085632026 |
+| 2026-10-01 | ESTADUAL[SC] | NEOKEMP PESQUISAS | Presidente | 29/09-01/10 | 1008 | BR005972026 |
+| 2026-10-01 | ESTADUAL[SP] | #NULO# | Presidente | 28/09-01/10 | 1610 | BR026762026 |
+| 2026-10-01 | NACIONAL? | #NULO# | Presidente | 28/09-01/10 | 2506 | BR080392026 |
+| 2026-10-01 | NACIONAL? | #NULO# | Presidente | 28/09-01/10 | 921 | BR095302026 |
+| 2026-10-01 | NACIONAL? | REAL TIME BIG DATA | Presidente | 26/09-30/09 | 2000 | BR095032026 |
 
