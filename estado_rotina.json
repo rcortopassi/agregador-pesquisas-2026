@@ -1593,13 +1593,17 @@
   "TO098692026"
  ],
  "verita_vistos": [
+  "02b4b222-9356-4f46-bfad-1c7a0095ecab",
   "10158b38-ce9a-4727-baa5-6b189c4d3e82",
   "260793c5-e924-44fd-876b-8b3ba33de4e4",
   "28bab072-3b90-4367-83e3-1ade5a20389d",
   "29c4c04c-2da6-42f5-9b3a-b93a9e7ed1b9",
   "2a8b919a-8a66-403c-8180-c7f16c3aef12",
+  "2ab7dfaf-6cd6-44ea-9141-97f44aff1163",
+  "2eaf8d6e-3b6c-4b2d-bebb-f8137a57cb65",
   "32fb9a0c-2679-4e4f-a53e-9a5c6710f8f9",
   "34041b58-567d-4384-a862-a8b92b03c9bb",
+  "391e4b61-39fd-49d6-9f2a-db1cfd87bf9b",
   "42e30598-555e-4478-b54d-22431ec653cb",
   "4c688ea9-6806-4e1e-bc62-fb50adb26edc",
   "4dd8d4a8-f1ec-4850-adcd-fdc1511eab87",
@@ -1608,6 +1612,7 @@
   "59c0b78a-ac55-45b6-89c3-9280485638c9",
   "5b730cc7-2bba-4012-bc99-a3ac277df160",
   "5e5c7328-c6cb-48d6-a7eb-ab6b7d10e71e",
+  "692885b5-525d-4ad7-9f87-3d8b6c076d8e",
   "6ecda6ac-5fa2-4203-9fae-2e9dc88f2917",
   "708aeb70-5652-4052-921d-c64c13a68115",
   "73cd373a-0273-4139-a651-28d48dad7f38",
@@ -1626,6 +1631,8 @@
   "bb751976-45ab-49b8-971e-c9699f617fe0",
   "bdfa17c5-1662-4d9b-9a93-ca7027c5b44d",
   "c6dd6aaa-6d80-4b84-ac45-10c45a84b0f7",
+  "c7b3fc80-fe7e-4319-983b-ad48002badc0",
+  "d0841135-eb7c-4cc6-95a4-f06ed72d63cb",
   "d0b668b0-f13c-47dd-b67d-79bce14fa58c",
   "da0ea95b-b60d-4859-869c-5b545d93290c",
   "deb1864c-4cd4-4991-b702-b8e76b53b1de",
@@ -1633,9 +1640,10 @@
   "e4f31787-a1b2-4148-9b51-176ab101dc20",
   "e8fa5ee2-cb14-41cc-bfaf-ac160865e84d",
   "eb0342b6-979f-46d5-ab83-949ff53dc67b",
-  "f6f61fbd-9279-4ed9-9277-fd646400f2fb"
+  "f6f61fbd-9279-4ed9-9277-fd646400f2fb",
+  "f9b892c3-9ebc-4423-bde5-30b8890ba735"
  ],
- "ultima_rodada": "2026-10-01T07:53:04.574656-03:00",
+ "ultima_rodada": "2026-10-01T17:59:23.408633-03:00",
  "pendentes": [
   {
    "proto": "BR004672026",
@@ -2268,5 +2276,70 @@
    "visto": "2026-10-01"
   }
  ],
- "verita_pendentes": []
+ "verita_pendentes": [
+  {
+   "id": "d0841135-eb7c-4cc6-95a4-f06ed72d63cb",
+   "titulo": "Pesquisa para Presidente no Brasil",
+   "descricao": "Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 20 a 25 de setembro.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855512625_Relatorio_Nacional_Verita_Imprensa_27_UFs_20_a_25_Setembro_2026.pdf",
+   "created_at": "2026-10-01T11:52:03.545339+00:00",
+   "visto": "2026-10-01"
+  },
+  {
+   "id": "f9b892c3-9ebc-4423-bde5-30b8890ba735",
+   "titulo": "Pesquisa no Ceará - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855383255_Relatorio_Ceara_24_de_setembro_de_2026.pdf",
+   "created_at": "2026-10-01T11:49:50.239918+00:00",
+   "visto": "2026-10-01"
+  },
+  {
+   "id": "02b4b222-9356-4f46-bfad-1c7a0095ecab",
+   "titulo": "Pesquisa na Bahia - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855299172_Relatorio_Bahia_24_de_setembro_de_2026.pdf",
+   "created_at": "2026-10-01T11:48:26.809036+00:00",
+   "visto": "2026-10-01"
+  },
+  {
+   "id": "2eaf8d6e-3b6c-4b2d-bebb-f8137a57cb65",
+   "titulo": "Pesquisa no Tocantins - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 21 a 25 de setembro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855238807_Relatorio_Tocantins_24_de_setembro_de_2026.pdf",
+   "created_at": "2026-10-01T11:47:26.842199+00:00",
+   "visto": "2026-10-01"
+  },
+  {
+   "id": "692885b5-525d-4ad7-9f87-3d8b6c076d8e",
+   "titulo": "Pesquisa no Pará - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855149642_Relatorio_Para_24_de_setembro_de_2026.pdf",
+   "created_at": "2026-10-01T11:45:56.61561+00:00",
+   "visto": "2026-10-01"
+  },
+  {
+   "id": "391e4b61-39fd-49d6-9f2a-db1cfd87bf9b",
+   "titulo": "Pesquisa em Minas Gerais - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855049861_Relatorio_Minas_Gerais_24_de_setembro_de_2026.pdf",
+   "created_at": "2026-10-01T11:44:18.002567+00:00",
+   "visto": "2026-10-01"
+  },
+  {
+   "id": "2ab7dfaf-6cd6-44ea-9141-97f44aff1163",
+   "titulo": "Pesquisa no Distrito Federal - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790854912014_Relatorio_Distrito_Federal_24_de_setembro_de_2026.pdf",
+   "created_at": "2026-10-01T11:41:59.367473+00:00",
+   "visto": "2026-10-01"
+  },
+  {
+   "id": "c7b3fc80-fe7e-4319-983b-ad48002badc0",
+   "titulo": "Pesquisa em Goiás - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790854810780_Relatorio_Goias_24_de_setembro_de_2026.pdf",
+   "created_at": "2026-10-01T11:40:18.590748+00:00",
+   "visto": "2026-10-01"
+  }
+ ]
 }
