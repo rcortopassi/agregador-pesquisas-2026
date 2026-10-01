@@ -6,6 +6,55 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- NOITE DE 30/09 (rodada única diária): SETE ESTADOS MUDAM DE INSTITUTO NO `PRES26` — BA, PR, AC,
+  CE, SP, MG e RJ. Apuração em 4 agentes de pesquisa + checagens diretas, sobre fila de 96
+  protocolos acumulada desde 24/9 (rodada diária agora, não mais de 6 em 6h); saem 57, ficam 39.
+  O `DI` nacional NÃO mudou (GERP de 23-26/9 e as outras entradas de 29-30/9 já estavam no painel
+  antes desta rodada). BA: ATLASINTEL/A TARDE (BR-00633/2026, 24 a 29/9 no registro do TSE, 2.000
+  entrevistas) assume, Lula 66,1 x Flávio 33,9 no 2º turno — resolve o PROVISÓRIO que estava
+  pendente desde 28/9: o Instituto Franca (BR-07859/2026, mesmo fim de campo da Real Time que
+  caiu, 26/9, N=2.000) também saiu (Lula 48,96 x Flávio 24,97, moderado, sem 2º turno) e venceria
+  aquele desempate de amostra, mas a AtlasIntel tem fim de campo 3 dias mais recente e leva. PR:
+  REAL TIME BIG DATA (BR-03875/2026, 24-28/9, 1.600) assume, Flávio 61 x Lula 30 no 2º turno; a
+  Neokemp fez outra rodada (BR-09783/2026, 25-26/9, contratante Jornal O Correio do Povo, Flávio
+  57,8 x Lula 29,8) mas fica só na série por fim de campo anterior. AC: DELTA AGÊNCIA DE PESQUISA
+  (BR-08476/2026, 23-29/9, 800) assume, Flávio 55,25 x Lula 23,50 no 1º turno, sem 2º turno
+  divulgado. CE: ATLASINTEL/FOCUS COMUNICAÇÃO (BR-04194/2026, 23-28/9, 1.800) assume, Lula 59 x
+  Flávio 37 no 2º turno (61,5 x 38,5 em válidos). SP: REAL TIME BIG DATA (BR-09891/2026, 24-28/9,
+  2.000) assume, Flávio 43 x Lula 36 no 1º turno, sem 2º turno; a Futura/100% Cidades (BR-02805,
+  22-26/9, publicada 24/9: Flávio 42,2 x Lula 39,4; 50,9 x 39 no 2º) fica só na série por fim de
+  campo anterior. MG: DATATEMPO/SEMPRE EDITORA (BR-04527/2026, 24-27/9, 1.000) assume, Lula 46,4
+  x Flávio 39,4 no 2º turno — SAI DO EMPATE TÉCNICO que vinha da Datafolha (era 46x44); a Real
+  Time Big Data (BR-06289, 23-26/9, publicada 28/9: Lula 41 x Flávio 37; empate 46x46 no 2º) fica
+  só na série por fim de campo anterior. RJ: REAL TIME BIG DATA (BR-05193/2026, contratante 3
+  Poderes Mídia, 25-29/9, 2.000) assume, Flávio 52 x Lula 41 no 2º turno.
+  ACHADOS DE DESAMBIGUAÇÃO (cruzando o CSV do TSE direto, campo `DS_DADO_MUNICIPIO` e
+  contratante, antes de abrir jornal): BR-09783/2026 (Neokemp, rotulado "NACIONAL?" pelo radar) é
+  do PR, não nacional — confirmado pelo próprio texto do registro. BR-06683/2026 (rotulado
+  "NACIONAL?", contratante Mega Portal RN) é do RN — mas sem número de presidente publicado até
+  agora, segue na fila. BR-02106/2026 (Instituto Amazônia de Pesquisa, "NACIONAL?", contratante C.
+  Gomes Marketing) é na verdade de RONDÔNIA (o próprio registro diz "52 municípios de Rondônia") —
+  achado novo, não documentado antes; sem número publicado encontrado, segue na fila como RO, não
+  nacional. BR-07422/2026 (AtlasIntel, rotulado ESTADUAL[RN] pelo radar, contratante "TV Meio
+  Norte") é na verdade do PIAUÍ, não do RN — confirmado por matéria da Gazeta do Povo sobre
+  governo/Senado do PI com o mesmo contratante; resolvido e descartado da fila do RN (só saiu
+  número de governador, nenhum de presidente). DUAS HIPÓTESES TESTADAS E DESCARTADAS: (1) uma
+  pretensa nova onda do Datafolha em DF/MG/PE/RJ/SP com campo 25-28/9 (cinco registros do TSE,
+  todos contratados pela Globo Comunicação, mesmo intervalo) — não encontrada publicada em
+  nenhum dos cinco estados até 30/9; os registros ficam na fila (DF BR-00531, MG BR-08467, PE
+  BR-08289, SP BR-05155) e o de RJ (BR-03534, que o próprio registro diz ser do RJ e não do PE
+  como o radar rotulou) ficou moot depois que o RJ mudou para a Real Time de fim de campo mais
+  recente (29/9); (2) BR-03536/2026 e BR-06243/2026 (AtlasIntel, candidatos ao RN) só teriam saído
+  número de GOVERNADOR do RN até agora, nenhum de presidente — seguem na fila. ESPONTÂNEA NÃO
+  CONTA: BR-02003/2026 (Via Certa Natal/Instituto Pitágoras, RN) saiu, mas só com a pergunta
+  espontânea (Lula 49,1 x Flávio 35,6); sem o cenário estimulado, não é inserido, mesmo padrão já
+  usado para a DataSensus AL.
+  FILA RESTANTE (39): sobretudo o lote Veritá/Qualitta/Media do RN de 21-25/9 (6 protocolos, não
+  confirmados publicados), Veritá isolada em RR, RS e SC, duas pesquisas SP com fim de campo
+  empatado com o novo recorde (28/9, ASN e a onda Globo/Datafolha ainda não confirmada), DF/MG/PE
+  da hipótese Datafolha, MS, MT (duas Percent, uma com campo ainda em curso) e PA, mais o Veritá
+  nacional de 40.500 entrevistas (deve demorar, por imprensa regional sem Supabase atualizado) e
+  as duas GERP com campo no futuro (1 e 2/10), que ainda não têm como ter saído.
 - MANHÃ DE 28/09: NEXUS/BTG ASSUME O `DI` NACIONAL, DATATRENDS ASSUME AL E REAL TIME BIG DATA
   ASSUME A BA NO `PRES26`. Rodada local das 10h20, apuração em quatro agentes (nacional; Veritá
   estadual, que por sua vez abriu cinco sub-agentes regionais; e dois grupos de estaduais
