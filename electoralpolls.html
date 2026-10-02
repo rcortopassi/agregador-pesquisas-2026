@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 02/10/2026 12:10</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 02/10/2026 12:55</div>
   </div>
 
   <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
@@ -1209,19 +1209,21 @@
      nt:'O DEBATE NÃO ACONTECEU. Em 9/9 os veículos do consórcio anunciaram o cancelamento: tinham fixado 7/9 como prazo final para os convidados confirmarem presença, e Lula e Flávio Bolsonaro não confirmaram. Caiado, Zema, Renan Santos e Augusto Cury tinham confirmado, o que não bastou para manter o encontro. Pelo mesmo motivo caiu o debate do governo de São Paulo de 18/9, sem a confirmação de Tarcísio. O plano original: era o encontro em que Lula e Flávio Bolsonaro são esperados: os dois mandaram representantes à reunião que fechou as regras, e no sorteio ficaram lado a lado no palco. São três blocos, com considerações iniciais e perguntas entre os próprios candidatos, depois perguntas dos jornalistas dos veículos e, por fim, as considerações finais. Zema abre os dois blocos de perguntas entre candidatos. Quem faltar tem o púlpito mantido vazio.',
      fonte:'https://www.poder360.com.br/poder-eleicoes-2026/consorcio-cancela-debates-apos-lula-flavio-e-tarcisio-nao-confirmarem/'},
     {d:'2026-09-27', dia:'domingo', hc:'21h', h:'21h, depois do Domingo Espetacular', org:'Record',
+     cancel:'23/9', cancelt:'Cancelado em 23/9: Lula e Flávio Bolsonaro avisaram que não iriam.',
      tv:'Record, na TV aberta.',
      web:'Site do R7 e RecordPlay.',
-     conv:[], sit:'21/8',
-     url:'https://www.r7.com/',
-     nt:'A Record ainda não divulgou as regras nem a lista de convidados. A emissora também prevê entrevistas com os presidenciáveis entre 15 e 21 de setembro, dentro do Jornal da Record, e um segundo debate em 18 de outubro caso a eleição vá ao segundo turno.',
-     fonte:'https://valor.globo.com/politica/eleicoes-2026/noticia/2026/08/11/debates-presidenciais-no-1o-turno-datas-horarios-e-onde-assistir.ghtml'},
+     nao:['Lula (PT)','Flávio Bolsonaro (PL)'], sit:'23/9',
+     url:'https://exame.com/brasil/record-cancela-debate-presidencial-apos-lula-e-flavio-bolsonaro-nao-confirmarem-presenca/',
+     nt:'O DEBATE NÃO ACONTECEU. Em 23/9 a Record cancelou o encontro depois que Lula e Flávio Bolsonaro, que somam perto de 70% das intenções de voto, informaram que não participariam; a emissora disse que sem os dois o debate não cumpriria o objetivo de confrontar propostas. Se houver 2º turno, a Record marcou debate para 11/10, domingo, às 21h.',
+     fonte:'https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/23/tv-record-cancela-debate-presidencial-apos-desistencia-de-lula-e-flavio-bolsonaro'},
     {d:'2026-10-01', dia:'quinta', hc:'depois do Jornal Nacional', h:'depois do Jornal Nacional, na faixa das 21h', org:'Globo',
+     cancel:'1º/10', cancelt:'Cancelado em 1º/10, menos de uma hora antes do início, depois da decisão do TSE e da desistência do Flávio.',
      tv:'TV Globo e GloboNews.',
      web:'g1.',
-     conv:[], sit:'21/8',
-     url:'https://g1.globo.com/politica/eleicoes/2026/',
-     nt:'Último debate antes da votação, três dias depois, e ocupa a faixa da novela das 21h. As regras ainda não foram divulgadas. A Globo também mudou a dinâmica das entrevistas com os presidenciáveis, que passam a ser feitas depois do Jornal Nacional, e não mais dentro dele, conduzidas por César Tralli e Renata Vasconcellos a partir de 24 de agosto.',
-     fonte:'https://valor.globo.com/politica/eleicoes-2026/noticia/2026/08/11/debates-presidenciais-no-1o-turno-datas-horarios-e-onde-assistir.ghtml'}
+     nao:['Lula (PT)','Flávio Bolsonaro (PL)'], sit:'1º/10',
+     url:'https://www.gazetadopovo.com.br/eleicoes/2026/sem-flavio-e-lula-globo-cancela-debate-presidencial/',
+     nt:'O DEBATE NÃO ACONTECEU. Lula já tinha avisado que não iria. Cerca de duas horas antes do início, a ministra Estela Aranha (TSE), a pedido da coligação dele, proibiu a Globo de exibir o púlpito vazio do presidente e vetou perguntas dos presentes dirigidas a ele; Gilmar Mendes (STF) mandou incluir Renan Santos. Flávio, que tinha confirmado presença em 27/9, desistiu e chamou a decisão do TSE de "censura"; a Globo cancelou o debate menos de uma hora antes. Com isso, o 1º turno termina sem nenhum debate entre Lula e Flávio.',
+     fonte:'https://www.terra.com.br/noticias/brasil/politica/debate-tse-proibe-pulpito-vazio-e-perguntas-a-lula-flavio-desiste-e-gilmar-obriga-renan,73dded7c3cf35da818ed21d2c3968084tel25y7b.html'}
   ];
   var debAberto=false, debVideo=-1;
   function debD(s){ var p=s.split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
@@ -1421,9 +1423,14 @@
   function meses26(){ return months.filter(function(m){ return v26(m)!==null; }); }
   function ancora26(){ var ms=meses26(); if(!ms.length) return null;
     for(var i=ms.length-1;i>=0;i--){ if(v26(ms[i]).n>=3) return ms[i]; } return ms[ms.length-1]; }
+  // Meses medidos ATÉ a âncora (02/10/2026). Um mês recém-aberto com menos de três rodadas fica
+  // FORA da projeção inteira (pesos, teste do mês anterior e eixo do gráfico), não só da âncora:
+  // sem isso, outubro com duas pesquisas aparecia como mês medido e também como destino da
+  // projeção, com "out" duas vezes no eixo e a pontilhada saindo de um ponto que não era o da linha.
+  function mesesAteAncora(){ var a=ancora26(), ms=meses26(); var k=ms.indexOf(a); return k<0?ms:ms.slice(0,k+1); }
   function volLista(a){ if(a.length<2) return 0; var s=0; for(var i=1;i<a.length;i++) s+=Math.abs(a[i]-a[i-1]); return s/(a.length-1); }
   function feat26(){
-    var ms=meses26(); if(!ms.length) return null;
+    var ms=mesesAteAncora(); if(!ms.length) return null;
     var a=v26(ms[ms.length-1]), serie=ms.map(function(m){ return v26(m).m; });
     return {d:a.d, vol:volLista(serie.slice(-5)), m:a.m};
   }
@@ -1488,7 +1495,7 @@
     // para setembro era Lula +7,0 e setembro mediu +3,1. O erro vira piso do desvio: depois de
     // errar X pontos em um mês não se publica faixa mais estreita que X.
     var teste=null;
-    (function(){ var ms=meses26(); if(ms.length<2) return; var ap=ms[ms.length-2], mnp=MESNUM[ap]; if(!(mnp<mn)) return;
+    (function(){ var ms=mesesAteAncora(); if(ms.length<2) return; var ap=ms[ms.length-2], mnp=MESNUM[ap]; if(!(mnp<mn)) return;
       var bp=v26(ap), pwp=pesos26(mnp); if(!bp||!pwp) return; var sm=0,sw=0;
       for(var c in pwp.w){ var H=HIST1T[c]; if(H.mes[mn]&&H.mes[mnp]){ sm+=pwp.w[c]*(bp.m+(H.mes[mn].m-H.mes[mnp].m)); sw+=pwp.w[c]; } }
       if(sw<=0) return; var esp=sm/sw; teste={de:ap, para:a, esperado:esp, medido:base.m, erro:Math.abs(esp-base.m)}; })();
@@ -1518,7 +1525,7 @@
   // não tem indeciso. Por isso esta aba NÃO usa a mesma escala da aba Gráfico, que é amostra total.
   function prevSVG(){
     var P0=projeta26(); if(!P0) return '<div style="padding:20px; color:'+P.mut+';">Sem base para projetar.</div>';
-    var ms=meses26(), mn=P0.mn;
+    var ms=mesesAteAncora(), mn=P0.mn;
     var fut=[]; for(var k=mn+1;k<=10;k++) fut.push(k);
     var eixo=ms.map(function(m){ return {rot:m, mn:MESNUM[m], obs:true}; })
       .concat(fut.map(function(k){ return {rot:(k===9?'set':'out'), mn:k, obs:false}; }));
