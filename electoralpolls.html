@@ -720,7 +720,7 @@
     var go=RES26.cod?Promise.resolve(RES26.cod):resDescobre();
     go.then(function(cd){
       if(!cd){ RES26.erro='a eleição de 2026 ainda não apareceu na configuração do TSE; tento de novo em um minuto.'; RES26.busy=false; resRender(); return; }
-      var ps=[fetch(resUrl('br')).then(function(r){ return r.json(); })].concat(RES_UFS.map(function(u){
+      var ps=[fetch(resUrl('br')).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; })].concat(RES_UFS.map(function(u){
         return fetch(resUrl(u.toLowerCase())).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }); }));
       return Promise.all(ps).then(function(arr){ RES26.br=arr[0]; RES_UFS.forEach(function(u,i){ if(arr[i+1]) RES26.uf[u]=arr[i+1]; });
         RES26.ativo=!!(RES26.br&&resNum(RES26.br.pst)>0); RES26.erro=''; RES26.busy=false; resRender(); });
