@@ -1691,86 +1691,6 @@
  "ultima_rodada": "2026-10-02T17:39:26.549258-03:00",
  "pendentes": [
   {
-   "proto": "BR004672026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "1220",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR041572026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "MEDIA - INTELIGENCIA EM PESQ",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "2000",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR035662026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "1220",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR047612026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "1220",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR052092026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "1220",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR051052026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "1220",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR028172026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "1220",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR097732026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "QUALITTA EMPREENDIMENTOS",
-   "cargo": "Presidente",
-   "campo": "20/09-25/09",
-   "div": "2026-09-26",
-   "n": "1200",
-   "visto": "2026-09-26"
-  },
-  {
    "proto": "BR052652026",
    "escopo": "ESTADUAL[RR]",
    "inst": "VERITA",
@@ -1781,46 +1701,6 @@
    "visto": "2026-09-26"
   },
   {
-   "proto": "BR043242026",
-   "escopo": "ESTADUAL[RS]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "2020",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR070782026",
-   "escopo": "ESTADUAL[SC]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "21/09-25/09",
-   "div": "2026-09-26",
-   "n": "1525",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR096612026",
-   "escopo": "ESTADUAL[SC]",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "22/09-24/09",
-   "div": "2026-09-26",
-   "n": "1200",
-   "visto": "2026-09-26"
-  },
-  {
-   "proto": "BR011462026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "ASN PESQUISAS PUBLICAS",
-   "cargo": "Presidente",
-   "campo": "25/09-28/09",
-   "div": "2026-09-27",
-   "n": "700",
-   "visto": "2026-09-27"
-  },
-  {
    "proto": "BR066832026",
    "escopo": "NACIONAL?",
    "inst": "#NULO#",
@@ -1829,46 +1709,6 @@
    "div": "2026-09-27",
    "n": "2000",
    "visto": "2026-09-27"
-  },
-  {
-   "proto": "BR073232026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "AMERICAN ANALYTICS",
-   "cargo": "Presidente",
-   "campo": "23/09-27/09",
-   "div": "2026-09-28",
-   "n": "1000",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR089842026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "22/09-27/09",
-   "div": "2026-09-28",
-   "n": "1800",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR092782026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "22/09-27/09",
-   "div": "2026-09-28",
-   "n": "1800",
-   "visto": "2026-09-28"
-  },
-  {
-   "proto": "BR074012026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "22/09-27/09",
-   "div": "2026-09-28",
-   "n": "1800",
-   "visto": "2026-09-28"
   },
   {
    "proto": "BR062432026",
@@ -1886,46 +1726,6 @@
    "inst": "DATA CONTROL INSTITUTO DE PE",
    "cargo": "Presidente",
    "campo": "24/09-30/09",
-   "div": "2026-09-29",
-   "n": "1000",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR005312026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "25/09-28/09",
-   "div": "2026-09-29",
-   "n": "1104",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR015742026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "STATS - PESQUISA E GESTAO",
-   "cargo": "Presidente",
-   "campo": "23/09-28/09",
-   "div": "2026-09-29",
-   "n": "600",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR084672026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "25/09-28/09",
-   "div": "2026-09-29",
-   "n": "1506",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR074722026",
-   "escopo": "ESTADUAL[MS]",
-   "inst": "NOVO IBRAPE",
-   "cargo": "Presidente",
-   "campo": "23/09-28/09",
    "div": "2026-09-29",
    "n": "1000",
    "visto": "2026-09-29"
@@ -1951,16 +1751,6 @@
    "visto": "2026-09-29"
   },
   {
-   "proto": "BR082892026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "25/09-28/09",
-   "div": "2026-09-29",
-   "n": "1302",
-   "visto": "2026-09-29"
-  },
-  {
    "proto": "BR035362026",
    "escopo": "ESTADUAL[RN]",
    "inst": "ATLASINTEL",
@@ -1978,26 +1768,6 @@
    "campo": "24/09-27/09",
    "div": "2026-09-29",
    "n": "1200",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR012802026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "27/09-28/09",
-   "div": "2026-09-29",
-   "n": "1200",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR051552026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "25/09-28/09",
-   "div": "2026-09-29",
-   "n": "1800",
    "visto": "2026-09-29"
   },
   {
@@ -2061,26 +1831,6 @@
    "visto": "2026-09-30"
   },
   {
-   "proto": "BR016552026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "ASN PESQUISAS PUBLICAS",
-   "cargo": "Presidente",
-   "campo": "26/09-28/09",
-   "div": "2026-09-30",
-   "n": "700",
-   "visto": "2026-09-30"
-  },
-  {
-   "proto": "BR006432026",
-   "escopo": "ESTADUAL[AL]",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "26/09-28/09",
-   "div": "2026-10-01",
-   "n": "1200",
-   "visto": "2026-10-01"
-  },
-  {
    "proto": "BR039022026",
    "escopo": "ESTADUAL[AP]",
    "inst": "DOXA",
@@ -2088,66 +1838,6 @@
    "campo": "25/09-29/09",
    "div": "2026-10-01",
    "n": "800",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR036162026",
-   "escopo": "ESTADUAL[GO]",
-   "inst": "CERRADO PESQUISAS E CONSULTO",
-   "cargo": "Presidente",
-   "campo": "28/09-30/09",
-   "div": "2026-10-01",
-   "n": "706",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR012722026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "28/09-01/10",
-   "div": "2026-10-01",
-   "n": "1204",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR072872026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "BOAS IDEIAS, ESTRATEGIA E IN",
-   "cargo": "Presidente",
-   "campo": "25/09-29/09",
-   "div": "2026-10-01",
-   "n": "1000",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR036042026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "28/09-01/10",
-   "div": "2026-10-01",
-   "n": "1204",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR009502026",
-   "escopo": "ESTADUAL[MG]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "28/09-01/10",
-   "div": "2026-10-01",
-   "n": "1204",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR097492026",
-   "escopo": "ESTADUAL[MS]",
-   "inst": "RANKING BRASIL INTELIGENCIA",
-   "cargo": "Presidente",
-   "campo": "27/09-30/09",
-   "div": "2026-10-01",
-   "n": "2000",
    "visto": "2026-10-01"
   },
   {
@@ -2168,26 +1858,6 @@
    "campo": "27/09-30/09",
    "div": "2026-10-01",
    "n": "1500",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR024442026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "27/09-30/09",
-   "div": "2026-10-01",
-   "n": "1500",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR015982026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "PERFIL PESQUISAS TECNICAS",
-   "cargo": "Presidente",
-   "campo": "26/09-29/09",
-   "div": "2026-10-01",
-   "n": "2000",
    "visto": "2026-10-01"
   },
   {
@@ -2221,16 +1891,6 @@
    "visto": "2026-10-01"
   },
   {
-   "proto": "BR048252026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "CONSULT PESQUISA",
-   "cargo": "Presidente",
-   "campo": "24/09-26/09",
-   "div": "2026-10-01",
-   "n": "1700",
-   "visto": "2026-10-01"
-  },
-  {
    "proto": "BR066802026",
    "escopo": "ESTADUAL[RN]",
    "inst": "DATA CAPITAL PESQUISAS E CON",
@@ -2248,46 +1908,6 @@
    "campo": "01/10-02/10",
    "div": "2026-10-01",
    "n": "1079",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR085632026",
-   "escopo": "ESTADUAL[SC]",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "29/09-01/10",
-   "div": "2026-10-01",
-   "n": "1008",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR005972026",
-   "escopo": "ESTADUAL[SC]",
-   "inst": "NEOKEMP PESQUISAS",
-   "cargo": "Presidente",
-   "campo": "29/09-01/10",
-   "div": "2026-10-01",
-   "n": "1008",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR026762026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "28/09-01/10",
-   "div": "2026-10-01",
-   "n": "1610",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR095302026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "28/09-01/10",
-   "div": "2026-10-01",
-   "n": "921",
    "visto": "2026-10-01"
   },
   {
@@ -2481,26 +2101,6 @@
    "visto": "2026-10-02"
   },
   {
-   "proto": "BR035352026",
-   "escopo": "ESTADUAL[GO]",
-   "inst": "E P P",
-   "cargo": "Presidente",
-   "campo": "22/09-23/09",
-   "div": "2026-10-02",
-   "n": "566",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR096082026",
-   "escopo": "ESTADUAL[GO]",
-   "inst": "E P P",
-   "cargo": "Presidente",
-   "campo": "24/09-24/09",
-   "div": "2026-10-02",
-   "n": "511",
-   "visto": "2026-10-02"
-  },
-  {
    "proto": "BR059462026",
    "escopo": "ESTADUAL[MA]",
    "inst": "VERITA",
@@ -2551,16 +2151,6 @@
    "visto": "2026-10-02"
   },
   {
-   "proto": "BR018922026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "ANOVA INSTITUTO DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "30/09-01/10",
-   "div": "2026-10-02",
-   "n": "2000",
-   "visto": "2026-10-02"
-  },
-  {
    "proto": "BR046662026",
    "escopo": "ESTADUAL[PI]",
    "inst": "INSTITUTO GP1 DE PESQUISA",
@@ -2578,16 +2168,6 @@
    "campo": "26/09-01/10",
    "div": "2026-10-02",
    "n": "1100",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR070862026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "24/09-25/09",
-   "div": "2026-10-02",
-   "n": "550",
    "visto": "2026-10-02"
   },
   {
@@ -2631,16 +2211,6 @@
    "visto": "2026-10-02"
   },
   {
-   "proto": "BR040742026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "PIMENTEL & CARPENTIERI CONSU",
-   "cargo": "Presidente",
-   "campo": "28/09-30/09",
-   "div": "2026-10-02",
-   "n": "1000",
-   "visto": "2026-10-02"
-  },
-  {
    "proto": "BR094282026",
    "escopo": "ESTADUAL[SP]",
    "inst": "100 CIDADES",
@@ -2648,56 +2218,6 @@
    "campo": "28/09-02/10",
    "div": "2026-10-02",
    "n": "1600",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR026932026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "AMERICAN ANALYTICS",
-   "cargo": "Presidente",
-   "campo": "27/09-01/10",
-   "div": "2026-10-02",
-   "n": "1000",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR084742026",
-   "escopo": "ESTADUAL[SP]",
-   "inst": "BADRA COMUNICACAO",
-   "cargo": "Presidente",
-   "campo": "29/09-01/10",
-   "div": "2026-10-02",
-   "n": "1500",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR023122026",
-   "escopo": "ESTADUAL[TO]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "29/09-01/10",
-   "div": "2026-10-02",
-   "n": "1504",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR087482026",
-   "escopo": "NACIONAL?",
-   "inst": "ITEM PESQUISAS TECNICAS",
-   "cargo": "Presidente",
-   "campo": "28/09-30/09",
-   "div": "2026-10-02",
-   "n": "800",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR053622026",
-   "escopo": "NACIONAL?",
-   "inst": "PROMIDIA PESQUISAS DE OPINIA",
-   "cargo": "Presidente",
-   "campo": "25/09-30/09",
-   "div": "2026-10-02",
-   "n": "1230",
    "visto": "2026-10-02"
   },
   {

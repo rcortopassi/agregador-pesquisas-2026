@@ -6,6 +6,46 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- NOITE DE 02/10 (dois dias antes do 1º turno): TREZE ESTADOS MUDAM NO `PRES26`. Fila acordou
+  com 104 (39 velhos + 65 novos desde 30/9); saem 48, ficam 56. `DI` NÃO mudou nesta rodada: o
+  Datafolha nacional e a Vox Brasil de outubro já estavam lá; Quaest, AtlasIntel/Bloomberg, Gerp,
+  CNT/MDA, Palver, PoderData e Meio/Ideia anunciaram a última nacional para SÁBADO 3/10 (Gazeta
+  do Povo) — é a rodada mais importante do ano para o `DI`, não deixe passar. ONDA FINAL DO
+  DATAFOLHA POR ESTADO, campo 28/9 a 1º/10 no registro, Folha + Globo, divulgada 2/10: SP
+  BR-02676 (Flávio 39 x Lula 38; 2º 48 x 45, EMPATE TÉCNICO, antes era F), MG BR-03604 (Lula 42
+  x 36; 2º 48 x 44, empate técnico), RJ BR-01272 (Flávio 45 x 38; 51 x 42), PE BR-00950 (Lula 61
+  x 25; 65 x 29), DF BR-09530 (Flávio 44 x 35; 51 x 39). O RADAR ROTULOU TRÊS DELAS ERRADO:
+  BR-01272 e BR-00950 vieram como MG e BR-09530 como NACIONAL; o campo `DS_DADO_MUNICIPIO` do
+  registro diz RJ, PE e DF, e `NM_EMPRESA` diz Datafolha mesmo com `NM_EMPRESA_FANTASIA`
+  `#NULO#`. Regra que fica: quando a fantasia vem nula, leia `NM_EMPRESA`. Em SP e DF a matéria
+  diz campo 28 a 30/9; o painel data pelo registro (1º/10). NEOKEMP/OCP NEWS assume PR
+  (BR-08563, rotulado SC pelo radar, registro diz Paraná: Flávio 57,6 x Lula 29,6) e SC
+  (BR-00597: Flávio 61,7 x 28,9), ambas 29/9 a 1º/10, contratante Jornal O Correio do Povo.
+  REAL TIME BIG DATA assume o RS com a BR-08546/2026 de 24-28/9 (Flávio 44 x 41; 53 x 43): este
+  protocolo tinha sido resolvido em 30/9 como gêmeo do PR, o que estava ERRADO — o radar casou
+  os três protocolos iguais da Real Time (BR-03875, BR-08546, BR-04482) como PR, e a matéria do
+  Poder360 prova que a 08546 é do RS; a nota do PR de 30/9 que citava os três como "mesmo
+  desenho" foi substituída junto com a entrada. RANKING BRASIL assume MS (BR-09749, 27-30/9,
+  2.000: Flávio 42,4 x Lula 33, bem mais apertado que o IPEMS 57,6 x 24). PARANÁ PESQUISAS/FIETO
+  assume TO (BR-02312, 29/9 a 1º/10: Flávio 45,7 x 37,2; 52 x 40,8), com PDF no site da casa.
+  DATATRENDS 26-28/9 assume AL (BR-00643: Lula 56 x 31, sem 2º turno). ANOVA/PB AGORA assume PB
+  (BR-01892, 30/9 a 1º/10: Lula 60,8 x 24,7). CONSULT/TRIBUNA DO NORTE assume RN (BR-04825,
+  24-26/9: Lula 47,41 x 31,76; TRE-RN afastou irregularidade em 2/10). A SETA de 27-30/9 do RN
+  (BR-07902/2026, que o radar rotulou PB — é o gêmeo RN-03891; a PB é a BR-02444) saiu no Blog
+  do Barreto só com Lula 51,7 x Flávio 27,7: mais recente que a Consult, mas sem quadro completo,
+  FICA NA FILA até consolidar; se sair o estimulado inteiro, ela assume o RN.
+  NÃO SAÍRAM (seguem na fila): todo o lote Veritá de 26/9 a 1º/10 (AC, AL, BA, MA, MG; o site da
+  casa diz "nenhuma pesquisa publicada ainda"); Veritá nacional 40.500 de 20-25/9 saiu só em
+  VÁLIDOS (Flávio 45,14 x Lula 44,65) sem totais nem 2º turno — não entra no `DI` assim; Badra
+  SP (N=2.946) e Badra DF, Radar/ADIPR PR e Veritá MG empatam em fim de campo (1º/10) com o que
+  entrou e têm amostra maior, então ainda podem assumir se publicarem; DataTrends AL de 28-30/9,
+  Real Time AL, DataSensus AL 5.000, MT Dados 3.080, Percent, Ipsensus, Doxa AP, INOPE RR, Perfil
+  ES, Agili ES, GP1 PI, 100% Cidades BA e SP, França SP e nacional, Data RD, Gerp 30/9-2/10 e
+  1-3/10, e no RN TS2, Exatus, Metadata, Item, Datavero, Affare, Data Capital, Data Census,
+  AtlasIntel e Via Certa (só espontânea). DESCARTADOS como municipais ou regionais pelo registro:
+  Cerrado GO (Anápolis), EPP GO (Planaltina e Formosa), Perfil RN (só Região de Natal), Pimentel
+  SP (3 zonas eleitorais), Badra BR-08474 (Baixada Santista) e Item BR-08748 (bairros de Natal,
+  rotulado nacional).
 - NOITE DE 30/09 (rodada única diária): SETE ESTADOS MUDAM DE INSTITUTO NO `PRES26` — BA, PR, AC,
   CE, SP, MG e RJ. Apuração em 4 agentes de pesquisa + checagens diretas, sobre fila de 96
   protocolos acumulada desde 24/9 (rodada diária agora, não mais de 6 em 6h); saem 57, ficam 39.
