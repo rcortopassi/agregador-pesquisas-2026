@@ -1811,16 +1811,6 @@
    "visto": "2026-09-26"
   },
   {
-   "proto": "BR044672026",
-   "escopo": "NACIONAL?",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "20/09-25/09",
-   "div": "2026-09-26",
-   "n": "40500",
-   "visto": "2026-09-26"
-  },
-  {
    "proto": "BR011462026",
    "escopo": "ESTADUAL[SP]",
    "inst": "ASN PESQUISAS PUBLICAS",
@@ -2291,16 +2281,6 @@
    "visto": "2026-10-01"
   },
   {
-   "proto": "BR080392026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "28/09-01/10",
-   "div": "2026-10-01",
-   "n": "2506",
-   "visto": "2026-10-01"
-  },
-  {
    "proto": "BR095302026",
    "escopo": "NACIONAL?",
    "inst": "#NULO#",
@@ -2308,16 +2288,6 @@
    "campo": "28/09-01/10",
    "div": "2026-10-01",
    "n": "921",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR095032026",
-   "escopo": "NACIONAL?",
-   "inst": "REAL TIME BIG DATA",
-   "cargo": "Presidente",
-   "campo": "26/09-30/09",
-   "div": "2026-10-01",
-   "n": "2000",
    "visto": "2026-10-01"
   },
   {
@@ -2748,16 +2718,6 @@
    "campo": "28/09-02/10",
    "div": "2026-10-02",
    "n": "2000",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR001482026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "29/09-01/10",
-   "div": "2026-10-02",
-   "n": "2100",
    "visto": "2026-10-02"
   },
   {
