@@ -6,6 +6,24 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 02/10, 19h30, INCIDENTE E LIÇÃO: A EDIÇÃO DO `PRES26` POR REGEX QUEBROU O PAINEL NO AR POR
+  ~25 MINUTOS. A substituição `\n    UF:\{.*?\},\n` (não gulosa, com re.S) funciona para todo
+  estado MENOS o último do objeto, que termina em `}` seguido de `\n  };` e não em `},`: no DF a
+  regex avançou até o primeiro `},\n` seguinte, 200 linhas abaixo, e apagou mapa, apuração ao
+  vivo, `presFontes`, `adjMonth` e os erros históricos. O `new Function(...)` continuou dizendo
+  "JS OK" porque o que sobrou era sintaticamente válido; o erro só apareceu em runtime
+  (`adjMonth is not defined`) e o painel ficou sem banner, tabela e mapa. A reconstrução a partir
+  do commit anterior trouxe um segundo erro: o bloco do DF extraído do arquivo quebrado carregava
+  o resto do `HERRINST`, e o `PRES26` passou a ter 38 chaves ("38 estados" no mapa, 11 linhas
+  "undefined" na lista de fontes). REGRAS QUE FICAM: (1) recortar entrada de UF pelo INÍCIO da
+  próxima (`(?=\n    [A-Z]{2}:\{lead:|\n  \}$)`), nunca pelo `},`; (2) antes de publicar, avaliar o
+  literal em node (`eval('('+bloco+')')`) e exigir exatamente 27 chaves de duas letras; (3) o
+  `git diff` contra o commit anterior filtrado por `grep -vE '^-\s+[A-Z]{2}:\{lead'` tem de voltar
+  VAZIO fora do carimbo; (4) abrir o site no navegador depois do deploy e ler o console — a
+  validação sintática não pega função apagada. Conferência de fontes da rodada: 12 de 13 estados
+  batem; SP tinha branco/nulo 6 (era da onda anterior; a fonte diz 4), DF ganhou Samara Martins 1
+  e Zema 1 que faltavam, e PR teve o contratante esclarecido (registro TSE diz Jornal O Correio do
+  Povo, a matéria credita à OCP News).
 - NOITE DE 02/10 (dois dias antes do 1º turno): TREZE ESTADOS MUDAM NO `PRES26`. Fila acordou
   com 104 (39 velhos + 65 novos desde 30/9); saem 48, ficam 56. `DI` NÃO mudou nesta rodada: o
   Datafolha nacional e a Vox Brasil de outubro já estavam lá; Quaest, AtlasIntel/Bloomberg, Gerp,
