@@ -320,11 +320,15 @@ A aba Mapa, ano 2026, vira apuração oficial do TSE sozinha a partir das 8h de 
 os JSONs de resultados.tse.jus.br direto do navegador, a cada 60 segundos, enquanto a aba estiver
 aberta. Código no painel: bloco "APURAÇÃO AO VIVO DO TSE", funções `res*`, objeto `RES26`.
 
-- O CÓDIGO DA ELEIÇÃO é descoberto no dia em `comum/config/ele-c.json` (eleições com a data do turno,
-  testando qual tem LULA no cargo 1). Se falhar, o bloco mostra "procurando a eleição..." por mais de
-  um minuto: aí descubra o código à mão (2022 foi 544 no 1º turno e 545 no 2º) e preencha `RES26_COD`.
-- TESTE SEM ESPERAR O DIA: abrir o painel com `?simula=2022` carrega a apuração real de 2022 no lugar.
-  Em 10/09/2026 esse teste deu 27 UFs, Lula 14 x Bolsonaro 13 e barra 48,4 x 43,2, igual à urna.
+- O CÓDIGO DA ELEIÇÃO JÁ ESTÁ PREENCHIDO (02/10/2026): `RES26_COD` vale 6257 até 24/10 e 6258 a partir
+  de 25/10, lidos do `comum/config/ele-c.json` do TSE (Eleição Ordinária Federal 2026, cargo 1 =
+  Presidente; `cdt2` = 6258). A descoberta automática (testar qual eleição tem LULA no cargo 1) só roda se
+  `RES26_COD` voltar a null. Se no dia o bloco ficar em "aguardando as primeiras seções" depois das 17h,
+  confira à mão se `oficial/ele2026/6257/dados-simplificados/br/br-c0001-e006257-r.json` responde.
+- O TESTE `?simula=2022` NÃO FUNCIONA MAIS: em 02/10/2026 o TSE já tinha removido os arquivos de 2022
+  (404 em todas as variantes) e tirado 2022 do `ele-c.json`. O último teste válido foi em 10/09/2026
+  (27 UFs, Lula 14 x Bolsonaro 13, barra 48,4 x 43,2, igual à urna). Com a simulação o painel hoje cai
+  no caminho de erro ("falha ao ler o TSE, tento de novo em um minuto"), que é o comportamento esperado.
 - O cache do código é por turno (`localStorage res26cod_<data>`), então o 2º turno não reusa o do 1º.
 - Fonte única é o TSE; o painel não recebe número de imprensa nesse modo. Depois de 100% das seções,
   copiar o resultado para um objeto fixo (como PRES2022) e desligar o modo ao vivo é tarefa manual.

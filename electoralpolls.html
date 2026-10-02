@@ -687,7 +687,12 @@
   // Formato dos JSONs (2022): cand[{nm, n, vap, pvap, e, st}], pst (% seções totalizadas), hg/dg
   // (hora e data de geração), vv, vb, pvb, vn, pa (abstenção). Arquivos: br e um por UF (minúsculas).
   // Teste sem esperar 4/10: abrir o painel com ?simula=2022 carrega a apuração real de 2022 no lugar.
-  var RES26_COD=null;
+  // CÓDIGOS CONFIRMADOS NO ele-c.json DO TSE EM 02/10/2026: 1º turno 6257 ("Eleição Ordinária Federal -
+  // 2026 1º Turno", cargo 1 = Presidente), 2º turno 6258 (campo cdt2). Pré-preenchidos para não depender
+  // da descoberta automática no dia; resDescobre() só roda se isto for null. O diretório
+  // oficial/ele2026/6257/ já existe (config/mun-e006257-cm.json responde 200); os JSONs de resultado
+  // nascem com a totalização. O ?simula=2022 DEIXOU DE FUNCIONAR: o TSE removeu os arquivos de 2022.
+  var RES26_COD = (new Date()>=new Date(2026,9,25)) ? '6258' : '6257';
   var RES26={cod:null,ano:'2026',br:null,uf:{},ativo:false,erro:'',timer:null,busy:false,simula:null};
   var RES_UFS=['AC','AL','AM','AP','BA','CE','DF','ES','GO','MA','MG','MS','MT','PA','PB','PE','PI','PR','RJ','RN','RO','RR','RS','SC','SE','SP','TO'];
   (function(){ try{ var q=(location.search||'').match(/simula=(2022)/); if(q) RES26.simula={ano:'2022',cod:'544'}; }catch(_){ } })();
