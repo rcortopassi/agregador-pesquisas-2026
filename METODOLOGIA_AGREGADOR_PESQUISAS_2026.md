@@ -6,6 +6,23 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- MANHÃ DE 03/10 (véspera do 1º turno): PODERDATA E GERP ENTRAM EM OUTUBRO NO `DI`, que passa
+  a ter quatro rodadas e por isso o banner e a projeção agora ancoram em OUTUBRO, não mais em
+  setembro (regra de três rodadas, de propósito). PoderData BR-03519 (30/9-2/10, 4.000): Lula 42 x
+  Flávio 41, 2º turno 46 a 46. Gerp BR-00509 (30/9-2/10, 2.400): Flávio 43 x Lula 41, 2º turno 49 x
+  44. A outra Gerp (BR-08168, 1-3/10) ainda não saiu. AGENDA DO DIA (Exame/Metrópoles): Palver 8h
+  (atrasada), CNT/MDA 10h, AtlasIntel/Bloomberg 14h (com cortes estaduais), Futura 16h, Quaest após
+  18h, Datafolha 18h45 (campo só de 3/10, N=4.006). `PRES26`: seis estados mudam. BA AtlasIntel/A
+  Tarde 27/9-2/10 (Lula 59,1 x 29,2; 61,6 x 34,3), ES Perfil/ES Hoje 29/9-2/10 (Flávio 39,17 x
+  37,44; 51,8 x 48,2 em válidos, empate técnico), RN TS2/TCM Mossoró 26-30/9 (Lula 48,7 x 31,9; vence
+  a Exatus de mesmo fim de campo pela amostra, 1.800 x 1.500), PA Futura 24-28/9 (empate técnico,
+  48,4 x 44,7), AC Data Control 24-30/9 (Flávio 55,6 x 25,1), RR INOPE 1-2/10 (Flávio 67,7 x 20,27).
+  A pista "Real Time DF Flávio 44 x Lula 39" é de AGOSTO (BR-05423): não usar. A bateria AtlasIntel
+  estadual de 27/9-2/10 tem dezenas de protocolos que o radar colou em AL (contratantes revelam PA e
+  PI entre eles); só a BA saiu até agora, o resto deve vir com a nacional às 14h. Descartados como
+  municipais: L3 (Nova Floresta e Frei Martinho/PB), DataTrends Macaparana/PE, Clenix Planalto
+  Norte/SC. ATENÇÃO: o filtro de municipal por regex pegou falsos positivos (Affare, DataTrends AL,
+  Metadata, Perfil ES); confira o texto antes de descartar.
 - 02/10, 19h30, INCIDENTE E LIÇÃO: A EDIÇÃO DO `PRES26` POR REGEX QUEBROU O PAINEL NO AR POR
   ~25 MINUTOS. A substituição `\n    UF:\{.*?\},\n` (não gulosa, com re.S) funciona para todo
   estado MENOS o último do objeto, que termina em `}` seguido de `\n  };` e não em `},`: no DF a

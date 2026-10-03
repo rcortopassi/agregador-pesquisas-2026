@@ -1800,16 +1800,6 @@
    "visto": "2026-09-28"
   },
   {
-   "proto": "BR027242026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "DATA CONTROL INSTITUTO DE PE",
-   "cargo": "Presidente",
-   "campo": "24/09-30/09",
-   "div": "2026-09-29",
-   "n": "1000",
-   "visto": "2026-09-29"
-  },
-  {
    "proto": "BR054102026",
    "escopo": "ESTADUAL[MT]",
    "inst": "IPSENSUS PESQUISAS",
@@ -1817,16 +1807,6 @@
    "campo": "25/09-27/09",
    "div": "2026-09-29",
    "n": "400",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR099522026",
-   "escopo": "ESTADUAL[PA]",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "24/09-28/09",
-   "div": "2026-09-29",
-   "n": "1000",
    "visto": "2026-09-29"
   },
   {
@@ -1855,16 +1835,6 @@
    "inst": "GRUPO GERP GERP MERCADO GERP",
    "cargo": "Presidente",
    "campo": "01/10-03/10",
-   "div": "2026-09-29",
-   "n": "2400",
-   "visto": "2026-09-29"
-  },
-  {
-   "proto": "BR005092026",
-   "escopo": "NACIONAL?",
-   "inst": "GRUPO GERP GERP MERCADO GERP",
-   "cargo": "Presidente",
-   "campo": "30/09-02/10",
    "div": "2026-09-29",
    "n": "2400",
    "visto": "2026-09-29"
@@ -1930,36 +1900,6 @@
    "visto": "2026-10-01"
   },
   {
-   "proto": "BR079022026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "27/09-30/09",
-   "div": "2026-10-01",
-   "n": "1500",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR081842026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "TS2 SOLUCOES",
-   "cargo": "Presidente",
-   "campo": "26/09-30/09",
-   "div": "2026-10-01",
-   "n": "1800",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR002422026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "EXATUS CONSULTORIA E PESQUIS",
-   "cargo": "Presidente",
-   "campo": "28/09-30/09",
-   "div": "2026-10-01",
-   "n": "1500",
-   "visto": "2026-10-01"
-  },
-  {
    "proto": "BR098522026",
    "escopo": "ESTADUAL[RN]",
    "inst": "AFFARE INSTITUTE",
@@ -1977,16 +1917,6 @@
    "campo": "22/09-26/09",
    "div": "2026-10-01",
    "n": "2300",
-   "visto": "2026-10-01"
-  },
-  {
-   "proto": "BR078162026",
-   "escopo": "ESTADUAL[RR]",
-   "inst": "INST. DO NORTE DE OPINIAO PU",
-   "cargo": "Presidente",
-   "campo": "01/10-02/10",
-   "div": "2026-10-01",
-   "n": "1079",
    "visto": "2026-10-01"
   },
   {
@@ -2167,16 +2097,6 @@
    "campo": "29/09-01/10",
    "div": "2026-10-02",
    "n": "1060",
-   "visto": "2026-10-02"
-  },
-  {
-   "proto": "BR000012026",
-   "escopo": "ESTADUAL[ES]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "29/09-02/10",
-   "div": "2026-10-02",
-   "n": "1800",
    "visto": "2026-10-02"
   },
   {
@@ -2590,16 +2510,6 @@
    "visto": "2026-10-03"
   },
   {
-   "proto": "BR011772026",
-   "escopo": "ESTADUAL[BA]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "27/09-02/10",
-   "div": "2026-10-03",
-   "n": "2200",
-   "visto": "2026-10-03"
-  },
-  {
    "proto": "BR064692026",
    "escopo": "ESTADUAL[CE]",
    "inst": "#NULO#",
@@ -2607,16 +2517,6 @@
    "campo": "02/10-03/10",
    "div": "2026-10-03",
    "n": "1560",
-   "visto": "2026-10-03"
-  },
-  {
-   "proto": "BR058472026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "24/09-29/09",
-   "div": "2026-10-03",
-   "n": "1141",
    "visto": "2026-10-03"
   },
   {
@@ -2710,26 +2610,6 @@
    "visto": "2026-10-03"
   },
   {
-   "proto": "BR078982026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "L3 SISTEMAS E CONSULTORIA",
-   "cargo": "Presidente",
-   "campo": "28/09-30/09",
-   "div": "2026-10-03",
-   "n": "602",
-   "visto": "2026-10-03"
-  },
-  {
-   "proto": "BR007592026",
-   "escopo": "ESTADUAL[PB]",
-   "inst": "L3 SISTEMAS E CONSULTORIA",
-   "cargo": "Presidente",
-   "campo": "29/09-30/09",
-   "div": "2026-10-03",
-   "n": "300",
-   "visto": "2026-10-03"
-  },
-  {
    "proto": "BR024542026",
    "escopo": "ESTADUAL[PE]",
    "inst": "VERITA",
@@ -2747,16 +2627,6 @@
    "campo": "28/09-01/10",
    "div": "2026-10-03",
    "n": "1000",
-   "visto": "2026-10-03"
-  },
-  {
-   "proto": "BR018142026",
-   "escopo": "ESTADUAL[PE]",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "28/09-29/09",
-   "div": "2026-10-03",
-   "n": "400",
    "visto": "2026-10-03"
   },
   {
@@ -2960,16 +2830,6 @@
    "visto": "2026-10-03"
   },
   {
-   "proto": "BR093852026",
-   "escopo": "ESTADUAL[SC]",
-   "inst": "CLENIX COMUNICACAO",
-   "cargo": "Presidente",
-   "campo": "28/09-01/10",
-   "div": "2026-10-03",
-   "n": "1064",
-   "visto": "2026-10-03"
-  },
-  {
    "proto": "BR096002026",
    "escopo": "ESTADUAL[SE]",
    "inst": "INSTITUTO FRANCA DE PESQUISA",
@@ -3037,16 +2897,6 @@
    "campo": "27/09-02/10",
    "div": "2026-10-03",
    "n": "5000",
-   "visto": "2026-10-03"
-  },
-  {
-   "proto": "BR035192026",
-   "escopo": "NACIONAL?",
-   "inst": "PODERDATA",
-   "cargo": "Presidente",
-   "campo": "30/09-02/10",
-   "div": "2026-10-03",
-   "n": "4000",
    "visto": "2026-10-03"
   },
   {
