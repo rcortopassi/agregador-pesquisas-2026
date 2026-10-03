@@ -6,6 +6,10 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 03/10, ~18H30: PALVER FINAL ENTRA EM OUTUBRO NO `DI` E NO `T2R`, INCOMPLETA. 30/9 a 3/10,
+  5.000 online: Flávio 47 x Lula 43, Renan 7, Cury 1, Caiado 1; 2º turno Flávio 49 x 44. Mesma
+  situação da MDA: só resumo de imprensa, Zema '—', Br/N/Ind 1 é o resíduo até 100 (inclui o
+  Zema), registro TSE não conferido. Rodada local: conferir íntegra e completar.
 - 03/10, ~16H: CNT/MDA ENTRA EM OUTUBRO NO `DI` E NO `T2R`, INCOMPLETA. BR-04756/2026, 29/9 a
   2/10: Lula 43,1 x Flávio 38 (47,8 x 42,1 em válidos), 2º turno 47,3 x 43,1. Inserida por sessão
   de nuvem que só tinha o resumo da Exame (o proxy bloqueia as matérias): Caiado/Zema/Renan/Cury
