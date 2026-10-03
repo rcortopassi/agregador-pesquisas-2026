@@ -6,6 +6,16 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 03/10, MEIO-DIA: A PROJEÇÃO DO 1º TURNO NÃO ANCORA EM OUTUBRO, SÓ O BANNER. Com PoderData e
+  Gerp, outubro passou de três rodadas e a projeção pulou de Flávio +0,4 para Flávio +9,3 (51,5 x
+  42,2) com outubro de 2026 medindo empate (44,8 x 44,7). Causa: a célula de outubro do `HIST1T`
+  de 2022 tem n=2 (Datafolha e Ipec de 1º/10, as casas mais pró-Lula, +14,7 e +14,0), contra 15
+  institutos em setembro; o erro dela (-9,2, contra -4,0 de setembro) pesava 80% e era aplicado a
+  outra cesta de institutos. O desvio também dobrou (3,5 para 8,7) pelo teste do mês anterior,
+  contaminado pelo mesmo efeito. REGRA (`histOk` em `ancora26`): um mês só vira âncora da
+  projeção se todo ciclo histórico que tem aquele mês tiver n>=3 nele. Pesquisa nova de 2026 NÃO
+  resolve isso, porque o outubro de 2022 vai ter sempre duas. O outubro medido aparece no gráfico
+  como bolinha cheia na coluna "out", tocável. Banner, tabela e síntese seguem em outubro.
 - MANHÃ DE 03/10 (véspera do 1º turno): PODERDATA E GERP ENTRAM EM OUTUBRO NO `DI`, que passa
   a ter quatro rodadas e por isso o banner e a projeção agora ancoram em OUTUBRO, não mais em
   setembro (regra de três rodadas, de propósito). PoderData BR-03519 (30/9-2/10, 4.000): Lula 42 x
