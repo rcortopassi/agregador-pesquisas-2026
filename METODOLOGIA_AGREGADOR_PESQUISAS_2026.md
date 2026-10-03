@@ -6,6 +6,11 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 03/10, ~16H: CNT/MDA ENTRA EM OUTUBRO NO `DI` E NO `T2R`, INCOMPLETA. BR-04756/2026, 29/9 a
+  2/10: Lula 43,1 x Flávio 38 (47,8 x 42,1 em válidos), 2º turno 47,3 x 43,1. Inserida por sessão
+  de nuvem que só tinha o resumo da Exame (o proxy bloqueia as matérias): Caiado/Zema/Renan/Cury
+  em '—' e Br/N/Ind 9,8 DERIVADO da conversão para válidos; amostra 'n/d' no `IM`. A rodada local
+  deve abrir a íntegra e completar a linha. Projeção segue ancorada em setembro (`histOk`).
 - 03/10, MEIO-DIA: A PROJEÇÃO DO 1º TURNO NÃO ANCORA EM OUTUBRO, SÓ O BANNER. Com PoderData e
   Gerp, outubro passou de três rodadas e a projeção pulou de Flávio +0,4 para Flávio +9,3 (51,5 x
   42,2) com outubro de 2026 medindo empate (44,8 x 44,7). Causa: a célula de outubro do `HIST1T`
