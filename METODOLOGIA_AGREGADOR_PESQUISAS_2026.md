@@ -6,6 +6,11 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 03/10, ~21H: O MAPA 2026 JÁ MOSTRA O LAYOUT DA APURAÇÃO, sem esperar a primeira seção (pedido do
+  Rafael). `resModo()` = `RES26.ativo || resDia()` substitui `RES26.ativo` nas decisões de tela
+  (cor dos estados, botão "2026 (apuração)", texto, painel do estado, esconder `natBar`/`presFontes`).
+  Antes da totalização: mapa todo cinza "sem seção apurada", barra zerada (`resVazia`), estado diz
+  "o TSE ainda não publicou". O `RES26.ativo` continua sendo o que liga os números.
 - 03/10, ~20H30: MODO AO VIVO LIGADO, a pedido do Rafael, quando a votação no exterior começou.
   `resDia()` passa a valer desde 3/10 20h (era 4/10 8h) e o painel abre na aba Mapa 2026
   (`cur.top`). Até a primeira seção totalizada o mapa segue nas pesquisas com o aviso
