@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 03/10/2026 06:48. Mercados: Polymarket 42,5%/58,2%, Kalshi 42,0%/59,0%.
+Rodada de 03/10/2026 11:41. Mercados: Polymarket 41,5%/58,2%, Kalshi 42,0%/60,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -11,25 +11,18 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-26] TSE ESTADUAL[RR], VERITA (Presidente), campo 21/09-25/09, divulgação 2026-09-26, N=1030, registro BR052652026
 - [aguardando desde 2026-09-27] TSE NACIONAL?, #NULO# (Presidente), campo 22/09-26/09, divulgação 2026-09-27, N=2000, registro BR066832026
 - [aguardando desde 2026-09-28] TSE NACIONAL?, ATLASINTEL (Presidente), campo 22/09-27/09, divulgação 2026-09-28, N=1200, registro BR062432026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[AC], DATA CONTROL INSTITUTO DE PE (Presidente), campo 24/09-30/09, divulgação 2026-09-29, N=1000, registro BR027242026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[MT], IPSENSUS PESQUISAS (Presidente), campo 25/09-27/09, divulgação 2026-09-29, N=400, registro BR054102026
-- [aguardando desde 2026-09-29] TSE ESTADUAL[PA], 100 CIDADES (Presidente), campo 24/09-28/09, divulgação 2026-09-29, N=1000, registro BR099522026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[RN], ATLASINTEL (Presidente), campo 23/09-28/09, divulgação 2026-09-29, N=1200, registro BR035362026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[RN], #NULO# (Presidente), campo 24/09-27/09, divulgação 2026-09-29, N=1200, registro BR020032026
 - [aguardando desde 2026-09-29] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 01/10-03/10, divulgação 2026-09-29, N=2400, registro BR081682026
-- [aguardando desde 2026-09-29] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 30/09-02/10, divulgação 2026-09-29, N=2400, registro BR005092026
 - [aguardando desde 2026-09-29] TSE NACIONAL?, INSTITUTO AMAZONIA DE PESQUI (Presidente), campo 23/09-26/09, divulgação 2026-09-29, N=2500, registro BR021062026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[ES], AGILI PESQUISAS (Presidente), campo 24/09-29/09, divulgação 2026-09-30, N=1200, registro BR098162026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 29/09-02/10, divulgação 2026-09-30, N=1200, registro BR075072026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 26/09-29/09, divulgação 2026-09-30, N=1200, registro BR076472026
 - [aguardando desde 2026-10-01] TSE ESTADUAL[AP], DOXA (Presidente), campo 25/09-29/09, divulgação 2026-10-01, N=800, registro BR039022026
 - [aguardando desde 2026-10-01] TSE ESTADUAL[MT], MT DADOS PESQUISAS (Presidente), campo 25/09-30/09, divulgação 2026-10-01, N=3080, registro BR036542026
-- [aguardando desde 2026-10-01] TSE ESTADUAL[PB], INSTITUTO SETA DE PESQUISA (Presidente), campo 27/09-30/09, divulgação 2026-10-01, N=1500, registro BR079022026
-- [aguardando desde 2026-10-01] TSE ESTADUAL[RN], TS2 SOLUCOES (Presidente), campo 26/09-30/09, divulgação 2026-10-01, N=1800, registro BR081842026
-- [aguardando desde 2026-10-01] TSE ESTADUAL[RN], EXATUS CONSULTORIA E PESQUIS (Presidente), campo 28/09-30/09, divulgação 2026-10-01, N=1500, registro BR002422026
 - [aguardando desde 2026-10-01] TSE ESTADUAL[RN], AFFARE INSTITUTE (Presidente), campo 26/09-28/09, divulgação 2026-10-01, N=1000, registro BR098522026
 - [aguardando desde 2026-10-01] TSE ESTADUAL[RN], DATA CAPITAL PESQUISAS E CON (Presidente), campo 22/09-26/09, divulgação 2026-10-01, N=2300, registro BR066802026
-- [aguardando desde 2026-10-01] TSE ESTADUAL[RR], INST. DO NORTE DE OPINIAO PU (Presidente), campo 01/10-02/10, divulgação 2026-10-01, N=1079, registro BR078162026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[AC], VERITA (Presidente), campo 26/09-01/10, divulgação 2026-10-02, N=1030, registro BR022682026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[AC], VERITA (Presidente), campo 26/09-01/10, divulgação 2026-10-02, N=1030, registro BR080272026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[AL], DATATRENDS (Presidente), campo 28/09-30/09, divulgação 2026-10-02, N=1200, registro BR042522026
@@ -48,7 +41,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-02] TSE ESTADUAL[BA], 100 CIDADES (Presidente), campo 28/09-02/10, divulgação 2026-10-02, N=1000, registro BR007312026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[BA], VERITA (Presidente), campo 26/09-01/10, divulgação 2026-10-02, N=2020, registro BR029812026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[DF], BADRA COMUNICACAO (Presidente), campo 29/09-01/10, divulgação 2026-10-02, N=1060, registro BR014482026
-- [aguardando desde 2026-10-02] TSE ESTADUAL[ES], #NULO# (Presidente), campo 29/09-02/10, divulgação 2026-10-02, N=1800, registro BR000012026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[MA], VERITA (Presidente), campo 26/09-01/10, divulgação 2026-10-02, N=1525, registro BR059462026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[MA], VERITA (Presidente), campo 26/09-01/10, divulgação 2026-10-02, N=1525, registro BR017702026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[MA], VERITA (Presidente), campo 26/09-01/10, divulgação 2026-10-02, N=1525, registro BR087822026
@@ -64,85 +56,78 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-02] TSE NACIONAL?, BADRA COMUNICACAO (Presidente), campo 28/09-01/10, divulgação 2026-10-02, N=2946, registro BR099992026
 - [aguardando desde 2026-10-02] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-02, N=2000, registro BR029282026
 - [aguardando desde 2026-10-02] TSE NACIONAL?, DATA RD (Presidente), campo 26/09-30/09, divulgação 2026-10-02, N=1495, registro BR078642026
-- [NOVO] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR063502026
-- [NOVO] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR022122026
-- [NOVO] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR037032026
-- [NOVO] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR022982026
-- [NOVO] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1000, registro BR049422026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR094652026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR023182026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR021672026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR020892026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR045592026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR055882026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR031262026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR043062026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR056612026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR024782026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR079642026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR054712026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR077272026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR062452026
-- [NOVO] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR070922026
-- [NOVO] TSE ESTADUAL[AP], DOXA (Presidente), campo 27/09-30/09, divulgação 2026-10-03, N=800, registro BR057202026
-- [NOVO] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR059742026
-- [NOVO] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR083002026
-- [NOVO] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR028422026
-- [NOVO] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR075022026
-- [NOVO] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR097562026
-- [NOVO] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR011772026
-- [NOVO] TSE ESTADUAL[CE], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=1560, registro BR064692026
-- [NOVO] TSE ESTADUAL[DF], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 24/09-29/09, divulgação 2026-10-03, N=1141, registro BR058472026
-- [NOVO] TSE ESTADUAL[DF], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=1620, registro BR098122026
-- [NOVO] TSE ESTADUAL[ES], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1067, registro BR087792026
-- [NOVO] TSE ESTADUAL[MG], REAL TIME BIG DATA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2000, registro BR010682026
-- [NOVO] TSE ESTADUAL[MS], RANKING BRASIL INTELIGENCIA (Presidente), campo 01/10-03/10, divulgação 2026-10-03, N=2000, registro BR010232026
-- [NOVO] TSE ESTADUAL[MS], #NULO# (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=820, registro BR032932026
-- [NOVO] TSE ESTADUAL[MS], NOVO IBRAPE (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1000, registro BR029502026
-- [NOVO] TSE ESTADUAL[PA], VERITATE (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1400, registro BR030912026
-- [NOVO] TSE ESTADUAL[PA], DOXA (Presidente), campo 27/09-30/09, divulgação 2026-10-03, N=2000, registro BR064232026
-- [NOVO] TSE ESTADUAL[PA], DOXA (Presidente), campo 27/09-30/09, divulgação 2026-10-03, N=2000, registro BR067072026
-- [NOVO] TSE ESTADUAL[PB], L3 SISTEMAS E CONSULTORIA (Presidente), campo 28/09-30/09, divulgação 2026-10-03, N=602, registro BR078982026
-- [NOVO] TSE ESTADUAL[PB], L3 SISTEMAS E CONSULTORIA (Presidente), campo 29/09-30/09, divulgação 2026-10-03, N=300, registro BR007592026
-- [NOVO] TSE ESTADUAL[PE], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2010, registro BR024542026
-- [NOVO] TSE ESTADUAL[PE], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 28/09-01/10, divulgação 2026-10-03, N=1000, registro BR038732026
-- [NOVO] TSE ESTADUAL[PE], DATATRENDS (Presidente), campo 28/09-29/09, divulgação 2026-10-03, N=400, registro BR018142026
-- [NOVO] TSE ESTADUAL[PE], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2010, registro BR060912026
-- [NOVO] TSE ESTADUAL[PE], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=1650, registro BR034622026
-- [NOVO] TSE ESTADUAL[PI], VETOR TECNOLOGIA E PESQUISAS (Presidente), campo 26/09-03/10, divulgação 2026-10-03, N=1602, registro BR058462026
-- [NOVO] TSE ESTADUAL[PI], #NULO# (Presidente), campo 01/10-03/10, divulgação 2026-10-03, N=1564, registro BR051982026
-- [NOVO] TSE ESTADUAL[PR], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1800, registro BR080892026
-- [NOVO] TSE ESTADUAL[PR], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1800, registro BR026282026
-- [NOVO] TSE ESTADUAL[PR], NEOKEMP PESQUISAS (Presidente), campo 01/10-02/10, divulgação 2026-10-03, N=1008, registro BR006002026
-- [NOVO] TSE ESTADUAL[PR], NEOKEMP PESQUISAS (Presidente), campo 01/10-02/10, divulgação 2026-10-03, N=1008, registro BR069292026
-- [NOVO] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=2010, registro BR079192026
-- [NOVO] TSE ESTADUAL[RJ], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2030, registro BR004372026
-- [NOVO] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=2010, registro BR079332026
-- [NOVO] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR091262026
-- [NOVO] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR014872026
-- [NOVO] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR096682026
-- [NOVO] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR054062026
-- [NOVO] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR019932026
-- [NOVO] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR031722026
-- [NOVO] TSE ESTADUAL[RR], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1030, registro BR017172026
-- [NOVO] TSE ESTADUAL[RS], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2020, registro BR029582026
-- [NOVO] TSE ESTADUAL[SC], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1525, registro BR002612026
-- [NOVO] TSE ESTADUAL[SC], CLENIX COMUNICACAO (Presidente), campo 28/09-01/10, divulgação 2026-10-03, N=1064, registro BR093852026
-- [NOVO] TSE ESTADUAL[SE], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 30/09-02/10, divulgação 2026-10-03, N=1814, registro BR096002026
-- [NOVO] TSE ESTADUAL[SP], ACADEMIA DE PESQUISA (Presidente), campo 26/09-01/10, divulgação 2026-10-03, N=400, registro BR078282026
-- [NOVO] TSE ESTADUAL[SP], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=3702, registro BR021972026
-- [NOVO] TSE ESTADUAL[SP], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=2520, registro BR070252026
-- [NOVO] TSE ESTADUAL[SP], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=3025, registro BR043552026
-- [NOVO] TSE ESTADUAL[SP], ACADEMIA DE PESQUISA (Presidente), campo 26/09-01/10, divulgação 2026-10-03, N=500, registro BR071212026
-- [NOVO] TSE NACIONAL?, ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=5000, registro BR009992026
-- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 30/09-02/10, divulgação 2026-10-03, N=4000, registro BR035192026
-- [NOVO] TSE NACIONAL?, DOXA (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2000, registro BR081642026
-- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1531, registro BR008862026
-- [NOVO] TSE NACIONAL?, VERITA (Presidente), campo 26/09-02/10, divulgação 2026-10-03, N=40500, registro BR045222026
-- [NOVO] TSE NACIONAL?, PALVER (Presidente), campo 30/09-03/10, divulgação 2026-10-03, N=5000, registro BR001982026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 03/10-03/10, divulgação 2026-10-03, N=4006, registro BR017082026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 29/09-02/10, divulgação 2026-10-03, N=2002, registro BR047562026
-- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 29/09-03/10, divulgação 2026-10-03, N=2000, registro BR024312026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR063502026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR022122026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR037032026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR022982026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AC], DELTA AGENCIA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1000, registro BR049422026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR094652026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR023182026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR021672026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR020892026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR045592026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR055882026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR031262026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR043062026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR056612026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR024782026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR079642026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR054712026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR077272026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR062452026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AL], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1200, registro BR070922026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[AP], DOXA (Presidente), campo 27/09-30/09, divulgação 2026-10-03, N=800, registro BR057202026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR059742026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR083002026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR028422026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR075022026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[BA], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2200, registro BR097562026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[CE], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=1560, registro BR064692026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[DF], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=1620, registro BR098122026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[ES], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1067, registro BR087792026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[MG], REAL TIME BIG DATA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2000, registro BR010682026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[MS], RANKING BRASIL INTELIGENCIA (Presidente), campo 01/10-03/10, divulgação 2026-10-03, N=2000, registro BR010232026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[MS], #NULO# (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=820, registro BR032932026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[MS], NOVO IBRAPE (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1000, registro BR029502026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PA], VERITATE (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1400, registro BR030912026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PA], DOXA (Presidente), campo 27/09-30/09, divulgação 2026-10-03, N=2000, registro BR064232026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PA], DOXA (Presidente), campo 27/09-30/09, divulgação 2026-10-03, N=2000, registro BR067072026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PE], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2010, registro BR024542026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PE], BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 28/09-01/10, divulgação 2026-10-03, N=1000, registro BR038732026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PE], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2010, registro BR060912026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PE], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=1650, registro BR034622026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PI], VETOR TECNOLOGIA E PESQUISAS (Presidente), campo 26/09-03/10, divulgação 2026-10-03, N=1602, registro BR058462026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PI], #NULO# (Presidente), campo 01/10-03/10, divulgação 2026-10-03, N=1564, registro BR051982026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PR], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1800, registro BR080892026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PR], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=1800, registro BR026282026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PR], NEOKEMP PESQUISAS (Presidente), campo 01/10-02/10, divulgação 2026-10-03, N=1008, registro BR006002026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[PR], NEOKEMP PESQUISAS (Presidente), campo 01/10-02/10, divulgação 2026-10-03, N=1008, registro BR069292026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=2010, registro BR079192026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RJ], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2030, registro BR004372026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=2010, registro BR079332026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR091262026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR014872026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR096682026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR054062026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR019932026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RN], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1220, registro BR031722026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RR], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1030, registro BR017172026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[RS], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=2020, registro BR029582026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[SC], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1525, registro BR002612026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[SE], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 30/09-02/10, divulgação 2026-10-03, N=1814, registro BR096002026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[SP], ACADEMIA DE PESQUISA (Presidente), campo 26/09-01/10, divulgação 2026-10-03, N=400, registro BR078282026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[SP], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=3702, registro BR021972026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[SP], #NULO# (Presidente), campo 02/10-03/10, divulgação 2026-10-03, N=2520, registro BR070252026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[SP], VERITA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=3025, registro BR043552026
+- [aguardando desde 2026-10-03] TSE ESTADUAL[SP], ACADEMIA DE PESQUISA (Presidente), campo 26/09-01/10, divulgação 2026-10-03, N=500, registro BR071212026
+- [aguardando desde 2026-10-03] TSE NACIONAL?, ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=5000, registro BR009992026
+- [aguardando desde 2026-10-03] TSE NACIONAL?, DOXA (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2000, registro BR081642026
+- [aguardando desde 2026-10-03] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1531, registro BR008862026
+- [aguardando desde 2026-10-03] TSE NACIONAL?, VERITA (Presidente), campo 26/09-02/10, divulgação 2026-10-03, N=40500, registro BR045222026
+- [aguardando desde 2026-10-03] TSE NACIONAL?, PALVER (Presidente), campo 30/09-03/10, divulgação 2026-10-03, N=5000, registro BR001982026
+- [aguardando desde 2026-10-03] TSE NACIONAL?, #NULO# (Presidente), campo 03/10-03/10, divulgação 2026-10-03, N=4006, registro BR017082026
+- [aguardando desde 2026-10-03] TSE NACIONAL?, #NULO# (Presidente), campo 29/09-02/10, divulgação 2026-10-03, N=2002, registro BR047562026
+- [aguardando desde 2026-10-03] TSE NACIONAL?, 100 CIDADES (Presidente), campo 29/09-03/10, divulgação 2026-10-03, N=2000, registro BR024312026
 - [aguardando desde 2026-10-01] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 20 a 25 de setembro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855512625_Relatorio_Nacional_Verita_Imprensa_27_UFs_20_a_25_Setembro_2026.pdf
 - [aguardando desde 2026-10-01] Veritá: Pesquisa no Ceará - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855383255_Relatorio_Ceara_24_de_setembro_de_2026.pdf
 - [aguardando desde 2026-10-01] Veritá: Pesquisa na Bahia - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855299172_Relatorio_Bahia_24_de_setembro_de_2026.pdf
@@ -151,17 +136,24 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-01] Veritá: Pesquisa em Minas Gerais - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790855049861_Relatorio_Minas_Gerais_24_de_setembro_de_2026.pdf
 - [aguardando desde 2026-10-01] Veritá: Pesquisa no Distrito Federal - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790854912014_Relatorio_Distrito_Federal_24_de_setembro_de_2026.pdf
 - [aguardando desde 2026-10-01] Veritá: Pesquisa em Goiás - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 20 a 24 de setembro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1790854810780_Relatorio_Goias_24_de_setembro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa no Rio de Janeiro - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791038353934_Relatorio_Rio_de_Janeiro_10.2026.pdf
+- [NOVO] Veritá: Pesquisa no Piauí - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791038277112_Relatorio_Piaui_10.2026.pdf
+- [NOVO] Veritá: Pesquisa no Mato Grosso - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791038201248_Relatorio_MT_Outubro_2026.pdf
+- [NOVO] Veritá: Pesquisa no Maranhão - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791038119896_Relatorio_MA_Outubro_2026.pdf
+- [NOVO] Veritá: Pesquisa no Amapá - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791038028584_Relatorio_Amapa_Outubro_2026.pdf
+- [NOVO] Veritá: Pesquisa em Alagoas - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791037934585_Relatorio_Alagoas_Outubro_2026.pdf
+- [NOVO] Veritá: Pesquisa no Acre - Governador, Senador e Presidente. Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791037855852_Relatorio_Acre_Outubro_2026.pdf
 
 ## Últimas publicações do Veritá
 
+- 2026-10-03 | Pesquisa no Rio de Janeiro - Governador, Senador e Presidente
+- 2026-10-03 | Pesquisa no Piauí - Governador, Senador e Presidente
+- 2026-10-03 | Pesquisa no Mato Grosso - Governador, Senador e Presidente
+- 2026-10-03 | Pesquisa no Maranhão - Governador, Senador e Presidente
+- 2026-10-03 | Pesquisa no Amapá - Governador, Senador e Presidente
+- 2026-10-03 | Pesquisa em Alagoas - Governador, Senador e Presidente
+- 2026-10-03 | Pesquisa no Acre - Governador, Senador e Presidente
 - 2026-10-01 | Pesquisa para Presidente no Brasil
-- 2026-10-01 | Pesquisa no Ceará - Governador, Senador e Presidente
-- 2026-10-01 | Pesquisa na Bahia - Governador, Senador e Presidente
-- 2026-10-01 | Pesquisa no Tocantins - Governador, Senador e Presidente
-- 2026-10-01 | Pesquisa no Pará - Governador, Senador e Presidente
-- 2026-10-01 | Pesquisa em Minas Gerais - Governador, Senador e Presidente
-- 2026-10-01 | Pesquisa no Distrito Federal - Governador, Senador e Presidente
-- 2026-10-01 | Pesquisa em Goiás - Governador, Senador e Presidente
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
