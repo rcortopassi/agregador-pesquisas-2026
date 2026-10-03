@@ -6,6 +6,11 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 03/10, ~20H30: MODO AO VIVO LIGADO, a pedido do Rafael, quando a votação no exterior começou.
+  `resDia()` passa a valer desde 3/10 20h (era 4/10 8h) e o painel abre na aba Mapa 2026
+  (`cur.top`). Até a primeira seção totalizada o mapa segue nas pesquisas com o aviso
+  "aguardando"; o conteúdo só troca com `RES26.ativo`. Datafolha e Quaest finais saíram só em
+  votos válidos nos resumos e NÃO entraram no `DI`: falta o total da amostra.
 - 03/10, ~18H30: PALVER FINAL ENTRA EM OUTUBRO NO `DI` E NO `T2R`, INCOMPLETA. 30/9 a 3/10,
   5.000 online: Flávio 47 x Lula 43, Renan 7, Cury 1, Caiado 1; 2º turno Flávio 49 x 44. Mesma
   situação da MDA: só resumo de imprensa, Zema '—', Br/N/Ind 1 é o resíduo até 100 (inclui o

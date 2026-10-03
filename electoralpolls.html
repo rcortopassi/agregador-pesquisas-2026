@@ -699,7 +699,10 @@
   function fmtV(n){ try{ return Number(n).toLocaleString('pt-BR'); }catch(_){ return String(n); } }
   function resUrl(path){ var c=('000000'+RES26.cod).slice(-6);
     return 'https://resultados.tse.jus.br/oficial/ele'+RES26.ano+'/'+RES26.cod+'/dados-simplificados/'+path+'/'+path+'-c0001-e'+c+'-r.json?_='+Date.now(); }
-  function resDia(){ if(RES26.simula) return true; return new Date()>=new Date(2026,9,4,8,0,0); }
+  // MODO AO VIVO LIGADO NA NOITE DE 03/10/2026, a pedido do Rafael, quando a votação no exterior
+  // começou (Nova Zelândia). Era 4/10 8h. Até o TSE soltar a primeira seção totalizada (17h de 4/10)
+  // o mapa segue nas pesquisas e só mostra "aguardando"; RES26.ativo é que troca o conteúdo.
+  function resDia(){ if(RES26.simula) return true; return new Date()>=new Date(2026,9,3,20,0,0); }
   function resDescobre(){
     if(RES26.simula){ RES26.ano=RES26.simula.ano; RES26.cod=RES26.simula.cod; return Promise.resolve(RES26.cod); }
     if(RES26_COD){ RES26.cod=String(RES26_COD); return Promise.resolve(RES26.cod); }
@@ -1804,7 +1807,8 @@
   }
 
   var tops=[['inst','Institutos'],['he','House effect'],['graf','Grafico'],['mapa','Mapa'],['prev','Previsão']];
-  var cur={top:'inst',m:ultimoMesCheio(),dim:'pres',uf:null,stab:'inst',mapyear:'2026'};
+  // Com o modo ao vivo ligado (resDia), o painel abre direto na aba Mapa 2026, que é onde a apuração aparece.
+  var cur={top:(resDia()?'mapa':'inst'),m:ultimoMesCheio(),dim:'pres',uf:null,stab:'inst',mapyear:'2026'};
   // Fatos notórios que mexem na corrida presidencial. Para adicionar um no futuro,
   // basta acrescentar uma linha: {d:'AAAA-MM-DD', c:cor, t:'texto'}. A linha pontilhada
   // e a numeração aparecem sozinhas no gráfico, posicionadas pela data.
