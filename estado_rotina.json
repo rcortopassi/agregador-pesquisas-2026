@@ -1724,6 +1724,7 @@
   "16d07e21-a09f-4415-a7de-a085388ebd9c",
   "19929559-7967-42a9-a55e-dfb1e330f12a",
   "19c53b56-1926-4292-9994-74364c55641d",
+  "1affb5d4-86d5-4ef0-afe5-86b0ca5c08e3",
   "260793c5-e924-44fd-876b-8b3ba33de4e4",
   "28bab072-3b90-4367-83e3-1ade5a20389d",
   "29c4c04c-2da6-42f5-9b3a-b93a9e7ed1b9",
@@ -1743,9 +1744,12 @@
   "59bf3bd4-8c45-40a6-aa8a-a3f35f68f03e",
   "59c0b78a-ac55-45b6-89c3-9280485638c9",
   "5b730cc7-2bba-4012-bc99-a3ac277df160",
+  "5d179d5a-e87e-4d52-bd0e-5f74626d831b",
   "5e5c7328-c6cb-48d6-a7eb-ab6b7d10e71e",
+  "5f07a631-c053-462e-821b-28d4e32cff19",
   "63fddd1a-c452-4da5-9b87-95645caef851",
   "692885b5-525d-4ad7-9f87-3d8b6c076d8e",
+  "6c549788-bff6-47a2-a96e-28f963614126",
   "6ecda6ac-5fa2-4203-9fae-2e9dc88f2917",
   "708aeb70-5652-4052-921d-c64c13a68115",
   "73cd373a-0273-4139-a651-28d48dad7f38",
@@ -1754,11 +1758,13 @@
   "8453d5b9-2bd3-4783-9eed-e7729141c5b4",
   "845bec03-9189-4d12-bda8-72eaa79ccf66",
   "84e01f29-1e6e-401f-a228-047a9a2b17b4",
+  "86af5cb4-0d93-4323-a126-5c5aa791494b",
   "8e9d5a6b-e6b5-4870-a02f-131c565ed17f",
   "93add1c8-6a2e-432a-b7f3-13d9ced35b0c",
   "98d37eb1-76df-4e88-9378-57003dc286e0",
   "9c08b53f-10be-4318-afdb-0c41efd540c3",
   "9ea1923a-e2c1-4677-baa0-aec81fb097cf",
+  "a4a999b6-e492-4d8f-b494-72ec779e6ced",
   "a607f966-12da-429c-8e5b-610b62feb6b2",
   "ac207d19-8b12-4374-a184-b17eb68a313c",
   "b00dc36a-7542-4ed7-9ac2-2dc6c16f6062",
@@ -1766,23 +1772,28 @@
   "b8b08301-1452-4510-8224-807b1662c395",
   "bb751976-45ab-49b8-971e-c9699f617fe0",
   "bdfa17c5-1662-4d9b-9a93-ca7027c5b44d",
+  "beff5530-c579-4cdf-88ba-f03859576a71",
   "c14c5f5b-8218-4747-a9ec-f68f78333e10",
   "c6dd6aaa-6d80-4b84-ac45-10c45a84b0f7",
   "c7b3fc80-fe7e-4319-983b-ad48002badc0",
   "d0841135-eb7c-4cc6-95a4-f06ed72d63cb",
   "d0b668b0-f13c-47dd-b67d-79bce14fa58c",
+  "d411f61d-365d-4500-ad1d-9020c48a1afd",
   "d4e714b7-1d88-4642-96c1-a2b08e2798bf",
   "da0ea95b-b60d-4859-869c-5b545d93290c",
   "dc23172e-a1eb-4e35-a73b-abdecf1357c0",
   "deb1864c-4cd4-4991-b702-b8e76b53b1de",
+  "e4153e86-a86a-436d-9b18-aa0cd60d30c9",
   "e4d56ef7-25a4-4e1b-a30f-a5148fec1f93",
   "e4f31787-a1b2-4148-9b51-176ab101dc20",
+  "e7e258a3-6c99-4f63-a969-9f456ca3c96f",
   "e8fa5ee2-cb14-41cc-bfaf-ac160865e84d",
   "eb0342b6-979f-46d5-ab83-949ff53dc67b",
+  "f1eea008-b2b2-483f-9c02-6765abf22f25",
   "f6f61fbd-9279-4ed9-9277-fd646400f2fb",
   "f9b892c3-9ebc-4423-bde5-30b8890ba735"
  ],
- "ultima_rodada": "2026-10-03T16:10:51.206768-03:00",
+ "ultima_rodada": "2026-10-03T21:31:51.086847-03:00",
  "pendentes": [
   {
    "proto": "BR052652026",
@@ -3168,6 +3179,94 @@
    "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026.",
    "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791053714016_Relatorio_Acre_Outubro_2026__1_.pdf",
    "created_at": "2026-10-03T18:55:19.900014+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "f1eea008-b2b2-483f-9c02-6765abf22f25",
+   "titulo": "Pesquisa em São Paulo - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791058070810_Relatorio_Sao_Paulo_10.2026.pdf",
+   "created_at": "2026-10-03T20:07:55.825818+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "beff5530-c579-4cdf-88ba-f03859576a71",
+   "titulo": "Pesquisa no Rio Grande do Sul - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791057984372_Relatorio_Rio_Grande_do_Sul_10.2026.pdf",
+   "created_at": "2026-10-03T20:06:31.307192+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "1affb5d4-86d5-4ef0-afe5-86b0ca5c08e3",
+   "titulo": "Pesquisa em Rondônia - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791057881761_Relatorio_Rondonia_10.2026.pdf",
+   "created_at": "2026-10-03T20:04:47.05791+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "5f07a631-c053-462e-821b-28d4e32cff19",
+   "titulo": "Pesquisa em Rooraima - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791057775345_Relatorio_Roraima_10.2026.pdf",
+   "created_at": "2026-10-03T20:03:12.102488+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "86af5cb4-0d93-4323-a126-5c5aa791494b",
+   "titulo": "Pesquisa no Rio Grande do Norte - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791057710444_Relatorio_Rio_Grande_do_Norte_10.2026__1_.pdf",
+   "created_at": "2026-10-03T20:01:55.471742+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "a4a999b6-e492-4d8f-b494-72ec779e6ced",
+   "titulo": "Pesquisa em Santa Catarina - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791055445342_Relatorio_Santa_Catarina_10.2026.pdf",
+   "created_at": "2026-10-03T19:24:10.20749+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "e7e258a3-6c99-4f63-a969-9f456ca3c96f",
+   "titulo": "Pesquisa em Pernambuco - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791055377973_Relatorio_Pernambuco_10.2026.pdf",
+   "created_at": "2026-10-03T19:23:06.189875+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "d411f61d-365d-4500-ad1d-9020c48a1afd",
+   "titulo": "Pesquisa no Ceará - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791055267169_Relatorio_Ceara_10.2026.pdf",
+   "created_at": "2026-10-03T19:21:11.113492+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "5d179d5a-e87e-4d52-bd0e-5f74626d831b",
+   "titulo": "Pesquisa na Bahia - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791055209554_Relatorio_Bahia_10.2026.pdf",
+   "created_at": "2026-10-03T19:20:13.337547+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "e4153e86-a86a-436d-9b18-aa0cd60d30c9",
+   "titulo": "Pesquisa no Tocantins - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791054896949_Relatorio_TO_Outubro_2026.pdf",
+   "created_at": "2026-10-03T19:15:02.028045+00:00",
+   "visto": "2026-10-03"
+  },
+  {
+   "id": "6c549788-bff6-47a2-a96e-28f963614126",
+   "titulo": "Pesquisa no Mato Grosso - Governador, Senador e Presidente",
+   "descricao": "Pesquisa de intenção de voto para Governador, Senador e Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791054780623_Relatorio_MT_Outubro_2026__1_.pdf",
+   "created_at": "2026-10-03T19:13:06.069195+00:00",
    "visto": "2026-10-03"
   }
  ]
