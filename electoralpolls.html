@@ -696,6 +696,7 @@
   var RES_UFS=['AC','AL','AM','AP','BA','CE','DF','ES','GO','MA','MG','MS','MT','PA','PB','PE','PI','PR','RJ','RN','RO','RR','RS','SC','SE','SP','TO'];
   (function(){ try{ var q=(location.search||'').match(/simula=(2022)/); if(q) RES26.simula={ano:'2022',cod:'544'}; }catch(_){ } })();
   function resNum(v){ if(typeof v==='number') return v; return parseFloat(String(v==null?'':v).replace(/\./g,'').replace(',','.'))||0; }
+  function fmt2(x){ return (Math.round(x*100)/100).toFixed(2).replace(".",","); }
   function fmtV(n){ try{ return Number(n).toLocaleString('pt-BR'); }catch(_){ return String(n); } }
   // 04/10/2026: em 2026 o TSE NÃO publica mais dados-simplificados/*-r.json (404 o dia todo). O app
   // oficial lê dados/<uf>/<uf>-c0001-e006257-u.jws, um JWS (cabeçalho.payload.assinatura) cujo payload
@@ -765,29 +766,29 @@
     var o=resLF(j), L=o.L, F=o.F, lp=L?resNum(L.pvap):0, fp=F?resNum(F.pvap):0, resto=Math.max(0,100-lp-fp);
     var lider=lp===fp?null:(lp>fp?[(L?resNome(L):'Lula'),P.red,lp-fp]:[(F?resNome(F):'Flávio'),P.blue,fp-lp]);
     var h='<div style="display:flex; justify-content:space-between; align-items:baseline; font-size:'+(compacto?'12.5px':'13px')+'; margin-bottom:4px;">'+
-      '<span style="color:'+P.red+'; font-weight:700;">'+(L?resNome(L):'Lula')+' '+fmt(lp)+'%</span>'+
-      '<span style="color:'+P.blue+'; font-weight:700;">'+(F?resNome(F):'Flávio')+' '+fmt(fp)+'%</span></div>'+
+      '<span style="color:'+P.red+'; font-weight:700;">'+(L?resNome(L):'Lula')+' '+fmt2(lp)+'%</span>'+
+      '<span style="color:'+P.blue+'; font-weight:700;">'+(F?resNome(F):'Flávio')+' '+fmt2(fp)+'%</span></div>'+
       '<div style="position:relative;"><div style="display:flex; height:20px; border-radius:3px; overflow:hidden; border:1px solid '+P.bord+';">'+
         '<div style="width:'+lp+'%; background:'+P.red+';"></div><div style="width:'+resto+'%; background:'+P.bsoft+';"></div><div style="width:'+fp+'%; background:'+P.blue+';"></div></div>'+
         '<div style="position:absolute; left:50%; top:-3px; height:26px; width:2px; margin-left:-1px; background:'+P.txt+'; opacity:0.8;"></div></div>'+
       '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">Votos válidos. A linha marca os 50%: quem passa dela vence sem 2º turno. O cinza são os demais candidatos.'+
-        (lider?' <b style="color:'+lider[1]+';">'+lider[0]+' à frente por '+fmt(lider[2])+' pontos.</b>':'')+'</div>';
+        (lider?' <b style="color:'+lider[1]+';">'+lider[0]+' à frente por '+fmt2(lider[2])+' pontos.</b>':'')+'</div>';
     h+='<table style="width:100%; border-collapse:collapse; font-size:'+(compacto?'11.5px':'12px')+'; margin-top:8px;">'+
       '<tr style="color:'+P.mut+'; font-size:10px; text-transform:uppercase; letter-spacing:0.04em;"><td style="padding:2px 6px 3px 0;">Candidato</td><td style="text-align:right; padding-right:10px;">Votos</td><td style="text-align:right; padding-right:8px;">% válidos</td><td style="width:'+(compacto?'26':'34')+'%;"></td></tr>';
     o.cs.forEach(function(c){ var pv=resNum(c.pvap), cor=(c===L?P.red:(c===F?P.blue:P.txt2));
       h+='<tr style="border-top:1px solid '+P.bsoft+';"><td style="padding:3px 6px 3px 0; color:'+cor+'; font-weight:'+((c===L||c===F)?'700':'400')+'; white-space:nowrap;">'+resNome(c)+' <span style="color:'+P.mut+'; font-weight:400; font-size:10px;">'+(c.n||'')+'</span></td>'+
         '<td style="text-align:right; padding-right:10px; color:'+P.txt+'; white-space:nowrap;">'+fmtV(resNum(c.vap))+'</td>'+
-        '<td style="text-align:right; padding-right:8px; color:'+P.txt+'; font-weight:600;">'+fmt(pv)+'</td>'+
+        '<td style="text-align:right; padding-right:8px; color:'+P.txt+'; font-weight:600;">'+fmt2(pv)+'</td>'+
         '<td><div style="height:8px; width:'+Math.min(100,pv)+'%; background:'+cor+'; border-radius:2px; opacity:0.85;"></div></td></tr>'; });
     h+='</table>';
-    h+='<div style="font-size:10.5px; color:'+P.mut+'; margin-top:6px; line-height:1.5;">Válidos '+fmtV(resNum(j.vv))+' &middot; brancos '+fmtV(resNum(j.vb))+' ('+fmt(resNum(j.pvb))+'%) &middot; nulos '+fmtV(resNum(j.vn))+' &middot; abstenção '+fmt(resNum(j.pa))+'%</div>';
+    h+='<div style="font-size:10.5px; color:'+P.mut+'; margin-top:6px; line-height:1.5;">Válidos '+fmtV(resNum(j.vv))+' &middot; brancos '+fmtV(resNum(j.vb))+' ('+fmt2(resNum(j.pvb))+'%) &middot; nulos '+fmtV(resNum(j.vn))+' &middot; abstenção '+fmt2(resNum(j.pa))+'%</div>';
     return h; }
   function resBarra(){ var b=RES26.br; if(!b) return '';
     var pst=resNum(b.pst);
     return '<div style="padding:9px 14px 6px;">'+
       '<div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; font-size:11px; color:'+P.mut+'; margin-bottom:6px;">'+
         '<span><b style="color:'+P.goldtxt+';">AO VIVO</b> &middot; apuração oficial do TSE, '+(RES26.simula?'simulação com o 1º turno de '+RES26.ano:(b.t==='2'||b.t===2?'2º turno de 2026':'1º turno de 2026'))+'</span>'+
-        '<span><b style="color:'+P.txt+';">'+fmt(pst)+'%</b> das seções totalizadas &middot; '+(b.hg||'')+' de '+(b.dg||'')+' &middot; <span onclick="resPuxa()" style="cursor:pointer; text-decoration:underline;">atualizar</span></span></div>'+
+        '<span><b style="color:'+P.txt+';">'+fmt2(pst)+'%</b> das seções totalizadas &middot; '+(b.hg||'')+' de '+(b.dg||'')+' &middot; <span onclick="resPuxa()" style="cursor:pointer; text-decoration:underline;">atualizar</span></span></div>'+
       resTabela(b,false)+'</div>'+resSerieSVG(); }
   // EVOLUÇÃO DA APURAÇÃO (04/10/2026, a pedido do Rafael). O TSE só publica o retrato do momento, sem
   // histórico; a série vem de apuracao_serie_<cod>.json, gravada minuto a minuto por grava_apuracao.py
@@ -817,11 +818,11 @@
         var quem=dc>0?'Lula':'Flávio', xv=X(c.m).toFixed(1);
         vir+='<line x1="'+xv+'" x2="'+xv+'" y1="'+(T-12)+'" y2="'+(H-B)+'" stroke="'+P.txt2+'" stroke-dasharray="3 3"/>'+
           '<text x="'+(+xv+4)+'" y="'+(T-24)+'" font-size="10.5" font-weight="700" fill="'+P.txt+'">'+resHora(c.m)+' · virada '+quem+'</text>'+
-          '<text x="'+(+xv+4)+'" y="'+(T-12)+'" font-size="10" fill="'+P.txt2+'"><tspan fill="'+P.red+'">'+fmt(c.l)+'</tspan> x <tspan fill="'+P.blue+'">'+fmt(c.f)+'</tspan></text>'; } }
+          '<text x="'+(+xv+4)+'" y="'+(T-12)+'" font-size="10" fill="'+P.txt2+'"><tspan fill="'+P.red+'">'+fmt2(c.l)+'</tspan> x <tspan fill="'+P.blue+'">'+fmt2(c.f)+'</tspan></text>'; } }
     var z=pts[pts.length-1], yl=Y(z.l), yf=Y(z.f); if(Math.abs(yl-yf)<12){ var md=(yl+yf)/2; if(z.l>=z.f){ yl=md-6; yf=md+6; } else { yl=md+6; yf=md-6; } }
-    var fim='<text x="'+(W-R+6)+'" y="'+(yl+4)+'" font-size="11" font-weight="700" fill="'+P.red+'">Lula '+fmt(z.l)+'</text>'+
-      '<text x="'+(W-R+6)+'" y="'+(yf+4)+'" font-size="11" font-weight="700" fill="'+P.blue+'">Flávio '+fmt(z.f)+'</text>';
-    var eixo='<text x="'+L+'" y="'+(H-8)+'" font-size="10" fill="'+P.mut+'">'+resHora(x0)+'</text><text x="'+(W-R)+'" y="'+(H-8)+'" text-anchor="end" font-size="10" fill="'+P.mut+'">'+resHora(x1)+' ('+fmt(z.s)+'% das seções)</text>';
+    var fim='<text x="'+(W-R+6)+'" y="'+(yl+4)+'" font-size="11" font-weight="700" fill="'+P.red+'">Lula '+fmt2(z.l)+'</text>'+
+      '<text x="'+(W-R+6)+'" y="'+(yf+4)+'" font-size="11" font-weight="700" fill="'+P.blue+'">Flávio '+fmt2(z.f)+'</text>';
+    var eixo='<text x="'+L+'" y="'+(H-8)+'" font-size="10" fill="'+P.mut+'">'+resHora(x0)+'</text><text x="'+(W-R)+'" y="'+(H-8)+'" text-anchor="end" font-size="10" fill="'+P.mut+'">'+resHora(x1)+' ('+fmt2(z.s)+'% das seções)</text>';
     return '<div style="padding:4px 14px 10px;"><div style="font-size:12.5px; font-weight:600; color:'+P.txt+'; margin-bottom:2px;">Evolução da apuração</div>'+
       '<div style="font-size:11px; color:'+P.mut+'; margin-bottom:4px;">Votos válidos no país, em %, minuto a minuto.'+(nv?'':' Nenhuma virada até agora.')+'</div>'+
       '<div style="overflow-x:auto;"><svg viewBox="0 0 '+W+' '+H+'" style="width:100%; min-width:320px; height:auto; display:block;" role="img" aria-label="Evolução da apuração, Lula x Flávio">'+g+vir+linha('f',P.blue)+linha('l',P.red)+fim+eixo+'</svg></div>'+
@@ -855,7 +856,7 @@
   function resExtCard(){
     var j=RES26.uf.ZZ, o=j?resLF(j):null, pst=j?resNum(j.pst):0, tem=!!(o&&o.L&&o.F&&pst>0);
     var corpo = tem
-      ? '<span style="color:'+P.red+'; font-weight:700;">Lula '+fmt(resNum(o.L.pvap))+'%</span> x <span style="color:'+P.blue+'; font-weight:700;">Flávio '+fmt(resNum(o.F.pvap))+'%</span> <span style="color:'+P.mut+';">&middot; '+fmt(pst)+'% das seções</span>'
+      ? '<span style="color:'+P.red+'; font-weight:700;">Lula '+fmt2(resNum(o.L.pvap))+'%</span> x <span style="color:'+P.blue+'; font-weight:700;">Flávio '+fmt2(resNum(o.F.pvap))+'%</span> <span style="color:'+P.mut+';">&middot; '+fmt2(pst)+'% das seções</span>'
       : '<span style="color:'+P.mut+';">aguardando o TSE. A votação no exterior segue o horário de cada país, mas a apuração só é divulgada depois das 17h de Brasília.</span>';
     return '<div onclick="openPresState(\'ZZ\')" style="margin:4px 14px 8px; padding:8px 12px; border:1px solid '+P.bord+'; border-left:3px solid '+P.goldtxt+'; border-radius:6px; background:'+P.surf2+'; cursor:pointer; font-size:12.5px; line-height:1.5;">'+
       '<b style="color:'+P.ink+';">&#127758; Exterior</b> <span style="color:'+P.mut+'; font-size:11px;">(brasileiros votando em outros países &middot; toque para ver por país e cidade)</span><br>'+corpo+'</div>'; }
@@ -871,7 +872,7 @@
     var pa={}; cs.forEach(function(c){ var k=c.pais||'Outros países'; if(!pa[k]) pa[k]={l:0,f:0,t:0,n:0}; pa[k].l+=c.l; pa[k].f+=c.f; pa[k].t+=c.t; pa[k].n++; });
     function linha(nm,l,f,t,sub){ var pl=t?l/t*100:0, pf=t?f/t*100:0;
       return '<tr style="border-top:1px solid '+P.bsoft+';"><td style="padding:3px 6px 3px 0; color:'+P.txt+';">'+nm+(sub?' <span style="color:'+P.mut+'; font-size:10px;">'+sub+'</span>':'')+'</td>'+
-        '<td style="text-align:right; color:'+P.red+'; font-weight:600;">'+fmt(pl)+'</td><td style="text-align:right; color:'+P.blue+'; font-weight:600;">'+fmt(pf)+'</td>'+
+        '<td style="text-align:right; color:'+P.red+'; font-weight:600;">'+fmt2(pl)+'</td><td style="text-align:right; color:'+P.blue+'; font-weight:600;">'+fmt2(pf)+'</td>'+
         '<td style="text-align:right; color:'+P.mut+';">'+fmtV(t)+'</td></tr>'; }
     var cab='<tr style="color:'+P.mut+'; font-size:10px; text-transform:uppercase;"><td></td><td style="text-align:right;">Lula %</td><td style="text-align:right;">Flávio %</td><td style="text-align:right;">válidos</td></tr>';
     var ks=Object.keys(pa).sort(function(a,b){ return pa[b].t-pa[a].t; });
@@ -879,7 +880,7 @@
     ks.forEach(function(k){ var x=pa[k]; h+=linha('<b>'+k+'</b>',x.l,x.f,x.t,x.n+(x.n>1?' cidades':' cidade')); }); h+='</table>';
     cs.sort(function(a,b){ return b.t-a.t; });
     h+='<div style="margin-top:10px; font-size:11px; color:'+P.mut+';">Cidades ('+cs.length+')</div><table style="width:100%; border-collapse:collapse; font-size:11.5px;">'+cab;
-    cs.forEach(function(c){ h+=linha(c.nm,c.l,c.f,c.t,(c.pais||'')+(c.pst!=null?' · '+fmt(c.pst)+'% seções':'')); });
+    cs.forEach(function(c){ h+=linha(c.nm,c.l,c.f,c.t,(c.pais||'')+(c.pst!=null?' · '+fmt2(c.pst)+'% seções':'')); });
     return h+'</table><div style="font-size:10.5px; color:'+P.mut+'; margin-top:6px;">% sobre votos válidos de cada lugar. País deduzido pelo nome da cidade; o que não reconhecemos cai em "Outros países".'+bt+'</div>'; }
   function resExtPinta(){ var d=document.getElementById('zz-cid'); if(d) d.innerHTML=resExtCidHTML(); }
   // Leitor defensivo de um arquivo de resultado por cidade.
@@ -912,7 +913,7 @@
       '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">Votos válidos. A linha marca os 50%: quem passa dela vence sem 2º turno. A barra e o mapa se preenchem sozinhos quando o TSE publicar a primeira seção totalizada; as urnas fecham às 17h de Brasília.</div></div>'; }
   function resEstadoHTML(uf){ var j=RES26.uf[uf]; if(!j) return '<p style="font-size:12.5px; color:'+P.txt2+';">O TSE ainda não publicou o arquivo deste estado.</p>';
     var pst=resNum(j.pst);
-    var h=field('Apuração','<span style="color:'+P.txt+'; font-weight:600;">'+fmt(pst)+'% das seções totalizadas</span> <span style="color:'+P.txt2+';">&middot; '+(j.hg||'')+'</span>');
+    var h=field('Apuração','<span style="color:'+P.txt+'; font-weight:600;">'+fmt2(pst)+'% das seções totalizadas</span> <span style="color:'+P.txt2+';">&middot; '+(j.hg||'')+'</span>');
     if(pst<=0) return h+'<p style="font-size:12.5px; color:'+P.txt2+';">Nenhuma seção deste estado foi totalizada ainda.</p>';
     h+=resTabela(j,true);
     h+='<div style="font-size:11px; color:'+P.mut+'; margin:8px 0;">Números parciais: mudam até 100% das seções. Fonte primária: TSE, atualizado a cada minuto.</div>';
