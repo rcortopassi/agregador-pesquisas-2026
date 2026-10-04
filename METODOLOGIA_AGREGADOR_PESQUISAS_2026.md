@@ -6,6 +6,27 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 03/10, ~22H30, RODADA LOCAL — FILA DE 120 TRIADA: ATLASINTEL/BLOOMBERG NACIONAL (BR-00999/2026,
+  27/9-2/10, 4.945 entrevistas) ENTROU em outubro no `DI` e `T2R` (Lula 46,7 x 43,8 totais, 47 x
+  44,1 válidos; 2º turno Lula 47,6 x Flávio 47,4, válidos 50,1 x 49,9). FUTURA/100 CIDADES NACIONAL
+  (BR-02431/2026, 29/9-3/10, abrangência nacional confirmada pelo `DS_DADO_MUNICIPIO`) NÃO
+  localizada até 22h30: registrou e não publicou até agora, continua na fila. TODA A FILA DO
+  VERITÁ (34 itens, `verita_pendentes`) FOI RESOLVIDA SEM INSERIR NADA: os relatórios estaduais de
+  outubro (título genérico "Governador, Senador e Presidente") só têm Pergunta 04 (Governador) e
+  05/06 (Senador) — conferidos SP, BA e PI (18, 14 e 15 páginas) e nenhum tinha seção de
+  Presidente; fora de escopo de qualquer forma desde 26/9. O PDF "Relatorio_Nacional_Verita_
+  Imprensa_27_UFs" é a MESMA ARMADILHA já registrada abaixo (30 Anos): o próprio texto diz
+  "votos válidos da consolidação das 27 UFs", não é rodada nacional própria — descartado, não
+  inserir se reaparecer. DESEMPATE DE 6 "NACIONAL?" QUE ERAM ESTADUAIS DISFARÇADOS (SG_UF=BR mas
+  `DS_DADO_MUNICIPIO` desmente): BR-06683 é RN (Data Census Potiguar), BR-06243 "ATLASINTEL" é RN
+  (não é a AtlasIntel nacional de verdade, é outro registro com o mesmo nome de fantasia), BR-02106
+  é RO (Instituto Amazônia), BR-09999 "BADRA" é SP, BR-07864 "DATA RD" é GO, BR-08164 "DOXA" é PA,
+  BR-00886 "Instituto França" é BA. Ficam candidatos a `PRES26` dos respectivos estados, não ao
+  `DI`. NACIONAIS DE VERDADE AINDA NA FILA, SEM NÚMERO PUBLICADO: GERP BR-08168 (1-3/10, já sinalizada
+  sem sair) e Instituto França BR-02928 (abrangência Brasil confirmada, não localizada). A fila de
+  ESTADUAL segue com ~110 itens, concentrada em AL (28, é o mesmo lote AtlasIntel de 27/9-2/10 com
+  dezenas de protocolos mal rotulados já descrito abaixo, ainda sem desembaraçar por estado) e RN
+  (13); não foi possível processar essa parte nesta rodada por volume. Resumo completo no commit.
 - 03/10, ~21H15: DATAFOLHA FINAL (3/10, 4.006: Lula 42 x 40, 2º 47 x 46) SUBSTITUI a de 28/9-1º/10 e
   QUAEST FINAL (2-3/10, 3.702: Lula 40 x 38, 2º Flávio 44 x 42) ENTRA em outubro, no `DI` e no `T2R`.
   Só resumo de imprensa: menores em '—' e Br/N/Ind derivado da razão total/válidos (6 e 14). Faltam
