@@ -324,7 +324,12 @@ aberta. Código no painel: bloco "APURAÇÃO AO VIVO DO TSE", funções `res*`, 
   de 25/10, lidos do `comum/config/ele-c.json` do TSE (Eleição Ordinária Federal 2026, cargo 1 =
   Presidente; `cdt2` = 6258). A descoberta automática (testar qual eleição tem LULA no cargo 1) só roda se
   `RES26_COD` voltar a null. Se no dia o bloco ficar em "aguardando as primeiras seções" depois das 17h,
-  confira à mão se `oficial/ele2026/6257/dados-simplificados/br/br-c0001-e006257-r.json` responde.
+  confira à mão se `oficial/ele2026/6257/dados/br/br-c0001-e006257-u.jws` responde.
+- FORMATO MUDOU EM 2026 (descoberto às 17h30 de 4/10, com DF já em 17%): o TSE NÃO publica mais
+  `dados-simplificados/*-r.json` (404 o tempo todo). O app oficial lê `dados/<uf>/<uf>-c0001-e<cod>-u.jws`
+  (e `dados/zz/zz<cidade>-...-u.jws` no exterior): um JWS cujo payload base64url é o JSON, com candidatos
+  em `carg[cd=1].agr[].par[].cand[]` e `s.pst`, `v.*`, `e.pa`. `resLe()`/`resJws()`/`resNorm()` no painel
+  decodificam e achatam para o formato antigo. O TSE responde CORS para o domínio do PythonAnywhere.
 - O TESTE `?simula=2022` NÃO FUNCIONA MAIS: em 02/10/2026 o TSE já tinha removido os arquivos de 2022
   (404 em todas as variantes) e tirado 2022 do `ele-c.json`. O último teste válido foi em 10/09/2026
   (27 UFs, Lula 14 x Bolsonaro 13, barra 48,4 x 43,2, igual à urna). Com a simulação o painel hoje cai
