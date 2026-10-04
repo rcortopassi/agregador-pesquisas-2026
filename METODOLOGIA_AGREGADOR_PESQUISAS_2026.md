@@ -6,6 +6,10 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 03/10, ~21H15: DATAFOLHA FINAL (3/10, 4.006: Lula 42 x 40, 2º 47 x 46) SUBSTITUI a de 28/9-1º/10 e
+  QUAEST FINAL (2-3/10, 3.702: Lula 40 x 38, 2º Flávio 44 x 42) ENTRA em outubro, no `DI` e no `T2R`.
+  Só resumo de imprensa: menores em '—' e Br/N/Ind derivado da razão total/válidos (6 e 14). Faltam
+  AtlasIntel nacional (BR-00999) e Futura (BR-02431), não localizadas. Rodada local: completar.
 - 03/10, ~21H: O MAPA 2026 JÁ MOSTRA O LAYOUT DA APURAÇÃO, sem esperar a primeira seção (pedido do
   Rafael). `resModo()` = `RES26.ativo || resDia()` substitui `RES26.ativo` nas decisões de tela
   (cor dos estados, botão "2026 (apuração)", texto, painel do estado, esconder `natBar`/`presFontes`).
