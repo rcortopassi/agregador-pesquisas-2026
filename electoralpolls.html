@@ -742,9 +742,10 @@
     var go=RES26.cod?Promise.resolve(RES26.cod):resDescobre();
     go.then(function(cd){
       if(!cd){ RES26.erro='a eleição de 2026 ainda não apareceu na configuração do TSE; tento de novo em um minuto.'; RES26.busy=false; resRender(); return; }
+      var serieP=resSeriePuxa();
       var ps=[resLe(resUrl('br'))].concat(RES_UFS.map(function(u){ return resLe(resUrl(u.toLowerCase())); }))
         .concat([resLe(resUrl('zz'))]);
-      return Promise.all(ps).then(function(arr){ RES26.br=arr[0]; RES_UFS.forEach(function(u,i){ if(arr[i+1]) RES26.uf[u]=arr[i+1]; }); if(arr[RES_UFS.length+1]) RES26.uf.ZZ=arr[RES_UFS.length+1];
+      return Promise.all(ps.concat([serieP])).then(function(arr){ RES26.br=arr[0]; RES_UFS.forEach(function(u,i){ if(arr[i+1]) RES26.uf[u]=arr[i+1]; }); if(arr[RES_UFS.length+1]) RES26.uf.ZZ=arr[RES_UFS.length+1];
         RES26.ativo=!!(RES26.br&&resNum(RES26.br.pst)>0); RES26.erro=''; RES26.busy=false; resRender(); });
     }).catch(function(e){ RES26.erro='falha ao ler o TSE ('+(e&&e.message||e)+'); tento de novo em um minuto.'; RES26.busy=false; resRender(); });
   };
@@ -787,7 +788,44 @@
       '<div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; font-size:11px; color:'+P.mut+'; margin-bottom:6px;">'+
         '<span><b style="color:'+P.goldtxt+';">AO VIVO</b> &middot; apuração oficial do TSE, '+(RES26.simula?'simulação com o 1º turno de '+RES26.ano:(b.t==='2'||b.t===2?'2º turno de 2026':'1º turno de 2026'))+'</span>'+
         '<span><b style="color:'+P.txt+';">'+fmt(pst)+'%</b> das seções totalizadas &middot; '+(b.hg||'')+' de '+(b.dg||'')+' &middot; <span onclick="resPuxa()" style="cursor:pointer; text-decoration:underline;">atualizar</span></span></div>'+
-      resTabela(b,false)+'</div>'; }
+      resTabela(b,false)+'</div>'+resSerieSVG(); }
+  // EVOLUÇÃO DA APURAÇÃO (04/10/2026, a pedido do Rafael). O TSE só publica o retrato do momento, sem
+  // histórico; a série vem de apuracao_serie_<cod>.json, gravada minuto a minuto por grava_apuracao.py
+  // (no Mac do Rafael) e enviada ao PythonAnywhere a cada 5 minutos. O ponto ao vivo de RES26.br fecha
+  // a linha. Viradas = troca de quem lidera nos votos válidos.
+  var RESSERIE=[];
+  function resSeriePuxa(){ if(RES26.simula||!RES26.cod) return Promise.resolve();
+    return fetch('apuracao_serie_'+RES26.cod+'.json?_='+Date.now(),{cache:'no-store'}).then(function(r){ return r.ok?r.json():null; })
+      .then(function(a){ if(Array.isArray(a)) RESSERIE=a; }).catch(function(){ }); }
+  function resMin(hg){ var p=String(hg||'').split(':'); return (+p[0]||0)*60+(+p[1]||0)+(+p[2]||0)/60; }
+  function resHora(m){ var h=Math.floor(m/60), mi=Math.floor(m%60); return h+'h'+(mi<10?'0':'')+mi; }
+  function resSerieSVG(){
+    var pts=RESSERIE.filter(function(p){ return p&&p.lula!=null&&p.flavio!=null; }).map(function(p){ return {m:resMin(p.hg),l:+p.lula,f:+p.flavio,s:+p.pst}; });
+    var b=RES26.br; if(b){ var o=resLF(b); if(o.L&&o.F){ var mb=resMin(b.hg); if(!pts.length||mb>pts[pts.length-1].m) pts.push({m:mb,l:resNum(o.L.pvap),f:resNum(o.F.pvap),s:resNum(b.pst)}); } }
+    if(pts.length<2) return '';
+    var W=640,H=230,L=34,R=74,T=40,B=26, x0=pts[0].m, x1=pts[pts.length-1].m; if(x1-x0<1) x1=x0+1;
+    var lo=50,hi=50; pts.forEach(function(p){ lo=Math.min(lo,p.l,p.f); hi=Math.max(hi,p.l,p.f); });
+    lo=Math.floor(lo-2); hi=Math.ceil(hi+2);
+    function X(m){ return L+(m-x0)/(x1-x0)*(W-L-R); } function Y(v){ return T+(hi-v)/(hi-lo)*(H-T-B); }
+    function linha(k,cor){ return '<polyline fill="none" stroke="'+cor+'" stroke-width="2.4" stroke-linejoin="round" points="'+pts.map(function(p){ return X(p.m).toFixed(1)+','+Y(p[k]).toFixed(1); }).join(' ')+'"/>'; }
+    var g='', passo=(hi-lo)>12?5:2;
+    for(var v=Math.ceil(lo/passo)*passo; v<=hi; v+=passo){ g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="'+(v===50?P.mut:P.bsoft)+'" stroke-width="1"'+(v===50?' stroke-dasharray="4 3"':'')+'/>'+
+      '<text x="'+(L-5)+'" y="'+(Y(v)+3.5)+'" text-anchor="end" font-size="10" fill="'+P.mut+'">'+v+'</text>'; }
+    var vir='', nv=0, ult=null;
+    for(var i=1;i<pts.length;i++){ var a=pts[i-1], c=pts[i], da=a.l-a.f, dc=c.l-c.f;
+      if(da!==0&&dc!==0&&(da>0)!==(dc>0)){ if(ult!==null&&X(c.m)-ult<70) continue; ult=X(c.m); nv++;
+        var quem=dc>0?'Lula':'Flávio', xv=X(c.m).toFixed(1);
+        vir+='<line x1="'+xv+'" x2="'+xv+'" y1="'+(T-12)+'" y2="'+(H-B)+'" stroke="'+P.txt2+'" stroke-dasharray="3 3"/>'+
+          '<text x="'+(+xv+4)+'" y="'+(T-24)+'" font-size="10.5" font-weight="700" fill="'+P.txt+'">'+resHora(c.m)+' · virada '+quem+'</text>'+
+          '<text x="'+(+xv+4)+'" y="'+(T-12)+'" font-size="10" fill="'+P.txt2+'"><tspan fill="'+P.red+'">'+fmt(c.l)+'</tspan> x <tspan fill="'+P.blue+'">'+fmt(c.f)+'</tspan></text>'; } }
+    var z=pts[pts.length-1], yl=Y(z.l), yf=Y(z.f); if(Math.abs(yl-yf)<12){ var md=(yl+yf)/2; if(z.l>=z.f){ yl=md-6; yf=md+6; } else { yl=md+6; yf=md-6; } }
+    var fim='<text x="'+(W-R+6)+'" y="'+(yl+4)+'" font-size="11" font-weight="700" fill="'+P.red+'">Lula '+fmt(z.l)+'</text>'+
+      '<text x="'+(W-R+6)+'" y="'+(yf+4)+'" font-size="11" font-weight="700" fill="'+P.blue+'">Flávio '+fmt(z.f)+'</text>';
+    var eixo='<text x="'+L+'" y="'+(H-8)+'" font-size="10" fill="'+P.mut+'">'+resHora(x0)+'</text><text x="'+(W-R)+'" y="'+(H-8)+'" text-anchor="end" font-size="10" fill="'+P.mut+'">'+resHora(x1)+' ('+fmt(z.s)+'% das seções)</text>';
+    return '<div style="padding:4px 14px 10px;"><div style="font-size:12.5px; font-weight:600; color:'+P.txt+'; margin-bottom:2px;">Evolução da apuração</div>'+
+      '<div style="font-size:11px; color:'+P.mut+'; margin-bottom:4px;">Votos válidos no país, em %, minuto a minuto.'+(nv?'':' Nenhuma virada até agora.')+'</div>'+
+      '<div style="overflow-x:auto;"><svg viewBox="0 0 '+W+' '+H+'" style="width:100%; min-width:320px; height:auto; display:block;" role="img" aria-label="Evolução da apuração, Lula x Flávio">'+g+vir+linha('f',P.blue)+linha('l',P.red)+fim+eixo+'</svg></div>'+
+      '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:3px; line-height:1.45;">O TSE não guarda o histórico da apuração: a série é gravada por este painel desde '+resHora(x0)+', e o que veio antes não aparece. Fonte: TSE.</div></div>'; }
   function resBloco(){
     if(RES26.ativo) return resBarra();
     if(!resDia()) return '<div style="padding:6px 14px 2px; font-size:11px; color:'+P.mut+';">No dia 4 de outubro, a partir da abertura das urnas, este mapa passa a mostrar a apuração oficial do TSE, atualizada a cada minuto, no lugar das pesquisas.</div>';
