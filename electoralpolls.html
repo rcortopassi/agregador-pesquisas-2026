@@ -697,8 +697,24 @@
   (function(){ try{ var q=(location.search||'').match(/simula=(2022)/); if(q) RES26.simula={ano:'2022',cod:'544'}; }catch(_){ } })();
   function resNum(v){ if(typeof v==='number') return v; return parseFloat(String(v==null?'':v).replace(/\./g,'').replace(',','.'))||0; }
   function fmtV(n){ try{ return Number(n).toLocaleString('pt-BR'); }catch(_){ return String(n); } }
+  // 04/10/2026: em 2026 o TSE NÃO publica mais dados-simplificados/*-r.json (404 o dia todo). O app
+  // oficial lê dados/<uf>/<uf>-c0001-e006257-u.jws, um JWS (cabeçalho.payload.assinatura) cujo payload
+  // em base64url é o JSON. resLe() decodifica e achata para o formato de 2022 que o resto do código usa.
   function resUrl(path){ var c=('000000'+RES26.cod).slice(-6);
-    return 'https://resultados.tse.jus.br/oficial/ele'+RES26.ano+'/'+RES26.cod+'/dados-simplificados/'+path+'/'+path+'-c0001-e'+c+'-r.json?_='+Date.now(); }
+    if(RES26.simula) return 'https://resultados.tse.jus.br/oficial/ele'+RES26.ano+'/'+RES26.cod+'/dados-simplificados/'+path+'/'+path+'-c0001-e'+c+'-r.json?_='+Date.now();
+    return 'https://resultados.tse.jus.br/oficial/ele'+RES26.ano+'/'+RES26.cod+'/dados/'+path+'/'+path+'-c0001-e'+c+'-u.jws?nocache='+Date.now(); }
+  function resJws(txt){ var p=String(txt).trim().split('.'); if(p.length<2) return JSON.parse(txt);
+    var b=p[1].replace(/-/g,'+').replace(/_/g,'/'); while(b.length%4) b+='=';
+    var bin=atob(b), u=new Uint8Array(bin.length); for(var i=0;i<bin.length;i++) u[i]=bin.charCodeAt(i);
+    return JSON.parse(new TextDecoder('utf-8').decode(u)); }
+  function resNorm(j){ if(!j||j.cand) return j;
+    var cand=[]; (j.carg||[]).forEach(function(cg){ if(String(cg.cd)!=='1') return;
+      (cg.agr||[]).forEach(function(a){ (a.par||[]).forEach(function(pa){ (pa.cand||[]).forEach(function(c){
+        cand.push({n:c.n, nm:c.nmu||c.nm, nmc:c.nm, vap:c.vap, pvap:c.pvap, e:c.e, st:c.st}); }); }); }); });
+    var s=j.s||{}, v=j.v||{}, e=j.e||{};
+    return {t:j.t, dg:j.dg, hg:j.hg, pst:s.pst, cand:cand, vv:v.vv, vb:v.vb, pvb:v.pvb, vn:v.vn, pa:e.pa}; }
+  function resLe(url){ return fetch(url).then(function(r){ return r.ok?r.text():null; })
+    .then(function(t){ return t?resNorm(resJws(t)):null; }).catch(function(){ return null; }); }
   // MODO AO VIVO LIGADO NA NOITE DE 03/10/2026, a pedido do Rafael, quando a votação no exterior
   // começou (Nova Zelândia). Era 4/10 8h. Até o TSE soltar a primeira seção totalizada (17h de 4/10)
   // o mapa segue nas pesquisas e só mostra "aguardando"; RES26.ativo é que troca o conteúdo.
@@ -716,7 +732,7 @@
     return fetch('https://resultados.tse.jus.br/oficial/comum/config/ele-c.json?_='+Date.now()).then(function(r){ return r.json(); }).then(function(j){
       var cands=[]; (j.pl||[]).forEach(function(pl){ if(pl.dt===alvo) (pl.e||[]).forEach(function(e){ cands.push(String(e.cd)); }); });
       return cands.reduce(function(prev,cd){ return prev.then(function(ok){ if(ok) return ok; RES26.cod=cd;
-        return fetch(resUrl('br')).then(function(r){ return r.ok?r.json():null; })
+        return resLe(resUrl('br'))
           .then(function(b){ return (b&&(b.cand||[]).some(function(c){ return /LULA/.test(c.nm||''); }))?cd:null; })
           .catch(function(){ return null; }); }); }, Promise.resolve(null));
     }).then(function(cd){ RES26.cod=cd||null; if(cd){ try{ localStorage.setItem('res26cod_'+alvo,cd); }catch(_){ } } return cd; })
@@ -726,9 +742,8 @@
     var go=RES26.cod?Promise.resolve(RES26.cod):resDescobre();
     go.then(function(cd){
       if(!cd){ RES26.erro='a eleição de 2026 ainda não apareceu na configuração do TSE; tento de novo em um minuto.'; RES26.busy=false; resRender(); return; }
-      var ps=[fetch(resUrl('br')).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; })].concat(RES_UFS.map(function(u){
-        return fetch(resUrl(u.toLowerCase())).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }); }))
-        .concat([fetch(resUrl('zz')).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; })]);
+      var ps=[resLe(resUrl('br'))].concat(RES_UFS.map(function(u){ return resLe(resUrl(u.toLowerCase())); }))
+        .concat([resLe(resUrl('zz'))]);
       return Promise.all(ps).then(function(arr){ RES26.br=arr[0]; RES_UFS.forEach(function(u,i){ if(arr[i+1]) RES26.uf[u]=arr[i+1]; }); if(arr[RES_UFS.length+1]) RES26.uf.ZZ=arr[RES_UFS.length+1];
         RES26.ativo=!!(RES26.br&&resNum(RES26.br.pst)>0); RES26.erro=''; RES26.busy=false; resRender(); });
     }).catch(function(e){ RES26.erro='falha ao ler o TSE ('+(e&&e.message||e)+'); tento de novo em um minuto.'; RES26.busy=false; resRender(); });
@@ -844,7 +859,7 @@
       var mu=[]; ((cfg&&cfg.abr)||[]).forEach(function(a){ if(semAc(a.cd)==='ZZ') mu=a.mu||[]; });
       if(!mu.length) throw new Error('a lista de cidades do exterior não veio na configuração do TSE');
       return Promise.all(mu.map(function(m){ var cd=String(m.cd);
-        return fetch(base+'dados/zz/zz'+cd+'-c0001-e'+c6+'-v.json?_='+Date.now()).then(function(r){ return r.ok?r.json():null; })
+        return resLe(base+'dados/zz/zz'+cd+'-c0001-e'+c6+'-u.jws?nocache='+Date.now())
           .then(function(j){ var x=j?resExtLe(j):{l:0,f:0,t:0,pst:null}; var nm=String(m.nm||cd);
             x.nm=nm.toLowerCase().replace(/(^|\s|-)(\S)/g,function(a,b,c){ return b+c.toUpperCase(); }); x.pais=EXTPAIS[semAc(nm)]||''; return x; })
           .catch(function(){ return null; }); }));
