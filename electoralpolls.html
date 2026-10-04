@@ -209,7 +209,7 @@
   var PM=['36,5%','63,0%'];
   var KAL=['37,0%','65,0%'];
   var MODEL={jan:['63%','37%'],fev:['50%','50%'],mar:['25%','75%'],abr:['29%','71%'],mai:['50%','50%'],jun:['48%','52%']};
-  var UFN={SP:'São Paulo',RJ:'Rio de Janeiro',MG:'Minas Gerais',ES:'Espírito Santo',PR:'Paraná',SC:'Santa Catarina',RS:'Rio Grande do Sul',BA:'Bahia',PE:'Pernambuco',CE:'Ceará',MA:'Maranhão',PB:'Paraíba',RN:'Rio Grande do Norte',AL:'Alagoas',SE:'Sergipe',PI:'Piauí',AM:'Amazonas',PA:'Pará',AC:'Acre',RO:'Rondônia',RR:'Roraima',AP:'Amapá',TO:'Tocantins',GO:'Goiás',MT:'Mato Grosso',MS:'Mato Grosso do Sul',DF:'Distrito Federal'};
+  var UFN={ZZ:'Exterior',SP:'São Paulo',RJ:'Rio de Janeiro',MG:'Minas Gerais',ES:'Espírito Santo',PR:'Paraná',SC:'Santa Catarina',RS:'Rio Grande do Sul',BA:'Bahia',PE:'Pernambuco',CE:'Ceará',MA:'Maranhão',PB:'Paraíba',RN:'Rio Grande do Norte',AL:'Alagoas',SE:'Sergipe',PI:'Piauí',AM:'Amazonas',PA:'Pará',AC:'Acre',RO:'Rondônia',RR:'Roraima',AP:'Amapá',TO:'Tocantins',GO:'Goiás',MT:'Mato Grosso',MS:'Mato Grosso do Sul',DF:'Distrito Federal'};
   var DG={
   'SP':{i:'Datafolha',d:'22-24 set',c:[['Tarcísio',50],['Haddad',30],['Policial Edjane',2],['Carlos Machado',2],['Vivian Mendes',2],['Vera Lúcia',2],['Isadora Dias',1]],t2:'Tarcísio 55 x Haddad 36 no 2º turno. Assume o resumo no lugar da Quaest de 19-22/9 (Tarcísio 44 x Haddad 27) por ter o fim de campo mais recente, 24/9. 22 a 24/9, SP-03730/2026, 1.610 entrevistas presenciais, margem de 2, Folha e TV Globo. No 2º turno Tarcísio 55 x Haddad 36. Branco e nulo 8, indecisos 3. Contra a própria casa de 8 a 11/9 (49 x 29) Tarcísio sobe 1 e Haddad 1. No 1º turno Tarcísio abre 20 pontos. Fonte: g1, 24/9'},
   'RJ':{i:'Datafolha',d:'22-24 set',c:[['Eduardo Paes',43],['Douglas Ruas',30],['Garotinho',8],['William Siri',2],['André Marinho',2],['Cyro Garcia',2],['Coronel Busnello',2],['Juliete',1],['Luan Monteiro',0]],t2:'Eduardo Paes 54 x Douglas Ruas 38 no 2º turno. Assume o resumo no lugar da Prefab Future/Diário do Rio de 19-22/9 (Eduardo Paes 35 x Douglas Ruas 24,6) por ter o fim de campo mais recente, 24/9. 22 a 24/9, RJ-02205/2026, 1.204 entrevistas presenciais, margem de 3, Folha e TV Globo. Cenário com Garotinho. Sem ele: Paes 46 x Ruas 31. No 2º turno Paes 54 x Ruas 38. Indecisos 4, branco, nulo e não vai votar 6. Na casa de 8 a 11/9: Paes 43, Ruas 25, Garotinho 10. No 1º turno Eduardo Paes abre 13 pontos. Fonte: g1, 24/9'},
@@ -727,8 +727,9 @@
     go.then(function(cd){
       if(!cd){ RES26.erro='a eleição de 2026 ainda não apareceu na configuração do TSE; tento de novo em um minuto.'; RES26.busy=false; resRender(); return; }
       var ps=[fetch(resUrl('br')).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; })].concat(RES_UFS.map(function(u){
-        return fetch(resUrl(u.toLowerCase())).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }); }));
-      return Promise.all(ps).then(function(arr){ RES26.br=arr[0]; RES_UFS.forEach(function(u,i){ if(arr[i+1]) RES26.uf[u]=arr[i+1]; });
+        return fetch(resUrl(u.toLowerCase())).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }); }))
+        .concat([fetch(resUrl('zz')).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; })]);
+      return Promise.all(ps).then(function(arr){ RES26.br=arr[0]; RES_UFS.forEach(function(u,i){ if(arr[i+1]) RES26.uf[u]=arr[i+1]; }); if(arr[RES_UFS.length+1]) RES26.uf.ZZ=arr[RES_UFS.length+1];
         RES26.ativo=!!(RES26.br&&resNum(RES26.br.pst)>0); RES26.erro=''; RES26.busy=false; resRender(); });
     }).catch(function(e){ RES26.erro='falha ao ler o TSE ('+(e&&e.message||e)+'); tento de novo em um minuto.'; RES26.busy=false; resRender(); });
   };
@@ -778,6 +779,77 @@
     return '<div style="padding:8px 14px 4px; font-size:12px; color:'+P.txt2+';"><b style="color:'+P.goldtxt+';">Apuração ao vivo</b> &middot; '+
       (RES26.erro?RES26.erro:(RES26.cod?'ligado ao TSE (eleição '+RES26.cod+'), aguardando as primeiras seções totalizadas, o que costuma começar às 17h.':'procurando a eleição na configuração do TSE...'))+
       ' <span onclick="resPuxa()" style="cursor:pointer; text-decoration:underline; color:'+P.mut+';">atualizar agora</span></div>'+resVazia(); }
+  // ===================== EXTERIOR NA APURAÇÃO (03/10/2026, a pedido do Rafael) =====================
+  // Voto de brasileiro fora do país. O total vem do arquivo simplificado 'zz' (mesmo formato das UFs,
+  // buscado junto em resPuxa). O detalhe por cidade só é buscado quando o leitor abre o Exterior:
+  // config/mun-e<cod>-cm.json lista as cidades do bloco ZZ, e cada uma tem um arquivo dados/zz/zz<cd>-...-v.json.
+  // NÃO CONFERIDO contra o TSE (a sessão que escreveu isto não alcançava resultados.tse.jus.br): o leitor
+  // dos arquivos por cidade é defensivo, varre o JSON atrás de nós de candidato {n, nm, vap} e de 'pst',
+  // e se nada bater mostra só o aviso, sem quebrar o resto. País vem do dicionário EXTPAIS pelo nome da cidade.
+  var EXTPAIS=(function(){ var m={}, t={
+    'Estados Unidos':'NOVA YORK,BOSTON,MIAMI,ORLANDO,ATLANTA,WASHINGTON,CHICAGO,HOUSTON,LOS ANGELES,SAO FRANCISCO,HARTFORD,NEWARK,FILADELFIA,DALLAS,SAN DIEGO,SEATTLE,DENVER,PHOENIX,LAS VEGAS,TAMPA,FORT LAUDERDALE,FRAMINGHAM,DANBURY,NOVA JERSEY',
+    'Portugal':'LISBOA,PORTO,FARO,COIMBRA,BRAGA,SETUBAL','Japão':'TOQUIO,NAGOIA,HAMAMATSU,OSAKA,TOYOTA,KOBE,GUNMA,OTA,SUZUKA',
+    'Reino Unido':'LONDRES,EDIMBURGO,MANCHESTER','Irlanda':'DUBLIN','França':'PARIS,LYON,MARSELHA,CAIENA,SAINT-GEORGES,SAINT GEORGES',
+    'Espanha':'MADRI,BARCELONA','Itália':'ROMA,MILAO','Alemanha':'BERLIM,MUNIQUE,FRANKFURT,HAMBURGO,COLONIA','Suíça':'ZURIQUE,GENEBRA,BERNA',
+    'Bélgica':'BRUXELAS','Países Baixos':'HAIA,AMSTERDA,ROTERDA','Áustria':'VIENA','Suécia':'ESTOCOLMO','Noruega':'OSLO','Dinamarca':'COPENHAGUE',
+    'Argentina':'BUENOS AIRES,CORDOBA,MENDOZA,PUERTO IGUAZU,ROSARIO','Paraguai':'ASSUNCAO,CIUDAD DEL ESTE,ENCARNACION,PEDRO JUAN CABALLERO,SALTO DEL GUAIRA,CONCEPCION',
+    'Uruguai':'MONTEVIDEU,RIVERA,CHUY,ARTIGAS','Chile':'SANTIAGO','Peru':'LIMA','Bolívia':'LA PAZ,SANTA CRUZ DE LA SIERRA,COCHABAMBA,GUAYARAMERIN,COBIJA,PUERTO SUAREZ',
+    'Colômbia':'BOGOTA,LETICIA','Venezuela':'CARACAS,SANTA ELENA DE UAIREN','Guiana':'GEORGETOWN','Suriname':'PARAMARIBO','México':'CIDADE DO MEXICO',
+    'Canadá':'TORONTO,MONTREAL,VANCOUVER,OTTAWA,CALGARY','Austrália':'SYDNEY,SIDNEI,MELBOURNE,BRISBANE,PERTH,CAMBERRA','Nova Zelândia':'WELLINGTON,AUCKLAND',
+    'Angola':'LUANDA','Moçambique':'MAPUTO','China':'PEQUIM,XANGAI,CANTAO,HONG KONG','Israel':'TEL AVIV','Emirados Árabes':'DUBAI,ABU DHABI','África do Sul':'PRETORIA,CIDADE DO CABO'};
+    for(var pa in t) t[pa].split(',').forEach(function(c){ m[c]=pa; }); return m; })();
+  function semAc(x){ try{ return String(x||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase().trim(); }catch(_){ return String(x||'').toUpperCase(); } }
+  function resExtCard(){
+    var j=RES26.uf.ZZ, o=j?resLF(j):null, pst=j?resNum(j.pst):0, tem=!!(o&&o.L&&o.F&&pst>0);
+    var corpo = tem
+      ? '<span style="color:'+P.red+'; font-weight:700;">Lula '+fmt(resNum(o.L.pvap))+'%</span> x <span style="color:'+P.blue+'; font-weight:700;">Flávio '+fmt(resNum(o.F.pvap))+'%</span> <span style="color:'+P.mut+';">&middot; '+fmt(pst)+'% das seções</span>'
+      : '<span style="color:'+P.mut+';">aguardando o TSE. A votação no exterior segue o horário de cada país, mas a apuração só é divulgada depois das 17h de Brasília.</span>';
+    return '<div onclick="openPresState(\'ZZ\')" style="margin:4px 14px 8px; padding:8px 12px; border:1px solid '+P.bord+'; border-left:3px solid '+P.goldtxt+'; border-radius:6px; background:'+P.surf2+'; cursor:pointer; font-size:12.5px; line-height:1.5;">'+
+      '<b style="color:'+P.ink+';">&#127758; Exterior</b> <span style="color:'+P.mut+'; font-size:11px;">(brasileiros votando em outros países &middot; toque para ver por país e cidade)</span><br>'+corpo+'</div>'; }
+  var RESEXT={cid:null,busy:false,erro:''};
+  function resExtCidBloco(){ return '<div style="margin-top:14px; font-size:13px; font-weight:600;">Por país e cidade</div><div id="zz-cid" style="font-size:12px; color:'+P.txt2+'; margin-top:6px;">'+resExtCidHTML()+'</div>'; }
+  function resExtCidHTML(){
+    if(RESEXT.busy) return 'Carregando as cidades no TSE...';
+    var bt=' <span onclick="resExtCarrega()" style="cursor:pointer; text-decoration:underline; color:'+P.link+';">'+(RESEXT.cid?'atualizar':'carregar')+'</span>';
+    if(RESEXT.erro) return RESEXT.erro+bt;
+    if(!RESEXT.cid) return 'Busca no TSE o resultado de cada cidade do exterior com seção eleitoral.'+bt;
+    var cs=RESEXT.cid.filter(function(c){ return c.t>0; });
+    if(!cs.length) return 'Nenhuma cidade do exterior com voto apurado ainda.'+bt;
+    var pa={}; cs.forEach(function(c){ var k=c.pais||'Outros países'; if(!pa[k]) pa[k]={l:0,f:0,t:0,n:0}; pa[k].l+=c.l; pa[k].f+=c.f; pa[k].t+=c.t; pa[k].n++; });
+    function linha(nm,l,f,t,sub){ var pl=t?l/t*100:0, pf=t?f/t*100:0;
+      return '<tr style="border-top:1px solid '+P.bsoft+';"><td style="padding:3px 6px 3px 0; color:'+P.txt+';">'+nm+(sub?' <span style="color:'+P.mut+'; font-size:10px;">'+sub+'</span>':'')+'</td>'+
+        '<td style="text-align:right; color:'+P.red+'; font-weight:600;">'+fmt(pl)+'</td><td style="text-align:right; color:'+P.blue+'; font-weight:600;">'+fmt(pf)+'</td>'+
+        '<td style="text-align:right; color:'+P.mut+';">'+fmtV(t)+'</td></tr>'; }
+    var cab='<tr style="color:'+P.mut+'; font-size:10px; text-transform:uppercase;"><td></td><td style="text-align:right;">Lula %</td><td style="text-align:right;">Flávio %</td><td style="text-align:right;">válidos</td></tr>';
+    var ks=Object.keys(pa).sort(function(a,b){ return pa[b].t-pa[a].t; });
+    var h='<table style="width:100%; border-collapse:collapse; font-size:11.5px;">'+cab;
+    ks.forEach(function(k){ var x=pa[k]; h+=linha('<b>'+k+'</b>',x.l,x.f,x.t,x.n+(x.n>1?' cidades':' cidade')); }); h+='</table>';
+    cs.sort(function(a,b){ return b.t-a.t; });
+    h+='<div style="margin-top:10px; font-size:11px; color:'+P.mut+';">Cidades ('+cs.length+')</div><table style="width:100%; border-collapse:collapse; font-size:11.5px;">'+cab;
+    cs.forEach(function(c){ h+=linha(c.nm,c.l,c.f,c.t,(c.pais||'')+(c.pst!=null?' · '+fmt(c.pst)+'% seções':'')); });
+    return h+'</table><div style="font-size:10.5px; color:'+P.mut+'; margin-top:6px;">% sobre votos válidos de cada lugar. País deduzido pelo nome da cidade; o que não reconhecemos cai em "Outros países".'+bt+'</div>'; }
+  function resExtPinta(){ var d=document.getElementById('zz-cid'); if(d) d.innerHTML=resExtCidHTML(); }
+  // Leitor defensivo de um arquivo de resultado por cidade.
+  function resExtLe(j){ var cand={}, pst=null;
+    (function anda(o){ if(!o||typeof o!=='object') return; if(Array.isArray(o)){ o.forEach(anda); return; }
+      if(pst==null&&o.pst!=null) pst=resNum(o.pst);
+      if(o.n!=null&&o.vap!=null&&(o.nm!=null||o.nmu!=null)) cand[String(o.n)]=resNum(o.vap);
+      for(var k in o) if(o[k]&&typeof o[k]==='object') anda(o[k]); })(j);
+    var t=0; for(var n in cand) t+=cand[n];
+    return {l:cand['13']||0, f:cand['22']||0, t:t, pst:pst}; }
+  window.resExtCarrega=function(){ if(RESEXT.busy) return; if(!RES26.cod){ RESEXT.erro='A eleição ainda não foi localizada no TSE.'; resExtPinta(); return; }
+    RESEXT.busy=true; RESEXT.erro=''; resExtPinta();
+    var c6=('000000'+RES26.cod).slice(-6), base='https://resultados.tse.jus.br/oficial/ele'+RES26.ano+'/'+RES26.cod+'/';
+    fetch(base+'config/mun-e'+c6+'-cm.json?_='+Date.now()).then(function(r){ return r.ok?r.json():null; }).then(function(cfg){
+      var mu=[]; ((cfg&&cfg.abr)||[]).forEach(function(a){ if(semAc(a.cd)==='ZZ') mu=a.mu||[]; });
+      if(!mu.length) throw new Error('a lista de cidades do exterior não veio na configuração do TSE');
+      return Promise.all(mu.map(function(m){ var cd=String(m.cd);
+        return fetch(base+'dados/zz/zz'+cd+'-c0001-e'+c6+'-v.json?_='+Date.now()).then(function(r){ return r.ok?r.json():null; })
+          .then(function(j){ var x=j?resExtLe(j):{l:0,f:0,t:0,pst:null}; var nm=String(m.nm||cd);
+            x.nm=nm.toLowerCase().replace(/(^|\s|-)(\S)/g,function(a,b,c){ return b+c.toUpperCase(); }); x.pais=EXTPAIS[semAc(nm)]||''; return x; })
+          .catch(function(){ return null; }); }));
+    }).then(function(arr){ RESEXT.cid=(arr||[]).filter(Boolean); RESEXT.busy=false; resExtPinta(); })
+      .catch(function(e){ RESEXT.busy=false; RESEXT.erro='Não deu para ler as cidades do exterior ('+(e&&e.message||e)+').'; resExtPinta(); }); };
   // Barra zerada do modo ao vivo antes da primeira seção totalizada: mesmo desenho da resTabela.
   function resVazia(){ return '<div style="padding:4px 14px 6px;">'+
       '<div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; font-size:11px; color:'+P.mut+'; margin-bottom:6px;"><span><b style="color:'+P.goldtxt+';">AO VIVO</b> &middot; apuração oficial do TSE, 1º turno de 2026</span><span><b style="color:'+P.txt+';">0%</b> das seções totalizadas</span></div>'+
@@ -829,7 +901,7 @@
   window.openPresState=function(uf){ if(!uf) return; var nm=UFN[uf]||uf; var yr=cur.mapyear;
     var h='<button onclick="closeInst()" style="position:absolute; top:12px; right:14px; border:none; background:none; font-size:20px; color:'+P.mut+'; cursor:pointer;">&times;</button>';
     h+='<div style="font-size:17px; font-weight:600; margin:2px 0 14px;">'+nm+' &middot; Presidencial '+yr+'</div>';
-    if(yr==='2026'&&resModo()){ h+=resEstadoHTML(uf); }
+    if(yr==='2026'&&resModo()){ h+=resEstadoHTML(uf); if(uf==='ZZ') h+=resExtCidBloco(); }
     else if(yr==='2026'){ var p=PRES26[uf];
       if(p){ var ldm={L:['Lula',''+P.red+''],F:['Flávio',''+P.blue+''],CA:['Caiado','#2e8b57'],RE:['Renan Santos','#7a3fb0'],ZE:['Zema','#e8730c'],E:['empate técnico','#c9a227']}, lm=ldm[p.lead]||['—',''+P.txt2+''];
         // O líder vem do 1º turno SÓ onde o instituto publicou 1º turno (hoje SP, GO, MG e SC). Nos demais ele é
@@ -2184,7 +2256,7 @@
         note='2º turno de '+yr+' (resultado oficial do TSE). Vermelho = '+leftNm+', azul = '+rightNm+'. Tom mais forte = vantagem maior naquele estado.';
         foot='Comparando os anos dá para ver o mapa virar. Ex.: MG e AM foram do Bolsonaro em 2018 e do Lula em 2022 (as duas únicas viradas entre os dois mapas).';
       }
-      document.getElementById('table-area').innerHTML=yt+'<div style="padding:8px 12px 4px; font-size:12.5px; color:'+P.txt+'; line-height:1.5;">'+intro+'</div><div style="display:flex; gap:16px; padding:2px 14px 6px; font-size:12px; color:'+P.txt2+'; flex-wrap:wrap;">'+legend+'</div>'+((yr==='2026'&&resModo())?'':natBar(yr))+(yr==='2026'?resBloco():'')+'<div id="presmapc"></div>'+((yr==='2026'&&resModo())?'':presFontes(yr));
+      document.getElementById('table-area').innerHTML=yt+'<div style="padding:8px 12px 4px; font-size:12.5px; color:'+P.txt+'; line-height:1.5;">'+intro+'</div><div style="display:flex; gap:16px; padding:2px 14px 6px; font-size:12px; color:'+P.txt2+'; flex-wrap:wrap;">'+legend+'</div>'+((yr==='2026'&&resModo())?'':natBar(yr))+(yr==='2026'?resBloco():'')+((yr==='2026'&&resModo())?resExtCard():'')+'<div id="presmapc"></div>'+((yr==='2026'&&resModo())?'':presFontes(yr));
       drawPresMap();
       if(yr==='2026'&&resDia()) resLiga();
       document.getElementById('note').textContent=note;

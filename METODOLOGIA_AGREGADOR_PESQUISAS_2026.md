@@ -6,6 +6,11 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 03/10, ~21H40: EXTERIOR NA APURAÇÃO. Cartão "Exterior" abaixo da barra no Mapa 2026 (arquivo
+  simplificado `zz`, buscado junto com as UFs) e, ao tocar, detalhe por PAÍS e CIDADE (`resExtCarrega`:
+  config `mun-e<cod>-cm.json` bloco ZZ + `dados/zz/zz<cd>-c0001-e<cod>-v.json`, sob demanda). Formato dos
+  arquivos por cidade NÃO CONFERIDO contra o TSE (proxy da nuvem bloqueia); leitor defensivo e testado só
+  com TSE simulado. País vem do dicionário `EXTPAIS` pelo nome da cidade; o resto vira "Outros países".
 - 03/10, ~22H30, RODADA LOCAL — FILA DE 120 TRIADA: ATLASINTEL/BLOOMBERG NACIONAL (BR-00999/2026,
   27/9-2/10, 4.945 entrevistas) ENTROU em outubro no `DI` e `T2R` (Lula 46,7 x 43,8 totais, 47 x
   44,1 válidos; 2º turno Lula 47,6 x Flávio 47,4, válidos 50,1 x 49,9). FUTURA/100 CIDADES NACIONAL
