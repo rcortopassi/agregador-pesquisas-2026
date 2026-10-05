@@ -845,7 +845,7 @@
       '<text x="'+(W-R+6)+'" y="'+(yf+4)+'" font-size="11" font-weight="700" fill="'+P.blue+'">Flávio '+fmt2(z.f)+'</text>';
     var eixo='<text x="'+L+'" y="'+(H-8)+'" font-size="10" fill="'+P.mut+'">'+resHora(x0)+'</text><text x="'+(W-R)+'" y="'+(H-8)+'" text-anchor="end" font-size="10" fill="'+P.mut+'">'+resHora(x1)+' ('+fmt2(z.s)+'% das seções)</text>';
     return '<div style="padding:4px 14px 10px;"><div style="font-size:12.5px; font-weight:600; color:'+P.txt+'; margin-bottom:2px;">Evolução da apuração</div>'+
-      '<div style="font-size:11px; color:'+P.mut+'; margin-bottom:4px;">Votos válidos no país, em %, minuto a minuto.'+(nv?'':' Nenhuma virada até agora.')+'</div>'+
+      '<div style="font-size:11px; color:'+P.mut+'; margin-bottom:4px;">Votos válidos no país, em %, minuto a minuto.'+(nv?'':(z.s>=100?' Não houve virada.':' Nenhuma virada até agora.'))+'</div>'+
       '<div style="overflow-x:auto;"><svg viewBox="0 0 '+W+' '+H+'" style="width:100%; min-width:320px; height:auto; display:block;" role="img" aria-label="Evolução da apuração, Lula x Flávio">'+g+vir+linha('f',P.blue)+linha('l',P.red)+fim+eixo+'</svg></div>'+
       '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:3px; line-height:1.45;">O TSE não guarda o histórico da apuração: a série é gravada por este painel desde '+resHora(x0)+', e o que veio antes não aparece. Fonte: TSE.</div></div>'; }
   function resBloco(){
