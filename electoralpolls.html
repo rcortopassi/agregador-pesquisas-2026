@@ -772,7 +772,7 @@
     cs.forEach(function(c){ var n=(c.nm||'').toUpperCase(); if(!L&&/LULA/.test(n)) L=c; if(!F&&/FL[AÁ]VIO|BOLSONARO/.test(n)) F=c; });
     return {L:L,F:F,cs:cs}; }
   function resLead(uf){ var j=RES26.uf[uf]; if(!j||resNum(j.pst)<=0) return ''; var o=resLF(j); if(!o.L||!o.F) return '';
-    var l=resNum(o.L.pvap), f=resNum(o.F.pvap); if(Math.abs(l-f)<0.05) return 'E'; return l>f?'L':'F'; }
+    var l=resNum(o.L.vap), f=resNum(o.F.vap); if(l===f) return 'E'; return l>f?'L':'F'; }
   function resMargem(uf){ var j=RES26.uf[uf]; if(!j) return 0; var o=resLF(j); if(!o.L||!o.F) return 0; return Math.abs(resNum(o.L.pvap)-resNum(o.F.pvap)); }
   function resNome(c){ var n=(c.nm||''); if(/^LULA$/.test(n)) return 'Lula'; if(/FL[AÁ]VIO/.test(n)) return 'Flávio Bolsonaro'; if(/JAIR BOLSONARO/.test(n)) return 'Bolsonaro';
     return n.toLowerCase().replace(/(^|\s)(\S)/g, function(m,a,b){ return a+b.toUpperCase(); }).replace(/\bD([aeo]s?)\b/g, function(m,x){ return 'd'+x; }); }
@@ -813,11 +813,17 @@
   function resSeriePuxa(){ if(RES26.simula||!RES26.cod) return Promise.resolve();
     return fetch('apuracao_serie_'+RES26.cod+'.json?_='+Date.now(),{cache:'no-store'}).then(function(r){ return r.ok?r.json():null; })
       .then(function(a){ if(Array.isArray(a)) RESSERIE=a; }).catch(function(){ }); }
-  function resMin(hg){ var p=String(hg||'').split(':'); return (+p[0]||0)*60+(+p[1]||0)+(+p[2]||0)/60; }
-  function resHora(m){ var h=Math.floor(m/60), mi=Math.floor(m%60); return h+'h'+(mi<10?'0':'')+mi; }
+  // Minutos ABSOLUTOS (data + hora): a apuração atravessa a meia-noite (4/10 terminou às 2h59 de 5/10),
+  // e só com a hora os pontos da madrugada caíam antes das 17h e desmontavam o eixo.
+  function resMin(hg,dg){ var p=String(hg||'').split(':'), d=String(dg||'').split('/');
+    var dias=d.length===3?Date.UTC(+d[2],+d[1]-1,+d[0])/86400000:0;
+    return dias*1440+(+p[0]||0)*60+(+p[1]||0)+(+p[2]||0)/60; }
+  function resHora(m){ var r=((m%1440)+1440)%1440, h=Math.floor(r/60), mi=Math.floor(r%60); return h+'h'+(mi<10?'0':'')+mi; }
   function resSerieSVG(){
-    var pts=RESSERIE.filter(function(p){ return p&&p.lula!=null&&p.flavio!=null; }).map(function(p){ return {m:resMin(p.hg),l:+p.lula,f:+p.flavio,s:+p.pst}; });
-    var b=RES26.br; if(b){ var o=resLF(b); if(o.L&&o.F){ var mb=resMin(b.hg); if(!pts.length||mb>pts[pts.length-1].m) pts.push({m:mb,l:resNum(o.L.pvap),f:resNum(o.F.pvap),s:resNum(b.pst)}); } }
+    var ser=RESSERIE.filter(function(p){ return p&&p.lula!=null&&p.flavio!=null; }), dg0=null;
+    for(var q=0;q<ser.length;q++) if(ser[q].dg){ dg0=ser[q].dg; break; }
+    var pts=ser.map(function(p){ if(p.dg) dg0=p.dg; return {m:resMin(p.hg,p.dg||dg0),l:+p.lula,f:+p.flavio,s:+p.pst}; });
+    var b=RES26.br; if(b){ var o=resLF(b); if(o.L&&o.F){ var mb=resMin(b.hg,b.dg); if(!pts.length||mb>pts[pts.length-1].m) pts.push({m:mb,l:resNum(o.L.pvap),f:resNum(o.F.pvap),s:resNum(b.pst)}); } }
     if(pts.length<2) return '';
     var W=640,H=230,L=34,R=74,T=40,B=26, x0=pts[0].m, x1=pts[pts.length-1].m; if(x1-x0<1) x1=x0+1;
     var lo=50,hi=50; pts.forEach(function(p){ lo=Math.min(lo,p.l,p.f); hi=Math.max(hi,p.l,p.f); });
