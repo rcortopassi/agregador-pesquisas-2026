@@ -1,0 +1,3105 @@
+{
+"br": {
+"hg": "02:59:31",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 119300788,
+"vb": 2300798,
+"vn": 3669003,
+"pa": "21,08",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 56104503,
+"pvap": 47.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 53879538,
+"pvap": 45.16,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 3448569,
+"pvap": 2.89,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 2675887,
+"pvap": 2.24,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 2605148,
+"pvap": 2.18,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 326488,
+"pvap": 0.27,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 122911,
+"pvap": 0.1,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 43103,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 40043,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 22693,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 16881,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 15024,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"ac": {
+"hg": "02:59:25",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 469066,
+"vb": 5579,
+"vn": 13662,
+"pa": "20,43",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 302807,
+"pvap": 64.56,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 134770,
+"pvap": 28.73,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 13523,
+"pvap": 2.88,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 8594,
+"pvap": 1.83,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 7980,
+"pvap": 1.7,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 573,
+"pvap": 0.12,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 314,
+"pvap": 0.07,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 215,
+"pvap": 0.05,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 140,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 71,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 40,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 39,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"al": {
+"hg": "02:59:27",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 1818856,
+"vb": 33712,
+"vn": 85787,
+"pa": "20,63",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 995459,
+"pvap": 54.73,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 735718,
+"pvap": 40.45,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 42427,
+"pvap": 2.33,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 26851,
+"pvap": 1.48,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 14198,
+"pvap": 0.78,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1345,
+"pvap": 0.07,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 1168,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 636,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 431,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 267,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 246,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 110,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"am": {
+"hg": "02:59:27",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 2170763,
+"vb": 24402,
+"vn": 39302,
+"pa": "20,16",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 1046996,
+"pvap": 48.23,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 976764,
+"pvap": 45.0,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 77531,
+"pvap": 3.57,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 35411,
+"pvap": 1.63,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 28310,
+"pvap": 1.3,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1867,
+"pvap": 0.09,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 1781,
+"pvap": 0.08,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 929,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 457,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 291,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 265,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 161,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"ap": {
+"hg": "02:59:26",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 464858,
+"vb": 4415,
+"vn": 7272,
+"pa": "17,41",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 212503,
+"pvap": 45.71,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 212278,
+"pvap": 45.67,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 19057,
+"pvap": 4.1,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 11342,
+"pvap": 2.44,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 8304,
+"pvap": 1.79,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 508,
+"pvap": 0.11,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 341,
+"pvap": 0.07,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 229,
+"pvap": 0.05,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 132,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 62,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 53,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 49,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"ba": {
+"hg": "02:59:42",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 8560291,
+"vb": 154936,
+"vn": 338123,
+"pa": "19,97",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 5664771,
+"pvap": 66.17,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 2442585,
+"pvap": 28.53,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 195451,
+"pvap": 2.28,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 122705,
+"pvap": 1.43,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 117518,
+"pvap": 1.37,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 6497,
+"pvap": 0.08,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 4649,
+"pvap": 0.05,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 1791,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 1676,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 1299,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 724,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 625,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"ce": {
+"hg": "02:59:30",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 5617814,
+"vb": 103295,
+"vn": 189185,
+"pa": "15,52",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 3555263,
+"pvap": 63.29,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 1756850,
+"pvap": 31.27,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 140524,
+"pvap": 2.5,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 107587,
+"pvap": 1.92,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 45604,
+"pvap": 0.81,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 4310,
+"pvap": 0.08,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 3352,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 1491,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 1071,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 783,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 498,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 481,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"df": {
+"hg": "02:59:26",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 1772808,
+"vb": 25362,
+"vn": 33169,
+"pa": "18,90",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 909616,
+"pvap": 51.31,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 675627,
+"pvap": 38.11,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 85076,
+"pvap": 4.8,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 46714,
+"pvap": 2.64,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 45979,
+"pvap": 2.59,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 4915,
+"pvap": 0.28,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 2297,
+"pvap": 0.13,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 828,
+"pvap": 0.05,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 716,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 382,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 334,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 324,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+}
+]
+},
+"es": {
+"hg": "02:59:27",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 2251078,
+"vb": 43211,
+"vn": 57872,
+"pa": "21,37",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 1233194,
+"pvap": 54.78,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 850028,
+"pvap": 37.76,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 65121,
+"pvap": 2.89,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 53236,
+"pvap": 2.36,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 39097,
+"pvap": 1.74,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 5873,
+"pvap": 0.26,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1973,
+"pvap": 0.09,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 974,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 638,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 388,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 311,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 245,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"go": {
+"hg": "02:59:30",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 3827823,
+"vb": 45643,
+"vn": 98014,
+"pa": "21,83",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 2051888,
+"pvap": 53.6,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 1188880,
+"pvap": 31.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 472041,
+"pvap": 12.33,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 54105,
+"pvap": 1.41,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 53849,
+"pvap": 1.41,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 2672,
+"pvap": 0.07,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 2087,
+"pvap": 0.05,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 668,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 559,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 468,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 346,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 260,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"ma": {
+"hg": "02:59:31",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 4010439,
+"vb": 46315,
+"vn": 103244,
+"pa": "19,73",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 2566301,
+"pvap": 63.99,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 1239040,
+"pvap": 30.9,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 84830,
+"pvap": 2.12,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 60387,
+"pvap": 1.51,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 50155,
+"pvap": 1.25,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 4584,
+"pvap": 0.11,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1795,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 1459,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 895,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 475,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 307,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 211,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"mg": {
+"hg": "02:59:46",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 11976235,
+"vb": 268302,
+"vn": 392176,
+"pa": "22,81",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 5777548,
+"pvap": 48.24,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 5188936,
+"pvap": 43.33,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 409737,
+"pvap": 3.42,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 247209,
+"pvap": 2.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 230423,
+"pvap": 1.92,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 98407,
+"pvap": 0.82,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 11026,
+"pvap": 0.09,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 4085,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 3411,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 2300,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 1732,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 1421,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"ms": {
+"hg": "02:59:27",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 1490278,
+"vb": 21270,
+"vn": 29596,
+"pa": "23,87",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 873351,
+"pvap": 58.6,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 516855,
+"pvap": 34.68,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 39148,
+"pvap": 2.63,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 31847,
+"pvap": 2.14,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 23291,
+"pvap": 1.56,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 2792,
+"pvap": 0.19,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1291,
+"pvap": 0.09,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 626,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 353,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 332,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 209,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 183,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"mt": {
+"hg": "02:59:28",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 1993288,
+"vb": 20756,
+"vn": 37994,
+"pa": "22,20",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 1298581,
+"pvap": 65.15,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 581681,
+"pvap": 29.18,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 40019,
+"pvap": 2.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 33170,
+"pvap": 1.66,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 33079,
+"pvap": 1.66,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 2424,
+"pvap": 0.12,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 1869,
+"pvap": 0.09,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1584,
+"pvap": 0.08,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 340,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 239,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 172,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 130,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"pa": {
+"hg": "02:59:32",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 4863172,
+"vb": 54203,
+"vn": 148946,
+"pa": "19,10",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 2427237,
+"pvap": 49.91,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 2163957,
+"pvap": 44.5,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 125172,
+"pvap": 2.57,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 84165,
+"pvap": 1.73,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 51991,
+"pvap": 1.07,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 3824,
+"pvap": 0.08,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 3064,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 1293,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 1045,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 674,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 442,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 308,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"pb": {
+"hg": "02:59:29",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 2513747,
+"vb": 52297,
+"vn": 117854,
+"pa": "17,38",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 1541127,
+"pvap": 61.31,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 831377,
+"pvap": 33.07,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 73831,
+"pvap": 2.94,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 42247,
+"pvap": 1.68,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 19511,
+"pvap": 0.78,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 1988,
+"pvap": 0.08,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1593,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 627,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 604,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 347,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 274,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 221,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"pe": {
+"hg": "02:59:30",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 5601017,
+"vb": 109491,
+"vn": 200416,
+"pa": "18,17",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 3553971,
+"pvap": 63.45,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 1738043,
+"pvap": 31.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 137960,
+"pvap": 2.46,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 85865,
+"pvap": 1.53,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 73176,
+"pvap": 1.31,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 6060,
+"pvap": 0.11,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 2387,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 1114,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 869,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 705,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 457,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 410,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"pi": {
+"hg": "02:59:30",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 2146394,
+"vb": 28329,
+"vn": 66108,
+"pa": "17,15",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 1523710,
+"pvap": 70.99,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 517028,
+"pvap": 24.09,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 47692,
+"pvap": 2.22,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 32274,
+"pvap": 1.5,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 21629,
+"pvap": 1.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 1357,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1099,
+"pvap": 0.05,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 504,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 443,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 319,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 193,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 146,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"pr": {
+"hg": "02:59:36",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 6585243,
+"vb": 122499,
+"vn": 133447,
+"pa": "20,57",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 3945345,
+"pvap": 59.91,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 2054597,
+"pvap": 31.2,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 205095,
+"pvap": 3.11,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 177434,
+"pvap": 2.69,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 171294,
+"pvap": 2.6,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 17172,
+"pvap": 0.26,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 6731,
+"pvap": 0.1,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 2445,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 2056,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 1195,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 962,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 917,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"rj": {
+"hg": "02:59:29",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 9369700,
+"vb": 201979,
+"vn": 287736,
+"pa": "23,32",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 4966844,
+"pvap": 53.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 3693021,
+"pvap": 39.41,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 247397,
+"pvap": 2.64,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 211843,
+"pvap": 2.26,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 199844,
+"pvap": 2.13,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 21907,
+"pvap": 0.23,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 14186,
+"pvap": 0.15,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 4082,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 3999,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 2854,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 1930,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 1793,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+}
+]
+},
+"rn": {
+"hg": "02:59:29",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 2071898,
+"vb": 33172,
+"vn": 65880,
+"pa": "18,38",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 1237963,
+"pvap": 59.75,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 720493,
+"pvap": 34.77,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 57367,
+"pvap": 2.77,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 35261,
+"pvap": 1.7,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 16407,
+"pvap": 0.79,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 1525,
+"pvap": 0.07,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1228,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 572,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 405,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 315,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 185,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 177,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"ro": {
+"hg": "02:59:26",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 968059,
+"vb": 9846,
+"vn": 13109,
+"pa": "21,71",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 652988,
+"pvap": 67.45,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 250667,
+"pvap": 25.89,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 25280,
+"pvap": 2.61,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 19187,
+"pvap": 1.98,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 16929,
+"pvap": 1.75,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 1318,
+"pvap": 0.14,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 843,
+"pvap": 0.09,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 356,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 174,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 160,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 97,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 60,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"rr": {
+"hg": "02:59:26",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 325545,
+"vb": 2618,
+"vn": 4595,
+"pa": "17,12",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 231322,
+"pvap": 71.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 74420,
+"pvap": 22.86,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 8579,
+"pvap": 2.64,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 6623,
+"pvap": 2.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 3639,
+"pvap": 1.12,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 337,
+"pvap": 0.1,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 280,
+"pvap": 0.09,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 168,
+"pvap": 0.05,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 60,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 42,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 41,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 34,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"rs": {
+"hg": "02:59:38",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 6423046,
+"vb": 148339,
+"vn": 131265,
+"pa": "21,35",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 3573783,
+"pvap": 55.64,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 2294759,
+"pvap": 35.73,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 195296,
+"pvap": 3.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 167558,
+"pvap": 2.61,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 158821,
+"pvap": 2.47,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 18988,
+"pvap": 0.3,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 6632,
+"pvap": 0.1,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 2146,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 2066,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 1043,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 1031,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 923,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"sc": {
+"hg": "02:59:31",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 4500897,
+"vb": 69007,
+"vn": 78071,
+"pa": "18,95",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 3000020,
+"pvap": 66.65,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 1127168,
+"pvap": 25.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 134273,
+"pvap": 2.98,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 132795,
+"pvap": 2.95,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 79911,
+"pvap": 1.78,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 16718,
+"pvap": 0.37,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 5049,
+"pvap": 0.11,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 1503,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 1429,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 828,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 643,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 560,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"se": {
+"hg": "02:59:26",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 1364196,
+"vb": 24859,
+"vn": 49970,
+"pa": "17,30",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 856019,
+"pvap": 62.75,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 417839,
+"pvap": 30.63,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 38895,
+"pvap": 2.85,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 26651,
+"pvap": 1.95,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 21405,
+"pvap": 1.57,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 1158,
+"pvap": 0.08,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 991,
+"pvap": 0.07,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 457,
+"pvap": 0.03,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 331,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 204,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 138,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 108,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"sp": {
+"hg": "02:59:41",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 24882948,
+"vb": 632801,
+"vn": 914888,
+"pa": "22,54",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 12922023,
+"pvap": 51.93,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 9505413,
+"pvap": 38.2,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 892368,
+"pvap": 3.59,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 804310,
+"pvap": 3.23,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 579571,
+"pvap": 2.33,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 94635,
+"pvap": 0.38,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 42532,
+"pvap": 0.17,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 15815,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 10563,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 6129,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 5160,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 4429,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+}
+]
+},
+"to": {
+"hg": "02:59:27",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 930447,
+"vb": 8344,
+"vn": 26377,
+"pa": "18,34",
+"cand": [
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 469321,
+"pvap": 50.44,
+"st": "",
+"e": "n"
+},
+{
+"n": "13",
+"nm": "LULA",
+"vap": 404009,
+"pvap": 43.42,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 22434,
+"pvap": 2.41,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 20189,
+"pvap": 2.17,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 12983,
+"pvap": 1.4,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 595,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 395,
+"pvap": 0.04,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 171,
+"pvap": 0.02,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 117,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 101,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 67,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 65,
+"pvap": 0.01,
+"st": "",
+"e": "n"
+}
+]
+},
+"zz": {
+"hg": "02:59:27",
+"dg": "05/10/2026",
+"pst": "100,00",
+"vv": 330882,
+"vb": 5816,
+"vn": 4945,
+"pa": "62,69",
+"cand": [
+{
+"n": "13",
+"nm": "LULA",
+"vap": 157387,
+"pvap": 47.57,
+"st": "",
+"e": "n"
+},
+{
+"n": "22",
+"nm": "FLAVIO BOLSONARO",
+"vap": 143900,
+"pvap": 43.49,
+"st": "",
+"e": "n"
+},
+{
+"n": "70",
+"nm": "ESCRITOR AUGUSTO CURY",
+"vap": 9734,
+"pvap": 2.94,
+"st": "",
+"e": "n"
+},
+{
+"n": "14",
+"nm": "RENAN SANTOS",
+"vap": 8580,
+"pvap": 2.59,
+"st": "",
+"e": "n"
+},
+{
+"n": "55",
+"nm": "RONALDO CAIADO",
+"vap": 4708,
+"pvap": 1.42,
+"st": "",
+"e": "n"
+},
+{
+"n": "30",
+"nm": "ZEMA",
+"vap": 3329,
+"pvap": 1.01,
+"st": "",
+"e": "n"
+},
+{
+"n": "80",
+"nm": "SAMARA",
+"vap": 1053,
+"pvap": 0.32,
+"st": "",
+"e": "n"
+},
+{
+"n": "27",
+"nm": "CLARIANA BARAO",
+"vap": 825,
+"pvap": 0.25,
+"st": "",
+"e": "n"
+},
+{
+"n": "21",
+"nm": "EDMILSON COSTA",
+"vap": 421,
+"pvap": 0.13,
+"st": "",
+"e": "n"
+},
+{
+"n": "16",
+"nm": "HERTZ DIAS",
+"vap": 373,
+"pvap": 0.11,
+"st": "",
+"e": "n"
+},
+{
+"n": "35",
+"nm": "VETERINÁRIO WILSON GRASSI",
+"vap": 373,
+"pvap": 0.11,
+"st": "",
+"e": "n"
+},
+{
+"n": "29",
+"nm": "RUI COSTA PIMENTA",
+"vap": 199,
+"pvap": 0.06,
+"st": "",
+"e": "n"
+}
+]
+}
+}

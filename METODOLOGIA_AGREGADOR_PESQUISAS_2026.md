@@ -6,6 +6,12 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 05/10, MANHÃ: 2026 ENTROU NO HISTÓRICO DE ERRO DAS PESQUISAS, a pedido do Rafael, com a urna
+  final (100%): Flávio 47,03 x Lula 45,16 em válidos. A mediana de outubro dava Lula +1,6 (erro de
+  +3,5 pró-PT, mesmo sentido de 2014, 2018 e 2022); 12 dos 13 finais subestimaram o Flávio (só a
+  Palver superestimou). `VH1DET` com 2026, mas `CICLO_ATUAL=2026` deixa o ajuste de 2026 IDÊNTICO ao
+  de antes (conferido). `HIST1T['2026']` fora de `CICLOS1T` para não distorcer a previsão do 2º
+  turno. `PRES2026` congela a urna por UF. Detalhes em reconstrucao_1t/LEIAME.md. NÃO REVERTER.
 - 03/10, ~21H40: EXTERIOR NA APURAÇÃO. Cartão "Exterior" abaixo da barra no Mapa 2026 (arquivo
   simplificado `zz`, buscado junto com as UFs) e, ao tocar, detalhe por PAÍS e CIDADE (`resExtCarrega`:
   config `mun-e<cod>-cm.json` bloco ZZ + `dados/zz/zz<cd>-c0001-e<cod>-v.json`, sob demanda). Formato dos

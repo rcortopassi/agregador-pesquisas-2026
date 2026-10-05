@@ -174,23 +174,35 @@
   // PoderData/AtlasIntel/CNT-MDA/Paraná/Modalmais-Futura/Veritá (2022).
   // Gerp, Nexus/BTG, Indexa, Vox Brasil, Vetor/Arrow, Alfa e American ficam SEM ajuste: não há
   // final de 1º turno com recorte por candidato localizada para eles.
+  // 2026 INCLUÍDO EM 05/10/2026 (urna final do TSE, 100%: Flávio 47,03 x Lula 45,16 em válidos),
+  // pela última rodada de cada instituto com campo encerrado a partir de 25/9, convertida para
+  // válidos com denominador 100 menos Br/N/Ind. Cálculo em reconstrucao_1t/inclui_2026.py. Gerp,
+  // Palver, Vox Brasil, Indexa e Nexus/BTG passam a ter histórico, só com 2026.
+  // CICLO_ATUAL: anos >= ele ficam GUARDADOS mas não entram no ajuste, para o ciclo em curso não
+  // ser corrigido pelo próprio resultado. Em 2030, trocar para 2030 e 2026 passa a contar.
+  var CICLO_ATUAL=2026;
   var VH1DET={
-    'Datafolha':{anos:[2014,2018,2022],dir:[7.18,6.03,7.41],esq:[2.37,-4.84,2.10]},
-    'CNT/MDA':{anos:[2014,2018,2022],dir:[6.58,3.41,3.53],esq:[4.03,-1.41,-0.12]},
+    'Datafolha':{anos:[2014,2018,2022,2026],dir:[7.18,6.03,7.41,4.48],esq:[2.37,-4.84,2.10,-0.48]},
+    'CNT/MDA':{anos:[2014,2018,2022,2026],dir:[6.58,3.41,3.53,4.90],esq:[4.03,-1.41,-0.12,2.62]},
     'Paraná':{anos:[2018,2022],dir:[5.12,3.14],esq:[-3.72,-1.28]},
-    'PoderData':{anos:[2018,2022],dir:[13.77,4.49],esq:[-2.40,-0.04]},
+    'PoderData':{anos:[2018,2022,2026],dir:[13.77,4.49,3.41],esq:[-2.40,-0.04,-0.48]},
     'Veritá':{anos:[2018,2022],dir:[-5.20,-2.50],esq:[-6.07,-5.81]},
-    'Quaest':{anos:[2022],dir:[6.94],esq:[2.12]},
-    'Meio/Ideia':{anos:[2022],dir:[4.74],esq:[0.43]},
-    'AtlasIntel':{anos:[2022],dir:[2.01],esq:[1.97]},
-    'Apex/Futura':{anos:[2022],dir:[2.73],esq:[-4.85]},
-    'RTBD':{anos:[2018],dir:[6.03],esq:[-1.04]}
+    'Quaest':{anos:[2022,2026],dir:[6.94,2.84],esq:[2.12,1.35]},
+    'Meio/Ideia':{anos:[2022,2026],dir:[4.74,7.77],esq:[0.43,-4.87]},
+    'AtlasIntel':{anos:[2022,2026],dir:[2.01,2.97],esq:[1.97,1.82]},
+    'Apex/Futura':{anos:[2022,2026],dir:[2.73,2.61],esq:[-4.85,-3.69]},
+    'RTBD':{anos:[2018,2026],dir:[6.03,5.54],esq:[-1.04,0.58]},
+    'Gerp':{anos:[2026],dir:[0.79],esq:[-1.07]},
+    'Indexa':{anos:[2026],dir:[7.03],esq:[0.72]},
+    'Nexus/BTG':{anos:[2026],dir:[7.67],esq:[-0.48]},
+    'Palver':{anos:[2026],dir:[-0.44],esq:[-1.73]},
+    'Vox Brasil':{anos:[2026],dir:[1.15],esq:[-0.17]}
   };
   var VHIST={}, VLULA1={};
-  (function(){ for(var k in VH1DET){ var d=VH1DET[k].dir, e=VH1DET[k].esq, sd=0, se=0;
-    for(var i=0;i<d.length;i++){ sd+=d[i]; se+=e[i]; }
-    VHIST[k]=Math.round(sd/d.length*100)/100; VLULA1[k]=Math.round(se/e.length*100)/100; } })();
-  function hn1(name){ return VH1DET[name]?VH1DET[name].anos.length:0; }
+  (function(){ for(var k in VH1DET){ var an=VH1DET[k].anos, d=VH1DET[k].dir, e=VH1DET[k].esq, sd=0, se=0, n=0;
+    for(var i=0;i<d.length;i++){ if(an[i]>=CICLO_ATUAL) continue; sd+=d[i]; se+=e[i]; n++; }
+    if(n){ VHIST[k]=Math.round(sd/n*100)/100; VLULA1[k]=Math.round(se/n*100)/100; } } })();
+  function hn1(name){ var v=VH1DET[name]; if(!v) return 0; var n=0; for(var i=0;i<v.anos.length;i++) if(v.anos[i]<CICLO_ATUAL) n++; return n; }
   // DEFAULT PARA INSTITUTO SEM HISTÓRICO (23/07/2026). Antes recebia ZERO, o que equivale a
   // afirmar que ele é não enviesado. Isso deixou de ser defensável: medimos que o campo
   // brasileiro superestimou a margem do PT no 1º turno em 21 de 21 meses comparáveis (2014,
@@ -203,7 +215,7 @@
   // com razão — a base era fraca. O que mudou foi a evidência, não a vontade.
   var VHDEF=0, VLDEF=0;
   (function(){ function md(a){ if(!a.length) return 0; var b=a.slice().sort(function(x,y){return x-y;}); var n=b.length,h=n>>1; return n%2?b[h]:(b[h-1]+b[h])/2; }
-    var A=[],B=[]; for(var k in VH1DET){ A.push(VHIST[k]); B.push(VLULA1[k]); }
+    var A=[],B=[]; for(var k in VHIST){ A.push(VHIST[k]); B.push(VLULA1[k]); }
     VHDEF=Math.round(md(A)*100)/100; VLDEF=Math.round(md(B)*100)/100; })();
   var VDEF=3.9;
   var PM=['15,5%','84,2%'];
@@ -604,6 +616,9 @@
   // 2018 e 2022 = resultado real do 2º turno (urna, TSE). 2026 = pesquisas estaduais (PRES26).
   var PRES2018={SP:{b:67.97,h:32.03},RJ:{b:67.95,h:32.05},MG:{b:58.19,h:41.81},ES:{b:63.06,h:36.94},PR:{b:68.43,h:31.57},SC:{b:75.92,h:24.08},RS:{b:63.24,h:36.76},BA:{b:27.31,h:72.69},PE:{b:33.50,h:66.50},CE:{b:28.89,h:71.11},MA:{b:26.74,h:73.26},PB:{b:35.02,h:64.98},RN:{b:36.59,h:63.41},AL:{b:40.08,h:59.92},SE:{b:32.46,h:67.54},PI:{b:22.95,h:77.05},AM:{b:50.27,h:49.73},PA:{b:45.19,h:54.81},AC:{b:77.22,h:22.78},RO:{b:72.18,h:27.82},RR:{b:71.55,h:28.45},AP:{b:50.20,h:49.80},TO:{b:48.98,h:51.02},GO:{b:65.52,h:34.48},MT:{b:66.42,h:33.58},MS:{b:65.22,h:34.78},DF:{b:69.99,h:30.01}};
   var PRES2022={SP:{l:44.76,b:55.24},RJ:{l:43.47,b:56.53},MG:{l:50.20,b:49.80},ES:{l:41.96,b:58.04},PR:{l:37.60,b:62.40},SC:{l:30.73,b:69.27},RS:{l:43.65,b:56.35},BA:{l:72.12,b:27.88},PE:{l:66.93,b:33.07},CE:{l:69.97,b:30.03},MA:{l:71.14,b:28.86},PB:{l:66.62,b:33.38},RN:{l:65.10,b:34.90},AL:{l:58.68,b:41.32},SE:{l:67.21,b:32.79},PI:{l:76.86,b:23.14},AM:{l:51.10,b:48.90},PA:{l:54.75,b:45.25},AC:{l:29.70,b:70.30},RO:{l:29.34,b:70.66},RR:{l:23.92,b:76.08},AP:{l:48.64,b:51.36},TO:{l:51.36,b:48.64},GO:{l:41.29,b:58.71},MT:{l:34.92,b:65.08},MS:{l:40.51,b:59.49},DF:{l:41.19,b:58.81}};
+  // URNA FINAL DO 1º TURNO DE 2026 (TSE, 100%, 05/10/2026 02h59), votos válidos; congelada para
+  // não depender do TSE manter os arquivos. Resultado completo em resultado_2026/.
+  var PRES2026={AC:{l:28.73,f:64.56},AL:{l:54.73,f:40.45},AM:{l:48.23,f:45.00},AP:{l:45.71,f:45.67},BA:{l:66.17,f:28.53},CE:{l:63.29,f:31.27},DF:{l:38.11,f:51.31},ES:{l:37.76,f:54.78},GO:{l:31.06,f:53.60},MA:{l:63.99,f:30.90},MG:{l:43.33,f:48.24},MS:{l:34.68,f:58.60},MT:{l:29.18,f:65.15},PA:{l:49.91,f:44.50},PB:{l:61.31,f:33.07},PE:{l:63.45,f:31.03},PI:{l:70.99,f:24.09},PR:{l:31.20,f:59.91},RJ:{l:39.41,f:53.01},RN:{l:59.75,f:34.77},RO:{l:25.89,f:67.45},RR:{l:22.86,f:71.06},RS:{l:35.73,f:55.64},SC:{l:25.04,f:66.65},SE:{l:62.75,f:30.63},SP:{l:38.20,f:51.93},TO:{l:43.42,f:50.44},BR:{l:45.16,f:47.03},ZZ:{l:47.57,f:43.49}};
   // Resultado NACIONAL do 2º turno (votos válidos, urna oficial do TSE). É o voto popular, que é o que
   // decide a eleição — por isso aparece como barra única ao lado do mapa, que mostra só estados.
   // Confere com o anchor do house effect: 2018 Haddad -10,26 · 2022 Lula +1,80.
@@ -1004,17 +1019,19 @@
   // ACHADO CENTRAL: o sinal NÃO é estável. Em 2010 o campo subestimou a esquerda quase o ano
   // todo; em 2022 superestimou nos dez meses. Por isso NÃO se aplica correção direcional.
   var HERR={
-    'jan':['20,6 pontos abaixo','25,3 pontos acima'],
-    'fev':['16,8 pontos abaixo','16,8 pontos acima'],
-    'mar':['22,4 pontos abaixo','14,3 pontos acima'],
-    'abr':['22,9 pontos abaixo','12,4 pontos acima'],
-    'mai':['10,5 pontos abaixo','14,2 pontos acima'],
-    'jun':['9,7 pontos abaixo','17,8 pontos acima'],
-    'jul':['11,0 pontos abaixo','14,2 pontos acima']
+    'jan':['20,6 pontos abaixo','25,3 pontos acima','11,0 pontos acima'],
+    'fev':['16,8 pontos abaixo','16,8 pontos acima','9,3 pontos acima'],
+    'mar':['22,4 pontos abaixo','14,3 pontos acima','7,8 pontos acima'],
+    'abr':['22,9 pontos abaixo','12,4 pontos acima','6,5 pontos acima'],
+    'mai':['10,5 pontos abaixo','14,2 pontos acima','9,5 pontos acima'],
+    'jun':['9,7 pontos abaixo','17,8 pontos acima','11,6 pontos acima'],
+    'jul':['11,0 pontos abaixo','14,2 pontos acima','11,4 pontos acima']
   };
+  // Terceiro elemento = 2026 (incluído em 05/10/2026, mediana do DI menos a urna; ago a out
+  // em reconstrucao_1t/serie_mensal_1t.json). O texto e o herrAmp ainda leem só 2010 e 2022.
   // Versão NUMÉRICA dos erros históricos (2010, 2022), para desenhar a zona de incerteza no
   // gráfico. Amplitude típica = média das duas magnitudes. Usada só na foto do mês mais recente.
-  var HERRN={ 'jan':[-20.6,25.3],'fev':[-16.8,16.8],'mar':[-22.4,14.3],'abr':[-22.9,12.4],'mai':[-10.5,14.2],'jun':[-9.7,17.8],'jul':[-11.0,14.2] };
+  var HERRN={ 'jan':[-20.6,25.3,11.0],'fev':[-16.8,16.8,9.3],'mar':[-22.4,14.3,7.8],'abr':[-22.9,12.4,6.5],'mai':[-10.5,14.2,9.5],'jun':[-9.7,17.8,11.6],'jul':[-11.0,14.2,11.4] };
   function herrAmp(m){ var h=HERRN[m]; return h? (Math.abs(h[0])+Math.abs(h[1]))/2 : null; }
   // ERRO HISTÓRICO POR INSTITUTO E POR MÊS DO CICLO (23/07/2026). Reconstruído linha a linha das
   // pesquisas de 1º turno de 2014, 2018 (fase Haddad) e 2022, comparadas com a urna do TSE em
@@ -1036,6 +1053,31 @@
     'Gerp':{3:3.1,4:-2.9,6:-3.0,8:-5.2,9:-6.3},
     'RTBD':{5:4.1,8:-6.7,9:1.7,10:5.0},
     'Veritá':{8:-3.0,9:-7.2,10:-11.3}
+  };
+  // CAMADA 2026 DO HERRINST (05/10/2026): erro da margem (esquerda menos direita, válidos) de cada
+  // rodada do DI contra a urna de 2026 (Lula -1,87). Separada porque o HERRINST acima é média sem
+  // contagem por célula e não se reproduz pela base de agosto; em 2030, refazer os dois a partir de
+  // reconstrucao_1t/pesquisas_1t_2010_2022.json, que agora tem 2026 linha a linha.
+  var HERRINST2026={
+    'Alfa':{3:10.0,6:11.6,7:17.4,9:9.7},
+    'American':{6:11.8,9:6.5},
+    'Apex/Futura':{1:6.1,2:0.4,3:1.2,4:4.7,5:9.8,6:10.2,7:5.5,8:7.2,9:-1.1},
+    'AtlasIntel':{1:15.9,2:9.3,3:8.0,4:9.2,7:11.1,8:11.6,9:5.0,10:4.8},
+    'CNT/MDA':{4:13.0,6:17.9,8:17.8,9:13.6,10:7.5},
+    'DataTrends':{9:6.4},
+    'Datafolha':{3:7.8,4:6.5,5:12.1,6:13.1,7:10.9,8:8.5,9:6.2,10:4.0},
+    'Gerp':{2:6.4,5:1.9,6:5.6,7:1.9,8:0.7,9:-0.2,10:-0.3},
+    'Indexa':{6:14.7,7:14.8,8:7.8,9:7.8},
+    'Meio/Ideia':{2:10.8,3:7.7,4:5.7,5:10.2,7:11.6,8:10.4,9:2.9},
+    'Nexus/BTG':{4:5.1,5:8.4,6:11.0,7:11.6,8:8.2,9:7.2},
+    'Palver':{8:5.9,9:1.9,10:-2.2},
+    'Paraná':{2:6.4,3:5.8},
+    'PoderData':{5:7.4,6:6.2,7:8.5,8:5.1,9:4.0,10:2.9},
+    'Quaest':{2:12.1,3:10.7,4:7.8,5:8.9,6:14.2,7:16.7,8:10.4,9:7.8,10:4.2},
+    'RTBD':{2:11.3,3:8.9,5:9.5,7:9.3,8:10.4,9:6.1},
+    'Veritá':{5:-0.4,8:2.1,9:1.4},
+    'Vetor/Arrow':{3:-6.7,5:10.4},
+    'Vox Brasil':{5:12.8,6:8.3,7:12.4,8:4.4,9:5.6,10:1.0}
   };
   var MESNUM={'jan':1,'fev':2,'mar':3,'abr':4,'mai':5,'jun':6,'jul':7,'ago':8,'set':9,'out':10};
   // Tabela do erro histórico por instituto, com o mês atual destacado.
@@ -1526,8 +1568,11 @@
     '2010':{par:'Dilma x Serra',urna:{m:14.30,t:79.52},nota:'Sem incumbente na disputa. Campo pouco consolidado e muito volátil; a virada de agosto veio com o horário eleitoral.',mes:{1:{m:-7.7,t:75.9,d:80.3,n:2,p:2},2:{m:-9.4,t:75.6,d:80.0,n:2,p:2},3:{m:-6.1,t:79.3,d:82.0,n:3,p:3},4:{m:-8.6,t:78.2,d:83.3,n:3,p:3},5:{m:3.2,t:89.6,d:80.0,n:3,p:3},6:{m:3.0,t:89.5,d:85.5,n:2,p:4},7:{m:2.5,t:89.6,d:81.5,n:2,p:4},8:{m:22.4,t:90.2,d:83.6,n:4,p:9},9:{m:25.7,t:85.9,d:88.0,n:4,p:42}}},
     '2014':{par:'Dilma x Aécio',urna:{m:8.04,t:75.14},nota:'Dilma incumbente. Campo em choque: Eduardo Campos morre em 13/08 e a Marina entra, segurando voto anti-Dilma que na urna foi para o Aécio.',mes:{2:{m:37.0,t:83.7,d:72.0,n:2,p:2},4:{m:41.4,t:96.2,d:58.0,n:3,p:3},5:{m:29.3,t:92.9,d:63.0,n:2,p:2},6:{m:28.1,t:93.8,d:64.0,n:3,p:4},7:{m:24.6,t:89.2,d:65.0,n:2,p:3},8:{m:22.4,t:62.0,d:84.0,n:3,p:5},9:{m:23.6,t:69.0,d:86.0,n:4,p:18},10:{m:18.5,t:72.9,d:88.2,n:4,p:6}}},
     '2018':{par:'Haddad x Bolsonaro',urna:{m:-16.75,t:75.31},nota:'Pior análogo possível: o candidato do PT era o Lula até 11/09, então o Haddad medido antes dessa data é um nome que o eleitor mal conhecia.',mes:{3:{m:-29.5,t:37.2,d:60.0,n:1,p:3},4:{m:-24.8,t:34.2,d:62.7,n:2,p:5},5:{m:-29.6,t:39.7,d:62.8,n:3,p:7},6:{m:-25.9,t:34.3,d:62.5,n:4,p:12},7:{m:-28.1,t:37.3,d:63.5,n:4,p:11},8:{m:-24.7,t:39.7,d:72.0,n:5,p:14},9:{m:-7.0,t:62.4,d:83.0,n:11,p:32},10:{m:-15.4,t:66.5,d:86.1,n:9,p:12}}},
-    '2022':{par:'Lula x Bolsonaro',urna:{m:5.23,t:91.63},nota:'Bolsonaro incumbente, dois polos definidos havia mais de um ano, campo muito consolidado e estável. O erro veio quase todo de subestimar a direita.',mes:{4:{m:9.6,t:84.5,d:87.0,n:9,p:33},5:{m:9.8,t:85.7,d:89.0,n:11,p:37},6:{m:11.2,t:86.1,d:89.0,n:8,p:13},7:{m:10.8,t:86.3,d:89.0,n:8,p:16},8:{m:8.3,t:86.0,d:90.7,n:15,p:25},9:{m:9.2,t:87.1,d:93.4,n:15,p:50},10:{m:14.4,t:86.7,d:94.0,n:2,p:2}}}
+    '2022':{par:'Lula x Bolsonaro',urna:{m:5.23,t:91.63},nota:'Bolsonaro incumbente, dois polos definidos havia mais de um ano, campo muito consolidado e estável. O erro veio quase todo de subestimar a direita.',mes:{4:{m:9.6,t:84.5,d:87.0,n:9,p:33},5:{m:9.8,t:85.7,d:89.0,n:11,p:37},6:{m:11.2,t:86.1,d:89.0,n:8,p:13},7:{m:10.8,t:86.3,d:89.0,n:8,p:16},8:{m:8.3,t:86.0,d:90.7,n:15,p:25},9:{m:9.2,t:87.1,d:93.4,n:15,p:50},10:{m:14.4,t:86.7,d:94.0,n:2,p:2}}},
+    '2026':{par:'Lula x Flávio',urna:{m:-1.87,t:92.19},nota:'Lula incumbente contra o filho do ex-presidente, polos definidos desde dezembro de 2025, campo consolidado. Na urna Flávio 47,03 x Lula 45,16 em válidos; a mediana de outubro dava Lula +1,6 e errou de novo pela direita subestimada. Fonte das pesquisas: o próprio DI do painel (n = p, uma rodada por instituto por mês).',mes:{1:{m:9.1,t:82.6,d:93.1,n:2,p:2},2:{m:7.4,t:84.7,d:87.0,n:7,p:7},3:{m:5.9,t:87.1,d:88.0,n:9,p:9},4:{m:4.7,t:86.0,d:88.4,n:7,p:7},5:{m:7.6,t:82.9,d:89.4,n:11,p:11},6:{m:9.8,t:84.0,d:88.0,n:11,p:11},7:{m:9.5,t:82.8,d:89.5,n:12,p:12},8:{m:6.2,t:81.9,d:91.5,n:14,p:14},9:{m:4.3,t:85.9,d:94.0,n:17,p:17},10:{m:1.6,t:90.5,d:93.5,n:8,p:8}}}
   };;
+  // HIST1T['2026'] incluído em 05/10/2026 e GUARDADO FORA de CICLOS1T de propósito: dentro, o ciclo
+  // seria análogo de si mesmo e distorceria a previsão do 2º turno. Em 2030, acrescentar '2026' aqui.
   var CICLOS1T=['2010','2014','2018','2022'];
   // PREVISÕES DE TERCEIROS, para o leitor comparar.
   // O Polymarket e o Kalshi NÃO são mais escritos à mão: leem `PM` e `KAL`, que a rodada do

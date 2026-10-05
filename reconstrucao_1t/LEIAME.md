@@ -39,3 +39,15 @@ teto desta fonte. O TSE não serve, registra a pesquisa mas nunca o percentual.
 O extrator reproduz números que os próprios institutos publicaram em válidos:
 Datafolha final de 2022 (Lula 50 x Bolsonaro 36) sai 50,5 x 35,8; Ibope final de 2014
 (Dilma 46 x Aécio 27) sai 45,5 x 27,3.
+
+## 2026 incluído (05/10/2026)
+
+Urna final do TSE (100% das seções, 05/10 02h59): Flávio 47,03 x Lula 45,16 em válidos.
+`inclui_2026.py` acrescenta a chave `2026` às duas bases, pela mesma régua, tirando as pesquisas
+do próprio `DI` do painel (já é uma rodada por instituto por mês; por isso `npesq` = `ninst`).
+Denominador = 100 menos Br/N/Ind. Ficam fora linhas sem Br/N/Ind, sem Flávio, com valor
+estimado (`*`) ou de outro cenário (`†`): jan Paraná, Meio/Ideia, Quaest e mai AtlasIntel.
+No painel: `VH1DET` ganhou 2026 (finais com campo a partir de 25/9), `HIST1T['2026']` (fora de
+`CICLOS1T`), terceiro elemento em `HERR`/`HERRN`, `HERRINST2026` e `PRES2026`. `CICLO_ATUAL=2026`
+impede o ciclo em curso de entrar no próprio ajuste. Em 2030: trocar `CICLO_ATUAL` para 2030,
+pôr '2026' em `CICLOS1T` e refazer `HERRINST` a partir desta base.
