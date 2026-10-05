@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 04/10/2026 21:48. Mercados: Polymarket 15,5%/84,2%, Kalshi 17,0%/84,0%.
+Rodada de 05/10/2026 08:22. Mercados: Polymarket 16,5%/83,5%, Kalshi 18,0%/83,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -142,37 +142,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-24 | ESTADUAL[AL] | INSTITUTO DATASENSUS | Presidente | 22/09-24/09 | 5000 | BR004682026 |
-| 2026-09-24 | ESTADUAL[AM] | #NULO# | Presidente | 20/09-23/09 | 804 | BR038642026 |
-| 2026-09-24 | ESTADUAL[AM] | #NULO# | Presidente | 20/09-23/09 | 804 | BR099692026 |
-| 2026-09-24 | ESTADUAL[AM] | #NULO# | Presidente | 20/09-23/09 | 804 | BR046072026 |
-| 2026-09-24 | ESTADUAL[AM] | PODERDATA | Presidente | 20/09-23/09 | 1200 | BR008462026 |
-| 2026-09-24 | ESTADUAL[AM] | #NULO# | Presidente | 20/09-23/09 | 804 | BR065112026 |
-| 2026-09-24 | ESTADUAL[AM] | #NULO# | Presidente | 20/09-23/09 | 804 | BR048062026 |
-| 2026-09-24 | ESTADUAL[AM] | #NULO# | Presidente | 20/09-23/09 | 804 | BR081012026 |
-| 2026-09-24 | ESTADUAL[AM] | #NULO# | Presidente | 20/09-23/09 | 804 | BR014222026 |
-| 2026-09-24 | ESTADUAL[BA] | #NULO# | Presidente | 20/09-23/09 | 900 | BR039612026 |
-| 2026-09-24 | ESTADUAL[BA] | #NULO# | Presidente | 20/09-23/09 | 900 | BR032602026 |
-| 2026-09-24 | ESTADUAL[DF] | #NULO# | Presidente | 22/09-24/09 | 910 | BR067692026 |
-| 2026-09-24 | ESTADUAL[MG] | #NULO# | Presidente | 22/09-24/09 | 1204 | BR068242026 |
-| 2026-09-24 | ESTADUAL[MG] | #NULO# | Presidente | 22/09-24/09 | 1204 | BR054652026 |
-| 2026-09-24 | ESTADUAL[MG] | SECTRAL NEGOCIOS | Presidente | 19/09-23/09 | 1100 | BR065712026 |
-| 2026-09-24 | ESTADUAL[MG] | INSTITUTO ALVES LIMA | Presidente | 16/09-23/09 | 1500 | BR081512026 |
-| 2026-09-24 | ESTADUAL[MG] | #NULO# | Presidente | 22/09-24/09 | 1204 | BR057622026 |
-| 2026-09-24 | ESTADUAL[PI] | INSTITUTO DE PESQUISA DATA A | Presidente | 20/09-24/09 | 1200 | BR064992026 |
-| 2026-09-24 | ESTADUAL[PI] | INSTITUTO GP1 DE PESQUISA | Presidente | 21/09-23/09 | 1200 | BR042032026 |
-| 2026-09-24 | ESTADUAL[PR] | NEOKEMP PESQUISAS | Presidente | 22/09-24/09 | 1008 | BR022942026 |
-| 2026-09-24 | ESTADUAL[RN] | EXATUS CONSULTORIA E PESQUIS | Presidente | 21/09-23/09 | 1500 | BR042942026 |
-| 2026-09-24 | ESTADUAL[SC] | CLENIX COMUNICACAO | Presidente | 21/09-25/09 | 1064 | BR007452026 |
-| 2026-09-24 | ESTADUAL[SE] | INSTITUTO DATASENSUS | Presidente | 21/09-22/09 | 800 | BR074362026 |
-| 2026-09-24 | ESTADUAL[SE] | C.D.L. | Presidente | 13/09-20/09 | 19000 | BR080122026 |
-| 2026-09-24 | ESTADUAL[SP] | #NULO# | Presidente | 22/09-24/09 | 1610 | BR093552026 |
-| 2026-09-24 | NACIONAL? | REAL TIME BIG DATA | Presidente | 19/09-23/09 | 2000 | BR042022026 |
-| 2026-09-24 | NACIONAL? | ALFA INTELIGENCIA | Presidente | 18/09-23/09 | 2700 | BR025122026 |
-| 2026-09-24 | NACIONAL? | 100 CIDADES | Presidente | 18/09-24/09 | 2000 | BR052682026 |
-| 2026-09-24 | NACIONAL? | #NULO# | Presidente | 22/09-24/09 | 2002 | BR003042026 |
-| 2026-09-24 | NACIONAL? | PODERDATA | Presidente | 20/09-23/09 | 3000 | BR017392026 |
-| 2026-09-24 | NACIONAL? | PALVER | Presidente | 20/09-23/09 | 5000 | BR095872026 |
 | 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR027772026 |
 | 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR034142026 |
 | 2026-09-25 | ESTADUAL[AC] | VERITA | Presidente | 20/09-24/09 | 1030 | BR031172026 |
