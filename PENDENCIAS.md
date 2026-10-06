@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 05/10/2026 19:33. Mercados: Polymarket 16,5%/83,2%, Kalshi 17,0%/83,0%.
+Rodada de 06/10/2026 08:12. Mercados: Polymarket 16,5%/84,0%, Kalshi 17,0%/83,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -14,7 +14,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-09-29] TSE ESTADUAL[MT], IPSENSUS PESQUISAS (Presidente), campo 25/09-27/09, divulgação 2026-09-29, N=400, registro BR054102026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[RN], ATLASINTEL (Presidente), campo 23/09-28/09, divulgação 2026-09-29, N=1200, registro BR035362026
 - [aguardando desde 2026-09-29] TSE ESTADUAL[RN], #NULO# (Presidente), campo 24/09-27/09, divulgação 2026-09-29, N=1200, registro BR020032026
-- [aguardando desde 2026-09-29] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 01/10-03/10, divulgação 2026-09-29, N=2400, registro BR081682026
 - [aguardando desde 2026-09-29] TSE NACIONAL?, INSTITUTO AMAZONIA DE PESQUI (Presidente), campo 23/09-26/09, divulgação 2026-09-29, N=2500, registro BR021062026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[ES], AGILI PESQUISAS (Presidente), campo 24/09-29/09, divulgação 2026-09-30, N=1200, registro BR098162026
 - [aguardando desde 2026-09-30] TSE ESTADUAL[MT], PERCENT PESQUISA DE MERCADO  (Presidente), campo 29/09-02/10, divulgação 2026-09-30, N=1200, registro BR075072026
@@ -54,7 +53,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-02] TSE ESTADUAL[SP], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-02, N=1500, registro BR086462026
 - [aguardando desde 2026-10-02] TSE ESTADUAL[SP], 100 CIDADES (Presidente), campo 28/09-02/10, divulgação 2026-10-02, N=1600, registro BR094282026
 - [aguardando desde 2026-10-02] TSE NACIONAL?, BADRA COMUNICACAO (Presidente), campo 28/09-01/10, divulgação 2026-10-02, N=2946, registro BR099992026
-- [aguardando desde 2026-10-02] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-02, N=2000, registro BR029282026
 - [aguardando desde 2026-10-02] TSE NACIONAL?, DATA RD (Presidente), campo 26/09-30/09, divulgação 2026-10-02, N=1495, registro BR078642026
 - [aguardando desde 2026-10-03] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR063502026
 - [aguardando desde 2026-10-03] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=800, registro BR022122026
@@ -122,19 +120,30 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-03] TSE ESTADUAL[SP], ACADEMIA DE PESQUISA (Presidente), campo 26/09-01/10, divulgação 2026-10-03, N=500, registro BR071212026
 - [aguardando desde 2026-10-03] TSE NACIONAL?, DOXA (Presidente), campo 27/09-02/10, divulgação 2026-10-03, N=2000, registro BR081642026
 - [aguardando desde 2026-10-03] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 28/09-02/10, divulgação 2026-10-03, N=1531, registro BR008862026
-- [aguardando desde 2026-10-03] TSE NACIONAL?, 100 CIDADES (Presidente), campo 29/09-03/10, divulgação 2026-10-03, N=2000, registro BR024312026
 - [aguardando desde 2026-10-04] TSE ESTADUAL[RN], DATA PLUS PESQUISA E CONSULT (Presidente), campo 28/09-29/09, divulgação 2026-10-04, N=400, registro BR098702026
+- [NOVO] Veritá: Pesquisa em São Paulo - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791247352794_Relatorio_Sao_Paulo_04_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa na Bahia - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791247292548_Relatorio_Bahia_04_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa em Tocantins - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246828802_Relatorio_Tocantins_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa em Sergipe - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246763536_Relatorio_Sergipe_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa em Santa Catarina - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246696587_Relatorio_Santa_Catarina_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa no Rio Grande do Sul - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 28 de setembro a 2 de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246618272_Relatorio_Rio_Grande_do_Sul_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa em Roraima - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246528623_Relatorio_Roraima_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa em Rondônia - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246471339_Relatorio_Rondonia_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa no Rio Grande do Norte - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246414775_Relatorio_Rio_Grande_do_Norte_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa no Rio de Janeiro - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246347674_Relatorio_Rio_de_Janeiro_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa no Piauí - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246292692_Relatorio_Piaui_03_de_outubro_de_2026.pdf
+- [NOVO] Veritá: Pesquisa no Paraná - Presidente. Pesquisa de intenção de voto para Presidente, realizada pelo Instituto Veritá entre os dias 26 de setembro a 1º de outubro de 2026. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1791246206594_Relatorio_Parana_03_de_outubro_de_2026.pdf
 
 ## Últimas publicações do Veritá
 
-- 2026-10-03 | Pesquisa em São Paulo - Governador, Senador e Presidente
-- 2026-10-03 | Pesquisa no Rio Grande do Sul - Governador, Senador e Presidente
-- 2026-10-03 | Pesquisa em Rondônia - Governador, Senador e Presidente
-- 2026-10-03 | Pesquisa em Rooraima - Governador, Senador e Presidente
-- 2026-10-03 | Pesquisa no Rio Grande do Norte - Governador, Senador e Presidente
-- 2026-10-03 | Pesquisa em Santa Catarina - Governador, Senador e Presidente
-- 2026-10-03 | Pesquisa em Pernambuco - Governador, Senador e Presidente
-- 2026-10-03 | Pesquisa no Ceará - Governador, Senador e Presidente
+- 2026-10-06 | Pesquisa em São Paulo - Presidente
+- 2026-10-06 | Pesquisa na Bahia - Presidente
+- 2026-10-06 | Pesquisa em Tocantins - Presidente
+- 2026-10-06 | Pesquisa em Sergipe - Presidente
+- 2026-10-06 | Pesquisa em Santa Catarina - Presidente
+- 2026-10-06 | Pesquisa no Rio Grande do Sul - Presidente
+- 2026-10-06 | Pesquisa em Roraima - Presidente
+- 2026-10-06 | Pesquisa em Rondônia - Presidente
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
@@ -142,43 +151,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR027772026 |
-| 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR034142026 |
-| 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR041132026 |
-| 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR049382026 |
-| 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR095942026 |
-| 2026-09-25 | ESTADUAL[AC] | VERITA | Presidente | 20/09-24/09 | 1030 | BR031172026 |
-| 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR071492026 |
-| 2026-09-25 | ESTADUAL[AC] | VERITA | Presidente | 20/09-24/09 | 1030 | BR070972026 |
-| 2026-09-25 | ESTADUAL[AC] | #NULO# | Presidente | 21/09-24/09 | 804 | BR047902026 |
-| 2026-09-25 | ESTADUAL[AL] | REAL TIME BIG DATA | Presidente | 21/09-24/09 | 1600 | BR099482026 |
-| 2026-09-25 | ESTADUAL[AL] | VERITA | Presidente | 20/09-24/09 | 1220 | BR044392026 |
-| 2026-09-25 | ESTADUAL[AL] | REAL TIME BIG DATA | Presidente | 21/09-24/09 | 1600 | BR071472026 |
-| 2026-09-25 | ESTADUAL[AL] | VERITA | Presidente | 20/09-24/09 | 1220 | BR067742026 |
-| 2026-09-25 | ESTADUAL[AL] | VERITA | Presidente | 20/09-24/09 | 1220 | BR045152026 |
-| 2026-09-25 | ESTADUAL[AL] | REAL TIME BIG DATA | Presidente | 21/09-24/09 | 1600 | BR053162026 |
-| 2026-09-25 | ESTADUAL[AL] | VERITA | Presidente | 20/09-24/09 | 1220 | BR032222026 |
-| 2026-09-25 | ESTADUAL[AL] | REAL TIME BIG DATA | Presidente | 21/09-24/09 | 1600 | BR077342026 |
-| 2026-09-25 | ESTADUAL[AL] | VERITA | Presidente | 20/09-24/09 | 1220 | BR034362026 |
-| 2026-09-25 | ESTADUAL[AL] | VERITA | Presidente | 20/09-24/09 | 1220 | BR044182026 |
-| 2026-09-25 | ESTADUAL[BA] | VERITA | Presidente | 20/09-24/09 | 2020 | BR025462026 |
-| 2026-09-25 | ESTADUAL[DF] | BADRA COMUNICACAO | Presidente | 22/09-24/09 | 1060 | BR004962026 |
-| 2026-09-25 | ESTADUAL[MA] | #NULO# | Presidente | 21/09-24/09 | 900 | BR048922026 |
-| 2026-09-25 | ESTADUAL[MG] | #NULO# | Presidente | 22/09-24/09 | 1204 | BR032962026 |
-| 2026-09-25 | ESTADUAL[MG] | #NULO# | Presidente | 21/09-24/09 | 400 | BR059342026 |
-| 2026-09-25 | ESTADUAL[MG] | VERITA | Presidente | 20/09-24/09 | 2030 | BR092692026 |
-| 2026-09-25 | ESTADUAL[MG] | #NULO# | Presidente | 21/09-24/09 | 600 | BR006202026 |
-| 2026-09-25 | ESTADUAL[MG] | #NULO# | Presidente | 21/09-24/09 | 500 | BR049942026 |
-| 2026-09-25 | ESTADUAL[PA] | VERITA | Presidente | 20/09-24/09 | 1525 | BR087452026 |
-| 2026-09-25 | ESTADUAL[PA] | VERITA | Presidente | 20/09-24/09 | 1525 | BR016842026 |
-| 2026-09-25 | ESTADUAL[PA] | VERITA | Presidente | 20/09-24/09 | 1525 | BR098882026 |
-| 2026-09-25 | ESTADUAL[PA] | VERITA | Presidente | 20/09-24/09 | 1525 | BR027572026 |
-| 2026-09-25 | ESTADUAL[RN] | AFFARE INSTITUTE | Presidente | 20/09-23/09 | 1000 | BR035932026 |
-| 2026-09-25 | ESTADUAL[RN] | METADATA | Presidente | 21/09-23/09 | 1536 | BR085172026 |
-| 2026-09-25 | ESTADUAL[RS] | NEOKEMP PESQUISAS | Presidente | 23/09-25/09 | 1008 | BR038312026 |
-| 2026-09-25 | ESTADUAL[SP] | #NULO# | Presidente | 19/09-22/09 | 1800 | BR052552026 |
-| 2026-09-25 | NACIONAL? | DOXA | Presidente | 19/09-24/09 | 2000 | BR044742026 |
-| 2026-09-25 | NACIONAL? | VERITA | Presidente | 20/09-24/09 | 2010 | BR064462026 |
 | 2026-09-26 | ESTADUAL[ES] | #NULO# | Presidente | 21/09-24/09 | 1800 | BR009772026 |
 | 2026-09-26 | ESTADUAL[MS] | RANKING BRASIL INTELIGENCIA | Presidente | 21/09-25/09 | 2000 | BR093482026 |
 | 2026-09-26 | ESTADUAL[PA] | #NULO# | Presidente | 22/09-25/09 | 804 | BR046032026 |
