@@ -6,6 +6,22 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 05/10, NOITE (rodada local, fila de "olho humano" de 116 itens acumulados desde 26/9): FILA DE
+  NACIONAIS ZERADA. Os três protocolos genuinamente nacionais que ainda faltavam no `DI`/`T2R`/`IM`
+  de outubro entraram: GERP (BR-08168/2026, 1-3/10, substituiu a de 30/9-2/10), APEX/FUTURA
+  (BR-02431/2026, 29/9-3/10, primeira entrada de outubro da casa) e INSTITUTO FRANÇA (BR-02928/2026,
+  28/9-2/10, estreia da casa no painel). Números conferidos em PDF (Poder360) e Jovem Pan/Money
+  Times. `--resolver` aplicado nos três protocolos; restam 113 na fila, todos ESTADUAIS (concentrados
+  em AL e RN, lote AtlasIntel/Veritá de 27/9-2/10 com dezenas de protocolos por município).
+  PERGUNTA PARA O RAFAEL, NÃO DECIDIDA POR CONTA PRÓPRIA: essa fila estadual alimentaria o `PRES26`
+  (Passo 2 do AGENTS.md), mas desde a entrada de 05/10 de manhã acima o Mapa 2026 do painel está
+  permanentemente em modo apuração (`resDia()` retorna true para sempre a partir de 3/10 20h, sem
+  data de desligamento), então NENHUMA pesquisa nova em `PRES26` apareceria na tela: o Mapa só mostra
+  a urna. Por isso esta rodada NÃO abriu a apuração de ~110 pesquisas estaduais pré-eleição que não
+  teriam efeito visível nenhum — ficam na fila, expiram em 21 dias se ninguém decidir. Se o Rafael
+  quiser mesmo assim completar o `PRES26` por valor histórico (comparar previsão de pesquisa x urna
+  por estado, por exemplo), é preciso ou reabrir o Mapa em modo pesquisas para 2026 ou aceitar que o
+  trabalho fica invisível no painel atual.
 - 05/10, MANHÃ: 2026 ENTROU NO HISTÓRICO DE ERRO DAS PESQUISAS, a pedido do Rafael, com a urna
   final (100%): Flávio 47,03 x Lula 45,16 em válidos. A mediana de outubro dava Lula +1,6 (erro de
   +3,5 pró-PT, mesmo sentido de 2014, 2018 e 2022); 12 dos 13 finais subestimaram o Flávio (só a
