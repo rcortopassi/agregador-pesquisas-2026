@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 08:12</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 15:04</div>
   </div>
 
   <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
@@ -820,35 +820,67 @@
     var dias=d.length===3?Date.UTC(+d[2],+d[1]-1,+d[0])/86400000:0;
     return dias*1440+(+p[0]||0)*60+(+p[1]||0)+(+p[2]||0)/60; }
   function resHora(m){ var r=((m%1440)+1440)%1440, h=Math.floor(r/60), mi=Math.floor(r%60); return h+'h'+(mi<10?'0':'')+mi; }
+  // EIXO POR % DAS SEÇÕES, COM MARCOS (06/10/2026, a pedido do Rafael, com um modelo de TV como
+  // referência). Antes o eixo era o relógio: a cauda de 22h às 2h59, com menos de 1% das seções, ocupava
+  // metade do gráfico e espremia a apuração de verdade. Agora cada marco traz % apurado e hora, e os
+  // dois valores; o último marco é sempre o ponto final (100% quando a apuração termina).
   function resSerieSVG(){
     var ser=RESSERIE.filter(function(p){ return p&&p.lula!=null&&p.flavio!=null; }), dg0=null;
     for(var q=0;q<ser.length;q++) if(ser[q].dg){ dg0=ser[q].dg; break; }
     var pts=ser.map(function(p){ if(p.dg) dg0=p.dg; return {m:resMin(p.hg,p.dg||dg0),l:+p.lula,f:+p.flavio,s:+p.pst}; });
     var b=RES26.br; if(b){ var o=resLF(b); if(o.L&&o.F){ var mb=resMin(b.hg,b.dg); if(!pts.length||mb>pts[pts.length-1].m) pts.push({m:mb,l:resNum(o.L.pvap),f:resNum(o.F.pvap),s:resNum(b.pst)}); } }
     if(pts.length<2) return '';
-    var W=640,H=230,L=34,R=74,T=40,B=26, x0=pts[0].m, x1=pts[pts.length-1].m; if(x1-x0<1) x1=x0+1;
-    var lo=50,hi=50; pts.forEach(function(p){ lo=Math.min(lo,p.l,p.f); hi=Math.max(hi,p.l,p.f); });
-    lo=Math.floor(lo-2); hi=Math.ceil(hi+2);
-    function X(m){ return L+(m-x0)/(x1-x0)*(W-L-R); } function Y(v){ return T+(hi-v)/(hi-lo)*(H-T-B); }
-    function linha(k,cor){ return '<polyline fill="none" stroke="'+cor+'" stroke-width="2.4" stroke-linejoin="round" points="'+pts.map(function(p){ return X(p.m).toFixed(1)+','+Y(p[k]).toFixed(1); }).join(' ')+'"/>'; }
-    var g='', passo=(hi-lo)>12?5:2;
-    for(var v=Math.ceil(lo/passo)*passo; v<=hi; v+=passo){ g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="'+(v===50?P.mut:P.bsoft)+'" stroke-width="1"'+(v===50?' stroke-dasharray="4 3"':'')+'/>'+
-      '<text x="'+(L-5)+'" y="'+(Y(v)+3.5)+'" text-anchor="end" font-size="10" fill="'+P.mut+'">'+v+'</text>'; }
-    var vir='', nv=0, ult=null;
-    for(var i=1;i<pts.length;i++){ var a=pts[i-1], c=pts[i], da=a.l-a.f, dc=c.l-c.f;
-      if(da!==0&&dc!==0&&(da>0)!==(dc>0)){ if(ult!==null&&X(c.m)-ult<70) continue; ult=X(c.m); nv++;
-        var quem=dc>0?'Lula':'Flávio', xv=X(c.m).toFixed(1);
-        vir+='<line x1="'+xv+'" x2="'+xv+'" y1="'+(T-12)+'" y2="'+(H-B)+'" stroke="'+P.txt2+'" stroke-dasharray="3 3"/>'+
-          '<text x="'+(+xv+4)+'" y="'+(T-24)+'" font-size="10.5" font-weight="700" fill="'+P.txt+'">'+resHora(c.m)+' · virada '+quem+'</text>'+
-          '<text x="'+(+xv+4)+'" y="'+(T-12)+'" font-size="10" fill="'+P.txt2+'"><tspan fill="'+P.red+'">'+fmt2(c.l)+'</tspan> x <tspan fill="'+P.blue+'">'+fmt2(c.f)+'</tspan></text>'; } }
-    var z=pts[pts.length-1], yl=Y(z.l), yf=Y(z.f); if(Math.abs(yl-yf)<12){ var md=(yl+yf)/2; if(z.l>=z.f){ yl=md-6; yf=md+6; } else { yl=md+6; yf=md-6; } }
-    var fim='<text x="'+(W-R+6)+'" y="'+(yl+4)+'" font-size="11" font-weight="700" fill="'+P.red+'">Lula '+fmt2(z.l)+'</text>'+
-      '<text x="'+(W-R+6)+'" y="'+(yf+4)+'" font-size="11" font-weight="700" fill="'+P.blue+'">Flávio '+fmt2(z.f)+'</text>';
-    var eixo='<text x="'+L+'" y="'+(H-8)+'" font-size="10" fill="'+P.mut+'">'+resHora(x0)+'</text><text x="'+(W-R)+'" y="'+(H-8)+'" text-anchor="end" font-size="10" fill="'+P.mut+'">'+resHora(x1)+' ('+fmt2(z.s)+'% das seções)</text>';
-    return '<div style="padding:4px 14px 10px;"><div style="font-size:12.5px; font-weight:600; color:'+P.txt+'; margin-bottom:2px;">Evolução da apuração</div>'+
-      '<div style="font-size:11px; color:'+P.mut+'; margin-bottom:4px;">Votos válidos no país, em %, minuto a minuto.'+(nv?'':(z.s>=100?' Não houve virada.':' Nenhuma virada até agora.'))+'</div>'+
-      '<div style="overflow-x:auto;"><svg viewBox="0 0 '+W+' '+H+'" style="width:100%; min-width:320px; height:auto; display:block;" role="img" aria-label="Evolução da apuração, Lula x Flávio">'+g+vir+linha('f',P.blue)+linha('l',P.red)+fim+eixo+'</svg></div>'+
-      '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:3px; line-height:1.45;">O TSE não guarda o histórico da apuração: a série é gravada por este painel desde '+resHora(x0)+', e o que veio antes não aparece. Fonte: TSE.</div></div>'; }
+    var z=pts[pts.length-1], fim=z.s>=100;
+    var turno=(b&&String(b.t)==='2')?'2º turno':'1º turno';
+    var W=680,H=300,L=40,R=26,T=46,B=50;
+    var s0=Math.max(0,Math.floor(pts[0].s)), s1=Math.max(100,Math.ceil(z.s)); if(!fim) s1=Math.max(Math.ceil(z.s)+2,s0+5);
+    var lo=50,hi=50; pts.forEach(function(p){ lo=Math.min(lo,p.l,p.f); hi=Math.max(hi,p.l,p.f); }); lo=Math.floor(lo-2); hi=Math.ceil(hi+2);
+    function X(v){ return L+(v-s0)/(s1-s0)*(W-L-R); } function Y(v){ return T+(hi-v)/(hi-lo)*(H-T-B); }
+    function linha(k,cor){ return '<polyline fill="none" stroke="'+cor+'" stroke-width="2.6" stroke-linejoin="round" points="'+pts.map(function(p){ return X(p.s).toFixed(1)+','+Y(p[k]).toFixed(1); }).join(' ')+'"/>'; }
+    var g='', passo=(hi-lo)>12?4:2;
+    for(var v=Math.ceil(lo/passo)*passo; v<=hi; v+=passo){ g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="'+P.bsoft+'" stroke-width="1"/>'+
+      '<text x="'+(L-6)+'" y="'+(Y(v)+3.5)+'" text-anchor="end" font-size="10" fill="'+P.mut+'">'+v+'</text>'; }
+    if(lo<50&&hi>50) g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(50)+'" y2="'+Y(50)+'" stroke="'+P.txt2+'" stroke-width="1" stroke-dasharray="5 4"/>'+
+      '<text x="'+(W-R)+'" y="'+(Y(50)-4)+'" text-anchor="end" font-size="9.5" fill="'+P.mut+'">50% dos válidos</text>';
+    // marcos: primeiro, alvos de % e o último; escolhe o ponto gravado mais próximo e evita sobreposição
+    var alvos=[12,25,40,64,90,99], idx=[0];
+    alvos.forEach(function(al){ var best=-1,dd=1e9; for(var i=0;i<pts.length;i++){ var d=Math.abs(pts[i].s-al); if(d<dd){ dd=d; best=i; } } if(best>=0&&dd<6) idx.push(best); });
+    idx.push(pts.length-1); idx=idx.filter(function(v,i,a){ return a.indexOf(v)===i; }).sort(function(x,y){ return x-y; });
+    var sel=[]; idx.forEach(function(i){ if(i===pts.length-1){ while(sel.length&&X(pts[i].s)-X(pts[sel[sel.length-1]].s)<54) sel.pop(); sel.push(i); }
+      else if(!sel.length||X(pts[i].s)-X(pts[sel[sel.length-1]].s)>=54) sel.push(i); });
+    var mk='';
+    sel.forEach(function(i){ var p=pts[i], x=X(p.s).toFixed(1), ult=(i===pts.length-1), pri=(i===0), an=pri?'start':(ult?'end':'middle'), xt=(pri?(+x-5):(ult?(+x+5):+x)).toFixed(1);
+      var up=p.f>=p.l; var yf=Y(p.f)+(up?-9:17), yl=Y(p.l)+(up?17:-9);
+      mk+='<line x1="'+x+'" x2="'+x+'" y1="'+T+'" y2="'+(H-B)+'" stroke="'+P.bsoft+'" stroke-width="1" stroke-dasharray="2 4"/>'+
+        '<circle cx="'+x+'" cy="'+Y(p.f).toFixed(1)+'" r="4" fill="'+P.blue+'" stroke="'+P.surf+'" stroke-width="1.5"/>'+
+        '<circle cx="'+x+'" cy="'+Y(p.l).toFixed(1)+'" r="4" fill="'+P.red+'" stroke="'+P.surf+'" stroke-width="1.5"/>'+
+        '<text x="'+xt+'" y="'+yf.toFixed(1)+'" text-anchor="'+an+'" font-size="10.5" font-weight="700" fill="'+P.blue+'">'+fmt2(p.f)+'</text>'+
+        '<text x="'+xt+'" y="'+yl.toFixed(1)+'" text-anchor="'+an+'" font-size="10.5" font-weight="700" fill="'+P.red+'">'+fmt2(p.l)+'</text>'+
+        '<text x="'+xt+'" y="'+(H-B+15)+'" text-anchor="'+an+'" font-size="10" fill="'+P.mut+'">'+(p.s>=100?'100':fmt2(p.s))+'%</text>'+
+        '<text x="'+xt+'" y="'+(H-B+29)+'" text-anchor="'+an+'" font-size="10.5" font-weight="'+(ult?'700':'400')+'" fill="'+P.txt2+'">'+resHora(p.m)+'</text>'; });
+    var vir='', nv=0;
+    for(var i2=1;i2<pts.length;i2++){ var a2=pts[i2-1], c2=pts[i2], da=a2.l-a2.f, dc=c2.l-c2.f;
+      if(da!==0&&dc!==0&&(da>0)!==(dc>0)){ nv++; var xv=X(c2.s).toFixed(1);
+        vir+='<line x1="'+xv+'" x2="'+xv+'" y1="'+(T-4)+'" y2="'+(H-B)+'" stroke="'+P.txt+'" stroke-width="1.2"/>'+
+          '<text x="'+(+xv+4)+'" y="'+(T-6)+'" font-size="10" font-weight="700" fill="'+P.txt+'">virada '+(dc>0?'Lula':'Flávio')+' · '+resHora(c2.m)+'</text>'; } }
+    var leg='<circle cx="'+(W-R-150)+'" cy="16" r="5" fill="'+P.red+'"/><text x="'+(W-R-141)+'" y="20" font-size="11.5" font-weight="600" fill="'+P.txt+'">Lula</text>'+
+      '<circle cx="'+(W-R-96)+'" cy="16" r="5" fill="'+P.blue+'"/><text x="'+(W-R-87)+'" y="20" font-size="11.5" font-weight="600" fill="'+P.txt+'">Flávio Bolsonaro</text>';
+    var tit='<text x="'+L+'" y="20" font-size="13" font-weight="700" fill="'+P.txt+'">'+turno+' · Presidente · '+(fim?'resultado final':'parcial')+'</text>'+
+      '<text x="'+L+'" y="35" font-size="10.5" fill="'+P.mut+'">% dos votos válidos no país, conforme as seções eram apuradas</text>';
+    var eixoT='<text x="'+L+'" y="'+(H-4)+'" font-size="9.5" fill="'+P.mut+'">% das seções apuradas · hora de Brasília</text>';
+    // trava do arquivo nacional: maior intervalo de relógio com o % parado
+    // trava do arquivo nacional: a maior sequência com o % parado por 30+ minutos, abaixo de 99%
+    var trava=null;
+    for(var k=0;k<pts.length;){ var j=k; while(j+1<pts.length&&Math.abs(pts[j+1].s-pts[k].s)<0.01) j++;
+      var fimT=(j+1<pts.length)?pts[j+1]:pts[j], dtT=fimT.m-pts[k].m;
+      if(pts[k].s<99&&dtT>=30&&(!trava||dtT>trava.dt)) trava={dt:dtT,a:pts[k],b:fimT}; k=j+1; }
+    var nota='Fonte: TSE. A série foi gravada por este painel a cada minuto desde '+resHora(pts[0].m)+' ('+fmt2(pts[0].s)+'% das seções); o TSE não guarda o histórico e o que veio antes não aparece.';
+    if(trava) nota+=' O arquivo nacional do TSE ficou parado em '+fmt2(trava.a.s)+'% das '+resHora(trava.a.m)+' às '+resHora(trava.b.m)+', enquanto os estados seguiam; o próprio site oficial travou junto.';
+    if(fim&&Math.floor(z.m/1440)>Math.floor(pts[0].m/1440)){ var dz=new Date(Math.floor(z.m/1440)*86400000); nota+=' A totalização chegou a 100% às '+resHora(z.m)+' de '+dz.getUTCDate()+'/'+(dz.getUTCMonth()+1)+'.'; }
+    nota+=nv?'':(fim?' Não houve virada: '+(z.f>z.l?'Flávio':'Lula')+' liderou a apuração inteira.':' Nenhuma virada até agora.');
+    return '<div style="padding:6px 14px 10px;"><div style="overflow-x:auto;"><svg viewBox="0 0 '+W+' '+H+'" style="width:100%; min-width:340px; height:auto; display:block;" role="img" aria-label="Evolução da apuração, Lula x Flávio">'+
+      tit+leg+g+mk+vir+linha('f',P.blue)+linha('l',P.red)+eixoT+'</svg></div>'+
+      '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:3px; line-height:1.45;">'+nota+'</div></div>'; }
   function resBloco(){
     if(RES26.ativo) return resBarra();
     if(!resDia()) return '<div style="padding:6px 14px 2px; font-size:11px; color:'+P.mut+';">No dia 4 de outubro, a partir da abertura das urnas, este mapa passa a mostrar a apuração oficial do TSE, atualizada a cada minuto, no lugar das pesquisas.</div>';
