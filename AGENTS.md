@@ -354,6 +354,8 @@ O painel foi ajustado para depois do 1º turno. Só apresentação: o método n�
 - Governador e Senado: `RES26E` guarda o resultado oficial do 1º turno (TSE, eleição 6259). Mapa
   estadual pinta de dourado os 7 estados com 2º turno de governador (AC, AM, DF, ES, RJ, RN, TO).
   Para o 2º turno de governador, a apuração do TSE de 25/10 usa outro código estadual; atualizar à mão.
-- Mapa presidencial: botão '2026 · 1º turno' usa `PRES2026` (congelado); '2026 · 2º turno' fica sem
-  mapa até 8h de 25/10 (`resDia2`) e então liga a apuração ao vivo.
+- Mapa presidencial: botão '2026 · 1º turno' usa `PRES2026` (resultado, congelado); '2026 · 2º turno'
+  mostra as pesquisas estaduais de 2º turno até 8h de 25/10 (`resDia2`) e então liga a apuração ao vivo.
+  A cor vem de `PRES26[uf].t2l/t2f` (`lead2T`: empate se a diferença for menor que 3 pontos). Pesquisa
+  estadual de 2º turno nova substitui a entrada do estado no `PRES26` (t1 pode ficar '' se não houver 1º turno).
 - Debates do 2º turno estão em `DEBATES` com `t:2`. Confirmar horário da Band e da Globo quando sair.
