@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 06/10/2026 22:27. Mercados: Polymarket 15,5%/84,5%, Kalshi 16,0%/85,0%.
+Rodada de 07/10/2026 08:00. Mercados: Polymarket 14,5%/85,0%, Kalshi 16,0%/84,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -38,29 +38,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-26 | ESTADUAL[ES] | #NULO# | Presidente | 21/09-24/09 | 1800 | BR009772026 |
-| 2026-09-26 | ESTADUAL[MS] | RANKING BRASIL INTELIGENCIA | Presidente | 21/09-25/09 | 2000 | BR093482026 |
-| 2026-09-26 | ESTADUAL[PA] | #NULO# | Presidente | 22/09-25/09 | 804 | BR046032026 |
-| 2026-09-26 | ESTADUAL[PI] | CONSULTE INTELIGENCIA E MERC | Presidente | 17/09-19/09 | 1000 | BR051692026 |
-| 2026-09-26 | ESTADUAL[PR] | VERITA | Presidente | 21/09-25/09 | 2010 | BR038702026 |
-| 2026-09-26 | ESTADUAL[PR] | VERITA | Presidente | 21/09-25/09 | 2010 | BR069692026 |
-| 2026-09-26 | ESTADUAL[RJ] | VERITA | Presidente | 21/09-25/09 | 2030 | BR056002026 |
-| 2026-09-26 | ESTADUAL[RN] | QUALITTA EMPREENDIMENTOS | Presidente | 20/09-25/09 | 1200 | BR097732026 |
-| 2026-09-26 | ESTADUAL[RN] | MEDIA - INTELIGENCIA EM PESQ | Presidente | 21/09-25/09 | 2000 | BR041572026 |
-| 2026-09-26 | ESTADUAL[RN] | INSTITUTO SETA DE PESQUISA | Presidente | 21/09-24/09 | 1500 | BR028822026 |
-| 2026-09-26 | ESTADUAL[RR] | VERITA | Presidente | 21/09-25/09 | 1030 | BR052652026 |
-| 2026-09-26 | ESTADUAL[RS] | VERITA | Presidente | 21/09-25/09 | 2020 | BR043242026 |
-| 2026-09-26 | ESTADUAL[SC] | VERITA | Presidente | 21/09-25/09 | 1525 | BR070782026 |
-| 2026-09-26 | ESTADUAL[SC] | DATATRENDS | Presidente | 22/09-24/09 | 1200 | BR000732026 |
-| 2026-09-26 | ESTADUAL[SC] | DATATRENDS | Presidente | 22/09-24/09 | 1200 | BR096612026 |
-| 2026-09-26 | ESTADUAL[SE] | VERITA | Presidente | 21/09-25/09 | 1220 | BR028172026 |
-| 2026-09-26 | ESTADUAL[SE] | VERITA | Presidente | 21/09-25/09 | 1220 | BR004672026 |
-| 2026-09-26 | ESTADUAL[SE] | VERITA | Presidente | 21/09-25/09 | 1220 | BR035662026 |
-| 2026-09-26 | ESTADUAL[SE] | VERITA | Presidente | 21/09-25/09 | 1220 | BR052092026 |
-| 2026-09-26 | ESTADUAL[SE] | VERITA | Presidente | 21/09-25/09 | 1220 | BR047612026 |
-| 2026-09-26 | ESTADUAL[SE] | VERITA | Presidente | 21/09-25/09 | 1220 | BR051052026 |
-| 2026-09-26 | ESTADUAL[SP] | VERITA | Presidente | 21/09-25/09 | 3025 | BR041312026 |
-| 2026-09-26 | NACIONAL? | VERITA | Presidente | 20/09-25/09 | 40500 | BR044672026 |
 | 2026-09-27 | ESTADUAL[AL] | PALPE PESQUISAS | Presidente | 13/09-22/09 | 5000 | BR050032026 |
 | 2026-09-27 | ESTADUAL[AL] | DATATRENDS | Presidente | 23/09-25/09 | 1200 | BR051912026 |
 | 2026-09-27 | ESTADUAL[BA] | INSTITUTO FRANCA DE PESQUISA | Presidente | 23/09-26/09 | 2000 | BR078592026 |
