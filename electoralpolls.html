@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 21:58</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 22:04</div>
   </div>
 
   <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
@@ -1850,7 +1850,95 @@
   // Gráfico da previsão. Linha cheia = o que as pesquisas mediram; linha pontilhada = projeção.
   // Tudo em VOTOS VÁLIDOS, porque é a única base em que pesquisa e urna são comparáveis: a urna
   // não tem indeciso. Por isso esta aba NÃO usa a mesma escala da aba Gráfico, que é amostra total.
-  function prevSVG(){
+  // ===================== GRÁFICOS DA PREVISÃO DEPOIS DO 1º TURNO (06/10/2026, a pedido do Rafael) =====================
+  // Dois gráficos separados, porque num só os quatro números do fim de cada turno caem na mesma faixa:
+  // (1) o que a projeção do 1º turno traçou contra a urna; (2) a previsão do 2º turno, com as duas contas.
+  // Cada fim de gráfico tem duas colunas lado a lado, com os números do lado de fora de cada coluna.
+  function pvLabels(yA,yB){ // afasta dois rótulos que ficariam a menos de 13px um do outro
+    if(Math.abs(yA-yB)>=13) return [yA,yB]; var md=(yA+yB)/2; return yA<=yB?[md-6.5,md+6.5]:[md+6.5,md-6.5]; }
+  function pvCol(x,yl,yf,vl,vf,lado,forma,chave){ // uma coluna do fim: Lula e Flávio, rótulos à esquerda ou à direita
+    var ys=pvLabels(yl,yf), an=lado<0?'end':(lado>0?'start':'middle'), xt=(x+lado*10).toFixed(1), h='';
+    if(lado===0){ var lCima=yl<=yf; ys=lCima?[yl-12,yf+16]:[yl+16,yf-12]; ys=[ys[0]-4,ys[1]-4]; }
+    function pt(y,c){ return forma==='d'
+      ? '<rect x="'+(x-5.5).toFixed(1)+'" y="'+(y-5.5).toFixed(1)+'" width="11" height="11" transform="rotate(45 '+x.toFixed(1)+' '+y.toFixed(1)+')" fill="'+c+'" stroke="'+P.surf+'" stroke-width="1.5"/>'
+      : '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="5" fill="'+(forma==='o'?P.surf:c)+'" stroke="'+c+'" stroke-width="2.5"/>'; }
+    h+='<g style="cursor:pointer;" onclick="pjExp(\''+chave+'\')">'+pt(yf,P.blue)+pt(yl,P.red)+
+      '<text x="'+xt+'" y="'+(ys[1]+4).toFixed(1)+'" text-anchor="'+an+'" font-size="12" font-weight="700" fill="'+P.blue+'">'+fmt2(vf)+'</text>'+
+      '<text x="'+xt+'" y="'+(ys[0]+4).toFixed(1)+'" text-anchor="'+an+'" font-size="12" font-weight="700" fill="'+P.red+'">'+fmt2(vl)+'</text>'+
+      '<circle cx="'+x.toFixed(1)+'" cy="'+((yl+yf)/2).toFixed(1)+'" r="'+(Math.abs(yl-yf)/2+12).toFixed(1)+'" fill="transparent"/></g>';
+    return h; }
+  function pvLeg(itens){ return '<div style="display:flex; flex-wrap:wrap; gap:12px; padding:6px 14px 2px; font-size:11.5px; color:'+P.txt2+';">'+itens.join('')+'</div>'; }
+  function pvSw(html,t){ return '<span style="display:flex; align-items:center; gap:6px;">'+html+t+'</span>'; }
+  function prevSVG1T(){
+    var F=PREV1T_FINAL, u=URNA1T, ms=mesesAteAncora(); if(!ms.length) return '';
+    var n=ms.length, W=680, Hh=330, L=44, R=96, T=20, B=46, pw=W-L-R, ph=Hh-T-B, lo=32, hi=52;
+    function X(i){ return L+i*pw/(n+0.6); } function Y(v){ return T+(hi-v)/(hi-lo)*ph; }
+    var xe=X(n-1)+1.6*pw/(n+0.6), xP=xe-28, xU=xe+28, g='', pl='', pf='', dots='';
+    for(var v=lo; v<=hi; v+=4) g+='<line x1="'+L+'" y1="'+Y(v).toFixed(1)+'" x2="'+(W-R+40)+'" y2="'+Y(v).toFixed(1)+'" stroke="'+P.bsoft+'"/><text x="'+(L-8)+'" y="'+(Y(v)+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="'+P.mut+'">'+v+'</text>';
+    g+='<line x1="'+L+'" y1="'+Y(50).toFixed(1)+'" x2="'+(W-R+40)+'" y2="'+Y(50).toFixed(1)+'" stroke="'+P.txt2+'" stroke-dasharray="5,4" stroke-opacity="0.7"/><text x="'+(W-R+40)+'" y="'+(Y(50)-5).toFixed(1)+'" text-anchor="end" font-size="9.5" fill="'+P.mut+'">50% dos válidos</text>';
+    for(var i=0;i<n;i++){ var vv=v26(ms[i]); if(!vv) continue; pl+=X(i).toFixed(1)+','+Y(vv.l).toFixed(1)+' '; pf+=X(i).toFixed(1)+','+Y(vv.f).toFixed(1)+' ';
+      PJXP['m1-'+ms[i]]='<b>Pesquisas de '+ms[i]+'</b>: mediana das '+vv.n+' rodadas do mês em votos válidos, sem correção: <b style="color:'+P.red+';">Lula '+fmt(vv.l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(vv.f)+'</b>.';
+      dots+='<g style="cursor:pointer;" onclick="pjExp(\'m1-'+ms[i]+'\')"><circle cx="'+X(i).toFixed(1)+'" cy="'+Y(vv.l).toFixed(1)+'" r="3" fill="'+P.red+'"/><circle cx="'+X(i).toFixed(1)+'" cy="'+Y(vv.f).toFixed(1)+'" r="3" fill="'+P.blue+'"/>'+
+        '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(vv.l).toFixed(1)+'" r="11" fill="transparent"/><circle cx="'+X(i).toFixed(1)+'" cy="'+Y(vv.f).toFixed(1)+'" r="11" fill="transparent"/></g>'; }
+    var va=v26(ms[n-1]), xa=X(n-1), meio=1.645*F.proj.sd/2;
+    function faixa(v0,v1,pat){ return '<polygon fill="url(#'+pat+')" points="'+xa.toFixed(1)+','+Y(v0).toFixed(1)+' '+xP.toFixed(1)+','+Y(v1+meio).toFixed(1)+' '+xP.toFixed(1)+','+Y(v1-meio).toFixed(1)+'" style="cursor:pointer;" onclick="pjExp(\'faixa1\')"/>'; }
+    var proj='<rect x="'+xa.toFixed(1)+'" y="'+T+'" width="'+(W-R+40-xa).toFixed(1)+'" height="'+ph+'" fill="'+P.gold+'" fill-opacity="0.05"/>'+
+      '<line x1="'+xa.toFixed(1)+'" y1="'+T+'" x2="'+xa.toFixed(1)+'" y2="'+(T+ph)+'" stroke="'+P.goldtxt+'" stroke-width="1.2" stroke-dasharray="3,3" stroke-opacity="0.7"/>'+
+      faixa(va.l,F.proj.l,'pv1r')+faixa(va.f,F.proj.f,'pv1b')+
+      '<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" stroke-dasharray="6,5" points="'+xa.toFixed(1)+','+Y(va.l).toFixed(1)+' '+xP.toFixed(1)+','+Y(F.proj.l).toFixed(1)+'"/>'+
+      '<polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" stroke-dasharray="6,5" points="'+xa.toFixed(1)+','+Y(va.f).toFixed(1)+' '+xP.toFixed(1)+','+Y(F.proj.f).toFixed(1)+'"/>';
+    var lo90=F.proj.m-1.645*F.proj.sd, hi90=F.proj.m+1.645*F.proj.sd, um=u.l-u.f, dentro=(um>=lo90&&um<=hi90);
+    PJXP['proj1']='<b>Projeção do painel para 4/10</b>, traçada na véspera com a correção histórica e âncora em '+F.anc+': <b style="color:'+P.red+';">Lula '+fmt2(F.proj.l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt2(F.proj.f)+'</b>, margem '+(F.proj.m>=0?'Lula':'Flávio')+' +'+fmt2(Math.abs(F.proj.m))+'.';
+    PJXP['urna1']='<b>Urna de 4/10</b> (TSE, 100% das seções): <b style="color:'+P.blue+';">Flávio '+fmt2(u.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt2(u.l)+'</b>, margem Flávio +'+fmt2(u.f-u.l)+'. A projeção errou a margem em '+fmt(Math.abs(F.proj.m-um))+' pontos.';
+    PJXP['faixa1']='<b>Faixa de 90% da projeção</b>: margem entre '+fmt(lo90)+' e +'+fmt(hi90)+' (positivo é Lula à frente). A urna deu '+fmt(um)+(dentro?', dentro da faixa.':', fora da faixa.');
+    var fim=pvCol(xP,Y(F.proj.l),Y(F.proj.f),F.proj.l,F.proj.f,0,'o','proj1')+pvCol(xU,Y(u.l),Y(u.f),u.l,u.f,1,'d','urna1');
+    var rot=ms.map(function(m,i){ return '<text x="'+X(i).toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="12" fill="'+P.txt2+'">'+m+'</text>'; }).join('')+
+      '<text x="'+xP.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" fill="'+P.goldtxt+'">projeção</text><text x="'+xU.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.ink+'">urna</text>'+
+      '<text x="'+xe.toFixed(1)+'" y="'+(Hh-10)+'" text-anchor="middle" font-size="11" fill="'+P.txt2+'">4/out</text>';
+    var h='<div style="padding:12px 14px 0; font-size:13px; font-weight:600; color:'+P.ink+';">1º turno: o que a projeção traçou e o que a urna deu</div>'+
+      pvLeg([pvSw('<span style="width:18px; height:3px; background:'+P.red+'; display:inline-block;"></span>','Lula, pesquisas'),pvSw('<span style="width:18px; height:3px; background:'+P.blue+'; display:inline-block;"></span>','Flávio, pesquisas'),
+        pvSw('<span style="width:18px; border-top:2.5px dashed '+P.txt2+'; display:inline-block;"></span>','projeção'),pvSw('<span style="width:16px; height:10px; display:inline-block; background:repeating-linear-gradient(45deg,'+P.hatch+','+P.hatch+' 1.5px,transparent 1.5px,transparent 5px);"></span>','faixa de 90%'),
+        pvSw('<span style="width:9px; height:9px; background:'+P.ink+'; transform:rotate(45deg); display:inline-block;"></span>','urna')])+
+      '<svg viewBox="0 0 '+W+' '+Hh+'" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1o turno: pesquisas mensais em votos validos, projecao do painel e resultado da urna">'+
+      '<defs><pattern id="pv1r" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.red+'" stroke-width="1.3" stroke-opacity="0.28"/></pattern>'+
+      '<pattern id="pv1b" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.blue+'" stroke-width="1.3" stroke-opacity="0.28"/></pattern></defs>'+
+      g+proj+'<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" points="'+pl+'"/><polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" points="'+pf+'"/>'+dots+fim+rot+'</svg>'+
+      '<div style="padding:2px 14px 10px; font-size:12px; color:'+P.txt+'; line-height:1.55;">A projeção deu '+(F.proj.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(F.proj.m))+'; a urna deu Flávio +'+fmt(u.f-u.l)+'. Errou a margem em <b>'+fmt(Math.abs(F.proj.m-um))+' pontos</b>, '+
+        (dentro?'e a urna caiu <b>dentro da faixa de 90%</b>':'e a urna caiu <b>fora da faixa de 90%</b>')+' (de '+fmt(lo90)+' a +'+fmt(hi90)+'). Os dois níveis projetados ficaram abaixo da urna: Lula '+fmt2(F.proj.l)+' contra '+fmt2(u.l)+', Flávio '+fmt2(F.proj.f)+' contra '+fmt2(u.f)+'.</div>';
+    return h; }
+  function prevSVG2T(){
+    var Q=prev2T(); if(!Q||(!Q.A&&!Q.B)) return '';
+    var ms=months.filter(function(m){ return T2R[m]&&t2valid(m)!==null; }); if(!ms.length) return '';
+    var n=ms.length, W=680, Hh=300, L=44, R=130, T=20, B=46, pw=W-L-R, ph=Hh-T-B, lo=44, hi=56;
+    function X(i){ return L+i*pw/n; } function Y(v){ return T+(hi-v)/(hi-lo)*ph; }
+    var xe=X(n), xA=xe-18, xB=xe+18, g='', pl='', pf='', dots='';
+    for(var v=lo; v<=hi; v+=2) g+='<line x1="'+L+'" y1="'+Y(v).toFixed(1)+'" x2="'+(W-R+56)+'" y2="'+Y(v).toFixed(1)+'" stroke="'+(v===50?P.txt2:P.bsoft)+'"'+(v===50?' stroke-dasharray="5,4" stroke-opacity="0.7"':'')+'/><text x="'+(L-8)+'" y="'+(Y(v)+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="'+P.mut+'">'+v+'</text>';
+    for(var i=0;i<n;i++){ var mg=t2valid(ms[i]), l=50+mg/2, f=50-mg/2; pl+=X(i).toFixed(1)+','+Y(l).toFixed(1)+' '; pf+=X(i).toFixed(1)+','+Y(f).toFixed(1)+' ';
+      PJXP['m2-'+ms[i]]='<b>2º turno perguntado em '+ms[i]+'</b>: mediana de '+Object.keys(T2R[ms[i]]).length+' pesquisas, em votos válidos e com o house effect de 2º turno: <b style="color:'+P.red+';">Lula '+fmt(l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(f)+'</b>.';
+      dots+='<g style="cursor:pointer;" onclick="pjExp(\'m2-'+ms[i]+'\')"><circle cx="'+X(i).toFixed(1)+'" cy="'+Y(l).toFixed(1)+'" r="3.2" fill="'+P.red+'"/><circle cx="'+X(i).toFixed(1)+'" cy="'+Y(f).toFixed(1)+'" r="3.2" fill="'+P.blue+'"/>'+
+        '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(l).toFixed(1)+'" r="11" fill="transparent"/><circle cx="'+X(i).toFixed(1)+'" cy="'+Y(f).toFixed(1)+'" r="11" fill="transparent"/></g>'+
+        '<text x="'+X(i).toFixed(1)+'" y="'+((l>=f?Y(l)-9:Y(l)+16)).toFixed(1)+'" text-anchor="middle" font-size="10.5" fill="'+P.red+'">'+fmt(l)+'</text><text x="'+X(i).toFixed(1)+'" y="'+((l>=f?Y(f)+16:Y(f)-9)).toFixed(1)+'" text-anchor="middle" font-size="10.5" fill="'+P.blue+'">'+fmt(f)+'</text>'; }
+    var fim='', lad='<rect x="'+(xe-40).toFixed(1)+'" y="'+T+'" width="'+(W-R+56-(xe-40)).toFixed(1)+'" height="'+ph+'" fill="'+P.gold+'" fill-opacity="0.05"/>';
+    if(Q.A){ PJXP['a2t']='<b>Conta A</b>: parte da urna do 1º turno (Flávio '+fmt2(URNA1T.f)+' x Lula '+fmt2(URNA1T.l)+') e reparte os '+fmt(Q.bloco)+' pontos dos demais candidatos pela transferência medida nas pesquisas ('+Math.round(Q.tf.t*100)+'% para o Flávio, '+Q.tf.n+' pares). Dá <b style="color:'+P.blue+';">Flávio '+fmt(Q.A.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt(Q.A.l)+'</b>.';
+      fim+=pvCol(xA,Y(Q.A.l),Y(Q.A.f),Q.A.l,Q.A.f,-1,'f','a2t'); }
+    if(Q.B){ PJXP['b2t']='<b>Conta B</b>: o 2º turno perguntado pelos institutos em '+PREV1T_FINAL.anc+', em votos válidos e com o house effect de 2º turno: <b style="color:'+P.blue+';">Flávio '+fmt(Q.B.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt(Q.B.l)+'</b>.';
+      fim+=pvCol(xB,Y(Q.B.l),Y(Q.B.f),Q.B.l,Q.B.f,1,'o','b2t'); }
+    var rot=ms.map(function(m,i){ return '<text x="'+X(i).toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="12" fill="'+P.txt2+'">'+m+'</text>'; }).join('')+
+      (Q.A?'<text x="'+xA.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.goldtxt+'">A</text>':'')+(Q.B?'<text x="'+xB.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.goldtxt+'">B</text>':'')+
+      '<text x="'+xe.toFixed(1)+'" y="'+(Hh-10)+'" text-anchor="middle" font-size="11" fill="'+P.txt2+'">25/out</text>';
+    var mA=Q.A?Q.A.m:null, mB=Q.B?Q.B.m:null, conc=(mA!==null&&mB!==null)?((mA>=0)===(mB>=0)):null;
+    function lado(m){ return (m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(m)); }
+    return '<div style="padding:12px 14px 0; font-size:13px; font-weight:600; color:'+P.ink+';">2º turno: a previsão para 25 de outubro</div>'+
+      pvLeg([pvSw('<span style="width:18px; height:3px; background:'+P.red+'; display:inline-block;"></span>','Lula'),pvSw('<span style="width:18px; height:3px; background:'+P.blue+'; display:inline-block;"></span>','Flávio'),
+        pvSw('<span style="width:9px; height:9px; border-radius:50%; background:'+P.txt2+'; display:inline-block;"></span>','A: urna do 1º turno e transferência'),pvSw('<span style="width:9px; height:9px; border-radius:50%; border:2px solid '+P.txt2+'; display:inline-block;"></span>','B: 2º turno perguntado')])+
+      '<svg viewBox="0 0 '+W+' '+Hh+'" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2o turno: pesquisas mensais em votos validos e as duas contas para 25 de outubro">'+
+      g+lad+'<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" points="'+pl+'"/><polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" points="'+pf+'"/>'+dots+fim+rot+'</svg>'+
+      '<div style="padding:2px 14px 10px; font-size:12px; color:'+P.txt+'; line-height:1.55;">'+
+        (mA!==null?'Conta A: <b>'+lado(mA)+'</b>. ':'')+(mB!==null?'Conta B: <b>'+lado(mB)+'</b>. ':'')+
+        (conc===null?'':(conc?'As duas contas apontam para o mesmo lado.':'As duas contas apontam para lados opostos.'))+' A linha mostra o 2º turno que os institutos perguntaram mês a mês, em votos válidos e com house effect.</div>'+
+      '<div id="pj-exp" style="margin:6px 14px 12px; padding:9px 12px; font-size:12px; line-height:1.55; color:'+P.txt+'; background:'+P.surf2+'; border:1px solid '+P.bord+'; border-left:3px solid '+P.bord+'; border-radius:6px;">Toque em qualquer ponto dos dois gráficos para ver de onde sai o número.</div>'; }
+  function prevSVG(){ return URNA1T ? prevSVG1T()+prevSVG2T() : prevSVGpre(); }
+  function prevSVGpre(){
     var P0=projeta26(); if(!P0) return '<div style="padding:20px; color:'+P.mut+';">Sem base para projetar.</div>';
     var ms=mesesAteAncora(), mn=P0.mn;
     var fut=[]; for(var k=mn+1;k<=10;k++) fut.push(k);
@@ -1962,10 +2050,14 @@
     var urS='';
     if(URNA1T){ var xu=X(n-1), yuL=Y(URNA1T.l), yuF=Y(URNA1T.f), Fz=PREV1T_FINAL;
       PJXP['urna']='<b>Urna do 1º turno, 4/10</b> (TSE, 100% das seções): <b style="color:'+P.blue+';">Flávio '+fmt2(URNA1T.f)+'%</b> x <b style="color:'+P.red+';">Lula '+fmt2(URNA1T.l)+'%</b>, margem Flávio +'+fmt(URNA1T.f-URNA1T.l)+'. Na véspera, a projeção deste painel dava '+(Fz.proj.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(Fz.proj.m))+' e a mediana das pesquisas de outubro, sem correção, '+(Fz.med.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(Fz.med.m))+'.';
-      function dia(x,y,c){ return '<rect x="'+(x-5).toFixed(1)+'" y="'+(y-5).toFixed(1)+'" width="10" height="10" transform="rotate(45 '+x.toFixed(1)+' '+y.toFixed(1)+')" fill="'+c+'" stroke="'+P.surf+'" stroke-width="1.5" style="cursor:pointer;" onclick="pjExp(\'urna\')"/>'; }
-      urS=dia(xu,yuF,P.blue)+dia(xu,yuL,P.red)+
-        '<text x="'+(xu-12).toFixed(1)+'" y="'+(yuF+4).toFixed(1)+'" text-anchor="end" font-size="11" font-weight="700" fill="'+P.blue+'" style="cursor:pointer;" onclick="pjExp(\'urna\')">urna '+fmt2(URNA1T.f)+'</text>'+
-        '<text x="'+(xu-12).toFixed(1)+'" y="'+(yuL+4).toFixed(1)+'" text-anchor="end" font-size="11" font-weight="700" fill="'+P.red+'" style="cursor:pointer;" onclick="pjExp(\'urna\')">urna '+fmt2(URNA1T.l)+'</text>'; }
+      // URNA COMO LINHA DE REFERÊNCIA (06/10/2026): losango com rótulo brigava com os rótulos da projeção,
+      // porque os quatro números ficam a menos de 2 pontos. Duas linhas finas na área de projeção, na
+      // altura da urna, e os números numa linha só no alto da área.
+      var x0u=parseFloat(X(iAnc).toFixed(1)), x1u=X(n-1)+6;
+      function ref(y,c){ return '<line x1="'+x0u+'" y1="'+y.toFixed(1)+'" x2="'+x1u.toFixed(1)+'" y2="'+y.toFixed(1)+'" stroke="'+c+'" stroke-width="1.6" stroke-dasharray="1,3" stroke-linecap="round" style="cursor:pointer;" onclick="pjExp(\'urna\')"/>'; }
+      urS=ref(yuF,P.blue)+ref(yuL,P.red)+
+        '<g style="cursor:pointer;" onclick="pjExp(\'urna\')"><line x1="'+(x0u+8)+'" y1="'+(T+26)+'" x2="'+(x0u+22)+'" y2="'+(T+26)+'" stroke="'+P.txt2+'" stroke-width="1.6" stroke-dasharray="1,3" stroke-linecap="round"/>'+
+        '<text x="'+(x0u+26)+'" y="'+(T+29.5)+'" font-size="10.5" fill="'+P.txt2+'">urna 4/10: <tspan font-weight="700" fill="'+P.blue+'">Flávio '+fmt2(URNA1T.f)+'</tspan> · <tspan font-weight="700" fill="'+P.red+'">Lula '+fmt2(URNA1T.l)+'</tspan></text></g>'; }
     var frenteP=P0.m>=0?'Lula':'Flávio';
     PJXP['proj']='<b>Projeção para 4 de outubro</b> (pontas vazadas e linha pontilhada). Parte da âncora de '+P0.anc+' (Lula '+fmt(P0.base.l)+' x Flávio '+fmt(P0.base.f)+' em válidos) e aplica o quanto o campo de pesquisas ERROU deste mesmo ponto do calendário até a urna em 2010, 2014, 2018 e 2022, cada ciclo pesando pela semelhança com 2026. Resultado: <b style="color:'+P.red+';">Lula '+fmt(P0.l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(P0.f)+'</b>, margem '+frenteP+' +'+fmt(Math.abs(P0.m))+'. A pontilhada vai DIRETO da âncora a outubro porque a correção liga pesquisa a urna, não mês a mês; o degrau é justamente a correção.';
     PJXP['faixa']='<b>Faixa de 90%</b> (área hachurada). A incerteza da projeção: a margem final tem 90% de chance de cair entre '+fmt(P0.m-1.645*P0.sd)+' e +'+fmt(P0.m+1.645*P0.sd)+' (positivo é Lula à frente); no desenho, a faixa reparte essa incerteza entre as duas linhas. O desvio ('+fmt(P0.sd)+') mistura meio a meio a dispersão dos cenários ponderada pela semelhança e a sem ponderar, porque quatro eleições é pouco para confiar cegamente nos pesos. Ela abre em leque a partir da âncora: quanto mais longe, menos se sabe.';
