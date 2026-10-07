@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 22:04</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 22:08</div>
   </div>
 
   <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
@@ -2334,7 +2334,8 @@
     // Debate futuro não entra no gráfico (fica na lista); dois debates no MESMO dia (Band e Record em
     // 11/10) não se sobrepõem: o segundo losango desloca 18px. Só no mesmo dia, sem efeito cascata.
     var debHoje=new Date(); debHoje.setHours(0,0,0,0); var debUltX=null;
-    debList.forEach(function(o){ if(!o.cabe) return; if(debD(o.e.d)>debHoje) return; var exl=Math.round(o.ex*10)/10, exn=exl; if(debUltX!==null&&exn-debUltX<18) exn=debUltX+18; debUltX=exn; var ex=exn.toFixed(1), exL=exl.toFixed(1);
+    // Cancelado fica só na lista de texto abaixo do gráfico (06/10/2026, a pedido do Rafael); realizado e marcado entram no gráfico.
+    debList.forEach(function(o){ if(!o.cabe) return; if(o.e.cancel) return; var exl=Math.round(o.ex*10)/10, exn=exl; if(debUltX!==null&&exn-debUltX<18) exn=debUltX+18; debUltX=exn; var ex=exn.toFixed(1), exL=exl.toFixed(1);
       debMark+='<line x1="'+exL+'" y1="312" x2="'+exL+'" y2="57.5" stroke="'+P.gold+'" stroke-width="1.2" stroke-dasharray="1.5,3.5" stroke-opacity="0.68"/>'+
         '<path d="'+diamond(exn,319,8.5)+'" fill="'+P.surf+'" stroke="'+P.gold+'" stroke-width="2"'+(o.e.cancel?' stroke-dasharray="2.5,2"':'')+'/>'+
         '<text x="'+ex+'" y="322.6" text-anchor="middle" font-size="10" font-weight="700" fill="'+P.goldtxt+'">'+o.n+'</text>'+
