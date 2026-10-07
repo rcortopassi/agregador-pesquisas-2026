@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 21:39</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 21:52</div>
   </div>
 
   <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
@@ -2379,7 +2379,7 @@
     var labSty='font-size:10px; font-weight:700; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em;';
     var subSty='color:'+P.mut+'; font-size:10px;';
     var scen='<div style="width:100%; display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:5px; font-size:13px;">'
-      +'<span><span style="'+labSty+'">1º turno</span>&nbsp; <span style="color:'+P.red+'; font-weight:600;">Lula '+fmt(l1)+'</span> <span style="color:'+P.mut+';">&middot;</span> <span style="color:'+P.blue+'; font-weight:600;">Flávio '+fmt(f1)+'</span></span>'
+      +'<span><span style="'+labSty+'" title="Cenário das pesquisas do mês, com house effect; não é o resultado da urna.">1º turno &middot; cenário</span>&nbsp; <span style="color:'+P.red+'; font-weight:600;">Lula '+fmt(l1)+'</span> <span style="color:'+P.mut+';">&middot;</span> <span style="color:'+P.blue+'; font-weight:600;">Flávio '+fmt(f1)+'</span></span>'
       +(tem2?'<span style="color:'+P.bord+';">|</span><span><span style="'+labSty+'" title="Cenário hipotético: o 1º turno ainda não aconteceu. Em ~30% das eleições de dois turnos o 2º colocado vira no 2º turno, e o resultado do 1º realinha o jogo.">2º turno &middot; cenário</span>&nbsp; '
         // PLACAR, igual ao do 1º turno. Sem pares no mês (`pl2` null) cai no formato antigo,
         // só com a margem, que é tudo que existe nesses meses.
