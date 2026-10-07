@@ -337,3 +337,21 @@ aberta. Código no painel: bloco "APURAÇÃO AO VIVO DO TSE", funções `res*`, 
 - O cache do código é por turno (`localStorage res26cod_<data>`), então o 2º turno não reusa o do 1º.
 - Fonte única é o TSE; o painel não recebe número de imprensa nesse modo. Depois de 100% das seções,
   copiar o resultado para um objeto fixo (como PRES2022) e desligar o modo ao vivo é tarefa manual.
+
+
+## ENTRE OS DOIS TURNOS (desde 06/10/2026)
+
+O painel foi ajustado para depois do 1º turno. Só apresentação: o método não mudou.
+
+- PESQUISA DE 2º TURNO QUE NÃO TRAZ 1º TURNO: entra no `DI` do mês com '—' nas colunas de 1º turno
+  (Lula, Flávio, Caiado, Zema, Renan, Br/N/Ind, Cury) e o par no `T2R`. `v26` ignora a linha (não há
+  1º turno), o agregado de 2º turno usa o par. Continua valendo uma rodada por instituto por mês.
+- NÃO RECALCULAR o placar do 1º turno: `URNA1T` e `PREV1T_FINAL` são congelados (projeção da véspera e
+  mediana das 10 rodadas de outubro). As rodadas de outubro vão sendo substituídas pelas de 2º turno.
+- O caminho A do 2º turno (`prev2T`) parte de `URNA1T` (urna real), não mais da projeção.
+- Governador e Senado: `RES26E` guarda o resultado oficial do 1º turno (TSE, eleição 6259). Mapa
+  estadual pinta de dourado os 7 estados com 2º turno de governador (AC, AM, DF, ES, RJ, RN, TO).
+  Para o 2º turno de governador, a apuração do TSE de 25/10 usa outro código estadual; atualizar à mão.
+- Mapa presidencial: botão '2026 · 1º turno' usa `PRES2026` (congelado); '2026 · 2º turno' fica sem
+  mapa até 8h de 25/10 (`resDia2`) e então liga a apuração ao vivo.
+- Debates do 2º turno estão em `DEBATES` com `t:2`. Confirmar horário da Band e da Globo quando sair.

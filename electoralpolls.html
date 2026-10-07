@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 17:55</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 21:39</div>
   </div>
 
   <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
@@ -509,7 +509,7 @@
     var tabs=[['inst','Institutos'],['graf','Gráfico']];
     var h='<div onclick="backToMap()" style="display:flex; align-items:center; gap:6px; padding:9px 12px; cursor:pointer; color:'+P.ink+'; font-size:13px; font-weight:500;"><span style="font-size:19px; line-height:1;">&larr;</span> Voltar ao mapa</div>';
     h+='<div style="padding:0 14px 8px;"><span style="font-size:18px; font-weight:600;">'+nome+'</span> <span style="font-size:12px; color:'+P.mut+';">· '+cargo+'</span></div>';
-    h+=(office==='gov'?stateBanner(uf):'');
+    h+=resEstBanner(uf,office)||(office==='gov'?stateBanner(uf):'');
     h+='<div style="display:flex; border-bottom:1px solid '+P.bord+';">';
     for(var i=0;i<tabs.length;i++){ var on=cur.stab===tabs[i][0]; h+='<div onclick="setStab(\''+tabs[i][0]+'\')" style="flex:1; text-align:center; padding:9px 4px; font-size:14px; font-weight:500; cursor:pointer; background:'+(on?P.purple:P.surf3)+'; color:'+(on?'#fff':P.ink)+'; border-right:'+(i<tabs.length-1?'1px solid '+P.bord+'':'none')+';">'+tabs[i][1]+'</div>'; }
     h+='</div><div id="statecontent"></div>';
@@ -608,7 +608,7 @@
     d3.json('https://cdn.jsdelivr.net/npm/datamaps@0.5.10/src/js/data/bra.topo.json').then(function(t){ mapTopo=t; drawMap(); }).catch(function(){ cont.innerHTML='<div style="text-align:center; padding:30px; color:'+P.red2+'; font-size:13px;">Não foi possível carregar o mapa (precisa de internet).</div>'; });
   }
   function drawMap(){ var cont=document.getElementById('mapa'); cont.innerHTML=''; var feats=topojson.feature(mapTopo,mapTopo.objects.bra).features; var fc={type:'FeatureCollection',features:feats}; var w=660,h=620; var proj=d3.geoMercator().fitSize([w,h],fc); var path=d3.geoPath(proj); var data=cur.dim==='gov'?DG:DS;
-    function fill(uf){ var d=data[uf]; return (d&&d.c&&d.c.length)?''+P.mapneutral+'':''+P.surf2+''; }
+    function fill(uf){ var R=RES26E[cur.dim]&&RES26E[cur.dim][uf]; if(R) return (cur.dim==='gov'&&R.c[0][3]!=='Eleito')?P.gold:P.mapneutral; var d=data[uf]; return (d&&d.c&&d.c.length)?''+P.mapneutral+'':''+P.surf2+''; }
     var svg=d3.select(cont).append('svg').attr('viewBox','0 0 '+w+' '+h).attr('width','100%').style('display','block').style('max-height','560px').style('margin','0 auto');
     svg.selectAll('path').data(feats).join('path').attr('d',path).attr('fill',function(d){return fill(ufOf(d));}).attr('stroke',P.surf).attr('stroke-width',0.7).style('cursor',function(d){var uf=ufOf(d);return (data[uf]&&data[uf].c&&data[uf].c.length)?'pointer':'default';}).on('click',function(e,d){var uf=ufOf(d);if(data[uf]&&data[uf].c&&data[uf].c.length)openState(uf);}).on('mouseover',function(e,d){var uf=ufOf(d);if(data[uf]&&data[uf].c&&data[uf].c.length)d3.select(this).attr('fill',''+P.hatch+'');}).on('mouseout',function(e,d){d3.select(this).attr('fill',fill(ufOf(d)));});
     svg.selectAll('text').data(feats).join('text').attr('x',function(d){return path.centroid(d)[0];}).attr('y',function(d){return path.centroid(d)[1]+3;}).attr('text-anchor','middle').attr('font-size','10').attr('font-weight','600').attr('fill',''+P.ink+'').attr('pointer-events','none').text(function(d){return ufOf(d);});
@@ -624,8 +624,70 @@
   // decide a eleição — por isso aparece como barra única ao lado do mapa, que mostra só estados.
   // Confere com o anchor do house effect: 2018 Haddad -10,26 · 2022 Lula +1,80.
   var PRESNAT={'2018':{l:44.87,r:55.13,ln:'Haddad',rn:'Bolsonaro'},'2022':{l:50.90,r:49.10,ln:'Lula',rn:'Bolsonaro'}};
+  // ===================== DEPOIS DO 1º TURNO (06/10/2026, a pedido do Rafael) =====================
+  // Tudo aqui é APRESENTAÇÃO; o método não mudou. Valores congelados porque as pesquisas de 2º turno
+  // vão substituir as rodadas de outubro instituto por instituto, e o placar do 1º turno não pode andar.
+  var URNA1T={l:45.16,f:47.03};
+  PRESNAT['2026-1']={l:45.16,r:47.03,ln:'Lula',rn:'Flávio',t1:true};
+  // Projeção do painel na véspera (âncora em setembro, histOk) e mediana das 10 rodadas de outubro em
+  // válidos, sem correção; calculadas em 06/10/2026 com o painel como estava no dia da eleição.
+  var PREV1T_FINAL={anc:'set', proj:{l:44.94,f:45.39,m:-0.45,sd:3.51}, med:{l:44.68,f:44.13,m:1.60,n:10}};
+  // Resultado oficial do 1º turno de governador e Senado (TSE, eleição 6259, 100% das seções),
+  // baixado em 06/10/2026: top 5 por UF, [nome, % válidos, partido, situação].
+  var RES26E={"gov": {"AC": {"pst": "100,00", "c": [["Mailza Assis", 49.76, "PP", "2º turno"], ["Alan Rick", 32.27, "REPUBLICANOS", "2º turno"], ["Tião Bocalom", 10.22, "PSDB", "Não eleito"], ["Thor Dantas", 7.5, "PSB", "Não eleito"], ["Eudo Raffael", 0.16, "PCB", "Não eleito"]]}, "AL": {"pst": "100,00", "c": [["Jhc", 52.2, "PSDB", "Eleito"], ["Renan Filho", 47.37, "MDB", "Não eleito"], ["Lenilda Luna", 0.38, "UP", "Não eleito"], ["Márcio Jambo", 0.05, "DEMOCRATA", "Não eleito"]]}, "AM": {"pst": "100,00", "c": [["Omar Aziz", 40.63, "PSD", "2º turno"], ["Professora Maria do Carmo", 24.49, "PL", "2º turno"], ["Roberto Cidade", 21.91, "UNIÃO", "Não eleito"], ["David Almeida", 10.54, "AVANTE", "Não eleito"], ["Cabo Daciolo", 1.75, "MOBILIZA", "Não eleito"]]}, "AP": {"pst": "100,00", "c": [["Dr. Furlan", 62.75, "PSD", "Eleito"], ["Clécio", 36.97, "UNIÃO", "Não eleito"], ["Carlos Cley", 0.13, "PSTU", "Não eleito"], ["Delegado Marcos", 0.08, "DC", "Não eleito"], ["Jairo Palheta", 0.07, "PCO", "Não eleito"]]}, "BA": {"pst": "100,00", "c": [["Jerônimo Rodrigues", 55.8, "PT", "Eleito"], ["Acm Neto", 43.72, "UNIÃO", "Não eleito"], ["Ronaldo Mansur", 0.33, "PSOL", "Não eleito"], ["Aroldo Felix", 0.06, "UP", "Não eleito"], ["Maria Bona", 0.05, "PCO", "Não eleito"]]}, "CE": {"pst": "100,00", "c": [["Elmano de Freitas", 53.19, "PT", "Eleito"], ["Ciro Gomes", 46.22, "PSDB", "Não eleito"], ["Delegado Huggo", 0.32, "MISSÃO", "Não eleito"], ["Vera Lúcia", 0.11, "NOVO", "Não eleito"], ["Serley Leal", 0.08, "UP", "Não eleito"]]}, "DF": {"pst": "100,00", "c": [["Celina Leão", 49.93, "PP", "2º turno"], ["Leandro Grass", 34.47, "PT", "2º turno"], ["Paula Belmonte", 8.51, "PSDB", "Não eleito"], ["Kiko Caputo", 4.36, "NOVO", "Não eleito"], ["Cappelli", 2.23, "PSB", "Não eleito"]]}, "ES": {"pst": "100,00", "c": [["Lorenzo Pazolini", 49.65, "REPUBLICANOS", "2º turno"], ["Ricardo Ferraço", 34.06, "MDB", "2º turno"], ["Helder Salomão", 15.32, "PT", "Não eleito"], ["Breno Barcelos", 0.85, "MISSÃO", "Não eleito"], ["Rafael Demuner", 0.13, "UP", "Não eleito"]]}, "GO": {"pst": "100,00", "c": [["Daniel Vilela", 59.17, "MDB", "Eleito"], ["Wilder Morais", 21.96, "PL", "Não eleito"], ["Luis Cesar Bueno", 9.82, "PT", "Não eleito"], ["Marconi Perillo", 8.69, "PSDB", "Não eleito"], ["Luciana Amorim", 0.32, "UP", "Não eleito"]]}, "MA": {"pst": "100,00", "c": [["Eduardo Braide", 54.02, "PSD", "Eleito"], ["Orleans Brandão", 34.76, "MDB", "Não eleito"], ["Felipe Camarão", 9.6, "PT", "Não eleito"], ["Roberto Rocha", 1.26, "PRTB", "Não eleito"], ["André Luis", 0.2, "MISSÃO", "Não eleito"]]}, "MG": {"pst": "100,00", "c": [["Cleitinho Azevedo", 55.4, "REPUBLICANOS", "Eleito"], ["Patrus Ananias", 26.34, "PT", "Não eleito"], ["Flávio Roscoe", 6.97, "PL", "Não eleito"], ["Mateus Simões", 4.65, "PSD", "Não eleito"], ["Alexandre Kalil", 3.54, "PDT", "Não eleito"]]}, "MS": {"pst": "100,00", "c": [["Eduardo Riedel", 67.07, "PP", "Eleito"], ["Fábio Trad", 23.68, "PT", "Não eleito"], ["João Henrique Catan", 7.24, "NOVO", "Não eleito"], ["Delcidio Amaral", 1.06, "PRD", "Não eleito"], ["Economista Renato Gomes", 0.41, "DC", "Não eleito"]]}, "MT": {"pst": "100,00", "c": [["Otaviano Pivetta", 60.77, "REPUBLICANOS", "Eleito"], ["Wellington Fagundes", 23.19, "PL", "Não eleito"], ["Doutora Natasha", 15.17, "PSD", "Não eleito"], ["Rafaell Milas", 0.55, "MISSÃO", "Não eleito"], ["Sargento Laudicério", 0.17, "AGIR", "Não eleito"]]}, "PA": {"pst": "100,00", "c": [["Dr. Daniel", 51.36, "PODE", "Eleito"], ["Hana Ghassan", 46.53, "MDB", "Não eleito"], ["Araceli", 1.88, "PSOL", "Não eleito"], ["Gal Leite", 0.12, "UP", "Não eleito"], ["Well Macedo", 0.06, "PSTU", "Não eleito"]]}, "PB": {"pst": "100,00", "c": [["Lucas Ribeiro", 64.3, "PP", "Eleito"], ["Efraim Filho", 24.18, "PL", "Não eleito"], ["Cícero Lucena", 11.06, "MDB", "Não eleito"], ["Yuri Ezequiel", 0.36, "UP", "Não eleito"], ["Camilo Duarte", 0.1, "PCO", "Não eleito"]]}, "PE": {"pst": "100,00", "c": [["Raquel Lyra", 53.27, "PSD", "Eleito"], ["João Campos", 44.82, "PSB", "Não eleito"], ["Ivan Moraes", 1.48, "PSOL", "Não eleito"], ["Renan", 0.35, "MISSÃO", "Não eleito"], ["Professora Camila", 0.07, "UP", "Não eleito"]]}, "PI": {"pst": "100,00", "c": [["Rafael Fonteles", 70.9, "PT", "Eleito"], ["Joel Rodrigues", 27.54, "PP", "Não eleito"], ["Professor Gisvaldo", 0.49, "PSOL", "Não eleito"], ["Dra. Lúcia Santos", 0.47, "PSDB", "Não eleito"], ["Elizeu Aguiar", 0.25, "NOVO", "Não eleito"]]}, "PR": {"pst": "100,00", "c": [["Sergio Moro", 50.1, "PL", "Eleito"], ["Sandro Alex", 25.37, "PSD", "Não eleito"], ["Requião Filho", 23.47, "PDT", "Não eleito"], ["Luiz França", 0.71, "MISSÃO", "Não eleito"], ["Tayná Miessa", 0.23, "UP", "Não eleito"]]}, "RJ": {"pst": "100,00", "c": [["Douglas Ruas", 49.27, "PL", "2º turno"], ["Eduardo Paes", 42.76, "PSD", "2º turno"], ["Garotinho", 3.17, "REPUBLICANOS", "Não eleito"], ["William Siri", 2.71, "PSOL", "Não eleito"], ["Coronel Busnello", 0.98, "MISSÃO", "Não eleito"]]}, "RN": {"pst": "100,00", "c": [["Allyson", 36.94, "UNIÃO", "2º turno"], ["Cadu de Lula", 36.16, "PT", "2º turno"], ["Álvaro Dias", 26.71, "PL", "Não eleito"], ["Arinalda do Mlb", 0.07, "UP", "Não eleito"], ["Dário Barbosa", 0.07, "PSTU", "Não eleito"]]}, "RO": {"pst": "100,00", "c": [["Marcos Rogério", 56.86, "PL", "Eleito"], ["Adailton Furia", 20.06, "PSD", "Não eleito"], ["Hildon Chaves", 14.22, "UNIÃO", "Não eleito"], ["Expedito Netto", 7.71, "PT", "Não eleito"], ["Pedro Abib", 0.7, "MDB", "Não eleito"]]}, "RR": {"pst": "100,00", "c": [["Arthur Henrique", 69.13, "PL", "Eleito"], ["Soldado Sampaio", 29.25, "REPUBLICANOS", "Não eleito"], ["Rosi Aires", 1.53, "PSOL", "Não eleito"], ["Farah Mesquita", 0.07, "SOLIDARIEDADE", "Não eleito"], ["Clébio Genuíno", 0.02, "PCO", "Não eleito"]]}, "RS": {"pst": "100,00", "c": [["Zucco", 58.05, "PL", "Eleito"], ["Juliana Brizola", 31.65, "PDT", "Não eleito"], ["Gabriel Souza", 8.43, "MDB", "Não eleito"], ["Marcelo Maranata", 1.68, "PSDB", "Não eleito"], ["Priscila Voigt", 0.09, "UP", "Não eleito"]]}, "SC": {"pst": "100,00", "c": [["Jorginho Mello", 68.98, "PL", "Eleito"], ["Gelson Merísio", 15.66, "PSB", "Não eleito"], ["João Rodrigues", 13.35, "PSD", "Não eleito"], ["Marcelo Brigadeiro", 1.09, "MISSÃO", "Não eleito"], ["Laís Chaud", 0.5, "UP", "Não eleito"]]}, "SE": {"pst": "100,00", "c": [["Fábio", 59.27, "PSD", "Eleito"], ["Valmir de Francisquinho", 37.48, "REPUBLICANOS", "Não eleito"], ["Dr. Helton", 3.02, "PSOL", "Não eleito"], ["Taty Cristina de Jesus", 0.22, "DC", "Não eleito"]]}, "SP": {"pst": "100,00", "c": [["Tarcísio", 62.65, "REPUBLICANOS", "Eleito"], ["Fernando Haddad", 36.42, "PT", "Não eleito"], ["Vivian Mendes", 0.35, "UP", "Não eleito"], ["Vera Lúcia", 0.33, "PSTU", "Não eleito"], ["Carlos Machado", 0.25, "PCB", "Não eleito"]]}, "TO": {"pst": "100,00", "c": [["Professora Dorinha", 45.52, "UNIÃO", "2º turno"], ["Vicentinho Júnior", 43.94, "PSDB", "2º turno"], ["Laurez Moreira", 8.24, "PSD", "Não eleito"], ["Ataides de Oliveira", 1.55, "NOVO", "Não eleito"], ["Prof Witer Naves", 0.6, "PSOL", "Não eleito"]]}}, "sen": {"AC": {"pst": "100,00", "c": [["Marcio Bittar", 25.59, "PL", "Eleito"], ["Mara Rocha", 17.95, "REPUBLICANOS", "Eleito"], ["Gladson Camelí", 16.59, "PP", "Não eleito"], ["Jorge Viana", 14.17, "PT", "Não eleito"], ["Eduardo Velloso", 10.87, "SOLIDARIEDADE", "Não eleito"]]}, "AL": {"pst": "100,00", "c": [["Arthur Lira", 28.87, "PP", "Eleito"], ["Marina Jhc", 28.2, "PSDB", "Eleito"], ["Renan", 22.24, "MDB", "Não eleito"], ["Dr. Wanderley", 10.91, "MDB", "Não eleito"], ["Davi Davino Filho", 8.92, "REPUBLICANOS", "Não eleito"]]}, "AM": {"pst": "100,00", "c": [["Eduardo Braga", 32.29, "MDB", "Eleito"], ["Plinio Valério", 24.7, "PSDB", "Eleito"], ["Capitão Alberto Neto", 23.66, "PL", "Não eleito"], ["Wilson Lima", 11.89, "UNIÃO", "Não eleito"], ["Professora Evany", 5.75, "PSOL", "Não eleito"]]}, "AP": {"pst": "100,00", "c": [["Rayssa Furlan", 29.98, "PODE", "Eleito"], ["Lucas Barreto", 24.22, "PSD", "Eleito"], ["Randolfe", 18.55, "PT", "Não eleito"], ["Acácio Favacho", 14.87, "MDB", "Não eleito"], ["Alliny Serrão", 9.68, "UNIÃO", "Não eleito"]]}, "BA": {"pst": "100,00", "c": [["Rui Costa", 30.07, "PT", "Eleito"], ["Jaques Wagner", 27.65, "PT", "Eleito"], ["Angelo Coronel", 20.11, "REPUBLICANOS", "Não eleito"], ["João Roma", 19.97, "PL", "Não eleito"], ["Professora Delliana", 1.49, "PSOL", "Não eleito"]]}, "CE": {"pst": "100,00", "c": [["Cid Gomes", 31.22, "PSB", "Eleito"], ["Luizianne", 29.05, "REDE", "Eleito"], ["Capitão Wagner", 20.7, "UNIÃO", "Não eleito"], ["Alcides Fernandes", 18.28, "PL", "Não eleito"], ["Catarina Matos", 0.4, "UP", "Não eleito"]]}, "DF": {"pst": "100,00", "c": [["Michelle Bolsonaro", 29.05, "PL", "Eleito"], ["Bia Kicis", 27.44, "PL", "Eleito"], ["Leila do Vôlei", 21.25, "PDT", "Não eleito"], ["Erika Kokay", 18.91, "PT", "Não eleito"], ["Sebastião Coelho", 2.09, "NOVO", "Não eleito"]]}, "ES": {"pst": "100,00", "c": [["Renato Casagrande", 24.7, "PSB", "Eleito"], ["Evair de Melo", 24.39, "REPUBLICANOS", "Eleito"], ["Maguinha Malta", 18.9, "PL", "Não eleito"], ["Fabiano Contarato", 12.94, "PT", "Não eleito"], ["Sergio Meneguelli", 7.49, "PSD", "Não eleito"]]}, "GO": {"pst": "100,00", "c": [["Gustavo Gayer", 24.53, "PL", "Eleito"], ["Gracinha Caiado", 21.83, "UNIÃO", "Eleito"], ["Dr. Zacharias Calil", 14.94, "MDB", "Não eleito"], ["Oséias Varão", 10.13, "PL", "Não eleito"], ["Vanderlan Cardoso", 9.49, "PSD", "Não eleito"]]}, "MA": {"pst": "100,00", "c": [["Fufuca", 21.43, "PP", "Eleito"], ["Lahesio Bonfim", 20.61, "NOVO", "Eleito"], ["Roseana Sarney", 16.41, "MDB", "Não eleito"], ["Weverton Rocha", 15.21, "PDT", "Não eleito"], ["Eliziane Gama", 9.75, "PT", "Não eleito"]]}, "MG": {"pst": "100,00", "c": [["Domingos Sávio", 24.21, "PL", "Eleito"], ["Marília Campos", 19.44, "PT", "Eleito"], ["Carlos Viana", 17.46, "PSD", "Não eleito"], ["Áurea Carolina", 12.98, "PSOL", "Não eleito"], ["Marcelo Aro", 11.63, "PP", "Não eleito"]]}, "MS": {"pst": "100,00", "c": [["Reinaldo Azambuja", 34.64, "PL", "Eleito"], ["Capitão Contar", 32.82, "PL", "Eleito"], ["Vander Loubet", 13.88, "PT", "Não eleito"], ["Soraya", 13.07, "PSB", "Não eleito"], ["Roberto Oshiro", 3.96, "NOVO", "Não eleito"]]}, "MT": {"pst": "100,00", "c": [["Mauro Mendes", 33.21, "UNIÃO", "Eleito"], ["Zé Medeiros", 27.35, "PL", "Eleito"], ["Janaina Riva", 14.53, "MDB", "Não eleito"], ["Fávaro", 11.5, "PSD", "Não eleito"], ["Pedro Taques", 6.28, "PSB", "Não eleito"]]}, "PA": {"pst": "100,00", "c": [["Helder", 26.1, "MDB", "Eleito"], ["Chicão", 22.45, "UNIÃO", "Eleito"], ["Delegado Éder Mauro", 22.26, "PL", "Não eleito"], ["Zequinha Marinho", 21.06, "PODE", "Não eleito"], ["Celso Sabino", 5.87, "PDT", "Não eleito"]]}, "PB": {"pst": "100,00", "c": [["Joao Azevêdo", 32.5, "PSB", "Eleito"], ["Veneziano", 22.76, "MDB", "Eleito"], ["Nabor", 20.91, "REPUBLICANOS", "Não eleito"], ["Dr. Marcelo Queiroga", 12.46, "PL", "Não eleito"], ["Major Fábio", 7.69, "NOVO", "Não eleito"]]}, "PE": {"pst": "100,00", "c": [["Humberto Costa", 27.19, "PT", "Eleito"], ["Marília Arraes", 24.97, "PDT", "Eleito"], ["Mendonça Filho", 18.57, "PL", "Não eleito"], ["Eduardo da Fonte", 13.84, "PP", "Não eleito"], ["Carlos Sant'anna", 7.5, "NOVO", "Não eleito"]]}, "PI": {"pst": "100,00", "c": [["Marcelo Castro", 35.67, "MDB", "Eleito"], ["Júlio César O Julim do Lula", 26.98, "PSD", "Eleito"], ["Ciro Nogueira", 24.68, "PP", "Não eleito"], ["Tiago Junqueira", 8.85, "PL", "Não eleito"], ["Antônio Barros", 1.05, "NOVO", "Não eleito"]]}, "PR": {"pst": "100,00", "c": [["Filipe Barros", 27.25, "PL", "Eleito"], ["Deltan Dallagnol", 25.14, "NOVO", "Eleito"], ["Alexandre Curi", 16.85, "REPUBLICANOS", "Não eleito"], ["Gleisi", 13.35, "PT", "Não eleito"], ["Dr Rosinha", 9.99, "PT", "Não eleito"]]}, "RJ": {"pst": "100,00", "c": [["Carlos Portinho", 26.77, "PL", "Eleito"], ["Carlos Jordy", 24.56, "PL", "Eleito"], ["Benedita da Silva", 20.22, "PT", "Não eleito"], ["Pedro Paulo", 11.95, "PSD", "Não eleito"], ["Monica Benicio", 9.66, "PSOL", "Não eleito"]]}, "RN": {"pst": "100,00", "c": [["Styvenson Valentim", 29.25, "PODE", "Eleito"], ["Samanda de Lula", 17.63, "PT", "Eleito"], ["Zenaide Maia", 17.47, "PSD", "Não eleito"], ["Coronel Hélio", 17.2, "PL", "Não eleito"], ["Rafael Motta", 14.16, "PDT", "Não eleito"]]}, "RO": {"pst": "100,00", "c": [["Dr. Fernando Máximo", 31.97, "PL", "Eleito"], ["Bruno Scheid", 26.56, "PL", "Eleito"], ["Sílvia Cristina", 17.03, "PP", "Não eleito"], ["Mariana Carvalho", 11.62, "REPUBLICANOS", "Não eleito"], ["Luciana Oliveira", 5.4, "PT", "Não eleito"]]}, "RR": {"pst": "100,00", "c": [["Nicoletti", 22.68, "PL", "Eleito"], ["Teresa Surita", 19.24, "MDB", "Eleito"], ["Helena da Asatur", 17.5, "PSD", "Não eleito"], ["Chico Rodrigues", 13.43, "PSB", "Não eleito"], ["Helio Fernando Barbosa Lopes", 12.97, "PL", "Não eleito"]]}, "RS": {"pst": "100,00", "c": [["Sanderson", 30.11, "PL", "Eleito"], ["Marcel Van Hattem", 30.08, "NOVO", "Eleito"], ["Manuela D'ávila", 17.07, "PSOL", "Não eleito"], ["Pimenta", 16.31, "PT", "Não eleito"], ["Rigotto", 3.67, "MDB", "Não eleito"]]}, "SC": {"pst": "100,00", "c": [["Carol de Toni", 33.46, "PL", "Eleito"], ["Carlos Bolsonaro", 25.35, "PL", "Eleito"], ["Esperidião Amin", 15.31, "PP", "Não eleito"], ["Décio Lima", 10.22, "PT", "Não eleito"], ["Afrânio Boppré", 8.16, "PSOL", "Não eleito"]]}, "SE": {"pst": "100,00", "c": [["Rogerio Carvalho", 21.91, "PT", "Eleito"], ["Delegado Alessandro", 17.13, "MDB", "Eleito"], ["Delegado André David", 16.23, "REPUBLICANOS", "Não eleito"], ["André Moura", 16.19, "UNIÃO", "Não eleito"], ["Eduardo Amorim", 9.55, "REPUBLICANOS", "Não eleito"]]}, "SP": {"pst": "100,00", "c": [["Guilherme Derrite", 30.59, "PP", "Eleito"], ["André do Prado", 29.28, "PL", "Eleito"], ["Simone Tebet", 19.23, "PSB", "Não eleito"], ["Marina Silva", 18.12, "REDE", "Não eleito"], ["Guto Schiavetto", 0.91, "MISSÃO", "Não eleito"]]}, "TO": {"pst": "100,00", "c": [["Eduardo Gomes", 27.22, "PL", "Eleito"], ["Alexandre Guimarães", 19.16, "MDB", "Eleito"], ["Eli Borges", 16.44, "REPUBLICANOS", "Não eleito"], ["Gaguim", 15.45, "UNIÃO", "Não eleito"], ["Paulo Mourão", 7.85, "PT", "Não eleito"]]}}};
+  function resDia2(){ if(RES26.simula) return true; return new Date()>=new Date(2026,9,25,8,0,0); }
+  function resDiaEleicao(){ if(RES26.simula) return true; var h=new Date(), d=h.getDate(), m=h.getMonth(); return h.getFullYear()===2026&&m===9&&(d===4||d===5||d===25||d===26); }
+  function resEstBanner(uf,office){ var R=RES26E[office]&&RES26E[office][uf]; if(!R) return '';
+    var c=R.c, seg=(office==='gov'&&c[0][3]!=='Eleito');
+    function nm(x){ return '<b>'+x[0]+'</b> <span style="color:'+P.mut+';">('+x[2]+')</span> '+fmt2(x[1])+'%'; }
+    var lab;
+    if(office==='sen'){ lab='<b style="color:'+P.goldtxt+';">Eleitos em 4/10:</b> '+c.filter(function(x){ return x[3]==='Eleito'; }).map(nm).join(' e '); }
+    else if(!seg) lab='<b style="color:'+P.goldtxt+';">Eleito em 4/10:</b> '+nm(c[0]);
+    else lab='<b style="color:'+P.goldtxt+';">2º turno em 25/10:</b> '+nm(c[0])+' x '+nm(c[1]);
+    var resto=c.filter(function(x,i){ return office==='sen'? x[3]!=='Eleito' : i>=(seg?2:1); }).slice(0,3).map(function(x){ return x[0]+' '+fmt2(x[1])+'%'; }).join(' · ');
+    return '<div style="padding:8px 12px; background:'+P.surf2+'; border-bottom:1px solid '+P.bsoft+'; font-size:13px; line-height:1.55; text-align:center;">'+lab+
+      '<div style="font-size:11px; color:'+P.mut+';">'+(resto?'Depois: '+resto+' · ':'')+'votos válidos, TSE, 100% das seções</div></div>'; }
+  function placar1T(){ if(!URNA1T) return ''; var F=PREV1T_FINAL, u=URNA1T, um=u.l-u.f;
+    function quem(m){ return m>=0?'Lula':'Flávio'; }
+    function lin(rot,sub,l,f,m,dest){ var e=m-um; return '<tr style="border-bottom:1px solid '+P.bsoft+';'+(dest?' background:'+P.rowhl+';':'')+'"><td style="padding:6px; font-weight:600;">'+rot+(sub?'<div style="font-size:10.5px; color:'+P.mut+'; font-weight:400;">'+sub+'</div>':'')+'</td>'+
+      '<td style="padding:6px; text-align:center; color:'+P.red+';">'+fmt(l)+'</td><td style="padding:6px; text-align:center; color:'+P.blue+';">'+fmt(f)+'</td>'+
+      '<td style="padding:6px; text-align:center; font-weight:700; color:'+(m>=0?P.red:P.blue)+';">'+quem(m)+' +'+fmt(Math.abs(m))+'</td>'+
+      '<td style="padding:6px; text-align:center; color:'+P.txt2+';">'+(dest?'&mdash;':(Math.abs(e)<0.05?'0':(e>0?'pró-Lula ':'pró-Flávio ')+fmt(Math.abs(e))))+'</td></tr>'; }
+    var eP=Math.abs(F.proj.m-um), eM=Math.abs(F.med.m-um);
+    var h='<div style="padding:10px 14px 4px; font-size:12.5px; font-weight:600; color:'+P.ink+';">Placar do 1º turno</div>';
+    h+='<div style="overflow-x:auto;"><table style="width:100%; border-collapse:collapse; font-size:12px;"><thead><tr style="background:'+P.purple+'; color:#fff; font-size:10.5px;"><th style="padding:5px 6px; text-align:left;">em votos válidos</th><th style="padding:5px 6px;">Lula</th><th style="padding:5px 6px;">Flávio</th><th style="padding:5px 6px;">margem</th><th style="padding:5px 6px;">erro na margem</th></tr></thead><tbody>'+
+      lin('Pesquisas da última semana','mediana das '+F.med.n+' rodadas de outubro, sem correção (a margem é a mediana das margens)',F.med.l,F.med.f,F.med.m)+
+      lin('Projeção deste painel','correção histórica, âncora em '+F.anc,F.proj.l,F.proj.f,F.proj.m)+
+      lin('Urna','TSE, 100% das seções',u.l,u.f,um,true)+'</tbody></table></div>';
+    h+='<div style="padding:6px 14px 10px; font-size:12.5px; color:'+P.txt+'; line-height:1.55;">'+
+      (eP<eM?'A correção histórica <b>reduziu o erro</b> de '+fmt(eM)+' para '+fmt(eP)+' pontos de margem':'A correção histórica <b>não reduziu o erro</b>: '+fmt(eP)+' pontos de margem, contra '+fmt(eM)+' das pesquisas sem correção')+
+      '. As pesquisas davam '+quem(F.med.m)+' à frente, a projeção deu '+quem(F.proj.m)+' e a urna deu '+quem(um)+'. '+
+      (F.med.m-um>0?'O campo errou a favor do Lula, na mesma direção de 2014, 2018 e 2022.':'O campo errou a favor do Flávio, ao contrário de 2014, 2018 e 2022.')+'</div>';
+    return h; }
+  window.setT1v=function(v){ cur.t1v=v; render(); };
+  function tabela2T(d,m){ var pr=T2R[m]||{}, rows=d.rows.filter(function(r){ return pr[r[0]]; });
+    var h='<div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px; padding:8px 12px 4px; font-size:12px; color:'+P.txt2+';"><b style="color:'+P.ink+';">2º turno, Lula x Flávio</b><span onclick="setT1v(true)" style="cursor:pointer; text-decoration:underline; color:'+P.mut+';">ver o 1º turno deste mês</span></div>';
+    h+='<table style="width:100%; border-collapse:collapse; table-layout:fixed;"><thead><tr style="background:'+P.purple+'; color:#fff; font-size:10px; font-weight:500;"><th style="text-align:left; padding:7px 8px; width:32%;">Instituto</th><th style="text-align:right; padding:7px 4px;">Lula</th><th style="text-align:right; padding:7px 4px;">Flávio</th><th style="text-align:right; padding:7px 4px; width:22%;">margem em válidos</th><th style="text-align:right; padding:7px 8px;">1º turno</th></tr></thead><tbody style="font-size:11.5px;">';
+    rows.forEach(function(r,i){ var L=pr[r[0]][0], F=pr[r[0]][1], mv=(L-F)/(L+F)*100, bg=r[9]?P.rowhl:(i%2?P.surf2:P.surf), t1=(num(r[1])!==null&&num(r[2])!==null)?(r[1]+' x '+r[2]):'&mdash;';
+      h+='<tr style="background:'+bg+'; border-bottom:1px solid '+P.bsoft+';"><td style="text-align:left; padding:6px 8px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">'+nameCell(r[0],r[9])+'</td>'+
+        '<td style="text-align:right; padding:6px 4px; color:'+P.red+'; font-weight:600;">'+fmt(L)+'</td><td style="text-align:right; padding:6px 4px; color:'+P.blue+'; font-weight:600;">'+fmt(F)+'</td>'+
+        '<td style="text-align:right; padding:6px 4px; font-weight:700; color:'+(mv>=0?P.red:P.blue)+';">'+(Math.abs(mv)<0.05?'empate':(mv>=0?'Lula +':'Flávio +')+fmt(Math.abs(mv)))+'</td>'+
+        '<td style="text-align:right; padding:6px 8px; color:'+P.mut+';">'+t1+'</td></tr>'; });
+    h+='</tbody></table>'; if(!rows.length) h+='<div style="padding:10px 12px; color:'+P.mut+';">Nenhuma pesquisa de 2º turno neste mês.</div>';
+    return h; }
+  function heRank2026(){ var A=[]; for(var k in VH1DET){ var d=VH1DET[k], ix=d.anos.indexOf(2026); if(ix<0) continue; A.push({n:k,l:d.esq[ix],f:-d.dir[ix],m:d.esq[ix]+d.dir[ix]}); }
+    if(!A.length) return ''; A.sort(function(a,b){ return Math.abs(a.m)-Math.abs(b.m); });
+    function sg(v){ return (v>=0?'+':'&minus;')+fmt(Math.abs(v)); }
+    var h='<div style="padding:10px 12px 6px;"><div style="font-size:12.5px; font-weight:600; color:'+P.ink+';">Quem mais acertou o 1º turno de 2026</div>'+
+      '<div style="font-size:11px; color:'+P.mut+'; margin:2px 0 6px; line-height:1.45;">Última pesquisa de cada instituto antes de 4/10 contra a urna, em votos válidos. O erro na margem diz quanto a pesquisa deu a mais para um dos dois lados.</div>'+
+      '<table style="width:100%; border-collapse:collapse; font-size:12px;"><tbody>';
+    A.forEach(function(a,i){ h+='<tr style="border-bottom:1px solid '+P.bsoft+';"><td style="padding:4px 6px; color:'+P.mut+'; width:20px;">'+(i+1)+'</td><td style="padding:4px 6px; font-weight:600;">'+a.n+'</td>'+
+      '<td style="padding:4px 6px; text-align:right; font-weight:700; color:'+(a.m>=0?P.red:P.blue)+';">'+(Math.abs(a.m)<0.05?'acertou':(a.m>0?'pró-Lula ':'pró-Flávio ')+fmt(Math.abs(a.m)))+'</td>'+
+      '<td style="padding:4px 6px; text-align:right; color:'+P.txt2+'; font-size:11px; white-space:nowrap;">Lula '+sg(a.l)+' · Flávio '+sg(a.f)+'</td></tr>'; });
+    h+='</tbody></table><div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px;">Nas duas últimas colunas, pesquisa menos urna, em pontos.</div></div>';
+    return h; }
   function natBar(yr){ var d=PRESNAT[yr]; if(!d) return '';
-    var venc = d.l>d.r ? d.ln : d.rn, marg=Math.abs(d.l-d.r);
+    var venc = d.l>d.r ? d.ln : d.rn, marg=Math.abs(d.l-d.r), resto=d.t1?Math.max(0,100-d.l-d.r):0;
     return '<div style="padding:9px 14px 4px;">'+
       '<div style="display:flex; justify-content:space-between; align-items:baseline; font-size:12px; margin-bottom:4px;">'+
         '<span style="color:'+P.red+'; font-weight:600;">'+d.ln+' '+fmt(d.l)+'%</span>'+
@@ -633,12 +695,12 @@
       '</div>'+
       '<div style="position:relative;">'+
         '<div style="display:flex; height:20px; border-radius:3px; overflow:hidden; border:1px solid '+P.bord+';">'+
-          '<div style="width:'+d.l+'%; background:'+P.red+';"></div>'+
+          '<div style="width:'+d.l+'%; background:'+P.red+';"></div>'+(resto?'<div style="width:'+resto+'%; background:'+P.bsoft+';"></div>':'')+
           '<div style="width:'+d.r+'%; background:'+P.blue+';"></div>'+
         '</div>'+
         '<div style="position:absolute; left:50%; top:-3px; height:26px; width:2px; margin-left:-1px; background:'+P.txt+'; opacity:0.8;"></div>'+
       '</div>'+
-      '<div style="font-size:10px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">Voto popular nacional do 2º turno de '+yr+' (votos válidos, TSE). A linha marca os 50%: '+venc+' venceu por '+fmt(marg)+' pontos.</div>'+
+      '<div style="font-size:10px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">'+(d.t1?'Voto popular nacional do 1º turno de 2026 (votos válidos, TSE). A linha marca os 50%: ninguém passou, e Lula e Flávio vão ao 2º turno. O cinza são os demais candidatos.':'Voto popular nacional do 2º turno de '+yr+' (votos válidos, TSE). A linha marca os 50%: '+venc+' venceu por '+fmt(marg)+' pontos.')+'</div>'+
     '</div>'; }
 
   var PRES26={
@@ -672,8 +734,8 @@
   };
   var NM2UF={'Acre':'AC','Rondônia':'RO'};
   function ufOf(d){ var u=(d.id||'').replace('BR.',''); return u||NM2UF[d.properties&&d.properties.name]||''; }
-  function presLead(uf){ if(cur.mapyear==='2026'&&resModo()) return resLead(uf); if(cur.mapyear==='2018'){ var a=PRES2018[uf]; return a?(a.b>a.h?'F':'L'):''; } if(cur.mapyear==='2022'){ var b=PRES2022[uf]; return b?(b.l>b.b?'L':'F'):''; } return (PRES26[uf]&&PRES26[uf].lead)||''; }
-  function pmargin(uf,yr){ if(yr==='2026'&&resModo()) return resMargem(uf); if(yr==='2018'){ var a=PRES2018[uf]; return a?Math.abs(a.b-a.h):0; } if(yr==='2022'){ var b=PRES2022[uf]; return b?Math.abs(b.l-b.b):0; } var p=PRES26[uf]; if(!p) return 0; if(p.t2l!=null&&p.t2f!=null) return Math.abs(p.t2l-p.t2f); if(p.t2){ var m=p.t2.match(/(\d+(?:[,.]\d+)?)\s*pontos/); if(m) return parseFloat(m[1].replace(',','.')); } return 0; }
+  function presLead(uf){ if(cur.mapyear==='2026-1'){ var c1=PRES2026[uf]; return c1?(c1.l>c1.f?'L':'F'):''; } if(cur.mapyear==='2026'&&resModo()) return resLead(uf); if(cur.mapyear==='2018'){ var a=PRES2018[uf]; return a?(a.b>a.h?'F':'L'):''; } if(cur.mapyear==='2022'){ var b=PRES2022[uf]; return b?(b.l>b.b?'L':'F'):''; } return (PRES26[uf]&&PRES26[uf].lead)||''; }
+  function pmargin(uf,yr){ if(yr==='2026-1'){ var c1=PRES2026[uf]; return c1?Math.abs(c1.l-c1.f):0; } if(yr==='2026'&&resModo()) return resMargem(uf); if(yr==='2018'){ var a=PRES2018[uf]; return a?Math.abs(a.b-a.h):0; } if(yr==='2022'){ var b=PRES2022[uf]; return b?Math.abs(b.l-b.b):0; } var p=PRES26[uf]; if(!p) return 0; if(p.t2l!=null&&p.t2f!=null) return Math.abs(p.t2l-p.t2f); if(p.t2){ var m=p.t2.match(/(\d+(?:[,.]\d+)?)\s*pontos/); if(m) return parseFloat(m[1].replace(',','.')); } return 0; }
   // Mistura a cor do candidato com a cor de FUNDO do tema (branco no claro, cinza-escuro no escuro).
   // t=1 => cor cheia; t pequeno => quase a cor do fundo. Assim a intensidade funciona nos dois temas.
   function mixw(hex,t){ var v=parseInt(hex.slice(1),16), r=(v>>16)&255, g=(v>>8)&255, b=v&255;
@@ -1008,7 +1070,7 @@
     return ' <span style="font-size:11px; color:'+cor+';">('+txt+')</span>'; }
   window.openPresState=function(uf){ if(!uf) return; var nm=UFN[uf]||uf; var yr=cur.mapyear;
     var h='<button onclick="closeInst()" style="position:absolute; top:12px; right:14px; border:none; background:none; font-size:20px; color:'+P.mut+'; cursor:pointer;">&times;</button>';
-    h+='<div style="font-size:17px; font-weight:600; margin:2px 0 14px;">'+nm+' &middot; Presidencial '+yr+'</div>';
+    h+='<div style="font-size:17px; font-weight:600; margin:2px 0 14px;">'+nm+' &middot; Presidencial '+(yr==='2026-1'?'2026 &middot; 1º turno':yr)+'</div>';
     if(yr==='2026'&&resModo()){ h+=resEstadoHTML(uf); if(uf==='ZZ') h+=resExtCidBloco(); }
     else if(yr==='2026'){ var p=PRES26[uf];
       if(p){ var ldm={L:['Lula',''+P.red+''],F:['Flávio',''+P.blue+''],CA:['Caiado','#2e8b57'],RE:['Renan Santos','#7a3fb0'],ZE:['Zema','#e8730c'],E:['empate técnico','#c9a227']}, lm=ldm[p.lead]||['—',''+P.txt2+''];
@@ -1026,11 +1088,11 @@
         h+='<div style="font-size:11px; color:'+P.mut+'; margin:4px 0 8px;">O 1º turno ainda não aconteceu: tudo aqui é pesquisa. A cor do mapa segue o 1º turno onde o instituto publicou 1º turno, e o cenário de 2º turno onde não publicou.</div>';
         h+='<a href="'+p.u+'" target="_blank" style="display:inline-block; font-size:12.5px; color:'+P.link+'; text-decoration:underline;">Fonte: '+p.inst+' ('+p.data+') &#8599;</a>'; }
       else { h+='<p style="font-size:12.5px; color:'+P.txt2+'; line-height:1.55;">Ainda não há pesquisa presidencial estadual de 2026 para este estado. Por isso ele fica sem cor no mapa.</p>'; } }
-    else { var d=(yr==='2018')?PRES2018[uf]:PRES2022[uf];
-      if(d){ var leftNm=(yr==='2018')?'Haddad':'Lula', lv=(yr==='2018')?d.h:d.l, rv=d.b, lwin=lv>rv;
-        var res='<span style="color:'+P.red+'; font-weight:'+(lwin?'700':'400')+';">'+leftNm+' '+lv.toFixed(1).replace('.',',')+'%</span> &nbsp; <span style="color:'+P.blue+'; font-weight:'+(lwin?'400':'700')+';">Bolsonaro '+rv.toFixed(1).replace('.',',')+'%</span>';
-        h+=field('2º turno '+yr+' (urna, votos válidos)',res); }
-      var tu=(yr==='2018')?'https://www.tse.jus.br/eleicoes/eleicoes-anteriores/eleicoes-2018':'https://www.tse.jus.br/eleicoes/eleicoes-anteriores/eleicoes-2022';
+    else { var d=(yr==='2018')?PRES2018[uf]:(yr==='2026-1'?PRES2026[uf]:PRES2022[uf]);
+      if(d){ var leftNm=(yr==='2018')?'Haddad':'Lula', lv=(yr==='2018')?d.h:d.l, rv=(yr==='2026-1')?d.f:d.b, lwin=lv>rv;
+        var res='<span style="color:'+P.red+'; font-weight:'+(lwin?'700':'400')+';">'+leftNm+' '+lv.toFixed(1).replace('.',',')+'%</span> &nbsp; <span style="color:'+P.blue+'; font-weight:'+(lwin?'400':'700')+';">'+(yr==='2026-1'?'Flávio':'Bolsonaro')+' '+rv.toFixed(1).replace('.',',')+'%</span>';
+        h+=field(yr==='2026-1'?'1º turno de 2026 (urna, votos válidos)':'2º turno '+yr+' (urna, votos válidos)',res); }
+      var tu=(yr==='2018')?'https://www.tse.jus.br/eleicoes/eleicoes-anteriores/eleicoes-2018':(yr==='2026-1'?'https://resultados.tse.jus.br/oficial/app/index.html':'https://www.tse.jus.br/eleicoes/eleicoes-anteriores/eleicoes-2022');
       h+='<a href="'+tu+'" target="_blank" style="display:inline-block; font-size:12.5px; color:'+P.link+'; text-decoration:underline;">Resultado oficial no TSE &#8599;</a>'; }
     h+='<p style="font-size:11px; color:'+P.mut+'; margin-top:10px; border-top:1px solid '+P.bsoft+'; padding-top:10px;">Fontes por prioridade: TSE (primária), depois imprensa/instituto, e Wikipédia só em último caso.</p>';
     var dr=document.getElementById('dr'); dr.innerHTML=h; dr.classList.add('on'); document.getElementById('ov').classList.add('on'); };
@@ -1267,9 +1329,10 @@
   // B = 2º turno perguntado no mês âncora, em válidos, com house effect de 2º turno (t2valid).
   // Retorna null se não houver projeção; cada caminho pode vir null separadamente.
   function prev2T(){ var P0=projeta26(); if(!P0) return null;
-    var tf=transfFlv(), bloco=100-P0.l-P0.f, A=null, B=null;
-    if(tf&&bloco>0){ var F2=P0.f+tf.t*bloco, L2=P0.l+(1-tf.t)*bloco;
-      A={l:L2, f:F2, m:L2-F2, beq:(1+(P0.l-P0.f)/bloco)/2}; }
+    // Depois de 4/10 o caminho A parte da urna do 1º turno, não da projeção (06/10/2026). A transferência é a mesma.
+    var b1=URNA1T||P0, tf=transfFlv(), bloco=100-b1.l-b1.f, A=null, B=null;
+    if(tf&&bloco>0){ var F2=b1.f+tf.t*bloco, L2=b1.l+(1-tf.t)*bloco;
+      A={l:L2, f:F2, m:L2-F2, beq:(1+(b1.l-b1.f)/bloco)/2}; }
     var mB=t2valid(P0.anc); if(mB!==null) B={l:50+mB/2, f:50-mB/2, m:mB};
     return {P0:P0, tf:tf, bloco:bloco, A:A, B:B}; }
   // PLACAR DO 2º TURNO (11/08/2026, a pedido do usuário). O banner mostrava o 1º turno como
@@ -1448,7 +1511,28 @@
      nao:['Lula (PT)','Flávio Bolsonaro (PL)'], sit:'1º/10',
      url:'https://www.gazetadopovo.com.br/eleicoes/2026/sem-flavio-e-lula-globo-cancela-debate-presidencial/',
      nt:'O DEBATE NÃO ACONTECEU. Lula já tinha avisado que não iria. Cerca de duas horas antes do início, a ministra Estela Aranha (TSE), a pedido da coligação dele, proibiu a Globo de exibir o púlpito vazio do presidente e vetou perguntas dos presentes dirigidas a ele; Gilmar Mendes (STF) mandou incluir Renan Santos. Flávio, que tinha confirmado presença em 27/9, desistiu e chamou a decisão do TSE de "censura"; a Globo cancelou o debate menos de uma hora antes. Com isso, o 1º turno termina sem nenhum debate entre Lula e Flávio.',
-     fonte:'https://www.terra.com.br/noticias/brasil/politica/debate-tse-proibe-pulpito-vazio-e-perguntas-a-lula-flavio-desiste-e-gilmar-obriga-renan,73dded7c3cf35da818ed21d2c3968084tel25y7b.html'}
+     fonte:'https://www.terra.com.br/noticias/brasil/politica/debate-tse-proibe-pulpito-vazio-e-perguntas-a-lula-flavio-desiste-e-gilmar-obriga-renan,73dded7c3cf35da818ed21d2c3968084tel25y7b.html'},
+    {d:'2026-10-11', t:2, dia:'domingo', hc:'horário a confirmar', h:'horário a confirmar', org:'Band',
+     tv:'Band, na TV aberta.',
+     web:'Plataformas digitais do Grupo Bandeirantes.',
+     conv:['Lula (PT)','Flávio Bolsonaro (PL)'], sit:'5/10',
+     url:'https://www.nsctotal.com.br/politica/debates-para-presidente-no-2o-turno-duelos-lula-x-flavio-bolsonaro-ja-tem-datas-definidas-veja',
+     nt:'Primeiro debate do 2º turno. A Band anunciou o encontro para domingo, 11/10, sem horário divulgado até 5/10, no mesmo dia do da Record. Com só dois candidatos, a ausência de um deles costuma derrubar o debate.',
+     fonte:'https://www.nsctotal.com.br/politica/debates-para-presidente-no-2o-turno-duelos-lula-x-flavio-bolsonaro-ja-tem-datas-definidas-veja'},
+    {d:'2026-10-11', t:2, dia:'domingo', hc:'21h', h:'21h', org:'Record',
+     tv:'Record, na TV aberta.',
+     web:'Site do R7 e RecordPlay.',
+     conv:['Lula (PT)','Flávio Bolsonaro (PL)'], sit:'23/9',
+     url:'https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/23/tv-record-cancela-debate-presidencial-apos-desistencia-de-lula-e-flavio-bolsonaro',
+     nt:'A Record marcou o debate do 2º turno para 11/10, às 21h, no mesmo anúncio em que cancelou o do 1º turno, em 23/9.',
+     fonte:'https://exame.com/brasil/record-cancela-debate-presidencial-apos-lula-e-flavio-bolsonaro-nao-confirmarem-presenca/'},
+    {d:'2026-10-23', t:2, dia:'sexta', hc:'horário a confirmar', h:'horário a confirmar', org:'Globo',
+     tv:'TV Globo e GloboNews.',
+     web:'g1.',
+     conv:['Lula (PT)','Flávio Bolsonaro (PL)'], sit:'5/10',
+     url:'https://www.nsctotal.com.br/politica/debates-para-presidente-no-2o-turno-duelos-lula-x-flavio-bolsonaro-ja-tem-datas-definidas-veja',
+     nt:'Último debate antes da votação, na sexta-feira que é o último dia permitido para debates. A data veio da apuração da NSC; a Globo ainda não tinha confirmado oficialmente data e horário em 5/10.',
+     fonte:'https://www.nsctotal.com.br/politica/debates-para-presidente-no-2o-turno-duelos-lula-x-flavio-bolsonaro-ja-tem-datas-definidas-veja'}
   ];
   var debAberto=false, debVideo=-1;
   function debD(s){ var p=s.split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
@@ -1518,15 +1602,17 @@
     if(pi>=0){ var pd=DEBATES[pi], falta=Math.round((debD(pd.d)-hj)/86400000);
       var q=(falta===0?'hoje':(falta===1?'amanhã':'em '+falta+' dias'));
       cab='<b style="color:'+P.ink+';">Próximo '+q+'</b>, '+pd.dia+' '+debDia(pd.d)+', '+(pd.hc||pd.h)+', na '+pd.org.split(' (')[0]+'.'; }
-    else { cab='<b style="color:'+P.ink+';">Os debates de 1º turno já passaram.</b>'; }
+    else { cab='<b style="color:'+P.ink+';">Não há debate marcado à frente.</b>'; }
     var h='<div style="padding:8px 14px 9px; background:'+P.surf2+';">';
     h+='<div style="display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;">'+
        '<span style="font-size:9.5px; font-weight:700; color:'+P.goldtxt+'; text-transform:uppercase; letter-spacing:0.05em;">Debates presidenciais</span>'+
        '<span style="flex:1 1 auto; font-size:12px; color:'+P.txt+';">'+cab+'</span>'+
-       '<button onclick="toggleDebates()" style="font-size:11px; padding:2px 8px; border-radius:4px; border:1px solid '+P.bord+'; background:'+P.surf3+'; color:'+P.ink+'; cursor:pointer;">'+(debAberto?'fechar':'ver os quatro')+'</button></div>';
+       '<button onclick="toggleDebates()" style="font-size:11px; padding:2px 8px; border-radius:4px; border:1px solid '+P.bord+'; background:'+P.surf3+'; color:'+P.ink+'; cursor:pointer;">'+(debAberto?'fechar':'ver todos')+'</button></div>';
     if(debAberto){
       h+='<div style="margin-top:8px;">';
-      for(var i=0;i<DEBATES.length;i++) h+=debCard(DEBATES[i],i);
+      for(var i=0;i<DEBATES.length;i++){ var tt=DEBATES[i].t||1, tp=i>0?(DEBATES[i-1].t||1):0;
+        if(tt!==tp) h+='<div style="font-size:10px; font-weight:700; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.05em; margin:'+(i?'10px':'0')+' 0 5px;">'+tt+'º turno</div>';
+        h+=debCard(DEBATES[i],i); }
       h+='<div style="font-size:10.5px; color:'+P.mut+'; line-height:1.5;">Pela lei eleitoral tem presença garantida em debate de rádio e TV quem é filiado a partido, federação ou coligação com pelo menos cinco representantes no Congresso, o que hoje alcança Lula (PT), Flávio Bolsonaro (PL), Ronaldo Caiado (PSD) e Augusto Cury (Avante). Os demais dependem de convite do organizador, e comparecer é sempre escolha do candidato. No 1º turno os debates podem ir até as 7h da sexta-feira anterior à votação. São 13 candidaturas de presidente registradas no TSE.</div>';
       h+='</div>';
     }
@@ -1868,6 +1954,13 @@
     var yLabF = lemCima ? Y(ult.f)+18 : Y(ult.f)-11;
     var xAnc=X(iAnc).toFixed(1);
     // textos do explicador que dependem do conjunto, não de um ponto
+    var urS='';
+    if(URNA1T){ var xu=X(n-1), yuL=Y(URNA1T.l), yuF=Y(URNA1T.f), Fz=PREV1T_FINAL;
+      PJXP['urna']='<b>Urna do 1º turno, 4/10</b> (TSE, 100% das seções): <b style="color:'+P.blue+';">Flávio '+fmt2(URNA1T.f)+'%</b> x <b style="color:'+P.red+';">Lula '+fmt2(URNA1T.l)+'%</b>, margem Flávio +'+fmt(URNA1T.f-URNA1T.l)+'. Na véspera, a projeção deste painel dava '+(Fz.proj.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(Fz.proj.m))+' e a mediana das pesquisas de outubro, sem correção, '+(Fz.med.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(Fz.med.m))+'.';
+      function dia(x,y,c){ return '<rect x="'+(x-5).toFixed(1)+'" y="'+(y-5).toFixed(1)+'" width="10" height="10" transform="rotate(45 '+x.toFixed(1)+' '+y.toFixed(1)+')" fill="'+c+'" stroke="'+P.surf+'" stroke-width="1.5" style="cursor:pointer;" onclick="pjExp(\'urna\')"/>'; }
+      urS=dia(xu,yuF,P.blue)+dia(xu,yuL,P.red)+
+        '<text x="'+(xu-12).toFixed(1)+'" y="'+(yuF+4).toFixed(1)+'" text-anchor="end" font-size="11" font-weight="700" fill="'+P.blue+'" style="cursor:pointer;" onclick="pjExp(\'urna\')">urna '+fmt2(URNA1T.f)+'</text>'+
+        '<text x="'+(xu-12).toFixed(1)+'" y="'+(yuL+4).toFixed(1)+'" text-anchor="end" font-size="11" font-weight="700" fill="'+P.red+'" style="cursor:pointer;" onclick="pjExp(\'urna\')">urna '+fmt2(URNA1T.l)+'</text>'; }
     var frenteP=P0.m>=0?'Lula':'Flávio';
     PJXP['proj']='<b>Projeção para 4 de outubro</b> (pontas vazadas e linha pontilhada). Parte da âncora de '+P0.anc+' (Lula '+fmt(P0.base.l)+' x Flávio '+fmt(P0.base.f)+' em válidos) e aplica o quanto o campo de pesquisas ERROU deste mesmo ponto do calendário até a urna em 2010, 2014, 2018 e 2022, cada ciclo pesando pela semelhança com 2026. Resultado: <b style="color:'+P.red+';">Lula '+fmt(P0.l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(P0.f)+'</b>, margem '+frenteP+' +'+fmt(Math.abs(P0.m))+'. A pontilhada vai DIRETO da âncora a outubro porque a correção liga pesquisa a urna, não mês a mês; o degrau é justamente a correção.';
     PJXP['faixa']='<b>Faixa de 90%</b> (área hachurada). A incerteza da projeção: a margem final tem 90% de chance de cair entre '+fmt(P0.m-1.645*P0.sd)+' e +'+fmt(P0.m+1.645*P0.sd)+' (positivo é Lula à frente); no desenho, a faixa reparte essa incerteza entre as duas linhas. O desvio ('+fmt(P0.sd)+') mistura meio a meio a dispersão dos cenários ponderada pela semelhança e a sem ponderar, porque quatro eleições é pouco para confiar cegamente nos pesos. Ela abre em leque a partir da âncora: quanto mais longe, menos se sabe.';
@@ -1902,7 +1995,7 @@
       '<circle cx="'+X(n-1).toFixed(1)+'" cy="'+Y(ult.f).toFixed(1)+'" r="12" fill="transparent" style="cursor:pointer;" onclick="pjExp(\'proj\')"/>'+
       '<text x="'+(X(n-1)-6).toFixed(1)+'" y="'+yLabL.toFixed(1)+'" text-anchor="end" font-size="12" font-weight="700" fill="'+P.red+'">'+fmt(ult.l)+'</text>'+
       '<text x="'+(X(n-1)-6).toFixed(1)+'" y="'+yLabF.toFixed(1)+'" text-anchor="end" font-size="12" font-weight="700" fill="'+P.blue+'">'+fmt(ult.f)+'</text>'+
-      rot+
+      rot+urS+
     '</svg>'+
     '<div id="pj-exp" style="margin:6px 14px 12px; padding:9px 12px; font-size:12px; line-height:1.55; color:'+P.txt+'; background:'+P.surf2+'; border:1px solid '+P.bord+'; border-left:3px solid '+P.bord+'; border-radius:6px;">Toque em qualquer ponto do gráfico (bolinhas cheias, vazadas, linha pontilhada, faixa hachurada, círculos de 2010/2014/2022) para entender o que ele é e de onde o número sai.</div>';
   }
@@ -1929,12 +2022,13 @@
     var efeito = ((P0.m>=0)!==(P0.base.m>=0)) ? 'ela inverte a liderança'
                : (Math.abs(P0.m)<Math.abs(P0.base.m) ? 'ela aperta a disputa' : 'ela alarga a diferença');
     var h='';
-    h+='<div style="padding:14px 14px 2px; font-size:13px; font-weight:600; color:'+P.ink+';">Projeção para 4 de outubro, 1º turno em votos válidos</div>';
+    h+='<div style="padding:14px 14px 2px; font-size:13px; font-weight:600; color:'+P.ink+';">'+(URNA1T?'O que a projeção do 1º turno previa, e como se saiu':'Projeção para 4 de outubro, 1º turno em votos válidos')+'</div>';
     h+='<div style="display:flex; gap:8px; padding:8px 12px 4px; flex-wrap:wrap;">'+
        box('Projeção do 1º turno','<span style="color:'+P.red+';">Lula '+fmt(P0.l)+'</span> &nbsp; <span style="color:'+P.blue+';">Flávio '+fmt(P0.f)+'</span>')+
        box('Margem projetada','<span style="color:'+(P0.m>=0?P.red:P.blue)+';">'+frente+' +'+fmt(Math.abs(P0.m))+'</span>')+
        box('Chance de liderar o 1º turno','<span style="color:'+(P0.m>=0?P.red:P.blue)+';">'+frente+' '+Math.round(pf*100)+'%</span>')+
        '</div>';
+    h+=placar1T()+'<!--B2T-->';
     h+='<div style="padding:4px 14px 10px; font-size:12.5px; color:'+P.txt+'; line-height:1.55;">'+
        'O agregado de <b>'+P0.anc+'</b> está em Lula '+fmt(P0.base.l)+' x Flávio '+fmt(P0.base.f)+' em votos válidos, margem de '+
        (P0.base.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(P0.base.m))+'. A projeção fecha essa margem para <b>'+frente+' +'+fmt(Math.abs(P0.m))+'</b>, '+
@@ -1972,6 +2066,7 @@
     // 2º turno (t2valid). A fraqueza conhecida do B: o viés foi medido na pesquisa FINAL, a dias
     // da urna, e aplicá-lo a agosto é outra grandeza; a do A: acumula o erro da projeção do 1º
     // turno. O desempate é o backtest por mês de ciclo, ainda não reconstruído.
+    var _h0=h.length;
     (function(){
       var Q=prev2T(); if(!Q||(!Q.A&&!Q.B)) return;
       var tf=Q.tf, bloco=Q.bloco, mB=Q.B?Q.B.m:null;
@@ -1983,7 +2078,7 @@
       h+='<div style="padding:10px 14px 2px; font-size:12.5px; font-weight:600; color:'+P.ink+';">E o 2º turno? Duas contas, e elas '+(lados?'discordam':'concordam')+'</div>';
       var cxs='';
       if(Q.A){ var mA=Q.A.m;
-        cxs+=box('A: projetar e transferir','<span style="color:'+(mA>=0?P.red:P.blue)+';">'+(mA>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(mA))+'</span> <span style="color:'+P.mut+'; font-weight:400;">'+fmt(Q.A.l)+' x '+fmt(Q.A.f)+'</span>');
+        cxs+=box((URNA1T?'A: 1º turno real e transferência':'A: projetar e transferir'),'<span style="color:'+(mA>=0?P.red:P.blue)+';">'+(mA>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(mA))+'</span> <span style="color:'+P.mut+'; font-weight:400;">'+fmt(Q.A.l)+' x '+fmt(Q.A.f)+'</span>');
       }
       if(Q.B){
         cxs+=box('B: 2º turno perguntado','<span style="color:'+(mB>=0?P.red:P.blue)+';">'+(mB>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(mB))+'</span> <span style="color:'+P.mut+'; font-weight:400;">'+fmt(Q.B.l)+' x '+fmt(Q.B.f)+'</span>');
@@ -1991,7 +2086,7 @@
       h+='<div style="display:flex; gap:8px; padding:6px 12px 4px; flex-wrap:wrap;">'+cxs+'</div>';
       var det='';
       if(Q.A){
-        det+='O caminho <b>A</b> pega o 1º turno projetado acima e reparte o bloco de '+fmt(bloco)+' pontos das terceiras vias: nas '+tf.n+' pesquisas que perguntaram os dois turnos juntas, a fração desse bloco que migra para o Flávio tem mediana de <b>'+Math.round(tf.t*100)+'%</b> (todas entre '+Math.round(tf.lo*100)+'% e '+Math.round(tf.hi*100)+'%), e ele precisaria de '+fmt(Q.A.beq*100)+'% para empatar. ';
+        det+='O caminho <b>A</b> pega '+(URNA1T?'o resultado oficial do 1º turno':'o 1º turno projetado acima')+' e reparte o bloco de '+fmt(bloco)+' pontos das terceiras vias: nas '+tf.n+' pesquisas que perguntaram os dois turnos juntas, a fração desse bloco que migra para o Flávio tem mediana de <b>'+Math.round(tf.t*100)+'%</b> (todas entre '+Math.round(tf.lo*100)+'% e '+Math.round(tf.hi*100)+'%), e ele precisaria de '+fmt(Q.A.beq*100)+'% para empatar. ';
       }
       if(Q.B){
         det+='O caminho <b>B</b> usa o 2º turno que os institutos perguntaram em '+P0.anc+', em válidos e com o house effect de 2º turno. ';
@@ -2000,9 +2095,10 @@
       else { det+='<b style="color:'+P.goldtxt+';">As duas apontam para o mesmo lado</b>, e a distância entre elas é de '
         +((Q.A&&Q.B)?fmt(Math.abs(Q.A.m-Q.B.m))+' ponto'+(Math.abs(Q.A.m-Q.B.m)>=2?'s':''):'&mdash;')
         +'. Concordar de lado não é concordar de tamanho, e as fraquezas de cada caminho continuam de pé: '; }
-      det+='o B aplica um viés medido na pesquisa FINAL de cada ciclo, a dias da urna, a uma pergunta feita meses antes; o A acumula o erro da projeção do 1º turno e assume que a transferência de hoje segura até outubro. O desempate honesto é reconstruir o erro do 2º turno por mês de ciclo (2010, 2014, 2018, 2022), como já foi feito para o 1º; até lá, nenhuma das duas vira manchete.';
+      det+='o B aplica um viés medido na pesquisa FINAL de cada ciclo, a dias da urna, a uma pergunta feita meses antes; '+(URNA1T?'o A parte do resultado real do 1º turno, mas assume':'o A acumula o erro da projeção do 1º turno e assume')+' que a transferência de hoje segura até outubro. O desempate honesto é reconstruir o erro do 2º turno por mês de ciclo (2010, 2014, 2018, 2022), como já foi feito para o 1º; até lá, nenhuma das duas vira manchete.';
       h+='<div style="padding:2px 14px 8px; font-size:12px; color:'+P.txt+'; line-height:1.55;">'+det+'</div>';
     })();
+    (function(){ var b2t=h.slice(_h0); if(URNA1T&&h.indexOf('<!--B2T-->')>=0){ h=h.slice(0,_h0).replace('<!--B2T-->',b2t); } else { h=h.replace('<!--B2T-->',''); } })();
     h+='<div style="padding:8px 14px 2px; font-size:12.5px; font-weight:600; color:'+P.ink+';">Como nos comparamos com quem também prevê</div>';
     h+='<table style="width:100%; border-collapse:collapse; font-size:12px;"><tbody>';
     h+='<tr style="border-bottom:1px solid '+P.bord+'; background:'+P.rowhl+';">'+
@@ -2027,9 +2123,9 @@
     return h;
   }
 
-  var tops=[['inst','Institutos'],['he','House effect'],['graf','Grafico'],['mapa','Mapa'],['prev','Previsão']];
+  var tops=[['inst','Institutos'],['he','House effect'],['graf','Gráfico'],['mapa','Mapa'],['prev','Previsão']];
   // Com o modo ao vivo ligado (resDia), o painel abre direto na aba Mapa 2026, que é onde a apuração aparece.
-  var cur={top:(resDia()?'mapa':'inst'),m:ultimoMesCheio(),dim:'pres',uf:null,stab:'inst',mapyear:'2026'};
+  var cur={top:(resDiaEleicao()?'mapa':'inst'),m:ultimoMesCheio(),dim:'pres',uf:null,stab:'inst',mapyear:(resDia2()?'2026':'2026-1'),t1v:false};
   // Fatos notórios que mexem na corrida presidencial. Para adicionar um no futuro,
   // basta acrescentar uma linha: {d:'AAAA-MM-DD', c:cor, t:'texto'}. A linha pontilhada
   // e a numeração aparecem sozinhas no gráfico, posicionadas pela data.
@@ -2055,7 +2151,8 @@
     {d:'2026-09-03', c:'red', t:'Moraes reage e a crise do Supremo passa a ter duas frentes. No Inquérito 4.781, o das fake news, ele manda ao presidente do STF, Edson Fachin, uma decisão e relatórios da Polícia Federal com "fortes indícios" de improbidade administrativa, abuso de autoridade e crime de responsabilidade por André Mendonça na condução das operações Sem Desconto e Compliance Zero, levanta o sigilo e comunica a Procuradoria-Geral da República. O FUNDAMENTO É SOBRE A ORIGEM DO CASO DE 1º DE SETEMBRO: segundo os relatórios, Mendonça pediu MAIS DE UMA VEZ que a equipe policial lhe encaminhasse alguma provocação que permitisse abrir investigação formal contra o próprio Moraes, e determinou contra ele diligência classificada como atípica. Davi Alcolumbre aparece nos documentos como "provável alvo estratégico", pela influência do presidente do Senado sobre pedidos de impeachment de ministros. A partir daqui o caso Master deixa de ser sobre um banco e passa a ser sobre o próprio Supremo, e é ele que domina a semana até o ato do 7 de Setembro, cujos motes são "Fora Lula, Fora Moraes". O desfecho não é desta data: em 9 de setembro Fachin assume a relatoria do inquérito das fake news e leva ao Plenário o pedido de investigação contra Moraes, que se pronuncia na Primeira Turma em 10 de setembro, com o julgamento marcado para 15 de setembro. Ou seja, a investigação formal contra Moraes NÃO foi aberta até aqui, e nenhuma pesquisa do painel mede ainda o resultado dela.'},
     {d:'2026-09-07', c:'blue', t:'Flávio convoca o ato de 7 de Setembro na avenida Paulista, com os motes "Fora Lula, Fora Moraes" e "É agora ou nunca", primeira grande demonstração de rua depois das mensagens de Daniel Vorcaro a Alexandre de Moraes, tornadas públicas em 1º de setembro. O DADO POLÍTICO É O TAMANHO. O Monitor do Debate Político da USP e do Cebrap, com a More in Common, estimou 28.500 pessoas no pico das 16h32, em faixa de 25.100 a 32.000, e o Poder360, por foto de drone às 16h, calculou 34.200. É o maior ato de rua da campanha dele até aqui, quase quatro vezes as 8.900 de Copacabana em 16 de agosto pela mesma medição da USP, mas fica abaixo das 48.800 do 7 de Setembro de 2025 na mesma avenida, quando Jair Bolsonaro também não compareceu, e muito abaixo dos 100 mil que a campanha projetava depois do caso Vorcaro. A leitura em disputa é se isso mede perda de mobilização da direita ou se pesaram os 14 graus e a garoa em São Paulo. No trio estavam Tarcísio de Freitas, Silas Malafaia, Nikolas Ferreira e Valdemar Costa Neto, e Romeu Zema, que foi hostilizado pelo público; o vice Alfredo Gaspar não foi, e fez campanha no Rio Grande do Norte. Flávio disse que indicará cinco ministros ao STF "porque Moraes vai cair", repetiu que o ministro é uma "laranja podre", prometeu acabar com o "consórcio" Lula e Moraes e avisou que a campanha sofrerá uma "3ª facada". Houve atos contra Moraes em pelo menos nove capitais. Augusto Cury fez ato à parte em Copacabana, não citou Moraes, mandou um "abraço" a André Mendonça e pediu que ninguém no Supremo seja poupado, marcando distância do bolsonarismo sem abrir mão da pauta do STF. Do outro lado, Lula desfilou em carro aberto na parada militar de Brasília e a esquerda foi às ruas no Grito dos Excluídos. A Quaest publicada neste mesmo dia tem campo encerrado em 6 de setembro, na véspera, então nenhuma pesquisa do painel mede ainda o efeito do ato.'},
     {d:'2026-09-22', c:'red', t:'O Globo (coluna de Malu Gaspar) publica mensagens extraídas pela PF do celular de Daniel Vorcaro (Banco Master) com o advogado Walfrido Warde, cujo escritório recebeu R$ 27 milhões do banco em 2025. Em 22 de janeiro de 2025, 49 dias depois do encontro de Vorcaro com Lula no Planalto em 4 de dezembro de 2024, intermediado por Guido Mantega, Warde escreve que o presidente "agradeceu mais uma vez o whisky e mandou um abraço". Na mesma conversa Vorcaro diz que Lula "falou de festa na Grécia", e Warde responde: "Ele quer participar hahahahaha. Sem a Janja". As mensagens não mostram se Warde relatava fala real do presidente, dava interpretação própria ou brincava, e não provam que Lula quisesse ir a festa do banqueiro. A Secom nega que Lula tenha recebido presente de Vorcaro ou mandado recado a ele. É o primeiro material do caso Master que liga o próprio Lula a Vorcaro, e não um ministro ou aliado.'},
-    {d:'2026-10-01', c:'gold', t:'A ministra Estela Aranha (TSE), a pedido da coligação de Lula, proíbe a Globo de exibir o púlpito vazio do presidente e veta perguntas dos presentes dirigidas a ele; Gilmar Mendes (STF) manda incluir Renan Santos. Flávio desiste e chama a decisão do TSE de "censura"; a Globo cancela o debate menos de uma hora antes do início. Na GloboNews, Malu Gaspar lembrou que Flávio já condicionara a ida à ausência de Renan. Com os cancelamentos anteriores, de 14/9 (SBT, RedeTV! e CNN) e de 27/9 (Record), o 1º turno termina sem nenhum debate entre Lula e Flávio: o da Band, em 23/8, foi o único realizado.'}
+    {d:'2026-10-01', c:'gold', t:'A ministra Estela Aranha (TSE), a pedido da coligação de Lula, proíbe a Globo de exibir o púlpito vazio do presidente e veta perguntas dos presentes dirigidas a ele; Gilmar Mendes (STF) manda incluir Renan Santos. Flávio desiste e chama a decisão do TSE de "censura"; a Globo cancela o debate menos de uma hora antes do início. Na GloboNews, Malu Gaspar lembrou que Flávio já condicionara a ida à ausência de Renan. Com os cancelamentos anteriores, de 14/9 (SBT, RedeTV! e CNN) e de 27/9 (Record), o 1º turno termina sem nenhum debate entre Lula e Flávio: o da Band, em 23/8, foi o único realizado.'},
+    {d:'2026-10-04', c:'gold', t:'Urna do 1º turno (TSE, 100% das seções): Flávio 47,03% x Lula 45,16% dos votos válidos. Ninguém passa de 50% e os dois disputam o 2º turno em 25/10. Na véspera, a mediana das pesquisas de outubro dava Lula +1,6 em válidos, sem correção; a projeção deste painel dava Flávio +0,45.'}
   ];
   // c:'gold' = fato que não é de um candidato (debate esvaziado, calendário); cor neutra.
   function evc(e){ return e.c==='red'?P.red:(e.c==='gold'?P.goldtxt:P.blue); }
@@ -2091,7 +2188,7 @@
     // de janeiro do Flávio é o mais frágil da série e tende a subestimá-lo.
     var ms=months.filter(function(m){ return avgMonth(m)[2]>0; }), n=ms.length, sp=480/(n-1);
     var xs=ms.map(function(_,i){ return 60+i*sp; });
-    function yv(v){ return 57.5+(44-v)*16.0714; }
+    function yv(v){ return 57.5+(50-v)*12.5; }  // eixo de 32 a 50 (06/10/2026, a pedido do Rafael)
     var lMain='',fMain='',ldot='',fdot='',llab='',flab='', lUp=[],lLo=[],fUp=[],fLo=[], ljd='', fjd='', hollow='', prev=null;
     for(var i=0;i<n;i++){ var aj=adjMonth(ms[i]), cnt=avgMonth(ms[i])[2], x=xs[i], lay=yv(aj[0]), fay=yv(aj[1]);
       llab+='<text x="'+x+'" y="'+(lay-9)+'">'+fmt(aj[0])+'</text>'; flab+='<text x="'+x+'" y="'+(fay+15)+'">'+fmt(aj[1])+'</text>';
@@ -2132,7 +2229,9 @@
       var frac=(mn-MESNUM[ms[0]])+(dy-1)/30, exRaw=60+frac*sp;
       return {e:e, n:idx+1, mn:mn, dy:dy, p:dp, ex:exRaw, cabe:(exRaw>=60 && exRaw<=660)}; });
     var debMark='';
-    debList.forEach(function(o){ if(!o.cabe) return; var exn=Math.round(o.ex*10)/10, ex=exn.toFixed(1);
+    // Debates no mesmo dia (Band e Record em 11/10) ficariam um sobre o outro: o segundo desloca 18px.
+    var debUlt=null;
+    debList.forEach(function(o){ if(!o.cabe) return; var exn=Math.round(o.ex*10)/10; if(debUlt!==null&&Math.abs(exn-debUlt)<17) exn=debUlt+18; debUlt=exn; var ex=exn.toFixed(1);
       debMark+='<line x1="'+ex+'" y1="312" x2="'+ex+'" y2="57.5" stroke="'+P.gold+'" stroke-width="1.2" stroke-dasharray="1.5,3.5" stroke-opacity="0.68"/>'+
         '<path d="'+diamond(exn,319,8.5)+'" fill="'+P.surf+'" stroke="'+P.gold+'" stroke-width="2"'+(o.e.cancel?' stroke-dasharray="2.5,2"':'')+'/>'+
         '<text x="'+ex+'" y="322.6" text-anchor="middle" font-size="10" font-weight="700" fill="'+P.goldtxt+'">'+o.n+'</text>'+
@@ -2161,8 +2260,8 @@
         '<pattern id="hatchR" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.red+'" stroke-width="1.3" stroke-opacity="0.32"/></pattern>'+
         '<pattern id="hatchB" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.blue+'" stroke-width="1.3" stroke-opacity="0.32"/></pattern>'+
       '</defs>'+
-      '<line x1="50" y1="57.5" x2="645" y2="57.5" stroke="'+P.bsoft+'"/><line x1="50" y1="89.6" x2="645" y2="89.6" stroke="'+P.bsoft+'"/><line x1="50" y1="121.8" x2="645" y2="121.8" stroke="'+P.bsoft+'"/><line x1="50" y1="153.9" x2="645" y2="153.9" stroke="'+P.bsoft+'"/><line x1="50" y1="186.1" x2="645" y2="186.1" stroke="'+P.bsoft+'"/><line x1="50" y1="218.2" x2="645" y2="218.2" stroke="'+P.bsoft+'"/><line x1="50" y1="250.4" x2="645" y2="250.4" stroke="'+P.bsoft+'"/><line x1="50" y1="282.5" x2="645" y2="282.5" stroke="'+P.bsoft+'"/>'+
-      '<text x="40" y="61" text-anchor="end" font-size="11" fill="'+P.mut+'">44</text><text x="40" y="93.1" text-anchor="end" font-size="11" fill="'+P.mut+'">42</text><text x="40" y="125.3" text-anchor="end" font-size="11" fill="'+P.mut+'">40</text><text x="40" y="157.4" text-anchor="end" font-size="11" fill="'+P.mut+'">38</text><text x="40" y="189.6" text-anchor="end" font-size="11" fill="'+P.mut+'">36</text><text x="40" y="221.7" text-anchor="end" font-size="11" fill="'+P.mut+'">34</text><text x="40" y="253.9" text-anchor="end" font-size="11" fill="'+P.mut+'">32</text><text x="40" y="286" text-anchor="end" font-size="11" fill="'+P.mut+'">30</text>'+
+      '<line x1="50" y1="57.5" x2="645" y2="57.5" stroke="'+P.bsoft+'"/><line x1="50" y1="82.5" x2="645" y2="82.5" stroke="'+P.bsoft+'"/><line x1="50" y1="107.5" x2="645" y2="107.5" stroke="'+P.bsoft+'"/><line x1="50" y1="132.5" x2="645" y2="132.5" stroke="'+P.bsoft+'"/><line x1="50" y1="157.5" x2="645" y2="157.5" stroke="'+P.bsoft+'"/><line x1="50" y1="182.5" x2="645" y2="182.5" stroke="'+P.bsoft+'"/><line x1="50" y1="207.5" x2="645" y2="207.5" stroke="'+P.bsoft+'"/><line x1="50" y1="232.5" x2="645" y2="232.5" stroke="'+P.bsoft+'"/><line x1="50" y1="257.5" x2="645" y2="257.5" stroke="'+P.bsoft+'"/><line x1="50" y1="282.5" x2="645" y2="282.5" stroke="'+P.bsoft+'"/>'+
+      '<text x="40" y="61.0" text-anchor="end" font-size="11" fill="'+P.mut+'">50</text><text x="40" y="86.0" text-anchor="end" font-size="11" fill="'+P.mut+'">48</text><text x="40" y="111.0" text-anchor="end" font-size="11" fill="'+P.mut+'">46</text><text x="40" y="136.0" text-anchor="end" font-size="11" fill="'+P.mut+'">44</text><text x="40" y="161.0" text-anchor="end" font-size="11" fill="'+P.mut+'">42</text><text x="40" y="186.0" text-anchor="end" font-size="11" fill="'+P.mut+'">40</text><text x="40" y="211.0" text-anchor="end" font-size="11" fill="'+P.mut+'">38</text><text x="40" y="236.0" text-anchor="end" font-size="11" fill="'+P.mut+'">36</text><text x="40" y="261.0" text-anchor="end" font-size="11" fill="'+P.mut+'">34</text><text x="40" y="286.0" text-anchor="end" font-size="11" fill="'+P.mut+'">32</text>'+
       '<polygon fill="url(#hatchR)" stroke="'+P.red+'" stroke-opacity="0.18" stroke-width="0.8" points="'+lBand+'"/>'+
       '<polygon fill="url(#hatchB)" stroke="'+P.blue+'" stroke-opacity="0.18" stroke-width="0.8" points="'+fBand+'"/>'+
       ljd+fjd+
@@ -2178,7 +2277,7 @@
       '<g fill="'+P.txt2+'" font-size="12" text-anchor="middle">'+ms.map(function(mm,i){ return '<text x="'+xs[i].toFixed(1)+'" y="340">'+mm+'</text>'; }).join('')+'</g>'+
     '</svg>'+
     (evCap?'<div style="padding:6px 14px 12px; font-size:11.5px; line-height:1.45;"><div style="font-size:10px; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;">Fatos que mexeram na corrida</div>'+evCap+'</div>':'')+
-    (debCap?'<div style="padding:0 14px 12px; font-size:11.5px; line-height:1.45;"><div style="font-size:10px; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;">Debates presidenciais do 1º turno</div>'+debCap+'<div style="font-size:10.5px; color:'+P.mut+'; margin-top:5px;">O losango entra no gráfico na data do debate; os que ainda não têm mês no eixo aparecem quando o mês abrir.</div></div>':''); }
+    (debCap?'<div style="padding:0 14px 12px; font-size:11.5px; line-height:1.45;"><div style="font-size:10px; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;">Debates presidenciais</div>'+debCap+'<div style="font-size:10.5px; color:'+P.mut+'; margin-top:5px;">O losango entra no gráfico na data do debate; os que ainda não têm mês no eixo aparecem quando o mês abrir.</div></div>':''); }
 
   function marginChart(){
     var ms=['mar','abr','mai','jun','jul'], pts=[];
@@ -2252,8 +2351,8 @@
         document.getElementById('statepanel').style.display='none';
         document.getElementById('mapa').style.display='block';
         renderMap();
-        document.getElementById('note').textContent='Clique num estado para abrir o painel completo (institutos, gráfico e quem lidera).';
-        document.getElementById('foot').innerHTML=(cur.dim==='gov'?'Governador':'Senador')+' 2026 &middot; estados em destaque têm pesquisa &middot; clique para abrir';
+        document.getElementById('note').textContent='Clique num estado para ver o resultado do 1º turno e o histórico das pesquisas.';
+        document.getElementById('foot').innerHTML=(cur.dim==='gov'?'Governador 2026 &middot; em dourado, os '+Object.keys(RES26E.gov).filter(function(u){ return RES26E.gov[u].c[0][3]!=='Eleito'; }).length+' estados com 2º turno em 25/10; os demais elegeram no 1º turno':'Senador 2026 &middot; os '+(2*Object.keys(RES26E.sen).length)+' eleitos em 4/10')+' &middot; clique para abrir';
       }
       return;
     }
@@ -2321,13 +2420,14 @@
               +'<div>'+exAdj+'</div>'
               +'<div style="margin-top:8px; text-align:right;"><span onclick="toggleBx(\'bxexpl\')" style="cursor:pointer; text-decoration:underline; color:'+P.mut+';">fechar</span></div>'
             +'</div></div>'; })();
-    var elDays=(function(){ try{ var e=new Date(2026,9,4), nn=new Date(); var dd=Math.ceil((e-nn)/86400000); return dd>0?dd:0; }catch(_){ return null; } })();
+    var elDays=(function(){ try{ var e=(new Date()>=new Date(2026,9,5))?new Date(2026,9,25):new Date(2026,9,4), nn=new Date(); var dd=Math.ceil((e-nn)/86400000); return dd>0?dd:0; }catch(_){ return null; } })();
+    var elRot=(new Date()>=new Date(2026,9,5))?'2º turno (25/out)':'1º turno (4/out)';
     // PREVISÃO DO 2º TURNO no banner (22/08/2026, a pedido do usuário): as mesmas duas contas
     // da aba Previsão (prev2T), lado a lado, porque discordam. Tudo acima desta linha é FOTO
     // do mês; esta linha é projeção para 25/out e por isso fica separada e aponta para a aba.
     var prevLine=(function(){ var Q=prev2T(); if(!Q||(!Q.A&&!Q.B)) return '';
       function pc(o,rot){ return '<span style="'+labSty+'">'+rot+'</span> <b style="color:'+(o.m>=0?P.red:P.blue)+';">'+(o.m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(o.m))+'</b> <span style="'+subSty+'">'+fmt(o.l)+' x '+fmt(o.f)+'</span>'; }
-      var partes=[]; if(Q.A) partes.push(pc(Q.A,'A: projetar e transferir')); if(Q.B) partes.push(pc(Q.B,'B: perguntado'));
+      var partes=[]; if(Q.A) partes.push(pc(Q.A,(URNA1T?'A: 1º turno real e transferência':'A: projetar e transferir'))); if(Q.B) partes.push(pc(Q.B,'B: perguntado'));
       var lados=(Q.A&&Q.B&&(Q.A.m>=0)!==(Q.B.m>=0));
       return '<div style="width:100%; text-align:center; font-size:11.5px; margin-top:6px; padding:5px 10px 0; border-top:1px dashed '+P.bsoft+';">'
         +'<span style="'+labSty+'">previsão do 2º turno (25/out)</span>&nbsp; '+partes.join(' <span style="color:'+P.mut+';">&middot;</span> ')
@@ -2338,10 +2438,11 @@
     // que não mostrar nada. Diz o que é e aponta para o último mês com rodada.
     document.getElementById('banner').innerHTML= mesVazio(cur.m) ?
       ('<div style="width:100%; text-align:center; font-size:14px;"><span style="width:9px; height:9px; border-radius:50%; background:'+P.mut+'; display:inline-block; margin-right:6px;"></span><b style="color:'+P.goldtxt+';">'+cur.m+' ainda não tem rodada publicada</b></div>'
-        +'<div style="width:100%; text-align:center; font-size:11px; color:'+P.mut+'; margin-top:5px; padding:0 12px; line-height:1.5;">O agregado continua sendo o de '+ultimoMesCheio()+(elDays!=null?' &middot; faltam '+elDays+' dias para o 1º turno (4/out)':'')+'</div>') :
+        +'<div style="width:100%; text-align:center; font-size:11px; color:'+P.mut+'; margin-top:5px; padding:0 12px; line-height:1.5;">O agregado continua sendo o de '+ultimoMesCheio()+(elDays!=null?' &middot; faltam '+elDays+' dias para o '+elRot:'')+'</div>') :
+      (URNA1T?'<div style="width:100%; text-align:center; font-size:12.5px; margin-bottom:6px;"><span style="font-size:10px; font-weight:700; color:'+P.goldtxt+'; text-transform:uppercase; letter-spacing:0.05em;">1º turno · urna</span>&nbsp; <b style="color:'+P.blue+';">Flávio '+fmt2(URNA1T.f)+'%</b> <span style="color:'+P.mut+';">&middot;</span> <b style="color:'+P.red+';">Lula '+fmt2(URNA1T.l)+'%</b> <span style="color:'+P.mut+';">dos válidos &middot; os dois vão ao 2º turno em 25/10</span></div>':'')+
       '<div style="width:100%; display:flex; align-items:center; justify-content:center; gap:7px; flex-wrap:wrap; font-size:15px;"><span style="width:9px; height:9px; border-radius:50%; background:'+bdot+'; display:inline-block;"></span> '+classif+'</div>'+
       scen+
-      '<div style="width:100%; text-align:center; font-size:10.5px; color:'+P.mut+'; margin-top:5px;">Foto de '+cur.m+', não é previsão para outubro'+(elDays!=null?' &middot; faltam '+elDays+' dias para o 1º turno (4/out)':'')+'</div>'+
+      '<div style="width:100%; text-align:center; font-size:10.5px; color:'+P.mut+'; margin-top:5px;">Foto de '+cur.m+', não é previsão'+(elDays!=null?' &middot; faltam '+elDays+' dias para o '+elRot:'')+'</div>'+
       prevLine+
       // CONTEXTO DE INCERTEZA POR DISTÂNCIA (21/07/2026). A "margem" acima é só erro AMOSTRAL.
       // A fonte de erro dominante a esta altura do ciclo é o tempo até a eleição, e ela é
@@ -2358,12 +2459,21 @@
     document.getElementById('heexpl').style.display=(cur.top==='he')?'block':'none';
     if(mapa){
       var yr=cur.mapyear;
-      var yrs=[['2018','2018'],['2022','2022'],['2026',(resModo()?'2026 (apuração)':'2026 (pesquisas)')]];
+      var yrs=[['2018','2018'],['2022','2022'],['2026-1','2026 · 1º turno'],['2026','2026 · 2º turno']];
       var yt='<div style="display:flex; gap:6px; padding:8px 12px 2px;">'+yrs.map(function(o){ var on=o[0]===yr; return '<button onclick="setMapYear(\''+o[0]+'\')" style="flex:1; padding:7px 4px; font-size:13px; font-weight:600; cursor:pointer; border:1px solid '+P.bord+'; border-radius:4px; background:'+(on?P.purple:P.surf)+'; color:'+(on?'#fff':P.ink)+';">'+o[1]+'</button>'; }).join('')+'</div>';
-      var leftNm=yr==='2018'?'Haddad':'Lula', rightNm=yr==='2026'?'Flávio':'Bolsonaro';
+      var leftNm=yr==='2018'?'Haddad':'Lula', rightNm=(yr.indexOf('2026')===0)?'Flávio':'Bolsonaro', semMapa=(yr==='2026'&&!resDia2());
       function sw(c,t){ return '<span style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:12px; border-radius:2px; background:'+c+'; display:inline-block;'+(c===''+P.mapempty+''?' border:1px solid '+P.bord+';':'')+'"></span>'+t+'</span>'; }
       var intro,legend,note,foot;
-      if(yr==='2026'&&resModo()){
+      if(semMapa){
+        intro='<b>O mapa do 2º turno entra no ar às 8h de 25 de outubro</b>, com a apuração oficial do TSE atualizada a cada minuto. Até lá, o botão <b>2026 · 1º turno</b> mostra o resultado do 1º turno por estado.';
+        legend=''; note='2º turno em 25/10, Lula x Flávio.'; foot='No 2º turno vale o voto popular nacional; o mapa vai mostrar quem vence em cada estado.';
+      } else if(yr==='2026-1'){
+        var nL1=0,nF1=0; for(var u1 in PRES2026){ if(PRES2026[u1].l>PRES2026[u1].f) nL1++; else nF1++; }
+        intro='<b>Resultado oficial do 1º turno de 2026 (Lula x Flávio), por estado. Fonte: urna (TSE, 100% das seções). Clique num estado para ver os números.</b> Flávio venceu em '+nF1+' estados e Lula em '+nL1+'. No país, Flávio teve '+fmt2(URNA1T.f)+'% dos válidos e Lula '+fmt2(URNA1T.l)+'%, e os dois vão ao 2º turno.';
+        legend=sw(''+P.red+'','Lula à frente')+sw(''+P.blue+'','Flávio à frente');
+        note='1º turno de 2026 (resultado oficial do TSE). Tom mais forte = vantagem maior naquele estado.';
+        foot='2018 e 2022 são resultados de 2º turno; no 1º turno de 2026 os demais candidatos somaram '+fmt(100-URNA1T.l-URNA1T.f)+'% dos válidos, por isso as duas cores não somam 100.';
+      } else       if(yr==='2026'&&resModo()){
         var nL=0,nF=0,nS=0; RES_UFS.forEach(function(u){ var l=resLead(u); if(l==='L') nL++; else if(l==='F') nF++; else nS++; });
         intro='<b>Apuração oficial do TSE, '+(RES26.simula?'simulação com '+RES26.ano:'1º turno de 2026')+', por estado. Clique num estado para ver todos os candidatos e quanto já foi apurado.</b> '+
           'A cor é quem está à frente entre Lula e Flávio nos votos válidos do estado: '+nL+' com Lula, '+nF+' com Flávio'+(nS?', '+nS+' ainda sem seção apurada':'')+'. Tom mais forte = vantagem maior.';
@@ -2394,9 +2504,9 @@
         note='2º turno de '+yr+' (resultado oficial do TSE). Vermelho = '+leftNm+', azul = '+rightNm+'. Tom mais forte = vantagem maior naquele estado.';
         foot='Comparando os anos dá para ver o mapa virar. Ex.: MG e AM foram do Bolsonaro em 2018 e do Lula em 2022 (as duas únicas viradas entre os dois mapas).';
       }
-      document.getElementById('table-area').innerHTML=yt+'<div style="padding:8px 12px 4px; font-size:12.5px; color:'+P.txt+'; line-height:1.5;">'+intro+'</div><div style="display:flex; gap:16px; padding:2px 14px 6px; font-size:12px; color:'+P.txt2+'; flex-wrap:wrap;">'+legend+'</div>'+((yr==='2026'&&resModo())?'':natBar(yr))+(yr==='2026'?resBloco():'')+((yr==='2026'&&resModo())?resExtCard():'')+'<div id="presmapc"></div>'+((yr==='2026'&&resModo())?'':presFontes(yr));
-      drawPresMap();
-      if(yr==='2026'&&resDia()) resLiga();
+      document.getElementById('table-area').innerHTML=yt+'<div style="padding:8px 12px 4px; font-size:12.5px; color:'+P.txt+'; line-height:1.5;">'+intro+'</div><div style="display:flex; gap:16px; padding:2px 14px 6px; font-size:12px; color:'+P.txt2+'; flex-wrap:wrap;">'+legend+'</div>'+((yr==='2026'&&resModo())?'':natBar(yr))+((yr==='2026'&&!semMapa)?resBloco():'')+((yr==='2026'&&!semMapa&&resModo())?resExtCard():'')+(semMapa?'':'<div id="presmapc"></div>')+(semMapa?'':((yr==='2026'&&resModo())?'':presFontes(yr)));
+      if(!semMapa) drawPresMap();
+      if(yr==='2026'&&resDia2()) resLiga();
       document.getElementById('note').textContent=note;
       document.getElementById('foot').innerHTML=foot;
       return;
@@ -2425,6 +2535,12 @@
         document.getElementById('foot').innerHTML='Uma rodada por instituto por mês, sempre a mais recente. Um mês só entra no agregado quando tem pesquisa divulgada; registro no TSE não é divulgação.';
         return;
       }
+      if(URNA1T&&MESNUM[cur.m]>=10&&!cur.t1v){
+        document.getElementById('table-area').innerHTML=tabela2T(d,cur.m);
+        document.getElementById('note').textContent=d.note;
+        document.getElementById('foot').innerHTML='Margem em votos válidos, sem house effect: (Lula menos Flávio) dividido por (Lula mais Flávio). Uma rodada por instituto por mês, a mais recente. As pesquisas de 2º turno feitas depois de 4/10 entram aqui no lugar da rodada de 1º turno do mesmo instituto.';
+        return;
+      }
       var CAND=[{i:1,lab:'Lula',pty:'PT',col:''+P.red+'',b:1},{i:2,lab:'Fláv.',pty:'PL',col:''+P.blue+'',b:1},{i:10,lab:'Cury',pty:'AVANTE',col:''+P.txt2+'',b:0},{i:3,lab:'Caia',pty:'PSD',col:''+P.txt2+'',b:0},{i:4,lab:'Zema',pty:'NOVO',col:''+P.txt2+'',b:0},{i:5,lab:'Rena',pty:'MISSÃO',col:''+P.txt2+'',b:0}];
       function cavg(idx){ var A=[]; for(var k=0;k<d.rows.length;k++){ if(isOut(d.rows[k][0])) continue; var v=num(d.rows[k][idx]); if(v!==null) A.push(v); } return A.length?med(A):-1; }
       var cand=CAND.slice().sort(function(a,b){ return cavg(b.i)-cavg(a.i); });
@@ -2439,6 +2555,7 @@
       }
       th+='</tbody></table>';
       document.getElementById('table-area').innerHTML=th;
+      if(URNA1T&&MESNUM[cur.m]>=10) document.getElementById('table-area').insertAdjacentHTML('afterbegin','<div style="padding:8px 12px 4px; font-size:12px; text-align:right;"><span onclick="setT1v(false)" style="cursor:pointer; text-decoration:underline; color:'+P.mut+';">voltar ao 2º turno</span></div>');
       document.getElementById('note').textContent=d.note;
       document.getElementById('foot').innerHTML='O agregado do painel é a MEDIANA de TODOS os institutos (não a média): robusta a outlier, então ninguém é excluído. Br/N/Ind = brancos, nulos e indecisos; como esse bloco se reparte no 2º turno não é modelado aqui. Polymarket e Kalshi: mercados de "quem vence a presidência" (multicandidato, não somam 100), <b>cotação de 6/10/2026</b> (lida das APIs oficiais) que não atualiza sozinha, confira ao vivo.';
     } else {
@@ -2451,7 +2568,7 @@
       }
       if(c===0){
         document.getElementById('headline').innerHTML='';
-        document.getElementById('table-area').innerHTML='<div style="padding:20px 14px; font-size:13px; color:'+P.goldtxt+'; text-align:center;">Nenhum instituto publicou cenário de 2º turno em '+cur.m+'. O house effect só se aplica ao 2º turno (Lula x Flávio).</div>';
+        document.getElementById('table-area').innerHTML=heRank2026()+'<div style="padding:20px 14px; font-size:13px; color:'+P.goldtxt+'; text-align:center;">Nenhum instituto publicou cenário de 2º turno em '+cur.m+'. O house effect só se aplica ao 2º turno (Lula x Flávio).</div>';
         document.getElementById('note').textContent=''; document.getElementById('foot').innerHTML='House effect no 2º turno, Lula x Flávio';
         return;
       }
