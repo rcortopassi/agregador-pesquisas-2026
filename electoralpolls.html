@@ -628,6 +628,7 @@
   // Tudo aqui é APRESENTAÇÃO; o método não mudou. Valores congelados porque as pesquisas de 2º turno
   // vão substituir as rodadas de outubro instituto por instituto, e o placar do 1º turno não pode andar.
   var URNA1T={l:45.16,f:47.03};
+  var CEN1T_OUT={l:42.38375,f:44.335};  // banner de outubro na véspera: adjMonth('out') em 06/10/2026
   PRESNAT['2026-1']={l:45.16,r:47.03,ln:'Lula',rn:'Flávio',t1:true};
   // Projeção do painel na véspera (âncora em setembro, histOk) e mediana das 10 rodadas de outubro em
   // válidos, sem correção; calculadas em 06/10/2026 com o painel como estava no dia da eleição.
@@ -2368,6 +2369,10 @@
     // cada um rotulado. A classificação (empate técnico / vantagem) segue o 2º turno quando
     // existe, porque é o cenário que decide a eleição.
     var adj1=adjMonth(cur.m), l1=adj1[0], f1=adj1[1];
+    // CENÁRIO DO 1º TURNO CONGELADO (06/10/2026, a pedido do Rafael): o banner de outubro guarda o que as
+    // pesquisas traçavam na véspera (mediana das 10 rodadas, com house effect), para comparar com a urna.
+    // Sem isso a linha andaria conforme as pesquisas de 2º turno substituem as rodadas de outubro.
+    if(URNA1T&&cur.m==='out'){ l1=CEN1T_OUT.l; f1=CEN1T_OUT.f; }
     var a2=adj2Month(cur.m), tem2=a2[2]>0, mg=tem2?a2[1]:(l1-f1);
     var marMoe=2*moeMonth(cur.m), amg=Math.abs(mg), lead=mg>=0?'Lula':'Flávio', lcol=mg>=0?''+P.red+'':''+P.blue+'', cenario=tem2?'2º turno':'1º turno', bdot, classif;
     if(amg<marMoe){ bdot=''+P.gold+''; classif='<b style="color:'+P.goldtxt+';">Empate técnico</b> no '+cenario; }

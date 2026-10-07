@@ -349,6 +349,8 @@ O painel foi ajustado para depois do 1º turno. Só apresentação: o método n�
 - NÃO RECALCULAR o placar do 1º turno: `URNA1T` e `PREV1T_FINAL` são congelados (projeção da véspera e
   mediana das 10 rodadas de outubro). As rodadas de outubro vão sendo substituídas pelas de 2º turno.
 - O caminho A do 2º turno (`prev2T`) parte de `URNA1T` (urna real), não mais da projeção.
+- O cenário do 1º turno no banner de outubro (Lula 42,4 x Flávio 44,3) está congelado em `CEN1T_OUT`.
+  Não recalcular nem apagar: é o registro do que as pesquisas traçavam na véspera.
 - Governador e Senado: `RES26E` guarda o resultado oficial do 1º turno (TSE, eleição 6259). Mapa
   estadual pinta de dourado os 7 estados com 2º turno de governador (AC, AM, DF, ES, RJ, RN, TO).
   Para o 2º turno de governador, a apuração do TSE de 25/10 usa outro código estadual; atualizar à mão.
