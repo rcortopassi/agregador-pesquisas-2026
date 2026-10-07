@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 21:52</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 06/10/2026 21:55</div>
   </div>
 
   <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
@@ -2153,10 +2153,14 @@
     {d:'2026-09-07', c:'blue', t:'Flávio convoca o ato de 7 de Setembro na avenida Paulista, com os motes "Fora Lula, Fora Moraes" e "É agora ou nunca", primeira grande demonstração de rua depois das mensagens de Daniel Vorcaro a Alexandre de Moraes, tornadas públicas em 1º de setembro. O DADO POLÍTICO É O TAMANHO. O Monitor do Debate Político da USP e do Cebrap, com a More in Common, estimou 28.500 pessoas no pico das 16h32, em faixa de 25.100 a 32.000, e o Poder360, por foto de drone às 16h, calculou 34.200. É o maior ato de rua da campanha dele até aqui, quase quatro vezes as 8.900 de Copacabana em 16 de agosto pela mesma medição da USP, mas fica abaixo das 48.800 do 7 de Setembro de 2025 na mesma avenida, quando Jair Bolsonaro também não compareceu, e muito abaixo dos 100 mil que a campanha projetava depois do caso Vorcaro. A leitura em disputa é se isso mede perda de mobilização da direita ou se pesaram os 14 graus e a garoa em São Paulo. No trio estavam Tarcísio de Freitas, Silas Malafaia, Nikolas Ferreira e Valdemar Costa Neto, e Romeu Zema, que foi hostilizado pelo público; o vice Alfredo Gaspar não foi, e fez campanha no Rio Grande do Norte. Flávio disse que indicará cinco ministros ao STF "porque Moraes vai cair", repetiu que o ministro é uma "laranja podre", prometeu acabar com o "consórcio" Lula e Moraes e avisou que a campanha sofrerá uma "3ª facada". Houve atos contra Moraes em pelo menos nove capitais. Augusto Cury fez ato à parte em Copacabana, não citou Moraes, mandou um "abraço" a André Mendonça e pediu que ninguém no Supremo seja poupado, marcando distância do bolsonarismo sem abrir mão da pauta do STF. Do outro lado, Lula desfilou em carro aberto na parada militar de Brasília e a esquerda foi às ruas no Grito dos Excluídos. A Quaest publicada neste mesmo dia tem campo encerrado em 6 de setembro, na véspera, então nenhuma pesquisa do painel mede ainda o efeito do ato.'},
     {d:'2026-09-22', c:'red', t:'O Globo (coluna de Malu Gaspar) publica mensagens extraídas pela PF do celular de Daniel Vorcaro (Banco Master) com o advogado Walfrido Warde, cujo escritório recebeu R$ 27 milhões do banco em 2025. Em 22 de janeiro de 2025, 49 dias depois do encontro de Vorcaro com Lula no Planalto em 4 de dezembro de 2024, intermediado por Guido Mantega, Warde escreve que o presidente "agradeceu mais uma vez o whisky e mandou um abraço". Na mesma conversa Vorcaro diz que Lula "falou de festa na Grécia", e Warde responde: "Ele quer participar hahahahaha. Sem a Janja". As mensagens não mostram se Warde relatava fala real do presidente, dava interpretação própria ou brincava, e não provam que Lula quisesse ir a festa do banqueiro. A Secom nega que Lula tenha recebido presente de Vorcaro ou mandado recado a ele. É o primeiro material do caso Master que liga o próprio Lula a Vorcaro, e não um ministro ou aliado.'},
     {d:'2026-10-01', c:'gold', t:'A ministra Estela Aranha (TSE), a pedido da coligação de Lula, proíbe a Globo de exibir o púlpito vazio do presidente e veta perguntas dos presentes dirigidas a ele; Gilmar Mendes (STF) manda incluir Renan Santos. Flávio desiste e chama a decisão do TSE de "censura"; a Globo cancela o debate menos de uma hora antes do início. Na GloboNews, Malu Gaspar lembrou que Flávio já condicionara a ida à ausência de Renan. Com os cancelamentos anteriores, de 14/9 (SBT, RedeTV! e CNN) e de 27/9 (Record), o 1º turno termina sem nenhum debate entre Lula e Flávio: o da Band, em 23/8, foi o único realizado.'},
-    {d:'2026-10-04', c:'gold', t:'Urna do 1º turno (TSE, 100% das seções): Flávio 47,03% x Lula 45,16% dos votos válidos. Ninguém passa de 50% e os dois disputam o 2º turno em 25/10. Na véspera, a mediana das pesquisas de outubro dava Lula +1,6 em válidos, sem correção; a projeção deste painel dava Flávio +0,45.'}
+    {d:'2026-10-04', c:'purple', t:'Urna do 1º turno (TSE, 100% das seções): Flávio 47,03% x Lula 45,16% dos votos válidos. Ninguém passa de 50% e os dois disputam o 2º turno em 25/10. Na véspera, a mediana das pesquisas de outubro dava Lula +1,6 em válidos, sem correção; a projeção deste painel dava Flávio +0,45.'}
   ];
   // c:'gold' = fato que não é de um candidato (debate esvaziado, calendário); cor neutra.
-  function evc(e){ return e.c==='red'?P.red:(e.c==='gold'?P.goldtxt:P.blue); }
+  // c:'purple' = resultado oficial (06/10/2026): círculo no roxo das abas (P.purple); texto e linha no
+  // roxo legível do tema (P.ink), porque P.purple some sobre o fundo escuro.
+  function evc(e){ return e.c==='red'?P.red:(e.c==='gold'?P.goldtxt:(e.c==='purple'?P.purple:P.blue)); }
+  function evt(e){ return e.c==='purple'?P.ink:evc(e); }
+  function evSelo(e){ return e.c==='red'?'Lula':(e.c==='blue'?'Flávio':(e.c==='purple'?'resultado':'debate')); }
 
   // MARCADOR DOS DEBATES NO GRAFICO (29/08/2026). O usuario pediu marcadores "um pouco
   // diferentes, para facilitar a visao de que se trata de outra marcacao". Por isso o debate
@@ -2192,7 +2196,8 @@
     function yv(v){ return 57.5+(50-v)*12.5; }  // eixo de 32 a 50 (06/10/2026, a pedido do Rafael)
     var lMain='',fMain='',ldot='',fdot='',llab='',flab='', lUp=[],lLo=[],fUp=[],fLo=[], ljd='', fjd='', hollow='', prev=null;
     for(var i=0;i<n;i++){ var aj=adjMonth(ms[i]), cnt=avgMonth(ms[i])[2], x=xs[i], lay=yv(aj[0]), fay=yv(aj[1]);
-      llab+='<text x="'+x+'" y="'+(lay-9)+'">'+fmt(aj[0])+'</text>'; flab+='<text x="'+x+'" y="'+(fay+15)+'">'+fmt(aj[1])+'</text>';
+      // rótulo do MAIOR valor em cima e do menor embaixo (06/10/2026): com o Flávio à frente em set e out, os dois caíam no meio e se sobrepunham
+      var lTop=aj[0]>=aj[1]; llab+='<text x="'+x+'" y="'+(lTop?lay-9:lay+15)+'">'+fmt(aj[0])+'</text>'; flab+='<text x="'+x+'" y="'+(lTop?fay+15:fay-9)+'">'+fmt(aj[1])+'</text>';
       if(i===n-1 && cnt<3){
         if(prev){ ljd='<line x1="'+prev.x+'" y1="'+prev.lay+'" x2="'+x+'" y2="'+lay+'" stroke="'+P.red+'" stroke-width="2" stroke-dasharray="5,4" stroke-opacity="0.7"/>'; fjd='<line x1="'+prev.x+'" y1="'+prev.fay+'" x2="'+x+'" y2="'+fay+'" stroke="'+P.blue+'" stroke-width="2" stroke-dasharray="5,4" stroke-opacity="0.7"/>'; }
         hollow='<circle cx="'+x+'" cy="'+lay+'" r="3.8" fill="'+P.surf+'" stroke="'+P.red+'" stroke-width="2"/><circle cx="'+x+'" cy="'+fay+'" r="3.8" fill="'+P.surf+'" stroke="'+P.blue+'" stroke-width="2"/>';
@@ -2216,10 +2221,10 @@
     var placed=[];
     evList.forEach(function(o){ var lvl=0; while(placed.some(function(q){return q.lvl===lvl && Math.abs(q.ex-o.ex)<20;})) lvl++; o.lvl=lvl; placed.push(o); });
     var evMark='', evCap='';
-    evList.forEach(function(o){ var e=o.e, n=o.n, ec=evc(e), cy=47-o.lvl*19, ex=(o.ex+o.lvl*3).toFixed(1), yt=(cy+8).toFixed(1);
-      evMark+='<line x1="'+ex+'" y1="'+yt+'" x2="'+ex+'" y2="312" stroke="'+ec+'" stroke-width="1.4" stroke-dasharray="3,3" stroke-opacity="0.6"/>'+
-        '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+ec+'"/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">'+n+'</text>';
-      evCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+ec+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> <span style="font-size:10px; font-weight:700; color:'+ec+'; border:1px solid '+ec+'; border-radius:8px; padding:0 5px; opacity:.85;">'+(e.c==='red'?'Lula':'Flávio')+'</span> &middot; '+e.t+'</span></div>';
+    evList.forEach(function(o){ var e=o.e, n=o.n, ec=evc(e), et=evt(e), cy=47-o.lvl*19, ex=(o.ex+o.lvl*3).toFixed(1), yt=(cy+8).toFixed(1);
+      evMark+='<line x1="'+ex+'" y1="'+yt+'" x2="'+ex+'" y2="312" stroke="'+et+'" stroke-width="1.4" stroke-dasharray="3,3" stroke-opacity="0.6"/>'+
+        '<circle cx="'+ex+'" cy="'+cy+'" r="8.5" fill="'+ec+'"'+(e.c==='purple'?' stroke="'+P.ink+'" stroke-width="1.5"':'')+'/><text x="'+ex+'" y="'+(cy+3.7)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">'+n+'</text>';
+      evCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+et+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> <span style="font-size:10px; font-weight:700; color:'+et+'; border:1px solid '+et+'; border-radius:8px; padding:0 5px; opacity:.85;">'+evSelo(e)+'</span> &middot; '+e.t+'</span></div>';
     });
     // Losangos dos debates, no rodape do grafico. So entra o debate cuja data CABE no eixo
     // (o eixo termina no ultimo mes com rodada publicada). Debate futuro nao ganha posicao
@@ -2230,10 +2235,11 @@
       var frac=(mn-MESNUM[ms[0]])+(dy-1)/30, exRaw=60+frac*sp;
       return {e:e, n:idx+1, mn:mn, dy:dy, p:dp, ex:exRaw, cabe:(exRaw>=60 && exRaw<=660)}; });
     var debMark='';
-    // Debates no mesmo dia (Band e Record em 11/10) ficariam um sobre o outro: o segundo desloca 18px.
-    var debUlt=null;
-    debList.forEach(function(o){ if(!o.cabe) return; var exn=Math.round(o.ex*10)/10; if(debUlt!==null&&Math.abs(exn-debUlt)<17) exn=debUlt+18; debUlt=exn; var ex=exn.toFixed(1);
-      debMark+='<line x1="'+ex+'" y1="312" x2="'+ex+'" y2="57.5" stroke="'+P.gold+'" stroke-width="1.2" stroke-dasharray="1.5,3.5" stroke-opacity="0.68"/>'+
+    // Debate futuro não entra no gráfico (fica na lista); dois debates no MESMO dia (Band e Record em
+    // 11/10) não se sobrepõem: o segundo losango desloca 18px. Só no mesmo dia, sem efeito cascata.
+    var debHoje=new Date(); debHoje.setHours(0,0,0,0); var debUltX=null;
+    debList.forEach(function(o){ if(!o.cabe) return; if(debD(o.e.d)>debHoje) return; var exl=Math.round(o.ex*10)/10, exn=exl; if(debUltX!==null&&exn-debUltX<18) exn=debUltX+18; debUltX=exn; var ex=exn.toFixed(1), exL=exl.toFixed(1);
+      debMark+='<line x1="'+exL+'" y1="312" x2="'+exL+'" y2="57.5" stroke="'+P.gold+'" stroke-width="1.2" stroke-dasharray="1.5,3.5" stroke-opacity="0.68"/>'+
         '<path d="'+diamond(exn,319,8.5)+'" fill="'+P.surf+'" stroke="'+P.gold+'" stroke-width="2"'+(o.e.cancel?' stroke-dasharray="2.5,2"':'')+'/>'+
         '<text x="'+ex+'" y="322.6" text-anchor="middle" font-size="10" font-weight="700" fill="'+P.goldtxt+'">'+o.n+'</text>'+
         // Cancelado: losango tracejado e riscado em diagonal, para não ser lido como debate que houve.
