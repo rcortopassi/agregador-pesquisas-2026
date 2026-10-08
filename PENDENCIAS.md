@@ -2,11 +2,16 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 07/10/2026 22:50. Mercados: Polymarket 15,5%/84,5%, Kalshi 16,0%/84,0%.
+Rodada de 08/10/2026 08:17. Mercados: Polymarket 15,5%/84,0%, Kalshi 17,0%/84,0%.
 
 ## Precisa de olho humano nesta rodada
 
-Nada pendente. Tudo que o TSE registrou e o Veritá publicou já foi olhado por uma rodada local e baixado da fila.
+A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
+
+- [NOVO] TSE ESTADUAL[DF], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=910, registro BR098562026
+- [NOVO] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=1204, registro BR018802026
+- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 05/10-07/10, divulgação 2026-10-08, N=3000, registro BR081342026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=2520, registro BR029492026
 
 ## Últimas publicações do Veritá
 
@@ -25,25 +30,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-27 | ESTADUAL[AL] | PALPE PESQUISAS | Presidente | 13/09-22/09 | 5000 | BR050032026 |
-| 2026-09-27 | ESTADUAL[AL] | DATATRENDS | Presidente | 23/09-25/09 | 1200 | BR051912026 |
-| 2026-09-27 | ESTADUAL[BA] | INSTITUTO FRANCA DE PESQUISA | Presidente | 23/09-26/09 | 2000 | BR078592026 |
-| 2026-09-27 | ESTADUAL[GO] | IGAPE- INSTITUTO GAZETA DE P | Presidente | 22/09-26/09 | 2000 | BR063892026 |
-| 2026-09-27 | ESTADUAL[GO] | IGAPE- INSTITUTO GAZETA DE P | Presidente | 22/09-26/09 | 2000 | BR037172026 |
-| 2026-09-27 | ESTADUAL[MG] | INSIGHT BRASIL | Presidente | 21/09-25/09 | 3000 | BR059412026 |
-| 2026-09-27 | ESTADUAL[MG] | F5 ATUALIZA DADOS | Presidente | 23/09-24/09 | 468 | BR036252026 |
-| 2026-09-27 | ESTADUAL[MG] | F5 ATUALIZA DADOS | Presidente | 23/09-24/09 | 595 | BR099342026 |
-| 2026-09-27 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 15/09-18/09 | 600 | BR083022026 |
-| 2026-09-27 | ESTADUAL[PE] | INSTITUTO FRANCA DE PESQUISA | Presidente | 23/09-25/09 | 1500 | BR067842026 |
-| 2026-09-27 | ESTADUAL[PI] | VETOR TECNOLOGIA E PESQUISAS | Presidente | 19/09-24/09 | 1602 | BR052542026 |
-| 2026-09-27 | ESTADUAL[PI] | AMOSTRAGEM OPINIAO E MERCADO | Presidente | 21/09-25/09 | 1137 | BR010872026 |
-| 2026-09-27 | ESTADUAL[SP] | A. R. PUBLICIDADE E PESQUISA | Presidente | 21/09-22/09 | 1200 | BR001642026 |
-| 2026-09-27 | ESTADUAL[SP] | ASN PESQUISAS PUBLICAS | Presidente | 25/09-28/09 | 700 | BR011462026 |
-| 2026-09-27 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 23/09-26/09 | 2400 | BR039292026 |
-| 2026-09-27 | NACIONAL? | #NULO# | Presidente | 25/09-26/09 | 321 | BR009372026 |
-| 2026-09-27 | NACIONAL? | #NULO# | Presidente | 22/09-26/09 | 2000 | BR066832026 |
-| 2026-09-27 | NACIONAL? | #NULO# | Presidente | 22/09-24/09 | 601 | BR017912026 |
-| 2026-09-27 | NACIONAL? | #NULO# | Presidente | 17/09-23/09 | 1200 | BR090272026 |
 | 2026-09-28 | ESTADUAL[AM] | IPEN - INSTITUTO DE PESQUISA | Presidente | 18/09-25/09 | 1200 | BR085452026 |
 | 2026-09-28 | ESTADUAL[BA] | REAL TIME BIG DATA | Presidente | 23/09-26/09 | 1600 | BR008912026 |
 | 2026-09-28 | ESTADUAL[BA] | REAL TIME BIG DATA | Presidente | 23/09-26/09 | 1600 | BR029382026 |
@@ -253,4 +239,8 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-03 | NACIONAL? | PALVER | Presidente | 30/09-03/10 | 5000 | BR001982026 |
 | 2026-10-03 | NACIONAL? | PODERDATA | Presidente | 30/09-02/10 | 4000 | BR035192026 |
 | 2026-10-04 | ESTADUAL[RN] | DATA PLUS PESQUISA E CONSULT | Presidente | 28/09-29/09 | 400 | BR098702026 |
+| 2026-10-08 | ESTADUAL[DF] | #NULO# | Presidente | 06/10-08/10 | 910 | BR098562026 |
+| 2026-10-08 | ESTADUAL[RJ] | #NULO# | Presidente | 06/10-08/10 | 1204 | BR018802026 |
+| 2026-10-08 | NACIONAL? | PODERDATA | Presidente | 05/10-07/10 | 3000 | BR081342026 |
+| 2026-10-08 | NACIONAL? | #NULO# | Presidente | 06/10-08/10 | 2520 | BR029492026 |
 
