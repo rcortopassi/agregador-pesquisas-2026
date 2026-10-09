@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 09/10/2026 08:16. Mercados: Polymarket 13,5%/86,5%, Kalshi 12,0%/87,0%.
+Rodada de 09/10/2026 17:48. Mercados: Polymarket 10,5%/88,8%, Kalshi 11,0%/89,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -10,10 +10,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 
 - [aguardando desde 2026-10-08] TSE ESTADUAL[DF], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=910, registro BR098562026
 - [aguardando desde 2026-10-08] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=1204, registro BR018802026
-- [aguardando desde 2026-10-08] TSE NACIONAL?, PODERDATA (Presidente), campo 05/10-07/10, divulgação 2026-10-08, N=3000, registro BR081342026
-- [aguardando desde 2026-10-08] TSE NACIONAL?, #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=2520, registro BR029492026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 05/10-07/10, divulgação 2026-10-09, N=2100, registro BR096232026
-- [NOVO] TSE NACIONAL?, ATLASINTEL (Presidente), campo 03/10-08/10, divulgação 2026-10-09, N=5000, registro BR036632026
 
 ## Últimas publicações do Veritá
 
