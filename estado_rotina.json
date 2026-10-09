@@ -1833,46 +1833,6 @@
    "div": "2026-10-08",
    "n": "1204",
    "visto": "2026-10-08"
-  },
-  {
-   "proto": "BR081342026",
-   "escopo": "NACIONAL?",
-   "inst": "PODERDATA",
-   "cargo": "Presidente",
-   "campo": "05/10-07/10",
-   "div": "2026-10-08",
-   "n": "3000",
-   "visto": "2026-10-08"
-  },
-  {
-   "proto": "BR029492026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "06/10-08/10",
-   "div": "2026-10-08",
-   "n": "2520",
-   "visto": "2026-10-08"
-  },
-  {
-   "proto": "BR096232026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "05/10-07/10",
-   "div": "2026-10-09",
-   "n": "2100",
-   "visto": "2026-10-09"
-  },
-  {
-   "proto": "BR036632026",
-   "escopo": "NACIONAL?",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "03/10-08/10",
-   "div": "2026-10-09",
-   "n": "5000",
-   "visto": "2026-10-09"
   }
  ],
  "verita_pendentes": []
