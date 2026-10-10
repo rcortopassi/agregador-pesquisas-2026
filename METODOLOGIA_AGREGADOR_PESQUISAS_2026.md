@@ -6,6 +6,12 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 10/10, MANHÃ (sessão de nuvem, a pedido do Rafael): IPESPE ESTREIA NO PAINEL, em outubro, só 2º
+  turno. Tracking Ipespe/Abrapel, BR-00933/2026, 6-8/10, 1.500 entrevistas, margem 2,6, recursos
+  próprios: Flávio 49 x Lula 44 (52,7 x 47,3 válidos), branco/nulo 5, não sabe 3. Entrou no `DI`
+  (linha só com o 2º turno, como Datafolha/PoderData/Vox de outubro), `T2R` [44,49], `IM` (método
+  'n/d', não conferido) e `MOE`. Só resumo de imprensa (Exame, InfoMoney); íntegra não conferida.
+  Margem do 2º turno no banner: Flávio +2,4 para +3,1 (amostra total).
 - 05/10, NOITE (rodada local, fila de "olho humano" de 116 itens acumulados desde 26/9): FILA DE
   NACIONAIS ZERADA. Os três protocolos genuinamente nacionais que ainda faltavam no `DI`/`T2R`/`IM`
   de outubro entraram: GERP (BR-08168/2026, 1-3/10, substituiu a de 30/9-2/10), APEX/FUTURA
