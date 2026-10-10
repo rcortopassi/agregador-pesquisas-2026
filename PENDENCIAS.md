@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 09/10/2026 22:42. Mercados: Polymarket 11,5%/88,9%, Kalshi 12,0%/88,0%.
+Rodada de 10/10/2026 07:33. Mercados: Polymarket 11,5%/88,4%, Kalshi 13,0%/87,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -10,6 +10,9 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 
 - [aguardando desde 2026-10-08] TSE ESTADUAL[DF], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=910, registro BR098562026
 - [aguardando desde 2026-10-08] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=1204, registro BR018802026
+- [NOVO] TSE ESTADUAL[CE], INSTITUTO OPNUS (Presidente), campo 04/10-04/10, divulgação 2026-10-10, N=4800, registro BR047152026
+- [NOVO] TSE ESTADUAL[TO], DIRECT PESQUISAS (Presidente), campo 06/10-10/10, divulgação 2026-10-10, N=1200, registro BR057932026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-10, N=1500, registro BR009332026
 
 ## Últimas publicações do Veritá
 
@@ -28,35 +31,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-29 | ESTADUAL[AC] | DATA CONTROL INSTITUTO DE PE | Presidente | 24/09-30/09 | 1000 | BR027242026 |
-| 2026-09-29 | ESTADUAL[CE] | ATLASINTEL | Presidente | 23/09-28/09 | 1800 | BR041942026 |
-| 2026-09-29 | ESTADUAL[DF] | #NULO# | Presidente | 25/09-28/09 | 1104 | BR005312026 |
-| 2026-09-29 | ESTADUAL[MG] | #NULO# | Presidente | 24/09-27/09 | 1000 | BR045272026 |
-| 2026-09-29 | ESTADUAL[MG] | STATS - PESQUISA E GESTAO | Presidente | 23/09-28/09 | 600 | BR015742026 |
-| 2026-09-29 | ESTADUAL[MG] | #NULO# | Presidente | 25/09-28/09 | 1506 | BR084672026 |
-| 2026-09-29 | ESTADUAL[MG] | F5 ATUALIZA DADOS | Presidente | 25/09-26/09 | 775 | BR058392026 |
-| 2026-09-29 | ESTADUAL[MS] | NOVO IBRAPE | Presidente | 23/09-28/09 | 1000 | BR074722026 |
-| 2026-09-29 | ESTADUAL[MT] | IPSENSUS PESQUISAS | Presidente | 25/09-27/09 | 400 | BR054102026 |
-| 2026-09-29 | ESTADUAL[PA] | 100 CIDADES | Presidente | 24/09-28/09 | 1000 | BR099522026 |
-| 2026-09-29 | ESTADUAL[PE] | #NULO# | Presidente | 25/09-28/09 | 1302 | BR082892026 |
-| 2026-09-29 | ESTADUAL[PE] | #NULO# | Presidente | 25/09-28/09 | 1302 | BR035342026 |
-| 2026-09-29 | ESTADUAL[PI] | ATLASINTEL | Presidente | 23/09-28/09 | 1200 | BR035362026 |
-| 2026-09-29 | ESTADUAL[PI] | ATLASINTEL | Presidente | 23/09-28/09 | 1200 | BR074222026 |
-| 2026-09-29 | ESTADUAL[RN] | #NULO# | Presidente | 24/09-27/09 | 1200 | BR020032026 |
-| 2026-09-29 | ESTADUAL[RS] | REAL TIME BIG DATA | Presidente | 24/09-28/09 | 1600 | BR085462026 |
-| 2026-09-29 | ESTADUAL[RS] | REAL TIME BIG DATA | Presidente | 24/09-28/09 | 1600 | BR044822026 |
-| 2026-09-29 | ESTADUAL[RS] | REAL TIME BIG DATA | Presidente | 24/09-28/09 | 1600 | BR038752026 |
-| 2026-09-29 | ESTADUAL[SP] | #NULO# | Presidente | 27/09-28/09 | 1200 | BR012802026 |
-| 2026-09-29 | ESTADUAL[SP] | #NULO# | Presidente | 25/09-28/09 | 1800 | BR051552026 |
-| 2026-09-29 | ESTADUAL[SP] | #NULO# | Presidente | 23/09-27/09 | 800 | BR037622026 |
-| 2026-09-29 | ESTADUAL[SP] | REAL TIME BIG DATA | Presidente | 24/09-28/09 | 2000 | BR098912026 |
-| 2026-09-29 | NACIONAL? | ATLASINTEL | Presidente | 23/09-28/09 | 5000 | BR043912026 |
-| 2026-09-29 | NACIONAL? | #NULO# | Presidente | 26/09-28/09 | 2100 | BR008952026 |
-| 2026-09-29 | NACIONAL? | JOTA JORNALISMO | Presidente | 03/09-28/09 | 6000 | BR058692026 |
-| 2026-09-29 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 30/09-02/10 | 2400 | BR005092026 |
-| 2026-09-29 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 01/10-03/10 | 2400 | BR081682026 |
-| 2026-09-29 | NACIONAL? | INSTITUTO AMAZONIA DE PESQUI | Presidente | 23/09-26/09 | 2500 | BR021062026 |
-| 2026-09-29 | NACIONAL? | PALVER | Presidente | 24/09-28/09 | 5000 | BR029902026 |
 | 2026-09-30 | ESTADUAL[AC] | DELTA AGENCIA DE PESQUISA | Presidente | 23/09-29/09 | 800 | BR084762026 |
 | 2026-09-30 | ESTADUAL[BA] | ATLASINTEL | Presidente | 24/09-29/09 | 2000 | BR006332026 |
 | 2026-09-30 | ESTADUAL[ES] | #NULO# | Presidente | 28/09-30/09 | 500 | BR024212026 |
@@ -224,4 +198,7 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-08 | NACIONAL? | #NULO# | Presidente | 06/10-08/10 | 2520 | BR029492026 |
 | 2026-10-09 | NACIONAL? | #NULO# | Presidente | 05/10-07/10 | 2100 | BR096232026 |
 | 2026-10-09 | NACIONAL? | ATLASINTEL | Presidente | 03/10-08/10 | 5000 | BR036632026 |
+| 2026-10-10 | ESTADUAL[CE] | INSTITUTO OPNUS | Presidente | 04/10-04/10 | 4800 | BR047152026 |
+| 2026-10-10 | ESTADUAL[TO] | DIRECT PESQUISAS | Presidente | 06/10-10/10 | 1200 | BR057932026 |
+| 2026-10-10 | NACIONAL? | #NULO# | Presidente | 06/10-08/10 | 1500 | BR009332026 |
 
