@@ -2292,7 +2292,7 @@
     var xs=ms.map(function(_,i){ return 60+i*sp; });
     function yv(v){ return 57.5+(50-v)*12.5; }  // eixo de 32 a 50 (06/10/2026, a pedido do Rafael)
     var lMain='',fMain='',ldot='',fdot='',llab='',flab='', lUp=[],lLo=[],fUp=[],fLo=[], ljd='', fjd='', hollow='', prev=null;
-    for(var i=0;i<n;i++){ var aj=adjMonth(ms[i]), cnt=avgMonth(ms[i])[2], x=xs[i], lay=yv(aj[0]), fay=yv(aj[1]);
+    for(var i=0;i<n;i++){ var aj=(URNA1T&&ms[i]==='out')?[CEN1T_OUT.l,CEN1T_OUT.f]:adjMonth(ms[i]), cnt=avgMonth(ms[i])[2], x=xs[i], lay=yv(aj[0]), fay=yv(aj[1]);
       // rótulo do MAIOR valor em cima e do menor embaixo (06/10/2026): com o Flávio à frente em set e out, os dois caíam no meio e se sobrepunham
       var lTop=aj[0]>=aj[1]; llab+='<text x="'+x+'" y="'+(lTop?lay-9:lay+15)+'">'+fmt(aj[0])+'</text>'; flab+='<text x="'+x+'" y="'+(lTop?fay+15:fay-9)+'">'+fmt(aj[1])+'</text>';
       if(i===n-1 && cnt<3){
@@ -2306,6 +2306,16 @@
         ldot+='<circle cx="'+x+'" cy="'+lay+'" r="3.5"/>'; fdot+='<circle cx="'+x+'" cy="'+fay+'" r="3.5"/>';
         prev={x:x,lay:lay,fay:fay};
       }
+    }
+    // Depois da urna do 1º turno: um ponto de 2º turno à direita do marcador, o mesmo placar do banner
+    // (t2placar('out')), que segue andando; o 1º turno fica congelado até outubro.
+    var t2pt='', t2ax='';
+    var p2=URNA1T?t2placar('out'):null;
+    if(p2){ var hj=new Date(), x2=Math.max(xs[n-1]+40, Math.min(640, 60+((hj.getMonth()+1-MESNUM[ms[0]])+(hj.getDate()-1)/30)*sp)), l2y=yv(p2[0]), f2y=yv(p2[1]), l2Top=p2[0]>=p2[1];
+      t2pt='<circle cx="'+x2.toFixed(1)+'" cy="'+l2y+'" r="4.5" fill="'+P.red+'"/><circle cx="'+x2.toFixed(1)+'" cy="'+f2y+'" r="4.5" fill="'+P.blue+'"/>'+
+        '<text x="'+x2.toFixed(1)+'" y="'+(l2Top?l2y-9:l2y+15)+'" fill="'+P.red+'" font-size="11" font-weight="700" text-anchor="middle">'+fmt(p2[0])+'</text>'+
+        '<text x="'+x2.toFixed(1)+'" y="'+(l2Top?f2y+15:f2y-9)+'" fill="'+P.blue+'" font-size="11" font-weight="700" text-anchor="middle">'+fmt(p2[1])+'</text>';
+      t2ax='<text x="'+x2.toFixed(1)+'" y="340" fill="'+P.txt2+'" font-size="12" text-anchor="middle">2º turno</text>';
     }
     var lBand=lUp.concat(lLo.slice().reverse()).join(' ');
     var fBand=fUp.concat(fLo.slice().reverse()).join(' ');
@@ -2381,6 +2391,7 @@
       '<g fill="'+P.blue+'" font-size="11" text-anchor="middle">'+flab+'</g>'+
       evMark+
       debMark+
+      t2pt+t2ax+
       '<g fill="'+P.txt2+'" font-size="12" text-anchor="middle">'+ms.map(function(mm,i){ return '<text x="'+xs[i].toFixed(1)+'" y="340">'+mm+'</text>'; }).join('')+'</g>'+
     '</svg>'+
     (evCap?'<div style="padding:6px 14px 12px; font-size:11.5px; line-height:1.45;"><div style="font-size:10px; color:'+P.mut+'; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;">Fatos que mexeram na corrida</div>'+evCap+'</div>':'')+
@@ -2633,7 +2644,7 @@
       document.getElementById('foot').innerHTML='Reconstruímos 390 pesquisas de 1º turno dos quatro ciclos, com a mesma régua deste painel (uma rodada por instituto por mês) e o mesmo denominador de votos válidos. O extrator reproduz o Datafolha final de 2022 (Lula 50 x Bolsonaro 36) e o Ibope final de 2014 (Dilma 46 x Aécio 27). Esta aba usa VOTOS VÁLIDOS, e não amostra total como a aba Gráfico, porque a urna não tem indeciso e essa é a única base em que pesquisa e resultado são comparáveis.';
       return; }
     if(graf){ document.getElementById('table-area').innerHTML=
-        '<div style="padding:14px 14px 0; font-size:13px; font-weight:600; color:'+P.ink+';">1º turno ajustado pelo house effect</div>'+
+        '<div style="padding:14px 14px 0; font-size:13px; font-weight:600; color:'+P.ink+';">'+(URNA1T?'1º turno ajustado pelo house effect, congelado na véspera da urna; à direita, o cenário atual do 2º turno':'1º turno ajustado pelo house effect')+'</div>'+
         chartSVG();
       document.getElementById('note').textContent='Linhas de Lula e Flávio no 1º turno, mês a mês (janeiro em diante), já corrigidas pelo house effect de cada instituto (viés vs urna do TSE, regularizado por nº de eleições). A faixa hachurada é a margem de erro TÍPICA de uma pesquisa (não do agregado, que é menor); as linhas pontilhadas verticais marcam fatos que mexeram na corrida.';
       document.getElementById('foot').innerHTML='Valores AJUSTADOS, não os brutos: cada pesquisa é corrigida pelo viés do seu instituto (encolhido conforme o nº de eleições) antes de entrar na MEDIANA do mês. O agregado é a mediana de TODOS os institutos, não a média: assim um instituto muito fora não desloca o centro, e por isso ninguém é excluído. Institutos sem histórico entram sem ajuste. O mês mais recente aparece tracejado e com ponto vazado enquanto tiver menos de 3 institutos. Os números brutos estão na aba Institutos; o 2º turno ajustado, na aba House effect.';

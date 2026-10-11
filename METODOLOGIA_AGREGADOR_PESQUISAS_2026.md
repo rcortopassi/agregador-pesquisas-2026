@@ -6,6 +6,12 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 10/10, NOITE (a pedido do Rafael): GRÁFICO ALINHADO AO BANNER. O ponto de outubro do gráfico
+  passou a usar o `CEN1T_OUT` congelado (Lula 42,4 x Flávio 44,3), como o banner já fazia; antes
+  ele recalculava com só 6 rodadas de 1º turno e mostrava 42,4 x 42,7. À direita do marcador da
+  urna entra um ponto "2º turno" com `t2placar('out')`, o mesmo placar do banner (hoje 45,0 x
+  48,1), que continua andando e desliza pela data até 25/10. Código em `chartSVG` (variáveis
+  `t2pt`/`t2ax`) e título da aba Gráfico.
 - 10/10, MANHÃ (sessão de nuvem, a pedido do Rafael): IPESPE ESTREIA NO PAINEL, em outubro, só 2º
   turno. Tracking Ipespe/Abrapel, BR-00933/2026, 6-8/10, 1.500 entrevistas, margem 2,6, recursos
   próprios: Flávio 49 x Lula 44 (52,7 x 47,3 válidos), branco/nulo 5, não sabe 3. Entrou no `DI`
