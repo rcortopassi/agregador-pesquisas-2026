@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 10/10/2026 21:54. Mercados: Polymarket 11,5%/87,9%, Kalshi 12,0%/88,0%.
+Rodada de 11/10/2026 07:45. Mercados: Polymarket 11,5%/87,9%, Kalshi 13,0%/88,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -12,7 +12,9 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-08] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=1204, registro BR018802026
 - [aguardando desde 2026-10-10] TSE ESTADUAL[CE], INSTITUTO OPNUS (Presidente), campo 04/10-04/10, divulgação 2026-10-10, N=4800, registro BR047152026
 - [aguardando desde 2026-10-10] TSE ESTADUAL[TO], DIRECT PESQUISAS (Presidente), campo 06/10-10/10, divulgação 2026-10-10, N=1200, registro BR057932026
-- [aguardando desde 2026-10-10] TSE NACIONAL?, #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-10, N=1500, registro BR009332026
+- [NOVO] TSE ESTADUAL[RN], INSTITUTO SETA DE PESQUISA (Presidente), campo 07/10-10/10, divulgação 2026-10-11, N=1500, registro BR044872026
+- [NOVO] TSE NACIONAL?, DATATRENDS (Presidente), campo 07/10-09/10, divulgação 2026-10-11, N=2000, registro BR035762026
+- [NOVO] TSE NACIONAL?, CORREIO DO POVO TOCANTINENSE (Presidente), campo 06/10-12/10, divulgação 2026-10-11, N=1600, registro BR067782026
 
 ## Últimas publicações do Veritá
 
@@ -31,20 +33,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-30 | ESTADUAL[AC] | DELTA AGENCIA DE PESQUISA | Presidente | 23/09-29/09 | 800 | BR084762026 |
-| 2026-09-30 | ESTADUAL[BA] | ATLASINTEL | Presidente | 24/09-29/09 | 2000 | BR006332026 |
-| 2026-09-30 | ESTADUAL[ES] | AGILI PESQUISAS | Presidente | 24/09-29/09 | 1200 | BR098162026 |
-| 2026-09-30 | ESTADUAL[ES] | #NULO# | Presidente | 28/09-30/09 | 500 | BR024212026 |
-| 2026-09-30 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 26/09-29/09 | 1200 | BR076472026 |
-| 2026-09-30 | ESTADUAL[MT] | PERCENT PESQUISA DE MERCADO  | Presidente | 29/09-02/10 | 1200 | BR075072026 |
-| 2026-09-30 | ESTADUAL[MT] | E P P | Presidente | 12/09-18/09 | 2003 | BR031422026 |
-| 2026-09-30 | ESTADUAL[PI] | PIAUI VOX | Presidente | 27/09-29/09 | 500 | BR055222026 |
-| 2026-09-30 | ESTADUAL[PI] | INSTITUTO ESTIMATIVA | Presidente | 24/09-25/09 | 460 | BR055562026 |
-| 2026-09-30 | ESTADUAL[RJ] | REAL TIME BIG DATA | Presidente | 25/09-29/09 | 2000 | BR051932026 |
-| 2026-09-30 | ESTADUAL[SP] | ASN PESQUISAS PUBLICAS | Presidente | 26/09-28/09 | 700 | BR016552026 |
-| 2026-09-30 | NACIONAL? | INDEXA PESQUISAS | Presidente | 27/09-29/09 | 2000 | BR006982026 |
-| 2026-09-30 | NACIONAL? | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 25/09-28/09 | 2000 | BR087062026 |
-| 2026-09-30 | NACIONAL? | 100 CIDADES | Presidente | 24/09-29/09 | 2000 | BR011222026 |
 | 2026-10-01 | ESTADUAL[AL] | DATATRENDS | Presidente | 26/09-28/09 | 1200 | BR006432026 |
 | 2026-10-01 | ESTADUAL[AP] | DOXA | Presidente | 25/09-29/09 | 800 | BR039022026 |
 | 2026-10-01 | ESTADUAL[GO] | CERRADO PESQUISAS E CONSULTO | Presidente | 28/09-30/09 | 706 | BR036162026 |
@@ -201,4 +189,7 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-10 | ESTADUAL[CE] | INSTITUTO OPNUS | Presidente | 04/10-04/10 | 4800 | BR047152026 |
 | 2026-10-10 | ESTADUAL[TO] | DIRECT PESQUISAS | Presidente | 06/10-10/10 | 1200 | BR057932026 |
 | 2026-10-10 | NACIONAL? | #NULO# | Presidente | 06/10-08/10 | 1500 | BR009332026 |
+| 2026-10-11 | ESTADUAL[RN] | INSTITUTO SETA DE PESQUISA | Presidente | 07/10-10/10 | 1500 | BR044872026 |
+| 2026-10-11 | NACIONAL? | DATATRENDS | Presidente | 07/10-09/10 | 2000 | BR035762026 |
+| 2026-10-11 | NACIONAL? | CORREIO DO POVO TOCANTINENSE | Presidente | 06/10-12/10 | 1600 | BR067782026 |
 
