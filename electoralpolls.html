@@ -2312,7 +2312,9 @@
     var t2pt='', t2ax='';
     var p2=URNA1T?t2placar('out'):null;
     if(p2){ var hj=new Date(), x2=Math.max(xs[n-1]+40, Math.min(640, 60+((hj.getMonth()+1-MESNUM[ms[0]])+(hj.getDate()-1)/30)*sp)), l2y=yv(p2[0]), f2y=yv(p2[1]), l2Top=p2[0]>=p2[1];
-      t2pt='<circle cx="'+x2.toFixed(1)+'" cy="'+l2y+'" r="4.5" fill="'+P.red+'"/><circle cx="'+x2.toFixed(1)+'" cy="'+f2y+'" r="4.5" fill="'+P.blue+'"/>'+
+      // Ligação tracejada e esmaecida: continuação, não movimento (a pergunta muda do 1º para o 2º turno).
+      t2pt=(prev?'<line x1="'+prev.x+'" y1="'+prev.lay+'" x2="'+x2.toFixed(1)+'" y2="'+l2y+'" stroke="'+P.red+'" stroke-width="1.5" stroke-dasharray="2,4" stroke-opacity="0.45"/><line x1="'+prev.x+'" y1="'+prev.fay+'" x2="'+x2.toFixed(1)+'" y2="'+f2y+'" stroke="'+P.blue+'" stroke-width="1.5" stroke-dasharray="2,4" stroke-opacity="0.45"/>':'')+
+        '<circle cx="'+x2.toFixed(1)+'" cy="'+l2y+'" r="4.5" fill="'+P.red+'"/><circle cx="'+x2.toFixed(1)+'" cy="'+f2y+'" r="4.5" fill="'+P.blue+'"/>'+
         '<text x="'+x2.toFixed(1)+'" y="'+(l2Top?l2y-9:l2y+15)+'" fill="'+P.red+'" font-size="11" font-weight="700" text-anchor="middle">'+fmt(p2[0])+'</text>'+
         '<text x="'+x2.toFixed(1)+'" y="'+(l2Top?f2y+15:f2y-9)+'" fill="'+P.blue+'" font-size="11" font-weight="700" text-anchor="middle">'+fmt(p2[1])+'</text>';
       t2ax='<text x="'+x2.toFixed(1)+'" y="340" fill="'+P.txt2+'" font-size="12" text-anchor="middle">2º turno</text>';
