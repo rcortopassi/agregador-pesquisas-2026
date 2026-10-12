@@ -6,6 +6,13 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 11/10, NOITE (a pedido do Rafael): DATATRENDS NACIONAL ENTRA EM OUTUBRO, só 2º turno.
+  BR-03576/2026, 7-9/10, 2.000 entrevistas por URA, margem 2,19, recursos próprios: Flávio 50 x
+  Lula 44 (53,1 x 46,9 válidos), branco/nulo 5, não sabe 1. Íntegra conferida (PDF Poder360).
+  `DI`, `T2R`, `IM` e `MOE`. Placar do 2º turno no banner: 45,0 x 48,1 para 44,6 x 48,5; margem
+  Flávio +3,1 para +3,9 (amostra total). Na mesma fila, BR-06778/2026 (Correio do Povo
+  Tocantinense) veio como NACIONAL? mas o `DS_DADO_MUNICIPIO` diz 52 municípios do TOCANTINS:
+  é estadual e fica com os demais estaduais, esperando a decisão sobre o `PRES26`.
 - 10/10, NOITE (a pedido do Rafael): GRÁFICO ALINHADO AO BANNER. O ponto de outubro do gráfico
   passou a usar o `CEN1T_OUT` congelado (Lula 42,4 x Flávio 44,3), como o banner já fazia; antes
   ele recalculava com só 6 rodadas de 1º turno e mostrava 42,4 x 42,7. À direita do marcador da
