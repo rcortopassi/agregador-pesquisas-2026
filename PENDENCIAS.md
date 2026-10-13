@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 12/10/2026 19:53. Mercados: Polymarket 12,5%/87,1%, Kalshi 12,0%/88,0%.
+Rodada de 13/10/2026 08:40. Mercados: Polymarket 12,5%/86,7%, Kalshi 12,0%/87,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -12,10 +12,17 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-08] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=1204, registro BR018802026
 - [aguardando desde 2026-10-10] TSE ESTADUAL[CE], INSTITUTO OPNUS (Presidente), campo 04/10-04/10, divulgação 2026-10-10, N=4800, registro BR047152026
 - [aguardando desde 2026-10-10] TSE ESTADUAL[TO], DIRECT PESQUISAS (Presidente), campo 06/10-10/10, divulgação 2026-10-10, N=1200, registro BR057932026
-- [aguardando desde 2026-10-11] TSE ESTADUAL[RN], INSTITUTO SETA DE PESQUISA (Presidente), campo 07/10-10/10, divulgação 2026-10-11, N=1500, registro BR044872026
 - [aguardando desde 2026-10-11] TSE NACIONAL?, CORREIO DO POVO TOCANTINENSE (Presidente), campo 06/10-12/10, divulgação 2026-10-11, N=1600, registro BR067782026
-- [aguardando desde 2026-10-12] TSE ESTADUAL[AM], PODERDATA (Presidente), campo 08/10-11/10, divulgação 2026-10-12, N=1200, registro BR071932026
-- [aguardando desde 2026-10-12] TSE ESTADUAL[DF], #NULO# (Presidente), campo 08/10-11/10, divulgação 2026-10-12, N=1104, registro BR067992026
+- [NOVO] TSE ESTADUAL[AC], DATA CONTROL INSTITUTO DE PE (Presidente), campo 07/10-13/10, divulgação 2026-10-13, N=1344, registro BR034832026
+- [NOVO] TSE ESTADUAL[AC], #NULO# (Presidente), campo 09/10-12/10, divulgação 2026-10-13, N=1098, registro BR064822026
+- [NOVO] TSE ESTADUAL[AC], #NULO# (Presidente), campo 09/10-12/10, divulgação 2026-10-13, N=1098, registro BR070442026
+- [NOVO] TSE ESTADUAL[AC], #NULO# (Presidente), campo 09/10-12/10, divulgação 2026-10-13, N=1098, registro BR039732026
+- [NOVO] TSE ESTADUAL[RN], DATA CAPITAL PESQUISAS E CON (Presidente), campo 07/10-10/10, divulgação 2026-10-13, N=1500, registro BR082652026
+- [NOVO] TSE NACIONAL?, NEXUS (Presidente), campo 10/10-12/10, divulgação 2026-10-13, N=2000, registro BR079972026
+- [NOVO] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 14/10-16/10, divulgação 2026-10-13, N=2400, registro BR051872026
+- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 07/10-10/10, divulgação 2026-10-13, N=2000, registro BR006502026
+- [NOVO] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 08/10-12/10, divulgação 2026-10-13, N=2400, registro BR078772026
+- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 10/10-12/10, divulgação 2026-10-13, N=3000, registro BR012092026
 
 ## Últimas publicações do Veritá
 
@@ -34,49 +41,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-02 | ESTADUAL[AC] | VERITA | Presidente | 26/09-01/10 | 1030 | BR022682026 |
-| 2026-10-02 | ESTADUAL[AC] | VERITA | Presidente | 26/09-01/10 | 1030 | BR080272026 |
-| 2026-10-02 | ESTADUAL[AL] | VERITA | Presidente | 26/09-01/10 | 1220 | BR013462026 |
-| 2026-10-02 | ESTADUAL[AL] | DATATRENDS | Presidente | 28/09-30/09 | 1200 | BR097952026 |
-| 2026-10-02 | ESTADUAL[AL] | VERITA | Presidente | 26/09-01/10 | 1220 | BR082742026 |
-| 2026-10-02 | ESTADUAL[AL] | INSTITUTO DATASENSUS | Presidente | 30/09-01/10 | 5000 | BR046702026 |
-| 2026-10-02 | ESTADUAL[AL] | DATATRENDS | Presidente | 28/09-30/09 | 1200 | BR044142026 |
-| 2026-10-02 | ESTADUAL[AL] | DATATRENDS | Presidente | 28/09-30/09 | 1200 | BR042522026 |
-| 2026-10-02 | ESTADUAL[AL] | VERITA | Presidente | 26/09-01/10 | 1220 | BR096492026 |
-| 2026-10-02 | ESTADUAL[AL] | VERITA | Presidente | 26/09-01/10 | 1220 | BR094342026 |
-| 2026-10-02 | ESTADUAL[AL] | VERITA | Presidente | 26/09-01/10 | 1220 | BR053422026 |
-| 2026-10-02 | ESTADUAL[AL] | VERITA | Presidente | 26/09-01/10 | 1220 | BR020682026 |
-| 2026-10-02 | ESTADUAL[AL] | DATATRENDS | Presidente | 28/09-30/09 | 1200 | BR043902026 |
-| 2026-10-02 | ESTADUAL[BA] | VERITA | Presidente | 26/09-01/10 | 2020 | BR029812026 |
-| 2026-10-02 | ESTADUAL[BA] | 100 CIDADES | Presidente | 28/09-02/10 | 1000 | BR007312026 |
-| 2026-10-02 | ESTADUAL[DF] | BADRA COMUNICACAO | Presidente | 29/09-01/10 | 1060 | BR014482026 |
-| 2026-10-02 | ESTADUAL[ES] | #NULO# | Presidente | 29/09-02/10 | 1800 | BR000012026 |
-| 2026-10-02 | ESTADUAL[GO] | E P P | Presidente | 24/09-24/09 | 511 | BR096082026 |
-| 2026-10-02 | ESTADUAL[GO] | E P P | Presidente | 22/09-23/09 | 566 | BR035352026 |
-| 2026-10-02 | ESTADUAL[MA] | VERITA | Presidente | 26/09-01/10 | 1525 | BR059462026 |
-| 2026-10-02 | ESTADUAL[MA] | VERITA | Presidente | 26/09-01/10 | 1525 | BR087822026 |
-| 2026-10-02 | ESTADUAL[MA] | VERITA | Presidente | 26/09-01/10 | 1525 | BR017702026 |
-| 2026-10-02 | ESTADUAL[MA] | VERITA | Presidente | 26/09-01/10 | 1525 | BR098472026 |
-| 2026-10-02 | ESTADUAL[MG] | VERITA | Presidente | 26/09-01/10 | 2030 | BR060952026 |
-| 2026-10-02 | ESTADUAL[PB] | ANOVA INSTITUTO DE PESQUISA | Presidente | 30/09-01/10 | 2000 | BR018922026 |
-| 2026-10-02 | ESTADUAL[PI] | INSTITUTO GP1 DE PESQUISA | Presidente | 30/09-02/10 | 1200 | BR046662026 |
-| 2026-10-02 | ESTADUAL[PR] | RADAR ESTATISTICA | Presidente | 26/09-01/10 | 1100 | BR091282026 |
-| 2026-10-02 | ESTADUAL[RN] | METADATA | Presidente | 28/09-30/09 | 1536 | BR019742026 |
-| 2026-10-02 | ESTADUAL[RN] | INSTITUTO SETA DE PESQUISA | Presidente | 24/09-25/09 | 550 | BR070862026 |
-| 2026-10-02 | ESTADUAL[RN] | DATAVERO INSTITUTO DE PESQUI | Presidente | 30/09-02/10 | 1500 | BR078442026 |
-| 2026-10-02 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 28/09-01/10 | 1250 | BR034632026 |
-| 2026-10-02 | ESTADUAL[SP] | 100 CIDADES | Presidente | 28/09-02/10 | 1600 | BR094282026 |
-| 2026-10-02 | ESTADUAL[SP] | PIMENTEL & CARPENTIERI CONSU | Presidente | 28/09-30/09 | 1000 | BR040742026 |
-| 2026-10-02 | ESTADUAL[SP] | BADRA COMUNICACAO | Presidente | 29/09-01/10 | 1500 | BR084742026 |
-| 2026-10-02 | ESTADUAL[SP] | INSTITUTO FRANCA DE PESQUISA | Presidente | 28/09-02/10 | 1500 | BR086462026 |
-| 2026-10-02 | ESTADUAL[TO] | #NULO# | Presidente | 29/09-01/10 | 1504 | BR023122026 |
-| 2026-10-02 | NACIONAL? | AMERICAN ANALYTICS | Presidente | 27/09-01/10 | 1000 | BR026932026 |
-| 2026-10-02 | NACIONAL? | BADRA COMUNICACAO | Presidente | 28/09-01/10 | 2946 | BR099992026 |
-| 2026-10-02 | NACIONAL? | PROMIDIA PESQUISAS DE OPINIA | Presidente | 25/09-30/09 | 1230 | BR053622026 |
-| 2026-10-02 | NACIONAL? | DATA RD | Presidente | 26/09-30/09 | 1495 | BR078642026 |
-| 2026-10-02 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 28/09-02/10 | 2000 | BR029282026 |
-| 2026-10-02 | NACIONAL? | #NULO# | Presidente | 29/09-01/10 | 2100 | BR001482026 |
-| 2026-10-02 | NACIONAL? | ITEM PESQUISAS TECNICAS | Presidente | 28/09-30/09 | 800 | BR087482026 |
 | 2026-10-03 | ESTADUAL[AC] | ATLASINTEL | Presidente | 27/09-02/10 | 800 | BR063502026 |
 | 2026-10-03 | ESTADUAL[AC] | ATLASINTEL | Presidente | 27/09-02/10 | 800 | BR037032026 |
 | 2026-10-03 | ESTADUAL[AC] | ATLASINTEL | Presidente | 27/09-02/10 | 800 | BR022122026 |
@@ -171,4 +135,14 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-11 | NACIONAL? | CORREIO DO POVO TOCANTINENSE | Presidente | 06/10-12/10 | 1600 | BR067782026 |
 | 2026-10-12 | ESTADUAL[AM] | PODERDATA | Presidente | 08/10-11/10 | 1200 | BR071932026 |
 | 2026-10-12 | ESTADUAL[DF] | #NULO# | Presidente | 08/10-11/10 | 1104 | BR067992026 |
+| 2026-10-13 | ESTADUAL[AC] | DATA CONTROL INSTITUTO DE PE | Presidente | 07/10-13/10 | 1344 | BR034832026 |
+| 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR064822026 |
+| 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR070442026 |
+| 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR039732026 |
+| 2026-10-13 | ESTADUAL[RN] | DATA CAPITAL PESQUISAS E CON | Presidente | 07/10-10/10 | 1500 | BR082652026 |
+| 2026-10-13 | NACIONAL? | NEXUS | Presidente | 10/10-12/10 | 2000 | BR079972026 |
+| 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 14/10-16/10 | 2400 | BR051872026 |
+| 2026-10-13 | NACIONAL? | 100 CIDADES | Presidente | 07/10-10/10 | 2000 | BR006502026 |
+| 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 08/10-12/10 | 2400 | BR078772026 |
+| 2026-10-13 | NACIONAL? | PODERDATA | Presidente | 10/10-12/10 | 3000 | BR012092026 |
 
