@@ -1863,16 +1863,6 @@
    "visto": "2026-10-10"
   },
   {
-   "proto": "BR044872026",
-   "escopo": "ESTADUAL[RN]",
-   "inst": "INSTITUTO SETA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "07/10-10/10",
-   "div": "2026-10-11",
-   "n": "1500",
-   "visto": "2026-10-11"
-  },
-  {
    "proto": "BR067782026",
    "escopo": "NACIONAL?",
    "inst": "CORREIO DO POVO TOCANTINENSE",
@@ -1881,26 +1871,6 @@
    "div": "2026-10-11",
    "n": "1600",
    "visto": "2026-10-11"
-  },
-  {
-   "proto": "BR071932026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "PODERDATA",
-   "cargo": "Presidente",
-   "campo": "08/10-11/10",
-   "div": "2026-10-12",
-   "n": "1200",
-   "visto": "2026-10-12"
-  },
-  {
-   "proto": "BR067992026",
-   "escopo": "ESTADUAL[DF]",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "08/10-11/10",
-   "div": "2026-10-12",
-   "n": "1104",
-   "visto": "2026-10-12"
   }
  ],
  "verita_pendentes": []

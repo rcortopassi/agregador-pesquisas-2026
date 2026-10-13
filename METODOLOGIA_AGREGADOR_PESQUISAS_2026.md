@@ -6,6 +6,26 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 12/10, NOITE (rodada local, fila de 8 itens de olho humano): TRÊS ESTADOS ATUALIZADOS NO `PRES26`,
+  todos pesquisas SÓ de 2º turno (`t1` ficou vazio, como previsto em "ENTRE OS DOIS TURNOS" acima).
+  RN: Instituto Seta, BR-04487/2026, 7-10/10, 1.500 entrevistas, Lula 51,7 x Flávio 34,9 (válidos
+  59,6 x 40,4), substitui Veritá de 26/9-1/10. AM: PoderData, BR-07193/2026, 8-11/10, 1.200
+  entrevistas, Lula 49 x Flávio 49 empate (válidos Flávio 52,7 x Lula 47,3), substitui Veritá de
+  20-24/9. DF: Quaest, BR-06799/2026, 8-11/10, 1.104 entrevistas, Flávio 50 x Lula 40 (válidos
+  55,6 x 44,4), substitui Datafolha de 28/9-1/10. `--resolver` aplicado nos três.
+  FICAM NA FILA, NÃO LOCALIZADOS NESTA RODADA (não inventar, não inserir sem confirmar):
+  (1) BR-04715/2026, Instituto Opnus, CE, campo 4/10 (dia único), N=4.800 — sem cobertura de
+  imprensa encontrada, nem no site do próprio instituto (só posts de 2022-2024 indexados);
+  (2) BR-05793/2026, Direct Pesquisas, TO, campo 6-10/10, N=1.200 — instituto sem presença notável
+  na busca, pesquisas de Tocantins encontradas são de outras casas (AtlasIntel, Paraná Pesquisas,
+  Real Time); (3) BR-06778/2026, Correio do Povo Tocantinense, TO (rotulado NACIONAL? mas é
+  estadual, ver nota de 11/10 abaixo), campo 6-12/10 — o jornal tem duas pesquisas de governador
+  sub judice no mesmo período (TO-08943, suspensa por decisão liminar, e TO-05725, mantida), mas
+  não achei a presidencial com esse registro nem notícia do resultado; pode estar suspensa também,
+  checar na próxima rodada; (4) BR-09856/2026 e (5) BR-01880/2026, Datafolha, DF e RJ, ambos campo
+  6-8/10, divulgação 8/10 — nesse dia a Folha/Globo divulgaram Datafolha nacional e os governos do
+  DF e RJ (Celina Leão x Grass; Paes x Ruas), mas a busca não encontrou o recorte presidencial
+  estadual desses dois registros; pode ter saído só em PDF não indexado ou não ter sido publicado.
 - 11/10, NOITE (a pedido do Rafael): DATATRENDS NACIONAL ENTRA EM OUTUBRO, só 2º turno.
   BR-03576/2026, 7-9/10, 2.000 entrevistas por URA, margem 2,19, recursos próprios: Flávio 50 x
   Lula 44 (53,1 x 46,9 válidos), branco/nulo 5, não sabe 1. Íntegra conferida (PDF Poder360).
