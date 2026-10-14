@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 14/10/2026 12:02. Mercados: Polymarket 14,5%/85,7%, Kalshi 16,0%/86,0%.
+Rodada de 14/10/2026 17:09. Mercados: Polymarket 14,5%/85,0%, Kalshi 15,0%/86,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -18,10 +18,7 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-13] TSE ESTADUAL[AC], #NULO# (Presidente), campo 09/10-12/10, divulgação 2026-10-13, N=1098, registro BR070442026
 - [aguardando desde 2026-10-13] TSE ESTADUAL[AC], #NULO# (Presidente), campo 09/10-12/10, divulgação 2026-10-13, N=1098, registro BR039732026
 - [aguardando desde 2026-10-13] TSE ESTADUAL[RN], DATA CAPITAL PESQUISAS E CON (Presidente), campo 07/10-10/10, divulgação 2026-10-13, N=1500, registro BR082652026
-- [aguardando desde 2026-10-13] TSE NACIONAL?, NEXUS (Presidente), campo 10/10-12/10, divulgação 2026-10-13, N=2000, registro BR079972026
 - [aguardando desde 2026-10-13] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 14/10-16/10, divulgação 2026-10-13, N=2400, registro BR051872026
-- [aguardando desde 2026-10-13] TSE NACIONAL?, 100 CIDADES (Presidente), campo 07/10-10/10, divulgação 2026-10-13, N=2000, registro BR006502026
-- [aguardando desde 2026-10-13] TSE NACIONAL?, PODERDATA (Presidente), campo 10/10-12/10, divulgação 2026-10-13, N=3000, registro BR012092026
 - [aguardando desde 2026-10-14] TSE ESTADUAL[ES], #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=1098, registro BR019732026
 - [aguardando desde 2026-10-14] TSE ESTADUAL[ES], #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=1098, registro BR073372026
 - [aguardando desde 2026-10-14] TSE ESTADUAL[RN], AFFARE INSTITUTE (Presidente), campo 09/10-12/10, divulgação 2026-10-14, N=1350, registro BR057842026
@@ -65,12 +62,12 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR039732026 |
 | 2026-10-13 | ESTADUAL[RN] | DATA CAPITAL PESQUISAS E CON | Presidente | 07/10-10/10 | 1500 | BR082652026 |
 | 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 08/10-12/10 | 2400 | BR078772026 |
-| 2026-10-13 | NACIONAL? | NEXUS | Presidente | 10/10-12/10 | 2000 | BR079972026 |
 | 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 14/10-16/10 | 2400 | BR051872026 |
 | 2026-10-13 | NACIONAL? | 100 CIDADES | Presidente | 07/10-10/10 | 2000 | BR006502026 |
+| 2026-10-13 | NACIONAL? | NEXUS | Presidente | 10/10-12/10 | 2000 | BR079972026 |
 | 2026-10-13 | NACIONAL? | PODERDATA | Presidente | 10/10-12/10 | 3000 | BR012092026 |
-| 2026-10-14 | ESTADUAL[ES] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR019732026 |
 | 2026-10-14 | ESTADUAL[ES] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR073372026 |
+| 2026-10-14 | ESTADUAL[ES] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR019732026 |
 | 2026-10-14 | ESTADUAL[RN] | AFFARE INSTITUTE | Presidente | 09/10-12/10 | 1350 | BR057842026 |
 | 2026-10-14 | NACIONAL? | #NULO# | Presidente | 10/10-13/10 | 2154 | BR087292026 |
 
