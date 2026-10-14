@@ -1937,16 +1937,6 @@
    "visto": "2026-10-13"
   },
   {
-   "proto": "BR079972026",
-   "escopo": "NACIONAL?",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "10/10-12/10",
-   "div": "2026-10-13",
-   "n": "2000",
-   "visto": "2026-10-13"
-  },
-  {
    "proto": "BR051872026",
    "escopo": "NACIONAL?",
    "inst": "GRUPO GERP GERP MERCADO GERP",
@@ -1954,26 +1944,6 @@
    "campo": "14/10-16/10",
    "div": "2026-10-13",
    "n": "2400",
-   "visto": "2026-10-13"
-  },
-  {
-   "proto": "BR006502026",
-   "escopo": "NACIONAL?",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "07/10-10/10",
-   "div": "2026-10-13",
-   "n": "2000",
-   "visto": "2026-10-13"
-  },
-  {
-   "proto": "BR012092026",
-   "escopo": "NACIONAL?",
-   "inst": "PODERDATA",
-   "cargo": "Presidente",
-   "campo": "10/10-12/10",
-   "div": "2026-10-13",
-   "n": "3000",
    "visto": "2026-10-13"
   },
   {
