@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 14/10/2026 06:27. Mercados: Polymarket 13,5%/85,9%, Kalshi 15,0%/87,0%.
+Rodada de 14/10/2026 12:02. Mercados: Polymarket 14,5%/85,7%, Kalshi 16,0%/86,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -22,10 +22,10 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-13] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 14/10-16/10, divulgação 2026-10-13, N=2400, registro BR051872026
 - [aguardando desde 2026-10-13] TSE NACIONAL?, 100 CIDADES (Presidente), campo 07/10-10/10, divulgação 2026-10-13, N=2000, registro BR006502026
 - [aguardando desde 2026-10-13] TSE NACIONAL?, PODERDATA (Presidente), campo 10/10-12/10, divulgação 2026-10-13, N=3000, registro BR012092026
-- [NOVO] TSE ESTADUAL[ES], #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=1098, registro BR019732026
-- [NOVO] TSE ESTADUAL[ES], #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=1098, registro BR073372026
-- [NOVO] TSE ESTADUAL[RN], AFFARE INSTITUTE (Presidente), campo 09/10-12/10, divulgação 2026-10-14, N=1350, registro BR057842026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=2154, registro BR087292026
+- [aguardando desde 2026-10-14] TSE ESTADUAL[ES], #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=1098, registro BR019732026
+- [aguardando desde 2026-10-14] TSE ESTADUAL[ES], #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=1098, registro BR073372026
+- [aguardando desde 2026-10-14] TSE ESTADUAL[RN], AFFARE INSTITUTE (Presidente), campo 09/10-12/10, divulgação 2026-10-14, N=1350, registro BR057842026
+- [aguardando desde 2026-10-14] TSE NACIONAL?, #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=2154, registro BR087292026
 
 ## Últimas publicações do Veritá
 
