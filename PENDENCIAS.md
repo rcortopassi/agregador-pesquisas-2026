@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 14/10/2026 17:09. Mercados: Polymarket 14,5%/85,0%, Kalshi 15,0%/86,0%.
+Rodada de 14/10/2026 21:28. Mercados: Polymarket 15,5%/83,5%, Kalshi 16,0%/85,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -26,14 +26,7 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 
 ## Últimas publicações do Veritá
 
-- 2026-10-06 | Pesquisa em São Paulo - Presidente
-- 2026-10-06 | Pesquisa na Bahia - Presidente
-- 2026-10-06 | Pesquisa em Tocantins - Presidente
-- 2026-10-06 | Pesquisa em Sergipe - Presidente
-- 2026-10-06 | Pesquisa em Santa Catarina - Presidente
-- 2026-10-06 | Pesquisa no Rio Grande do Sul - Presidente
-- 2026-10-06 | Pesquisa em Roraima - Presidente
-- 2026-10-06 | Pesquisa em Rondônia - Presidente
+Não consegui ler a lista do Veritá nesta rodada.
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
