@@ -2,31 +2,27 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 14/10/2026 21:28. Mercados: Polymarket 15,5%/83,5%, Kalshi 16,0%/85,0%.
+Rodada de 15/10/2026 06:05. Mercados: Polymarket 16,5%/82,7%, Kalshi 18,0%/84,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
-- [aguardando desde 2026-10-08] TSE ESTADUAL[DF], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=910, registro BR098562026
 - [aguardando desde 2026-10-08] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=1204, registro BR018802026
-- [aguardando desde 2026-10-10] TSE ESTADUAL[CE], INSTITUTO OPNUS (Presidente), campo 04/10-04/10, divulgação 2026-10-10, N=4800, registro BR047152026
-- [aguardando desde 2026-10-10] TSE ESTADUAL[TO], DIRECT PESQUISAS (Presidente), campo 06/10-10/10, divulgação 2026-10-10, N=1200, registro BR057932026
-- [aguardando desde 2026-10-11] TSE NACIONAL?, CORREIO DO POVO TOCANTINENSE (Presidente), campo 06/10-12/10, divulgação 2026-10-11, N=1600, registro BR067782026
-- [aguardando desde 2026-10-13] TSE ESTADUAL[AC], DATA CONTROL INSTITUTO DE PE (Presidente), campo 07/10-13/10, divulgação 2026-10-13, N=1344, registro BR034832026
-- [aguardando desde 2026-10-13] TSE ESTADUAL[AC], #NULO# (Presidente), campo 09/10-12/10, divulgação 2026-10-13, N=1098, registro BR064822026
-- [aguardando desde 2026-10-13] TSE ESTADUAL[AC], #NULO# (Presidente), campo 09/10-12/10, divulgação 2026-10-13, N=1098, registro BR070442026
-- [aguardando desde 2026-10-13] TSE ESTADUAL[AC], #NULO# (Presidente), campo 09/10-12/10, divulgação 2026-10-13, N=1098, registro BR039732026
-- [aguardando desde 2026-10-13] TSE ESTADUAL[RN], DATA CAPITAL PESQUISAS E CON (Presidente), campo 07/10-10/10, divulgação 2026-10-13, N=1500, registro BR082652026
-- [aguardando desde 2026-10-13] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 14/10-16/10, divulgação 2026-10-13, N=2400, registro BR051872026
-- [aguardando desde 2026-10-14] TSE ESTADUAL[ES], #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=1098, registro BR019732026
-- [aguardando desde 2026-10-14] TSE ESTADUAL[ES], #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=1098, registro BR073372026
-- [aguardando desde 2026-10-14] TSE ESTADUAL[RN], AFFARE INSTITUTE (Presidente), campo 09/10-12/10, divulgação 2026-10-14, N=1350, registro BR057842026
-- [aguardando desde 2026-10-14] TSE NACIONAL?, #NULO# (Presidente), campo 10/10-13/10, divulgação 2026-10-14, N=2154, registro BR087292026
+- [NOVO] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 13/10-14/10, divulgação 2026-10-15, N=2000, registro BR046292026
+- [NOVO] TSE NACIONAL?, PALVER (Presidente), campo 10/10-14/10, divulgação 2026-10-15, N=5000, registro BR080282026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-15, N=2520, registro BR004662026
 
 ## Últimas publicações do Veritá
 
-Não consegui ler a lista do Veritá nesta rodada.
+- 2026-10-06 | Pesquisa em São Paulo - Presidente
+- 2026-10-06 | Pesquisa na Bahia - Presidente
+- 2026-10-06 | Pesquisa em Tocantins - Presidente
+- 2026-10-06 | Pesquisa em Sergipe - Presidente
+- 2026-10-06 | Pesquisa em Santa Catarina - Presidente
+- 2026-10-06 | Pesquisa no Rio Grande do Sul - Presidente
+- 2026-10-06 | Pesquisa em Roraima - Presidente
+- 2026-10-06 | Pesquisa em Rondônia - Presidente
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
@@ -34,7 +30,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-04 | ESTADUAL[RN] | DATA PLUS PESQUISA E CONSULT | Presidente | 28/09-29/09 | 400 | BR098702026 |
 | 2026-10-08 | ESTADUAL[DF] | #NULO# | Presidente | 06/10-08/10 | 910 | BR098562026 |
 | 2026-10-08 | ESTADUAL[RJ] | #NULO# | Presidente | 06/10-08/10 | 1204 | BR018802026 |
 | 2026-10-08 | NACIONAL? | PODERDATA | Presidente | 05/10-07/10 | 3000 | BR081342026 |
@@ -63,4 +58,7 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-14 | ESTADUAL[ES] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR019732026 |
 | 2026-10-14 | ESTADUAL[RN] | AFFARE INSTITUTE | Presidente | 09/10-12/10 | 1350 | BR057842026 |
 | 2026-10-14 | NACIONAL? | #NULO# | Presidente | 10/10-13/10 | 2154 | BR087292026 |
+| 2026-10-15 | NACIONAL? | INDEXA PESQUISAS | Presidente | 13/10-14/10 | 2000 | BR046292026 |
+| 2026-10-15 | NACIONAL? | PALVER | Presidente | 10/10-14/10 | 5000 | BR080282026 |
+| 2026-10-15 | NACIONAL? | #NULO# | Presidente | 13/10-15/10 | 2520 | BR004662026 |
 
