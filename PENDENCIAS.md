@@ -2,16 +2,16 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 15/10/2026 06:05. Mercados: Polymarket 16,5%/82,7%, Kalshi 18,0%/84,0%.
+Rodada de 15/10/2026 11:54. Mercados: Polymarket 20,5%/79,8%, Kalshi 20,0%/81,0%.
 
 ## Precisa de olho humano nesta rodada
 
 A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada, até uma rodada local resolvê-lo com `python3 rotina_6h.py --resolver PROTOCOLO`. Resolver quer dizer as duas coisas: inserido no painel, ou verificado que o instituto não publicou número. Marque também o que descartar, senão volta amanhã.
 
 - [aguardando desde 2026-10-08] TSE ESTADUAL[RJ], #NULO# (Presidente), campo 06/10-08/10, divulgação 2026-10-08, N=1204, registro BR018802026
-- [NOVO] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 13/10-14/10, divulgação 2026-10-15, N=2000, registro BR046292026
-- [NOVO] TSE NACIONAL?, PALVER (Presidente), campo 10/10-14/10, divulgação 2026-10-15, N=5000, registro BR080282026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-15, N=2520, registro BR004662026
+- [aguardando desde 2026-10-15] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 13/10-14/10, divulgação 2026-10-15, N=2000, registro BR046292026
+- [aguardando desde 2026-10-15] TSE NACIONAL?, PALVER (Presidente), campo 10/10-14/10, divulgação 2026-10-15, N=5000, registro BR080282026
+- [aguardando desde 2026-10-15] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-15, N=2520, registro BR004662026
 
 ## Últimas publicações do Veritá
 
