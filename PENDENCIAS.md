@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 15/10/2026 21:19. Mercados: Polymarket 20,5%/79,7%, Kalshi 22,0%/80,0%.
+Rodada de 16/10/2026 05:57. Mercados: Polymarket 21,5%/78,1%, Kalshi 23,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -12,10 +12,22 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-15] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 13/10-14/10, divulgação 2026-10-15, N=2000, registro BR046292026
 - [aguardando desde 2026-10-15] TSE NACIONAL?, PALVER (Presidente), campo 10/10-14/10, divulgação 2026-10-15, N=5000, registro BR080282026
 - [aguardando desde 2026-10-15] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-15, N=2520, registro BR004662026
+- [NOVO] TSE ESTADUAL[RN], DATAVERO INSTITUTO DE PESQUI (Presidente), campo 13/10-15/10, divulgação 2026-10-16, N=1500, registro BR023672026
+- [NOVO] TSE ESTADUAL[TO], PORTAL E INSTITUTO STYLO (Presidente), campo 11/10-14/10, divulgação 2026-10-16, N=1200, registro BR061872026
+- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 13/10-15/10, divulgação 2026-10-16, N=2000, registro BR037642026
+- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 13/10-15/10, divulgação 2026-10-16, N=3000, registro BR042582026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-16, N=2002, registro BR006522026
 
 ## Últimas publicações do Veritá
 
-Não consegui ler a lista do Veritá nesta rodada.
+- 2026-10-06 | Pesquisa em São Paulo - Presidente
+- 2026-10-06 | Pesquisa na Bahia - Presidente
+- 2026-10-06 | Pesquisa em Tocantins - Presidente
+- 2026-10-06 | Pesquisa em Sergipe - Presidente
+- 2026-10-06 | Pesquisa em Santa Catarina - Presidente
+- 2026-10-06 | Pesquisa no Rio Grande do Sul - Presidente
+- 2026-10-06 | Pesquisa em Roraima - Presidente
+- 2026-10-06 | Pesquisa em Rondônia - Presidente
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
@@ -54,4 +66,9 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-15 | NACIONAL? | INDEXA PESQUISAS | Presidente | 13/10-14/10 | 2000 | BR046292026 |
 | 2026-10-15 | NACIONAL? | PALVER | Presidente | 10/10-14/10 | 5000 | BR080282026 |
 | 2026-10-15 | NACIONAL? | #NULO# | Presidente | 13/10-15/10 | 2520 | BR004662026 |
+| 2026-10-16 | ESTADUAL[RN] | DATAVERO INSTITUTO DE PESQUI | Presidente | 13/10-15/10 | 1500 | BR023672026 |
+| 2026-10-16 | ESTADUAL[TO] | PORTAL E INSTITUTO STYLO | Presidente | 11/10-14/10 | 1200 | BR061872026 |
+| 2026-10-16 | NACIONAL? | 100 CIDADES | Presidente | 13/10-15/10 | 2000 | BR037642026 |
+| 2026-10-16 | NACIONAL? | PODERDATA | Presidente | 13/10-15/10 | 3000 | BR042582026 |
+| 2026-10-16 | NACIONAL? | #NULO# | Presidente | 13/10-15/10 | 2002 | BR006522026 |
 
