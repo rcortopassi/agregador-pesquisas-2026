@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 16/10/2026 21:22. Mercados: Polymarket 22,5%/77,4%, Kalshi 23,0%/78,0%.
+Rodada de 17/10/2026 05:30. Mercados: Polymarket 23,5%/76,8%, Kalshi 22,0%/77,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -17,10 +17,20 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-16] TSE NACIONAL?, 100 CIDADES (Presidente), campo 13/10-15/10, divulgação 2026-10-16, N=2000, registro BR037642026
 - [aguardando desde 2026-10-16] TSE NACIONAL?, PODERDATA (Presidente), campo 13/10-15/10, divulgação 2026-10-16, N=3000, registro BR042582026
 - [aguardando desde 2026-10-16] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-16, N=2002, registro BR006522026
+- [NOVO] TSE ESTADUAL[RN], ITEM PESQUISAS TECNICAS (Presidente), campo 13/10-15/10, divulgação 2026-10-17, N=1250, registro BR026152026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-17, N=1500, registro BR002232026
+- [NOVO] TSE NACIONAL?, VERITA (Presidente), campo 12/10-16/10, divulgação 2026-10-17, N=15554, registro BR011072026
 
 ## Últimas publicações do Veritá
 
-Não consegui ler a lista do Veritá nesta rodada.
+- 2026-10-06 | Pesquisa em São Paulo - Presidente
+- 2026-10-06 | Pesquisa na Bahia - Presidente
+- 2026-10-06 | Pesquisa em Tocantins - Presidente
+- 2026-10-06 | Pesquisa em Sergipe - Presidente
+- 2026-10-06 | Pesquisa em Santa Catarina - Presidente
+- 2026-10-06 | Pesquisa no Rio Grande do Sul - Presidente
+- 2026-10-06 | Pesquisa em Roraima - Presidente
+- 2026-10-06 | Pesquisa em Rondônia - Presidente
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
@@ -64,4 +74,7 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-16 | NACIONAL? | 100 CIDADES | Presidente | 13/10-15/10 | 2000 | BR037642026 |
 | 2026-10-16 | NACIONAL? | PODERDATA | Presidente | 13/10-15/10 | 3000 | BR042582026 |
 | 2026-10-16 | NACIONAL? | #NULO# | Presidente | 13/10-15/10 | 2002 | BR006522026 |
+| 2026-10-17 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 13/10-15/10 | 1250 | BR026152026 |
+| 2026-10-17 | NACIONAL? | #NULO# | Presidente | 13/10-15/10 | 1500 | BR002232026 |
+| 2026-10-17 | NACIONAL? | VERITA | Presidente | 12/10-16/10 | 15554 | BR011072026 |
 
