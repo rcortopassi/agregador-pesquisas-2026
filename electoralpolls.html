@@ -74,7 +74,7 @@
   <div style="background:var(--band); padding:10px 16px 13px; text-align:center;">
     <div id="themetog" role="group" aria-label="Tema da página" style="display:flex; gap:3px; justify-content:center; margin-bottom:9px;"></div>
     <div style="font-size:19px; font-weight:600; color:var(--bandtxt);">Agregador de pesquisas · Eleições 2026</div>
-    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 17/10/2026 08:39</div>
+    <div style="font-size:11px; color:var(--goldtxt); margin-top:3px;">Última atualização: 17/10/2026 08:48</div>
   </div>
 
   <!-- Abas de Governador/Senador removidas em 27/09/2026, a pedido do Rafael (o painel só
@@ -2280,7 +2280,10 @@
   function box(title,big){ return '<div style="flex:1; border:1px solid '+P.bord+'; border-radius:4px; overflow:hidden;"><div style="background:'+P.purple+'; color:#fff; text-align:center; padding:6px; font-size:13px; font-weight:500;">'+title+'</div><div style="text-align:center; padding:8px; font-size:15px; font-weight:600;">'+big+'</div></div>'; }
   function avgMonth(m){ var rs=DI[m].rows, L=[],F=[]; for(var i=0;i<rs.length;i++){ if(isOut(rs[i][0])) continue; var l=num(rs[i][1]),f=num(rs[i][2]); if(l!==null&&f!==null){ L.push(l); F.push(f); } } return L.length?[med(L),med(F),L.length]:[0,0,0]; }
 
-  function moeMonth(m){ var rs=DI[m].rows, A=[]; for(var i=0;i<rs.length;i++){ if(isOut(rs[i][0])) continue; var l=num(rs[i][1]),f=num(rs[i][2]); if(l===null||f===null) continue; var mo=MOE[rs[i][0]]; if(mo) A.push(parseFloat(mo.replace(',','.'))); } return A.length?med(A):2; }
+  // Conta também as linhas só de 2º turno (par no T2R), 17/10/2026: depois que as pesquisas de 2º turno
+  // substituíram as rodadas de outubro, só sobrava 1 linha com 1º turno, sem margem cadastrada, e a função
+  // caía no padrão de 2 sem avisar. A mediana real das pesquisas de 2º turno de outubro é 2,2.
+  function moeMonth(m){ var rs=DI[m].rows, A=[], t2=T2R[m]||{}; for(var i=0;i<rs.length;i++){ if(isOut(rs[i][0])) continue; var l=num(rs[i][1]),f=num(rs[i][2]); if((l===null||f===null)&&!t2[rs[i][0]]) continue; var mo=MOE[rs[i][0]]; if(mo) A.push(parseFloat(mo.replace(',','.'))); } return A.length?med(A):2; }
   function chartSVG(){
     // DERIVADO do array `months`, nunca escrito à mão (já congelou o gráfico em meses velhos
     // duas vezes). Um mês sem rodada publicada (mês recém-aberto) simplesmente não é
