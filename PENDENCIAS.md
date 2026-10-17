@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 17/10/2026 15:25. Mercados: Polymarket 23,5%/77,0%, Kalshi 22,0%/78,0%.
+Rodada de 17/10/2026 20:59. Mercados: Polymarket 22,5%/77,8%, Kalshi 22,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -13,7 +13,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-16] TSE ESTADUAL[TO], PORTAL E INSTITUTO STYLO (Presidente), campo 11/10-14/10, divulgação 2026-10-16, N=1200, registro BR061872026
 - [aguardando desde 2026-10-17] TSE ESTADUAL[RN], ITEM PESQUISAS TECNICAS (Presidente), campo 13/10-15/10, divulgação 2026-10-17, N=1250, registro BR026152026
 - [aguardando desde 2026-10-17] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-17, N=1500, registro BR002232026
-- [aguardando desde 2026-10-17] TSE NACIONAL?, VERITA (Presidente), campo 12/10-16/10, divulgação 2026-10-17, N=15554, registro BR011072026
 - [aguardando desde 2026-10-17] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 12 a 16 de outubro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792244296504_Relatorio_Brasil_Outubro_2026.pdf
 
 ## Últimas publicações do Veritá
