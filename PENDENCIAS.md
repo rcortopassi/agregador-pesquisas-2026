@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 17/10/2026 10:39. Mercados: Polymarket 23,5%/76,8%, Kalshi 22,0%/79,0%.
+Rodada de 17/10/2026 15:25. Mercados: Polymarket 23,5%/77,0%, Kalshi 22,0%/78,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -14,18 +14,11 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-17] TSE ESTADUAL[RN], ITEM PESQUISAS TECNICAS (Presidente), campo 13/10-15/10, divulgação 2026-10-17, N=1250, registro BR026152026
 - [aguardando desde 2026-10-17] TSE NACIONAL?, #NULO# (Presidente), campo 13/10-15/10, divulgação 2026-10-17, N=1500, registro BR002232026
 - [aguardando desde 2026-10-17] TSE NACIONAL?, VERITA (Presidente), campo 12/10-16/10, divulgação 2026-10-17, N=15554, registro BR011072026
-- [NOVO] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 12 a 16 de outubro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792244296504_Relatorio_Brasil_Outubro_2026.pdf
+- [aguardando desde 2026-10-17] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 12 a 16 de outubro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792244296504_Relatorio_Brasil_Outubro_2026.pdf
 
 ## Últimas publicações do Veritá
 
-- 2026-10-17 | Pesquisa para Presidente no Brasil
-- 2026-10-06 | Pesquisa em São Paulo - Presidente
-- 2026-10-06 | Pesquisa na Bahia - Presidente
-- 2026-10-06 | Pesquisa em Tocantins - Presidente
-- 2026-10-06 | Pesquisa em Sergipe - Presidente
-- 2026-10-06 | Pesquisa em Santa Catarina - Presidente
-- 2026-10-06 | Pesquisa no Rio Grande do Sul - Presidente
-- 2026-10-06 | Pesquisa em Roraima - Presidente
+Não consegui ler a lista do Veritá nesta rodada.
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
