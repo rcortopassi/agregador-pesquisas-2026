@@ -6,6 +6,30 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 18/10, NOITE (rodada local, fila de 9 TSE + 1 Veritá): VERITÁ NACIONAL JÁ ESTAVA NO PAINEL.
+  O item da fila era o PDF `Relatorio_Brasil_Outubro_2026` (BR-01107/2026, 12-16/10, 15.554
+  entrevistas, margem 1,0). Abri o PDF (imagem, não indexado por texto corrido) e confirmei:
+  abrangência Brasil, amostra estratificada por sexo/idade/escolaridade/geografia via
+  Censo TSE/IBGE/PNAD — é pesquisa nacional de verdade, não a armadilha de somar as 27 UFs.
+  2º turno estimulado, votos válidos: Flávio 51,1 x Lula 48,9 (totais 49,7 x 47,7, branco/nulo
+  1,5, NS/NR 1,1). Os números já estavam no `IM`/`DI`/`T2R` de outubro, idênticos; `--resolver`
+  aplicado no item (id `48606df1-71d3-4901-8d53-a70bbe169264`), sem mudança no painel.
+  FICAM NA FILA, NÃO LOCALIZADOS NESTA RODADA (busca na web, sem achar PDF nem matéria; não
+  inventar, não inserir sem confirmar): (1) BR-01880/2026, Datafolha RJ, campo 6-8/10 — mesmo
+  item já não localizado em 12/10, segue sem cobertura; (2) BR-02367/2026, Datavero, RN, campo
+  13-15/10; (3) BR-06187/2026, Portal/Instituto Stylo, TO, campo 11-14/10; (4) BR-02615/2026,
+  Item Pesquisas Técnicas, RN, campo 13-15/10; (5) BR-00223/2026, IPESPE NACIONAL, campo
+  13-15/10 (seria 2ª rodada de outubro da casa, SUBSTITUIRIA a de 6-8/10 já no painel, mas não
+  achei divulgação desta rodada específica, só a de 10/10); (6) BR-01953/2026, Igape/Instituto
+  Gazeta de Pesquisas, DF, campo 12-14/10, contratante TV Atual (achei só pesquisas de
+  Governador da mesma casa/contratante, nada de presidente); (7) BR-01015/2026, ES, campo
+  14-17/10, contratante BDC Comunicações, instituto #NULO# no CSV; (8) BR-04332/2026, NACIONAL,
+  Instituto Vox Brasil (recursos próprios), campo 15-17/10, N=2.100 — seria 2ª rodada de outubro
+  da casa (já tem a de 5-7/10 no painel), divulgação é hoje (18/10), pode ainda não ter saído;
+  (9) BR-08809/2026, Instituto Phoenix & Associados, rotulado NACIONAL? mas contratante é o
+  Correio Continental (jornal de Rondônia), campo 13-16/10, N=3.999 — não achei cobertura nem
+  no site do jornal; se for estadual disfarçado (como os seis casos de 03/10 abaixo), falta
+  confirmar pelo `DS_DADO_MUNICIPIO`, que no CSV vinha `#NULO#` para este registro.
 - 12/10, NOITE (rodada local, fila de 8 itens de olho humano): TRÊS ESTADOS ATUALIZADOS NO `PRES26`,
   todos pesquisas SÓ de 2º turno (`t1` ficou vazio, como previsto em "ENTRE OS DOIS TURNOS" acima).
   RN: Instituto Seta, BR-04487/2026, 7-10/10, 1.500 entrevistas, Lula 51,7 x Flávio 34,9 (válidos
