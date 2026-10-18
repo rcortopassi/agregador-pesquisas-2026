@@ -1411,7 +1411,7 @@
   function trendArrow(idx){ var mi=months.indexOf(cur.m); if(mi<=0) return ''; var nowv=cavgFor(cur.m,idx), pv=cavgFor(months[mi-1],idx); if(nowv===null||pv===null) return ''; var d=nowv-pv, a=Math.abs(d); if(a<0.3) return '<br><span style="font-size:8px; font-weight:400; color:rgba(255,255,255,0.6);">estável</span>'; return '<br><span style="font-size:8px; font-weight:400; color:rgba(255,255,255,0.72);">'+(d>0?'▲':'▼')+' '+fmt(a)+'</span>'; }
   function t2margin(s){ if(!s||s==='—') return null; if(String(s).indexOf('Empate')===0) return 0; var m=String(s).match(/([\d.,]+)/); if(!m) return null; var v=parseFloat(m[1].replace(',','.')); return String(s).indexOf('Fl')===0?-v:v; }
   function adj2Month(m){ var rs=DI[m].rows, R=[],A=[]; for(var i=0;i<rs.length;i++){ var mg=t2margin(rs[i][7]); if(mg===null||isOut(rs[i][0])) continue; R.push(mg); A.push(mg-avies2(rs[i][0])); } return R.length?[med(R),med(A),R.length]:[0,0,0]; }
-  function m2str(v){ return v>=0?'<span style="color:'+P.red+'; font-weight:600;">Lula +'+fmt(v)+'</span>':'<span style="color:'+P.blue+'; font-weight:600;">Flávio +'+fmt(-v)+'</span>'; }
+  function m2str(v){ if(Math.abs(v)<0.05) return '<span style="color:'+P.ink+'; font-weight:600;">Empate</span>'; return v>=0?'<span style="color:'+P.red+'; font-weight:600;">Lula +'+fmt(v)+'</span>':'<span style="color:'+P.blue+'; font-weight:600;">Flávio +'+fmt(-v)+'</span>'; }
   // Quantos institutos sustentam o 2º turno no mês: [publicaram, total do mês]. Base fina = ajuste frágil.
   function t2cov(m){ var rs=DI[m].rows, tot=0, com=0; for(var i=0;i<rs.length;i++){ if(isOut(rs[i][0])) continue; tot++; if(t2margin(rs[i][7])!==null) com++; } return [com,tot]; }
   function num(s){ if(s===undefined||s===null||s==='—') return null; return parseFloat(String(s).replace('*','').replace(',','.')); }
@@ -2704,13 +2704,21 @@
       document.getElementById('note').textContent=d.note;
       document.getElementById('foot').innerHTML='O agregado do painel é a MEDIANA de TODOS os institutos (não a média): robusta a outlier, então ninguém é excluído. Br/N/Ind = brancos, nulos e indecisos; como esse bloco se reparte no 2º turno não é modelado aqui. Polymarket e Kalshi: mercados de "quem vence a presidência" (multicandidato, não somam 100), <b>cotação de 17/10/2026</b> (lida das APIs oficiais) que não atualiza sozinha, confira ao vivo.';
     } else {
-      var rs=DI[cur.m].rows, RM=[],AM=[],c=0, body='';
+      var rs=DI[cur.m].rows, RM=[],AM=[],c=0, body='', IT=[];
       for(var j=0;j<rs.length;j++){ var x=rs[j]; var mg=t2margin(x[7]); if(mg===null) continue;
-        var h2=has2(x[0]); var adj=mg-avies2(x[0]); RM.push(mg); AM.push(adj); c++;
-        var bg2=x[9]?P.rowhl:(c%2?P.surf:P.surf2);
-        var acell=h2?(m2str(adj)+'<div style="font-size:9px; color:'+P.mut+'; font-weight:400; margin-top:1px;">'+vies2n(x[0])+(vies2n(x[0])>1?' eleições':' eleição')+': '+vies2anos(x[0])+'</div>'):'<span style="color:'+P.warn+';">sem histórico</span>';
-        body+='<tr style="background:'+bg2+'; border-bottom:1px solid '+P.bsoft+';"><td style="text-align:left; padding:7px 6px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">'+nameCell(x[0],x[9])+'</td><td style="text-align:right; padding:7px 8px;">'+m2str(mg)+'</td><td style="text-align:right; padding:7px 8px;">'+acell+'</td></tr>';
-      }
+        var adj=mg-avies2(x[0]); RM.push(mg); AM.push(adj); c++; IT.push({x:x,mg:mg,adj:adj,k:j}); }
+      // Ordem (17/10/2026, pedido do Rafael): do mais favorável a Lula (topo) ao mais favorável a
+      // Flávio (fim), pela margem AJUSTADA, que é a que vira a mediana do cabeçalho. A linha do meio
+      // (ou as duas do meio, se o nº for par) fica destacada em roxo: é ela que define a mediana.
+      IT.sort(function(a,b){ return (b.adj-a.adj)||(a.k-b.k); });
+      var nIT=IT.length, mA=(nIT-1)>>1, mB=nIT>>1;
+      IT.forEach(function(it,ix){ var x=it.x, mg=it.mg, adj=it.adj, h2=has2(x[0]), ehMed=(ix===mA||ix===mB);
+        var bg2=ehMed?P.surf3:(x[9]?P.rowhl:(ix%2?P.surf2:P.surf));
+        var acell=h2?(m2str(adj)+'<div style="font-size:9px; color:'+P.mut+'; font-weight:400; margin-top:1px;">'+vies2n(x[0])+(vies2n(x[0])>1?' eleições':' eleição')+': '+vies2anos(x[0])+'</div>'):(m2str(adj)+'<div style="font-size:9px; color:'+P.warn+'; font-weight:400; margin-top:1px;">sem histórico, entra cru</div>');
+        var selo=ehMed?'<div style="font-size:9px; font-weight:700; color:'+P.ink+'; margin-top:1px; letter-spacing:.3px;">'+(mA===mB?'MEDIANA':'MEDIANA (média destas duas)')+'</div>':'';
+        body+='<tr style="background:'+bg2+'; border-bottom:1px solid '+P.bsoft+';'+(ehMed?' box-shadow:inset 3px 0 0 '+P.purple+'; font-weight:700;':'')+'"><td style="text-align:left; padding:7px 6px 7px 9px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">'+nameCell(x[0],x[9])+selo+'</td><td style="text-align:right; padding:7px 8px;">'+m2str(mg)+'</td><td style="text-align:right; padding:7px 8px;">'+acell+'</td></tr>';
+      });
+      body='<tr><td colspan="3" style="padding:5px 9px; font-size:10px; color:'+P.mut+'; text-align:left; border-bottom:1px solid '+P.bsoft+';">&uarr; mais favorável a Lula (margem ajustada)</td></tr>'+body+'<tr><td colspan="3" style="padding:5px 9px; font-size:10px; color:'+P.mut+'; text-align:left;">&darr; mais favorável a Flávio. Todos entram na conta; a mediana é o valor da linha do meio, em roxo.</td></tr>';
       if(c===0){
         document.getElementById('headline').innerHTML='';
         document.getElementById('table-area').innerHTML=heRank2026()+'<div style="padding:20px 14px; font-size:13px; color:'+P.goldtxt+'; text-align:center;">Nenhum instituto publicou cenário de 2º turno em '+cur.m+'. O house effect só se aplica ao 2º turno (Lula x Flávio).</div>';
