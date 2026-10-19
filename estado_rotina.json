@@ -1960,16 +1960,6 @@
    "visto": "2026-10-19"
   },
   {
-   "proto": "BR025862026",
-   "escopo": "NACIONAL?",
-   "inst": "PODERDATA",
-   "cargo": "Presidente",
-   "campo": "16/10-18/10",
-   "div": "2026-10-19",
-   "n": "3000",
-   "visto": "2026-10-19"
-  },
-  {
    "proto": "BR044542026",
    "escopo": "NACIONAL?",
    "inst": "DATATRENDS",
@@ -1995,16 +1985,6 @@
    "inst": "100 CIDADES",
    "cargo": "Presidente",
    "campo": "16/10-17/10",
-   "div": "2026-10-19",
-   "n": "2000",
-   "visto": "2026-10-19"
-  },
-  {
-   "proto": "BR044992026",
-   "escopo": "NACIONAL?",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "16/10-18/10",
    "div": "2026-10-19",
    "n": "2000",
    "visto": "2026-10-19"
