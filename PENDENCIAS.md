@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 19/10/2026 06:49. Mercados: Polymarket 22,5%/77,2%, Kalshi 21,0%/80,0%.
+Rodada de 19/10/2026 13:56. Mercados: Polymarket 23,5%/76,5%, Kalshi 20,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -17,13 +17,10 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-18] TSE ESTADUAL[ES], #NULO# (Presidente), campo 14/10-17/10, divulgação 2026-10-18, N=1500, registro BR010152026
 - [aguardando desde 2026-10-18] TSE NACIONAL?, #NULO# (Presidente), campo 15/10-17/10, divulgação 2026-10-18, N=2100, registro BR043322026
 - [aguardando desde 2026-10-18] TSE NACIONAL?, INSTITUTO PHOENIX & ASSOCIAD (Presidente), campo 13/10-16/10, divulgação 2026-10-18, N=3999, registro BR088092026
-- [NOVO] TSE ESTADUAL[TO], #NULO# (Presidente), campo 14/10-17/10, divulgação 2026-10-19, N=1500, registro BR090512026
-- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 16/10-18/10, divulgação 2026-10-19, N=3000, registro BR025862026
-- [NOVO] TSE NACIONAL?, DATATRENDS (Presidente), campo 15/10-17/10, divulgação 2026-10-19, N=2000, registro BR044542026
-- [NOVO] TSE NACIONAL?, INSTITUTO RANKING PESQUISA (Presidente), campo 14/10-16/10, divulgação 2026-10-19, N=2100, registro BR001522026
-- [NOVO] TSE NACIONAL?, ATLASINTEL (Presidente), campo 13/10-18/10, divulgação 2026-10-19, N=5000, registro BR024182026
-- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 16/10-17/10, divulgação 2026-10-19, N=2000, registro BR067152026
-- [NOVO] TSE NACIONAL?, NEXUS (Presidente), campo 16/10-18/10, divulgação 2026-10-19, N=2000, registro BR044992026
+- [aguardando desde 2026-10-19] TSE ESTADUAL[TO], #NULO# (Presidente), campo 14/10-17/10, divulgação 2026-10-19, N=1500, registro BR090512026
+- [aguardando desde 2026-10-19] TSE NACIONAL?, DATATRENDS (Presidente), campo 15/10-17/10, divulgação 2026-10-19, N=2000, registro BR044542026
+- [aguardando desde 2026-10-19] TSE NACIONAL?, INSTITUTO RANKING PESQUISA (Presidente), campo 14/10-16/10, divulgação 2026-10-19, N=2100, registro BR001522026
+- [aguardando desde 2026-10-19] TSE NACIONAL?, 100 CIDADES (Presidente), campo 16/10-17/10, divulgação 2026-10-19, N=2000, registro BR067152026
 
 ## Últimas publicações do Veritá
 
