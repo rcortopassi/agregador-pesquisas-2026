@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 18/10/2026 21:09. Mercados: Polymarket 20,5%/79,1%, Kalshi 21,0%/81,0%.
+Rodada de 19/10/2026 06:49. Mercados: Polymarket 22,5%/77,2%, Kalshi 21,0%/80,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -17,6 +17,13 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-18] TSE ESTADUAL[ES], #NULO# (Presidente), campo 14/10-17/10, divulgação 2026-10-18, N=1500, registro BR010152026
 - [aguardando desde 2026-10-18] TSE NACIONAL?, #NULO# (Presidente), campo 15/10-17/10, divulgação 2026-10-18, N=2100, registro BR043322026
 - [aguardando desde 2026-10-18] TSE NACIONAL?, INSTITUTO PHOENIX & ASSOCIAD (Presidente), campo 13/10-16/10, divulgação 2026-10-18, N=3999, registro BR088092026
+- [NOVO] TSE ESTADUAL[TO], #NULO# (Presidente), campo 14/10-17/10, divulgação 2026-10-19, N=1500, registro BR090512026
+- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 16/10-18/10, divulgação 2026-10-19, N=3000, registro BR025862026
+- [NOVO] TSE NACIONAL?, DATATRENDS (Presidente), campo 15/10-17/10, divulgação 2026-10-19, N=2000, registro BR044542026
+- [NOVO] TSE NACIONAL?, INSTITUTO RANKING PESQUISA (Presidente), campo 14/10-16/10, divulgação 2026-10-19, N=2100, registro BR001522026
+- [NOVO] TSE NACIONAL?, ATLASINTEL (Presidente), campo 13/10-18/10, divulgação 2026-10-19, N=5000, registro BR024182026
+- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 16/10-17/10, divulgação 2026-10-19, N=2000, registro BR067152026
+- [NOVO] TSE NACIONAL?, NEXUS (Presidente), campo 16/10-18/10, divulgação 2026-10-19, N=2000, registro BR044992026
 
 ## Últimas publicações do Veritá
 
@@ -28,10 +35,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-08 | ESTADUAL[DF] | #NULO# | Presidente | 06/10-08/10 | 910 | BR098562026 |
-| 2026-10-08 | ESTADUAL[RJ] | #NULO# | Presidente | 06/10-08/10 | 1204 | BR018802026 |
-| 2026-10-08 | NACIONAL? | PODERDATA | Presidente | 05/10-07/10 | 3000 | BR081342026 |
-| 2026-10-08 | NACIONAL? | #NULO# | Presidente | 06/10-08/10 | 2520 | BR029492026 |
 | 2026-10-09 | NACIONAL? | ATLASINTEL | Presidente | 03/10-08/10 | 5000 | BR036632026 |
 | 2026-10-09 | NACIONAL? | #NULO# | Presidente | 05/10-07/10 | 2100 | BR096232026 |
 | 2026-10-10 | ESTADUAL[CE] | INSTITUTO OPNUS | Presidente | 04/10-04/10 | 4800 | BR047152026 |
@@ -71,4 +74,11 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-18 | ESTADUAL[ES] | #NULO# | Presidente | 14/10-17/10 | 1500 | BR010152026 |
 | 2026-10-18 | NACIONAL? | #NULO# | Presidente | 15/10-17/10 | 2100 | BR043322026 |
 | 2026-10-18 | NACIONAL? | INSTITUTO PHOENIX & ASSOCIAD | Presidente | 13/10-16/10 | 3999 | BR088092026 |
+| 2026-10-19 | ESTADUAL[TO] | #NULO# | Presidente | 14/10-17/10 | 1500 | BR090512026 |
+| 2026-10-19 | NACIONAL? | PODERDATA | Presidente | 16/10-18/10 | 3000 | BR025862026 |
+| 2026-10-19 | NACIONAL? | DATATRENDS | Presidente | 15/10-17/10 | 2000 | BR044542026 |
+| 2026-10-19 | NACIONAL? | INSTITUTO RANKING PESQUISA | Presidente | 14/10-16/10 | 2100 | BR001522026 |
+| 2026-10-19 | NACIONAL? | ATLASINTEL | Presidente | 13/10-18/10 | 5000 | BR024182026 |
+| 2026-10-19 | NACIONAL? | 100 CIDADES | Presidente | 16/10-17/10 | 2000 | BR067152026 |
+| 2026-10-19 | NACIONAL? | NEXUS | Presidente | 16/10-18/10 | 2000 | BR044992026 |
 
