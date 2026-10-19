@@ -13,6 +13,13 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-title" content="Agregador 2026">
 <style>
+  .evg{cursor:pointer}
+  .evg .evnum{opacity:0; transition:opacity .12s}
+  .evg:hover .evnum, .evg:focus .evnum{opacity:1}
+  .evg:hover .evdot{r:5}
+  .evg:hover ~ .evlbl{}
+  .evcap.evhi{background:rgba(201,169,78,.18); border-radius:6px}
+
   /* Paleta em tokens. Tema claro = padrao. Tema escuro entra por [data-theme="dark"]
      ou, quando o usuario escolhe "Sistema" (sem atributo), pela media query. */
   :root{
@@ -2350,28 +2357,37 @@
     // set/out viraram torres de 6 andares e o topo saía cortado. Agora é UMA faixa: cada
     // número se afasta para o lado só o necessário (passo mínimo EV_GAP), e uma linha de
     // ligação inclinada leva do número até a data real, onde a linha tracejada desce.
-    var EV_R=7.5, EV_GAP=9.5, EV_Y0=34, EV_Y1=16, EV_MIN=56, EV_MAX=650, EV_BEND=50;
-    // (19/10/2026, 2a versao) Duas faixas alternadas onde ha aglomeracao: passo horizontal minimo
-    // EV_GAP entre vizinhos e >= 2*EV_GAP na mesma faixa, para cada numero ficar perto da sua data.
+    // 19/10/2026, opcao C escolhida pelo Rafael: no topo so PONTINHOS coloridos, sem numero,
+    // com um rotulo por grupo ("2 a 10"); a linha da data fica bem apagada. Numero e texto
+    // aparecem ao passar o mouse (ou tocar); clicar no ponto leva ao item da lista abaixo.
+    var EV_R=3.6, EV_GAP=8.5, EV_Y=46, EV_LBL=34, EV_MIN=56, EV_MAX=650, EV_GRUPO=13;
     var lay=evList.slice().sort(function(a,b){ return a.ex-b.ex || a.n-b.n; });
     lay.forEach(function(o,i){ o.px=Math.max(EV_MIN, o.ex, i? lay[i-1].px+EV_GAP : EV_MIN); });
     for(var k=lay.length-1;k>=0;k--){ var lim=(k===lay.length-1)?EV_MAX:lay[k+1].px-EV_GAP; if(lay[k].px>lim) lay[k].px=lim; }
-    // Centraliza cada grupo encostado sobre a media das datas reais (o empurrao nao fica so para a direita).
     var gi=0; while(gi<lay.length){ var gj=gi; while(gj+1<lay.length && lay[gj+1].px-lay[gj].px<EV_GAP+0.01) gj++;
       var soma=0; for(var q=gi;q<=gj;q++) soma+=lay[q].ex; var desejo=soma/(gj-gi+1)-(lay[gj].px-lay[gi].px)/2, d=desejo-lay[gi].px;
       var dMin=(gi? (lay[gi-1].px+EV_GAP)-lay[gi].px : EV_MIN-lay[gi].px), dMax=(gj<lay.length-1? (lay[gj+1].px-EV_GAP)-lay[gj].px : EV_MAX-lay[gj].px);
       d=Math.max(dMin,Math.min(dMax,d)); for(q=gi;q<=gj;q++) lay[q].px+=d; gi=gj+1; }
-    // Faixa: isolado fica embaixo (perto do grafico); em sequencia apertada (< 2R+1), alterna.
-    lay.forEach(function(o,i){ o.row = (i && o.px-lay[i-1].px < 2*EV_R+1) ? 1-lay[i-1].row : 0; });
-    var evLines='', evPins='', evMark='', evCap='';
-    evList.forEach(function(o){ var e=o.e, n=o.n, ec=evc(e), et=evt(e), cy=(o.row?EV_Y1:EV_Y0), px=o.px.toFixed(1), ex=o.ex.toFixed(1);
-      // ligacao: sai do numero, inclina ate a data real e segue tracejada ate o eixo (linhas antes dos circulos)
-      evLines+='<polyline fill="none" points="'+px+','+(cy+EV_R)+' '+ex+','+EV_BEND+' '+ex+',312" stroke="'+et+'" stroke-width="1.3" stroke-dasharray="3,3" stroke-opacity="0.55"/>';
-      evPins+='<circle cx="'+px+'" cy="'+cy+'" r="'+EV_R+'" fill="'+ec+'" stroke="'+P.surf+'" stroke-width="1.5"/>'+(e.c==='purple'?'<circle cx="'+px+'" cy="'+cy+'" r="'+(EV_R-1)+'" fill="none" stroke="'+P.ink+'" stroke-width="1.2"/>':'')+
-        '<text x="'+px+'" y="'+(cy+3.5)+'" text-anchor="middle" font-size="'+(n>9?9.5:10.5)+'" font-weight="700" fill="#fff">'+n+'</text>';
-      evCap+='<div style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+et+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> <span style="font-size:10px; font-weight:700; color:'+et+'; border:1px solid '+et+'; border-radius:8px; padding:0 5px; opacity:.85;">'+evSelo(e)+'</span> &middot; '+e.t+'</span></div>';
+    // grupos para o rotulo: pontos seguidos a menos de EV_GRUPO px formam um grupo
+    var grupos=[], gAtual=null;
+    lay.forEach(function(o){ if(gAtual && o.px-gAtual.fim<EV_GRUPO){ gAtual.itens.push(o); gAtual.fim=o.px; } else { gAtual={itens:[o],ini:o.px,fim:o.px}; grupos.push(gAtual); } });
+    var evLines='', evPins='', evLbl='', evMark='', evCap='';
+    grupos.forEach(function(g){ var ns=g.itens.map(function(o){return o.n;}), lo=Math.min.apply(null,ns), hi=Math.max.apply(null,ns);
+      var seq=(hi-lo+1===ns.length), txt=(ns.length===1? String(lo) : (seq? lo+' a '+hi : ns.slice().sort(function(a,b){return a-b;}).join(', ')));
+      evLbl+='<text class="evlbl" x="'+((g.ini+g.fim)/2).toFixed(1)+'" y="'+EV_LBL+'" text-anchor="middle" font-size="10.5" fill="'+P.mut+'">'+txt+'</text>'; });
+    evList.forEach(function(o){ var e=o.e, n=o.n, ec=evc(e), et=evt(e), px=o.px.toFixed(1), ex=o.ex.toFixed(1);
+      var dica=n+' · '+o.dy+'/'+MES[o.mn-1]+' · '+String(e.t).replace(/<[^>]+>/g,'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+      evLines+='<line class="evln evln-'+n+'" x1="'+ex+'" y1="57.5" x2="'+ex+'" y2="312" stroke="'+et+'" stroke-width="1.2" stroke-opacity="0.16"/>';
+      evPins+='<g class="evg" data-n="'+n+'" onclick="var c=document.getElementById(\'ev-'+n+'\'); if(c){c.scrollIntoView({behavior:\'auto\',block:\'center\'}); c.classList.add(\'evhi\'); setTimeout(function(){c.classList.remove(\'evhi\');},1600);}" '+
+        'onmouseenter="var l=this.ownerSVGElement.querySelector(\'.evln-'+n+'\'); if(l) l.setAttribute(\'stroke-opacity\',\'0.85\');" '+
+        'onmouseleave="var l=this.ownerSVGElement.querySelector(\'.evln-'+n+'\'); if(l) l.setAttribute(\'stroke-opacity\',\'0.16\');">'+
+        '<title>'+dica+'</title>'+
+        '<circle cx="'+px+'" cy="'+EV_Y+'" r="8" fill="transparent"/>'+
+        '<circle class="evdot" cx="'+px+'" cy="'+EV_Y+'" r="'+EV_R+'" fill="'+ec+'"'+(e.c==='purple'?' stroke="'+P.ink+'" stroke-width="1.2"':'')+'/>'+
+        '<g class="evnum" opacity="0"><circle cx="'+px+'" cy="'+(EV_Y-15)+'" r="8" fill="'+ec+'"/><text x="'+px+'" y="'+(EV_Y-11.4)+'" text-anchor="middle" font-size="'+(n>9?9.5:10.5)+'" font-weight="700" fill="#fff">'+n+'</text></g></g>';
+      evCap+='<div id="ev-'+n+'" class="evcap" style="display:flex; gap:7px; align-items:flex-start; margin-top:4px;"><span style="flex:0 0 auto; width:16px; height:16px; border-radius:50%; background:'+ec+'; color:#fff; font-size:10px; font-weight:700; text-align:center; line-height:16px;">'+n+'</span><span style="color:'+P.txt2+';"><b style="color:'+et+';">'+o.dy+'/'+MES[o.mn-1]+'/'+o.p[0]+'</b> <span style="font-size:10px; font-weight:700; color:'+et+'; border:1px solid '+et+'; border-radius:8px; padding:0 5px; opacity:.85;">'+evSelo(e)+'</span> &middot; '+e.t+'</span></div>';
     });
-    evMark=evLines+evPins;
+    evMark=evLines+evLbl+evPins;
     // Losangos dos debates, no rodape do grafico. So entra o debate cuja data CABE no eixo
     // (o eixo termina no ultimo mes com rodada publicada). Debate futuro nao ganha posicao
     // inventada na borda: fica so na legenda, e o losango aparece sozinho quando o mes abrir.
@@ -2411,7 +2427,7 @@
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; background:'+P.surf+'; border:2px solid '+P.mut+'; display:inline-block;"></span>mês recente, poucos institutos</span>'+
       '<span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; transform:rotate(45deg); background:'+P.surf+'; border:2px solid '+P.gold+'; display:inline-block;"></span>debate presidencial</span>'+
     '</div>'+
-    '<svg viewBox="0 2 680 358" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Linhas Lula e Flavio no 1o turno, ajustadas pelo house effect de cada instituto, mediana por mes de '+ms[0]+' a '+ms[n-1]+', com faixa de margem de erro; mes recente com poucos institutos aparece tracejado e com ponto vazado">'+
+    '<svg viewBox="0 18 680 342" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Linhas Lula e Flavio no 1o turno, ajustadas pelo house effect de cada instituto, mediana por mes de '+ms[0]+' a '+ms[n-1]+', com faixa de margem de erro; mes recente com poucos institutos aparece tracejado e com ponto vazado">'+
       '<defs>'+
         '<pattern id="hatchR" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.red+'" stroke-width="1.3" stroke-opacity="0.32"/></pattern>'+
         '<pattern id="hatchB" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="'+P.blue+'" stroke-width="1.3" stroke-opacity="0.32"/></pattern>'+
