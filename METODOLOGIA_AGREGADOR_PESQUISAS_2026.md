@@ -6,6 +6,31 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 19/10, NOITE (rodada local, fila de 13 itens, os 9 de 18/10 mais 4 novos): NENHUM DADO ENTROU
+  NO PAINEL NESTA RODADA. Os 4 itens novos são todos NACIONAIS pelo `DS_DADO_MUNICIPIO` do
+  próprio registro TSE (texto explícito de abrangência Brasil/nacional em 3 deles; o da
+  DataTrends usa o texto padrão "Unidade da Federação e município de domicílio eleitoral",
+  compatível com desenho nacional, recursos próprios, mesmo padrão da rodada de 7-9/10 já no
+  painel) — mas BUSCA NA WEB NÃO ACHOU DIVULGAÇÃO COM NÚMERO para nenhum deles ainda, o que é
+  esperado: as 4 divulgações saíram em 18/10 ou no próprio dia 19/10, podem não estar indexadas
+  ainda. FICAM NA FILA, NÃO INSERIR SEM CONFIRMAR: (1) BR-04454/2026, DATATRENDS, campo 15-17/10,
+  2ª rodada de outubro da casa (SUBSTITUIRIA a de 7-9/10, BR-03576, hoje no painel com "Flávio
+  +6" no 2º turno); (2) BR-04332/2026, INSTITUTO VOX BRASIL, campo 15-17/10 — CUIDADO: é a
+  TERCEIRA rodada de outubro da casa (a 1ª, 29/9-1/10, Flávio 48,2x45,2, não entrou; a 2ª, 5-7/10,
+  Lula 44,2x42,7, é a que está hoje no painel como "Lula +1,5"), substituiria essa; (3)
+  BR-00152/2026, INSTITUTO RANKING DE PESQUISA LTDA (fantasia "Instituto Ranking Pesquisa",
+  registrada por "Inteligencia.com Serviços Ltda / Fonte 83"), campo 14-16/10, ESTREIA DA CASA NO
+  PAINEL — nome não apareceu em nenhuma busca, pode ser instituto pequeno/novo sem cobertura de
+  imprensa; (4) BR-06715/2026, "100 CIDADES" (empresa "100% Cidades Participações Ltda"), campo
+  16-17/10 — ATENÇÃO PARA FUTURO AGENTE: esta é a MESMA EMPRESA que registrou a BR-02431/2026
+  (29/9-3/10), que entrou no painel como linha **"Apex/Futura"** (nome pode estar errado: a
+  imprensa chama esse instituto de "Futura/100% Cidades", nunca "Apex/Futura"; a rodada de
+  29/9-3/10 saiu com Flávio 48x45,1 no 2º turno conforme a nota de 05/10 abaixo, mas a linha
+  "Apex/Futura" hoje no painel mostra "Flávio +1,6", que não bate com nenhuma rodada encontrada
+  na busca desta empresa — vale abrir o PDF original da BR-02431 e confirmar se o nome e os
+  números da linha estão certos antes de inserir a BR-06715 por cima). Os 9 itens antigos (ver
+  nota de 18/10 abaixo) não foram rebuscados nesta rodada por já terem sido exaustivamente
+  checados há 24h sem achado; seguem na fila.
 - 18/10, NOITE (rodada local, fila de 9 TSE + 1 Veritá): VERITÁ NACIONAL JÁ ESTAVA NO PAINEL.
   O item da fila era o PDF `Relatorio_Brasil_Outubro_2026` (BR-01107/2026, 12-16/10, 15.554
   entrevistas, margem 1,0). Abri o PDF (imagem, não indexado por texto corrido) e confirmei:
