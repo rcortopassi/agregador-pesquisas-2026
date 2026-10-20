@@ -6,6 +6,36 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 20/10, NOITE (rodada local, fila de 19 itens): UMA ENTRADA NO `DI`/`T2R` NACIONAL DE OUTUBRO.
+  Instituto França, BR-07896/2026, 16-20/10, 3.000 entrevistas, SUBSTITUI a rodada de 28/9-2/10
+  (BR-02928/2026) pela mais recente da casa no mês (achado em poder360.com.br, 20/10, 11h10: só
+  2º turno, sem 1º turno, por isso a linha ficou com "—" nas colunas de 1º turno, como as outras
+  de 2º-turno-só). Válidos: Flávio 50,8 x Lula 49,2. Estimulada: Flávio 40,95 x Lula 39,65,
+  branco/nulo/nenhum 10,56, não sabe 8,84. `--resolver` aplicado no protocolo.
+  ACHADO IMPORTANTE PARA PRES26, AINDA NÃO INSERIDO: BR-00640/2026 veio rotulado NACIONAL? pelo
+  radar (gêmeo não casado), mas o `DS_DADO_MUNICIPIO` do próprio registro diz explicitamente "a
+  área de abrangência da coleta corresponde ao Estado da Bahia" — é ESTADUAL[BA] disfarçado,
+  mesmo Instituto França, campo 15-19/10, N=2.000. Candidato a `PRES26['BA']`, não ao `DI`
+  nacional. Busca na web em 20/10 não achou a divulgação com número (nem desta, nem da gêmea
+  genuína DF do mesmo instituto, BR-03326/2026, campo 13-16/10, N=1.141, nem da RN/DataTrends
+  BR-07585/2026, campo 16-18/10, N=1.200, nem da TO/#NULO# contratante FIETO, BR-09051/2026,
+  campo 14-17/10, N=1.500): o Poder360 anunciou pela manhã (artigo "Saiba quais pesquisas
+  eleitorais podem sair nesta 3ª feira") que Veritá, Alfa Inteligência, DataTrends, Real Time Big
+  Data e França teriam rodada nacional saindo em 20/10, mas até a checagem desta rodada só a do
+  França havia sido publicada com número. FICAM NA FILA, NÃO LOCALIZADAS (não inventar, não
+  inserir sem confirmar): as quatro acima, mais as nove já exaustivamente checadas em 18/10 e
+  19/10 sem achado (RJ-Datafolha BR-01880, RN-Datavero BR-02367, TO-Stylo BR-06187, RN-Item
+  BR-02615, NACIONAL-IPESPE BR-00223, DF-Igape BR-01953, ES-#NULO# BR-01015, NACIONAL-Vox Brasil
+  BR-04332 agora 3ª rodada de outubro da casa, NACIONAL-Phoenix/Correio Continental BR-08809) e
+  as quatro de 19/10 (NACIONAL-DataTrends BR-04454 2ª rodada de outubro, NACIONAL-Ranking
+  Pesquisa BR-00152 estreia, NACIONAL-100 Cidades/Futura BR-06715, mesma ressalva de nome já
+  registrada em 19/10 sobre a linha "Apex/Futura" hoje no painel). TAMBÉM NA FILA, SEM
+  INVESTIGAR AINDA, campo NO FUTURO (22-23/10, ainda não aconteceu): BR-06957/2026, Vetor Arrow
+  Instituto de Pesquisa, NACIONAL, N=3.000 — não há nada para apurar até o campo terminar.
+  BR-06396/2026 (VERITÁ NACIONAL, campo 15-19/10, N=15.554) TAMBÉM NÃO LOCALIZADA: é uma rodada
+  diferente da BR-01107 (12-16/10, já no painel), mesma N aproximada, pode ser tracking contínuo
+  do mesmo instituto; vale abrir o site do Veritá direto na próxima rodada, busca indexada não
+  achou.
 - 19/10, NOITE (rodada local, fila de 13 itens, os 9 de 18/10 mais 4 novos): NENHUM DADO ENTROU
   NO PAINEL NESTA RODADA. Os 4 itens novos são todos NACIONAIS pelo `DS_DADO_MUNICIPIO` do
   próprio registro TSE (texto explícito de abrangência Brasil/nacional em 3 deles; o da
