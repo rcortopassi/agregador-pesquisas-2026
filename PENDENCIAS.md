@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 19/10/2026 13:56. Mercados: Polymarket 23,5%/76,5%, Kalshi 20,0%/79,0%.
+Rodada de 19/10/2026 22:03. Mercados: Polymarket 22,5%/76,8%, Kalshi 22,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -24,7 +24,14 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 
 ## Últimas publicações do Veritá
 
-Não consegui ler a lista do Veritá nesta rodada.
+- 2026-10-17 | Pesquisa para Presidente no Brasil
+- 2026-10-06 | Pesquisa em São Paulo - Presidente
+- 2026-10-06 | Pesquisa na Bahia - Presidente
+- 2026-10-06 | Pesquisa em Tocantins - Presidente
+- 2026-10-06 | Pesquisa em Sergipe - Presidente
+- 2026-10-06 | Pesquisa em Santa Catarina - Presidente
+- 2026-10-06 | Pesquisa no Rio Grande do Sul - Presidente
+- 2026-10-06 | Pesquisa em Roraima - Presidente
 
 ## Divulgações registradas no TSE nos últimos 10 dias
 
@@ -38,8 +45,8 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-10 | ESTADUAL[TO] | DIRECT PESQUISAS | Presidente | 06/10-10/10 | 1200 | BR057932026 |
 | 2026-10-10 | NACIONAL? | #NULO# | Presidente | 06/10-08/10 | 1500 | BR009332026 |
 | 2026-10-11 | ESTADUAL[RN] | INSTITUTO SETA DE PESQUISA | Presidente | 07/10-10/10 | 1500 | BR044872026 |
-| 2026-10-11 | NACIONAL? | DATATRENDS | Presidente | 07/10-09/10 | 2000 | BR035762026 |
 | 2026-10-11 | NACIONAL? | CORREIO DO POVO TOCANTINENSE | Presidente | 06/10-12/10 | 1600 | BR067782026 |
+| 2026-10-11 | NACIONAL? | DATATRENDS | Presidente | 07/10-09/10 | 2000 | BR035762026 |
 | 2026-10-12 | ESTADUAL[AM] | PODERDATA | Presidente | 08/10-11/10 | 1200 | BR071932026 |
 | 2026-10-12 | ESTADUAL[DF] | #NULO# | Presidente | 08/10-11/10 | 1104 | BR067992026 |
 | 2026-10-13 | ESTADUAL[AC] | DATA CONTROL INSTITUTO DE PE | Presidente | 07/10-13/10 | 1344 | BR034832026 |
@@ -47,18 +54,18 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR064822026 |
 | 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR039732026 |
 | 2026-10-13 | ESTADUAL[RN] | DATA CAPITAL PESQUISAS E CON | Presidente | 07/10-10/10 | 1500 | BR082652026 |
+| 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 08/10-12/10 | 2400 | BR078772026 |
 | 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 14/10-16/10 | 2400 | BR051872026 |
 | 2026-10-13 | NACIONAL? | 100 CIDADES | Presidente | 07/10-10/10 | 2000 | BR006502026 |
-| 2026-10-13 | NACIONAL? | NEXUS | Presidente | 10/10-12/10 | 2000 | BR079972026 |
-| 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 08/10-12/10 | 2400 | BR078772026 |
 | 2026-10-13 | NACIONAL? | PODERDATA | Presidente | 10/10-12/10 | 3000 | BR012092026 |
+| 2026-10-13 | NACIONAL? | NEXUS | Presidente | 10/10-12/10 | 2000 | BR079972026 |
+| 2026-10-14 | ESTADUAL[ES] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR073372026 |
+| 2026-10-14 | ESTADUAL[ES] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR019732026 |
 | 2026-10-14 | ESTADUAL[RN] | AFFARE INSTITUTE | Presidente | 09/10-12/10 | 1350 | BR057842026 |
-| 2026-10-14 | ESTADUAL[TO] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR073372026 |
-| 2026-10-14 | ESTADUAL[TO] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR019732026 |
 | 2026-10-14 | NACIONAL? | #NULO# | Presidente | 10/10-13/10 | 2154 | BR087292026 |
+| 2026-10-15 | NACIONAL? | #NULO# | Presidente | 13/10-15/10 | 2520 | BR004662026 |
 | 2026-10-15 | NACIONAL? | INDEXA PESQUISAS | Presidente | 13/10-14/10 | 2000 | BR046292026 |
 | 2026-10-15 | NACIONAL? | PALVER | Presidente | 10/10-14/10 | 5000 | BR080282026 |
-| 2026-10-15 | NACIONAL? | #NULO# | Presidente | 13/10-15/10 | 2520 | BR004662026 |
 | 2026-10-16 | ESTADUAL[RN] | DATAVERO INSTITUTO DE PESQUI | Presidente | 13/10-15/10 | 1500 | BR023672026 |
 | 2026-10-16 | ESTADUAL[TO] | PORTAL E INSTITUTO STYLO | Presidente | 11/10-14/10 | 1200 | BR061872026 |
 | 2026-10-16 | NACIONAL? | 100 CIDADES | Presidente | 13/10-15/10 | 2000 | BR037642026 |
@@ -73,9 +80,9 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-18 | NACIONAL? | INSTITUTO PHOENIX & ASSOCIAD | Presidente | 13/10-16/10 | 3999 | BR088092026 |
 | 2026-10-19 | ESTADUAL[TO] | #NULO# | Presidente | 14/10-17/10 | 1500 | BR090512026 |
 | 2026-10-19 | NACIONAL? | PODERDATA | Presidente | 16/10-18/10 | 3000 | BR025862026 |
-| 2026-10-19 | NACIONAL? | DATATRENDS | Presidente | 15/10-17/10 | 2000 | BR044542026 |
 | 2026-10-19 | NACIONAL? | INSTITUTO RANKING PESQUISA | Presidente | 14/10-16/10 | 2100 | BR001522026 |
-| 2026-10-19 | NACIONAL? | ATLASINTEL | Presidente | 13/10-18/10 | 5000 | BR024182026 |
+| 2026-10-19 | NACIONAL? | DATATRENDS | Presidente | 15/10-17/10 | 2000 | BR044542026 |
 | 2026-10-19 | NACIONAL? | 100 CIDADES | Presidente | 16/10-17/10 | 2000 | BR067152026 |
 | 2026-10-19 | NACIONAL? | NEXUS | Presidente | 16/10-18/10 | 2000 | BR044992026 |
+| 2026-10-19 | NACIONAL? | ATLASINTEL | Presidente | 13/10-18/10 | 5000 | BR024182026 |
 
