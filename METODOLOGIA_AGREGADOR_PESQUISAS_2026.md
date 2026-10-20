@@ -6,6 +6,12 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 20/10, NOITE: OUTUBRO SUMIU DO GRÁFICO E VOLTOU. O `chartSVG` só plotava mês com ao menos uma
+  linha de 1º turno no `DI` (`avgMonth(m)[2]>0`). A troca do Instituto França (rodada só de 2º
+  turno) tirou a ÚLTIMA linha de outubro com 1º turno, e o ponto do `CEN1T_OUT` caiu junto. Agora
+  outubro entra sempre que há `URNA1T`. A janela de metodologia, que diria "0 institutos, Lula 0",
+  explica o cenário congelado. Quando outra rodada de outubro com 1º turno for substituída por uma
+  só de 2º turno, isto já está coberto.
 - 20/10, NOITE (a pedido do Rafael): 2º TURNO PADRONIZADO EM VOTOS VÁLIDOS. Até aqui o `T2R`
   MISTURAVA BASES: Datafolha, PoderData, Veritá, Apex/Futura e França de outubro em válidos (somam
   100), o resto em totais. A margem em válidos (`t2valid`) não sofria, porque normaliza por L+F,

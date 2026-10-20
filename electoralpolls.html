@@ -480,7 +480,8 @@
 
     h+=mSec('O agregado é a mediana');
     h+=mP('O número do mês é a MEDIANA de todos os institutos, não a média. A mediana é o valor do meio: um instituto muito fora da curva desloca a média, mas quase não mexe na mediana. Por isso '+(semOut?'<b>ninguém é excluído</b> do cálculo, nem os institutos de método mais discutível':'a exclusão de institutos é usada com parcimônia')+'. É a diferença central para agregadores que usam média simples, onde um outlier contamina o consenso e obriga alguém a decidir, na mão, quem é outlier.');
-    h+=mP('Em '+m+', a mediana bruta reúne <b>'+nInst+' institutos</b>: Lula '+fmt(br[0])+' e Flávio '+fmt(br[1])+' no 1º turno.');
+    h+=mP(nInst>0?'Em '+m+', a mediana bruta reúne <b>'+nInst+' institutos</b>: Lula '+fmt(br[0])+' e Flávio '+fmt(br[1])+' no 1º turno.'
+      :'Em '+m+', nenhuma rodada no painel traz 1º turno: todas foram substituídas por pesquisas só de 2º turno. O 1º turno de outubro é o cenário congelado da véspera da urna, Lula '+fmt(CEN1T_OUT.l)+' e Flávio '+fmt(CEN1T_OUT.f)+'.');
 
     h+=mSec('Uma rodada por instituto por mês');
     h+=mP('Quando um instituto publica várias vezes no mesmo mês, só a rodada MAIS RECENTE entra. Não é descuido, é proteção estatística: se todas entrassem, quem pesquisa toda semana teria cinco ou seis linhas enquanto quem pesquisa uma vez teria uma, e a mediana passaria a refletir quem publica mais, não o consenso do campo.');
@@ -2308,7 +2309,8 @@
     // janeiro só 3 testaram o Flávio (Paraná e Meio/Ideia não o citaram), e a da Quaest marca
     // 23 com † porque o campo ainda tinha Tarcísio dividindo o voto da direita. Logo o ponto
     // de janeiro do Flávio é o mais frágil da série e tende a subestimá-lo.
-    var ms=months.filter(function(m){ return avgMonth(m)[2]>0; }), n=ms.length, sp=480/(n-1);
+    // Outubro entra mesmo sem linha de 1º turno no DI: depois da urna o ponto é o CEN1T_OUT congelado (20/10/2026).
+    var ms=months.filter(function(m){ return avgMonth(m)[2]>0 || (URNA1T&&m==='out'); }), n=ms.length, sp=480/(n-1);
     var xs=ms.map(function(_,i){ return 60+i*sp; });
     // Eixo de 32 a 54 (20/10/2026): era 32 a 50 (06/10), mas o ponto de 2º turno em votos válidos passa de 50.
     // Mesma altura em pixels (57,5 a 282,5); a grade de 2 em 2 sai de YTOP/YBOT.
