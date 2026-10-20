@@ -6,6 +6,17 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 20/10, NOITE (a pedido do Rafael): PLACAR DO 2º TURNO NO BANNER PASSOU PARA VOTOS VÁLIDOS.
+  Nova função `t2placarValid(m)` = `par1(50, t2valid(m))`: mediana das margens em válidos, com
+  house effect de 2º turno, aberta em volta de 50. Outubro hoje: Lula 48,8 x Flávio 51,2 (Flávio
+  +2,4), antes 46,3 x 48,4 em "amostra total". Motivo: o `T2R` MISTURA BASES (Datafolha [49,51],
+  PoderData [48,52], Veritá, Apex/Futura e França estão em válidos; Vox, Quaest e outros em
+  totais), então o centro do `t2placar` (mediana de (L+F)/2) saía inflado. A margem em válidos
+  não sofre com a mistura, porque normaliza por L+F. Na linha "margem do 2º turno" a ordem
+  inverteu: válidos primeiro, amostra total ao lado. A CLASSIFICAÇÃO (empate técnico/vantagem)
+  continua pela margem em amostra total (`adj2Month`). O PONTO DE 2º TURNO DO GRÁFICO CONTINUA
+  EM `t2placar` (amostra total), porque o eixo fixo de 32 a 50 não comporta ~51; se um dia o
+  `T2R` for padronizado numa base só, o `t2placar` deixa de estar contaminado.
 - 20/10, NOITE (rodada local, fila de 19 itens): UMA ENTRADA NO `DI`/`T2R` NACIONAL DE OUTUBRO.
   Instituto França, BR-07896/2026, 16-20/10, 3.000 entrevistas, SUBSTITUI a rodada de 28/9-2/10
   (BR-02928/2026) pela mais recente da casa no mês (achado em poder360.com.br, 20/10, 11h10: só
