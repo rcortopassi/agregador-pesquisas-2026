@@ -201,7 +201,14 @@ BR-03796/2026) registra presidencial nacional e não divulga número no site abe
 odds, flagAtlas]`. A coluna odds é LEGADO, use `"—"`. Se o instituto já tem rodada no mês,
 SUBSTITUA pela mais recente (uma por instituto por mês, é proteção estatística, não descuido) e
 diga isso na nota do mês e no campo `nt` do `IM`. Atualize também `T2R[mes][instituto] = [lula,
-flavio]` e, no `IM`, os campos `n`, `d` (data + div + registro TSE) e `u`.
+flavio, u]` e, no `IM`, os campos `n`, `d` (data + div + registro TSE) e `u`.
+
+**`T2R` É SEMPRE EM VOTOS VÁLIDOS (desde 20/10/2026).** `lula` e `flavio` somam 100 (válidos, duas
+casas) e `u` é a fatia da AMOSTRA TOTAL fora dos dois (branco + nulo + indeciso). Se a pesquisa
+publicou totais, converta: `lula = L/(L+F)*100`, `flavio = F/(L+F)*100`, `u = 100-L-F`. Se só
+publicou válidos, use-os direto e tire o `u` da íntegra; sem íntegra, repita o `u` da rodada
+anterior da casa e anote no `nt` que é estimado. Nunca grave par em totais: o estresse do indeciso
+(`t2stress`) e a transferência (`transfFlv`) reconstroem os totais a partir do `u` (`t2tot`).
 
 **PRES26:** classifique `lead` pelo 2º turno quando publicado e pelo 1º turno quando não houver;
 empate técnico (`'E'`) quando a diferença cabe na margem. Preencha `dt` com o ISO do FIM de

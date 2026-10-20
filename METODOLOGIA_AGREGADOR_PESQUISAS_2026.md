@@ -6,17 +6,24 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
-- 20/10, NOITE (a pedido do Rafael): PLACAR DO 2º TURNO NO BANNER PASSOU PARA VOTOS VÁLIDOS.
-  Nova função `t2placarValid(m)` = `par1(50, t2valid(m))`: mediana das margens em válidos, com
-  house effect de 2º turno, aberta em volta de 50. Outubro hoje: Lula 48,8 x Flávio 51,2 (Flávio
-  +2,4), antes 46,3 x 48,4 em "amostra total". Motivo: o `T2R` MISTURA BASES (Datafolha [49,51],
-  PoderData [48,52], Veritá, Apex/Futura e França estão em válidos; Vox, Quaest e outros em
-  totais), então o centro do `t2placar` (mediana de (L+F)/2) saía inflado. A margem em válidos
-  não sofre com a mistura, porque normaliza por L+F. Na linha "margem do 2º turno" a ordem
-  inverteu: válidos primeiro, amostra total ao lado. A CLASSIFICAÇÃO (empate técnico/vantagem)
-  continua pela margem em amostra total (`adj2Month`). O PONTO DE 2º TURNO DO GRÁFICO CONTINUA
-  EM `t2placar` (amostra total), porque o eixo fixo de 32 a 50 não comporta ~51; se um dia o
-  `T2R` for padronizado numa base só, o `t2placar` deixa de estar contaminado.
+- 20/10, NOITE (a pedido do Rafael): 2º TURNO PADRONIZADO EM VOTOS VÁLIDOS. Até aqui o `T2R`
+  MISTURAVA BASES: Datafolha, PoderData, Veritá, Apex/Futura e França de outubro em válidos (somam
+  100), o resto em totais. A margem em válidos (`t2valid`) não sofria, porque normaliza por L+F,
+  mas o placar do banner (centro = mediana de (L+F)/2) saía inflado e o estresse do indeciso
+  tratava as 5 linhas em válidos como se não tivessem indeciso nenhum.
+  Agora (1) TODO o `T2R` (jul a out) é `[lula, flavio, u]`, com os dois em válidos somando 100 e `u`
+  a fatia da amostra total fora dos dois; regra de inserção no AGENTS.md, Passo 4. `u` das 5 linhas
+  que só tinham válidos: Datafolha 8 (totais 45 x 47), Veritá 2,6 (47,7 x 49,7), Apex/Futura 3,5
+  (47,5 x 49,0, PDF), França 19,4 (39,65 x 40,95) e PoderData 7 ESTIMADO pela rodada de 13/10
+  (totais da de 16-18/10 não localizados). (2) `t2tot(p)` reconstrói a amostra total para
+  `t2stress` e `transfFlv`, que deram os mesmos números de antes nos meses só com totais (diferença
+  menor que 0,01). (3) `t2placar` passou a ser `par1(50, t2valid(m))`: banner e ponto de 2º turno
+  do gráfico em válidos, outubro Lula 48,8 x Flávio 51,2 (antes 46,3 x 48,4). (4) O ESTRESSE DE
+  OUTUBRO MUDOU de Flávio +4,7 para +5,9 (47,1 x 53,0): é a correção, não regressão. (5) EIXO DO
+  GRÁFICO de 32 a 54 (era 32 a 50, de 06/10), mesma altura em pixels, grade gerada por `YTOP`/`YBOT`.
+  (6) Tabela de 2º turno da aba Institutos rotulada "em votos válidos". Na linha "margem do 2º
+  turno" do banner, válidos primeiro e amostra total ao lado. A CLASSIFICAÇÃO (empate
+  técnico/vantagem) continua pela margem em amostra total (`adj2Month`, que lê o texto do `DI`).
 - 20/10, NOITE (rodada local, fila de 19 itens): UMA ENTRADA NO `DI`/`T2R` NACIONAL DE OUTUBRO.
   Instituto França, BR-07896/2026, 16-20/10, 3.000 entrevistas, SUBSTITUI a rodada de 28/9-2/10
   (BR-02928/2026) pela mais recente da casa no mês (achado em poder360.com.br, 20/10, 11h10: só
