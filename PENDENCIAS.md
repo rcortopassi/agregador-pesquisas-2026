@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 20/10/2026 06:21. Mercados: Polymarket 22,5%/76,8%, Kalshi 22,0%/79,0%.
+Rodada de 20/10/2026 11:59. Mercados: Polymarket 22,5%/76,8%, Kalshi 22,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -21,14 +21,12 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-19] TSE NACIONAL?, DATATRENDS (Presidente), campo 15/10-17/10, divulgação 2026-10-19, N=2000, registro BR044542026
 - [aguardando desde 2026-10-19] TSE NACIONAL?, INSTITUTO RANKING PESQUISA (Presidente), campo 14/10-16/10, divulgação 2026-10-19, N=2100, registro BR001522026
 - [aguardando desde 2026-10-19] TSE NACIONAL?, 100 CIDADES (Presidente), campo 16/10-17/10, divulgação 2026-10-19, N=2000, registro BR067152026
-- [NOVO] TSE ESTADUAL[DF], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 13/10-16/10, divulgação 2026-10-20, N=1141, registro BR033262026
-- [NOVO] TSE ESTADUAL[RN], DATATRENDS (Presidente), campo 16/10-18/10, divulgação 2026-10-20, N=1200, registro BR075852026
-- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2000, registro BR006402026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 22/10-23/10, divulgação 2026-10-20, N=3000, registro BR069572026
-- [NOVO] TSE NACIONAL?, REAL TIME BIG DATA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2000, registro BR029522026
-- [NOVO] TSE NACIONAL?, VERITA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=15554, registro BR063962026
-- [NOVO] TSE NACIONAL?, ALFA INTELIGENCIA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2700, registro BR008202026
-- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 16/10-20/10, divulgação 2026-10-20, N=3000, registro BR078962026
+- [aguardando desde 2026-10-20] TSE ESTADUAL[DF], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 13/10-16/10, divulgação 2026-10-20, N=1141, registro BR033262026
+- [aguardando desde 2026-10-20] TSE ESTADUAL[RN], DATATRENDS (Presidente), campo 16/10-18/10, divulgação 2026-10-20, N=1200, registro BR075852026
+- [aguardando desde 2026-10-20] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2000, registro BR006402026
+- [aguardando desde 2026-10-20] TSE NACIONAL?, #NULO# (Presidente), campo 22/10-23/10, divulgação 2026-10-20, N=3000, registro BR069572026
+- [aguardando desde 2026-10-20] TSE NACIONAL?, VERITA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=15554, registro BR063962026
+- [aguardando desde 2026-10-20] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 16/10-20/10, divulgação 2026-10-20, N=3000, registro BR078962026
 
 ## Últimas publicações do Veritá
 
