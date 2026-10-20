@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 19/10/2026 22:03. Mercados: Polymarket 22,5%/76,8%, Kalshi 22,0%/79,0%.
+Rodada de 20/10/2026 06:21. Mercados: Polymarket 22,5%/76,8%, Kalshi 22,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -21,6 +21,14 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-19] TSE NACIONAL?, DATATRENDS (Presidente), campo 15/10-17/10, divulgação 2026-10-19, N=2000, registro BR044542026
 - [aguardando desde 2026-10-19] TSE NACIONAL?, INSTITUTO RANKING PESQUISA (Presidente), campo 14/10-16/10, divulgação 2026-10-19, N=2100, registro BR001522026
 - [aguardando desde 2026-10-19] TSE NACIONAL?, 100 CIDADES (Presidente), campo 16/10-17/10, divulgação 2026-10-19, N=2000, registro BR067152026
+- [NOVO] TSE ESTADUAL[DF], INSTITUTO FRANCA DE PESQUISA (Presidente), campo 13/10-16/10, divulgação 2026-10-20, N=1141, registro BR033262026
+- [NOVO] TSE ESTADUAL[RN], DATATRENDS (Presidente), campo 16/10-18/10, divulgação 2026-10-20, N=1200, registro BR075852026
+- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2000, registro BR006402026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 22/10-23/10, divulgação 2026-10-20, N=3000, registro BR069572026
+- [NOVO] TSE NACIONAL?, REAL TIME BIG DATA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2000, registro BR029522026
+- [NOVO] TSE NACIONAL?, VERITA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=15554, registro BR063962026
+- [NOVO] TSE NACIONAL?, ALFA INTELIGENCIA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2700, registro BR008202026
+- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 16/10-20/10, divulgação 2026-10-20, N=3000, registro BR078962026
 
 ## Últimas publicações do Veritá
 
@@ -39,8 +47,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | NACIONAL? | ATLASINTEL | Presidente | 03/10-08/10 | 5000 | BR036632026 |
-| 2026-10-09 | NACIONAL? | #NULO# | Presidente | 05/10-07/10 | 2100 | BR096232026 |
 | 2026-10-10 | ESTADUAL[CE] | INSTITUTO OPNUS | Presidente | 04/10-04/10 | 4800 | BR047152026 |
 | 2026-10-10 | ESTADUAL[TO] | DIRECT PESQUISAS | Presidente | 06/10-10/10 | 1200 | BR057932026 |
 | 2026-10-10 | NACIONAL? | #NULO# | Presidente | 06/10-08/10 | 1500 | BR009332026 |
@@ -85,4 +91,12 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-19 | NACIONAL? | 100 CIDADES | Presidente | 16/10-17/10 | 2000 | BR067152026 |
 | 2026-10-19 | NACIONAL? | NEXUS | Presidente | 16/10-18/10 | 2000 | BR044992026 |
 | 2026-10-19 | NACIONAL? | ATLASINTEL | Presidente | 13/10-18/10 | 5000 | BR024182026 |
+| 2026-10-20 | ESTADUAL[DF] | INSTITUTO FRANCA DE PESQUISA | Presidente | 13/10-16/10 | 1141 | BR033262026 |
+| 2026-10-20 | ESTADUAL[RN] | DATATRENDS | Presidente | 16/10-18/10 | 1200 | BR075852026 |
+| 2026-10-20 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 15/10-19/10 | 2000 | BR006402026 |
+| 2026-10-20 | NACIONAL? | #NULO# | Presidente | 22/10-23/10 | 3000 | BR069572026 |
+| 2026-10-20 | NACIONAL? | REAL TIME BIG DATA | Presidente | 15/10-19/10 | 2000 | BR029522026 |
+| 2026-10-20 | NACIONAL? | VERITA | Presidente | 15/10-19/10 | 15554 | BR063962026 |
+| 2026-10-20 | NACIONAL? | ALFA INTELIGENCIA | Presidente | 15/10-19/10 | 2700 | BR008202026 |
+| 2026-10-20 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 16/10-20/10 | 3000 | BR078962026 |
 
