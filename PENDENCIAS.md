@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 20/10/2026 21:33. Mercados: Polymarket 19,5%/81,0%, Kalshi 21,0%/81,0%.
+Rodada de 21/10/2026 06:18. Mercados: Polymarket 19,5%/80,2%, Kalshi 19,0%/81,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -26,6 +26,15 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-20] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2000, registro BR006402026
 - [aguardando desde 2026-10-20] TSE NACIONAL?, #NULO# (Presidente), campo 22/10-23/10, divulgação 2026-10-20, N=3000, registro BR069572026
 - [aguardando desde 2026-10-20] TSE NACIONAL?, VERITA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=15554, registro BR063962026
+- [NOVO] TSE ESTADUAL[DF], #NULO# (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=1104, registro BR031632026
+- [NOVO] TSE ESTADUAL[RN], QUALITTA EMPREENDIMENTOS (Presidente), campo 16/10-20/10, divulgação 2026-10-21, N=1200, registro BR025002026
+- [NOVO] TSE ESTADUAL[RN], DATA PLUS PESQUISA E CONSULT (Presidente), campo 16/10-19/10, divulgação 2026-10-21, N=1500, registro BR046272026
+- [NOVO] TSE ESTADUAL[TO], DATA POP PESQUISA (Presidente), campo 10/10-14/10, divulgação 2026-10-21, N=1000, registro BR016832026
+- [NOVO] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=2400, registro BR038352026
+- [NOVO] TSE NACIONAL?, BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 15/10-19/10, divulgação 2026-10-21, N=1500, registro BR082512026
+- [NOVO] TSE NACIONAL?, PALVER (Presidente), campo 16/10-20/10, divulgação 2026-10-21, N=5000, registro BR046122026
+- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 19/10-20/10, divulgação 2026-10-21, N=2000, registro BR066142026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=2154, registro BR085352026
 
 ## Últimas publicações do Veritá
 
@@ -44,9 +53,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-10 | ESTADUAL[CE] | INSTITUTO OPNUS | Presidente | 04/10-04/10 | 4800 | BR047152026 |
-| 2026-10-10 | ESTADUAL[TO] | DIRECT PESQUISAS | Presidente | 06/10-10/10 | 1200 | BR057932026 |
-| 2026-10-10 | NACIONAL? | #NULO# | Presidente | 06/10-08/10 | 1500 | BR009332026 |
 | 2026-10-11 | ESTADUAL[RN] | INSTITUTO SETA DE PESQUISA | Presidente | 07/10-10/10 | 1500 | BR044872026 |
 | 2026-10-11 | NACIONAL? | DATATRENDS | Presidente | 07/10-09/10 | 2000 | BR035762026 |
 | 2026-10-11 | NACIONAL? | CORREIO DO POVO TOCANTINENSE | Presidente | 06/10-12/10 | 1600 | BR067782026 |
@@ -96,4 +102,13 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-20 | NACIONAL? | ALFA INTELIGENCIA | Presidente | 15/10-19/10 | 2700 | BR008202026 |
 | 2026-10-20 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 15/10-19/10 | 2000 | BR006402026 |
 | 2026-10-20 | NACIONAL? | VERITA | Presidente | 15/10-19/10 | 15554 | BR063962026 |
+| 2026-10-21 | ESTADUAL[DF] | #NULO# | Presidente | 17/10-20/10 | 1104 | BR031632026 |
+| 2026-10-21 | ESTADUAL[RN] | QUALITTA EMPREENDIMENTOS | Presidente | 16/10-20/10 | 1200 | BR025002026 |
+| 2026-10-21 | ESTADUAL[RN] | DATA PLUS PESQUISA E CONSULT | Presidente | 16/10-19/10 | 1500 | BR046272026 |
+| 2026-10-21 | ESTADUAL[TO] | DATA POP PESQUISA | Presidente | 10/10-14/10 | 1000 | BR016832026 |
+| 2026-10-21 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 17/10-20/10 | 2400 | BR038352026 |
+| 2026-10-21 | NACIONAL? | BOAS IDEIAS, ESTRATEGIA E IN | Presidente | 15/10-19/10 | 1500 | BR082512026 |
+| 2026-10-21 | NACIONAL? | PALVER | Presidente | 16/10-20/10 | 5000 | BR046122026 |
+| 2026-10-21 | NACIONAL? | 100 CIDADES | Presidente | 19/10-20/10 | 2000 | BR066142026 |
+| 2026-10-21 | NACIONAL? | #NULO# | Presidente | 17/10-20/10 | 2154 | BR085352026 |
 
