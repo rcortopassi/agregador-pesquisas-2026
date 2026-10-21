@@ -2138,14 +2138,5 @@
    "visto": "2026-10-21"
   }
  ],
- "verita_pendentes": [
-  {
-   "id": "c4a804a2-abef-443b-9357-1ce21ca5377a",
-   "titulo": "Pesquisa para Presidente no Brasil",
-   "descricao": "Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 12 a 16 de outubro.",
-   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792597282291_Relatorio_Brasil_10.2026.pdf",
-   "created_at": "2026-10-21T15:41:28.154764+00:00",
-   "visto": "2026-10-21"
-  }
- ]
+ "verita_pendentes": []
 }

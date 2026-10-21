@@ -6,6 +6,29 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 21/10, NOITE (rodada local, fila de 27 itens: 26 TSE + 1 Veritá): NENHUM DADO ENTROU NO PAINEL
+  NESTA RODADA. O item Veritá era o mesmo PDF `Relatorio_Brasil_10.2026` já confirmado em 18/10
+  (BR-01107/2026, 12-16/10, já no `DI`/`T2R`/`IM`) reaparecendo no feed com `created_at` de 21/10;
+  `--resolver` aplicado no id do Veritá (`c4a804a2-...`), sem mudança no painel. Dos 26 TSE, 18 são
+  os mesmos já exaustivamente checados em 18-20/10 (ver notas abaixo) e seguem sem divulgação
+  encontrada. OITO SÃO NOVOS, todos com divulgação 21/10 (hoje), e BUSCA NA WEB NÃO ACHOU NÚMERO
+  PARA NENHUM (esperado: saíram no próprio dia, podem não estar indexados ainda). Ficam na fila,
+  não inserir sem confirmar: (1) BR-03835/2026, GERP, NACIONAL, campo 17-20/10, N=2.400 — seria a
+  3ª rodada de outubro da casa (já tem 8-12/10 no painel, 53x47 válidos; achei também uma rodada
+  intermediária de 14-16/10, 52x48 válidos, divulgada mas NÃO registrada nesta fila do TSE, não
+  inserida: fora do radar desta rodada); (2) BR-04612/2026, PALVER, NACIONAL, campo 16-20/10,
+  N=5.000 — já tem rodada de 30/9-3/10 no painel; (3) BR-08535/2026, NACIONAL? contratante Globo
+  (TV/Rede Globo), campo 17-20/10, N=2.154 — mesmo N e mesmo contratante da Quaest de 10-13/10 já
+  no painel (Flávio 46x44), seria a rodada seguinte da casa; (4) BR-03163/2026, ESTADUAL[DF],
+  #NULO# contratante Globo, campo 17-20/10, N=1.104 — mesmo N e contratante da Quaest DF de
+  8-11/10 já usada no `PRES26` (Flávio 50x40), seria atualização para o Mapa; (5) BR-06614/2026,
+  100 CIDADES, contratante Futura, NACIONAL, campo 19-20/10, N=2.000 — CUIDADO com a confusão de
+  nome "Apex/Futura" x "100 Cidades"/"Futura/100% Cidades" já registrada em 19/10 abaixo, conferir
+  o PDF original antes de substituir a linha; (6) BR-02500/2026, QUALITTA, ESTADUAL[RN], campo
+  16-20/10, N=1.200; (7) BR-04627/2026, DATA PLUS, ESTADUAL[RN], campo 16-19/10, N=1.500; (8)
+  BR-01683/2026, DATA POP, ESTADUAL[TO], campo 10-14/10, N=1.000. Nenhum destes oito tem cobertura
+  de imprensa indexada ainda; todos candidatos a `PRES26` (os estaduais) ou substituição no
+  `DI`/`T2R` de outubro (os nacionais) na próxima rodada que os encontrar.
 - 20/10, NOITE: OUTUBRO SUMIU DO GRÁFICO E VOLTOU. O `chartSVG` só plotava mês com ao menos uma
   linha de 1º turno no `DI` (`avgMonth(m)[2]>0`). A troca do Instituto França (rodada só de 2º
   turno) tirou a ÚLTIMA linha de outubro com 1º turno, e o ponto do `CEN1T_OUT` caiu junto. Agora
