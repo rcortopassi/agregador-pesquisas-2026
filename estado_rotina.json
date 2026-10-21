@@ -1852,6 +1852,7 @@
   "bdfa17c5-1662-4d9b-9a93-ca7027c5b44d",
   "beff5530-c579-4cdf-88ba-f03859576a71",
   "c14c5f5b-8218-4747-a9ec-f68f78333e10",
+  "c4a804a2-abef-443b-9357-1ce21ca5377a",
   "c6dd6aaa-6d80-4b84-ac45-10c45a84b0f7",
   "c7b3fc80-fe7e-4319-983b-ad48002badc0",
   "c95a78e5-c76b-4cc4-a124-30a00001d8f7",
@@ -1874,7 +1875,7 @@
   "f6f61fbd-9279-4ed9-9277-fd646400f2fb",
   "f9b892c3-9ebc-4423-bde5-30b8890ba735"
  ],
- "ultima_rodada": "2026-10-21T12:07:40.145441-03:00",
+ "ultima_rodada": "2026-10-21T17:04:35.782084-03:00",
  "pendentes": [
   {
    "proto": "BR018802026",
@@ -2137,5 +2138,14 @@
    "visto": "2026-10-21"
   }
  ],
- "verita_pendentes": []
+ "verita_pendentes": [
+  {
+   "id": "c4a804a2-abef-443b-9357-1ce21ca5377a",
+   "titulo": "Pesquisa para Presidente no Brasil",
+   "descricao": "Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 12 a 16 de outubro.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792597282291_Relatorio_Brasil_10.2026.pdf",
+   "created_at": "2026-10-21T15:41:28.154764+00:00",
+   "visto": "2026-10-21"
+  }
+ ]
 }
