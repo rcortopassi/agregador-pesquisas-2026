@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 21/10/2026 06:18. Mercados: Polymarket 19,5%/80,2%, Kalshi 19,0%/81,0%.
+Rodada de 21/10/2026 12:07. Mercados: Polymarket 22,5%/77,7%, Kalshi 23,0%/80,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -26,15 +26,14 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-20] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=2000, registro BR006402026
 - [aguardando desde 2026-10-20] TSE NACIONAL?, #NULO# (Presidente), campo 22/10-23/10, divulgação 2026-10-20, N=3000, registro BR069572026
 - [aguardando desde 2026-10-20] TSE NACIONAL?, VERITA (Presidente), campo 15/10-19/10, divulgação 2026-10-20, N=15554, registro BR063962026
-- [NOVO] TSE ESTADUAL[DF], #NULO# (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=1104, registro BR031632026
-- [NOVO] TSE ESTADUAL[RN], QUALITTA EMPREENDIMENTOS (Presidente), campo 16/10-20/10, divulgação 2026-10-21, N=1200, registro BR025002026
-- [NOVO] TSE ESTADUAL[RN], DATA PLUS PESQUISA E CONSULT (Presidente), campo 16/10-19/10, divulgação 2026-10-21, N=1500, registro BR046272026
-- [NOVO] TSE ESTADUAL[TO], DATA POP PESQUISA (Presidente), campo 10/10-14/10, divulgação 2026-10-21, N=1000, registro BR016832026
-- [NOVO] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=2400, registro BR038352026
-- [NOVO] TSE NACIONAL?, BOAS IDEIAS, ESTRATEGIA E IN (Presidente), campo 15/10-19/10, divulgação 2026-10-21, N=1500, registro BR082512026
-- [NOVO] TSE NACIONAL?, PALVER (Presidente), campo 16/10-20/10, divulgação 2026-10-21, N=5000, registro BR046122026
-- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 19/10-20/10, divulgação 2026-10-21, N=2000, registro BR066142026
-- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=2154, registro BR085352026
+- [aguardando desde 2026-10-21] TSE ESTADUAL[DF], #NULO# (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=1104, registro BR031632026
+- [aguardando desde 2026-10-21] TSE ESTADUAL[RN], QUALITTA EMPREENDIMENTOS (Presidente), campo 16/10-20/10, divulgação 2026-10-21, N=1200, registro BR025002026
+- [aguardando desde 2026-10-21] TSE ESTADUAL[RN], DATA PLUS PESQUISA E CONSULT (Presidente), campo 16/10-19/10, divulgação 2026-10-21, N=1500, registro BR046272026
+- [aguardando desde 2026-10-21] TSE ESTADUAL[TO], DATA POP PESQUISA (Presidente), campo 10/10-14/10, divulgação 2026-10-21, N=1000, registro BR016832026
+- [aguardando desde 2026-10-21] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=2400, registro BR038352026
+- [aguardando desde 2026-10-21] TSE NACIONAL?, PALVER (Presidente), campo 16/10-20/10, divulgação 2026-10-21, N=5000, registro BR046122026
+- [aguardando desde 2026-10-21] TSE NACIONAL?, 100 CIDADES (Presidente), campo 19/10-20/10, divulgação 2026-10-21, N=2000, registro BR066142026
+- [aguardando desde 2026-10-21] TSE NACIONAL?, #NULO# (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=2154, registro BR085352026
 
 ## Últimas publicações do Veritá
 
