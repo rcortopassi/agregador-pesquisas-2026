@@ -1955,16 +1955,6 @@
    "visto": "2026-10-18"
   },
   {
-   "proto": "BR043322026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "15/10-17/10",
-   "div": "2026-10-18",
-   "n": "2100",
-   "visto": "2026-10-18"
-  },
-  {
    "proto": "BR088092026",
    "escopo": "NACIONAL?",
    "inst": "INSTITUTO PHOENIX & ASSOCIAD",
@@ -1985,16 +1975,6 @@
    "visto": "2026-10-19"
   },
   {
-   "proto": "BR044542026",
-   "escopo": "NACIONAL?",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "15/10-17/10",
-   "div": "2026-10-19",
-   "n": "2000",
-   "visto": "2026-10-19"
-  },
-  {
    "proto": "BR001522026",
    "escopo": "NACIONAL?",
    "inst": "INSTITUTO RANKING PESQUISA",
@@ -2002,16 +1982,6 @@
    "campo": "14/10-16/10",
    "div": "2026-10-19",
    "n": "2100",
-   "visto": "2026-10-19"
-  },
-  {
-   "proto": "BR067152026",
-   "escopo": "NACIONAL?",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "16/10-17/10",
-   "div": "2026-10-19",
-   "n": "2000",
    "visto": "2026-10-19"
   },
   {
@@ -2105,46 +2075,6 @@
    "visto": "2026-10-21"
   },
   {
-   "proto": "BR038352026",
-   "escopo": "NACIONAL?",
-   "inst": "GRUPO GERP GERP MERCADO GERP",
-   "cargo": "Presidente",
-   "campo": "17/10-20/10",
-   "div": "2026-10-21",
-   "n": "2400",
-   "visto": "2026-10-21"
-  },
-  {
-   "proto": "BR046122026",
-   "escopo": "NACIONAL?",
-   "inst": "PALVER",
-   "cargo": "Presidente",
-   "campo": "16/10-20/10",
-   "div": "2026-10-21",
-   "n": "5000",
-   "visto": "2026-10-21"
-  },
-  {
-   "proto": "BR066142026",
-   "escopo": "NACIONAL?",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "19/10-20/10",
-   "div": "2026-10-21",
-   "n": "2000",
-   "visto": "2026-10-21"
-  },
-  {
-   "proto": "BR085352026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "17/10-20/10",
-   "div": "2026-10-21",
-   "n": "2154",
-   "visto": "2026-10-21"
-  },
-  {
    "proto": "BR008752026",
    "escopo": "ESTADUAL[DF]",
    "inst": "#NULO#",
@@ -2162,16 +2092,6 @@
    "campo": "19/10-21/10",
    "div": "2026-10-22",
    "n": "1500",
-   "visto": "2026-10-22"
-  },
-  {
-   "proto": "BR079262026",
-   "escopo": "NACIONAL?",
-   "inst": "PODERDATA",
-   "cargo": "Presidente",
-   "campo": "19/10-21/10",
-   "div": "2026-10-22",
-   "n": "4000",
    "visto": "2026-10-22"
   },
   {
