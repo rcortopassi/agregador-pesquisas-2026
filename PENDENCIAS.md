@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 21/10/2026 21:37. Mercados: Polymarket 20,5%/79,1%, Kalshi 20,0%/80,0%.
+Rodada de 22/10/2026 06:21. Mercados: Polymarket 21,5%/78,8%, Kalshi 22,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -34,6 +34,13 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-21] TSE NACIONAL?, PALVER (Presidente), campo 16/10-20/10, divulgação 2026-10-21, N=5000, registro BR046122026
 - [aguardando desde 2026-10-21] TSE NACIONAL?, 100 CIDADES (Presidente), campo 19/10-20/10, divulgação 2026-10-21, N=2000, registro BR066142026
 - [aguardando desde 2026-10-21] TSE NACIONAL?, #NULO# (Presidente), campo 17/10-20/10, divulgação 2026-10-21, N=2154, registro BR085352026
+- [NOVO] TSE ESTADUAL[DF], #NULO# (Presidente), campo 20/10-22/10, divulgação 2026-10-22, N=910, registro BR008752026
+- [NOVO] TSE ESTADUAL[RN], EXATUS CONSULTORIA E PESQUIS (Presidente), campo 19/10-21/10, divulgação 2026-10-22, N=1500, registro BR057042026
+- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 19/10-21/10, divulgação 2026-10-22, N=4000, registro BR079262026
+- [NOVO] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 20/10-21/10, divulgação 2026-10-22, N=2000, registro BR023482026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 16/10-19/10, divulgação 2026-10-22, N=1000, registro BR098582026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 20/10-22/10, divulgação 2026-10-22, N=2520, registro BR097092026
+- [NOVO] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 21/10-24/10, divulgação 2026-10-22, N=2400, registro BR093272026
 
 ## Últimas publicações do Veritá
 
@@ -52,9 +59,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-11 | ESTADUAL[RN] | INSTITUTO SETA DE PESQUISA | Presidente | 07/10-10/10 | 1500 | BR044872026 |
-| 2026-10-11 | NACIONAL? | DATATRENDS | Presidente | 07/10-09/10 | 2000 | BR035762026 |
-| 2026-10-11 | NACIONAL? | CORREIO DO POVO TOCANTINENSE | Presidente | 06/10-12/10 | 1600 | BR067782026 |
 | 2026-10-12 | ESTADUAL[AM] | PODERDATA | Presidente | 08/10-11/10 | 1200 | BR071932026 |
 | 2026-10-12 | ESTADUAL[DF] | #NULO# | Presidente | 08/10-11/10 | 1104 | BR067992026 |
 | 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR064822026 |
@@ -110,4 +114,11 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-21 | NACIONAL? | PALVER | Presidente | 16/10-20/10 | 5000 | BR046122026 |
 | 2026-10-21 | NACIONAL? | 100 CIDADES | Presidente | 19/10-20/10 | 2000 | BR066142026 |
 | 2026-10-21 | NACIONAL? | #NULO# | Presidente | 17/10-20/10 | 2154 | BR085352026 |
+| 2026-10-22 | ESTADUAL[DF] | #NULO# | Presidente | 20/10-22/10 | 910 | BR008752026 |
+| 2026-10-22 | ESTADUAL[RN] | EXATUS CONSULTORIA E PESQUIS | Presidente | 19/10-21/10 | 1500 | BR057042026 |
+| 2026-10-22 | NACIONAL? | PODERDATA | Presidente | 19/10-21/10 | 4000 | BR079262026 |
+| 2026-10-22 | NACIONAL? | INDEXA PESQUISAS | Presidente | 20/10-21/10 | 2000 | BR023482026 |
+| 2026-10-22 | NACIONAL? | #NULO# | Presidente | 16/10-19/10 | 1000 | BR098582026 |
+| 2026-10-22 | NACIONAL? | #NULO# | Presidente | 20/10-22/10 | 2520 | BR097092026 |
+| 2026-10-22 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 21/10-24/10 | 2400 | BR093272026 |
 
