@@ -1349,27 +1349,15 @@
   // (t2valid('out')). Incerteza = o mesmo desvio da projeção do 1º turno (PREV1T_FINAL.proj.sd, 3,5
   // pontos na margem), que acertou a urna com erro de 1,4. Faixa de 90% = centro ± 1,645 desvios.
   // Recalcula sozinha a cada pesquisa nova. Ao abrir a apuração (25/10), congelar os números.
-  function prevFaixa90(){ if(!URNA1T||!PREV1T_FINAL) return ''; var r=prev2T(); if(!r||!r.A||!r.B) return ''; var mO=r.B.m;
-    var c=(r.A.m+mO)/2, sd=PREV1T_FINAL.proj.sd, z9=1.645, z5=0.674;
-    var fC=Math.round((50-c/2)*10)/10, pc=[Math.round((100-fC)*10)/10, fC], f9=[50-(c+z9*sd)/2, 50-(c-z9*sd)/2], f5=[50-(c+z5*sd)/2, 50-(c-z5*sd)/2];
-    var l9=[100-f9[1], 100-f9[0]], pF=ncdf(-c/sd), pL=1-pF, lid=pF>=0.5?'Flávio':'Lula', pLid=Math.max(pF,pL), fav=pF>=0.5?P.blue:P.red;
-    // régua: participação do Flávio em votos válidos, de 44 a 58
-    var X0=44,X1=58, W=640, xs=function(v){ return (20+(Math.max(X0,Math.min(X1,v))-X0)/(X1-X0)*(W-40)).toFixed(1); };
-    var ticks=''; for(var t=X0;t<=X1;t+=2) ticks+='<line x1="'+xs(t)+'" y1="58" x2="'+xs(t)+'" y2="63" stroke="'+P.mut+'"/><text x="'+xs(t)+'" y="76" font-size="10.5" fill="'+P.txt2+'" text-anchor="middle">'+t+'</text>';
-    var svg='<svg viewBox="0 0 '+W+' 84" style="width:100%; height:auto; display:block;">'+
-      '<rect x="'+xs(f9[0])+'" y="22" width="'+(xs(f9[1])-xs(f9[0])).toFixed(1)+'" height="30" rx="4" fill="none" stroke="'+P.blue+'" stroke-width="1.6" stroke-dasharray="5,3"/>'+
-      '<rect x="'+xs(f5[0])+'" y="26" width="'+(xs(f5[1])-xs(f5[0])).toFixed(1)+'" height="22" rx="3" fill="'+P.blue+'" fill-opacity="0.55"/>'+
-      '<text x="'+(+xs(f9[0])+4)+'" y="41" font-size="10" fill="'+P.blue+'">90%: '+fmt(f9[0])+'</text><text x="'+(+xs(f9[1])-4)+'" y="41" font-size="10" fill="'+P.blue+'" text-anchor="end">'+fmt(f9[1])+'</text>'+
-      '<text x="'+xs(f5[0])+'" y="20" font-size="10" fill="'+P.ink+'" text-anchor="middle">'+fmt(f5[0])+'</text><text x="'+xs(f5[1])+'" y="20" font-size="10" fill="'+P.ink+'" text-anchor="middle">'+fmt(f5[1])+'</text>'+
-      '<line x1="'+xs(50)+'" y1="22" x2="'+xs(50)+'" y2="58" stroke="'+P.ink+'" stroke-width="1.5" stroke-dasharray="4,3"/><text x="'+xs(50)+'" y="9" font-size="10.5" fill="'+P.ink+'" text-anchor="end">quem passa de 50% vence &#8594;&nbsp;</text>'+
-      '<line x1="'+xs(pc[1])+'" y1="18" x2="'+xs(pc[1])+'" y2="56" stroke="'+P.blue+'" stroke-width="3"/>'+
-      '<line x1="20" y1="58" x2="'+(W-20)+'" y2="58" stroke="'+P.mut+'"/>'+ticks+'</svg>';
+  function prevFinal2T(){ if(!URNA1T||!PREV1T_FINAL) return null; var r=prev2T(); if(!r||!r.A||!r.B) return null;
+    var c=(r.A.m+r.B.m)/2, sd=PREV1T_FINAL.proj.sd, z9=1.645, z5=0.674, fC=Math.round((50-c/2)*10)/10;
+    var f9=[50-(c+z9*sd)/2, 50-(c-z9*sd)/2], f5=[50-(c+z5*sd)/2, 50-(c-z5*sd)/2], pF=ncdf(-c/sd);
+    return {r:r, c:c, sd:sd, f:fC, l:Math.round((100-fC)*10)/10, f9:f9, l9:[100-f9[1],100-f9[0]], f5:f5, l5:[100-f5[1],100-f5[0]], pF:pF}; }
+  function prevFaixa90(){ var q=prevFinal2T(); if(!q) return ''; var lid=q.pF>=0.5?'Flávio':'Lula', pl=Math.max(q.pF,1-q.pF), fav=q.pF>=0.5?P.blue:P.red;
     return '<div style="margin:12px 12px 4px; padding:12px 14px; border:1px solid '+P.bord+'; border-left:4px solid '+fav+'; border-radius:6px; background:'+P.surf2+';">'+
-      '<div style="font-size:13px; font-weight:700; color:'+P.ink+';">2º turno: onde o resultado deve cair, com 90% de chance</div>'+
-      '<div style="font-size:20px; font-weight:800; margin:6px 0 2px;"><span style="color:'+P.blue+';">Flávio '+fmt(pc[1])+'</span> <span style="color:'+P.mut+'; font-weight:500;">x</span> <span style="color:'+P.red+';">Lula '+fmt(pc[0])+'</span> <span style="font-size:12px; color:'+P.txt2+'; font-weight:500;">em votos válidos, cenário central</span></div>'+
-      '<div style="font-size:12.5px; color:'+P.txt+'; line-height:1.55;">Com 90% de chance: <b style="color:'+P.blue+';">Flávio entre '+fmt(f9[0])+' e '+fmt(f9[1])+'</b> e <b style="color:'+P.red+';">Lula entre '+fmt(l9[0])+' e '+fmt(l9[1])+'</b>. Faixa de 50% (o bloco cheio na régua; a de 90% é o contorno tracejado): Flávio entre '+fmt(f5[0])+' e '+fmt(f5[1])+'. Chance de vitória: <b style="color:'+fav+';">'+lid+' '+Math.round(pLid*100)+'%</b>.</div>'+
-      svg+
-      '<div style="font-size:11px; color:'+P.txt2+'; line-height:1.5; margin-top:4px;">Régua: votos válidos do Flávio. Centro = média de dois caminhos: a urna do 1º turno com a transferência dos outros candidatos (Flávio '+fmt(r.A.f)+' x Lula '+fmt(r.A.l)+', '+Math.round(r.tf.t*100)+'% dos '+fmt(r.bloco)+' pontos para o Flávio) e as pesquisas de outubro corrigidas pelo house effect (margem '+(mO<=0?'Flávio +':'Lula +')+fmt(Math.abs(mO))+', '+Object.keys(T2R.out).length+' institutos). A incerteza é a mesma da projeção do 1º turno, '+fmt(sd)+' pontos na margem, que errou a urna por 1,4. Faixa larga de propósito: no 2º turno de 2022 vários institutos erraram a margem em 2 a 5 pontos. Atualiza sozinha a cada pesquisa nova.</div></div>';
+      '<div style="font-size:13px; font-weight:700; color:'+P.ink+';">Previsão do 2º turno (25/10), em votos válidos</div>'+
+      '<div style="font-size:20px; font-weight:800; margin:6px 0 2px;"><span style="color:'+P.blue+';">Flávio '+fmt(q.f)+'</span> <span style="color:'+P.mut+'; font-weight:500;">x</span> <span style="color:'+P.red+';">Lula '+fmt(q.l)+'</span> <span style="font-size:13px; color:'+fav+'; font-weight:700;">&nbsp;'+lid+' '+Math.round(pl*100)+'% de chance</span></div>'+
+      '<div style="font-size:12.5px; color:'+P.txt+'; line-height:1.55;">Com 90% de chance o resultado fica entre <b style="color:'+P.blue+';">Flávio '+fmt(q.f9[0])+' e '+fmt(q.f9[1])+'</b> (e Lula entre '+fmt(q.l9[0])+' e '+fmt(q.l9[1])+'). É um número só: a média das contas A e B, que aparecem no gráfico do 2º turno abaixo como pontos menores.</div></div>';
   }
   function prev2T(){ var P0=projeta26(); if(!P0) return null;
     // Depois de 4/10 o caminho A parte da urna do 1º turno, não da projeção (06/10/2026). A transferência é a mesma.
@@ -1952,7 +1940,7 @@
     var ms=months.filter(function(m){ return T2R[m]&&t2valid(m)!==null; }); if(!ms.length) return '';
     var n=ms.length, W=680, Hh=300, L=44, R=130, T=20, B=46, pw=W-L-R, ph=Hh-T-B, lo=44, hi=56;
     function X(i){ return L+i*pw/n; } function Y(v){ return T+(hi-v)/(hi-lo)*ph; }
-    var xe=X(n), xA=xe-18, xB=xe+18, g='', pl='', pf='', dots='';
+    var xe=X(n), xA=xe-30, xB=xe-12, xF=xe+22, g='', pl='', pf='', dots='', QF=prevFinal2T();
     for(var v=lo; v<=hi; v+=2) g+='<line x1="'+L+'" y1="'+Y(v).toFixed(1)+'" x2="'+(W-R+56)+'" y2="'+Y(v).toFixed(1)+'" stroke="'+(v===50?P.txt2:P.bsoft)+'"'+(v===50?' stroke-dasharray="5,4" stroke-opacity="0.7"':'')+'/><text x="'+(L-8)+'" y="'+(Y(v)+4).toFixed(1)+'" text-anchor="end" font-size="11" fill="'+P.mut+'">'+v+'</text>';
     for(var i=0;i<n;i++){ var mg=t2valid(ms[i]), l=50+mg/2, f=50-mg/2; pl+=X(i).toFixed(1)+','+Y(l).toFixed(1)+' '; pf+=X(i).toFixed(1)+','+Y(f).toFixed(1)+' ';
       PJXP['m2-'+ms[i]]='<b>2º turno perguntado em '+ms[i]+'</b>: mediana de '+Object.keys(T2R[ms[i]]).length+' pesquisas, em votos válidos e com o house effect de 2º turno: <b style="color:'+P.red+';">Lula '+fmt(l)+'</b> x <b style="color:'+P.blue+';">Flávio '+fmt(f)+'</b>.';
@@ -1961,22 +1949,29 @@
         '<text x="'+X(i).toFixed(1)+'" y="'+((l>=f?Y(l)-9:Y(l)+16)).toFixed(1)+'" text-anchor="middle" font-size="10.5" fill="'+P.red+'">'+fmt(l)+'</text><text x="'+X(i).toFixed(1)+'" y="'+((l>=f?Y(f)+16:Y(f)-9)).toFixed(1)+'" text-anchor="middle" font-size="10.5" fill="'+P.blue+'">'+fmt(f)+'</text>'; }
     var fim='', lad='<rect x="'+(xe-40).toFixed(1)+'" y="'+T+'" width="'+(W-R+56-(xe-40)).toFixed(1)+'" height="'+ph+'" fill="'+P.gold+'" fill-opacity="0.05"/>';
     if(Q.A){ PJXP['a2t']='<b>Conta A</b>: parte da urna do 1º turno (Flávio '+fmt2(URNA1T.f)+' x Lula '+fmt2(URNA1T.l)+') e reparte os '+fmt(Q.bloco)+' pontos dos demais candidatos pela transferência medida nas pesquisas ('+Math.round(Q.tf.t*100)+'% para o Flávio, '+Q.tf.n+' pares). Dá <b style="color:'+P.blue+';">Flávio '+fmt(Q.A.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt(Q.A.l)+'</b>.';
-      fim+=pvCol(xA,Y(Q.A.l),Y(Q.A.f),Q.A.l,Q.A.f,-1,'f','a2t'); }
+      fim+='<g style="cursor:pointer;" onclick="pjExp(\'a2t\')" opacity="0.55"><circle cx="'+xA.toFixed(1)+'" cy="'+Y(Q.A.f).toFixed(1)+'" r="4" fill="'+P.blue+'"/><circle cx="'+xA.toFixed(1)+'" cy="'+Y(Q.A.l).toFixed(1)+'" r="4" fill="'+P.red+'"/><rect x="'+(xA-8)+'" y="'+T+'" width="16" height="'+ph+'" fill="transparent"/></g>'; }
     if(Q.B){ PJXP['b2t']='<b>Conta B</b>: o 2º turno perguntado pelos institutos em '+Q.mesB+', em votos válidos e com o house effect de 2º turno: <b style="color:'+P.blue+';">Flávio '+fmt(Q.B.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt(Q.B.l)+'</b>.';
-      fim+=pvCol(xB,Y(Q.B.l),Y(Q.B.f),Q.B.l,Q.B.f,1,'o','b2t'); }
+      fim+='<g style="cursor:pointer;" onclick="pjExp(\'b2t\')" opacity="0.55"><circle cx="'+xB.toFixed(1)+'" cy="'+Y(Q.B.f).toFixed(1)+'" r="3.4" fill="none" stroke="'+P.blue+'" stroke-width="1.6"/><circle cx="'+xB.toFixed(1)+'" cy="'+Y(Q.B.l).toFixed(1)+'" r="3.4" fill="none" stroke="'+P.red+'" stroke-width="1.6"/><rect x="'+(xB-8)+'" y="'+T+'" width="16" height="'+ph+'" fill="transparent"/></g>'; }
+    if(QF){ PJXP['f2t']='<b>Previsão</b>: média das contas A e B, <b style="color:'+P.blue+';">Flávio '+fmt(QF.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt(QF.l)+'</b>. A barra fina é a faixa de 90% (Flávio de '+fmt(QF.f9[0])+' a '+fmt(QF.f9[1])+'; Lula de '+fmt(QF.l9[0])+' a '+fmt(QF.l9[1])+'), a grossa a de 50%. Incerteza igual à da projeção do 1º turno, '+fmt(QF.sd)+' pontos na margem.';
+      var bar=function(a,b,w,cor,op,dx){ return '<rect x="'+(xF+dx-w/2).toFixed(1)+'" y="'+Y(b).toFixed(1)+'" width="'+w+'" height="'+(Y(a)-Y(b)).toFixed(1)+'" rx="'+(w/2)+'" fill="'+cor+'" fill-opacity="'+op+'"/>'; };
+      fim+='<g style="cursor:pointer;" onclick="pjExp(\'f2t\')">'+bar(QF.f9[0],QF.f9[1],3,P.blue,0.55,4)+bar(QF.f5[0],QF.f5[1],8,P.blue,0.6,4)+bar(QF.l9[0],QF.l9[1],3,P.red,0.55,-4)+bar(QF.l5[0],QF.l5[1],8,P.red,0.6,-4)+
+        '<circle cx="'+(xF+4)+'" cy="'+Y(QF.f).toFixed(1)+'" r="6.5" fill="'+P.blue+'" stroke="'+P.surf+'" stroke-width="1.5"/><circle cx="'+(xF-4)+'" cy="'+Y(QF.l).toFixed(1)+'" r="6.5" fill="'+P.red+'" stroke="'+P.surf+'" stroke-width="1.5"/>'+
+        '<text x="'+(xF+16)+'" y="'+(Y(QF.f)+5).toFixed(1)+'" font-size="15" font-weight="800" fill="'+P.blue+'">'+fmt(QF.f)+'</text><text x="'+(xF+16)+'" y="'+(Y(QF.l)+5).toFixed(1)+'" font-size="15" font-weight="800" fill="'+P.red+'">'+fmt(QF.l)+'</text>'+
+        '<text x="'+(xF+16)+'" y="'+(Y(QF.f9[1])+4).toFixed(1)+'" font-size="10" fill="'+P.txt2+'">'+fmt(QF.f9[1])+'</text><text x="'+(xF+16)+'" y="'+(Y(QF.l9[0])+4).toFixed(1)+'" font-size="10" fill="'+P.txt2+'">'+fmt(QF.l9[0])+'</text>'+
+        '<rect x="'+(xF-12)+'" y="'+T+'" width="56" height="'+ph+'" fill="transparent"/></g>'; }
     var rot=ms.map(function(m,i){ return '<text x="'+X(i).toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="12" fill="'+P.txt2+'">'+m+'</text>'; }).join('')+
-      (Q.A?'<text x="'+xA.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.goldtxt+'">A</text>':'')+(Q.B?'<text x="'+xB.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.goldtxt+'">B</text>':'')+
+      (Q.A?'<text x="'+xA.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.goldtxt+'">A</text>':'')+(Q.B?'<text x="'+xB.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.goldtxt+'">B</text>':'')+(QF?'<text x="'+xF.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="11" font-weight="800" fill="'+P.ink+'">Previsão</text>':'')+
       '<text x="'+xe.toFixed(1)+'" y="'+(Hh-10)+'" text-anchor="middle" font-size="11" fill="'+P.txt2+'">25/out</text>';
     var mA=Q.A?Q.A.m:null, mB=Q.B?Q.B.m:null, conc=(mA!==null&&mB!==null)?((mA>=0)===(mB>=0)):null;
     function lado(m){ return (m>=0?'Lula':'Flávio')+' +'+fmt(Math.abs(m)); }
     return '<div style="padding:12px 14px 0; font-size:13px; font-weight:600; color:'+P.ink+';">2º turno: a previsão para 25 de outubro</div>'+
       pvLeg([pvSw('<span style="width:18px; height:3px; background:'+P.red+'; display:inline-block;"></span>','Lula'),pvSw('<span style="width:18px; height:3px; background:'+P.blue+'; display:inline-block;"></span>','Flávio'),
-        pvSw('<span style="width:9px; height:9px; border-radius:50%; background:'+P.txt2+'; display:inline-block;"></span>','A: urna do 1º turno e transferência'),pvSw('<span style="width:9px; height:9px; border-radius:50%; border:2px solid '+P.txt2+'; display:inline-block;"></span>','B: 2º turno perguntado')])+
+        pvSw('<span style="width:12px; height:12px; border-radius:50%; background:'+P.ink+'; display:inline-block;"></span>','Previsão, com faixas de 50% e 90%'),pvSw('<span style="width:7px; height:7px; border-radius:50%; background:'+P.txt2+'; opacity:.6; display:inline-block;"></span>','A: urna e transferência'),pvSw('<span style="width:7px; height:7px; border-radius:50%; border:1.5px solid '+P.txt2+'; opacity:.6; display:inline-block;"></span>','B: pesquisas de outubro')])+
       '<svg viewBox="0 0 '+W+' '+Hh+'" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2o turno: pesquisas mensais em votos validos e as duas contas para 25 de outubro">'+
       g+lad+'<polyline fill="none" stroke="'+P.red+'" stroke-width="2.5" points="'+pl+'"/><polyline fill="none" stroke="'+P.blue+'" stroke-width="2.5" points="'+pf+'"/>'+dots+fim+rot+'</svg>'+
       '<div style="padding:2px 14px 10px; font-size:12px; color:'+P.txt+'; line-height:1.55;">'+
         (mA!==null?'Conta A: <b>'+lado(mA)+'</b>. ':'')+(mB!==null?'Conta B: <b>'+lado(mB)+'</b>. ':'')+
-        (conc===null?'':(conc?'As duas contas apontam para o mesmo lado.':'As duas contas apontam para lados opostos.'))+' A linha mostra o 2º turno que os institutos perguntaram mês a mês, em votos válidos e com house effect.</div>'+
+        (conc===null?'':(conc?'As duas contas apontam para o mesmo lado.':'As duas contas apontam para lados opostos.'))+(QF?' A previsão é a média das duas: <b>Flávio '+fmt(QF.f)+' x Lula '+fmt(QF.l)+'</b>.':'')+' A linha mostra o 2º turno que os institutos perguntaram mês a mês, em votos válidos e com house effect.</div>'+
       '<div id="pj-exp" style="margin:6px 14px 12px; padding:9px 12px; font-size:12px; line-height:1.55; color:'+P.txt+'; background:'+P.surf2+'; border:1px solid '+P.bord+'; border-left:3px solid '+P.bord+'; border-radius:6px;">Toque em qualquer ponto dos dois gráficos para ver de onde sai o número.</div>'; }
   function prevSVG(){ return URNA1T ? prevSVG1T()+prevSVG2T() : prevSVGpre(); }
   function prevSVGpre(){
