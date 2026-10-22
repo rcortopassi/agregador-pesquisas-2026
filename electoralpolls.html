@@ -1344,13 +1344,40 @@
   // divergirem. A = 1º turno projetado (projeta26) + transferência implícita (transfFlv).
   // B = 2º turno perguntado no mês âncora, em válidos, com house effect de 2º turno (t2valid).
   // Retorna null se não houver projeção; cada caminho pode vir null separadamente.
+  // FAIXA DE 90% DO 2º TURNO (21/10/2026, a pedido do Rafael). Centro = média dos dois caminhos do
+  // 2º turno: A (urna do 1º turno + transferência) e as pesquisas de OUTUBRO com house effect
+  // (t2valid('out')). Incerteza = o mesmo desvio da projeção do 1º turno (PREV1T_FINAL.proj.sd, 3,5
+  // pontos na margem), que acertou a urna com erro de 1,4. Faixa de 90% = centro ± 1,645 desvios.
+  // Recalcula sozinha a cada pesquisa nova. Ao abrir a apuração (25/10), congelar os números.
+  function prevFaixa90(){ if(!URNA1T||!PREV1T_FINAL) return ''; var r=prev2T(); if(!r||!r.A||!r.B) return ''; var mO=r.B.m;
+    var c=(r.A.m+mO)/2, sd=PREV1T_FINAL.proj.sd, z9=1.645, z5=0.674;
+    var fC=Math.round((50-c/2)*10)/10, pc=[Math.round((100-fC)*10)/10, fC], f9=[50-(c+z9*sd)/2, 50-(c-z9*sd)/2], f5=[50-(c+z5*sd)/2, 50-(c-z5*sd)/2];
+    var l9=[100-f9[1], 100-f9[0]], pF=ncdf(-c/sd), pL=1-pF, lid=pF>=0.5?'Flávio':'Lula', pLid=Math.max(pF,pL), fav=pF>=0.5?P.blue:P.red;
+    // régua: participação do Flávio em votos válidos, de 44 a 58
+    var X0=44,X1=58, W=640, xs=function(v){ return (20+(Math.max(X0,Math.min(X1,v))-X0)/(X1-X0)*(W-40)).toFixed(1); };
+    var ticks=''; for(var t=X0;t<=X1;t+=2) ticks+='<line x1="'+xs(t)+'" y1="58" x2="'+xs(t)+'" y2="63" stroke="'+P.mut+'"/><text x="'+xs(t)+'" y="76" font-size="10.5" fill="'+P.txt2+'" text-anchor="middle">'+t+'</text>';
+    var svg='<svg viewBox="0 0 '+W+' 84" style="width:100%; height:auto; display:block;">'+
+      '<rect x="'+xs(f9[0])+'" y="22" width="'+(xs(f9[1])-xs(f9[0])).toFixed(1)+'" height="30" rx="4" fill="'+P.blue+'" fill-opacity="0.18" stroke="'+P.blue+'" stroke-opacity="0.5"/>'+
+      '<rect x="'+xs(f5[0])+'" y="22" width="'+(xs(f5[1])-xs(f5[0])).toFixed(1)+'" height="30" rx="4" fill="'+P.blue+'" fill-opacity="0.38"/>'+
+      '<line x1="'+xs(50)+'" y1="12" x2="'+xs(50)+'" y2="58" stroke="'+P.ink+'" stroke-width="1.5" stroke-dasharray="4,3"/><text x="'+xs(50)+'" y="9" font-size="10.5" fill="'+P.ink+'" text-anchor="middle">50%: quem passa daqui vence</text>'+
+      '<line x1="'+xs(pc[1])+'" y1="18" x2="'+xs(pc[1])+'" y2="56" stroke="'+P.blue+'" stroke-width="3"/>'+
+      '<line x1="20" y1="58" x2="'+(W-20)+'" y2="58" stroke="'+P.mut+'"/>'+ticks+'</svg>';
+    return '<div style="margin:12px 12px 4px; padding:12px 14px; border:1px solid '+P.bord+'; border-left:4px solid '+fav+'; border-radius:6px; background:'+P.surf2+';">'+
+      '<div style="font-size:13px; font-weight:700; color:'+P.ink+';">2º turno: onde o resultado deve cair, com 90% de chance</div>'+
+      '<div style="font-size:20px; font-weight:800; margin:6px 0 2px;"><span style="color:'+P.blue+';">Flávio '+fmt(pc[1])+'</span> <span style="color:'+P.mut+'; font-weight:500;">x</span> <span style="color:'+P.red+';">Lula '+fmt(pc[0])+'</span> <span style="font-size:12px; color:'+P.txt2+'; font-weight:500;">em votos válidos, cenário central</span></div>'+
+      '<div style="font-size:12.5px; color:'+P.txt+'; line-height:1.55;">Com 90% de chance: <b style="color:'+P.blue+';">Flávio entre '+fmt(f9[0])+' e '+fmt(f9[1])+'</b> e <b style="color:'+P.red+';">Lula entre '+fmt(l9[0])+' e '+fmt(l9[1])+'</b>. Faixa de 50% (a mais escura): Flávio entre '+fmt(f5[0])+' e '+fmt(f5[1])+'. Chance de vitória: <b style="color:'+fav+';">'+lid+' '+Math.round(pLid*100)+'%</b>.</div>'+
+      svg+
+      '<div style="font-size:11px; color:'+P.txt2+'; line-height:1.5; margin-top:4px;">Régua: votos válidos do Flávio. Centro = média de dois caminhos: a urna do 1º turno com a transferência dos outros candidatos (Flávio '+fmt(r.A.f)+' x Lula '+fmt(r.A.l)+', '+Math.round(r.tf.t*100)+'% dos '+fmt(r.bloco)+' pontos para o Flávio) e as pesquisas de outubro corrigidas pelo house effect (margem '+(mO<=0?'Flávio +':'Lula +')+fmt(Math.abs(mO))+', '+Object.keys(T2R.out).length+' institutos). A incerteza é a mesma da projeção do 1º turno, '+fmt(sd)+' pontos na margem, que errou a urna por 1,4. Faixa larga de propósito: no 2º turno de 2022 vários institutos erraram a margem em 2 a 5 pontos. Atualiza sozinha a cada pesquisa nova.</div></div>';
+  }
   function prev2T(){ var P0=projeta26(); if(!P0) return null;
     // Depois de 4/10 o caminho A parte da urna do 1º turno, não da projeção (06/10/2026). A transferência é a mesma.
     var b1=URNA1T||P0, tf=transfFlv(), bloco=100-b1.l-b1.f, A=null, B=null;
     if(tf&&bloco>0){ var F2=b1.f+tf.t*bloco, L2=b1.l+(1-tf.t)*bloco;
       A={l:L2, f:F2, m:L2-F2, beq:(1+(b1.l-b1.f)/bloco)/2}; }
-    var mB=t2valid(P0.anc); if(mB!==null) B={l:50+mB/2, f:50-mB/2, m:mB};
-    return {P0:P0, tf:tf, bloco:bloco, A:A, B:B}; }
+    // 21/10/2026 (pedido do Rafael): depois da urna do 1º turno a conta B lê as pesquisas de 2º turno de
+    // OUTUBRO. Antes lia P0.anc ('set', a âncora congelada do 1º turno) e ficava presa a setembro.
+    var mesB=URNA1T?'out':P0.anc, mB=t2valid(mesB); if(mB!==null) B={l:50+mB/2, f:50-mB/2, m:mB};
+    return {P0:P0, tf:tf, bloco:bloco, A:A, B:B, mesB:mesB}; }
   // PLACAR DO 2º TURNO (11/08/2026, a pedido do usuário). O banner mostrava o 1º turno como
   // placar ("Lula 41,5 · Flávio 37,3") e o 2º turno só como margem ("Lula +3,5"), o que obrigava
   // o leitor a imaginar os dois níveis do cenário que de fato decide a eleição. Agora os dois
@@ -1933,7 +1960,7 @@
     var fim='', lad='<rect x="'+(xe-40).toFixed(1)+'" y="'+T+'" width="'+(W-R+56-(xe-40)).toFixed(1)+'" height="'+ph+'" fill="'+P.gold+'" fill-opacity="0.05"/>';
     if(Q.A){ PJXP['a2t']='<b>Conta A</b>: parte da urna do 1º turno (Flávio '+fmt2(URNA1T.f)+' x Lula '+fmt2(URNA1T.l)+') e reparte os '+fmt(Q.bloco)+' pontos dos demais candidatos pela transferência medida nas pesquisas ('+Math.round(Q.tf.t*100)+'% para o Flávio, '+Q.tf.n+' pares). Dá <b style="color:'+P.blue+';">Flávio '+fmt(Q.A.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt(Q.A.l)+'</b>.';
       fim+=pvCol(xA,Y(Q.A.l),Y(Q.A.f),Q.A.l,Q.A.f,-1,'f','a2t'); }
-    if(Q.B){ PJXP['b2t']='<b>Conta B</b>: o 2º turno perguntado pelos institutos em '+PREV1T_FINAL.anc+', em votos válidos e com o house effect de 2º turno: <b style="color:'+P.blue+';">Flávio '+fmt(Q.B.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt(Q.B.l)+'</b>.';
+    if(Q.B){ PJXP['b2t']='<b>Conta B</b>: o 2º turno perguntado pelos institutos em '+Q.mesB+', em votos válidos e com o house effect de 2º turno: <b style="color:'+P.blue+';">Flávio '+fmt(Q.B.f)+'</b> x <b style="color:'+P.red+';">Lula '+fmt(Q.B.l)+'</b>.';
       fim+=pvCol(xB,Y(Q.B.l),Y(Q.B.f),Q.B.l,Q.B.f,1,'o','b2t'); }
     var rot=ms.map(function(m,i){ return '<text x="'+X(i).toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="12" fill="'+P.txt2+'">'+m+'</text>'; }).join('')+
       (Q.A?'<text x="'+xA.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.goldtxt+'">A</text>':'')+(Q.B?'<text x="'+xB.toFixed(1)+'" y="'+(Hh-26)+'" text-anchor="middle" font-size="10.5" font-weight="700" fill="'+P.goldtxt+'">B</text>':'')+
@@ -2198,7 +2225,7 @@
         det+='O caminho <b>A</b> pega '+(URNA1T?'o resultado oficial do 1º turno':'o 1º turno projetado acima')+' e reparte o bloco de '+fmt(bloco)+' pontos das terceiras vias: nas '+tf.n+' pesquisas que perguntaram os dois turnos juntas, a fração desse bloco que migra para o Flávio tem mediana de <b>'+Math.round(tf.t*100)+'%</b> (todas entre '+Math.round(tf.lo*100)+'% e '+Math.round(tf.hi*100)+'%), e ele precisaria de '+fmt(Q.A.beq*100)+'% para empatar. ';
       }
       if(Q.B){
-        det+='O caminho <b>B</b> usa o 2º turno que os institutos perguntaram em '+P0.anc+', em válidos e com o house effect de 2º turno. ';
+        det+='O caminho <b>B</b> usa o 2º turno que os institutos perguntaram em '+Q.mesB+', em válidos e com o house effect de 2º turno. ';
       }
       if(lados){ det+='<b style="color:'+P.goldtxt+';">A divergência é a informação:</b> '; }
       else { det+='<b style="color:'+P.goldtxt+';">As duas apontam para o mesmo lado</b>, e a distância entre elas é de '
@@ -2704,7 +2731,7 @@
       return;
     }
     if(prev){
-      document.getElementById('table-area').innerHTML=prevTexto()+prevSVG();
+      document.getElementById('table-area').innerHTML=prevFaixa90()+prevTexto()+prevSVG();
       document.getElementById('note').textContent='Projeção do 1º turno para 4 de outubro, em votos válidos. A linha cheia é o que as pesquisas mediram mês a mês; a pontilhada é a projeção, que corrige o agregado de hoje pelo erro que o campo cometeu neste mesmo ponto do calendário em 2010, 2014, 2018 e 2022. Os pesos de cada ciclo são recalculados sozinhos e mudam quando entra pesquisa nova.';
       document.getElementById('foot').innerHTML='Reconstruímos 390 pesquisas de 1º turno dos quatro ciclos, com a mesma régua deste painel (uma rodada por instituto por mês) e o mesmo denominador de votos válidos. O extrator reproduz o Datafolha final de 2022 (Lula 50 x Bolsonaro 36) e o Ibope final de 2014 (Dilma 46 x Aécio 27). Esta aba usa VOTOS VÁLIDOS, e não amostra total como a aba Gráfico, porque a urna não tem indeciso e essa é a única base em que pesquisa e resultado são comparáveis.';
       return; }
