@@ -6,6 +6,23 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 22/10, NOITE (rodada local, fila de 25 itens, igual à de 21/10 menos o Veritá resolvido mais
+  6 NOVOS, todos com divulgação 22/10): NENHUM DADO ENTROU NO PAINEL NESTA RODADA. Checados os 6
+  novos, busca na web não achou número para nenhum (esperado, saíram no próprio dia): (1)
+  BR-09709/2026, NACIONAL (`DS_DADO_MUNICIPIO` confirma Brasil), contratante Folha da Manhã
+  (Datafolha) + Globo, campo 20-22/10, N=2.520 — seria rodada nova do Datafolha, não achada; (2)
+  BR-02348/2026, INDEXA PESQUISAS, NACIONAL? (gêmeo não casado), contratante Agência
+  Estado/Broadcast, campo 20-21/10, N=2.000 — rodada SEGUINTE à que já está no painel (BR-04629,
+  13-14/10, Lula 42 x Flávio 44), não achada; (3) BR-00875/2026, ESTADUAL[DF] confirmado pelo
+  `DS_DADO_MUNICIPIO`, #NULO# contratante Globo, campo 20-22/10, N=910 — candidata a atualizar
+  `PRES26['DF']`, não achada; (4) BR-05704/2026, ESTADUAL[RN], EXATUS, contratante Grupo Agora
+  RN, campo 19-21/10, N=1.500 — candidata a `PRES26['RN']`, não achada; (5) BR-09858/2026,
+  NACIONAL? (gêmeo não casado, `DS_DADO_MUNICIPIO` também `#NULO#`), #NULO# contratante Sempre
+  Editora, campo 16-19/10, N=1.000 — não achada; (6) BR-09327/2026, GRUPO GERP, NACIONAL
+  confirmado, campo 21-24/10, N=2.400 — CAMPO AINDA NÃO TERMINOU, não investigar até 24/10. Os
+  demais itens da fila (de 08/10 a 21/10) já foram exaustivamente checados nas rodadas anteriores
+  (ver notas de 18 a 21/10 abaixo) e continuam sem divulgação encontrada; não repetidos nesta
+  rodada para não gastar busca em vão. Nenhum commit: nada mudou no painel.
 - 21/10, NOITE (rodada local, fila de 27 itens: 26 TSE + 1 Veritá): NENHUM DADO ENTROU NO PAINEL
   NESTA RODADA. O item Veritá era o mesmo PDF `Relatorio_Brasil_10.2026` já confirmado em 18/10
   (BR-01107/2026, 12-16/10, já no `DI`/`T2R`/`IM`) reaparecendo no feed com `created_at` de 21/10;
