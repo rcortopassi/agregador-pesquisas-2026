@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 22/10/2026 21:35. Mercados: Polymarket 24,5%/75,8%, Kalshi 26,0%/76,0%.
+Rodada de 23/10/2026 06:16. Mercados: Polymarket 23,5%/76,9%, Kalshi 23,0%/76,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -32,6 +32,22 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-22] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 20/10-21/10, divulgação 2026-10-22, N=2000, registro BR023482026
 - [aguardando desde 2026-10-22] TSE NACIONAL?, #NULO# (Presidente), campo 16/10-19/10, divulgação 2026-10-22, N=1000, registro BR098582026
 - [aguardando desde 2026-10-22] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 21/10-24/10, divulgação 2026-10-22, N=2400, registro BR093272026
+- [NOVO] TSE ESTADUAL[AC], DATA CONTROL INSTITUTO DE PE (Presidente), campo 18/10-22/10, divulgação 2026-10-23, N=1049, registro BR056542026
+- [NOVO] TSE ESTADUAL[AM], VERITA (Presidente), campo 18/10-22/10, divulgação 2026-10-23, N=1220, registro BR004422026
+- [NOVO] TSE ESTADUAL[AM], VERITA (Presidente), campo 18/10-22/10, divulgação 2026-10-23, N=1220, registro BR012142026
+- [NOVO] TSE ESTADUAL[AM], VERITA (Presidente), campo 18/10-22/10, divulgação 2026-10-23, N=1220, registro BR076912026
+- [NOVO] TSE ESTADUAL[AM], VERITA (Presidente), campo 18/10-22/10, divulgação 2026-10-23, N=1220, registro BR038262026
+- [NOVO] TSE ESTADUAL[AM], VERITA (Presidente), campo 18/10-22/10, divulgação 2026-10-23, N=1220, registro BR058272026
+- [NOVO] TSE ESTADUAL[RN], DATA CAPITAL PESQUISAS E CON (Presidente), campo 15/10-19/10, divulgação 2026-10-23, N=2000, registro BR029602026
+- [NOVO] TSE ESTADUAL[RN], DATATRENDS (Presidente), campo 19/10-21/10, divulgação 2026-10-23, N=1200, registro BR016382026
+- [NOVO] TSE ESTADUAL[RN], ITEM PESQUISAS TECNICAS (Presidente), campo 19/10-22/10, divulgação 2026-10-23, N=1250, registro BR023432026
+- [NOVO] TSE NACIONAL?, ALFA INTELIGENCIA (Presidente), campo 18/10-22/10, divulgação 2026-10-23, N=1200, registro BR084962026
+- [NOVO] TSE NACIONAL?, REAL TIME BIG DATA (Presidente), campo 19/10-22/10, divulgação 2026-10-23, N=2000, registro BR096702026
+- [NOVO] TSE NACIONAL?, VERITA (Presidente), campo 18/10-22/10, divulgação 2026-10-23, N=15554, registro BR060702026
+- [NOVO] TSE NACIONAL?, INST. DO NORTE DE OPINIAO PU (Presidente), campo 22/10-23/10, divulgação 2026-10-23, N=800, registro BR055852026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 20/10-22/10, divulgação 2026-10-23, N=2100, registro BR032592026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 20/10-22/10, divulgação 2026-10-23, N=1500, registro BR043502026
+- [NOVO] TSE NACIONAL?, DATATRENDS (Presidente), campo 19/10-21/10, divulgação 2026-10-23, N=2000, registro BR033652026
 
 ## Últimas publicações do Veritá
 
@@ -50,8 +66,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-12 | ESTADUAL[AM] | PODERDATA | Presidente | 08/10-11/10 | 1200 | BR071932026 |
-| 2026-10-12 | ESTADUAL[DF] | #NULO# | Presidente | 08/10-11/10 | 1104 | BR067992026 |
 | 2026-10-13 | ESTADUAL[AC] | DATA CONTROL INSTITUTO DE PE | Presidente | 07/10-13/10 | 1344 | BR034832026 |
 | 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR070442026 |
 | 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR064822026 |
@@ -112,4 +126,20 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-22 | NACIONAL? | #NULO# | Presidente | 20/10-22/10 | 2520 | BR097092026 |
 | 2026-10-22 | NACIONAL? | PODERDATA | Presidente | 19/10-21/10 | 4000 | BR079262026 |
 | 2026-10-22 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 21/10-24/10 | 2400 | BR093272026 |
+| 2026-10-23 | ESTADUAL[AC] | DATA CONTROL INSTITUTO DE PE | Presidente | 18/10-22/10 | 1049 | BR056542026 |
+| 2026-10-23 | ESTADUAL[AM] | VERITA | Presidente | 18/10-22/10 | 1220 | BR004422026 |
+| 2026-10-23 | ESTADUAL[AM] | VERITA | Presidente | 18/10-22/10 | 1220 | BR012142026 |
+| 2026-10-23 | ESTADUAL[AM] | VERITA | Presidente | 18/10-22/10 | 1220 | BR076912026 |
+| 2026-10-23 | ESTADUAL[AM] | VERITA | Presidente | 18/10-22/10 | 1220 | BR038262026 |
+| 2026-10-23 | ESTADUAL[AM] | VERITA | Presidente | 18/10-22/10 | 1220 | BR058272026 |
+| 2026-10-23 | ESTADUAL[RN] | DATA CAPITAL PESQUISAS E CON | Presidente | 15/10-19/10 | 2000 | BR029602026 |
+| 2026-10-23 | ESTADUAL[RN] | DATATRENDS | Presidente | 19/10-21/10 | 1200 | BR016382026 |
+| 2026-10-23 | ESTADUAL[RN] | ITEM PESQUISAS TECNICAS | Presidente | 19/10-22/10 | 1250 | BR023432026 |
+| 2026-10-23 | NACIONAL? | ALFA INTELIGENCIA | Presidente | 18/10-22/10 | 1200 | BR084962026 |
+| 2026-10-23 | NACIONAL? | REAL TIME BIG DATA | Presidente | 19/10-22/10 | 2000 | BR096702026 |
+| 2026-10-23 | NACIONAL? | VERITA | Presidente | 18/10-22/10 | 15554 | BR060702026 |
+| 2026-10-23 | NACIONAL? | INST. DO NORTE DE OPINIAO PU | Presidente | 22/10-23/10 | 800 | BR055852026 |
+| 2026-10-23 | NACIONAL? | #NULO# | Presidente | 20/10-22/10 | 2100 | BR032592026 |
+| 2026-10-23 | NACIONAL? | #NULO# | Presidente | 20/10-22/10 | 1500 | BR043502026 |
+| 2026-10-23 | NACIONAL? | DATATRENDS | Presidente | 19/10-21/10 | 2000 | BR033652026 |
 
