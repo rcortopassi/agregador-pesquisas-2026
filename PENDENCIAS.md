@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 22/10/2026 16:59. Mercados: Polymarket 22,5%/78,0%, Kalshi 22,0%/79,0%.
+Rodada de 22/10/2026 21:35. Mercados: Polymarket 24,5%/75,8%, Kalshi 26,0%/76,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -31,7 +31,6 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-22] TSE ESTADUAL[RN], EXATUS CONSULTORIA E PESQUIS (Presidente), campo 19/10-21/10, divulgação 2026-10-22, N=1500, registro BR057042026
 - [aguardando desde 2026-10-22] TSE NACIONAL?, INDEXA PESQUISAS (Presidente), campo 20/10-21/10, divulgação 2026-10-22, N=2000, registro BR023482026
 - [aguardando desde 2026-10-22] TSE NACIONAL?, #NULO# (Presidente), campo 16/10-19/10, divulgação 2026-10-22, N=1000, registro BR098582026
-- [aguardando desde 2026-10-22] TSE NACIONAL?, #NULO# (Presidente), campo 20/10-22/10, divulgação 2026-10-22, N=2520, registro BR097092026
 - [aguardando desde 2026-10-22] TSE NACIONAL?, GRUPO GERP GERP MERCADO GERP (Presidente), campo 21/10-24/10, divulgação 2026-10-22, N=2400, registro BR093272026
 
 ## Últimas publicações do Veritá
