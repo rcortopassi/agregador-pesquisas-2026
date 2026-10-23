@@ -6,6 +6,32 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 23/10, NOITE (rodada local, fila de 40 itens: 24 de 08/10-22/10 mais 16 NOVOS de hoje):
+  UMA ENTRADA no `DI`/`T2R`/`IM` nacional de outubro. Veritá, BR-06396/2026, 15-19/10, 15.554
+  entrevistas, SUBSTITUI a rodada de 12-16/10 (BR-01107/2026, Flávio 51,1 x Lula 48,9) por ter o
+  fim de campo mais recente (achado no Terra Brasil Notícias, divulgação 21/10): Flávio 50,7 x
+  Lula 49,3 em votos válidos, folga de 1,4 ponto (recuou de 2,2 para 1,4). Totais não publicados
+  na matéria; `u` (2,6) repetido da rodada anterior da casa, estimado. `--resolver` aplicado no
+  protocolo. Os demais 15 itens novos de hoje (todos com divulgação 23/10, saíram ontem ou hoje)
+  foram checados via busca na web e NENHUM TEM NÚMERO PUBLICADO AINDA (esperado, fila do próprio
+  dia): nacionais Alfa Inteligência (BR-08496, campo 18-22/10, N=1.200 — N menor que o Alfa
+  nacional de 15-19/10 já achado em 20/10, BR-00820, Flávio 48,8x45,9 totais/51,5x48,5 válidos,
+  pode não ser a mesma rodada), Real Time Big Data (BR-09670, campo 19-22/10, N=2.000 — mais
+  recente que a de 15-19/10 já achada em 20/10, Flávio 52x48 válidos, BR-02952), DataTrends
+  (BR-03365, campo 19-21/10, N=2.000 — mais recente que a de 7-9/10 já no painel, BR-03576),
+  Veritá segunda rodada nacional (BR-06070, campo 18-22/10, N=15.554, AINDA MAIS RECENTE que a
+  recém-inserida de 15-19/10 — busca não achou divulgação além de 21/10), Instituto do Norte de
+  Opinião Pública (BR-05585, N=800, instituto não localizado em nenhuma busca, pode ser pequeno
+  sem cobertura de imprensa) e dois `#NULO#` (BR-03259 N=2.100, BR-04350 N=1.500); estaduais Data
+  Control no Acre (BR-05654, campo 18-22/10 — mesma casa da rodada de 2º turno já no `PRES26`,
+  7-13/10), Veritá no Amazonas (cinco protocolos quase idênticos, BR-00442/BR-01214/BR-07691/
+  BR-03826/BR-05827, todos campo 18-22/10, N=1.220 — nenhuma pesquisa de outubro da Veritá no AM
+  achada, só rodadas de julho/setembro) e três no Rio Grande do Norte (Data Capital BR-02960,
+  DataTrends BR-01638, Item Pesquisas Técnicas BR-02343 — nenhum dos três institutos apareceu nas
+  buscas para o RN em outubro). Ficam todos na fila, não resolvidos, para a próxima rodada checar
+  de novo (podem sair na imprensa em 24/10). Os 24 itens de 08/10 a 22/10 já exaustivamente
+  checados nas rodadas anteriores não foram repetidos.
+
 - 22/10, NOITE (rodada local, fila de 25 itens, igual à de 21/10 menos o Veritá resolvido mais
   6 NOVOS, todos com divulgação 22/10): NENHUM DADO ENTROU NO PAINEL NESTA RODADA. Checados os 6
   novos, busca na web não achou número para nenhum (esperado, saíram no próprio dia): (1)
