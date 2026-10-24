@@ -6,6 +6,21 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 24/10, NOITE (rodada local, fila de 62 itens, véspera do 2º turno de 25/10): DUAS RODADAS
+  NACIONAIS SUBSTITUEM AS ANTERIORES em outubro (`DI`, `T2R`, `IM`), achadas no roundup do
+  Poder360 "a 1 dia da eleição" e confirmadas na íntegra em PDF (gráfico lido por imagem,
+  PyMuPDF, no caso da CNT/MDA). CNT/MDA, BR-02136/2026, 21-23/10, 2.032 entrevistas presenciais
+  (173ª rodada), substitui a de 13-15/10: totais Flávio 46,3 x Lula 45,0, branco/nulo 5,8,
+  indeciso 2,9 (u=8,7), válidos Flávio 50,71 x Lula 49,29 (confirma o 50,7x49,3 do Poder360).
+  Instituto França, BR-04863/2026, 21-23/10, 1.537 entrevistas, substitui a de 16-20/10: dossiê
+  em PDF, resultado geral Flávio 45,6 x Lula 43,1, branco/nulo 7,4, NS/NR 3,9 (u=11,3), válidos
+  Flávio 51,4 x Lula 48,6 (igual ao publicado). Também corrigido: Ipespe/Abrapel (BR-04350/2026,
+  20-22/10) já estava inserido pela sessão de nuvem da manhã, mas o protocolo não tinha sido
+  marcado `--resolver`; resolvido agora sem mudar o painel. Demais itens novos da fila (div.
+  24/10: AtlasIntel nacional + 5 rodadas estaduais quase idênticas no AM, Palver, Veritá 19-23/10
+  BR-03181, Nexus/BTG, 100 Cidades/Futura, Simplex e estaduais de TO/ES/RN/DF) checados via busca
+  na web, NENHUM TEM NÚMERO PUBLICADO AINDA (esperado: campo termina no mesmo dia da divulgação);
+  ficam na fila. Itens de 08/10 a 23/10 já exaustivamente checados antes não foram repetidos.
 - 24/10, MANHÃ (sessão de nuvem, a pedido do Rafael): QUATRO RODADAS FINAIS SUBSTITUEM AS ANTERIORES
   em outubro (`DI`, `T2R`, `IM`): Veritá 18-22/10 (BR-06070, 51,3 x 48,7 válidos p/ Flávio), Alfa
   18-22/10 (BR-08496, totais Flávio 49,9 x 46), Indexa 20-21/10 (BR-02348, totais 45,2 x 44,1) e
