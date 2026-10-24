@@ -6,6 +6,20 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 24/10, NOITE, ~19h (2ª rodada local, mesma fila de 59 itens): TRÊS RODADAS NACIONAIS FINAIS
+  SUBSTITUEM AS ANTERIORES em outubro (`DI`, `T2R`, `IM`), achadas direto nas manchetes do
+  Poder360 publicadas às 18h, véspera da eleição. Nexus/BTG, BR-08234/2026, 23-24/10, 2.000
+  entrevistas por telefone (10% em 23/10, 90% em 24/10): totais Flávio 47 x Lula 46 (u=7),
+  válidos Flávio 50,5 x Lula 49,5, substitui a de 16-18/10 (folga sobe de 0,6 para 1,0 ponto).
+  Gerp, BR-09327/2026, 22-24/10, 2.400 entrevistas por telefone: totais Flávio 49 x Lula 46,
+  não sabe 3, nenhum 1 (u=5), válidos Flávio 52 x Lula 48, substitui a de 19-21/10 (folga recua
+  de 6 para 4 pontos); por região Flávio lidera Norte/Centro-Oeste/Sul, Lula o Nordeste, Sudeste
+  empatado. Datafolha, BR-09540/2026, 23-24/10, 4.050 entrevistas presenciais: só válidos
+  publicados, Flávio 51 x Lula 49 (era empate 50 a 50 em 20-22/10); totais não divulgados nesta
+  matéria, u (7) repetido da rodada anterior, estimado. Os três protocolos foram resolvidos na
+  fila. Os demais itens (AtlasIntel nacional, Palver, Veritá nacional BR-03181, 100
+  Cidades/Futura, Simplex e os estaduais) seguem sem número publicado, checados via Poder360 e
+  busca na web; ficam na fila.
 - 24/10, NOITE (rodada local, fila de 62 itens, véspera do 2º turno de 25/10): DUAS RODADAS
   NACIONAIS SUBSTITUEM AS ANTERIORES em outubro (`DI`, `T2R`, `IM`), achadas no roundup do
   Poder360 "a 1 dia da eleição" e confirmadas na íntegra em PDF (gráfico lido por imagem,

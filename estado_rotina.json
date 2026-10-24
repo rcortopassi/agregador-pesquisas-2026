@@ -2139,16 +2139,6 @@
    "visto": "2026-10-22"
   },
   {
-   "proto": "BR093272026",
-   "escopo": "NACIONAL?",
-   "inst": "GRUPO GERP GERP MERCADO GERP",
-   "cargo": "Presidente",
-   "campo": "21/10-24/10",
-   "div": "2026-10-22",
-   "n": "2400",
-   "visto": "2026-10-22"
-  },
-  {
    "proto": "BR056542026",
    "escopo": "ESTADUAL[AC]",
    "inst": "DATA CONTROL INSTITUTO DE PE",
@@ -2439,16 +2429,6 @@
    "visto": "2026-10-24"
   },
   {
-   "proto": "BR095402026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "23/10-24/10",
-   "div": "2026-10-24",
-   "n": "4050",
-   "visto": "2026-10-24"
-  },
-  {
    "proto": "BR066492026",
    "escopo": "NACIONAL?",
    "inst": "INSTITUTO FRANCA DE PESQUISA",
@@ -2476,16 +2456,6 @@
    "campo": "19/10-23/10",
    "div": "2026-10-24",
    "n": "15554",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR082342026",
-   "escopo": "NACIONAL?",
-   "inst": "NEXUS",
-   "cargo": "Presidente",
-   "campo": "23/10-24/10",
-   "div": "2026-10-24",
-   "n": "2000",
    "visto": "2026-10-24"
   },
   {
