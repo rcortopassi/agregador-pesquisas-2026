@@ -6,6 +6,12 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 24/10, MANHÃ (sessão de nuvem, a pedido do Rafael): QUATRO RODADAS FINAIS SUBSTITUEM AS ANTERIORES
+  em outubro (`DI`, `T2R`, `IM`): Veritá 18-22/10 (BR-06070, 51,3 x 48,7 válidos p/ Flávio), Alfa
+  18-22/10 (BR-08496, totais Flávio 49,9 x 46), Indexa 20-21/10 (BR-02348, totais 45,2 x 44,1) e
+  Ipespe 20-22/10 (50,5 x 49,5 válidos, telefone). `u` do T2R: Alfa 4,1 e Indexa 10,7 dos totais;
+  Veritá 2,6 e Ipespe 7 herdados da rodada anterior. Só resumo de imprensa. Protocolos BR060702026,
+  BR084962026 e BR023482026 resolvidos na fila.
 - 23/10, NOITE (rodada local, fila de 40 itens: 24 de 08/10-22/10 mais 16 NOVOS de hoje):
   UMA ENTRADA no `DI`/`T2R`/`IM` nacional de outubro. Veritá, BR-06396/2026, 15-19/10, 15.554
   entrevistas, SUBSTITUI a rodada de 12-16/10 (BR-01107/2026, Flávio 51,1 x Lula 48,9) por ter o
