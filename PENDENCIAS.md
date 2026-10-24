@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 23/10/2026 21:33. Mercados: Polymarket 23,0%/76,7%, Kalshi 25,0%/76,0%.
+Rodada de 24/10/2026 05:49. Mercados: Polymarket 20,5%/79,3%, Kalshi 23,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -45,6 +45,34 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-23] TSE NACIONAL?, INST. DO NORTE DE OPINIAO PU (Presidente), campo 22/10-23/10, divulgação 2026-10-23, N=800, registro BR055852026
 - [aguardando desde 2026-10-23] TSE NACIONAL?, #NULO# (Presidente), campo 20/10-22/10, divulgação 2026-10-23, N=1500, registro BR043502026
 - [aguardando desde 2026-10-23] TSE NACIONAL?, DATATRENDS (Presidente), campo 19/10-21/10, divulgação 2026-10-23, N=2000, registro BR033652026
+- [NOVO] TSE ESTADUAL[AC], ATLASINTEL (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=1200, registro BR094992026
+- [NOVO] TSE ESTADUAL[AM], ATLASINTEL (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=1800, registro BR088482026
+- [NOVO] TSE ESTADUAL[AM], ATLASINTEL (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=1800, registro BR055812026
+- [NOVO] TSE ESTADUAL[AM], ATLASINTEL (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=1800, registro BR003392026
+- [NOVO] TSE ESTADUAL[AM], ATLASINTEL (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=1800, registro BR040622026
+- [NOVO] TSE ESTADUAL[AM], ATLASINTEL (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=1800, registro BR009572026
+- [NOVO] TSE ESTADUAL[DF], #NULO# (Presidente), campo 23/10-24/10, divulgação 2026-10-24, N=1620, registro BR031122026
+- [NOVO] TSE ESTADUAL[ES], #NULO# (Presidente), campo 21/10-23/10, divulgação 2026-10-24, N=1500, registro BR099072026
+- [NOVO] TSE ESTADUAL[RN], INSTITUTO SETA DE PESQUISA (Presidente), campo 23/10-24/10, divulgação 2026-10-24, N=1500, registro BR084992026
+- [NOVO] TSE ESTADUAL[RN], DATAVERO INSTITUTO DE PESQUI (Presidente), campo 22/10-24/10, divulgação 2026-10-24, N=1500, registro BR020092026
+- [NOVO] TSE ESTADUAL[TO], #NULO# (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=1500, registro BR059392026
+- [NOVO] TSE ESTADUAL[TO], CORREIO DO POVO TOCANTINENSE (Presidente), campo 17/10-22/10, divulgação 2026-10-24, N=1600, registro BR012022026
+- [NOVO] TSE NACIONAL?, PALVER (Presidente), campo 22/10-24/10, divulgação 2026-10-24, N=5000, registro BR017942026
+- [NOVO] TSE NACIONAL?, ATLASINTEL (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=5000, registro BR063802026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 21/10-23/10, divulgação 2026-10-24, N=2002, registro BR021362026
+- [NOVO] TSE NACIONAL?, 100 CIDADES (Presidente), campo 21/10-24/10, divulgação 2026-10-24, N=2000, registro BR097262026
+- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 19/10-23/10, divulgação 2026-10-24, N=1067, registro BR079372026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 23/10-23/10, divulgação 2026-10-24, N=3000, registro BR056012026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 23/10-24/10, divulgação 2026-10-24, N=3702, registro BR091582026
+- [NOVO] TSE NACIONAL?, #NULO# (Presidente), campo 23/10-24/10, divulgação 2026-10-24, N=4050, registro BR095402026
+- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 19/10-23/10, divulgação 2026-10-24, N=1067, registro BR066492026
+- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 19/10-23/10, divulgação 2026-10-24, N=1067, registro BR022092026
+- [NOVO] TSE NACIONAL?, VERITA (Presidente), campo 19/10-23/10, divulgação 2026-10-24, N=15554, registro BR031812026
+- [NOVO] TSE NACIONAL?, NEXUS (Presidente), campo 23/10-24/10, divulgação 2026-10-24, N=2000, registro BR082342026
+- [NOVO] TSE NACIONAL?, SIMPLEX CONSULTORIA ECONOMIC (Presidente), campo 19/10-23/10, divulgação 2026-10-24, N=1200, registro BR018232026
+- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 21/10-23/10, divulgação 2026-10-24, N=1537, registro BR048632026
+- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 19/10-23/10, divulgação 2026-10-24, N=1067, registro BR094592026
+- [NOVO] TSE NACIONAL?, INSTITUTO FRANCA DE PESQUISA (Presidente), campo 19/10-22/10, divulgação 2026-10-24, N=1067, registro BR061582026
 
 ## Últimas publicações do Veritá
 
@@ -63,16 +91,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | ESTADUAL[AC] | DATA CONTROL INSTITUTO DE PE | Presidente | 07/10-13/10 | 1344 | BR034832026 |
-| 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR070442026 |
-| 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR064822026 |
-| 2026-10-13 | ESTADUAL[AC] | #NULO# | Presidente | 09/10-12/10 | 1098 | BR039732026 |
-| 2026-10-13 | ESTADUAL[RN] | DATA CAPITAL PESQUISAS E CON | Presidente | 07/10-10/10 | 1500 | BR082652026 |
-| 2026-10-13 | NACIONAL? | NEXUS | Presidente | 10/10-12/10 | 2000 | BR079972026 |
-| 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 08/10-12/10 | 2400 | BR078772026 |
-| 2026-10-13 | NACIONAL? | GRUPO GERP GERP MERCADO GERP | Presidente | 14/10-16/10 | 2400 | BR051872026 |
-| 2026-10-13 | NACIONAL? | 100 CIDADES | Presidente | 07/10-10/10 | 2000 | BR006502026 |
-| 2026-10-13 | NACIONAL? | PODERDATA | Presidente | 10/10-12/10 | 3000 | BR012092026 |
 | 2026-10-14 | ESTADUAL[RN] | AFFARE INSTITUTE | Presidente | 09/10-12/10 | 1350 | BR057842026 |
 | 2026-10-14 | ESTADUAL[TO] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR019732026 |
 | 2026-10-14 | ESTADUAL[TO] | #NULO# | Presidente | 10/10-13/10 | 1098 | BR073372026 |
@@ -139,4 +157,32 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-23 | NACIONAL? | #NULO# | Presidente | 20/10-22/10 | 1500 | BR043502026 |
 | 2026-10-23 | NACIONAL? | INST. DO NORTE DE OPINIAO PU | Presidente | 22/10-23/10 | 800 | BR055852026 |
 | 2026-10-23 | NACIONAL? | REAL TIME BIG DATA | Presidente | 19/10-22/10 | 2000 | BR096702026 |
+| 2026-10-24 | ESTADUAL[AC] | ATLASINTEL | Presidente | 18/10-23/10 | 1200 | BR094992026 |
+| 2026-10-24 | ESTADUAL[AM] | ATLASINTEL | Presidente | 18/10-23/10 | 1800 | BR088482026 |
+| 2026-10-24 | ESTADUAL[AM] | ATLASINTEL | Presidente | 18/10-23/10 | 1800 | BR055812026 |
+| 2026-10-24 | ESTADUAL[AM] | ATLASINTEL | Presidente | 18/10-23/10 | 1800 | BR003392026 |
+| 2026-10-24 | ESTADUAL[AM] | ATLASINTEL | Presidente | 18/10-23/10 | 1800 | BR040622026 |
+| 2026-10-24 | ESTADUAL[AM] | ATLASINTEL | Presidente | 18/10-23/10 | 1800 | BR009572026 |
+| 2026-10-24 | ESTADUAL[DF] | #NULO# | Presidente | 23/10-24/10 | 1620 | BR031122026 |
+| 2026-10-24 | ESTADUAL[ES] | #NULO# | Presidente | 21/10-23/10 | 1500 | BR099072026 |
+| 2026-10-24 | ESTADUAL[RN] | INSTITUTO SETA DE PESQUISA | Presidente | 23/10-24/10 | 1500 | BR084992026 |
+| 2026-10-24 | ESTADUAL[RN] | DATAVERO INSTITUTO DE PESQUI | Presidente | 22/10-24/10 | 1500 | BR020092026 |
+| 2026-10-24 | ESTADUAL[TO] | #NULO# | Presidente | 18/10-23/10 | 1500 | BR059392026 |
+| 2026-10-24 | ESTADUAL[TO] | CORREIO DO POVO TOCANTINENSE | Presidente | 17/10-22/10 | 1600 | BR012022026 |
+| 2026-10-24 | NACIONAL? | PALVER | Presidente | 22/10-24/10 | 5000 | BR017942026 |
+| 2026-10-24 | NACIONAL? | ATLASINTEL | Presidente | 18/10-23/10 | 5000 | BR063802026 |
+| 2026-10-24 | NACIONAL? | #NULO# | Presidente | 21/10-23/10 | 2002 | BR021362026 |
+| 2026-10-24 | NACIONAL? | 100 CIDADES | Presidente | 21/10-24/10 | 2000 | BR097262026 |
+| 2026-10-24 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 19/10-23/10 | 1067 | BR079372026 |
+| 2026-10-24 | NACIONAL? | #NULO# | Presidente | 23/10-23/10 | 3000 | BR056012026 |
+| 2026-10-24 | NACIONAL? | #NULO# | Presidente | 23/10-24/10 | 3702 | BR091582026 |
+| 2026-10-24 | NACIONAL? | #NULO# | Presidente | 23/10-24/10 | 4050 | BR095402026 |
+| 2026-10-24 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 19/10-23/10 | 1067 | BR066492026 |
+| 2026-10-24 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 19/10-23/10 | 1067 | BR022092026 |
+| 2026-10-24 | NACIONAL? | VERITA | Presidente | 19/10-23/10 | 15554 | BR031812026 |
+| 2026-10-24 | NACIONAL? | NEXUS | Presidente | 23/10-24/10 | 2000 | BR082342026 |
+| 2026-10-24 | NACIONAL? | SIMPLEX CONSULTORIA ECONOMIC | Presidente | 19/10-23/10 | 1200 | BR018232026 |
+| 2026-10-24 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 21/10-23/10 | 1537 | BR048632026 |
+| 2026-10-24 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 19/10-23/10 | 1067 | BR094592026 |
+| 2026-10-24 | NACIONAL? | INSTITUTO FRANCA DE PESQUISA | Presidente | 19/10-22/10 | 1067 | BR061582026 |
 
