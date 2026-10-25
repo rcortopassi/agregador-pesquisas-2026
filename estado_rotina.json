@@ -1999,16 +1999,6 @@
    "visto": "2026-10-18"
   },
   {
-   "proto": "BR088092026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO PHOENIX & ASSOCIAD",
-   "cargo": "Presidente",
-   "campo": "13/10-16/10",
-   "div": "2026-10-18",
-   "n": "3999",
-   "visto": "2026-10-18"
-  },
-  {
    "proto": "BR090512026",
    "escopo": "ESTADUAL[TO]",
    "inst": "#NULO#",
@@ -2016,16 +2006,6 @@
    "campo": "14/10-17/10",
    "div": "2026-10-19",
    "n": "1500",
-   "visto": "2026-10-19"
-  },
-  {
-   "proto": "BR001522026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO RANKING PESQUISA",
-   "cargo": "Presidente",
-   "campo": "14/10-16/10",
-   "div": "2026-10-19",
-   "n": "2100",
    "visto": "2026-10-19"
   },
   {
@@ -2046,26 +2026,6 @@
    "campo": "16/10-18/10",
    "div": "2026-10-20",
    "n": "1200",
-   "visto": "2026-10-20"
-  },
-  {
-   "proto": "BR006402026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "15/10-19/10",
-   "div": "2026-10-20",
-   "n": "2000",
-   "visto": "2026-10-20"
-  },
-  {
-   "proto": "BR069572026",
-   "escopo": "NACIONAL?",
-   "inst": "#NULO#",
-   "cargo": "Presidente",
-   "campo": "22/10-23/10",
-   "div": "2026-10-20",
-   "n": "3000",
    "visto": "2026-10-20"
   },
   {
@@ -2149,56 +2109,6 @@
    "visto": "2026-10-23"
   },
   {
-   "proto": "BR004422026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "18/10-22/10",
-   "div": "2026-10-23",
-   "n": "1220",
-   "visto": "2026-10-23"
-  },
-  {
-   "proto": "BR012142026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "18/10-22/10",
-   "div": "2026-10-23",
-   "n": "1220",
-   "visto": "2026-10-23"
-  },
-  {
-   "proto": "BR076912026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "18/10-22/10",
-   "div": "2026-10-23",
-   "n": "1220",
-   "visto": "2026-10-23"
-  },
-  {
-   "proto": "BR038262026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "18/10-22/10",
-   "div": "2026-10-23",
-   "n": "1220",
-   "visto": "2026-10-23"
-  },
-  {
-   "proto": "BR058272026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "18/10-22/10",
-   "div": "2026-10-23",
-   "n": "1220",
-   "visto": "2026-10-23"
-  },
-  {
    "proto": "BR029602026",
    "escopo": "ESTADUAL[RN]",
    "inst": "DATA CAPITAL PESQUISAS E CON",
@@ -2227,86 +2137,6 @@
    "div": "2026-10-23",
    "n": "1250",
    "visto": "2026-10-23"
-  },
-  {
-   "proto": "BR055852026",
-   "escopo": "NACIONAL?",
-   "inst": "INST. DO NORTE DE OPINIAO PU",
-   "cargo": "Presidente",
-   "campo": "22/10-23/10",
-   "div": "2026-10-23",
-   "n": "800",
-   "visto": "2026-10-23"
-  },
-  {
-   "proto": "BR033652026",
-   "escopo": "NACIONAL?",
-   "inst": "DATATRENDS",
-   "cargo": "Presidente",
-   "campo": "19/10-21/10",
-   "div": "2026-10-23",
-   "n": "2000",
-   "visto": "2026-10-23"
-  },
-  {
-   "proto": "BR094992026",
-   "escopo": "ESTADUAL[AC]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "18/10-23/10",
-   "div": "2026-10-24",
-   "n": "1200",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR088482026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "18/10-23/10",
-   "div": "2026-10-24",
-   "n": "1800",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR055812026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "18/10-23/10",
-   "div": "2026-10-24",
-   "n": "1800",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR003392026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "18/10-23/10",
-   "div": "2026-10-24",
-   "n": "1800",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR040622026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "18/10-23/10",
-   "div": "2026-10-24",
-   "n": "1800",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR009572026",
-   "escopo": "ESTADUAL[AM]",
-   "inst": "ATLASINTEL",
-   "cargo": "Presidente",
-   "campo": "18/10-23/10",
-   "div": "2026-10-24",
-   "n": "1800",
-   "visto": "2026-10-24"
   },
   {
    "proto": "BR031122026",
@@ -2369,26 +2199,6 @@
    "visto": "2026-10-24"
   },
   {
-   "proto": "BR097262026",
-   "escopo": "NACIONAL?",
-   "inst": "100 CIDADES",
-   "cargo": "Presidente",
-   "campo": "21/10-24/10",
-   "div": "2026-10-24",
-   "n": "2000",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR079372026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "19/10-23/10",
-   "div": "2026-10-24",
-   "n": "1067",
-   "visto": "2026-10-24"
-  },
-  {
    "proto": "BR056012026",
    "escopo": "NACIONAL?",
    "inst": "#NULO#",
@@ -2396,66 +2206,6 @@
    "campo": "23/10-23/10",
    "div": "2026-10-24",
    "n": "3000",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR066492026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "19/10-23/10",
-   "div": "2026-10-24",
-   "n": "1067",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR022092026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "19/10-23/10",
-   "div": "2026-10-24",
-   "n": "1067",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR031812026",
-   "escopo": "NACIONAL?",
-   "inst": "VERITA",
-   "cargo": "Presidente",
-   "campo": "19/10-23/10",
-   "div": "2026-10-24",
-   "n": "15554",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR018232026",
-   "escopo": "NACIONAL?",
-   "inst": "SIMPLEX CONSULTORIA ECONOMIC",
-   "cargo": "Presidente",
-   "campo": "19/10-23/10",
-   "div": "2026-10-24",
-   "n": "1200",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR094592026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "19/10-23/10",
-   "div": "2026-10-24",
-   "n": "1067",
-   "visto": "2026-10-24"
-  },
-  {
-   "proto": "BR061582026",
-   "escopo": "NACIONAL?",
-   "inst": "INSTITUTO FRANCA DE PESQUISA",
-   "cargo": "Presidente",
-   "campo": "19/10-22/10",
-   "div": "2026-10-24",
-   "n": "1067",
    "visto": "2026-10-24"
   }
  ],
