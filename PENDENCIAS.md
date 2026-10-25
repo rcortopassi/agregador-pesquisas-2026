@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 25/10/2026 06:05. Mercados: Polymarket 20,5%/79,8%, Kalshi 20,0%/81,0%.
+Rodada de 25/10/2026 11:18. Mercados: Polymarket 21,5%/78,7%, Kalshi 21,0%/79,0%.
 
 ## Precisa de olho humano nesta rodada
 
@@ -36,9 +36,9 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-24] TSE ESTADUAL[TO], #NULO# (Presidente), campo 18/10-23/10, divulgação 2026-10-24, N=1500, registro BR059392026
 - [aguardando desde 2026-10-24] TSE ESTADUAL[TO], CORREIO DO POVO TOCANTINENSE (Presidente), campo 17/10-22/10, divulgação 2026-10-24, N=1600, registro BR012022026
 - [aguardando desde 2026-10-24] TSE NACIONAL?, #NULO# (Presidente), campo 23/10-23/10, divulgação 2026-10-24, N=3000, registro BR056012026
-- [NOVO] TSE ESTADUAL[RN], METADATA (Presidente), campo 22/10-24/10, divulgação 2026-10-25, N=1550, registro BR063412026
-- [NOVO] TSE NACIONAL?, PODERDATA (Presidente), campo 23/10-24/10, divulgação 2026-10-25, N=4000, registro BR028282026
-- [NOVO] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 19 a 23 de outubro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792889305750_Relatorio_Brasil_24_de_outubro_de_2026.pdf
+- [aguardando desde 2026-10-25] TSE ESTADUAL[RN], METADATA (Presidente), campo 22/10-24/10, divulgação 2026-10-25, N=1550, registro BR063412026
+- [aguardando desde 2026-10-25] TSE NACIONAL?, PODERDATA (Presidente), campo 23/10-24/10, divulgação 2026-10-25, N=4000, registro BR028282026
+- [aguardando desde 2026-10-25] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 19 a 23 de outubro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792889305750_Relatorio_Brasil_24_de_outubro_de_2026.pdf
 
 ## Últimas publicações do Veritá
 
