@@ -6,6 +6,12 @@ Arquivo do painel: `electoralpolls.html` (abre no navegador, dados embutidos no 
 
 ## ATENÇÃO — estado atual do painel (NÃO REVERTER)
 
+- 24/10, ~21H (sessão de nuvem, a pedido do Rafael): FINAIS DE QUAEST (23-24/10, totais 46 x 45 p/
+  Flávio, u 9), ATLASINTEL (18-23/10, BR-06380, totais 49,9 x 48,4, u 1,7) e PALVER (22-24/10,
+  BR-01794, 50 x 49, u 1) substituem as rodadas anteriores em outubro (`DI`, `T2R`, `IM`). Quadro
+  completo nos resumos; nenhum valor derivado. Protocolos resolvidos: BR017942026, BR063802026 e
+  BR091582026 (o #NULO# de 23-24/10, N=3.702, é a Quaest). Não localizados: 100 Cidades/Futura
+  (BR097262026), Simplex, Veritá 19-23/10 e o #NULO# de 23/10 com N=3.000.
 - 24/10, NOITE, ~19h (2ª rodada local, mesma fila de 59 itens): TRÊS RODADAS NACIONAIS FINAIS
   SUBSTITUEM AS ANTERIORES em outubro (`DI`, `T2R`, `IM`), achadas direto nas manchetes do
   Poder360 publicadas às 18h, véspera da eleição. Nexus/BTG, BR-08234/2026, 23-24/10, 2.000
