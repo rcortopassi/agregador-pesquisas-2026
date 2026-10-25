@@ -347,7 +347,7 @@ aberta. Código no painel: bloco "APURAÇÃO AO VIVO DO TSE", funções `res*`, 
 
 
 ## ENTRE OS DOIS TURNOS (desde 06/10/2026)
-- 21/10/2026: conta B do 2º turno (prev2T) lê t2valid('out') depois da urna, não mais P0.anc ('set'). Aba Previsão abre com prevFaixa90(): centro = média de A e B, desvio = PREV1T_FINAL.proj.sd, faixas de 90% e 50% e chance de vitória. Ao abrir a apuração de 25/10, congelar esses números num objeto fixo para comparação.
+- 21/10/2026: conta B do 2º turno (prev2T) lê t2valid('out') depois da urna, não mais P0.anc ('set'). Aba Previsão abre com prevFaixa90(): centro = média de A e B, desvio = PREV1T_FINAL.proj.sd, faixas de 90% e 50% e chance de vitória. FEITO às 7h50 de 25/10/2026: `PREV2T_FINAL` (Flávio 51,45 x Lula 48,55, chance do Flávio 79,6%, 90% entre Flávio 48,6 e 54,3). Não recalcular; serve para comparar com a urna.
 
 O painel foi ajustado para depois do 1º turno. Só apresentação: o método não mudou.
 
