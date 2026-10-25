@@ -349,6 +349,7 @@
   "BR028052026",
   "BR028172026",
   "BR028232026",
+  "BR028282026",
   "BR028422026",
   "BR028742026",
   "BR028822026",
@@ -681,6 +682,7 @@
   "BR062782026",
   "BR062892026",
   "BR063112026",
+  "BR063412026",
   "BR063502026",
   "BR063562026",
   "BR063612026",
@@ -1879,6 +1881,7 @@
   "708aeb70-5652-4052-921d-c64c13a68115",
   "70b63552-1d11-4d93-b3ec-6b7d2c4c6321",
   "73cd373a-0273-4139-a651-28d48dad7f38",
+  "7b9ce6dd-df07-45b7-aef6-c8d8abc11eba",
   "7d44e9a4-6984-441d-a002-7d8cb367d13f",
   "7e15d5ff-a519-442e-8d52-f571ad0b36e5",
   "80975e1b-c98e-4203-a2dd-5b3e2723e8b9",
@@ -1926,7 +1929,7 @@
   "f6f61fbd-9279-4ed9-9277-fd646400f2fb",
   "f9b892c3-9ebc-4423-bde5-30b8890ba735"
  ],
- "ultima_rodada": "2026-10-24T21:15:48.499070-03:00",
+ "ultima_rodada": "2026-10-25T06:05:36.502350-03:00",
  "pendentes": [
   {
    "proto": "BR018802026",
@@ -2207,7 +2210,36 @@
    "div": "2026-10-24",
    "n": "3000",
    "visto": "2026-10-24"
+  },
+  {
+   "proto": "BR063412026",
+   "escopo": "ESTADUAL[RN]",
+   "inst": "METADATA",
+   "cargo": "Presidente",
+   "campo": "22/10-24/10",
+   "div": "2026-10-25",
+   "n": "1550",
+   "visto": "2026-10-25"
+  },
+  {
+   "proto": "BR028282026",
+   "escopo": "NACIONAL?",
+   "inst": "PODERDATA",
+   "cargo": "Presidente",
+   "campo": "23/10-24/10",
+   "div": "2026-10-25",
+   "n": "4000",
+   "visto": "2026-10-25"
   }
  ],
- "verita_pendentes": []
+ "verita_pendentes": [
+  {
+   "id": "7b9ce6dd-df07-45b7-aef6-c8d8abc11eba",
+   "titulo": "Pesquisa para Presidente no Brasil",
+   "descricao": "Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 19 a 23 de outubro.",
+   "pdf_url": "https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792889305750_Relatorio_Brasil_24_de_outubro_de_2026.pdf",
+   "created_at": "2026-10-25T00:48:32.773241+00:00",
+   "visto": "2026-10-25"
+  }
+ ]
 }
