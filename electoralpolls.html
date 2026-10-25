@@ -869,7 +869,7 @@
       '<div style="position:relative;"><div style="display:flex; height:20px; border-radius:3px; overflow:hidden; border:1px solid '+P.bord+';">'+
         '<div style="width:'+lp+'%; background:'+P.red+';"></div><div style="width:'+resto+'%; background:'+P.bsoft+';"></div><div style="width:'+fp+'%; background:'+P.blue+';"></div></div>'+
         '<div style="position:absolute; left:50%; top:-3px; height:26px; width:2px; margin-left:-1px; background:'+P.txt+'; opacity:0.8;"></div></div>'+
-      '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">Votos válidos. A linha marca os 50%: quem passa dela vence sem 2º turno. O cinza são os demais candidatos.'+
+      '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">Votos válidos. A linha marca os 50%: '+(resDia2()?'quem passa dela é eleito.':'quem passa dela vence sem 2º turno.')+' O cinza são os demais candidatos.'+
         (lider?' <b style="color:'+lider[1]+';">'+lider[0]+' à frente por '+fmt2(lider[2])+' pontos.</b>':'')+'</div>';
     h+='<table style="width:100%; border-collapse:collapse; font-size:'+(compacto?'11.5px':'12px')+'; margin-top:8px;">'+
       '<tr style="color:'+P.mut+'; font-size:10px; text-transform:uppercase; letter-spacing:0.04em;"><td style="padding:2px 6px 3px 0;">Candidato</td><td style="text-align:right; padding-right:10px;">Votos</td><td style="text-align:right; padding-right:8px;">% válidos</td><td style="width:'+(compacto?'26':'34')+'%;"></td></tr>';
@@ -1042,11 +1042,11 @@
       .catch(function(e){ RESEXT.busy=false; RESEXT.erro='Não deu para ler as cidades do exterior ('+(e&&e.message||e)+').'; resExtPinta(); }); };
   // Barra zerada do modo ao vivo antes da primeira seção totalizada: mesmo desenho da resTabela.
   function resVazia(){ return '<div style="padding:4px 14px 6px;">'+
-      '<div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; font-size:11px; color:'+P.mut+'; margin-bottom:6px;"><span><b style="color:'+P.goldtxt+';">AO VIVO</b> &middot; apuração oficial do TSE, 1º turno de 2026</span><span><b style="color:'+P.txt+';">0%</b> das seções totalizadas</span></div>'+
+      '<div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; font-size:11px; color:'+P.mut+'; margin-bottom:6px;"><span><b style="color:'+P.goldtxt+';">AO VIVO</b> &middot; apuração oficial do TSE, '+(resDia2()?'2º turno de 2026':'1º turno de 2026')+'</span><span><b style="color:'+P.txt+';">0%</b> das seções totalizadas</span></div>'+
       '<div style="display:flex; justify-content:space-between; align-items:baseline; font-size:13px; margin-bottom:4px;"><span style="color:'+P.red+'; font-weight:700;">Lula —</span><span style="color:'+P.blue+'; font-weight:700;">Flávio —</span></div>'+
       '<div style="position:relative;"><div style="height:20px; border-radius:3px; border:1px solid '+P.bord+'; background:'+P.bsoft+';"></div>'+
       '<div style="position:absolute; left:50%; top:-3px; height:26px; width:2px; margin-left:-1px; background:'+P.txt+'; opacity:0.8;"></div></div>'+
-      '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">Votos válidos. A linha marca os 50%: quem passa dela vence sem 2º turno. A barra e o mapa se preenchem sozinhos quando o TSE publicar a primeira seção totalizada; as urnas fecham às 17h de Brasília.</div></div>'; }
+      '<div style="font-size:10.5px; color:'+P.mut+'; margin-top:4px; line-height:1.4;">Votos válidos. A linha marca os 50%: '+(resDia2()?'quem passa dela é eleito.':'quem passa dela vence sem 2º turno.')+' A barra e o mapa se preenchem sozinhos quando o TSE publicar a primeira seção totalizada; as urnas fecham às 17h de Brasília.</div></div>'; }
   function resEstadoHTML(uf){ var j=RES26.uf[uf]; if(!j) return '<p style="font-size:12.5px; color:'+P.txt2+';">O TSE ainda não publicou o arquivo deste estado.</p>';
     var pst=resNum(j.pst);
     var h=field('Apuração','<span style="color:'+P.txt+'; font-weight:600;">'+fmt2(pst)+'% das seções totalizadas</span> <span style="color:'+P.txt2+';">&middot; '+(j.hg||'')+'</span>');
@@ -2709,7 +2709,7 @@
         foot='2018 e 2022 são resultados de 2º turno; no 1º turno de 2026 os demais candidatos somaram '+fmt(100-URNA1T.l-URNA1T.f)+'% dos válidos, por isso as duas cores não somam 100.';
       } else       if(yr==='2026'&&resModo()){
         var nL=0,nF=0,nS=0; RES_UFS.forEach(function(u){ var l=resLead(u); if(l==='L') nL++; else if(l==='F') nF++; else nS++; });
-        intro='<b>Apuração oficial do TSE, '+(RES26.simula?'simulação com '+RES26.ano:'1º turno de 2026')+', por estado. Clique num estado para ver todos os candidatos e quanto já foi apurado.</b> '+
+        intro='<b>Apuração oficial do TSE, '+(RES26.simula?'simulação com '+RES26.ano:(resDia2()?'2º turno de 2026':'1º turno de 2026'))+', por estado. Clique num estado para ver todos os candidatos e quanto já foi apurado.</b> '+
           'A cor é quem está à frente entre Lula e Flávio nos votos válidos do estado: '+nL+' com Lula, '+nF+' com Flávio'+(nS?', '+nS+' ainda sem seção apurada':'')+'. Tom mais forte = vantagem maior.';
         legend=sw(''+P.red+'','Lula à frente')+sw(''+P.blue+'','Flávio à frente')+sw(''+P.mapempty+'','sem seção apurada');
         note='Apuração ao vivo (TSE), atualizada a cada minuto. Vermelho = Lula, azul = Flávio.';
