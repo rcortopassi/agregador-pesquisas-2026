@@ -2,7 +2,14 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 25/10/2026 21:11. Mercados: Polymarket 99,8%/0,2%, Kalshi 99,6%/0,4%.
+Rodada de 26/10/2026 07:01. Mercados: falharam, valores antigos mantidos ({
+ "PM": [
+  "100,0%",
+  "0,0%"
+ ],
+ "PM_via": "direto",
+ "erros": {
+  "KAL": "Kalshi sem Lula/Flavio no payload (achei ).
 
 ## Precisa de olho humano nesta rodada
 
@@ -38,6 +45,7 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-24] TSE NACIONAL?, #NULO# (Presidente), campo 23/10-23/10, divulgação 2026-10-24, N=3000, registro BR056012026
 - [aguardando desde 2026-10-25] TSE ESTADUAL[RN], METADATA (Presidente), campo 22/10-24/10, divulgação 2026-10-25, N=1550, registro BR063412026
 - [aguardando desde 2026-10-25] TSE NACIONAL?, PODERDATA (Presidente), campo 23/10-24/10, divulgação 2026-10-25, N=4000, registro BR028282026
+- [NOVO] TSE NACIONAL?, VETOR TECNOLOGIA E PESQUISAS (Presidente), campo 23/10-24/10, divulgação 2026-10-26, N=2000, registro BR065232026
 - [aguardando desde 2026-10-25] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 19 a 23 de outubro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792889305750_Relatorio_Brasil_24_de_outubro_de_2026.pdf
 
 ## Últimas publicações do Veritá
@@ -57,9 +65,6 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 
 | divulgação | escopo | instituto | cargo | campo | N | registro |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-15 | NACIONAL? | INDEXA PESQUISAS | Presidente | 13/10-14/10 | 2000 | BR046292026 |
-| 2026-10-15 | NACIONAL? | PALVER | Presidente | 10/10-14/10 | 5000 | BR080282026 |
-| 2026-10-15 | NACIONAL? | #NULO# | Presidente | 13/10-15/10 | 2520 | BR004662026 |
 | 2026-10-16 | ESTADUAL[RN] | DATAVERO INSTITUTO DE PESQUI | Presidente | 13/10-15/10 | 1500 | BR023672026 |
 | 2026-10-16 | ESTADUAL[TO] | PORTAL E INSTITUTO STYLO | Presidente | 11/10-14/10 | 1200 | BR061872026 |
 | 2026-10-16 | NACIONAL? | PODERDATA | Presidente | 13/10-15/10 | 3000 | BR042582026 |
@@ -149,4 +154,5 @@ Estar aqui significa que a data de divulgação já venceu, não que o número e
 | 2026-10-24 | NACIONAL? | PALVER | Presidente | 22/10-24/10 | 5000 | BR017942026 |
 | 2026-10-25 | ESTADUAL[RN] | METADATA | Presidente | 22/10-24/10 | 1550 | BR063412026 |
 | 2026-10-25 | NACIONAL? | PODERDATA | Presidente | 23/10-24/10 | 4000 | BR028282026 |
+| 2026-10-26 | NACIONAL? | VETOR TECNOLOGIA E PESQUISAS | Presidente | 23/10-24/10 | 2000 | BR065232026 |
 
