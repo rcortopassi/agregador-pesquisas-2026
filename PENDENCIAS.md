@@ -2,7 +2,7 @@
 
 Gerado pela rotina de 6 em 6 horas (`rotina_6h.py`, GitHub Actions). Não editar à mão: cada rodada reescreve o arquivo inteiro.
 
-Rodada de 26/10/2026 07:01. Mercados: falharam, valores antigos mantidos ({
+Rodada de 26/10/2026 13:45. Mercados: falharam, valores antigos mantidos ({
  "PM": [
   "100,0%",
   "0,0%"
@@ -45,7 +45,7 @@ A fila abaixo NÃO se esvazia sozinha. Cada item fica aqui, rodada após rodada,
 - [aguardando desde 2026-10-24] TSE NACIONAL?, #NULO# (Presidente), campo 23/10-23/10, divulgação 2026-10-24, N=3000, registro BR056012026
 - [aguardando desde 2026-10-25] TSE ESTADUAL[RN], METADATA (Presidente), campo 22/10-24/10, divulgação 2026-10-25, N=1550, registro BR063412026
 - [aguardando desde 2026-10-25] TSE NACIONAL?, PODERDATA (Presidente), campo 23/10-24/10, divulgação 2026-10-25, N=4000, registro BR028282026
-- [NOVO] TSE NACIONAL?, VETOR TECNOLOGIA E PESQUISAS (Presidente), campo 23/10-24/10, divulgação 2026-10-26, N=2000, registro BR065232026
+- [aguardando desde 2026-10-26] TSE NACIONAL?, VETOR TECNOLOGIA E PESQUISAS (Presidente), campo 23/10-24/10, divulgação 2026-10-26, N=2000, registro BR065232026
 - [aguardando desde 2026-10-25] Veritá: Pesquisa para Presidente no Brasil. Veja como está mais uma rodada de pesquisa no Brasil, com percentuais de votos válidos, realizada pelo Instituto entre os dias 19 a 23 de outubro. PDF: https://lgjdbpskgjfbmlffbntx.supabase.co/storage/v1/object/public/pesquisas/pdfs/1792889305750_Relatorio_Brasil_24_de_outubro_de_2026.pdf
 
 ## Últimas publicações do Veritá
